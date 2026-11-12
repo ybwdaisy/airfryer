@@ -64,7 +64,7 @@ const schema = breadcrumbs.length ? {
         <a href={lp('/methodology')}>{t(lang, 'Our sources')}</a>
       </nav>
       <div class="header-controls">
-      <a class="language-toggle" href={localizedPath(cleanPath, otherLanguage)} data-language-switch={otherLanguage} lang={otherLanguage === 'zh' ? 'zh-CN' : 'en'} hreflang={otherLanguage === 'zh' ? 'zh-CN' : 'en'} aria-label={lang === 'en' ? 'Switch to Chinese' : '切换到英文'}>{lang === 'en' ? '中文' : 'EN'}</a>
+      <a class="language-toggle" href={localizedPath(cleanPath, otherLanguage)} data-language-switch={otherLanguage} hreflang={otherLanguage === 'zh' ? 'zh-CN' : 'en'} aria-label={lang === 'en' ? 'Switch to Chinese' : '切换到英文'}><span lang={otherLanguage === 'zh' ? 'zh-CN' : 'en'}>{lang === 'en' ? '中文' : 'EN'}</span></a>
       <div class="unit-switch js-only" role="group" aria-label={t(lang, 'Temperature unit')} hidden>
         <button type="button" data-unit="f" aria-pressed="true">°F</button>
         <button type="button" data-unit="c" aria-pressed="false">°C</button>
