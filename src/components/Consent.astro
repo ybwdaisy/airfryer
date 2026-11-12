@@ -1,11 +1,17 @@
+---
+import { t } from '../lib/i18n';
+import { localizedPath, type Language } from '../lib/locale';
+interface Props { lang?: Language }
+const {lang = 'en'} = Astro.props;
+---
 <aside class="consent" id="consent-banner" aria-labelledby="consent-title" hidden>
   <div class="consent-copy">
-    <h2 id="consent-title">Help improve these cooking guides?</h2>
-    <p>Allow optional Google Analytics cookies to measure visits and tool use. Your choice only applies to this site. <a href="/privacy">Read our privacy notice</a>.</p>
+    <h2 id="consent-title">{t(lang, 'Help improve these cooking guides?')}</h2>
+    <p>{t(lang, 'Allow optional Google Analytics cookies to measure visits and tool use. Your choice only applies to this site.')} <a href={localizedPath('/privacy',lang)}>{t(lang, 'Read our privacy notice')}</a>.</p>
   </div>
   <div class="consent-actions">
-    <button type="button" class="button button-quiet" data-consent="denied">Reject analytics</button>
-    <button type="button" class="button button-quiet" data-consent="granted">Allow analytics</button>
-    <button type="button" class="text-button" id="consent-close" hidden>Keep current choice</button>
+    <button type="button" class="button button-quiet" data-consent="denied">{t(lang, 'Reject analytics')}</button>
+    <button type="button" class="button button-quiet" data-consent="granted">{t(lang, 'Allow analytics')}</button>
+    <button type="button" class="text-button" id="consent-close" hidden>{t(lang, 'Keep current choice')}</button>
   </div>
 </aside>

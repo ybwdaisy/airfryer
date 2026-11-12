@@ -1,11 +1,13 @@
 import Fuse from 'fuse.js';
+import { languageFromPath, resultLabel } from '../lib/locale';
+const language = languageFromPath(location.pathname);
 type Item = { slug: string; name: string; aliases: string[]; category: string };
 const input = document.querySelector<HTMLInputElement>('#search-input');
 const form = document.querySelector<HTMLFormElement>('#food-search');
 const indexNode = document.querySelector('#food-index');
 if (input && form && indexNode) {
   const items = JSON.parse(indexNode.textContent ?? '[]') as Item[];
-  const fuse = new Fuse(items, { keys: [{ name: 'name', weight: 0.65 }, { name: 'aliases', weight: 0.35 }], threshold: 0.32, ignoreLocation: true, minMatchCharLength: 2 });
+  const fuse = new Fuse(items, { keys: [{ name: 'name', weight: 0.65 }, { name: 'aliases', weight: 0.35 }], threshold: 0.32, ignoreLocation: true, minMatchCharLength: 1 });
   const rows = new Map([...document.querySelectorAll<HTMLElement>('[data-food-row]')].map(row => [row.dataset.slug!, row]));
   const list = document.querySelector('.food-rows')!;
   let category = 'all';
@@ -18,7 +20,7 @@ if (input && form && indexNode) {
     const matches = result.filter(item => category === 'all' || item.category === category);
     rows.forEach(row => row.hidden = true);
     matches.forEach(item => { const row = rows.get(item.slug); if (row) { row.hidden = false; list.append(row); } });
-    count.textContent = `${matches.length} ${matches.length === 1 ? 'food' : 'foods'}${query ? ' found' : ''}`;
+    count.textContent = resultLabel(matches.length, Boolean(query), language);
     empty.hidden = matches.length > 0;
     const head = document.querySelector<HTMLElement>('.list-head'); if (head) head.hidden = matches.length === 0;
     document.querySelectorAll<HTMLAnchorElement>('[data-category-filter]').forEach(link => {

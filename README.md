@@ -1,6 +1,6 @@
 # Airfryer times
 
-An independent, English-language air fryer reference tool for `https://airfryer.ybwdaisy.com`. The existing `ybwdaisy.com` homepage and its repository are not used or changed.
+An independent air fryer reference tool for `https://airfryer.ybwdaisy.com`. English is the default; Chinese pages live under `/zh`. The existing `ybwdaisy.com` homepage and its repository are not used or changed.
 
 ## Run locally
 
@@ -18,6 +18,12 @@ Browser icons use `public/favicon.svg`; the opaque home-screen artwork is `publi
 The food files are `src/data/foods-a.json` and `src/data/foods-b.json`; schema and research requirements are documented in [the data contract](docs/data-contract.md). Each public condition has at least two independently authored source records, including source locations and concise evidence. This site has not performed physical cooking tests. References using a lower culinary doneness target do not override the official safety checks shown here.
 
 `npm run build` validates data before generating pages. A Vercel production build requires exactly 50 food subjects. `npm run test:browser` exercises the running local site with system Chrome (or `CHROME_PATH`), including no-JavaScript content and consent gating. Google requests in those tests are intercepted. `npm run test:production` checks production-only metadata, the supplied public GA4 identifier, clean canonical paths and crawl settings, then restores an untracked preview build without opening the production artifact.
+
+## Languages
+
+The header switches between English and Chinese while retaining the current page, search, category, temperature unit, preparation condition and anchor. The latest explicit language choice is stored under the origin-local key `airfryer:language:v1`; returning to the bare homepage restores Chinese when selected. Fresh visits default to English even with a Chinese browser locale. Language links and Chinese guides also work without JavaScript; storage failure leaves explicit navigation usable.
+
+`src/data/zh-foods.json` translates all 50 food subjects and 55 conditions. Numeric cooking facts, source URLs and source roles remain in the original dataset; publisher names, article titles and research evidence remain in English. `src/data/zh-ui.json` contains the interface copy. `npm test` checks translation coverage and numeric preservation; `npm run test:language` checks navigation, Chinese search, metadata, mobile layout and shared consent with Google traffic intercepted. Both languages have self-canonicals and alternate-language links; the sitemap has 118 URLs.
 
 ## Analytics and privacy
 

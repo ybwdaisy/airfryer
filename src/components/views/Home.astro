@@ -1,0 +1,67 @@
+---
+import { t, localizeFood, localizedCategories, searchAliases } from '../../lib/i18n';
+import { localizedPath, resultLabel, type Language } from '../../lib/locale';
+
+import Layout from '../../layouts/Layout.astro';
+import FoodList from '../FoodList.astro';
+import { orderedFoods } from '../../lib/foods';
+import { temperature, minutes } from '../../lib/format';
+const lang: Language = Astro.props.lang ?? 'en';
+const lp = (path: string) => localizedPath(path, lang);
+
+const displayFoods = orderedFoods.map(f => localizeFood(f, lang));
+const categories = localizedCategories(lang);
+const featured = displayFoods[0];
+const featuredVariant = featured?.variants[0];
+const index = orderedFoods.map(f => ({ slug: f.slug, name: localizeFood(f, lang).name, aliases: searchAliases(f), category: f.category }));
+
+---
+<Layout lang={lang} title={t(lang, "Air fryer cooking times & temperatures | Airfryer times")} description={t(lang, "Find air fryer cooking times and temperatures for meat, vegetables and frozen favorites. Clear starting conditions, source links and food safety checks.")}>
+  <section class="page-intro" aria-labelledby="page-title">
+    <h1 id="page-title">{t(lang, "What’s going in the air fryer?")}</h1>
+    <p>{t(lang, "Find the temperature, timing and when to turn.")}</p>
+  </section>
+  <div class="workbench">
+    <section class="search-workspace" aria-label={t(lang, "Find a food")}>
+      <form class="search-form" id="food-search" role="search" method="get" action={lp('/')}>
+        <label for="search-input">{t(lang, "Search a food")}</label>
+        <div class="search-controls">
+          <div class="input-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="7.5" /><path d="m16 16 5 5" /></svg>
+            <input id="search-input" name="q" type="search" placeholder={t(lang, "Chicken wings, broccoli, frozen fries")} autocomplete="off" maxlength="120" aria-describedby="search-help" />
+          </div>
+          <button class="button" type="submit">{t(lang, "Find times")}</button>
+        </div>
+        <p class="field-help" id="search-help">{t(lang, "Search by name or choose a category below.")}</p>
+      </form>
+      <nav class="category-filter" aria-label={t(lang, "Food categories")}>
+        <a href={lp('/')} data-category-filter="all" aria-current="page">{t(lang, "All foods")}</a>
+        {categories.map(c => <a href={lp(`/categories/${c.slug}`)} data-category-filter={c.slug}>{c.short}</a>)}
+      </nav>
+      <div class="results-heading"><h2 id="results-title">{t(lang, "Cooking guides")}</h2><p id="result-count" role="status" aria-live="polite">{resultLabel(displayFoods.length, false, lang)}</p></div>
+      <FoodList lang={lang} foods={displayFoods} searchable />
+      <noscript><p class="notice">{t(lang, "Live search needs JavaScript. You can browse every guide below or use the category links.")}</p></noscript>
+      <p class="list-note">{t(lang, "Each time applies to the starting condition shown. Open a guide for quantities and source notes.")}</p>
+    </section>
+    <aside class="kitchen-notes">
+      {featured && featuredVariant && <section class="featured-guide" aria-labelledby="featured-title">
+        <h2 id="featured-title">{t(lang, "Start with")}{lang === 'en' ? ' ' : ''}{featured.name.toLowerCase()}</h2>
+        <p>{featuredVariant.label}</p>
+        <dl class="featured-values">
+          <div><dt>{t(lang, "Temperature")}</dt><dd data-temperature={featuredVariant.temperatureF}>{temperature(featuredVariant.temperatureF, 'f')}</dd></div>
+          <div><dt>{t(lang, "Cooking time")}</dt><dd>{minutes(featuredVariant.minutes)}<span> {t(lang, "min")}</span></dd></div>
+        </dl>
+        <a class="featured-link" href={lp(`/foods/${featured.slug}`)}>{t(lang, "See quantities & instructions")}</a>
+      </section>}
+      <section class="kitchen-tip">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 14.5V5a3 3 0 0 1 6 0v9.5a5 5 0 1 1-6 0Z" /><path d="M12 9v9" /></svg>
+        <h2>{t(lang, "Time is a guide.")}<br />{t(lang, "Temperature is the check.")}</h2>
+        <p>{t(lang, "Size, starting temperature and your air fryer can change the timing. Check meat with a food thermometer.")}</p>
+        <a href={lp('/methodology#food-safety')}>{t(lang, "Read the safety checks")}</a>
+      </section>
+      <p class="source-note">{t(lang, "Reference guides with linked sources. No claim of kitchen testing by this site.")}</p>
+    </aside>
+  </div>
+  <script id="food-index" type="application/json" set:html={JSON.stringify(index).replaceAll('<', '\\u003c')} />
+  <script>import '../../scripts/search.ts';</script>
+</Layout>

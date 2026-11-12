@@ -1,0 +1,13 @@
+---
+import { t } from '../../lib/i18n';
+import { localizedPath, type Language } from '../../lib/locale';
+
+import Layout from '../../layouts/Layout.astro';
+
+const lang: Language = Astro.props.lang ?? 'en';
+const lp = (path: string) => localizedPath(path, lang);
+
+---
+<Layout lang={lang} title={t(lang, "Guide not found | Airfryer times")} description={t(lang, "This air fryer cooking guide could not be found. Browse the food list or search for another food.")} noindex>
+  <section class="not-found"><h1>{t(lang, "That guide isn’t on the shelf.")}</h1><p>{t(lang, "The address may have changed. Search the food list to find a cooking guide.")}</p><a class="button" href={lp('/')}>{t(lang, "Browse all foods")}</a></section>
+</Layout>

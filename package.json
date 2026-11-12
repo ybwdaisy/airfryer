@@ -10,6 +10,7 @@
     "check": "ASTRO_TELEMETRY_DISABLED=1 astro check",
     "test": "node --test tests/*.test.ts",
     "test:browser": "node tests/browser.mjs",
+    "test:language": "node tests/language.mjs",
     "test:production": "node scripts/check-production.mjs",
     "data:check": "node scripts/validate-data.mjs",
     "icons:generate": "node scripts/generate-icons.mjs"

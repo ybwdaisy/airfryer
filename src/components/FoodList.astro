@@ -1,19 +1,21 @@
 ---
 import type { Food } from '../lib/schema';
 import { temperature, minutes } from '../lib/format';
-interface Props { foods: Food[]; searchable?: boolean }
-const { foods, searchable = false } = Astro.props;
+import { t } from '../lib/i18n';
+import { localizedPath, type Language } from '../lib/locale';
+interface Props { foods: Food[]; searchable?: boolean; lang?: Language }
+const { foods, searchable = false, lang = 'en' } = Astro.props;
 ---
 <div class="food-list" data-food-list>
-  <div class="list-head" aria-hidden="true"><span>Food & starting condition</span><span>Temp</span><span>Time</span><span></span></div>
+  <div class="list-head" aria-hidden="true"><span>{t(lang, 'Food & starting condition')}</span><span>{t(lang, 'Temp')}</span><span>{t(lang, 'Time')}</span><span></span></div>
   <ul class="food-rows">
     {foods.map(food => {
       const variant = food.variants[0];
       return <li data-food-row data-slug={food.slug} data-category={food.category}>
-        <a href={`/foods/${food.slug}`} class="food-row" data-food-link={food.slug}>
+        <a href={localizedPath(`/foods/${food.slug}`,lang)} class="food-row" data-food-link={food.slug}>
           <div class="food-name"><span>{food.name}</span><small>{variant.label}</small></div>
-          <span class="row-temperature" data-temperature={variant.temperatureF}><span class="visually-hidden">Temperature </span>{temperature(variant.temperatureF, 'f')}</span>
-          <span class="row-time"><span class="visually-hidden">Cooking time </span>{minutes(variant.minutes)} <small>min</small></span>
+          <span class="row-temperature" data-temperature={variant.temperatureF}><span class="visually-hidden">{t(lang, 'Temperature')} </span>{temperature(variant.temperatureF, 'f')}</span>
+          <span class="row-time"><span class="visually-hidden">{t(lang, 'Cooking time')} </span>{minutes(variant.minutes)} <small>{t(lang, 'min')}</small></span>
           <svg class="row-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg>
         </a>
       </li>;
@@ -21,7 +23,7 @@ const { foods, searchable = false } = Astro.props;
   </ul>
 </div>
 {searchable && <div class="empty-state" id="search-empty" hidden>
-  <h3>No matching food yet</h3>
-  <p>Try another spelling or a broader name, such as chicken or potato.</p>
-  <button type="button" class="button button-quiet" data-clear-search>Show all foods</button>
+  <h3>{t(lang, 'No matching food yet')}</h3>
+  <p>{t(lang, 'Try another spelling or a broader name, such as chicken or potato.')}</p>
+  <button type="button" class="button button-quiet" data-clear-search>{t(lang, 'Show all foods')}</button>
 </div>}

@@ -1,0 +1,66 @@
+---
+import { t, localizeFood, localizedCategories } from '../../lib/i18n';
+import { localizedPath, type Language } from '../../lib/locale';
+
+import Layout from '../../layouts/Layout.astro';
+import FoodList from '../FoodList.astro';
+import { foods } from '../../lib/foods';
+import { temperature, minutes, preheatLabel, safetyGuides, safetySource } from '../../lib/format';
+const lang: Language = Astro.props.lang ?? 'en';
+const lp = (path: string) => localizedPath(path, lang);
+
+const food = localizeFood(Astro.props.food, lang);
+const categoryName = (id: string) => localizedCategories(lang).find(c => c.slug === id)!.name;
+const related = foods.filter(f => f.category === food.category && f.slug !== food.slug).slice(0, 4).map(f => localizeFood(f, lang));
+const breadcrumb = [{ name: categoryName(food.category), path: `/categories/${food.category}` }, { name: food.name, path: `/foods/${food.slug}` }];
+
+---
+<Layout lang={lang} title={lang === 'zh' ? `${food.name}空气炸锅时间与温度 | Airfryer times` : `${food.name} air fryer time & temperature | Airfryer times`} description={lang === 'zh' ? `${food.name}的空气炸锅时间与温度，含适用状态、翻面步骤、参考来源和熟度检查。` : `Air fryer time and temperature for ${food.name.toLowerCase()}, with starting conditions, turning instructions, source notes and doneness checks.`} breadcrumbs={breadcrumb}>
+  <nav class="breadcrumbs" aria-label={t(lang, "Breadcrumb")}><a href={lp('/')}>{t(lang, "All foods")}</a><span aria-hidden="true">/</span><a href={lp(`/categories/${food.category}`)}>{categoryName(food.category)}</a></nav>
+  <section class="page-intro detail-intro"><h1>{food.name}</h1><p>{food.description}</p></section>
+  {food.variants.length > 1 && <div class="condition-control js-only" hidden>
+    <label for="variant-select">{t(lang, "Choose your starting condition")}</label>
+    <select id="variant-select" data-food-slug={food.slug}>{food.variants.map(v => <option value={v.id}>{v.label}</option>)}</select>
+    <p class="field-help">{t(lang, "Only separately sourced conditions are available.")}</p>
+  </div>}
+  {food.variants.map(variant => {
+    const safetyText = variant.safetyOverride?.text ?? (variant.state === 'reheat' ? t(lang, safetyGuides.leftovers) : food.safety ? t(lang, safetyGuides[food.safety]) : null);
+    const safetyUrl = variant.safetyOverride?.url ?? safetySource;
+    const sourcesAnchor = variant.id === food.variants[0].id ? 'sources' : `sources-${variant.id}`;
+    return <section class="variant-panel" data-variant-panel={variant.id} aria-labelledby={`condition-${variant.id}`}>
+      <div class="detail-grid">
+        <div class="cooking-guidance">
+          <h2 id={`condition-${variant.id}`}>{variant.label}</h2>
+          <p class="portion">{variant.portion}</p>
+          <dl class="cooking-values">
+            <div><dt>{t(lang, "Air fryer setting")}</dt><dd data-temperature={variant.temperatureF}>{temperature(variant.temperatureF, 'f')}</dd></div>
+            <div><dt>{t(lang, "Cooking time")}</dt><dd>{minutes(variant.minutes)}<span> {t(lang, "min")}</span></dd></div>
+          </dl>
+          <p class="conversion-note">{t(lang, "°C settings are rounded to the nearest 5°C. Start checking at the earlier time.")}</p>
+          <dl class="cooking-facts">
+            <div><dt>{t(lang, "Preheat")}</dt><dd>{t(lang, preheatLabel(variant.preheat))}</dd></div>
+            <div><dt>{t(lang, "Turn or shake")}</dt><dd>{variant.turn}</dd></div>
+          </dl>
+          <section class="instructions"><h3>{t(lang, "At the basket")}</h3><ol>{variant.steps.map(step => <li>{step}</li>)}</ol></section>
+          {variant.notes.length > 0 && <section class="reference-notes"><h3>{t(lang, "Before you cook")}</h3><ul>{variant.notes.map(note => <li>{note}</li>)}</ul></section>}
+        </div>
+        <aside class="detail-sidebar">
+          <section class="safety-note"><h2>{t(lang, safetyText ? 'Check before serving' : 'Leave room for air')}</h2><p>{safetyText ?? t(lang, 'Use the preparation and quantity shown. Spread food evenly and avoid packing the basket tightly.')}</p>{safetyText && <a href={safetyUrl}>{t(lang, "Read the temperature guidance")}</a>}</section>
+          <section class="source-summary"><h2>{t(lang, "Where this guide comes from")}</h2><p>{t(lang, "The reference below sets the displayed timing. A second source records comparable guidance and any differences.")}</p><a href={`#${sourcesAnchor}`}>{t(lang, "Read the source notes")}</a></section>
+        </aside>
+      </div>
+      <section class="sources" id={sourcesAnchor}>
+        <h2>{t(lang, "Source notes")}</h2>
+        <p class="section-description">{t(lang, "Reference research, not cooking tests by this site. Reviewed")} <time datetime={food.reviewedAt}>{food.reviewedAt}</time>.</p>
+        {lang === 'zh' && <p class="section-description">{t(lang, 'Original English source notes')}</p>}
+        {variant.sources.map(source => <details class="source-entry">
+          <summary><span>{source.publisher}</span><small>{t(lang, source.role === 'reference' ? 'Timing reference' : 'Cross-check')}</small></summary>
+          <div class="source-body"><a lang="en" href={source.url}>{source.title}</a><p lang="en">{source.evidence}</p><p class="source-locator">{t(lang, "Location:")} <span lang="en">{source.locator}</span></p></div>
+        </details>)}
+      </section>
+    </section>;
+  })}
+  {related.length > 0 && <section class="related"><div class="results-heading"><h2>{t(lang, "More from this shelf")}</h2><a href={lp(`/categories/${food.category}`)}>{t(lang, "View category")}</a></div><FoodList lang={lang} foods={related} /></section>}
+  <script id="variant-data" type="application/json" set:html={JSON.stringify(food.variants).replaceAll('<', '\\u003c')} />
+  <script>import '../../scripts/detail.ts';</script>
+</Layout>

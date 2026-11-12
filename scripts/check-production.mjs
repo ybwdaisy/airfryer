@@ -20,6 +20,16 @@ try {
     const html = await readFile(`dist/${path}.html`, 'utf8');
     assert.ok(html.includes(`rel="canonical" href="https://airfryer.ybwdaisy.com/${path}"`), `Clean canonical for ${path}`);
   }
+  for (const path of ['zh', 'zh/foods/chicken-breast', 'zh/categories/frozen', 'zh/privacy']) {
+    const html = await readFile(`dist/${path}.html`, 'utf8');
+    assert.match(html, /<html lang="zh-CN">/);
+    assert.equal(measurementId(html), 'G-B34CBGW0EF');
+    assert.ok(html.includes(`rel="canonical" href="https://airfryer.ybwdaisy.com/${path}"`));
+    assert.ok(html.includes('hreflang="en"'));
+    assert.doesNotMatch(html, /name="robots" content="noindex/);
+  }
+  const sitemap = await readFile('dist/sitemap.xml', 'utf8');
+  assert.equal((sitemap.match(/<loc>/g) ?? []).length, 118);
   console.log('Production output: configured GA ID, no unconditional Google tag, canonical hostname and crawl settings verified. No page opened and no analytics sent.');
 } finally {
   // Keep ordinary local preview output untracked and noindex, even if a production check fails.

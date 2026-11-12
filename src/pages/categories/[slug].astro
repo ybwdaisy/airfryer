@@ -1,19 +1,6 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import FoodList from '../../components/FoodList.astro';
-import { categories, orderedFoods } from '../../lib/foods';
+import View from '../../components/views/CategoryPage.astro';
+import { categories } from '../../lib/foods';
 export function getStaticPaths() { return categories.map(category => ({ params: { slug: category.slug }, props: { category } })); }
-const { category } = Astro.props;
-const matching = orderedFoods.filter(f => f.category === category.slug);
 ---
-<Layout title={`${category.name} air fryer times & temperatures | Airfryer times`} description={category.description} breadcrumbs={[{ name: category.name, path: `/categories/${category.slug}` }]}>
-  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">All foods</a><span aria-hidden="true">/</span><span>{category.name}</span></nav>
-  <section class="page-intro"><h1>{category.name}</h1><p>{category.description}</p></section>
-  <nav class="category-filter" aria-label="Food categories">
-    <a href="/">All foods</a>
-    {categories.map(c => <a href={`/categories/${c.slug}`} aria-current={c.slug === category.slug ? 'page' : undefined}>{c.short}</a>)}
-  </nav>
-  <div class="results-heading"><h2>Cooking guides</h2><p>{matching.length} foods</p></div>
-  <FoodList foods={matching} />
-  <p class="list-note">Use each guide’s starting condition. Times vary between machines and quantities.</p>
-</Layout>
+<View lang="en" category={Astro.props.category} />
