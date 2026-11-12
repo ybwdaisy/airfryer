@@ -1,0 +1,72 @@
+---
+import '@fontsource/archivo/latin-400.css';
+import '@fontsource/archivo/latin-500.css';
+import '@fontsource/archivo/latin-600.css';
+import '../styles/app.css';
+import Consent from '../components/Consent.astro';
+interface Props { title: string; description: string; breadcrumbs?: { name: string; path: string }[]; noindex?: boolean }
+const { title, description, breadcrumbs = [], noindex = false } = Astro.props;
+const origin = 'https://airfryer.ybwdaisy.com';
+const cleanPath = Astro.url.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '').replace(/\/$/, '') || '/';
+const canonical = new URL(cleanPath, origin).href;
+const isProduction = import.meta.env.PROD && process.env.VERCEL_ENV === 'production';
+const candidate = import.meta.env.PUBLIC_GA_MEASUREMENT_ID ?? '';
+const gaId = isProduction && /^G-[A-Z0-9]+$/.test(candidate) ? candidate : '';
+const schema = breadcrumbs.length ? {
+  '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+  itemListElement: [{ name: 'All foods', path: '/' }, ...breadcrumbs].map((b, i) => ({
+    '@type': 'ListItem', position: i + 1, name: b.name, item: new URL(b.path, origin).href,
+  })),
+} : { '@context': 'https://schema.org', '@type': 'WebSite', name: 'Airfryer times', url: origin, description };
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#f1e9da" />
+    <meta name="ga-measurement-id" content={gaId} />
+    {(!isProduction || noindex) && <meta name="robots" content="noindex, nofollow" />}
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:type" content="website" />
+    <title>{title}</title>
+    <script type="application/ld+json" set:html={JSON.stringify(schema).replaceAll('<', '\\u003c')} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header container">
+      <a class="wordmark" href="/" aria-label="Airfryer times home">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3m-6-1 1.5 2M18 5l-1.5 2M5 11h14v5a5 5 0 0 1-5 5h-4a5 5 0 0 1-5-5zM9 15h6" /></svg>
+        Airfryer <span class="wordmark-tail">times</span>
+      </a>
+      <nav class="header-nav" aria-label="Main navigation">
+        <a href="/">All foods</a>
+        <a href="/methodology">Our sources</a>
+      </nav>
+      <div class="unit-switch js-only" role="group" aria-label="Temperature unit" hidden>
+        <button type="button" data-unit="f" aria-pressed="true">°F</button>
+        <button type="button" data-unit="c" aria-pressed="false">°C</button>
+      </div>
+    </header>
+    <main id="main" class="container">
+      <slot />
+    </main>
+    <footer class="site-footer container">
+      <p>Cooking times are a starting point. Check doneness before serving.</p>
+      <nav aria-label="Footer navigation">
+        <a href="/methodology">Sources & safety</a>
+        <a href="/privacy">Privacy</a>
+        <button type="button" class="text-button js-only" data-privacy-settings hidden>Analytics choices</button>
+      </nav>
+    </footer>
+    <Consent />
+    <script>
+      import '../scripts/shared.ts';
+    </script>
+  </body>
+</html>

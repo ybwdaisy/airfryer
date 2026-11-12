@@ -1,0 +1,1403 @@
+[
+  {
+    "slug": "mushrooms",
+    "name": "Mushrooms",
+    "aliases": [
+      "button mushrooms",
+      "cremini",
+      "baby bella"
+    ],
+    "category": "vegetables",
+    "description": "Sliced mushrooms with browned edges.",
+    "safety": null,
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "sliced",
+        "label": "Fresh, sliced",
+        "state": "fresh",
+        "temperatureF": 400,
+        "minutes": [
+          5,
+          7
+        ],
+        "portion": "16 oz mushrooms, evenly sliced; season with oil and cook in a single layer in batches.",
+        "preheat": "yes",
+        "turn": "Shake or turn halfway.",
+        "steps": [
+          "Dry and slice the mushrooms evenly, then coat lightly with oil and seasoning.",
+          "Arrange with space in a preheated basket; shake halfway and check for tenderness."
+        ],
+        "notes": [
+          "The independent COSORI chart covers whole mushrooms at a lower setting; its times are not applied to these slices."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Mushrooms",
+            "publisher": "Air Frying Foodie (Becky Abbott)",
+            "url": "https://airfryingfoodie.com/air-fryer-mushrooms/",
+            "role": "reference",
+            "locator": "Recipe card and How to Make",
+            "evidence": "16 oz sliced; preheat; 400°F for 5–7 minutes; turn halfway."
+          },
+          {
+            "title": "Iconic Air Fryer Cooking Times Guide",
+            "publisher": "COSORI",
+            "url": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+            "role": "cross-check",
+            "locator": "Vegetables: mushrooms",
+            "evidence": "Whole: 380°F, 8–14 minutes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "corn-on-the-cob",
+    "name": "Corn on the cob",
+    "aliases": [
+      "sweet corn",
+      "corn cobs"
+    ],
+    "category": "vegetables",
+    "description": "Shucked corn cooked in an open basket.",
+    "safety": null,
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "fresh",
+        "label": "Fresh, whole ears",
+        "state": "fresh",
+        "temperatureF": 400,
+        "minutes": [
+          10,
+          12
+        ],
+        "portion": "4 fresh ears, husks and silks removed; lightly oil; keep in one layer.",
+        "preheat": "yes",
+        "turn": "Turn halfway.",
+        "steps": [
+          "Remove the husks and silk; coat the ears lightly with oil.",
+          "Space the ears in the hot basket and turn halfway; check that kernels are tender."
+        ],
+        "notes": [
+          "This setting uses the unwrapped method. Foil-wrapped corn has a separate cooking method and is not covered."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Corn on the Cob",
+            "publisher": "Wholesome Yum (Maya Krampf)",
+            "url": "https://www.wholesomeyum.com/air-fryer-corn-on-the-cob/",
+            "role": "reference",
+            "locator": "Recipe card: Regular Method",
+            "evidence": "4 ears; preheated 400°F; fresh 10–12 minutes; flip halfway."
+          },
+          {
+            "title": "Top 10 Air Fryer Recipes",
+            "publisher": "Air Frying Foodie",
+            "url": "https://airfryingfoodie.com/wp-content/uploads/2024/06/Top-10-Air-Fryer-Recipes-Ebook-PDF.pdf",
+            "role": "cross-check",
+            "locator": "Page 9, corn on the cob",
+            "evidence": "4 ears: 400°F, 12 minutes, turn halfway."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "eggplant",
+    "name": "Eggplant",
+    "aliases": [
+      "aubergine"
+    ],
+    "category": "vegetables",
+    "description": "Thin eggplant rounds with a Parmesan coating.",
+    "safety": null,
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "parmesan-slices",
+        "label": "Fresh, Parmesan-coated slices",
+        "state": "fresh",
+        "temperatureF": 375,
+        "minutes": [
+          10,
+          12
+        ],
+        "portion": "1 medium eggplant, cut into 3/8–1/2-inch rounds; brush both sides with oil and coat with Parmesan and seasoning.",
+        "preheat": "yes",
+        "turn": "Not required in the reference method.",
+        "steps": [
+          "Pat the rounds dry and coat both sides with oil, seasoning and grated Parmesan.",
+          "Cook in a single layer, in batches if needed, until soft inside and golden on top."
+        ],
+        "notes": [
+          "This is a Parmesan-coated slice method, not plain cubes or breaded frozen eggplant. The Cook Smarts chart lists a different 400°F method for plain slices or cubes."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Eggplant",
+            "publisher": "Wholesome Yum (Maya Krampf)",
+            "url": "https://www.wholesomeyum.com/air-fryer-eggplant/",
+            "role": "reference",
+            "locator": "Recipe card: Ingredients and Instructions",
+            "evidence": "One medium eggplant, 3/8–1/2-inch slices; preheat 375°F; 10–12 minutes."
+          },
+          {
+            "title": "Air Fryer Cooking Times Cheat Sheet",
+            "publisher": "Cook Smarts",
+            "url": "https://cooksmartsapp.s3-us-west-2.amazonaws.com/materials/newsletter-freebies/Cook-Smarts-Air-Fryer-Cheat-Sheet-202002.pdf",
+            "role": "cross-check",
+            "locator": "Page 4, Eggplant, cubed or sliced",
+            "evidence": "400°F, 15–18 minutes; different preparation."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "butternut-squash",
+    "name": "Butternut squash",
+    "aliases": [
+      "butternut pumpkin"
+    ],
+    "category": "vegetables",
+    "description": "Peeled squash cubes with tender centers.",
+    "safety": null,
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "one-inch-cubes",
+        "label": "Fresh, 1-inch cubes",
+        "state": "fresh",
+        "temperatureF": 400,
+        "minutes": [
+          16,
+          18
+        ],
+        "portion": "1 butternut squash, peeled and seeded, cut into approximately 1-inch cubes; oil lightly and cook in single-layer batches.",
+        "preheat": "unspecified",
+        "turn": "Shake halfway.",
+        "steps": [
+          "Peel, remove seeds and cut the squash into equal cubes; coat with oil and seasoning.",
+          "Spread in one layer and shake halfway; finish when a fork enters easily."
+        ],
+        "notes": [
+          "The source uses batches for a larger squash. Extra weight is not converted into extra minutes."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Butternut Squash",
+            "publisher": "Air Frying Foodie (Becky Abbott)",
+            "url": "https://airfryingfoodie.com/air-fryer-butternut-squash/",
+            "role": "reference",
+            "locator": "Recipe card and preparation section",
+            "evidence": "1-inch cubes; 400°F for 16–18 minutes; shake halfway."
+          },
+          {
+            "title": "Air Fryer Cooking Times Cheat Sheet",
+            "publisher": "Cook Smarts",
+            "url": "https://cooksmartsapp.s3-us-west-2.amazonaws.com/materials/newsletter-freebies/Cook-Smarts-Air-Fryer-Cheat-Sheet-202002.pdf",
+            "role": "cross-check",
+            "locator": "Page 4, Butternut squash, chopped",
+            "evidence": "400°F, 15–20 minutes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "beets",
+    "name": "Beets",
+    "aliases": [
+      "beetroot"
+    ],
+    "category": "vegetables",
+    "description": "Small beet cubes roasted until fork-tender.",
+    "safety": null,
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "three-quarter-inch",
+        "label": "Fresh, 3/4-inch cubes",
+        "state": "fresh",
+        "temperatureF": 380,
+        "minutes": [
+          20,
+          22
+        ],
+        "portion": "1 lb beets, scrubbed or peeled and cut into equal 3/4-inch pieces; toss with 1 tbsp oil.",
+        "preheat": "unspecified",
+        "turn": "Toss once or twice during cooking.",
+        "steps": [
+          "Trim and scrub or peel the beets, then cut into equal pieces and coat with oil.",
+          "Arrange in one layer and toss during cooking; check with a fork near the end."
+        ],
+        "notes": [
+          "A second recipe uses 1–2-inch glazed wedges at 400°F for 16–18 minutes. That is a different preparation, so its timing is not blended into this range."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Beets",
+            "publisher": "Rachel Cooks (Rachel Gurk)",
+            "url": "https://www.rachelcooks.com/air-fryer-beets/",
+            "role": "reference",
+            "locator": "Recipe card",
+            "evidence": "1 lb, 3/4-inch pieces; 380°F for 20–22 minutes; toss 1–2 times."
+          },
+          {
+            "title": "Air Fryer Glazed Beets",
+            "publisher": "Savory / Stop & Shop",
+            "url": "https://recipecenter.stopandshop.com/recipes/248036/air-fryer-glazed-beets",
+            "role": "cross-check",
+            "locator": "Steps 1–2",
+            "evidence": "1–2-inch glazed wedges: 400°F, 16–18 minutes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "potatoes",
+    "name": "Potatoes",
+    "aliases": [
+      "baby potatoes",
+      "baked potato",
+      "russet potato",
+      "Yukon Gold"
+    ],
+    "category": "vegetables",
+    "description": "Choose cut potatoes or a whole baked russet.",
+    "safety": null,
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "chunks",
+        "label": "Fresh, small chunks",
+        "state": "fresh",
+        "temperatureF": 400,
+        "minutes": [
+          15,
+          20
+        ],
+        "portion": "1 lb baby potatoes, halved or quartered, or Yukon Gold cut into 3/4-inch chunks; lightly oil; single-layer batches.",
+        "preheat": "yes",
+        "turn": "Flip halfway.",
+        "steps": [
+          "Cut the potatoes into even pieces and toss with oil and seasoning.",
+          "Cook with space around the pieces; turn halfway and check the centers with a fork."
+        ],
+        "notes": [
+          "This chunk method uses baby or Yukon Gold potatoes. It is separate from the whole-russet method."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Potatoes",
+            "publisher": "Love & Lemons (Jeanine Donofrio)",
+            "url": "https://www.loveandlemons.com/air-fryer-potatoes/",
+            "role": "reference",
+            "locator": "Recipe card",
+            "evidence": "1 lb baby or 3/4-inch Yukon Gold; preheat 400°F; 15–20 minutes, flip halfway."
+          },
+          {
+            "title": "Iconic Air Fryer Cooking Times Guide",
+            "publisher": "COSORI",
+            "url": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+            "role": "cross-check",
+            "locator": "Vegetables: potatoes, cubed",
+            "evidence": "1-inch cubes: 390°F, 8–16 minutes."
+          }
+        ]
+      },
+      {
+        "id": "whole",
+        "label": "Fresh, whole russet",
+        "state": "fresh",
+        "temperatureF": 400,
+        "minutes": [
+          40,
+          60
+        ],
+        "portion": "2 medium russet potatoes, washed, dried, pierced with a fork and lightly oiled; no foil.",
+        "preheat": "yes",
+        "turn": "Not required in the reference method.",
+        "steps": [
+          "Pierce the potato skins and rub with a little oil and salt.",
+          "Place unwrapped in the hot basket and cook until the center is easily pierced."
+        ],
+        "notes": [
+          "Whole potatoes take much longer than chunks. COSORI lists 9–10 oz whole potatoes at 385°F for 50–60 minutes; medium potato size and appliance differences remain relevant."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Baked Potato",
+            "publisher": "Love & Lemons (Jeanine Donofrio)",
+            "url": "https://www.loveandlemons.com/air-fryer-baked-potato/",
+            "role": "reference",
+            "locator": "Recipe card",
+            "evidence": "2 medium russets; preheat 400°F; 40–60 minutes, no foil."
+          },
+          {
+            "title": "Iconic Air Fryer Cooking Times Guide",
+            "publisher": "COSORI",
+            "url": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+            "role": "cross-check",
+            "locator": "Vegetables: baked whole potatoes",
+            "evidence": "9–10 oz: 385°F, 50–60 minutes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "sweet-potatoes",
+    "name": "Sweet potatoes",
+    "aliases": [
+      "sweet potato"
+    ],
+    "category": "vegetables",
+    "description": "Whole sweet potatoes cooked in their skins.",
+    "safety": null,
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "whole",
+        "label": "Fresh, whole",
+        "state": "fresh",
+        "temperatureF": 400,
+        "minutes": [
+          40,
+          55
+        ],
+        "portion": "2 medium sweet potatoes, washed and pierced with a fork; cook unwrapped.",
+        "preheat": "yes",
+        "turn": "Not required in the reference method.",
+        "steps": [
+          "Scrub the skins and make several fork holes; leave the potatoes unwrapped.",
+          "Cook in the hot basket until the insides are soft when pierced."
+        ],
+        "notes": [
+          "Whole size is part of this reference. The COSORI chart covers 9–10 oz potatoes at 385°F for 45–60 minutes; do not apply a weight multiplier."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Sweet Potato",
+            "publisher": "Love & Lemons (Jeanine Donofrio)",
+            "url": "https://www.loveandlemons.com/air-fryer-sweet-potato/",
+            "role": "reference",
+            "locator": "Recipe card",
+            "evidence": "2 medium sweet potatoes; preheat 400°F; 40–55 minutes."
+          },
+          {
+            "title": "Iconic Air Fryer Cooking Times Guide",
+            "publisher": "COSORI",
+            "url": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+            "role": "cross-check",
+            "locator": "Vegetables: baked whole sweet potato",
+            "evidence": "9–10 oz: 385°F, 45–60 minutes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "tofu",
+    "name": "Tofu",
+    "aliases": [
+      "extra-firm tofu",
+      "bean curd"
+    ],
+    "category": "vegetables",
+    "description": "Extra-firm tofu cubes with a light starch coating.",
+    "safety": null,
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "extra-firm",
+        "label": "Fresh, extra-firm cubes",
+        "state": "fresh",
+        "temperatureF": 400,
+        "minutes": [
+          11,
+          15
+        ],
+        "portion": "14 oz extra-firm tofu, pressed if needed, cubed and tossed with a little oil, tamari and cornstarch; space in one layer.",
+        "preheat": "yes",
+        "turn": "Flip or toss halfway.",
+        "steps": [
+          "Press excess water out, cube the tofu and coat with oil, tamari and a light dusting of cornstarch.",
+          "Space the cubes apart in the hot basket, turning halfway, until the edges brown."
+        ],
+        "notes": [
+          "Silken and soft tofu are not covered. The independent Cook Smarts cube chart uses 375°F for 12–17 minutes; this entry follows the coated extra-firm reference."
+        ],
+        "sources": [
+          {
+            "title": "Crispy Air Fryer Tofu",
+            "publisher": "Love & Lemons (Jeanine Donofrio)",
+            "url": "https://www.loveandlemons.com/air-fryer-tofu/",
+            "role": "reference",
+            "locator": "Recipe card",
+            "evidence": "14 oz extra-firm; preheat 400°F; 11–15 minutes, flip halfway."
+          },
+          {
+            "title": "Air Fryer Cooking Times Cheat Sheet",
+            "publisher": "Cook Smarts",
+            "url": "https://cooksmartsapp.s3-us-west-2.amazonaws.com/materials/newsletter-freebies/Cook-Smarts-Air-Fryer-Cheat-Sheet-202002.pdf",
+            "role": "cross-check",
+            "locator": "Page 6, Tofu, cubed",
+            "evidence": "375°F, 12–17 minutes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "chickpeas",
+    "name": "Chickpeas",
+    "aliases": [
+      "garbanzo beans",
+      "garbanzos"
+    ],
+    "category": "vegetables",
+    "description": "Cooked chickpeas dried before crisping.",
+    "safety": null,
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "cooked",
+        "label": "Cooked, drained chickpeas",
+        "state": "fresh",
+        "temperatureF": 400,
+        "minutes": [
+          10,
+          15
+        ],
+        "portion": "1 1/2 cups cooked chickpeas (canned is suitable), drained, rinsed and thoroughly dried; toss with 2 tsp oil.",
+        "preheat": "yes",
+        "turn": "Toss halfway.",
+        "steps": [
+          "Dry the drained chickpeas thoroughly and toss with a little oil and seasoning.",
+          "Spread in one layer and toss halfway; finish when crisp."
+        ],
+        "notes": [
+          "Use cooked chickpeas. This is not a method for dried raw beans. The independent chart gives 12–17 minutes at the same temperature; dryness affects crisping."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Chickpeas",
+            "publisher": "Love & Lemons (Jeanine Donofrio)",
+            "url": "https://www.loveandlemons.com/air-fryer-chickpeas/",
+            "role": "reference",
+            "locator": "Recipe card",
+            "evidence": "1 1/2 cups cooked, dried chickpeas; preheat 400°F; 10–15 minutes, toss halfway."
+          },
+          {
+            "title": "Air Fryer Cooking Times Cheat Sheet",
+            "publisher": "Cook Smarts",
+            "url": "https://cooksmartsapp.s3-us-west-2.amazonaws.com/materials/newsletter-freebies/Cook-Smarts-Air-Fryer-Cheat-Sheet-202002.pdf",
+            "role": "cross-check",
+            "locator": "Page 6, Chickpeas",
+            "evidence": "400°F, 12–17 minutes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "french-fries",
+    "name": "French fries",
+    "aliases": [
+      "frozen fries",
+      "frozen chips",
+      "pommes frites"
+    ],
+    "category": "frozen",
+    "description": "Frozen fries with a separate shoestring option.",
+    "safety": null,
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "regular",
+        "label": "Frozen, regular-cut",
+        "state": "frozen",
+        "temperatureF": 400,
+        "minutes": [
+          18,
+          20
+        ],
+        "portion": "1 lb frozen fries; spread in one layer and work in batches as needed. Reference used a Cosori 5.8-quart basket.",
+        "preheat": "yes",
+        "turn": "Shake after 10 minutes.",
+        "steps": [
+          "Preheat, then spread frozen fries in one layer with a light oil mist if desired.",
+          "Cook for 10 minutes, shake, then continue for 8–10 minutes until hot and crisp."
+        ],
+        "notes": [
+          "Cut and appliance matter: the independent Iconic chart gives thick-cut fries 16–22 minutes at 395°F. Thin shoestring fries have a separate reference below."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Frozen French Fries",
+            "publisher": "Air Frying Foodie (Jen Gamble)",
+            "url": "https://airfryingfoodie.com/air-fryer-frozen-french-fries/",
+            "role": "reference",
+            "locator": "Recipe card",
+            "evidence": "1 lb; preheat 400°F; 10 minutes, shake, then 8–10 minutes."
+          },
+          {
+            "title": "Iconic Air Fryer Cooking Times Guide",
+            "publisher": "COSORI",
+            "url": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+            "role": "cross-check",
+            "locator": "Frozen foods: thick-cut French fries",
+            "evidence": "395°F, 16–22 minutes."
+          }
+        ]
+      },
+      {
+        "id": "shoestring",
+        "label": "Frozen, shoestring",
+        "state": "frozen",
+        "temperatureF": 400,
+        "minutes": [
+          10,
+          10
+        ],
+        "portion": "Frozen shoestring fries (reference prefers Ore-Ida Golden Shoestring); 16 oz recipe, cooked in single-layer batches.",
+        "preheat": "yes",
+        "turn": "Turn halfway.",
+        "steps": [
+          "Place the still-frozen thin fries in one even layer in a preheated basket.",
+          "Turn halfway and check around the stated time; cook further only if needed."
+        ],
+        "notes": [
+          "The independent COSORI thin-cut chart gives 395°F for 14–18 minutes. The shorter selected method is specific to the reference shoestring preparation; package directions take precedence."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Frozen French Fries",
+            "publisher": "Everyday Family Cooking (Samantha Erb)",
+            "url": "https://www.everydayfamilycooking.com/frozen-french-fries-in-air-fryer/",
+            "role": "reference",
+            "locator": "Ingredients and recipe instructions",
+            "evidence": "Shoestring preferred; preheat 400°F; about 10 minutes, turn halfway."
+          },
+          {
+            "title": "Iconic Air Fryer Cooking Times Guide",
+            "publisher": "COSORI",
+            "url": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+            "role": "cross-check",
+            "locator": "Frozen foods: thin-cut French fries",
+            "evidence": "395°F, 14–18 minutes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "chicken-nuggets",
+    "name": "Chicken nuggets",
+    "aliases": [
+      "frozen nuggets",
+      "breaded chicken nuggets"
+    ],
+    "category": "frozen",
+    "description": "A fully cooked nugget reference, kept separate from raw products.",
+    "safety": "poultry",
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "fully-cooked-tyson",
+        "label": "Frozen, fully cooked Tyson Game Time",
+        "state": "frozen",
+        "temperatureF": 390,
+        "minutes": [
+          7,
+          7
+        ],
+        "portion": "Tyson Game Time Lightly Breaded Nuggets, fully cooked and kept frozen. The manufacturer does not specify an air-fryer batch quantity.",
+        "preheat": "unspecified",
+        "turn": "Unspecified by the manufacturer.",
+        "steps": [
+          "Check that the pack is the fully cooked product, not a raw breaded nugget.",
+          "Follow its air-fryer directions and verify the nuggets are heated through before serving."
+        ],
+        "notes": [
+          "This 7-minute reference is for the named fully cooked product. Raw breaded chicken needs different directions and is not covered by this option.",
+          "The independent COSORI nugget chart gives 385°F for 7–12 minutes; brands and nugget sizes differ."
+        ],
+        "sources": [
+          {
+            "title": "Game Time Lightly Breaded Chicken Nuggets",
+            "publisher": "Tyson",
+            "url": "https://www.tyson.com/products/nuggets-patties/00023700061874",
+            "role": "reference",
+            "locator": "Additional Details: Ready to heat anytime",
+            "evidence": "Fully cooked frozen product; air fry 7 minutes at 390°F."
+          },
+          {
+            "title": "Iconic Air Fryer Cooking Times Guide",
+            "publisher": "COSORI",
+            "url": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+            "role": "cross-check",
+            "locator": "Frozen foods: chicken nuggets",
+            "evidence": "385°F, 7–12 minutes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "fish-sticks",
+    "name": "Fish sticks",
+    "aliases": [
+      "fish fingers",
+      "frozen breaded fish sticks"
+    ],
+    "category": "frozen",
+    "description": "Frozen breaded fish with product-specific safety directions.",
+    "safety": "fish",
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "gortons",
+        "label": "Frozen, Gorton's Crunchy Breaded",
+        "state": "frozen",
+        "temperatureF": 400,
+        "minutes": [
+          7,
+          9
+        ],
+        "portion": "Gorton's Crunchy Breaded Fish Sticks, uncooked and kept frozen; arrange in a single layer. Package does not specify air-fryer count.",
+        "preheat": "unspecified",
+        "turn": "Unspecified by the manufacturer.",
+        "steps": [
+          "Keep frozen until cooking and arrange without stacking.",
+          "Follow the product timing and check the center with a food thermometer; continue until the package target is reached."
+        ],
+        "notes": [
+          "This product requires 165°F internally, which is higher than the general fresh-fish guideline. Follow the actual package.",
+          "The independent recipe uses 12 frozen sticks at 400°F for 9–10 minutes with a halfway flip; its method is not substituted for this product label."
+        ],
+        "sources": [
+          {
+            "title": "Crunchy Breaded Fish Sticks",
+            "publisher": "Gorton's",
+            "url": "https://www.gortons.com/products/crunchy-breaded-fish-sticks/",
+            "role": "reference",
+            "locator": "Cooking Directions: Air Fryer",
+            "evidence": "Uncooked frozen; one layer; 400°F, 7–9 minutes; center at least 165°F."
+          },
+          {
+            "title": "Air Fryer Fish Sticks",
+            "publisher": "Everyday Family Cooking (Samantha Erb)",
+            "url": "https://www.everydayfamilycooking.com/air-fryer-fish-sticks-frozen/",
+            "role": "cross-check",
+            "locator": "Recipe card",
+            "evidence": "12 frozen sticks: 400°F, 9–10 minutes, flip halfway."
+          }
+        ],
+        "safetyOverride": {
+          "text": "For this Gorton's product, cook the center to at least 165°F (74°C), following its package directions.",
+          "url": "https://www.gortons.com/products/crunchy-breaded-fish-sticks/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "onion-rings",
+    "name": "Onion rings",
+    "aliases": [
+      "frozen onion rings"
+    ],
+    "category": "frozen",
+    "description": "Frozen panko-breaded onion rings with package-based guidance.",
+    "safety": null,
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "alexia",
+        "label": "Frozen, Alexia breaded rings",
+        "state": "frozen",
+        "temperatureF": 360,
+        "minutes": [
+          12,
+          14
+        ],
+        "portion": "Alexia Crispy Onion Rings with Panko Breading and Sea Salt, from the 13.5 oz pack; basket no more than half full.",
+        "preheat": "yes",
+        "turn": "Shake halfway.",
+        "steps": [
+          "Preheat to the product setting, then add the frozen rings without filling the basket beyond halfway.",
+          "Shake midway and continue until hot and crisp, following the current package if its directions differ."
+        ],
+        "notes": [
+          "The selected method follows the Alexia package directions reproduced in the retailer product information. The actual package takes precedence.",
+          "Project Meal Plan lists a different generic 400°F, 10–12-minute method; those settings are not mixed with this product-specific guide."
+        ],
+        "sources": [
+          {
+            "title": "Alexia Crispy Onion Rings: Product Cooking Instructions",
+            "publisher": "Alexia package directions via Harris Teeter",
+            "url": "https://www.harristeeter.com/p/alexia-crispy-onion-rings-frozen-onion-rings/0083418300705",
+            "role": "reference",
+            "locator": "Product Information: Cooking Instructions, Air Fryer Prep",
+            "evidence": "13.5 oz product; preheat 360°F; basket at most half full; 12–14 minutes; shake halfway."
+          },
+          {
+            "title": "Air Fryer Frozen Foods Cook Time Chart",
+            "publisher": "Project Meal Plan",
+            "url": "https://cdn.projectmealplan.com/wp-content/uploads/2022/02/2022-02-23-Air-Fryer-Frozen-Foods-Cook-Time-Chart.pdf",
+            "role": "cross-check",
+            "locator": "Onion rings",
+            "evidence": "400°F, 10–12 minutes; flip halfway."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "mozzarella-sticks",
+    "name": "Mozzarella sticks",
+    "aliases": [
+      "frozen cheese sticks",
+      "mozzarella cheese sticks"
+    ],
+    "category": "frozen",
+    "description": "Store-bought frozen breaded cheese sticks.",
+    "safety": null,
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "frozen",
+        "label": "Frozen, store-bought",
+        "state": "frozen",
+        "temperatureF": 390,
+        "minutes": [
+          5,
+          7
+        ],
+        "portion": "10 frozen breaded mozzarella sticks, spaced in one layer.",
+        "preheat": "yes",
+        "turn": "Flip halfway.",
+        "steps": [
+          "Preheat and arrange the frozen sticks with space between them.",
+          "Turn halfway and watch for melted filling; remove before the cheese escapes."
+        ],
+        "notes": [
+          "Start checking at five minutes. A separate chart uses 380°F for 7–9 minutes; this entry keeps the reference recipe's 390°F method. Allow very hot filling to cool before eating."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Frozen Mozzarella Sticks",
+            "publisher": "Air Frying Foodie (Jen Gamble)",
+            "url": "https://airfryingfoodie.com/air-fryer-frozen-mozzarella-sticks/",
+            "role": "reference",
+            "locator": "Recipe card and How to Make",
+            "evidence": "10 frozen sticks; preheat 390°F; 5–7 minutes, flip halfway."
+          },
+          {
+            "title": "Air Fryer Frozen Foods Cook Time Chart",
+            "publisher": "Project Meal Plan",
+            "url": "https://cdn.projectmealplan.com/wp-content/uploads/2022/02/2022-02-23-Air-Fryer-Frozen-Foods-Cook-Time-Chart.pdf",
+            "role": "cross-check",
+            "locator": "Mozzarella sticks",
+            "evidence": "380°F, 7–9 minutes; check at six."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "tater-tots",
+    "name": "Tater tots",
+    "aliases": [
+      "potato tots",
+      "potato puffs",
+      "tater puffs"
+    ],
+    "category": "frozen",
+    "description": "Frozen potato bites shaken during cooking.",
+    "safety": null,
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "frozen",
+        "label": "Frozen",
+        "state": "frozen",
+        "temperatureF": 400,
+        "minutes": [
+          12,
+          15
+        ],
+        "portion": "2 cups frozen tater tots in a single layer; reference favors Ore-Ida.",
+        "preheat": "yes",
+        "turn": "Toss every 4–5 minutes.",
+        "steps": [
+          "Preheat and spread the frozen tots without stacking.",
+          "Toss during cooking and stop once the outsides are crisp and the centers hot."
+        ],
+        "notes": [
+          "The selected range is from the recipe's step-by-step section. Its card starts at 12 minutes with extra time for crispness. The independent EFC recipe gives 7–9 minutes for its own preparation, so do not assume every brand matches."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Tater Tots",
+            "publisher": "Air Frying Foodie (Jen Gamble)",
+            "url": "https://airfryingfoodie.com/air-fryer-tater-tots/",
+            "role": "reference",
+            "locator": "How to Make, steps 1–4; recipe quantities",
+            "evidence": "2 cups, single layer; preheat 400°F; 12–15 minutes, toss every 4–5."
+          },
+          {
+            "title": "Crispy Tater Tots in the Air Fryer",
+            "publisher": "Everyday Family Cooking (Samantha Erb)",
+            "url": "https://www.everydayfamilycooking.com/air-fryer-tater-tots/",
+            "role": "cross-check",
+            "locator": "Recipe card",
+            "evidence": "400°F, 7–9 minutes, shake halfway."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "hash-browns",
+    "name": "Hash browns",
+    "aliases": [
+      "hash brown patties",
+      "frozen hashbrowns",
+      "hashbrown patties"
+    ],
+    "category": "frozen",
+    "description": "Frozen patties, rather than loose shredded potatoes.",
+    "safety": null,
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "patties",
+        "label": "Frozen patties",
+        "state": "frozen",
+        "temperatureF": 400,
+        "minutes": [
+          8,
+          10
+        ],
+        "portion": "4 frozen hash brown patties (Ore-Ida used in the reference), arranged in one layer.",
+        "preheat": "yes",
+        "turn": "Flip halfway.",
+        "steps": [
+          "Preheat and place the frozen patties flat without overlapping.",
+          "Turn midway and check that both sides are crisp and the centers hot."
+        ],
+        "notes": [
+          "This guide covers formed frozen patties, not loose shreds or raw grated potato. The independent chart gives 390°F for 9–10 minutes."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Hash Brown Patties",
+            "publisher": "Everyday Family Cooking (Samantha Erb)",
+            "url": "https://www.everydayfamilycooking.com/air-fryer-frozen-hash-brown-patties/",
+            "role": "reference",
+            "locator": "Recipe card",
+            "evidence": "4 patties; preheat 400°F; 8–10 minutes, flip halfway."
+          },
+          {
+            "title": "Air Fryer Frozen Foods Cook Time Chart",
+            "publisher": "Project Meal Plan",
+            "url": "https://cdn.projectmealplan.com/wp-content/uploads/2022/02/2022-02-23-Air-Fryer-Frozen-Foods-Cook-Time-Chart.pdf",
+            "role": "cross-check",
+            "locator": "Hash brown patties",
+            "evidence": "390°F, 9–10 minutes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "spring-rolls",
+    "name": "Spring rolls",
+    "aliases": [
+      "frozen spring rolls",
+      "vegetable spring rolls"
+    ],
+    "category": "frozen",
+    "description": "Crisp frozen spring rolls with room around each one.",
+    "safety": null,
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "frozen-vegetable",
+        "label": "Frozen vegetable rolls",
+        "state": "frozen",
+        "temperatureF": 380,
+        "minutes": [
+          9,
+          10
+        ],
+        "portion": "4 large frozen vegetable spring rolls, spaced in one layer. Not fresh rice-paper rolls.",
+        "preheat": "yes",
+        "turn": "Flip after 5 minutes.",
+        "steps": [
+          "Preheat, then place the still-frozen rolls apart in a single layer.",
+          "Turn after five minutes and continue until the wrapper is crisp and the filling hot; let cool briefly."
+        ],
+        "notes": [
+          "The reference favors vegetarian rolls. Raw meat-filled rolls are not covered by this option. Air Fryer Eats gives 380°F for 8–10 minutes without preheating, a different starting method."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Frozen Spring Rolls",
+            "publisher": "Simply Air Fryer (Lisa Wychopen)",
+            "url": "https://www.simplyairfryer.com/air-fryer-frozen-spring-rolls/",
+            "role": "reference",
+            "locator": "Recipe card and recipe tips",
+            "evidence": "4 frozen rolls; preheat 380°F; 5 minutes then 4–5 after flipping."
+          },
+          {
+            "title": "Frozen Spring Rolls in Air Fryer",
+            "publisher": "Air Fryer Eats Team",
+            "url": "https://airfryereats.com/frozen-spring-rolls-in-air-fryer/",
+            "role": "cross-check",
+            "locator": "Steps to Make; preheat FAQ",
+            "evidence": "380°F, 8–10 minutes, flip halfway; no preheat."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "dumplings",
+    "name": "Dumplings",
+    "aliases": [
+      "potstickers",
+      "gyoza",
+      "frozen dumplings",
+      "vegetable potstickers"
+    ],
+    "category": "frozen",
+    "description": "Frozen vegetable potstickers cooked with a light oil coating.",
+    "safety": null,
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "vegetable-potstickers",
+        "label": "Frozen vegetable potstickers",
+        "state": "frozen",
+        "temperatureF": 370,
+        "minutes": [
+          9,
+          11
+        ],
+        "portion": "8 oz frozen vegetable potstickers, arranged in one layer and coated lightly with oil.",
+        "preheat": "yes",
+        "turn": "Flip after 5 minutes; mist with oil again if drying.",
+        "steps": [
+          "Preheat, lightly oil the potstickers and arrange without stacking.",
+          "Turn after five minutes and finish until the wrapper is crisp and the filling cooked through; rest two minutes."
+        ],
+        "notes": [
+          "Use the vegetable-potsticker option here. Dumplings with raw meat, thick dough or a package that requires steaming need their own directions. The independent chart uses 350°F for 9–11 minutes."
+        ],
+        "sources": [
+          {
+            "title": "Frozen Potstickers in the Air Fryer",
+            "publisher": "Everyday Family Cooking (Samantha Erb)",
+            "url": "https://www.everydayfamilycooking.com/air-fryer-dumplings/",
+            "role": "reference",
+            "locator": "Recipe card and method",
+            "evidence": "8 oz; preheat 370°F; 5 minutes then 4–6; flip and re-oil."
+          },
+          {
+            "title": "Air Fryer Frozen Foods Cook Time Chart",
+            "publisher": "Project Meal Plan",
+            "url": "https://cdn.projectmealplan.com/wp-content/uploads/2022/02/2022-02-23-Air-Fryer-Frozen-Foods-Cook-Time-Chart.pdf",
+            "role": "cross-check",
+            "locator": "Potstickers",
+            "evidence": "350°F, 9–11 minutes; oil and flip."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "jalapeno-poppers",
+    "name": "Jalapeño poppers",
+    "aliases": [
+      "jalapeno poppers",
+      "frozen poppers",
+      "breaded jalapenos"
+    ],
+    "category": "frozen",
+    "description": "Frozen breaded peppers filled with cheese.",
+    "safety": null,
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "farm-rich",
+        "label": "Frozen, Farm Rich breaded",
+        "state": "frozen",
+        "temperatureF": 390,
+        "minutes": [
+          8,
+          8
+        ],
+        "portion": "Farm Rich frozen breaded cheese-filled jalapeño peppers. The manufacturer article does not state batch size; keep them in one spaced layer.",
+        "preheat": "yes",
+        "turn": "Unspecified in the manufacturer article.",
+        "steps": [
+          "Preheat and arrange the frozen poppers apart in a single layer.",
+          "Follow the manufacturer timing, check that the filling is hot through and let it cool slightly before eating."
+        ],
+        "notes": [
+          "This is the manufacturer article's method for frozen breaded Farm Rich peppers, not fresh bacon-wrapped peppers. Follow the current package if it differs.",
+          "The independent recipe cooks nine Farm Rich poppers at 380°F for nine minutes with a turn after five; its batch size is not converted into a multiplier.",
+          "The independent reference checks a 165°F center. Cheese filling can burn the mouth even when the crust seems cool."
+        ],
+        "sources": [
+          {
+            "title": "Quick and Easy Air Fryer Recipes",
+            "publisher": "Farm Rich",
+            "url": "https://farmrich.com/snack-hacks/easy-air-fryer-recipes/",
+            "role": "reference",
+            "locator": "Jalapeño Peppers",
+            "evidence": "Farm Rich frozen jalapeño peppers: preheat 390°F; 8 minutes."
+          },
+          {
+            "title": "Frozen Jalapeno Poppers in the Air Fryer",
+            "publisher": "Everyday Family Cooking (Samantha Erb)",
+            "url": "https://www.everydayfamilycooking.com/frozen-jalapeno-poppers-in-air-fryer/",
+            "role": "cross-check",
+            "locator": "Recipe card; How to Know When Done",
+            "evidence": "9 Farm Rich; preheat 380°F; 5 plus 4 minutes; target 165°F."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "garlic-bread",
+    "name": "Garlic bread",
+    "aliases": [
+      "garlic baguette",
+      "garlic toast"
+    ],
+    "category": "bakery",
+    "description": "Fresh baguette slices spread with garlic butter.",
+    "safety": null,
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "fresh-baguette",
+        "label": "Fresh, 1-inch baguette slices",
+        "state": "fresh",
+        "temperatureF": 350,
+        "minutes": [
+          3,
+          5
+        ],
+        "portion": "French baguette cut into about 1-inch slices, spread with garlic butter; leave gaps in one layer.",
+        "preheat": "yes",
+        "turn": "Not required in the reference method.",
+        "steps": [
+          "Spread softened garlic butter across the bread, keeping the slices similar in thickness.",
+          "Place apart in the preheated basket and watch the garlic closely near the end."
+        ],
+        "notes": [
+          "This is fresh prepared bread, not frozen Texas toast or uncooked bread dough. An independent French-bread recipe gives 4–6 minutes at the same setting."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Garlic Bread",
+            "publisher": "Simply Air Fryer (Lisa Wychopen)",
+            "url": "https://www.simplyairfryer.com/air-fryer-garlic-bread/",
+            "role": "reference",
+            "locator": "Ingredients and step-by-step instructions",
+            "evidence": "1-inch baguette slices; preheat 350°F; 3–5 minutes."
+          },
+          {
+            "title": "Easy Air Fryer Garlic Bread",
+            "publisher": "Tastes of Homemade (Deanna)",
+            "url": "https://tastesofhomemade.com/easy-air-fryer-garlic-bread/",
+            "role": "cross-check",
+            "locator": "Step by Step Instructions",
+            "evidence": "French bread with garlic butter: 350°F, 4–6 minutes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "biscuits",
+    "name": "Biscuits",
+    "aliases": [
+      "American biscuits",
+      "canned biscuits",
+      "refrigerated biscuits",
+      "Pillsbury Grands"
+    ],
+    "category": "bakery",
+    "description": "Refrigerated American biscuit dough baked in small batches.",
+    "safety": null,
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "refrigerated-grands",
+        "label": "Refrigerated Grands Flaky Layers",
+        "state": "ready-to-bake",
+        "temperatureF": 320,
+        "minutes": [
+          11,
+          13
+        ],
+        "portion": "4 refrigerated Pillsbury Grands Flaky Layers biscuits from an 8-count can, spaced on a fitted parchment round in the reference 3.7-quart basket; keep remaining dough chilled.",
+        "preheat": "no",
+        "turn": "Turn after 6 minutes.",
+        "steps": [
+          "If the appliance permits it, place a fitted parchment round under four spaced biscuits. Never heat loose parchment on its own.",
+          "Start from cold, cook six minutes, turn and continue five to seven minutes until cooked inside."
+        ],
+        "notes": [
+          "This is the manufacturer's refrigerated product method, not frozen biscuits. The independent EFC canned-biscuit method uses 350°F for seven minutes; its frozen method takes longer.",
+          "Check the center as well as surface color. Use liners only as your appliance manual allows."
+        ],
+        "sources": [
+          {
+            "title": "We Tried These Products in an Air Fryer",
+            "publisher": "Pillsbury Kitchens",
+            "url": "https://www.pillsbury.com/everyday-eats/we-tried-these-products-in-an-air-fryer-and-heres-what-actually-worked",
+            "role": "reference",
+            "locator": "Biscuits: steps 1–4; final tips",
+            "evidence": "4 refrigerated Grands; 320°F: 6 minutes, turn, then 5–7; no preheat."
+          },
+          {
+            "title": "Air Fryer Biscuits",
+            "publisher": "Everyday Family Cooking (Samantha Erb)",
+            "url": "https://www.everydayfamilycooking.com/air-fryer-biscuits/",
+            "role": "cross-check",
+            "locator": "Can I Cook Canned Biscuits Instead?",
+            "evidence": "Canned biscuits: preheated 350°F, 5 plus 2 minutes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cinnamon-rolls",
+    "name": "Cinnamon rolls",
+    "aliases": [
+      "cinnamon buns",
+      "canned cinnamon rolls",
+      "refrigerated cinnamon rolls"
+    ],
+    "category": "bakery",
+    "description": "Refrigerated cinnamon-roll dough, with icing added afterward.",
+    "safety": null,
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "original-can",
+        "label": "Refrigerated original 8-count rolls",
+        "state": "ready-to-bake",
+        "temperatureF": 320,
+        "minutes": [
+          10,
+          12
+        ],
+        "portion": "Pillsbury original refrigerated cinnamon rolls from an 8-count can, topping-side down on a fitted parchment round in the reference 3.7-quart basket; not jumbo Grands.",
+        "preheat": "no",
+        "turn": "Turn after 6 minutes, then finish topping-side up.",
+        "steps": [
+          "Following the manufacturer method, arrange on fitted parchment with topping-side down; start without preheating.",
+          "After six minutes, discard the parchment, turn topping-side up and finish for four to six minutes until baked through; add icing afterward."
+        ],
+        "notes": [
+          "The independent EFC recipe uses a preheated 350°F four-minute method for small rolls. This guide follows the manufacturer's longer cold-start method rather than averaging them.",
+          "Do not substitute jumbo, frozen or homemade dough. Keep any liner weighed down with food and follow the appliance manual."
+        ],
+        "sources": [
+          {
+            "title": "We Tried These Products in an Air Fryer",
+            "publisher": "Pillsbury Kitchens",
+            "url": "https://www.pillsbury.com/everyday-eats/we-tried-these-products-in-an-air-fryer-and-heres-what-actually-worked",
+            "role": "reference",
+            "locator": "Original Cinnamon Rolls: steps 1–5; final tips",
+            "evidence": "8-count original rolls: 320°F, 6 then 4–6 minutes; no preheat."
+          },
+          {
+            "title": "Air Fryer Cinnamon Rolls",
+            "publisher": "Everyday Family Cooking (Samantha Erb)",
+            "url": "https://www.everydayfamilycooking.com/air-fryer-cinnamon-rolls/",
+            "role": "cross-check",
+            "locator": "Recipe card; How Long to Cook",
+            "evidence": "Small refrigerated 8-count rolls: preheat 350°F, about 4 minutes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cookies",
+    "name": "Cookies",
+    "aliases": [
+      "cookie dough",
+      "refrigerated cookies",
+      "chocolate chip cookies"
+    ],
+    "category": "bakery",
+    "description": "Small refrigerated chocolate-chip cookie rounds.",
+    "safety": null,
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "small-refrigerated",
+        "label": "Refrigerated, small dough rounds",
+        "state": "ready-to-bake",
+        "temperatureF": 300,
+        "minutes": [
+          13,
+          14
+        ],
+        "portion": "5 Pillsbury Ready to Bake chocolate-chip dough rounds from a 16 oz, 24-count pack; flatten to about 1 1/2 inches and space on a fitted foil round in the reference 3.7-quart basket.",
+        "preheat": "unspecified",
+        "turn": "Not required in the reference method.",
+        "steps": [
+          "If the appliance permits foil, line the base as directed in the reference and space the flattened dough rounds apart.",
+          "Cook until the edges set and rest in the basket for five minutes. Transfer the cookies on their foil to a cooling rack for another fifteen minutes before removing them from the foil."
+        ],
+        "notes": [
+          "The reference adds a caramel candy after baking; the displayed time is the cookie-baking stage before that addition.",
+          "An independent refrigerated-dough recipe uses 320°F for five minutes plus checking time, with different preparation. Do not infer a universal cookie time from these differences.",
+          "Keep foil or parchment secured by food and away from the heating element; follow your appliance manual."
+        ],
+        "sources": [
+          {
+            "title": "Pillsbury Air Fryer Caramel Chocolate Chip Cookies",
+            "publisher": "Pillsbury Kitchens via Giant Food / Savory",
+            "url": "https://recipecenter.giantfood.com/recipes/242362/pillsbury-air-fryer-caramel-chocolate-chip-cookies",
+            "role": "reference",
+            "locator": "Ingredients and steps 1–3",
+            "evidence": "5 small 24-count-pack rounds, flattened; 300°F, 13–14 minutes; rest five."
+          },
+          {
+            "title": "Refrigerated Cookie Dough in Air Fryer",
+            "publisher": "Food Lovin Family (Heather Seeley)",
+            "url": "https://www.foodlovinfamily.com/how-to-cook-refrigerated-cookie-dough-in-air-fryer/",
+            "role": "cross-check",
+            "locator": "Recipe card",
+            "evidence": "Refrigerated Pillsbury dough: 320°F, 5 minutes; check and extend."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "pizza",
+    "name": "Pizza slices",
+    "aliases": [
+      "leftover pizza",
+      "reheat pizza",
+      "pizza slice"
+    ],
+    "category": "reheat",
+    "description": "Previously cooked chilled pizza reheated in a single layer.",
+    "safety": "leftovers",
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "chilled-regular",
+        "label": "Chilled, regular-crust slices",
+        "state": "reheat",
+        "temperatureF": 350,
+        "minutes": [
+          3,
+          4
+        ],
+        "portion": "Previously cooked, refrigerated regular-crust pizza slices, spaced in one layer. Not raw dough, frozen pizza or deep-dish.",
+        "preheat": "yes",
+        "turn": "Not required in the reference method.",
+        "steps": [
+          "Preheat and arrange the chilled slices without overlapping.",
+          "Check at the stated time; continue as needed until the center is safely reheated and the crust crisp."
+        ],
+        "notes": [
+          "Time is an initial check, not proof of food safety. Reheat leftovers to 165°F (74°C).",
+          "Food Lovin Family uses 325°F for 3–4 minutes for regular slices and a different deep-dish setting. Thick slices need separate guidance, not a fixed multiplier."
+        ],
+        "sources": [
+          {
+            "title": "Reheat Pizza in Air Fryer",
+            "publisher": "Everyday Family Cooking (Samantha Erb)",
+            "url": "https://www.everydayfamilycooking.com/reheat-pizza-in-air-fryer/",
+            "role": "reference",
+            "locator": "How to Reheat Pizza",
+            "evidence": "Preheat 350°F; cold slices in one layer; 3–4 minutes, extend if needed."
+          },
+          {
+            "title": "How To Reheat Pizza In Air Fryer",
+            "publisher": "Food Lovin Family (Heather Seeley)",
+            "url": "https://www.foodlovinfamily.com/how-to-reheat-pizza-in-air-fryer/",
+            "role": "cross-check",
+            "locator": "Recipe card",
+            "evidence": "Regular leftover slices: 325°F, 3–4 minutes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "grilled-cheese",
+    "name": "Grilled cheese",
+    "aliases": [
+      "cheese toastie",
+      "grilled cheese sandwich",
+      "toasted cheese sandwich"
+    ],
+    "category": "reheat",
+    "description": "A fresh cheese sandwich toasted on both sides.",
+    "safety": null,
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "fresh-sandwich",
+        "label": "Fresh sandwich",
+        "state": "fresh",
+        "temperatureF": 375,
+        "minutes": [
+          5,
+          10
+        ],
+        "portion": "1 sandwich: 2 bread slices with butter or mayonnaise outside and 2–3 slices cheddar inside. No meat filling.",
+        "preheat": "yes",
+        "turn": "Turn after 3–5 minutes; cook another 2–5 minutes.",
+        "steps": [
+          "Assemble the sandwich with cheese inside and a thin butter or mayonnaise coating outside.",
+          "Cook until browning begins, turn carefully and finish until the cheese melts and both sides toast."
+        ],
+        "notes": [
+          "This is fresh preparation, listed under prepared foods, not a leftover-reheating guide.",
+          "The independent Food Lovin Family method starts without preheating at 370°F and cooks four minutes per side. Bread thickness and appliance behavior affect the finish."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Grilled Cheese",
+            "publisher": "Love & Lemons (Jeanine Donofrio)",
+            "url": "https://www.loveandlemons.com/air-fryer-grilled-cheese/",
+            "role": "reference",
+            "locator": "Recipe card",
+            "evidence": "1 sandwich; preheat 375°F; 3–5 minutes then 2–5 after flipping."
+          },
+          {
+            "title": "Air Fryer Grilled Cheese",
+            "publisher": "Food Lovin Family (Heather Seeley)",
+            "url": "https://www.foodlovinfamily.com/air-fryer-grilled-cheese/",
+            "role": "cross-check",
+            "locator": "How to make; recipe tips",
+            "evidence": "370°F, 4 minutes per side; no preheat."
+          }
+        ]
+      }
+    ]
+  }
+]
