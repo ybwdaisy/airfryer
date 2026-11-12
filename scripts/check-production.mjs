@@ -20,7 +20,7 @@ try {
     const html = await readFile(`dist/${path}.html`, 'utf8');
     assert.ok(html.includes(`rel="canonical" href="https://airfryer.ybwdaisy.com/${path}"`), `Clean canonical for ${path}`);
   }
-  console.log('Production output: dedicated GA ID, no unconditional Google tag, canonical hostname and crawl settings verified. No page opened and no analytics sent.');
+  console.log('Production output: configured GA ID, no unconditional Google tag, canonical hostname and crawl settings verified. No page opened and no analytics sent.');
 } finally {
   // Keep ordinary local preview output untracked and noindex, even if a production check fails.
   build({ ...process.env, VERCEL_ENV: 'preview' });

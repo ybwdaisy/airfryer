@@ -34,15 +34,19 @@ export function initAnalytics() {
       loaded = true;
       window.dataLayer = window.dataLayer || [];
       window.gtag = function () { window.dataLayer!.push(arguments); };
-      window.gtag('consent', 'default', { analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
-      window.gtag('consent', 'update', { analytics_storage: 'granted' });
-      window.gtag('js', new Date());
-      window.gtag('config', id, {
+      const config = {
         send_page_view: false, cookie_domain: location.hostname, cookie_flags: 'SameSite=Lax;Secure',
         allow_google_signals: false, allow_ad_personalization_signals: false,
         page_location: `${location.origin}${location.pathname}`,
         page_referrer: document.referrer ? new URL(document.referrer).origin : '',
-      });
+      };
+      window.gtag('consent', 'default', { analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
+      // The shared Google tag can initialize a destination before its config command.
+      // Apply safe defaults first so initialization cannot send the URL query string.
+      window.gtag('set', config);
+      window.gtag('consent', 'update', { analytics_storage: 'granted' });
+      window.gtag('js', new Date());
+      window.gtag('config', id, config);
     } else window.gtag?.('consent', 'update', { analytics_storage: 'granted' });
     if (!document.querySelector('#google-analytics-tag')) {
       const script = document.createElement('script');
