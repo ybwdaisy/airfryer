@@ -20,7 +20,7 @@ function initShared() {
       const language = link.dataset.languageSwitch === 'zh' ? 'zh' : 'en';
       try { localStorage.setItem(languageKey, language); } catch { /* Navigation still chooses the language. */ }
       const url = new URL(location.href);
-      url.pathname = localizedPath(url.pathname, language);
+      url.pathname = localizedPath(link.dataset.languagePath ?? url.pathname, language);
       link.href = url.href;
     };
     link.addEventListener('pointerdown', choose);

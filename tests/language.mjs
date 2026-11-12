@@ -2,6 +2,7 @@ import { chromium, expect } from '@playwright/test';
 import { mkdir, writeFile } from 'node:fs/promises';
 
 const base = process.env.TEST_BASE_URL || 'http://127.0.0.1:4328';
+const production = process.env.TEST_PRODUCTION === '1';
 const browser = await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true});
 const results=[];
 const check=async(name,run)=>{await run();results.push(name);console.log('PASS '+name);};
@@ -22,6 +23,7 @@ try {
     await page.locator('[data-language-switch="zh"]').click();
     await expect(page).toHaveURL(/\/zh\?q=.*category=frozen&unit=c/);
     await expect(page.locator('html')).toHaveAttribute('lang','zh-CN');
+    await expect(page.locator('[data-food-row]:visible')).toHaveCount(1);
     await expect(page.locator('[data-food-row]:visible .food-name > span')).toHaveText('薯条');
     await page.locator('[data-food-link="french-fries"]').click();
     await expect(page).toHaveURL(/\/zh\/foods\/french-fries\?unit=c/);
@@ -52,7 +54,7 @@ try {
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href','https://airfryer.ybwdaisy.com/zh/foods/fish-sticks');
     await expect(page.locator('link[hreflang="en"]')).toHaveAttribute('href','https://airfryer.ybwdaisy.com/foods/fish-sticks');
     await page.goto(base+'/zh/privacy');
-    await expect(page.locator('#analytics-status')).toContainText('当前未启用统计');
+    await expect(page.locator('#analytics-status')).toContainText(production ? '您尚未选择是否允许统计' : '当前未启用统计');
     await expect(page.locator('article')).toContainText('温度单位、语言和统计选择');
     expect(requests).toBe(0);
   });
@@ -71,6 +73,15 @@ try {
       }
     }
   });
+  await check('missing-page language switch uses the localized error page',async()=>{
+    const response=await page.goto(base+'/missing-guide');expect(response.status()).toBe(404);
+    await page.locator('[data-language-switch="zh"]').click();
+    await expect(page).toHaveURL(/\/zh\/404$/);
+    await expect(page.locator('h1')).toHaveText('这里还没有这条烹饪参考。');
+    await page.locator('[data-language-switch="en"]').click();
+    await expect(page).toHaveURL(/\/404$/);
+    await expect(page.locator('h1')).toHaveText('That guide isn’t on the shelf.');
+  });
   await check('Chinese content and links work without JavaScript or local storage',async()=>{
     const c=await browser.newContext({javaScriptEnabled:false});const p=await c.newPage();
     await p.goto(base+'/zh/foods/chicken-breast');
@@ -86,6 +97,7 @@ try {
     const c=await browser.newContext();let google=0;
     await c.route(/googletagmanager\.com|google-analytics\.com/,r=>{google++;return r.fulfill({contentType:'text/javascript',body:''});});
     await c.route(base+'/**',async route=>{
+      if(route.request().resourceType() !== 'document') return route.continue();
       const response=await route.fetch();
       if((response.headers()['content-type']||'').includes('text/html'))await route.fulfill({response,body:(await response.text()).replace(/<meta\b[^>]*name="ga-measurement-id"[^>]*>/,'<meta name="ga-measurement-id" content="G-B34CBGW0EF">')});
       else await route.fulfill({response});
@@ -97,8 +109,8 @@ try {
     await p.locator('[data-privacy-settings]').click();await p.getByRole('button',{name:'Reject analytics',exact:true}).click();
     const before=google;await p.goto(base+'/zh/privacy');
     await expect(p.locator('#analytics-status')).toHaveText('您当前的选择：拒绝统计。');expect(google).toBe(before);
-    await c.close();
+    await c.unrouteAll({behavior:'wait'});await c.close();
   });
   expect(errors).toEqual([]);
   await writeFile('output/language-results.json',JSON.stringify({base,checks:results,pageErrors:errors,googleRequests:requests},null,2));
-} finally { await browser.close(); }
+} finally { await Promise.allSettled(browser.contexts().map(c=>c.unrouteAll({behavior:'wait'})));await browser.close(); }
