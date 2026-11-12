@@ -29,7 +29,13 @@ const schema = breadcrumbs.length ? {
     <meta name="ga-measurement-id" content={gaId} />
     {(!isProduction || noindex) && <meta name="robots" content="noindex, nofollow" />}
     <link rel="canonical" href={canonical} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/svg+xml" sizes="any" href="/favicon.svg?v=2" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=1" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="application-name" content="Airfryer times" />
+    <meta name="apple-mobile-web-app-title" content="Airfryer" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
