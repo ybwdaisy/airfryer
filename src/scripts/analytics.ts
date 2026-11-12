@@ -1,4 +1,5 @@
 type ConsentState = 'granted' | 'denied';
+import { languageFromPath, localizedPath } from '../lib/locale';
 type AnalyticsParams = Record<string, string | number>;
 declare global {
   interface Window {
@@ -21,7 +22,7 @@ export function initAnalytics() {
   let sentPage = false;
   const status = document.querySelector<HTMLElement>('#analytics-status');
   const refresh = () => {
-    if (status) status.textContent = !enabled ? 'Analytics is not configured in this preview. No Google Analytics tag is loaded.' : state === 'granted' ? 'Your current choice: analytics allowed.' : state === 'denied' ? 'Your current choice: analytics rejected.' : 'You have not chosen whether to allow analytics.';
+    if (status) status.textContent = !enabled ? (status.dataset.analyticsUnconfigured ?? 'Analytics is not configured in this preview. No Google Analytics tag is loaded.') : state === 'granted' ? (status.dataset.analyticsGranted ?? 'Your current choice: analytics allowed.') : state === 'denied' ? (status.dataset.analyticsDenied ?? 'Your current choice: analytics rejected.') : (status.dataset.analyticsUnset ?? 'You have not chosen whether to allow analytics.');
   };
   const track = (name: string, params: AnalyticsParams = {}) => {
     if (!enabled || state !== 'granted') return;
@@ -80,7 +81,7 @@ export function initAnalytics() {
   window.airfryerTrack = track;
   document.querySelectorAll<HTMLButtonElement>('[data-consent]').forEach(button => button.addEventListener('click', () => choose(button.dataset.consent as ConsentState)));
   document.querySelectorAll<HTMLButtonElement>('[data-privacy-settings]').forEach(button => button.addEventListener('click', () => {
-    if (!enabled) { location.href = '/privacy#analytics-status'; return; }
+    if (!enabled) { location.href = localizedPath('/privacy', languageFromPath(location.pathname)) + '#analytics-status'; return; }
     if (banner) banner.hidden = false;
     if (close) close.hidden = state === null;
     document.querySelector<HTMLButtonElement>('[data-consent="denied"]')?.focus({ preventScroll: true });

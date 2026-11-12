@@ -1,0 +1,6 @@
+---
+import View from '../../../components/views/CategoryPage.astro';
+import { categories } from '../../../lib/foods';
+export function getStaticPaths() { return categories.map(category => ({ params: { slug: category.slug }, props: { category } })); }
+---
+<View lang="zh" category={Astro.props.category} />

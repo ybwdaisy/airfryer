@@ -4,23 +4,29 @@ import '@fontsource/archivo/latin-500.css';
 import '@fontsource/archivo/latin-600.css';
 import '../styles/app.css';
 import Consent from '../components/Consent.astro';
-interface Props { title: string; description: string; breadcrumbs?: { name: string; path: string }[]; noindex?: boolean }
-const { title, description, breadcrumbs = [], noindex = false } = Astro.props;
+import { t } from '../lib/i18n';
+import { localizedPath, type Language } from '../lib/locale';
+interface Props { title: string; description: string; breadcrumbs?: { name: string; path: string }[]; noindex?: boolean; lang?: Language }
+const { title, description, breadcrumbs = [], noindex = false, lang = 'en' } = Astro.props;
+const lp = (path: string) => localizedPath(path, lang);
 const origin = 'https://airfryer.ybwdaisy.com';
 const cleanPath = Astro.url.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '').replace(/\/$/, '') || '/';
 const canonical = new URL(cleanPath, origin).href;
+const englishUrl = new URL(localizedPath(cleanPath, 'en'), origin).href;
+const chineseUrl = new URL(localizedPath(cleanPath, 'zh'), origin).href;
+const otherLanguage = lang === 'en' ? 'zh' : 'en';
 const isProduction = import.meta.env.PROD && process.env.VERCEL_ENV === 'production';
 const candidate = import.meta.env.PUBLIC_GA_MEASUREMENT_ID ?? '';
 const gaId = isProduction && /^G-[A-Z0-9]+$/.test(candidate) ? candidate : '';
 const schema = breadcrumbs.length ? {
   '@context': 'https://schema.org', '@type': 'BreadcrumbList',
-  itemListElement: [{ name: 'All foods', path: '/' }, ...breadcrumbs].map((b, i) => ({
-    '@type': 'ListItem', position: i + 1, name: b.name, item: new URL(b.path, origin).href,
+  itemListElement: [{ name: t(lang, 'All foods'), path: '/' }, ...breadcrumbs].map((b, i) => ({
+    '@type': 'ListItem', position: i + 1, name: b.name, item: new URL(lp(b.path), origin).href,
   })),
 } : { '@context': 'https://schema.org', '@type': 'WebSite', name: 'Airfryer times', url: origin, description };
 ---
 <!doctype html>
-<html lang="en">
+<html lang={lang === 'zh' ? 'zh-CN' : 'en'}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -29,6 +35,9 @@ const schema = breadcrumbs.length ? {
     <meta name="ga-measurement-id" content={gaId} />
     {(!isProduction || noindex) && <meta name="robots" content="noindex, nofollow" />}
     <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="en" href={englishUrl} />
+    <link rel="alternate" hreflang="zh-CN" href={chineseUrl} />
+    <link rel="alternate" hreflang="x-default" href={englishUrl} />
     <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/svg+xml" sizes="any" href="/favicon.svg?v=2" />
@@ -44,33 +53,36 @@ const schema = breadcrumbs.length ? {
     <script type="application/ld+json" set:html={JSON.stringify(schema).replaceAll('<', '\\u003c')} />
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main">{t(lang, 'Skip to content')}</a>
     <header class="site-header container">
-      <a class="wordmark" href="/" aria-label="Airfryer times home">
+      <a class="wordmark" href={lp('/')} aria-label={t(lang, 'Airfryer times home')}>
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3m-6-1 1.5 2M18 5l-1.5 2M5 11h14v5a5 5 0 0 1-5 5h-4a5 5 0 0 1-5-5zM9 15h6" /></svg>
         Airfryer <span class="wordmark-tail">times</span>
       </a>
-      <nav class="header-nav" aria-label="Main navigation">
-        <a href="/">All foods</a>
-        <a href="/methodology">Our sources</a>
+      <nav class="header-nav" aria-label={t(lang, 'Main navigation')}>
+        <a href={lp('/')}>{t(lang, 'All foods')}</a>
+        <a href={lp('/methodology')}>{t(lang, 'Our sources')}</a>
       </nav>
-      <div class="unit-switch js-only" role="group" aria-label="Temperature unit" hidden>
+      <div class="header-controls">
+      <a class="language-toggle" href={localizedPath(cleanPath, otherLanguage)} data-language-switch={otherLanguage} hreflang={otherLanguage === 'zh' ? 'zh-CN' : 'en'} aria-label={lang === 'en' ? 'Switch to Chinese' : '切换到英文'}><span lang={otherLanguage === 'zh' ? 'zh-CN' : 'en'}>{lang === 'en' ? '中文' : 'EN'}</span></a>
+      <div class="unit-switch js-only" role="group" aria-label={t(lang, 'Temperature unit')} hidden>
         <button type="button" data-unit="f" aria-pressed="true">°F</button>
         <button type="button" data-unit="c" aria-pressed="false">°C</button>
+      </div>
       </div>
     </header>
     <main id="main" class="container">
       <slot />
     </main>
     <footer class="site-footer container">
-      <p>Cooking times are a starting point. Check doneness before serving.</p>
-      <nav aria-label="Footer navigation">
-        <a href="/methodology">Sources & safety</a>
-        <a href="/privacy">Privacy</a>
-        <button type="button" class="text-button js-only" data-privacy-settings hidden>Analytics choices</button>
+      <p>{t(lang, 'Cooking times are a starting point. Check doneness before serving.')}</p>
+      <nav aria-label={t(lang, 'Footer navigation')}>
+        <a href={lp('/methodology')}>{t(lang, 'Sources & safety')}</a>
+        <a href={lp('/privacy')}>{t(lang, 'Privacy')}</a>
+        <button type="button" class="text-button js-only" data-privacy-settings hidden>{t(lang, 'Analytics choices')}</button>
       </nav>
     </footer>
-    <Consent />
+    <Consent lang={lang} />
     <script>
       import '../scripts/shared.ts';
     </script>

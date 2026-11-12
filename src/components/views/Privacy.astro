@@ -1,0 +1,27 @@
+---
+import { t } from '../../lib/i18n';
+import { localizedPath, type Language } from '../../lib/locale';
+
+import Layout from '../../layouts/Layout.astro';
+
+const lang: Language = Astro.props.lang ?? 'en';
+const lp = (path: string) => localizedPath(path, lang);
+
+---
+<Layout lang={lang} title={t(lang, "Privacy & analytics choices | Airfryer times")} description={t(lang, "What this air fryer tool stores in your browser, how optional Google Analytics works, and how to change your choice.")} breadcrumbs={[{ name: 'Privacy', path: '/privacy' }]}>
+  <nav class="breadcrumbs" aria-label={t(lang, "Breadcrumb")}><a href={lp('/')}>{t(lang, "All foods")}</a><span aria-hidden="true">/</span><span>{t(lang, "Privacy")}</span></nav>
+  <article class="prose">
+    <h1>{t(lang, "Your kitchen, your choice.")}</h1>
+    <p class="lead">{t(lang, "You can use every cooking guide without accepting analytics.")}</p>
+    <h2>{t(lang, "What stays in your browser")}</h2>
+    <p>{t(lang, "We store your temperature unit, language and analytics choice in this site’s browser storage. Search and filter choices can appear in the address bar so you can return to them. The tool does not require an account or ask you to upload food photos.")}</p>
+    <h2>{t(lang, "Optional Google Analytics")}</h2>
+    <p>{t(lang, "When enabled and accepted, Google Analytics measures page visits and actions such as choosing a food or changing a cooking condition. We send result counts and predefined food identifiers, not your raw search text. Analytics page addresses omit query parameters.")}</p>
+    <p>{t(lang, "The Google tag is blocked until you allow analytics. Rejecting it keeps the tag blocked. Analytics cookies are scoped to airfryer.ybwdaisy.com rather than intentionally shared across other ybwdaisy.com tools. Google describes its processing in its")} <a href="https://policies.google.com/privacy">{t(lang, "privacy policy")}</a>.</p>
+    <section class="privacy-status"><h2>{t(lang, "Change your choice")}</h2><p id="analytics-status" data-analytics-unconfigured={t(lang, 'Analytics is not configured in this preview. No Google Analytics tag is loaded.')} data-analytics-granted={t(lang, 'Your current choice: analytics allowed.')} data-analytics-denied={t(lang, 'Your current choice: analytics rejected.')} data-analytics-unset={t(lang, 'You have not chosen whether to allow analytics.')} role="status">{t(lang, "JavaScript is needed to manage optional analytics. With JavaScript disabled, no Google Analytics tag loads.")}</p><button type="button" class="button button-quiet js-only" data-privacy-settings hidden>{t(lang, "Manage analytics choice")}</button></section>
+    <h2>{t(lang, "Hosting and external links")}</h2>
+    <p>{t(lang, "The hosting provider, Vercel, handles requests needed to serve this site and may process technical request information. External recipe and safety links open websites with their own privacy practices.")}</p>
+    <h2>{t(lang, "Contact")}</h2>
+    <p>{t(lang, "This tool is operated by")} <a href="https://github.com/ybwdaisy">{t(lang, "ybwdaisy")}</a>{t(lang, ". Use that contact to raise a privacy question or report a data issue.")}</p>
+  </article>
+</Layout>

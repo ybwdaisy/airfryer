@@ -1,0 +1,38 @@
+---
+import { t } from '../../lib/i18n';
+import { localizedPath, type Language } from '../../lib/locale';
+
+import Layout from '../../layouts/Layout.astro';
+import { safetySource } from '../../lib/format';
+
+const lang: Language = Astro.props.lang ?? 'en';
+const lp = (path: string) => localizedPath(path, lang);
+
+---
+<Layout lang={lang} title={t(lang, "Cooking sources, conditions & food safety | Airfryer times")} description={t(lang, "How we select air fryer cooking references, handle differences between sources, and separate cooking settings from food safety temperatures.")} breadcrumbs={[{ name: 'Sources & safety', path: '/methodology' }]}>
+  <nav class="breadcrumbs" aria-label={t(lang, "Breadcrumb")}><a href={lp('/')}>{t(lang, "All foods")}</a><span aria-hidden="true">/</span><span>{t(lang, "Sources & safety")}</span></nav>
+  <article class="prose">
+    <h1>{t(lang, "Know what the time applies to.")}</h1>
+    <p class="lead">{t(lang, "A cooking time is useful when the starting conditions are clear.")}</p>
+    <h2>{t(lang, "How a guide is assembled")}</h2>
+    <p>{t(lang, "Each guide links at least two independently authored references. One reference sets the displayed temperature, time and preparation. The other is a cross-check, with differences recorded rather than averaged away.")}</p>
+    <p>{t(lang, "We prioritize appliance manuals, product directions and recipes written by their original authors. These are researched reference guides. We have not kitchen-tested the combinations on this site.")}</p>
+    <h2>{t(lang, "Conditions matter")}</h2>
+    <p>{t(lang, "Thickness, quantity, whether food is raw or precooked, and the appliance model can change the result. Follow the preparation and portion shown. Your appliance manual and the package directions take priority for your particular product.")}</p>
+    <p>{t(lang, "We only offer a selectable condition when it has its own source support. Doubling the weight does not mean doubling the time. Fresh, frozen and reheated food are not automatically interchangeable.")}</p>
+    <h2>{t(lang, "Temperature units")}</h2>
+    <p>{t(lang, "Cooking settings are shown in °F from the reference. Converted °C settings are rounded to the nearest 5°C to match typical appliance controls. These are approximate settings, separate from the internal food temperatures below.")}</p>
+    <h2 id="food-safety">{t(lang, "Check the center, not just the clock.")}</h2>
+    <p>{t(lang, "Use a food thermometer for applicable foods. Some products require a higher internal temperature than the general chart; their package directions take priority.")}</p>
+    <div class="safety-table-wrap"><table class="safety-table"><caption>{t(lang, "Selected minimum internal temperatures")}</caption><thead><tr><th scope="col">{t(lang, "Food")}</th><th scope="col">{t(lang, "Internal temperature")}</th></tr></thead><tbody>
+      <tr><th scope="row">{t(lang, "Chicken and turkey, including ground poultry")}</th><td>165°F (74°C)</td></tr>
+      <tr><th scope="row">{t(lang, "Ground beef or pork")}</th><td>160°F (71°C)</td></tr>
+      <tr><th scope="row">{t(lang, "Whole cuts of beef or pork")}</th><td>{t(lang, "145°F (63°C), then rest 3 minutes")}</td></tr>
+      <tr><th scope="row">{t(lang, "Fish")}</th><td>{t(lang, "145°F (63°C), or opaque flesh that separates easily")}</td></tr>
+      <tr><th scope="row">{t(lang, "Leftovers")}</th><td>165°F (74°C)</td></tr>
+    </tbody></table></div>
+    <p><a href={safetySource}>{t(lang, "Read the complete FoodSafety.gov temperature chart")}</a>{t(lang, ", including guidance for shellfish and other foods.")}</p>
+    <h2>{t(lang, "Corrections")}</h2>
+    <p>{t(lang, "Source links and review dates are on every food page. To report an error, contact")} <a href="https://github.com/ybwdaisy">{t(lang, "ybwdaisy on GitHub")}</a> {t(lang, "and include the food, starting condition and source you checked.")}</p>
+  </article>
+</Layout>

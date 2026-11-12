@@ -1,31 +1,5 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { safetySource } from '../lib/format';
+import View from '../components/views/Methodology.astro';
+
 ---
-<Layout title="Cooking sources, conditions & food safety | Airfryer times" description="How we select air fryer cooking references, handle differences between sources, and separate cooking settings from food safety temperatures." breadcrumbs={[{ name: 'Sources & safety', path: '/methodology' }]}>
-  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">All foods</a><span aria-hidden="true">/</span><span>Sources & safety</span></nav>
-  <article class="prose">
-    <h1>Know what the time applies to.</h1>
-    <p class="lead">A cooking time is useful when the starting conditions are clear.</p>
-    <h2>How a guide is assembled</h2>
-    <p>Each guide links at least two independently authored references. One reference sets the displayed temperature, time and preparation. The other is a cross-check, with differences recorded rather than averaged away.</p>
-    <p>We prioritize appliance manuals, product directions and recipes written by their original authors. These are researched reference guides. We have not kitchen-tested the combinations on this site.</p>
-    <h2>Conditions matter</h2>
-    <p>Thickness, quantity, whether food is raw or precooked, and the appliance model can change the result. Follow the preparation and portion shown. Your appliance manual and the package directions take priority for your particular product.</p>
-    <p>We only offer a selectable condition when it has its own source support. Doubling the weight does not mean doubling the time. Fresh, frozen and reheated food are not automatically interchangeable.</p>
-    <h2>Temperature units</h2>
-    <p>Cooking settings are shown in °F from the reference. Converted °C settings are rounded to the nearest 5°C to match typical appliance controls. These are approximate settings, separate from the internal food temperatures below.</p>
-    <h2 id="food-safety">Check the center, not just the clock.</h2>
-    <p>Use a food thermometer for applicable foods. Some products require a higher internal temperature than the general chart; their package directions take priority.</p>
-    <div class="safety-table-wrap"><table class="safety-table"><caption>Selected minimum internal temperatures</caption><thead><tr><th scope="col">Food</th><th scope="col">Internal temperature</th></tr></thead><tbody>
-      <tr><th scope="row">Chicken and turkey, including ground poultry</th><td>165°F (74°C)</td></tr>
-      <tr><th scope="row">Ground beef or pork</th><td>160°F (71°C)</td></tr>
-      <tr><th scope="row">Whole cuts of beef or pork</th><td>145°F (63°C), then rest 3 minutes</td></tr>
-      <tr><th scope="row">Fish</th><td>145°F (63°C), or opaque flesh that separates easily</td></tr>
-      <tr><th scope="row">Leftovers</th><td>165°F (74°C)</td></tr>
-    </tbody></table></div>
-    <p><a href={safetySource}>Read the complete FoodSafety.gov temperature chart</a>, including guidance for shellfish and other foods.</p>
-    <h2>Corrections</h2>
-    <p>Source links and review dates are on every food page. To report an error, contact <a href="https://github.com/ybwdaisy">ybwdaisy on GitHub</a> and include the food, starting condition and source you checked.</p>
-  </article>
-</Layout>
+<View lang="en" />
