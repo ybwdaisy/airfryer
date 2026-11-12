@@ -8,6 +8,8 @@ Node.js 24 LTS is recommended. Run `npm ci`, `npm run check`, `npm test`, `npm r
 
 ## Content and behavior
 
+Browser icons use `public/favicon.svg`; the opaque home-screen artwork is `public/icon.svg`. After editing either source, run `npm run icons:generate` and commit the generated PNG/ICO files. The shared layout declares the 180px Apple Touch icon, browser fallbacks and manifest on every page. The manifest keeps browser navigation; no offline or standalone app behavior is introduced.
+
 - 50 food subjects across six browse categories, with 55 separately sourced preparation conditions.
 - Static detail and category pages remain readable without JavaScript; live fuzzy search, local temperature preference and condition selection enhance them in the browser.
 - The selected condition, search and filter live in the URL. Unsupported conditions fall back to the food's first sourced condition; no weight multiplier or generated cooking advice is used.
