@@ -1,0 +1,35 @@
+[
+ {
+  "scope": "app",
+  "shape": "app screen",
+  "theme": "solstice",
+  "axes": "light/sans-serif/warm",
+  "nav": "wordmark, two reference links and a unit switch",
+  "footer": "reference colophon",
+  "imagery": "none, the working search index is the product",
+  "photos": [],
+  "signature": "cooking temperature and time beside a searchable food index",
+  "sections": [
+   "search",
+   "category filters",
+   "food index",
+   "sourced detail",
+   "safety",
+   "sources"
+  ],
+  "fingerprint": [
+   "app",
+   "search-first",
+   "ruled-index",
+   "measurement-pair",
+   "reference-sidebar",
+   "colophon"
+  ],
+  "waived": [],
+  "prompt": "English air fryer lookup on independent airfryer.ybwdaisy.com, 50 distinct food subjects, sourced conditions only, warm kitchen app",
+  "entry": "2026-11-12",
+  "sweep": "0 FAIL, 0 REFLEX, 0 WARN; finish review ship",
+  "date": "2026-11-12",
+  "mode": "build"
+ }
+]

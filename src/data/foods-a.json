@@ -1,0 +1,1460 @@
+[
+  {
+    "slug": "chicken-wings",
+    "name": "Chicken wings",
+    "aliases": [
+      "wingettes",
+      "drumettes",
+      "party wings"
+    ],
+    "category": "meat",
+    "description": "Split wings cooked in a single layer for crisp skin.",
+    "safety": "poultry",
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Fresh, split wings",
+        "state": "fresh",
+        "temperatureF": 400,
+        "minutes": [
+          16,
+          22
+        ],
+        "portion": "Fresh wingettes and drumettes; reference recipe uses 20 pieces, cooked in single-layer batches.",
+        "preheat": "unspecified",
+        "turn": "Shake halfway through.",
+        "steps": [
+          "Pat the wing pieces thoroughly dry and season with a dry rub and baking powder as described in the reference.",
+          "Arrange without stacking; cook in batches if needed.",
+          "Shake halfway and verify the safe center temperature before serving."
+        ],
+        "notes": [],
+        "sources": [
+          {
+            "title": "Air Fryer Chicken Wings",
+            "publisher": "www.skinnytaste.com",
+            "url": "https://www.skinnytaste.com/air-fryer-chicken-wings/",
+            "role": "reference",
+            "locator": "Recipe ingredients, instructions, and preheat FAQ",
+            "evidence": "20 wing pieces; single-layer batches at 400°F for 16–22 minutes, shaking halfway. Preheating is appliance-dependent."
+          },
+          {
+            "title": "Cosori Iconic cooking times guide",
+            "publisher": "COSORI",
+            "url": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+            "role": "cross-check",
+            "locator": "Chicken & Poultry / Wings",
+            "evidence": "Wings: 400°F; 16–22 min; 2 lb."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "chicken-breast",
+    "name": "Chicken breast",
+    "aliases": [
+      "boneless chicken breast",
+      "skinless chicken breast"
+    ],
+    "category": "meat",
+    "description": "Boneless breasts with source-defined size choices and a thermometer finish.",
+    "safety": "poultry",
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "small",
+        "label": "Small, boneless",
+        "state": "fresh",
+        "temperatureF": 380,
+        "minutes": [
+          8,
+          10
+        ],
+        "portion": "Fresh boneless, skinless breast, 5–6 oz each; thicker end pounded level; brined in the refrigerator as in the reference.",
+        "preheat": "yes",
+        "turn": "Flip halfway through.",
+        "steps": [
+          "Level the thick end and follow the reference’s refrigerated brining method; pat dry.",
+          "Lightly oil and season, then arrange without overlap.",
+          "Turn halfway and check the center with a thermometer; size-based times are starting estimates."
+        ],
+        "notes": [
+          "The manufacturer cross-check is for the Cosori Iconic and uses different conditions. This guide follows the linked recipe, not an average of the two sources."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Chicken Breast",
+            "publisher": "www.skinnytaste.com",
+            "url": "https://www.skinnytaste.com/air-fryer-chicken-breast/",
+            "role": "reference",
+            "locator": "How Long To Cook Chicken Breasts / size chart; recipe instructions",
+            "evidence": "380°F; 5–6 oz each: 8–10 minutes. Pound thick end level, brine refrigerated, flip halfway, and verify 165°F."
+          },
+          {
+            "title": "Cosori Iconic cooking times guide",
+            "publisher": "COSORI",
+            "url": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+            "role": "cross-check",
+            "locator": "Chicken & Poultry / Breasts",
+            "evidence": "Boneless: 390°F; 15–22 min; 8–10 oz."
+          }
+        ]
+      },
+      {
+        "id": "medium",
+        "label": "Medium, boneless",
+        "state": "fresh",
+        "temperatureF": 380,
+        "minutes": [
+          10,
+          12
+        ],
+        "portion": "Fresh boneless, skinless breast, 7–8 oz each; thicker end pounded level; brined in the refrigerator as in the reference.",
+        "preheat": "yes",
+        "turn": "Flip halfway through.",
+        "steps": [
+          "Level the thick end and follow the reference’s refrigerated brining method; pat dry.",
+          "Lightly oil and season, then arrange without overlap.",
+          "Turn halfway and check the center with a thermometer; size-based times are starting estimates."
+        ],
+        "notes": [
+          "The manufacturer cross-check is for the Cosori Iconic and uses different conditions. This guide follows the linked recipe, not an average of the two sources."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Chicken Breast",
+            "publisher": "www.skinnytaste.com",
+            "url": "https://www.skinnytaste.com/air-fryer-chicken-breast/",
+            "role": "reference",
+            "locator": "How Long To Cook Chicken Breasts / size chart; recipe instructions",
+            "evidence": "380°F; 7–8 oz each: 10–12 minutes. Pound thick end level, brine refrigerated, flip halfway, and verify 165°F."
+          },
+          {
+            "title": "Cosori Iconic cooking times guide",
+            "publisher": "COSORI",
+            "url": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+            "role": "cross-check",
+            "locator": "Chicken & Poultry / Breasts",
+            "evidence": "Boneless: 390°F; 15–22 min; 8–10 oz."
+          }
+        ]
+      },
+      {
+        "id": "large",
+        "label": "Large, boneless",
+        "state": "fresh",
+        "temperatureF": 380,
+        "minutes": [
+          12,
+          14
+        ],
+        "portion": "Fresh boneless, skinless breast, 9 oz or more each; no upper size bound supplied by the recipe; thicker end pounded level; brined in the refrigerator as in the reference.",
+        "preheat": "yes",
+        "turn": "Flip halfway through.",
+        "steps": [
+          "Level the thick end and follow the reference’s refrigerated brining method; pat dry.",
+          "Lightly oil and season, then arrange without overlap.",
+          "Turn halfway and check the center with a thermometer; size-based times are starting estimates."
+        ],
+        "notes": [
+          "The manufacturer cross-check is for the Cosori Iconic and uses different conditions. This guide follows the linked recipe, not an average of the two sources.",
+          "The original size chart does not define thickness numerically. Do not use the large option to extrapolate to arbitrarily large breasts."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Chicken Breast",
+            "publisher": "www.skinnytaste.com",
+            "url": "https://www.skinnytaste.com/air-fryer-chicken-breast/",
+            "role": "reference",
+            "locator": "How Long To Cook Chicken Breasts / size chart; recipe instructions",
+            "evidence": "380°F; 9 oz or more each; no upper size bound supplied by the recipe: 12–14 minutes. Pound thick end level, brine refrigerated, flip halfway, and verify 165°F."
+          },
+          {
+            "title": "Cosori Iconic cooking times guide",
+            "publisher": "COSORI",
+            "url": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+            "role": "cross-check",
+            "locator": "Chicken & Poultry / Breasts",
+            "evidence": "Boneless: 390°F; 15–22 min; 8–10 oz."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "chicken-thighs",
+    "name": "Chicken thighs",
+    "aliases": [
+      "bone-in chicken thighs",
+      "skin-on thighs"
+    ],
+    "category": "meat",
+    "description": "Bone-in, skin-on thighs with a halfway turn.",
+    "safety": "poultry",
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Bone-in, skin-on",
+        "state": "fresh",
+        "temperatureF": 400,
+        "minutes": [
+          24,
+          24
+        ],
+        "portion": "Fresh bone-in, skin-on thighs; reference recipe uses 6 thighs and does not specify individual weight.",
+        "preheat": "unspecified",
+        "turn": "Turn after 12 minutes.",
+        "steps": [
+          "Season the thighs and begin with the skin facing down.",
+          "Cook for 12 minutes, turn, and continue for a further 12 minutes as a starting guide.",
+          "Check the thickest part without touching the bone; cook longer if needed to reach the safe temperature."
+        ],
+        "notes": [
+          "The manufacturer cross-check is for the Cosori Iconic and uses different conditions. This guide follows the linked recipe, not an average of the two sources."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Chicken Thighs",
+            "publisher": "www.skinnytaste.com",
+            "url": "https://www.skinnytaste.com/air-fryer-chicken-thighs/",
+            "role": "reference",
+            "locator": "Recipe ingredients and instructions",
+            "evidence": "6 bone-in, skin-on thighs; 400°F for 12 minutes per side (24 total)."
+          },
+          {
+            "title": "Cosori Iconic cooking times guide",
+            "publisher": "COSORI",
+            "url": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+            "role": "cross-check",
+            "locator": "Chicken & Poultry / Thighs",
+            "evidence": "Bone-in thighs: 390°F; 18–24 min."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "chicken-drumsticks",
+    "name": "Chicken drumsticks",
+    "aliases": [
+      "chicken legs",
+      "drumsticks"
+    ],
+    "category": "meat",
+    "description": "Small bone-in drumsticks with a turn at the midpoint.",
+    "safety": "poultry",
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Fresh, about 4 oz each",
+        "state": "fresh",
+        "temperatureF": 400,
+        "minutes": [
+          20,
+          20
+        ],
+        "portion": "Fresh chicken drumsticks, about 4 oz each; reference yield is 8 drumsticks, arranged in a single layer.",
+        "preheat": "yes",
+        "turn": "Flip after 10 minutes.",
+        "steps": [
+          "Coat the drumsticks with a dry seasoning rub.",
+          "Place in a preheated basket in one layer; turn after 10 minutes.",
+          "At 20 minutes, check the center temperature and continue cooking if needed."
+        ],
+        "notes": [
+          "The VA cross-check uses 4–6 oz pieces and an earlier temperature check. Piece size and appliance affect the finish."
+        ],
+        "sources": [
+          {
+            "title": "Air-Fryer Chicken Drums",
+            "publisher": "National Institute for Fitness and Sport",
+            "url": "https://www.nifs.org/hubfs/Air-Fryer%20Chicken%20Drums.pdf",
+            "role": "reference",
+            "locator": "Page 1 / ingredients and Air-Fryer Method",
+            "evidence": "About 4 oz each; preheat to 400°F, cook 20 minutes, flip at 10, and verify 165°F."
+          },
+          {
+            "title": "Air-Fried Chicken Drumsticks",
+            "publisher": "U.S. Department of Veterans Affairs",
+            "url": "https://www.nutrition.va.gov/NUTRITION/docs/Recipes/MainDishes/Air-Fried-Chicken-DrumsticksSEPT2021.pdf",
+            "role": "cross-check",
+            "locator": "Page 1 / directions 4–7",
+            "evidence": "4–6 oz drumsticks: 400°F, 10 then 8 minutes; check 165–175°F and extend 2–5 minutes as needed."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "turkey-breast",
+    "name": "Turkey breast",
+    "aliases": [
+      "boneless turkey breast",
+      "turkey breast roast"
+    ],
+    "category": "meat",
+    "description": "A small boneless turkey breast that fits comfortably in the basket.",
+    "safety": "poultry",
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Boneless, skin-on, 3 lb",
+        "state": "fresh",
+        "temperatureF": 350,
+        "minutes": [
+          40,
+          40
+        ],
+        "portion": "Fully thawed boneless, skin-on turkey breast, 3 lb; must fit without touching the heating element.",
+        "preheat": "yes",
+        "turn": "Flip after 20 minutes.",
+        "steps": [
+          "Dry the turkey and coat under and over the skin with the reference’s herb-butter preparation.",
+          "Preheat, start skin-side up, and turn after 20 minutes.",
+          "Check the thickest part; keep cooking until the official safe temperature is reached, then rest 10 minutes."
+        ],
+        "notes": [
+          "The reference suggests Roast if the appliance provides that setting. Size, shape, and mode can change the finish; use the thermometer, not a per-pound multiplier."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Boneless Turkey Breast",
+            "publisher": "www.eatingbirdfood.com",
+            "url": "https://www.eatingbirdfood.com/air-fryer-turkey-breast/",
+            "role": "reference",
+            "locator": "Recipe instructions, notes, and Brittany’s Tips",
+            "evidence": "3 lb boneless, skin-on breast; preheat 350°F 3–4 minutes, cook 20+20 minutes, verify 165°F, rest 10 minutes."
+          },
+          {
+            "title": "Air Fryer Turkey Breast",
+            "publisher": "Nutrition to Fit",
+            "url": "https://nutritiontofit.com/air-fryer-turkey-breast/",
+            "role": "cross-check",
+            "locator": "Recipe ingredients and instructions",
+            "evidence": "3–4 lb turkey breast: 350°F for 20 then 20–30 minutes, ending at 165°F."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "steak",
+    "name": "Steak",
+    "aliases": [
+      "sirloin steak",
+      "beef steak"
+    ],
+    "category": "meat",
+    "description": "A one-inch sirloin reference with a medium finish.",
+    "safety": "whole-meat",
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Sirloin, 1 inch thick",
+        "state": "fresh",
+        "temperatureF": 400,
+        "minutes": [
+          12,
+          12
+        ],
+        "portion": "Fresh sirloin steaks, 1 inch thick, about 6 oz each; reference recipe uses four, with space around them.",
+        "preheat": "yes",
+        "turn": "Flip after 6 minutes.",
+        "steps": [
+          "Lightly oil both sides and add a dry seasoning rub.",
+          "Cook in a preheated basket, turning halfway.",
+          "Verify at least the official safe temperature and rest 5 minutes before slicing."
+        ],
+        "notes": [
+          "The manufacturer cross-check is for the Cosori Iconic and uses different conditions. This guide follows the linked recipe, not an average of the two sources.",
+          "The source also lists rarer finishes. This guide selects its medium option and retains the official minimum temperature and rest requirement.",
+          "The recipe timing may finish before the safety check shown here is met. Continue cooking as needed; the displayed time is not a verified safe endpoint."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Steak",
+            "publisher": "www.skinnytaste.com",
+            "url": "https://www.skinnytaste.com/air-fryer-steak/",
+            "role": "reference",
+            "locator": "Recipe ingredients, instructions, and doneness chart",
+            "evidence": "1-inch sirloin: 400°F for 12 minutes for medium, flip halfway; recipe rests steaks 5 minutes."
+          },
+          {
+            "title": "Cosori Iconic cooking times guide",
+            "publisher": "COSORI",
+            "url": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+            "role": "cross-check",
+            "locator": "Beef & Pork / New York Strip",
+            "evidence": "1-inch strip: 450°F; 6–12 min."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "burger-patties",
+    "name": "Burger patties",
+    "aliases": [
+      "hamburgers",
+      "beef burgers",
+      "hamburger patties"
+    ],
+    "category": "meat",
+    "description": "Fresh quarter-pound beef patties, not frozen burgers.",
+    "safety": "ground-meat",
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Fresh beef, ¼ lb",
+        "state": "fresh",
+        "temperatureF": 370,
+        "minutes": [
+          9,
+          11
+        ],
+        "portion": "Fresh 80/20 ground-beef patties, ¼ lb each and about ½ inch thick; reference uses 1 lb for 4 patties.",
+        "preheat": "yes",
+        "turn": "Flip after 6 minutes.",
+        "steps": [
+          "Form equal patties without packing the meat tightly and make a shallow center indent.",
+          "Cook in a single layer in the preheated basket, turning after 6 minutes.",
+          "Check the thickest center for at least 160°F; optional cheese adds further cooking time."
+        ],
+        "notes": [
+          "The cross-check uses a lower appliance setting and a broader interval. The displayed interval follows the quarter-pound recipe only."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Hamburgers",
+            "publisher": "www.spendwithpennies.com",
+            "url": "https://www.spendwithpennies.com/air-fryer-hamburgers/",
+            "role": "reference",
+            "locator": "Recipe ingredients, instructions, and notes",
+            "evidence": "¼ lb, ½-inch beef patties; 370°F for 6 plus 3–5 minutes, finishing at 160°F."
+          },
+          {
+            "title": "Air Fryer Cooking Times Cheat Sheet",
+            "publisher": "Cook Smarts",
+            "url": "https://cooksmartsapp.s3-us-west-2.amazonaws.com/materials/newsletter-freebies/Cook-Smarts-Air-Fryer-Cheat-Sheet-202002.pdf",
+            "role": "cross-check",
+            "locator": "Page 2 / Ground Meat / Burger patties",
+            "evidence": "¼ lb patties: 350°F; 8–15 minutes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "meatballs",
+    "name": "Meatballs",
+    "aliases": [
+      "beef meatballs",
+      "italian meatballs"
+    ],
+    "category": "meat",
+    "description": "Small fresh beef meatballs with room between each piece.",
+    "safety": "ground-meat",
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Fresh beef, 1½ inch",
+        "state": "fresh",
+        "temperatureF": 400,
+        "minutes": [
+          7,
+          9
+        ],
+        "portion": "Fresh 1½-inch meatballs made from 1 lb of 93% lean ground beef with the reference’s egg-and-breadcrumb binder, yielding about 20.",
+        "preheat": "yes",
+        "turn": "Turn halfway through.",
+        "steps": [
+          "Mix the beef and binder lightly, then form even 1½-inch balls.",
+          "Arrange in one layer with space between each meatball; cook in batches.",
+          "Turn halfway and check the center. This reference uses a 165°F thermometer finish."
+        ],
+        "notes": [
+          "The cross-check uses larger meatballs. Do not substitute its times into this 1½-inch preparation. This entry does not cover poultry meatballs."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Meatballs",
+            "publisher": "www.wellplated.com",
+            "url": "https://www.wellplated.com/air-fryer-meatballs/",
+            "role": "reference",
+            "locator": "Recipe ingredients, directions, and size tip",
+            "evidence": "1½-inch meatballs; preheat 400°F, cook 7–9 minutes, turn halfway. Recipe allows lean beef and specifies a 165°F finish."
+          },
+          {
+            "title": "Cosori Iconic cooking times guide",
+            "publisher": "COSORI",
+            "url": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+            "role": "cross-check",
+            "locator": "Beef & Pork / Meatballs",
+            "evidence": "2-inch meatballs: 390°F; 10–14 min."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "pork-chops",
+    "name": "Pork chops",
+    "aliases": [
+      "boneless pork chops",
+      "pork cutlets"
+    ],
+    "category": "meat",
+    "description": "Unbreaded boneless pork chops with a thermometer finish.",
+    "safety": "whole-meat",
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Boneless, about 8 oz",
+        "state": "fresh",
+        "temperatureF": 400,
+        "minutes": [
+          12,
+          12
+        ],
+        "portion": "Fresh boneless pork chops, about 8 oz each; reference recipe allows marinating or simple salt-and-pepper seasoning.",
+        "preheat": "yes",
+        "turn": "Flip after 6 minutes.",
+        "steps": [
+          "Pat dry and season, or use the reference’s refrigerated marinade.",
+          "Preheat for 5 minutes and arrange the chops in one layer.",
+          "Turn halfway, check for at least 145°F in the center, and rest at least 3 minutes."
+        ],
+        "notes": [
+          "The manufacturer cross-check is for the Cosori Iconic and uses different conditions. This guide follows the linked recipe, not an average of the two sources.",
+          "The recipe does not give a numerical thickness for its 8 oz chops. Thin or unusually thick chops require closer temperature checks.",
+          "The recipe timing may finish before the safety check shown here is met. Continue cooking as needed; the displayed time is not a verified safe endpoint."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Pork Chops",
+            "publisher": "www.wholesomeyum.com",
+            "url": "https://www.wholesomeyum.com/air-fryer-pork-chops/",
+            "role": "reference",
+            "locator": "Recipe ingredients and Air Fry instructions",
+            "evidence": "8 oz chops; 400°F preheat 5 minutes; boneless about 12 minutes, turning halfway, to 145°F."
+          },
+          {
+            "title": "Cosori Iconic cooking times guide",
+            "publisher": "COSORI",
+            "url": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+            "role": "cross-check",
+            "locator": "Beef & Pork / Pork Chop",
+            "evidence": "Boneless chops: 450°F; 6–14 min."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "pork-tenderloin",
+    "name": "Pork tenderloin",
+    "aliases": [
+      "pork fillet",
+      "tenderloin roast"
+    ],
+    "category": "meat",
+    "description": "A slender pork tenderloin rather than a thick pork loin roast.",
+    "safety": "whole-meat",
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Whole tenderloin, 1¼–1½ lb",
+        "state": "fresh",
+        "temperatureF": 400,
+        "minutes": [
+          16,
+          17
+        ],
+        "portion": "Fresh whole pork tenderloin, 1¼–1½ lb, slender and about 2 inches in diameter; silver skin removed.",
+        "preheat": "yes",
+        "turn": "Unspecified.",
+        "steps": [
+          "Trim away silver skin and coat the meat with the reference’s mustard-and-vinegar seasoning.",
+          "Place in a preheated basket; cut crosswise only if needed to fit.",
+          "Use the time as a check point; verify at least 145°F and rest 5 minutes before slicing."
+        ],
+        "notes": [
+          "The manufacturer cross-check is for the Cosori Iconic and uses different conditions. This guide follows the linked recipe, not an average of the two sources.",
+          "Do not substitute pork loin. The source mentions removing meat slightly early for carryover; this guide instead uses the official minimum before removal.",
+          "The recipe timing may finish before the safety check shown here is met. Continue cooking as needed; the displayed time is not a verified safe endpoint."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Pork Tenderloin",
+            "publisher": "www.spendwithpennies.com",
+            "url": "https://www.spendwithpennies.com/air-fryer-pork-tenderloin/",
+            "role": "reference",
+            "locator": "Ingredients discussion, recipe ingredients and instructions",
+            "evidence": "1¼–1½ lb tenderloin, about 2 inches diameter; 400°F for 16–17 minutes or to 145°F; rest at least 5 minutes."
+          },
+          {
+            "title": "Cosori Iconic cooking times guide",
+            "publisher": "COSORI",
+            "url": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+            "role": "cross-check",
+            "locator": "Beef & Pork / Pork Tenderloin",
+            "evidence": "1 lb tenderloin: 385°F; 18–25 min."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "bacon",
+    "name": "Bacon",
+    "aliases": [
+      "pork bacon",
+      "bacon strips"
+    ],
+    "category": "meat",
+    "description": "Regular and thick-cut strips have separate sourced time choices.",
+    "safety": null,
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "regular",
+        "label": "Regular-cut bacon",
+        "state": "fresh",
+        "temperatureF": 350,
+        "minutes": [
+          7,
+          9
+        ],
+        "portion": "Fresh pork bacon, 5 regular-cut strips, about 6 oz total; cut strips shorter only to fit in one layer.",
+        "preheat": "no",
+        "turn": "Not required.",
+        "steps": [
+          "Arrange the strips in one layer without adding oil.",
+          "Cook without a halfway turn and check the browning near the early end.",
+          "Transfer carefully; discard accumulated grease between batches according to the appliance manual."
+        ],
+        "notes": [
+          "The manufacturer cross-check is for the Cosori Iconic and uses different conditions. This guide follows the linked recipe, not an average of the two sources.",
+          "Follow the bacon package’s safe-cooking directions; browning alone is not a safety temperature test."
+        ],
+        "sources": [
+          {
+            "title": "Crispy Air Fryer Bacon",
+            "publisher": "natashaskitchen.com",
+            "url": "https://natashaskitchen.com/air-fryer-bacon/",
+            "role": "reference",
+            "locator": "Recipe ingredients, instructions, and preheat/turn FAQs",
+            "evidence": "350°F: regular-cut 7–9 minutes, thick-cut 10–12 minutes. Five strips; no preheat or flip."
+          },
+          {
+            "title": "Cosori Iconic cooking times guide",
+            "publisher": "COSORI",
+            "url": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+            "role": "cross-check",
+            "locator": "Beef & Pork / Bacon",
+            "evidence": "Regular: 385°F; 5–8 min."
+          }
+        ]
+      },
+      {
+        "id": "thick",
+        "label": "Thick-cut bacon",
+        "state": "fresh",
+        "temperatureF": 350,
+        "minutes": [
+          10,
+          12
+        ],
+        "portion": "Fresh pork bacon, 5 thick-cut strips, about 8–12 oz total; cut strips shorter only to fit in one layer.",
+        "preheat": "no",
+        "turn": "Not required.",
+        "steps": [
+          "Arrange the strips in one layer without adding oil.",
+          "Cook without a halfway turn and check the browning near the early end.",
+          "Transfer carefully; discard accumulated grease between batches according to the appliance manual."
+        ],
+        "notes": [
+          "The manufacturer cross-check is for the Cosori Iconic and uses different conditions. This guide follows the linked recipe, not an average of the two sources.",
+          "Follow the bacon package’s safe-cooking directions; browning alone is not a safety temperature test."
+        ],
+        "sources": [
+          {
+            "title": "Crispy Air Fryer Bacon",
+            "publisher": "natashaskitchen.com",
+            "url": "https://natashaskitchen.com/air-fryer-bacon/",
+            "role": "reference",
+            "locator": "Recipe ingredients, instructions, and preheat/turn FAQs",
+            "evidence": "350°F: regular-cut 7–9 minutes, thick-cut 10–12 minutes. Five strips; no preheat or flip."
+          },
+          {
+            "title": "Cosori Iconic cooking times guide",
+            "publisher": "COSORI",
+            "url": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+            "role": "cross-check",
+            "locator": "Beef & Pork / Bacon",
+            "evidence": "Thick cut: 385°F; 6–10 min."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "sausages",
+    "name": "Sausages",
+    "aliases": [
+      "italian sausage",
+      "pork sausage links"
+    ],
+    "category": "meat",
+    "description": "Raw Italian pork sausage links cooked without overlapping.",
+    "safety": "ground-meat",
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Raw Italian pork links",
+        "state": "fresh",
+        "temperatureF": 400,
+        "minutes": [
+          9,
+          12
+        ],
+        "portion": "Fresh raw Italian pork sausages; reference uses 6 links and does not state individual weight.",
+        "preheat": "unspecified",
+        "turn": "Unspecified.",
+        "steps": [
+          "Arrange the raw links in a single layer without overlap.",
+          "Cook at the reference setting, checking near the early end.",
+          "Verify the appropriate center temperature; this pork-link entry does not cover poultry sausages."
+        ],
+        "notes": [
+          "The manufacturer cross-check is for the Cosori Iconic and uses different conditions. This guide follows the linked recipe, not an average of the two sources.",
+          "Link thickness matters. Follow product-specific cooking directions where supplied."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Sausages",
+            "publisher": "cookthestory.com",
+            "url": "https://cookthestory.com/air-fryer-sausages/",
+            "role": "reference",
+            "locator": "Recipe ingredients and instructions",
+            "evidence": "6 raw Italian links in one layer; 400°F for 9–12 minutes. Individual weight is not given."
+          },
+          {
+            "title": "Cosori Iconic cooking times guide",
+            "publisher": "COSORI",
+            "url": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+            "role": "cross-check",
+            "locator": "Beef & Pork / Sausage",
+            "evidence": "Raw sausage: 410°F; 7–12 min."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "salmon",
+    "name": "Salmon",
+    "aliases": [
+      "salmon fillets",
+      "salmon filet"
+    ],
+    "category": "seafood",
+    "description": "Fresh salmon fillets with no overlap in the basket.",
+    "safety": "fish",
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Fresh fillets, about 6 oz",
+        "state": "fresh",
+        "temperatureF": 400,
+        "minutes": [
+          6,
+          11
+        ],
+        "portion": "Fresh salmon fillets, about 6 oz each; the reference uses two. Fillets around 1 inch thick typically need 8–9 minutes within this interval.",
+        "preheat": "yes",
+        "turn": "Not required.",
+        "steps": [
+          "Dry and season the fish; brush with the reference’s glaze if desired.",
+          "Place the fillets apart in the preheated basket, skin down when present.",
+          "Check early and verify at least 145°F in the thickest part before serving."
+        ],
+        "notes": [
+          "The manufacturer cross-check is for the Cosori Iconic and uses different conditions. This guide follows the linked recipe, not an average of the two sources.",
+          "The source describes carryover cooking. This guide uses the official minimum temperature before removal rather than assuming a further rise.",
+          "The recipe timing may finish before the safety check shown here is met. Continue cooking as needed; the displayed time is not a verified safe endpoint."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Salmon",
+            "publisher": "www.wellplated.com",
+            "url": "https://www.wellplated.com/air-fryer-salmon/",
+            "role": "reference",
+            "locator": "Recipe ingredients and instructions",
+            "evidence": "Two 6 oz fillets; preheat 400°F, cook 6–11 minutes; around 1-inch fillets 8–9 minutes; thermometer finish."
+          },
+          {
+            "title": "Cosori Iconic cooking times guide",
+            "publisher": "COSORI",
+            "url": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+            "role": "cross-check",
+            "locator": "Seafood / Salmon Fillet",
+            "evidence": "1-inch salmon: 380°F; 6–12 min."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cod",
+    "name": "Cod",
+    "aliases": [
+      "cod fillets",
+      "codfish"
+    ],
+    "category": "seafood",
+    "description": "Unbreaded cod fillets lightly coated with oil and seasoning.",
+    "safety": "fish",
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Fresh fillets, about 6 oz",
+        "state": "fresh",
+        "temperatureF": 400,
+        "minutes": [
+          8,
+          10
+        ],
+        "portion": "Fresh cod fillets, about 6 oz each; reference uses four, cooked without crowding.",
+        "preheat": "yes",
+        "turn": "Unspecified.",
+        "steps": [
+          "Pat the fillets dry, then brush with oil and lemon and add seasoning.",
+          "Lightly oil the basket and leave space around each fillet.",
+          "Check the largest fillet near the early end and continue until at least 145°F."
+        ],
+        "notes": [
+          "The manufacturer cross-check is for the Cosori Iconic and uses different conditions. This guide follows the linked recipe, not an average of the two sources.",
+          "This guide uses the official 145°F minimum, not the lower end of the recipe’s internal-temperature range.",
+          "The recipe timing may finish before the safety check shown here is met. Continue cooking as needed; the displayed time is not a verified safe endpoint."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Cod",
+            "publisher": "www.wholesomeyum.com",
+            "url": "https://www.wholesomeyum.com/air-fryer-cod/",
+            "role": "reference",
+            "locator": "Recipe ingredients and instructions",
+            "evidence": "Four 6 oz fillets; preheat 400°F, cook 8–10 minutes; source gives 140–145°F finish."
+          },
+          {
+            "title": "Cosori Iconic cooking times guide",
+            "publisher": "COSORI",
+            "url": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+            "role": "cross-check",
+            "locator": "Seafood / White Fish Fillet",
+            "evidence": "White fish: 380°F; 8–12 min; 1–2 inches."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "tilapia",
+    "name": "Tilapia",
+    "aliases": [
+      "tilapia fillets",
+      "tilapia filet"
+    ],
+    "category": "seafood",
+    "description": "Thin fresh tilapia fillets with a halfway turn.",
+    "safety": "fish",
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Fresh fillets, 4–6 oz",
+        "state": "fresh",
+        "temperatureF": 400,
+        "minutes": [
+          7,
+          7
+        ],
+        "portion": "Fresh tilapia fillets, 4–6 oz each; reference recipe uses four and keeps the fillets a similar size.",
+        "preheat": "yes",
+        "turn": "Flip halfway through.",
+        "steps": [
+          "Dry the fillets and season both sides.",
+          "Place in a lightly oiled, preheated basket without overlap and turn halfway.",
+          "At the reference time, check the thickest part and continue until at least 145°F."
+        ],
+        "notes": [
+          "The cross-check gives a broader interval without this recipe’s fillet size. The seven-minute figure is an initial check, not a guarantee of safe doneness."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Tilapia",
+            "publisher": "thebigmansworld.com",
+            "url": "https://thebigmansworld.com/air-fryer-tilapia/",
+            "role": "reference",
+            "locator": "Recipe ingredients and instructions",
+            "evidence": "4–6 oz fillets; preheat 400°F, cook fresh fillets 7 minutes, flipping halfway."
+          },
+          {
+            "title": "Air Fryer Cooking Times Cheat Sheet",
+            "publisher": "Cook Smarts",
+            "url": "https://cooksmartsapp.s3-us-west-2.amazonaws.com/materials/newsletter-freebies/Cook-Smarts-Air-Fryer-Cheat-Sheet-202002.pdf",
+            "role": "cross-check",
+            "locator": "Page 3 / Seafood / Tilapia",
+            "evidence": "Tilapia: 400°F; 8–12 minutes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "shrimp",
+    "name": "Shrimp",
+    "aliases": [
+      "prawns",
+      "large shrimp",
+      "peeled shrimp"
+    ],
+    "category": "seafood",
+    "description": "Peeled raw shrimp, arranged in one layer for a short cook.",
+    "safety": "shellfish",
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Large, peeled and deveined",
+        "state": "fresh",
+        "temperatureF": 400,
+        "minutes": [
+          3,
+          4
+        ],
+        "portion": "Fresh or fully thawed raw large shrimp, peeled and deveined; reference ingredient amount is 1 lb, with batches as needed.",
+        "preheat": "yes",
+        "turn": "Unspecified.",
+        "steps": [
+          "Pat the peeled shrimp dry and toss with a light oil-and-seasoning coating.",
+          "Arrange in one layer in the hot basket.",
+          "Check every 2 minutes; continue until the shrimp are pearly or white and opaque throughout."
+        ],
+        "notes": [
+          "The manufacturer cross-check is for the Cosori Iconic and uses different conditions. This guide follows the linked recipe, not an average of the two sources."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Shrimp",
+            "publisher": "www.wholesomeyum.com",
+            "url": "https://www.wholesomeyum.com/air-fryer-shrimp/",
+            "role": "reference",
+            "locator": "Recipe ingredients and instructions / size-based time guidance",
+            "evidence": "Preheated 400°F: large shrimp 3–4 minutes; extra-large/jumbo 4–7. Ingredient amount 1 lb; single layer."
+          },
+          {
+            "title": "Cosori Iconic cooking times guide",
+            "publisher": "COSORI",
+            "url": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+            "role": "cross-check",
+            "locator": "Seafood / Shrimp",
+            "evidence": "Large shrimp: 450°F; 3–5 min."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "scallops",
+    "name": "Scallops",
+    "aliases": [
+      "sea scallops",
+      "dry scallops"
+    ],
+    "category": "seafood",
+    "description": "Thawed sea scallops dried well before cooking.",
+    "safety": "shellfish",
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Thawed sea scallops",
+        "state": "fresh",
+        "temperatureF": 400,
+        "minutes": [
+          6,
+          6
+        ],
+        "portion": "Fresh or fully thawed sea scallops; reference uses ½ lb and distinguishes these from smaller bay scallops.",
+        "preheat": "yes",
+        "turn": "Flip after 3 minutes.",
+        "steps": [
+          "Dry the scallops and remove the tough side muscle.",
+          "Season and arrange in the preheated, lightly oiled basket without crowding.",
+          "Turn at 3 minutes and continue until the flesh is milky white or opaque and firm throughout."
+        ],
+        "notes": [
+          "The manufacturer cross-check is for the Cosori Iconic and uses different conditions. This guide follows the linked recipe, not an average of the two sources.",
+          "The source mentions lower-temperature culinary finishes. This guide instead follows the official shellfish appearance guidance and does not offer a rare setting.",
+          "The recipe timing may finish before the safety check shown here is met. Continue cooking as needed; the displayed time is not a verified safe endpoint."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Scallops",
+            "publisher": "www.cookedbyjulie.com",
+            "url": "https://www.cookedbyjulie.com/air-fryer-scallops/",
+            "role": "reference",
+            "locator": "Recipe ingredients and instructions",
+            "evidence": "½ lb sea scallops; preheat 400°F, cook 6 minutes, flipping after 3."
+          },
+          {
+            "title": "Cosori Iconic cooking times guide",
+            "publisher": "COSORI",
+            "url": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+            "role": "cross-check",
+            "locator": "Seafood / Scallops",
+            "evidence": "Scallops: 450°F; 3–7 min."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "broccoli",
+    "name": "Broccoli",
+    "aliases": [
+      "broccoli florets"
+    ],
+    "category": "vegetables",
+    "description": "Large fresh florets with a lightly oiled surface.",
+    "safety": null,
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Fresh, large florets",
+        "state": "fresh",
+        "temperatureF": 350,
+        "minutes": [
+          8,
+          10
+        ],
+        "portion": "Fresh broccoli, 2 crowns broken into large florets; lightly oil the tops and cook in single-layer batches.",
+        "preheat": "yes",
+        "turn": "Turn halfway through.",
+        "steps": [
+          "Break the crowns into large florets and coat the tops with oil and seasoning.",
+          "Arrange in one layer with gaps; work in batches.",
+          "Turn halfway and check for tender stems and browned edges."
+        ],
+        "notes": [
+          "The cross-check uses smaller florets and a hotter model-specific setting. This guide retains the larger-floret recipe."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Broccoli",
+            "publisher": "www.loveandlemons.com",
+            "url": "https://www.loveandlemons.com/air-fryer-broccoli/",
+            "role": "reference",
+            "locator": "Recipe ingredients and instructions",
+            "evidence": "2 crowns in large florets; preheat 350°F; single layer, 8–10 minutes, turning halfway."
+          },
+          {
+            "title": "Cosori Iconic cooking times guide",
+            "publisher": "COSORI",
+            "url": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+            "role": "cross-check",
+            "locator": "Vegetables / Broccoli",
+            "evidence": "Small florets: 425°F; 5–9 min."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cauliflower",
+    "name": "Cauliflower",
+    "aliases": [
+      "cauliflower florets"
+    ],
+    "category": "vegetables",
+    "description": "Unbreaded fresh florets, cooked in batches rather than piled up.",
+    "safety": null,
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Fresh florets, unbreaded",
+        "state": "fresh",
+        "temperatureF": 380,
+        "minutes": [
+          7,
+          10
+        ],
+        "portion": "Fresh cauliflower, 1 head cut into even florets; no breading; cook in single-layer batches.",
+        "preheat": "yes",
+        "turn": "Shake halfway through.",
+        "steps": [
+          "Cut into similarly sized florets and coat lightly with oil, lemon and seasoning.",
+          "Spread in one layer in the preheated basket.",
+          "Shake halfway and check for tender interiors and browned edges."
+        ],
+        "notes": [
+          "The manufacturer cross-check is for the Cosori Iconic and uses different conditions. This guide follows the linked recipe, not an average of the two sources."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Cauliflower",
+            "publisher": "www.wholesomeyum.com",
+            "url": "https://www.wholesomeyum.com/air-fryer-cauliflower/",
+            "role": "reference",
+            "locator": "Recipe ingredients and instructions",
+            "evidence": "1 head in florets; preheat 380°F; single-layer batches, 7–10 minutes, shaking halfway."
+          },
+          {
+            "title": "Cosori Iconic cooking times guide",
+            "publisher": "COSORI",
+            "url": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+            "role": "cross-check",
+            "locator": "Vegetables / Cauliflower",
+            "evidence": "Florets: 425°F; 8–14 min."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "brussels-sprouts",
+    "name": "Brussels sprouts",
+    "aliases": [
+      "brussel sprouts",
+      "brussels"
+    ],
+    "category": "vegetables",
+    "description": "Halved sprouts with several shakes for even browning.",
+    "safety": null,
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Fresh, halved",
+        "state": "fresh",
+        "temperatureF": 375,
+        "minutes": [
+          12,
+          14
+        ],
+        "portion": "Fresh Brussels sprouts, 1 lb, ends trimmed and halved; quarter unusually large sprouts to match the others.",
+        "preheat": "yes",
+        "turn": "Shake after 5 and 10 minutes, then check often.",
+        "steps": [
+          "Trim and halve the sprouts; quarter very large ones, then coat with oil and seasoning.",
+          "Preheat and cook for 5 minutes, shake, then cook another 5 minutes.",
+          "Finish with another 2–4 minutes, checking and shaking until crisp."
+        ],
+        "notes": [
+          "The cross-check uses quartered sprouts and a hotter setting. Optional soaking in the primary recipe is not required for its firmer finish."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Brussels Sprouts",
+            "publisher": "www.wellplated.com",
+            "url": "https://www.wellplated.com/air-fryer-brussels-sprouts/",
+            "role": "reference",
+            "locator": "Recipe ingredients and instructions",
+            "evidence": "1 lb halved; preheat 375°F; cook 5+5+2–4 minutes, shaking at the stated checks."
+          },
+          {
+            "title": "Cosori Iconic cooking times guide",
+            "publisher": "COSORI",
+            "url": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+            "role": "cross-check",
+            "locator": "Vegetables / Brussels Sprouts",
+            "evidence": "Quartered: 415°F; 8–16 min."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "asparagus",
+    "name": "Asparagus",
+    "aliases": [
+      "asparagus spears"
+    ],
+    "category": "vegetables",
+    "description": "Trimmed fresh spears with a quick halfway turn.",
+    "safety": null,
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Fresh, trimmed spears",
+        "state": "fresh",
+        "temperatureF": 370,
+        "minutes": [
+          6,
+          8
+        ],
+        "portion": "Fresh asparagus, 1 bunch with woody ends removed; arrange in one layer.",
+        "preheat": "yes",
+        "turn": "Flip halfway through.",
+        "steps": [
+          "Remove the woody ends and coat the spears lightly with oil and seasoning.",
+          "Arrange without overcrowding in the preheated basket.",
+          "Turn halfway; check for tender stalks and crisp tips."
+        ],
+        "notes": [
+          "Spear thickness is not quantified in the reference; slender spears can finish sooner."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Asparagus",
+            "publisher": "www.loveandlemons.com",
+            "url": "https://www.loveandlemons.com/air-fryer-asparagus/",
+            "role": "reference",
+            "locator": "Recipe ingredients and instructions",
+            "evidence": "1 trimmed bunch; preheat 370°F; single layer, 6–8 minutes, flip halfway."
+          },
+          {
+            "title": "Cosori Iconic cooking times guide",
+            "publisher": "COSORI",
+            "url": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+            "role": "cross-check",
+            "locator": "Vegetables / Asparagus",
+            "evidence": "Whole spears: 365°F; 5–8 min."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "green-beans",
+    "name": "Green beans",
+    "aliases": [
+      "string beans",
+      "french beans"
+    ],
+    "category": "vegetables",
+    "description": "Fresh trimmed beans spread in one layer.",
+    "safety": null,
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Fresh, trimmed",
+        "state": "fresh",
+        "temperatureF": 400,
+        "minutes": [
+          9,
+          11
+        ],
+        "portion": "Fresh green beans, 1 lb, washed, dried and trimmed; single-layer batches.",
+        "preheat": "yes",
+        "turn": "Unspecified.",
+        "steps": [
+          "Wash, trim and dry the beans, then toss with a light oil coating.",
+          "Arrange in one layer in the preheated basket, working in batches.",
+          "Check for tenderness and browned spots before removing."
+        ],
+        "notes": [
+          "The manufacturer cross-check is for the Cosori Iconic and uses different conditions. This guide follows the linked recipe, not an average of the two sources."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Green Beans",
+            "publisher": "www.loveandlemons.com",
+            "url": "https://www.loveandlemons.com/air-fryer-green-beans/",
+            "role": "reference",
+            "locator": "Recipe ingredients and instructions",
+            "evidence": "1 lb trimmed beans; preheat 400°F; single layer, 9–11 minutes."
+          },
+          {
+            "title": "Cosori Iconic cooking times guide",
+            "publisher": "COSORI",
+            "url": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+            "role": "cross-check",
+            "locator": "Vegetables / Green Beans",
+            "evidence": "Whole beans: 415°F; 4–8 min."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "carrots",
+    "name": "Carrots",
+    "aliases": [
+      "carrot sticks",
+      "carrot batons"
+    ],
+    "category": "vegetables",
+    "description": "Fresh carrot sticks with a defined thickness.",
+    "safety": null,
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Fresh, ¾-inch sticks",
+        "state": "fresh",
+        "temperatureF": 380,
+        "minutes": [
+          12,
+          15
+        ],
+        "portion": "Fresh carrots, 1 lb, cut lengthwise into strips about ¾ inch thick; single-layer batches.",
+        "preheat": "yes",
+        "turn": "Shake halfway through.",
+        "steps": [
+          "Dry and trim the carrots, then cut into sticks about ¾ inch thick.",
+          "Toss with oil and seasoning and arrange in one layer.",
+          "Shake halfway and check for tenderness; repeat for the remaining batch."
+        ],
+        "notes": [
+          "The cross-check uses slices, not these thicker sticks. The displayed interval follows the stick preparation."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Carrots",
+            "publisher": "www.wholesomeyum.com",
+            "url": "https://www.wholesomeyum.com/air-fryer-carrots/",
+            "role": "reference",
+            "locator": "Recipe ingredients and instructions",
+            "evidence": "1 lb carrots in ¾-inch strips; preheat 380°F; single layer, 12–15 minutes, shake halfway."
+          },
+          {
+            "title": "Cosori Iconic cooking times guide",
+            "publisher": "COSORI",
+            "url": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+            "role": "cross-check",
+            "locator": "Vegetables / Carrots",
+            "evidence": "Sliced carrots: 425°F; 10–16 min."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "zucchini",
+    "name": "Zucchini",
+    "aliases": [
+      "courgette",
+      "courgettes",
+      "summer squash"
+    ],
+    "category": "vegetables",
+    "description": "Unbreaded zucchini half-moons with space between pieces.",
+    "safety": null,
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Fresh, 1-inch half-moons",
+        "state": "fresh",
+        "temperatureF": 400,
+        "minutes": [
+          9,
+          11
+        ],
+        "portion": "Fresh zucchini, 1 lb (about 3 medium), cut into 1-inch half-moons; single-layer batches.",
+        "preheat": "unspecified",
+        "turn": "Unspecified.",
+        "steps": [
+          "Cut the zucchini into even half-moons and toss with oil and seasoning.",
+          "Preheat if required by the appliance and leave space between pieces.",
+          "Check near the early end for tender centers and browned edges."
+        ],
+        "notes": [
+          "The manufacturer cross-check is for the Cosori Iconic and uses different conditions. This guide follows the linked recipe, not an average of the two sources."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Zucchini",
+            "publisher": "www.loveandlemons.com",
+            "url": "https://www.loveandlemons.com/air-fryer-zucchini/",
+            "role": "reference",
+            "locator": "Recipe ingredients and instructions",
+            "evidence": "1 lb in 1-inch half-moons; 400°F, 9–11 minutes, single layer; preheat if appliance requires it."
+          },
+          {
+            "title": "Cosori Iconic cooking times guide",
+            "publisher": "COSORI",
+            "url": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+            "role": "cross-check",
+            "locator": "Vegetables / Zucchini/Squash",
+            "evidence": "1-inch slices: 385°F; 8–14 min."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "bell-peppers",
+    "name": "Bell peppers",
+    "aliases": [
+      "sweet peppers",
+      "capsicum",
+      "red peppers"
+    ],
+    "category": "vegetables",
+    "description": "Fresh half-inch pepper strips with regular shakes for even cooking.",
+    "safety": null,
+    "reviewedAt": "2026-11-12",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Fresh, ½-inch strips",
+        "state": "fresh",
+        "temperatureF": 380,
+        "minutes": [
+          10,
+          13
+        ],
+        "portion": "Fresh bell peppers, 3 whole peppers cut into roughly ½-inch strips; remove cores and seeds and arrange in one even layer.",
+        "preheat": "yes",
+        "turn": "Shake every 4 minutes.",
+        "steps": [
+          "Wash and dry the peppers, remove cores and seeds, and cut into even ½-inch strips.",
+          "Coat lightly with oil and seasoning, then spread in one even layer in the preheated basket.",
+          "Shake every 4 minutes and check for softened peppers with lightly browned edges."
+        ],
+        "notes": [
+          "The cross-check uses diced peppers, not strips. The displayed interval follows the half-inch-strip recipe."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Bell Peppers",
+            "publisher": "Simply Air Fryer",
+            "url": "https://www.simplyairfryer.com/air-fryer-bell-peppers/",
+            "role": "reference",
+            "locator": "Recipe ingredients and instructions",
+            "evidence": "3 peppers in roughly ½-inch strips; preheat 380°F; cook 10–13 minutes, shaking every 4 minutes."
+          },
+          {
+            "title": "Cosori Iconic cooking times guide",
+            "publisher": "COSORI",
+            "url": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+            "role": "cross-check",
+            "locator": "Vegetables / Bell Peppers",
+            "evidence": "1-inch dice: 385°F; 6–12 min."
+          }
+        ]
+      }
+    ]
+  }
+]

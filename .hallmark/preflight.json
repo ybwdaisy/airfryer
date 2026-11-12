@@ -1,0 +1,6 @@
+{
+  "scanned": "2026-11-12",
+  "findings": { "framework": "New independent Astro static project", "fonts": "Archivo self-hosted, one family for app scope", "palette": "Solstice long-light, warm paper and brown ink with restrained vermilion", "motion": "Control state changes only", "material": "Sourced cooking reference data; no original food photographs or cooking tests" },
+  "preserve": ["Existing ybwdaisy.com project and homepage remain untouched", "English audience, 50 distinct foods, sourced options only"],
+  "introduce": ["Independent subdomain and project", "Search-led app screen", "Warm kitchen utility design", "Per-food source records"]
+}
