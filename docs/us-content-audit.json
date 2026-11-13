@@ -1,0 +1,1048 @@
+{
+  "reviewedCount": 48,
+  "scope": "48 US food slugs excluding the two approved samples chicken-breast and steak. Multiple existing variants remain separate conditions; this is a dependency-gap audit, not physical cooking validation. complete means no blocking dependency found in the existing instructions, not that every optional seasoning has a measured recipe. enrich entries with full replacement fields were verified at their own primary sources; equipment-only and unresolved entries are explicitly identified.",
+  "items": [
+    {
+      "slug": "chicken-wings",
+      "variantId": "default",
+      "status": "enrich",
+      "reason": "Named baking-powder rub lacked quantities; original recipe now checked.",
+      "sourceUrl": "https://www.skinnytaste.com/air-fryer-chicken-wings/",
+      "sourceEvidence": "Original recipe card: ingredients and instructions, lines 283–300. Twenty wing pieces; measured baking-powder rub; 400°F, 16–22 minutes, halfway shake. No crowded-basket timing adopted.",
+      "ingredients": [
+        "20 split chicken wingettes/drumettes",
+        "1 tsp each kosher salt, garlic powder, onion powder and sweet paprika",
+        "1/2 tsp dried oregano; 1/4 tsp each thyme and ground sage",
+        "2 tsp baking powder",
+        "Oil spray for basket"
+      ],
+      "equipment": [
+        "Air fryer",
+        "Large mixing bowl",
+        "Paper towels",
+        "Food thermometer"
+      ],
+      "timeline": [
+        {
+          "label": "Prepare",
+          "detail": "Allow about 10 minutes to dry and coat the wings; no mandatory marinade."
+        },
+        {
+          "label": "Cook",
+          "detail": "16–22 minutes per single-layer batch; shake halfway."
+        }
+      ],
+      "preheatDetail": "Recipe card does not specify a preheat duration; retain the appliance-dependent setting.",
+      "steps": [
+        "Dry the wings thoroughly. Lightly oil the basket.",
+        "Mix the measured seasonings and baking powder; toss with wings until evenly coated.",
+        "Arrange one layer, without stacking. Cook at the existing 400°F setting, shaking halfway."
+      ],
+      "completion": "Keep the existing poultry thermometer check; color alone is insufficient.",
+      "ingredientsZh": [
+        "20块分切鸡翅中/鸡翅根",
+        "粗盐、蒜粉、洋葱粉、甜红椒粉各1 tsp",
+        "干牛至1/2 tsp；百里香、鼠尾草粉各1/4 tsp",
+        "泡打粉2 tsp",
+        "用于炸篮的喷油"
+      ],
+      "equipmentZh": [
+        "空气炸锅",
+        "大搅拌碗",
+        "厨房纸",
+        "食品温度计"
+      ],
+      "timelineZh": [
+        {
+          "label": "准备",
+          "detail": "约10分钟，用于吸干和拌料；无需强制腌制。"
+        },
+        {
+          "label": "烹饪",
+          "detail": "每批单层16–22分钟，中途摇篮。"
+        }
+      ],
+      "preheatDetailZh": "菜谱卡没有给出预热时长；保留依设备要求决定的设定。",
+      "stepsZh": [
+        "彻底吸干鸡翅；炸篮薄喷一层油。",
+        "将称量好的调料与泡打粉混合，和鸡翅拌匀。",
+        "单层摆放、不叠放；沿用400°F设定，中途摇篮。"
+      ],
+      "completionZh": "保留现有禽肉中心温度检查；不能只凭颜色判断。"
+    },
+    {
+      "slug": "chicken-thighs",
+      "variantId": "default",
+      "status": "enrich",
+      "reason": "Generic seasoning omitted the original lemon/spice preparation; original checked.",
+      "sourceUrl": "https://www.skinnytaste.com/air-fryer-chicken-thighs/",
+      "sourceEvidence": "Original recipe card lines 223–239; safety discussion line 161. Ingredient list says one lemon but instructions use juice of half; only half-juice is required here.",
+      "ingredients": [
+        "6 bone-in, skin-on chicken thighs",
+        "Juice of 1/2 lemon",
+        "1 tsp each kosher salt, garlic powder and onion powder",
+        "1/4 tsp black pepper",
+        "1/2 tsp sweet paprika; 1/2 tsp dried herbs such as oregano"
+      ],
+      "equipment": [
+        "Air fryer",
+        "Tongs",
+        "Food thermometer"
+      ],
+      "timeline": [
+        {
+          "label": "Prepare",
+          "detail": "About 5 minutes; rub on lemon juice and seasonings. No brine or long marinade required."
+        },
+        {
+          "label": "Cook",
+          "detail": "12 minutes skin-side down, then turn and cook another 12 minutes."
+        }
+      ],
+      "preheatDetail": "The recipe does not specify preheating; do not invent a duration.",
+      "steps": [
+        "Rub both sides with the half-lemon juice and measured spices.",
+        "Place skin-side down in one layer; cook batches if six do not fit.",
+        "Cook at the existing 400°F setting; turn after 12 minutes."
+      ],
+      "completion": "Check the thickest part away from bone; retain 165°F minimum.",
+      "ingredientsZh": [
+        "6块带骨带皮鸡大腿",
+        "1/2个柠檬的汁",
+        "粗盐、蒜粉、洋葱粉各1 tsp",
+        "黑胡椒1/4 tsp",
+        "甜红椒粉1/2 tsp；干香草（如牛至）1/2 tsp"
+      ],
+      "equipmentZh": [
+        "空气炸锅",
+        "夹子",
+        "食品温度计"
+      ],
+      "timelineZh": [
+        {
+          "label": "准备",
+          "detail": "约5分钟，抹柠檬汁和调料；无需盐水浸泡或长时间腌制。"
+        },
+        {
+          "label": "烹饪",
+          "detail": "鸡皮朝下12分钟，翻面后再烹饪12分钟。"
+        }
+      ],
+      "preheatDetailZh": "原文未规定预热，不补造预热时长。",
+      "stepsZh": [
+        "两面抹上1/2个柠檬的汁及称量好的调料。",
+        "鸡皮朝下单层摆放；6块放不下时分批。",
+        "沿用400°F设定，在12分钟时翻面。"
+      ],
+      "completionZh": "在最厚处避开骨头测温，保留最低165°F要求。"
+    },
+    {
+      "slug": "chicken-drumsticks",
+      "variantId": "default",
+      "status": "enrich",
+      "reason": "Dry rub lacked a recipe and optional refrigerated waiting time; original PDF checked.",
+      "sourceUrl": "https://www.nifs.org/hubfs/Air-Fryer%20Chicken%20Drums.pdf",
+      "sourceEvidence": "NIFS one-page PDF: ingredients lines 8–16, coating and optional 30-minute fridge rest lines 18–22, air-fryer method lines 23–26.",
+      "ingredients": [
+        "8 raw chicken drumsticks, about 4 oz each",
+        "2 tsp ground black pepper",
+        "1 tbsp garlic powder; 1 tbsp onion powder",
+        "2 tsp paprika; 2 tsp cumin"
+      ],
+      "equipment": [
+        "Air fryer",
+        "Large lidded bowl or 1-gallon food bag",
+        "Tongs",
+        "Food thermometer"
+      ],
+      "timeline": [
+        {
+          "label": "Optional rest",
+          "detail": "For more flavor, refrigerate coated drumsticks for 30 minutes; this is optional."
+        },
+        {
+          "label": "Cook",
+          "detail": "20 minutes as the first check, turning at 10 minutes."
+        }
+      ],
+      "preheatDetail": "Preheat to 400°F; the PDF gives no number of minutes.",
+      "steps": [
+        "Combine all dry-rub ingredients in a lidded bowl or food bag.",
+        "Add drumsticks and shake until coated. Cook now or use the optional refrigerated rest.",
+        "Place in one layer; cook at the existing setting and turn at 10 minutes."
+      ],
+      "completion": "Verify 165°F internally; continue if the 20-minute check is below target.",
+      "notes": [
+        "The original explicitly permits another rub. No wet marinade or breading is required."
+      ],
+      "ingredientsZh": [
+        "8只生鸡腿，每只约4 oz",
+        "黑胡椒粉2 tsp",
+        "蒜粉1 tbsp；洋葱粉1 tbsp",
+        "红椒粉2 tsp；孜然2 tsp"
+      ],
+      "equipmentZh": [
+        "空气炸锅",
+        "带盖大碗或1-gallon食品袋",
+        "夹子",
+        "食品温度计"
+      ],
+      "timelineZh": [
+        {
+          "label": "可选静置",
+          "detail": "想更入味可将裹好干料的鸡腿冷藏30分钟；不是必需步骤。"
+        },
+        {
+          "label": "烹饪",
+          "detail": "20分钟时首次检查，10分钟时翻面。"
+        }
+      ],
+      "preheatDetailZh": "预热至400°F；PDF未给出预热分钟数。",
+      "stepsZh": [
+        "将所有干调料放入带盖大碗或食品袋中混匀。",
+        "加入鸡腿摇匀至表面裹满，可立即烹饪或先按可选步骤冷藏。",
+        "单层放入，沿用现有设定，10分钟时翻面。"
+      ],
+      "completionZh": "中心达到165°F；20分钟检查时不足则继续烹饪。",
+      "preheat": "yes",
+      "notesZh": [
+        "原作者允许替换其他干香料，不需要湿腌或裹粉。"
+      ]
+    },
+    {
+      "slug": "turkey-breast",
+      "variantId": "default",
+      "status": "enrich",
+      "reason": "Herb butter required a complete ingredient list and exact preheat/rest details; original checked.",
+      "sourceUrl": "https://www.eatingbirdfood.com/air-fryer-turkey-breast/",
+      "sourceEvidence": "Original recipe card lines 169–199 supplies herb-butter quantities, preheat 3–4 minutes, 20+20-minute turn and 10-minute rest.",
+      "ingredients": [
+        "3 lb fully thawed boneless, skin-on turkey breast roast",
+        "2 tbsp softened butter",
+        "2 tsp kosher salt; 1/4 tsp black pepper",
+        "3 minced garlic cloves",
+        "1 tbsp each finely chopped fresh sage, thyme and rosemary"
+      ],
+      "equipment": [
+        "Air fryer large enough for the roast",
+        "Small bowl",
+        "Paper towels",
+        "Tongs",
+        "Food thermometer",
+        "Cutting board"
+      ],
+      "timeline": [
+        {
+          "label": "Prepare",
+          "detail": "About 10 minutes; mix butter and season roast. No overnight brine required."
+        },
+        {
+          "label": "Cook",
+          "detail": "20 minutes skin-side up, turn, then another 20 minutes as the check."
+        },
+        {
+          "label": "Rest",
+          "detail": "10 minutes before slicing."
+        }
+      ],
+      "preheatDetail": "Preheat to 350°F for 3–4 minutes. Use Roast if available, as the reference directs.",
+      "steps": [
+        "Combine softened butter, garlic, herbs, salt and pepper.",
+        "Dry roast; gently loosen skin and spread butter underneath and over the exterior.",
+        "Start skin-side up. Turn at 20 minutes; check the thickest center at the existing cook time."
+      ],
+      "completion": "Cook to 165°F; rest 10 minutes before slicing.",
+      "notes": [
+        "Check the product for added brine/salt and reduce seasoning accordingly. Different weights or shapes are not covered by a multiplier."
+      ],
+      "ingredientsZh": [
+        "3 lb完全解冻的去骨带皮火鸡胸肉卷",
+        "软化黄油2 tbsp",
+        "粗盐2 tsp；黑胡椒1/4 tsp",
+        "3瓣蒜，切末",
+        "新鲜鼠尾草、百里香、迷迭香各切细1 tbsp"
+      ],
+      "equipmentZh": [
+        "容量足够容纳肉卷的空气炸锅",
+        "小碗",
+        "厨房纸",
+        "夹子",
+        "食品温度计",
+        "砧板"
+      ],
+      "timelineZh": [
+        {
+          "label": "准备",
+          "detail": "约10分钟，混合黄油并抹肉；无需隔夜盐水腌制。"
+        },
+        {
+          "label": "烹饪",
+          "detail": "皮朝上20分钟，翻面后再20分钟并检查。"
+        },
+        {
+          "label": "静置",
+          "detail": "切片前静置10分钟。"
+        }
+      ],
+      "preheatDetailZh": "350°F预热3–4分钟；设备有Roast（烘烤）模式时按原文使用。",
+      "stepsZh": [
+        "混合软化黄油、蒜末、香草、盐和黑胡椒。",
+        "吸干肉卷，轻轻松开外皮，把香草黄油抹在皮下和外表面。",
+        "先皮朝上，20分钟时翻面；到现有烹饪时间后检查最厚处中心。"
+      ],
+      "completionZh": "中心达到165°F，切片前静置10分钟。",
+      "preheat": "yes",
+      "notesZh": [
+        "查看产品是否已经注盐水或加盐，酌减调味；不同重量或形状不能用倍数推算时间。"
+      ]
+    },
+    {
+      "slug": "burger-patties",
+      "variantId": "default",
+      "status": "complete",
+      "reason": "Patty meat, weight, thickness, forming method and safe finish are specified; seasoning is optional.",
+      "sourceUrl": "https://www.spendwithpennies.com/air-fryer-hamburgers/",
+      "sourceEvidence": "Local source record reviewed: ¼ lb, ½-inch beef patties; 370°F for 6 plus 3–5 minutes, finishing at 160°F. This baseline audit is not a fresh online verification."
+    },
+    {
+      "slug": "meatballs",
+      "variantId": "default",
+      "status": "enrich",
+      "reason": "Egg-and-breadcrumb binder lacked all quantities and assembly order; original checked.",
+      "sourceUrl": "https://www.wellplated.com/air-fryer-meatballs/",
+      "sourceEvidence": "Original card lines 142–185 gives binder quantities, 1 1/2-inch size, 400°F, 7–9 minutes and 165°F target.",
+      "ingredients": [
+        "1 lb cold 93%-lean ground beef",
+        "1/3 cup grated Parmesan; 1/3 cup Italian-seasoned breadcrumbs",
+        "1 tbsp dried parsley",
+        "1 tsp kosher salt; 1 tsp Italian seasoning",
+        "1/2 tsp each garlic and onion powder; 1/4 tsp black pepper",
+        "1 large egg",
+        "Optional: 1/4 tsp red pepper flakes",
+        "Nonstick spray"
+      ],
+      "equipment": [
+        "Air fryer",
+        "Mixing bowl and small egg bowl",
+        "Tray for formed meatballs",
+        "Tongs",
+        "Food thermometer"
+      ],
+      "timeline": [
+        {
+          "label": "Prepare",
+          "detail": "About 20 minutes to mix and form roughly twenty 1 1/2-inch balls; keep beef cold."
+        },
+        {
+          "label": "Cook",
+          "detail": "7–9 minutes per batch; turn halfway."
+        }
+      ],
+      "preheatDetail": "Preheat to 400°F; original does not specify minutes.",
+      "steps": [
+        "Combine Parmesan, crumbs and dry seasonings. Beat egg separately.",
+        "Add cold beef and egg; mix gently without compressing. Shape equal 1 1/2-inch balls.",
+        "Spray basket and meatball tops. Arrange apart in one layer, cook at the existing setting and turn halfway."
+      ],
+      "completion": "Reference requires 165°F in the center.",
+      "notes": [
+        "Poultry alternatives in the original are outside this beef-only condition. Optional oven holding is not needed to complete a batch."
+      ],
+      "ingredientsZh": [
+        "冷藏的93%瘦牛绞肉1 lb",
+        "帕尔马干酪碎1/3 cup；意式调味面包糠1/3 cup",
+        "干欧芹1 tbsp",
+        "粗盐1 tsp；意式综合香料1 tsp",
+        "蒜粉、洋葱粉各1/2 tsp；黑胡椒1/4 tsp",
+        "大鸡蛋1个",
+        "可选：红椒碎1/4 tsp",
+        "不粘喷油"
+      ],
+      "equipmentZh": [
+        "空气炸锅",
+        "搅拌碗和打蛋小碗",
+        "盛放成形肉丸的托盘",
+        "夹子",
+        "食品温度计"
+      ],
+      "timelineZh": [
+        {
+          "label": "准备",
+          "detail": "约20分钟，混合并捏成约20个1 1/2-inch肉丸；牛肉保持冷藏状态至使用。"
+        },
+        {
+          "label": "烹饪",
+          "detail": "每批7–9分钟，中途翻面。"
+        }
+      ],
+      "preheatDetailZh": "预热至400°F；原文未给出分钟数。",
+      "stepsZh": [
+        "混合干酪、面包糠和干调料，另碗打散鸡蛋。",
+        "加入冷牛绞肉和蛋液，轻拌均匀、不压实；捏成大小一致的1 1/2-inch肉丸。",
+        "炸篮和肉丸顶部喷油；单层留空摆放，沿用现有设定并中途翻面。"
+      ],
+      "completionZh": "参考菜谱要求中心达到165°F。",
+      "preheat": "yes",
+      "notesZh": [
+        "原作者的禽肉替代方案不属于本牛肉丸条件；完成单批不需要另用烤箱保温。"
+      ]
+    },
+    {
+      "slug": "pork-chops",
+      "variantId": "default",
+      "status": "complete",
+      "reason": "An executable salt-and-pepper path is already provided; optional marinade is not required. Do not present the unspecified marinade as a completed recipe.",
+      "sourceUrl": "https://www.wholesomeyum.com/air-fryer-pork-chops/",
+      "sourceEvidence": "Local source record reviewed: 8 oz chops; 400°F preheat 5 minutes; boneless about 12 minutes, turning halfway, to 145°F. This baseline audit is not a fresh online verification."
+    },
+    {
+      "slug": "pork-tenderloin",
+      "variantId": "default",
+      "status": "enrich",
+      "reason": "Mustard-and-vinegar preparation omitted amounts and optional marinade duration; original checked.",
+      "sourceUrl": "https://www.spendwithpennies.com/air-fryer-pork-tenderloin/",
+      "sourceEvidence": "Original lines 30–38 and 124–153: ingredient quantities, optional one-hour marinade, silver-skin removal, 400°F, 16–17 minutes and five-minute rest.",
+      "ingredients": [
+        "1 pork tenderloin, 1 1/4–1 1/2 lb",
+        "1/2 tsp kosher salt; 1/4 tsp black pepper",
+        "1 tsp Dijon mustard",
+        "1 tbsp balsamic vinegar",
+        "1 tsp olive oil; 1/2 tsp Italian seasoning"
+      ],
+      "equipment": [
+        "Air fryer",
+        "Sharp knife and cutting board",
+        "Small bowl and brush",
+        "Food thermometer"
+      ],
+      "timeline": [
+        {
+          "label": "Prepare",
+          "detail": "About 5 minutes to trim and coat. Optional marinating: up to 1 hour; keep refrigerated under the existing food-handling guidance."
+        },
+        {
+          "label": "Cook",
+          "detail": "16–17 minutes as the existing check."
+        },
+        {
+          "label": "Rest",
+          "detail": "At least 5 minutes before slicing."
+        }
+      ],
+      "preheatDetail": "Preheat to 400°F; no preheat duration specified.",
+      "steps": [
+        "Slip a knife under the silver skin and remove it carefully.",
+        "Mix Dijon, vinegar, oil and Italian seasoning. Brush all sides; add salt and pepper.",
+        "Place in the hot basket; cut crosswise only if needed to fit. Cook at the existing setting and measure the thickest center."
+      ],
+      "completion": "Retain the app’s 145°F minimum before removal, then rest at least 5 minutes.",
+      "notes": [
+        "Use tenderloin, not the much thicker pork loin. The original allows early removal for carryover; the app must retain its stricter minimum-before-removal policy."
+      ],
+      "ingredientsZh": [
+        "1条猪里脊，1 1/4–1 1/2 lb",
+        "粗盐1/2 tsp；黑胡椒1/4 tsp",
+        "第戎芥末1 tsp",
+        "意大利黑醋1 tbsp",
+        "橄榄油1 tsp；意式综合香料1/2 tsp"
+      ],
+      "equipmentZh": [
+        "空气炸锅",
+        "锋利刀具和砧板",
+        "小碗和刷子",
+        "食品温度计"
+      ],
+      "timelineZh": [
+        {
+          "label": "准备",
+          "detail": "修整和涂料约5分钟。可选腌制最多1小时，按现有食品处理要求冷藏。"
+        },
+        {
+          "label": "烹饪",
+          "detail": "沿用16–17分钟作为检查点。"
+        },
+        {
+          "label": "静置",
+          "detail": "切片前至少5分钟。"
+        }
+      ],
+      "preheatDetailZh": "预热至400°F；原文未给出预热时长。",
+      "stepsZh": [
+        "小心把刀伸入银白筋膜下方，剔除筋膜。",
+        "混合第戎芥末、醋、油和意式香料，刷遍各面，再加盐和黑胡椒。",
+        "放入热炸篮；只有放不下时才横切。沿用现有设定，测量最厚处中心。"
+      ],
+      "completionZh": "保留应用要求：取出前至少145°F，随后静置至少5分钟。",
+      "preheat": "yes",
+      "notesZh": [
+        "用细长猪里脊，不是更粗的猪外脊；原作允许靠余温提前出锅，本应用保留出锅前达到最低温度的要求。"
+      ]
+    },
+    {
+      "slug": "bacon",
+      "variantId": "regular",
+      "status": "complete",
+      "reason": "Both regular and thick cuts already define fresh state, batch and no-oil method; keep their separate timings.",
+      "sourceUrl": "https://natashaskitchen.com/air-fryer-bacon/",
+      "sourceEvidence": "Local source record reviewed: 350°F: regular-cut 7–9 minutes, thick-cut 10–12 minutes. Five strips; no preheat or flip. This baseline audit is not a fresh online verification.",
+      "notes": [
+        "This slug review also covers variants: thick. Keep each existing condition separate."
+      ]
+    },
+    {
+      "slug": "sausages",
+      "variantId": "default",
+      "status": "complete",
+      "reason": "Fresh raw Italian pork links are explicit; no missing binder or marinade. Individual size is not known, so retain package and thermometer limits.",
+      "sourceUrl": "https://cookthestory.com/air-fryer-sausages/",
+      "sourceEvidence": "Local source record reviewed: 6 raw Italian links in one layer; 400°F for 9–12 minutes. Individual weight is not given. This baseline audit is not a fresh online verification."
+    },
+    {
+      "slug": "salmon",
+      "variantId": "default",
+      "status": "complete",
+      "reason": "Plain dried-and-seasoned fish is executable; the reference glaze is optional and must not become a hidden requirement.",
+      "sourceUrl": "https://www.wellplated.com/air-fryer-salmon/",
+      "sourceEvidence": "Local source record reviewed: Two 6 oz fillets; preheat 400°F, cook 6–11 minutes; around 1-inch fillets 8–9 minutes; thermometer finish. This baseline audit is not a fresh online verification."
+    },
+    {
+      "slug": "cod",
+      "variantId": "default",
+      "status": "complete",
+      "reason": "Fillet size, oil/lemon coating and thermometer finish are given; no essential compound preparation is missing.",
+      "sourceUrl": "https://www.wholesomeyum.com/air-fryer-cod/",
+      "sourceEvidence": "Local source record reviewed: Four 6 oz fillets; preheat 400°F, cook 8–10 minutes; source gives 140–145°F finish. This baseline audit is not a fresh online verification."
+    },
+    {
+      "slug": "tilapia",
+      "variantId": "default",
+      "status": "complete",
+      "reason": "Fresh state, fillet size and simple seasoning are clear; do not imply seven minutes guarantees doneness.",
+      "sourceUrl": "https://thebigmansworld.com/air-fryer-tilapia/",
+      "sourceEvidence": "Local source record reviewed: 4–6 oz fillets; preheat 400°F, cook fresh fillets 7 minutes, flipping halfway. This baseline audit is not a fresh online verification."
+    },
+    {
+      "slug": "shrimp",
+      "variantId": "default",
+      "status": "complete",
+      "reason": "Raw peeled/deveined large shrimp and thawed alternative are explicit; no missing compound coating.",
+      "sourceUrl": "https://www.wholesomeyum.com/air-fryer-shrimp/",
+      "sourceEvidence": "Local source record reviewed: Preheated 400°F: large shrimp 3–4 minutes; extra-large/jumbo 4–7. Ingredient amount 1 lb; single layer. This baseline audit is not a fresh online verification."
+    },
+    {
+      "slug": "scallops",
+      "variantId": "default",
+      "status": "complete",
+      "reason": "Sea scallops, thawed state, drying and side-muscle removal are specified; bay scallops excluded.",
+      "sourceUrl": "https://www.cookedbyjulie.com/air-fryer-scallops/",
+      "sourceEvidence": "Local source record reviewed: ½ lb sea scallops; preheat 400°F, cook 6 minutes, flipping after 3. This baseline audit is not a fresh online verification."
+    },
+    {
+      "slug": "broccoli",
+      "variantId": "default",
+      "status": "complete",
+      "reason": "Large florets and single-layer oil coating are explicit; no breading, batter or soak dependency.",
+      "sourceUrl": "https://www.loveandlemons.com/air-fryer-broccoli/",
+      "sourceEvidence": "Local source record reviewed: 2 crowns in large florets; preheat 350°F; single layer, 8–10 minutes, turning halfway. This baseline audit is not a fresh online verification."
+    },
+    {
+      "slug": "cauliflower",
+      "variantId": "default",
+      "status": "complete",
+      "reason": "Even fresh florets with oil/lemon seasoning; no breading dependency.",
+      "sourceUrl": "https://www.wholesomeyum.com/air-fryer-cauliflower/",
+      "sourceEvidence": "Local source record reviewed: 1 head in florets; preheat 380°F; single-layer batches, 7–10 minutes, shaking halfway. This baseline audit is not a fresh online verification."
+    },
+    {
+      "slug": "brussels-sprouts",
+      "variantId": "default",
+      "status": "complete",
+      "reason": "Halving/quartering and staged shaking are given; source soaking is explicitly optional, not a hidden prerequisite.",
+      "sourceUrl": "https://www.wellplated.com/air-fryer-brussels-sprouts/",
+      "sourceEvidence": "Local source record reviewed: 1 lb halved; preheat 375°F; cook 5+5+2–4 minutes, shaking at the stated checks. This baseline audit is not a fresh online verification."
+    },
+    {
+      "slug": "asparagus",
+      "variantId": "default",
+      "status": "complete",
+      "reason": "Woody-end removal and simple coating are given; thickness uncertainty remains visible.",
+      "sourceUrl": "https://www.loveandlemons.com/air-fryer-asparagus/",
+      "sourceEvidence": "Local source record reviewed: 1 trimmed bunch; preheat 370°F; single layer, 6–8 minutes, flip halfway. This baseline audit is not a fresh online verification."
+    },
+    {
+      "slug": "green-beans",
+      "variantId": "default",
+      "status": "complete",
+      "reason": "Washed, dried and trimmed fresh beans with oil; no compound preparation required.",
+      "sourceUrl": "https://www.loveandlemons.com/air-fryer-green-beans/",
+      "sourceEvidence": "Local source record reviewed: 1 lb trimmed beans; preheat 400°F; single layer, 9–11 minutes. This baseline audit is not a fresh online verification."
+    },
+    {
+      "slug": "carrots",
+      "variantId": "default",
+      "status": "complete",
+      "reason": "Three-quarter-inch sticks and oil coating are specified; do not change to sliced carrots.",
+      "sourceUrl": "https://www.wholesomeyum.com/air-fryer-carrots/",
+      "sourceEvidence": "Local source record reviewed: 1 lb carrots in ¾-inch strips; preheat 380°F; single layer, 12–15 minutes, shake halfway. This baseline audit is not a fresh online verification."
+    },
+    {
+      "slug": "zucchini",
+      "variantId": "default",
+      "status": "complete",
+      "reason": "One-inch half-moons and plain oil coating are executable.",
+      "sourceUrl": "https://www.loveandlemons.com/air-fryer-zucchini/",
+      "sourceEvidence": "Local source record reviewed: 1 lb in 1-inch half-moons; 400°F, 9–11 minutes, single layer; preheat if appliance requires it. This baseline audit is not a fresh online verification."
+    },
+    {
+      "slug": "bell-peppers",
+      "variantId": "default",
+      "status": "complete",
+      "reason": "Cored, seeded half-inch strips and shaking cadence are explicit.",
+      "sourceUrl": "https://www.simplyairfryer.com/air-fryer-bell-peppers/",
+      "sourceEvidence": "Local source record reviewed: 3 peppers in roughly ½-inch strips; preheat 380°F; cook 10–13 minutes, shaking every 4 minutes. This baseline audit is not a fresh online verification."
+    },
+    {
+      "slug": "mushrooms",
+      "variantId": "sliced",
+      "status": "complete",
+      "reason": "Fresh sliced mushrooms and simple oil coating are specified; no missing compound preparation.",
+      "sourceUrl": "https://airfryingfoodie.com/air-fryer-mushrooms/",
+      "sourceEvidence": "Local source record reviewed: 16 oz sliced; preheat; 400°F for 5–7 minutes; turn halfway. This baseline audit is not a fresh online verification."
+    },
+    {
+      "slug": "corn-on-the-cob",
+      "variantId": "fresh",
+      "status": "complete",
+      "reason": "Shucked unwrapped ears and oil coating are explicit; foil is neither needed nor permitted by this method.",
+      "sourceUrl": "https://www.wholesomeyum.com/air-fryer-corn-on-the-cob/",
+      "sourceEvidence": "Local source record reviewed: 4 ears; preheated 400°F; fresh 10–12 minutes; flip halfway. This baseline audit is not a fresh online verification."
+    },
+    {
+      "slug": "eggplant",
+      "variantId": "parmesan-slices",
+      "status": "enrich",
+      "reason": "Original source now checked; measured Parmesan coating and ordered preparation are complete for the unchanged slice condition.",
+      "sourceUrl": "https://www.wholesomeyum.com/air-fryer-eggplant/",
+      "sourceEvidence": "Primary card lines 411–428 verifies quantities, 3/8–1/2-inch rounds, preheat 375°F and 10–12 minutes. Tips lines 306–307 specify fine grated cheese/unsalted seasoning; line 339 advises against flipping.",
+      "ingredients": [
+        "1 medium eggplant",
+        "2 tbsp olive oil",
+        "1 tsp sea salt",
+        "1/2 tsp black pepper",
+        "1 cup finely grated Parmesan, not shredded",
+        "2 tsp unsalted Italian seasoning"
+      ],
+      "ingredientsZh": [
+        "1个中等大小茄子",
+        "橄榄油2 tbsp",
+        "海盐1 tsp",
+        "黑胡椒1/2 tsp",
+        "细粉状帕尔马干酪1 cup，不用粗丝状干酪",
+        "无盐意式综合香料2 tsp"
+      ],
+      "equipment": [
+        "Air fryer",
+        "Knife and cutting board",
+        "Paper towels",
+        "Oil brush"
+      ],
+      "equipmentZh": [
+        "空气炸锅",
+        "刀和砧板",
+        "厨房纸",
+        "刷油刷"
+      ],
+      "timeline": [
+        {
+          "label": "Prepare",
+          "detail": "About 5 minutes to slice, dry and coat; no soak or marinade."
+        },
+        {
+          "label": "Cook",
+          "detail": "10–12 minutes per single-layer batch; no flipping required."
+        }
+      ],
+      "timelineZh": [
+        {
+          "label": "准备",
+          "detail": "切片、吸干和涂料约5分钟；无需浸泡或腌制。"
+        },
+        {
+          "label": "烹饪",
+          "detail": "每批单层10–12分钟；无需翻面。"
+        }
+      ],
+      "preheat": "yes",
+      "preheatDetail": "Preheat to 375°F; source gives no minute count.",
+      "preheatDetailZh": "预热至375°F；原文没有规定预热分钟数。",
+      "steps": [
+        "Cut across into uniform 3/8–1/2-inch rounds; discard the leafy end. Pat dry.",
+        "Brush both sides with oil. Apply salt, pepper, Italian seasoning, then Parmesan, in that order.",
+        "Arrange in one layer. Cook at the existing 375°F setting for 10–12 minutes; repeat in batches."
+      ],
+      "stepsZh": [
+        "横切成厚薄一致的3/8–1/2-inch圆片，丢弃蒂部，吸干表面。",
+        "两面刷油，依次撒上海盐、黑胡椒、意式香料，最后撒帕尔马干酪。",
+        "单层放入，沿用375°F烹饪10–12分钟；剩余茄子分批处理。"
+      ],
+      "completion": "Flesh must be very soft and cheese golden; check the interior, not only surface color.",
+      "completionZh": "内部须十分柔软、干酪呈金黄；检查内部，不只观察表面颜色。",
+      "notes": [
+        "Use a medium eggplant. Fine grated Parmesan is essential for this coating; no breadcrumbs, sauce or egg wash required."
+      ],
+      "notesZh": [
+        "使用中等大小茄子；这种涂层使用细粉状帕尔马干酪，不需要面包糠、酱料或蛋液。"
+      ]
+    },
+    {
+      "slug": "butternut-squash",
+      "variantId": "one-inch-cubes",
+      "status": "complete",
+      "reason": "Peeling, seeding, one-inch cubes and single-layer batches are explicit.",
+      "sourceUrl": "https://airfryingfoodie.com/air-fryer-butternut-squash/",
+      "sourceEvidence": "Local source record reviewed: 1-inch cubes; 400°F for 16–18 minutes; shake halfway. This baseline audit is not a fresh online verification."
+    },
+    {
+      "slug": "beets",
+      "variantId": "three-quarter-inch",
+      "status": "complete",
+      "reason": "Equal three-quarter-inch pieces, one tablespoon oil and fork finish are provided.",
+      "sourceUrl": "https://www.rachelcooks.com/air-fryer-beets/",
+      "sourceEvidence": "Local source record reviewed: 1 lb, 3/4-inch pieces; 380°F for 20–22 minutes; toss 1–2 times. This baseline audit is not a fresh online verification."
+    },
+    {
+      "slug": "potatoes",
+      "variantId": "chunks",
+      "status": "complete",
+      "reason": "Both chunk and whole-russet variants are executable with separate cuts, oiling and fork checks; do not combine their times.",
+      "sourceUrl": "https://www.loveandlemons.com/air-fryer-potatoes/",
+      "sourceEvidence": "Local source record reviewed: 1 lb baby or 3/4-inch Yukon Gold; preheat 400°F; 15–20 minutes, flip halfway. This baseline audit is not a fresh online verification.",
+      "notes": [
+        "This slug review also covers variants: whole. Keep each existing condition separate."
+      ]
+    },
+    {
+      "slug": "sweet-potatoes",
+      "variantId": "whole",
+      "status": "complete",
+      "reason": "Whole medium sweet potatoes, piercing and unwrapped cooking are explicit.",
+      "sourceUrl": "https://www.loveandlemons.com/air-fryer-sweet-potato/",
+      "sourceEvidence": "Local source record reviewed: 2 medium sweet potatoes; preheat 400°F; 40–55 minutes. This baseline audit is not a fresh online verification."
+    },
+    {
+      "slug": "tofu",
+      "variantId": "extra-firm",
+      "status": "enrich",
+      "reason": "Crisp coating lacked quantities, mixing order and optional pressing duration; original checked.",
+      "sourceUrl": "https://www.loveandlemons.com/air-fryer-tofu/",
+      "sourceEvidence": "Original recipe card lines 124–140 gives all quantities, optional 30-minute press, liquid-then-starch order, 400°F and 11–15 minutes.",
+      "ingredients": [
+        "14 oz extra-firm tofu",
+        "1/2 tbsp avocado oil",
+        "2 tbsp tamari",
+        "1/2 tsp sriracha",
+        "1 tbsp cornstarch"
+      ],
+      "equipment": [
+        "Air fryer",
+        "Large bowl",
+        "Knife",
+        "For optional pressing: clean kitchen towel or paper towels and a heavy skillet, or a tofu press"
+      ],
+      "timeline": [
+        {
+          "label": "Optional pressing",
+          "detail": "30 minutes before coating; this is extra time, not part of the 11–15-minute cook."
+        },
+        {
+          "label": "Coat",
+          "detail": "Mix liquid ingredients first; toss cubes, then add cornstarch."
+        },
+        {
+          "label": "Cook",
+          "detail": "11–15 minutes per single-layer batch; turn halfway."
+        }
+      ],
+      "preheatDetail": "Preheat to 400°F; source gives no minute count.",
+      "steps": [
+        "Optionally wrap the block in towels and weight it with a heavy skillet for 30 minutes.",
+        "Cube tofu. Mix oil, tamari and sriracha; gently coat cubes, then toss with cornstarch.",
+        "Space cubes apart in one layer. Cook at the existing setting and turn halfway."
+      ],
+      "completion": "Edges should be golden and crisp.",
+      "notes": [
+        "Extra-firm tofu only; softer tofu may break apart. Original gives no numeric cube edge size; do not invent one."
+      ],
+      "ingredientsZh": [
+        "特硬豆腐14 oz",
+        "牛油果油1/2 tbsp",
+        "日式无麦酱油tamari 2 tbsp",
+        "是拉差辣椒酱1/2 tsp",
+        "玉米淀粉1 tbsp"
+      ],
+      "equipmentZh": [
+        "空气炸锅",
+        "大碗",
+        "刀",
+        "可选压水：干净厨房布或厨房纸加厚重平底锅，或豆腐压水器"
+      ],
+      "timelineZh": [
+        {
+          "label": "可选压水",
+          "detail": "裹料前30分钟；另计，不包含在11–15分钟烹饪时间内。"
+        },
+        {
+          "label": "裹料",
+          "detail": "先混合液体拌豆腐，再加入淀粉。"
+        },
+        {
+          "label": "烹饪",
+          "detail": "每批单层11–15分钟，中途翻面。"
+        }
+      ],
+      "preheatDetailZh": "预热至400°F；原文没有预热分钟数。",
+      "stepsZh": [
+        "可选：用布或纸包住整块豆腐，上压厚重平底锅30分钟。",
+        "豆腐切块；混合油、tamari和辣椒酱，轻轻拌匀，再拌入玉米淀粉。",
+        "单层摆放并留空；沿用现有设定，中途翻面。"
+      ],
+      "completionZh": "边缘呈金黄且酥脆。",
+      "preheat": "yes",
+      "notesZh": [
+        "只用特硬豆腐，较软的容易碎；原作没有给出块边长，不补造尺寸。"
+      ]
+    },
+    {
+      "slug": "chickpeas",
+      "variantId": "cooked",
+      "status": "complete",
+      "reason": "Already-cooked or canned chickpeas, drying and oil quantity are explicit; dried raw beans excluded.",
+      "sourceUrl": "https://www.loveandlemons.com/air-fryer-chickpeas/",
+      "sourceEvidence": "Local source record reviewed: 1 1/2 cups cooked, dried chickpeas; preheat 400°F; 10–15 minutes, toss halfway. This baseline audit is not a fresh online verification."
+    },
+    {
+      "slug": "french-fries",
+      "variantId": "regular",
+      "status": "complete",
+      "reason": "Both regular and shoestring frozen variants specify their product/cut restrictions and separate times; package precedence remains necessary.",
+      "sourceUrl": "https://airfryingfoodie.com/air-fryer-frozen-french-fries/",
+      "sourceEvidence": "Local source record reviewed: 1 lb; preheat 400°F; 10 minutes, shake, then 8–10 minutes. This baseline audit is not a fresh online verification.",
+      "notes": [
+        "This slug review also covers variants: shoestring. Keep each existing condition separate."
+      ]
+    },
+    {
+      "slug": "chicken-nuggets",
+      "variantId": "fully-cooked-tyson",
+      "status": "complete",
+      "reason": "Exact Tyson fully cooked frozen product is named; no equivalence to raw nuggets is implied.",
+      "sourceUrl": "https://www.tyson.com/products/nuggets-patties/00023700061874",
+      "sourceEvidence": "Local source record reviewed: Fully cooked frozen product; air fry 7 minutes at 390°F. This baseline audit is not a fresh online verification."
+    },
+    {
+      "slug": "fish-sticks",
+      "variantId": "gortons",
+      "status": "complete",
+      "reason": "Exact Gorton's uncooked frozen product and its stricter 165°F package finish are explicit.",
+      "sourceUrl": "https://www.gortons.com/products/crunchy-breaded-fish-sticks/",
+      "sourceEvidence": "Local source record reviewed: Uncooked frozen; one layer; 400°F, 7–9 minutes; center at least 165°F. This baseline audit is not a fresh online verification."
+    },
+    {
+      "slug": "onion-rings",
+      "variantId": "alexia",
+      "status": "complete",
+      "reason": "Exact Alexia panko-coated frozen product and half-full basket limit are explicit.",
+      "sourceUrl": "https://www.harristeeter.com/p/alexia-crispy-onion-rings-frozen-onion-rings/0083418300705",
+      "sourceEvidence": "Local source record reviewed: 13.5 oz product; preheat 360°F; basket at most half full; 12–14 minutes; shake halfway. This baseline audit is not a fresh online verification."
+    },
+    {
+      "slug": "mozzarella-sticks",
+      "variantId": "frozen",
+      "status": "complete",
+      "reason": "Frozen breaded ready-made sticks, count and early-check guidance are explicit; homemade cheese sticks are excluded by state.",
+      "sourceUrl": "https://airfryingfoodie.com/air-fryer-frozen-mozzarella-sticks/",
+      "sourceEvidence": "Local source record reviewed: 10 frozen sticks; preheat 390°F; 5–7 minutes, flip halfway. This baseline audit is not a fresh online verification."
+    },
+    {
+      "slug": "tater-tots",
+      "variantId": "frozen",
+      "status": "complete",
+      "reason": "Frozen formed tots with two-cup batch and reference brand are specified.",
+      "sourceUrl": "https://airfryingfoodie.com/air-fryer-tater-tots/",
+      "sourceEvidence": "Local source record reviewed: 2 cups, single layer; preheat 400°F; 12–15 minutes, toss every 4–5. This baseline audit is not a fresh online verification."
+    },
+    {
+      "slug": "hash-browns",
+      "variantId": "patties",
+      "status": "complete",
+      "reason": "Frozen formed Ore-Ida-type patties are specified; loose shreds and raw grated potato are excluded.",
+      "sourceUrl": "https://www.everydayfamilycooking.com/air-fryer-frozen-hash-brown-patties/",
+      "sourceEvidence": "Local source record reviewed: 4 patties; preheat 400°F; 8–10 minutes, flip halfway. This baseline audit is not a fresh online verification."
+    },
+    {
+      "slug": "spring-rolls",
+      "variantId": "frozen-vegetable",
+      "status": "complete",
+      "reason": "Frozen large vegetable rolls are specified; fresh rice-paper and raw meat-filled products are excluded.",
+      "sourceUrl": "https://www.simplyairfryer.com/air-fryer-frozen-spring-rolls/",
+      "sourceEvidence": "Local source record reviewed: 4 frozen rolls; preheat 380°F; 5 minutes then 4–5 after flipping. This baseline audit is not a fresh online verification."
+    },
+    {
+      "slug": "dumplings",
+      "variantId": "vegetable-potstickers",
+      "status": "complete",
+      "reason": "Frozen vegetable potstickers and oil coating are explicit; raw meat and steam-required products excluded.",
+      "sourceUrl": "https://www.everydayfamilycooking.com/air-fryer-dumplings/",
+      "sourceEvidence": "Local source record reviewed: 8 oz; preheat 370°F; 5 minutes then 4–6; flip and re-oil. This baseline audit is not a fresh online verification."
+    },
+    {
+      "slug": "jalapeno-poppers",
+      "variantId": "farm-rich",
+      "status": "complete",
+      "reason": "Named Farm Rich frozen breaded cheese-filled product is explicit; no fresh/bacon-wrapped substitution.",
+      "sourceUrl": "https://farmrich.com/snack-hacks/easy-air-fryer-recipes/",
+      "sourceEvidence": "Local source record reviewed: Farm Rich frozen jalapeño peppers: preheat 390°F; 8 minutes. This baseline audit is not a fresh online verification."
+    },
+    {
+      "slug": "garlic-bread",
+      "variantId": "fresh-baguette",
+      "status": "enrich",
+      "reason": "Prepared garlic butter was an undeclared recipe dependency; original checked.",
+      "sourceUrl": "https://www.simplyairfryer.com/air-fryer-garlic-bread/",
+      "sourceEvidence": "Original recipe card lines 131–155 gives eight one-inch slices, garlic-butter amounts, preheat and 350°F for 3–5 minutes.",
+      "ingredients": [
+        "8 French baguette slices, about 1 inch thick",
+        "4 tbsp softened butter",
+        "3 medium garlic cloves, minced",
+        "1/2 tsp Italian seasoning",
+        "Optional: grated Parmesan, salt and pepper"
+      ],
+      "equipment": [
+        "Air fryer",
+        "Small bowl",
+        "Knife or garlic press",
+        "Spreading knife"
+      ],
+      "timeline": [
+        {
+          "label": "Prepare",
+          "detail": "About 5 minutes; butter must already be softened. No proofing or raw dough step."
+        },
+        {
+          "label": "Cook",
+          "detail": "3–5 minutes per batch; watch closely near the end."
+        }
+      ],
+      "preheatDetail": "Preheat to 350°F; no duration specified.",
+      "steps": [
+        "Mince peeled garlic and mix with softened butter and Italian seasoning.",
+        "Spread generously to the edges of the one-inch baguette slices; add optional toppings.",
+        "Put slices apart in the hot basket; cook at the existing setting in batches if needed."
+      ],
+      "completion": "Remove at desired crispness, before garlic burns.",
+      "notes": [
+        "Fresh baked baguette only; this condition does not cover frozen toast or uncooked dough."
+      ],
+      "ingredientsZh": [
+        "8片法棍，厚约1 inch",
+        "软化黄油4 tbsp",
+        "3瓣中等大小蒜，切末",
+        "意式综合香料1/2 tsp",
+        "可选：帕尔马干酪碎、盐和黑胡椒"
+      ],
+      "equipmentZh": [
+        "空气炸锅",
+        "小碗",
+        "刀或压蒜器",
+        "涂抹刀"
+      ],
+      "timelineZh": [
+        {
+          "label": "准备",
+          "detail": "约5分钟；黄油须提前软化，无需发酵，也不处理生面团。"
+        },
+        {
+          "label": "烹饪",
+          "detail": "每批3–5分钟，末段密切观察。"
+        }
+      ],
+      "preheatDetailZh": "预热至350°F；原文未给出时长。",
+      "stepsZh": [
+        "蒜去皮切末，与软化黄油和意式香料混合。",
+        "将蒜黄油充分涂到1-inch厚法棍片的边缘，可加可选配料。",
+        "放入热炸篮，相互留空；沿用现有设定，放不下时分批。"
+      ],
+      "completionZh": "达到喜欢的酥脆程度即可取出，避免蒜末焦苦。",
+      "preheat": "yes",
+      "notesZh": [
+        "用已烤熟的新鲜法棍，本条件不适用于冷冻吐司或生面团。"
+      ]
+    },
+    {
+      "slug": "biscuits",
+      "variantId": "refrigerated-grands",
+      "status": "enrich",
+      "reason": "Exact refrigerated Grands product is specified, but fitted parchment must appear before the cooking steps. Never preheat loose parchment.",
+      "sourceUrl": "https://www.pillsbury.com/everyday-eats/we-tried-these-products-in-an-air-fryer-and-heres-what-actually-worked",
+      "sourceEvidence": "Existing source record and complete local instructions reviewed; no online recheck in this bounded audit. Local source record reviewed: 4 refrigerated Grands; 320°F: 6 minutes, turn, then 5–7; no preheat. This baseline audit is not a fresh online verification.",
+      "equipment": [
+        "Appliance-approved fitted parchment round",
+        "Tongs"
+      ],
+      "equipmentZh": [
+        "设备说明书允许使用的合适尺寸烘焙纸",
+        "夹子"
+      ]
+    },
+    {
+      "slug": "cinnamon-rolls",
+      "variantId": "original-can",
+      "status": "enrich",
+      "reason": "Exact small original refrigerated product is specified, but fitted parchment and safe removal at six minutes must be visible before starting.",
+      "sourceUrl": "https://www.pillsbury.com/everyday-eats/we-tried-these-products-in-an-air-fryer-and-heres-what-actually-worked",
+      "sourceEvidence": "Existing source record and complete local instructions reviewed; no online recheck in this bounded audit. Local source record reviewed: 8-count original rolls: 320°F, 6 then 4–6 minutes; no preheat. This baseline audit is not a fresh online verification.",
+      "equipment": [
+        "Appliance-approved fitted parchment round",
+        "Tongs"
+      ],
+      "equipmentZh": [
+        "设备说明书允许使用的合适尺寸烘焙纸",
+        "夹子"
+      ]
+    },
+    {
+      "slug": "cookies",
+      "variantId": "small-refrigerated",
+      "status": "enrich",
+      "reason": "Exact ready-made dough is specified, but foil/cooling rack and the additional five-plus-fifteen-minute cooling dependency must appear up front.",
+      "sourceUrl": "https://recipecenter.giantfood.com/recipes/242362/pillsbury-air-fryer-caramel-chocolate-chip-cookies",
+      "sourceEvidence": "Existing source record and complete local instructions reviewed; no online recheck in this bounded audit. Local source record reviewed: 5 small 24-count-pack rounds, flattened; 300°F, 13–14 minutes; rest five. This baseline audit is not a fresh online verification.",
+      "equipment": [
+        "Appliance-approved fitted foil round",
+        "Cooling rack",
+        "Spatula"
+      ],
+      "equipmentZh": [
+        "设备说明书允许使用的合适尺寸锡纸",
+        "冷却架",
+        "铲子"
+      ]
+    },
+    {
+      "slug": "pizza",
+      "variantId": "chilled-regular",
+      "status": "complete",
+      "reason": "Previously cooked, chilled regular-crust slices are explicit; raw/frozen/deep-dish excluded and leftover reheat target retained.",
+      "sourceUrl": "https://www.everydayfamilycooking.com/reheat-pizza-in-air-fryer/",
+      "sourceEvidence": "Local source record reviewed: Preheat 350°F; cold slices in one layer; 3–4 minutes, extend if needed. This baseline audit is not a fresh online verification."
+    },
+    {
+      "slug": "grilled-cheese",
+      "variantId": "fresh-sandwich",
+      "status": "complete",
+      "reason": "Fresh sandwich ingredients, outside coating and no-meat limit are given; no prepared spread or dough dependency.",
+      "sourceUrl": "https://www.loveandlemons.com/air-fryer-grilled-cheese/",
+      "sourceEvidence": "Local source record reviewed: 1 sandwich; preheat 375°F; 3–5 minutes then 2–5 after flipping. This baseline audit is not a fresh online verification."
+    }
+  ]
+}

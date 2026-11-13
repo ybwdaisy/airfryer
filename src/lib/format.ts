@@ -1,7 +1,8 @@
 import type { Unit, Variant } from './schema.ts';
+import { setting } from './measure.ts';
 
-export function temperature(fahrenheit: number, unit: Unit): string {
-  return unit === 'c' ? `${Math.round(((fahrenheit - 32) * 5 / 9) / 5) * 5}°C` : `${fahrenheit}°F`;
+export function temperature(fahrenheit: number, unit: Unit, nativeC?: number): string {
+  return setting(fahrenheit, unit, nativeC);
 }
 export function minutes(range: readonly number[]): string {
   return range[0] === range[1] ? `${range[0]}` : `${range[0]}-${range[1]}`;

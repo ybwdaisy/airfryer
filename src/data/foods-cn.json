@@ -1,0 +1,1009 @@
+[
+  {
+    "slug": "cn-orleans-wings",
+    "name": "Orleans-style mid-joint wings",
+    "aliases": [
+      "Orleans-style mid-joint wings",
+      "奥尔良鸡中翅"
+    ],
+    "category": "meat",
+    "description": "A refrigerated marinade, followed by a 200°C single-layer cook.",
+    "region": "cn",
+    "safety": "poultry",
+    "reviewedAt": "2026-11-13",
+    "variants": [
+      {
+        "id": "default",
+        "state": "fresh",
+        "temperatureC": 200,
+        "temperatureF": 392.0,
+        "minutes": [
+          15,
+          20
+        ],
+        "preheat": "yes",
+        "notes": [
+          "If using another marinade brand, use its package ratio; no extra salt or honey here.",
+          "Preheat evidence: Philips HD9220 manufacturer manual, page 3; food-observation branch: UK FSA cooking guidance, sections 2.1, 4.1 and 8."
+        ],
+        "label": "Thawed mid-joint wings, refrigerated marinade",
+        "portion": "500 g thawed raw chicken mid-joint wings; 8–10 per uncrowded batch, skin-side down.",
+        "turn": "Turn at minute 8. Check from minute 15.",
+        "ingredients": [
+          "500 g chicken mid-joint wings",
+          "35 g COOK100 Orleans marinade powder",
+          "35 g water"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Kitchen scale",
+          "Tongs",
+          "Paper towels",
+          "Food thermometer recommended"
+        ],
+        "advancePreparation": "Refrigerate in marinade for at least 6 hours.",
+        "timeline": [
+          {
+            "label": "Marinate",
+            "detail": "At least 6 hours refrigerated."
+          },
+          {
+            "label": "Preheat",
+            "detail": "200°C until ready; HD9220 reference about 3 minutes."
+          },
+          {
+            "label": "Air fry",
+            "detail": "15–20 minutes per batch; turn at minute 8, check from minute 15."
+          }
+        ],
+        "preheatDetail": "Select Air Fry, 200°C. On the Philips HD9220, set the timer beyond 3 minutes and wait for the heating light to go off the first time (about 3 minutes); on other machines use their ready signal.",
+        "steps": [
+          "Pat dry; make shallow cuts in thick flesh. Mix marinade powder with water, coat wings, cover and refrigerate at least 6 hours. If already marinated this way, begin with preheating.",
+          "Preheat as above. Drain excess marinade and place wings skin-side down in one layer; about 8–10 per batch, with no overlap. Keep remaining raw wings refrigerated; do not pour marinade into the basket.",
+          "Air fry at 200°C for 8 minutes, turn, then cook 7 more minutes and start checking.",
+          "Continue at 200°C if not ready and recheck; remove finished pieces using clean tongs onto a clean plate."
+        ],
+        "completion": "Probe the thickest meat, avoiding bone: reach 75°C and hold for at least 30 seconds.",
+        "withoutThermometer": "With a clean knife, cut the thickest part of a larger piece. Check all three: steaming hot inside, no pink raw meat, and clear juices. If any check fails, keep heating in the current phase and recheck. Appearance and time do not measure core temperature; a thermometer is recommended.",
+        "deviceNote": "Uses a selectable 200°C setting; no above-200°C step.",
+        "sources": [
+          {
+            "title": "奥尔良烤翅",
+            "publisher": "秋同学 / 什么值得买",
+            "url": "https://post.smzdm.com/p/468324/",
+            "role": "reference",
+            "locator": "Ingredients and method",
+            "evidence": "Section 16: 500 g wings, 35 g marinade plus 35 g water; refrigerate at least 6 hours; preheat 200°C, turn after 8 minutes, 15–20 minutes per batch."
+          },
+          {
+            "title": "奥尔良烤鸡翅",
+            "publisher": "Puppy_FJ / 下厨房",
+            "url": "https://m.xiachufang.com/recipe/104553976/",
+            "role": "cross-check",
+            "locator": "Ingredients and method",
+            "evidence": "Independent author also uses 500 g wings with 35 g marinade, but smaller wings, different marinade preparation and 190°C timing. Its minutes are not transplanted."
+          },
+          {
+            "title": "HD9220/HD9225/HD9226 manufacturer manual",
+            "publisher": "Philips",
+            "url": "https://cdn.pdf-s.com/wp-content/uploads/2025/11/364/philips-viva-collection-hd9220-50-airfryer-manual-pdf.pdf",
+            "role": "cross-check",
+            "locator": "PDF pages 2–3, temperature dial and preheating",
+            "evidence": "Original manufacturer manual, publicly archived: selectable 80–200°C; set timer beyond 3 minutes and wait for the heating light to go off. Hardware/preheat evidence, not another wing cook time."
+          }
+        ],
+        "safetyOverride": {
+          "text": "Probe the thickest meat, avoiding bone: reach 75°C and hold for at least 30 seconds.",
+          "url": "https://www.cfs.gov.hk/english/trade_zone/safe_kitchen/Cooking_and_reheating.html"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "cn-garlic-ribs",
+    "name": "Braise-then-roast garlic ribs",
+    "aliases": [
+      "Braise-then-roast garlic ribs",
+      "先炖后烤蒜香小排"
+    ],
+    "category": "meat",
+    "description": "A complete pan-braise followed by a short air-fryer finish; a hob is required.",
+    "region": "cn",
+    "safety": "whole-meat",
+    "reviewedAt": "2026-11-13",
+    "variants": [
+      {
+        "id": "default",
+        "state": "fresh",
+        "temperatureC": 200,
+        "temperatureF": 392.0,
+        "minutes": [
+          7,
+          7
+        ],
+        "preheat": "yes",
+        "notes": [
+          "Soy/oyster sauce, wine and oil weights are this site’s editorial seasoning formulation, not claimed gram conversions from the author’s spoons. No extra salt.",
+          "Requires a hob and pan; cannot be completed using only an air fryer. Continuous cooking only, not overnight-rib reheating."
+        ],
+        "label": "Hob-braised first, then air-fried while hot",
+        "portion": "500 g thawed pork rib pieces, similarly sized; braise until fully cooked before air frying.",
+        "needsHob": true,
+        "turn": "After 3 minutes, turn, add garlic and change to 180°C for 4 minutes.",
+        "ingredients": [
+          "500 g pork rib pieces",
+          "6 garlic cloves, minced",
+          "10 g light soy sauce; 10 g oyster sauce",
+          "20 g cooking wine; 5 g cooking oil",
+          "Boiling water, enough to just cover ribs in the pan"
+        ],
+        "equipment": [
+          "Lidded frying pan and hob",
+          "Air fryer",
+          "Kitchen scale",
+          "Tongs",
+          "Food thermometer recommended"
+        ],
+        "advancePreparation": "Pan-sear and braise fully before the 7-minute air-fry finish.",
+        "timeline": [
+          {
+            "label": "Sear and braise",
+            "detail": "Brown both sides; cover with boiling water, bring back to a simmer and check after 15 minutes. Continue until cooked and tender."
+          },
+          {
+            "label": "Reduce and preheat",
+            "detail": "Reduce to a thin coating of sauce. Preheat air fryer to 200°C; manual reference 5 minutes."
+          },
+          {
+            "label": "Air-fry finish",
+            "detail": "200°C for 3 minutes, then add garlic and 180°C for 4 minutes per batch."
+          }
+        ],
+        "preheatDetail": "Preheat to 200°C while reducing the sauce. Manual preheat reference: 5 minutes, within Hualing MF-KZ01WS manufacturer 3–5 minute guidance; use a ready signal if available.",
+        "steps": [
+          "Remove loose bone fragments and pat dry. Heat the measured oil in a lidded pan; sear ribs on both sides, then add cooking wine.",
+          "Add boiling water just to cover, plus soy and oyster sauces. Bring back to a boil, cover and maintain a gentle simmer; check after 15 minutes.",
+          "Confirm cooked through using the checks below before tasting tenderness. Keep braising if tough or not ready; top up with boiling water as needed.",
+          "Uncover and reduce until ribs carry a thin coating. Preheat the air fryer as described above.",
+          "Place still-hot, fully cooked ribs in one layer, leaving liquid in the pan. Air fry at 200°C for 3 minutes.",
+          "Turn, scatter garlic and reduce to 180°C for 4 minutes. Transfer with clean tongs."
+        ],
+        "completion": "During braising, probe thick meat away from bone: reach 75°C for at least 30 seconds. Only then proceed to the air-fry finish.",
+        "withoutThermometer": "With a clean knife, cut the thickest part of a larger piece. Check all three: steaming hot inside, no pink raw meat, and clear juices. If any check fails, keep heating in the current phase and recheck. Appearance and time do not measure core temperature; a thermometer is recommended.",
+        "deviceNote": "Requires selectable 200°C and 180°C settings. The 7-minute finish is only for freshly braised, still-hot ribs.",
+        "sources": [
+          {
+            "title": "蒜香排骨",
+            "publisher": "朱朱朱美丽呀 / 下厨房",
+            "url": "https://m.xiachufang.com/recipe/106937883/",
+            "role": "reference",
+            "locator": "Ingredients and method",
+            "evidence": "500 g ribs and 6 garlic cloves; sear, braise with boiling water and check after 15 minutes, reduce; preheat 200°C, air fry 3 minutes then add garlic at 180°C for 4 minutes."
+          },
+          {
+            "title": "七彩叮当空气炸锅开箱测评",
+            "publisher": "伯克利工业 / 什么值得买",
+            "url": "https://post.smzdm.com/p/az656epn/",
+            "role": "cross-check",
+            "locator": "Ingredients and method",
+            "evidence": "Independent author also braises before air frying. Method comparison only; it does not corroborate an exact 3+4 minute clock or raw-rib cook time."
+          },
+          {
+            "title": "华凌 MF-KZ01WS 使用说明书",
+            "publisher": "华凌 Hualing",
+            "url": "https://dsdcp.smartmidea.net/mcsp/prod/20221024/5634fa322f814d5598dfbdfd5dd7ba1b.pdf",
+            "role": "cross-check",
+            "locator": "Printed panel 04, preheat and temperature dial",
+            "evidence": "Manufacturer suggests 3–5 minutes preheat and shows 180°C and 200°C dial markings. This guide uses 5 minutes within that range; not evidence for a raw-rib cooking clock."
+          }
+        ],
+        "safetyOverride": {
+          "text": "Confirm fully cooked in the braising phase: thick meat away from bone reaches 75°C for at least 30 seconds.",
+          "url": "https://www.cfs.gov.hk/english/trade_zone/safe_kitchen/Cooking_and_reheating.html"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "cn-frozen-thin-fries",
+    "name": "Frozen thin fries, cold start",
+    "aliases": [
+      "Frozen thin fries, cold start",
+      "袋装冷冻细薯条"
+    ],
+    "category": "frozen",
+    "description": "A 180°C cold-start reference with the fry size and product type specified.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-13",
+    "variants": [
+      {
+        "id": "default",
+        "state": "frozen",
+        "temperatureC": 180,
+        "temperatureF": 356.0,
+        "minutes": [
+          16,
+          23
+        ],
+        "preheat": "no",
+        "notes": [
+          "Use pre-fried thin fries, not raw potatoes, wedges or thick-cut fries.",
+          "The 200 g example is within the manual’s range; the reminder schedule is an editorial aid, not a weight-to-time formula."
+        ],
+        "label": "Frozen pre-fried thin fries, 7 mm wide",
+        "portion": "200 g frozen pre-fried fries, about 7 × 7 mm; do not thaw or add oil.",
+        "turn": "Shake about 5, 10 and 15 minutes after starting.",
+        "ingredients": [
+          "200 g frozen pre-fried thin fries, about 7 × 7 mm",
+          "Optional salt after cooking"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Kitchen scale",
+          "Tongs"
+        ],
+        "preheatDetail": "No preheat: this is the Philips HD9200 cold-start method. If your product provides air-fryer directions, follow that complete method instead.",
+        "steps": [
+          "Fit the basket and crisper insert; add 200 g frozen fries, shake apart and stay below the maximum line.",
+          "Start Air Fry at 180°C and set an initial 16-minute reminder.",
+          "At about minutes 5, 10 and 15, pull out and shake or turn with tongs. These are elapsed times, not a new 16-minute cycle each time.",
+          "At minute 16, take one out, cool briefly and break it open. It should be hot and soft inside without a hard frozen center, and golden outside.",
+          "If not ready or if more crispness is wanted, continue at 180°C and recheck using short reminders (for example 2 minutes). Do not aim for dark brown or burnt fries."
+        ],
+        "completion": "Hot, soft center with no cold hard core, and a golden exterior; the 16–23 minute range is not a command to cook every batch for 23 minutes.",
+        "deviceNote": "Philips HD9200 reference, cold start, 180°C. Follow stricter product directions as a complete method; do not silently lower above-200°C package instructions.",
+        "sources": [
+          {
+            "title": "HD9200 User Manual",
+            "publisher": "Philips / Versuni",
+            "url": "https://dam.versuni.com/m/9ba057f49c7b7a3/original/User-manual-HD9200.pdf",
+            "role": "reference",
+            "locator": "Ingredients and method",
+            "evidence": "Current PDF page 7 (printed 9): frozen 7×7 mm fries, 200–500 g, 180°C, 16–23 minutes, shake 2–3 times. Page 8: no preheat."
+          },
+          {
+            "title": "BG-AF3使用说明书",
+            "publisher": "布谷 BuGu",
+            "url": "https://assets.midea.com/ImageStore/218852/instructions/416e4b79344b9b55aacbf8ff266f531a.pdf",
+            "role": "cross-check",
+            "locator": "Ingredients and method",
+            "evidence": "Different manufacturer and product condition: semi-prepared potato strips with different quantity, oil and cold-start handling. Differences recorded; its time and oil are not transplanted."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-whole-sweet-potato",
+    "name": "Whole roasted sweet potato",
+    "aliases": [
+      "Whole roasted sweet potato",
+      "整根烤红薯"
+    ],
+    "category": "vegetables",
+    "description": "Wash and roast whole without oil. Preheat to 200°C and start checking the center after 40 minutes.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-13",
+    "variants": [
+      {
+        "id": "default",
+        "state": "fresh",
+        "temperatureC": 200,
+        "temperatureF": 392.0,
+        "minutes": [
+          40,
+          40
+        ],
+        "preheat": "yes",
+        "notes": [
+          "This follows the author’s preheated 200°C method, not the cold-start settings of the Philips HD9257.",
+          "The independent HD9257 reference uses 6–9 medium sweet potatoes at 180°C for 35 minutes without preheating, with piercing and turning. Load, temperature, appliance and starting conditions differ; the settings were not averaged.",
+          "The doneness check and short-interval rechecks are editorial handling advice. This recipe has not been physically tested by this site."
+        ],
+        "label": "1 sweet potato that fits flat in the basket",
+        "portion": "1 sweet potato that fits flat in the basket",
+        "turn": "The main source gives no turning step; no fixed turning time has been added.",
+        "sources": [
+          {
+            "title": "烤红薯（空气炸锅版）",
+            "publisher": "每厨娘 / 香哈网",
+            "url": "https://m.xiangha.com/caipu/93188326.html",
+            "role": "reference",
+            "locator": "用料及步骤 1–3",
+            "evidence": "红薯1个；洗净，200°C预热，预热后整根烤40分钟。已打开全文。"
+          },
+          {
+            "title": "HD9257 用户手册",
+            "publisher": "飞利浦 / Versuni",
+            "url": "https://dam.versuni.com/m/1389c4ef584e73a1/original/User-Manual-Airfryer-Ferrari-HD9257-China.pdf",
+            "role": "cross-check",
+            "locator": "PDF第2页：空气煎炸及预设程序红薯一行",
+            "evidence": "6–9个中等红薯，180°C、35分钟；本机无需预热，烹饪中翻动，红薯划口或叉孔。已读取官方PDF文字。"
+          }
+        ],
+        "needsHob": false,
+        "steps": [
+          "Scrub the sweet potato and leave it whole. Assemble the basket and preheat to 200°C.",
+          "Place it in the basket and air fry at 200°C for 40 minutes.",
+          "Using heat-resistant gloves, pull out the basket. Pierce the thickest part with a skewer or chopstick. If the center is firm, continue at 200°C and check in short intervals.",
+          "Once soft through the center, remove with tongs and let cool slightly before splitting."
+        ],
+        "ingredients": [
+          "1 sweet potato"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs",
+          "Skewer or chopstick",
+          "Heat-resistant gloves"
+        ],
+        "timeline": [
+          {
+            "label": "Wash",
+            "detail": "Scrub off soil and rinse the skin."
+          },
+          {
+            "label": "Preheat",
+            "detail": "200°C, until the appliance is ready."
+          },
+          {
+            "label": "Air fry",
+            "detail": "200°C; start checking at 40 minutes."
+          }
+        ],
+        "preheatDetail": "Preheat to 200°C until the appliance is ready. The main source gives no separate preheat duration.",
+        "completion": "A skewer passes through the thickest part and the opened center is soft, with no firm core. Continue cooking if it is still firm at 40 minutes.",
+        "advancePreparation": "No marinating or precooking required.",
+        "deviceNote": "The main source names no model or weight. Treat 40 minutes as a checkpoint; a thicker sweet potato can need longer."
+      }
+    ]
+  },
+  {
+    "slug": "cn-cumin-mantou-slices",
+    "name": "Cumin mantou slices",
+    "aliases": [
+      "Cumin mantou slices",
+      "孜然烤馒头片"
+    ],
+    "category": "bakery",
+    "description": "Slice cooked mantou about 1 cm thick, brush with oil and season. Cook 8 minutes on the first side, then turn and cook 5 minutes.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-13",
+    "variants": [
+      {
+        "id": "default",
+        "state": "fresh",
+        "temperatureC": 180,
+        "temperatureF": 356.0,
+        "minutes": [
+          13,
+          13
+        ],
+        "preheat": "unspecified",
+        "notes": [
+          "The 10 g oil, 1 g salt, 1 g cumin and optional 0.5 g chili are editorial seasoning amounts. The original uses amounts to taste; these are not conversions of its spoons.",
+          "The independent comparison uses thinner slices coated in egg: preheat to 180°C, cook 4 minutes, turn and cook 2 minutes. Coating, thickness and method differ, so its 6-minute time is not used here.",
+          "This recipe has not been physically tested by this site."
+        ],
+        "label": "2 cooked mantou; one non-overlapping layer per batch",
+        "portion": "2 cooked mantou; one non-overlapping layer per batch",
+        "turn": "Turn after 8 minutes, then cook 5 more minutes. Divide oil and seasoning between both sides.",
+        "sources": [
+          {
+            "title": "空气炸锅版烤馒头片",
+            "publisher": "石头是个小暖男 / 下厨房",
+            "url": "https://m.xiachufang.com/recipe/103823646/",
+            "role": "reference",
+            "locator": "用料及步骤1–5",
+            "evidence": "馒头2个、约1厘米厚，刷油撒椒盐/盐、孜然和辣椒；不重叠；180°C 8分钟翻面补油补粉，再5分钟。已打开全文。"
+          },
+          {
+            "title": "空气炸锅版之烤馒头片",
+            "publisher": "一汪晶莹的泉水 / 作者博客",
+            "url": "https://bianca57blog.wordpress.com/2018/12/13/%E7%A9%BA%E6%B0%94%E7%82%B8%E9%94%85%E7%89%88%E4%B9%8B%E7%83%A4%E9%A6%92%E5%A4%B4%E7%89%87/",
+            "role": "cross-check",
+            "locator": "方子及做法1–4",
+            "evidence": "馒头4个配鸡蛋1个，切片裹蛋液，180°C预热，4分钟后翻面再2分钟。与不裹蛋的一厘米厚片不同。已打开全文。"
+          }
+        ],
+        "needsHob": false,
+        "steps": [
+          "Cut the cooked mantou about 1 cm thick. Mix the salt, cumin and optional chili powder.",
+          "Arrange in a single layer without overlapping; work in batches if needed. Brush the top lightly with oil and add some seasoning.",
+          "Cook at 180°C for 8 minutes, then turn. Brush and season the other side and cook at 180°C for 5 more minutes.",
+          "Check for a dry surface and crisp edges. Remove when the texture suits you, before any blackening."
+        ],
+        "ingredients": [
+          "2 cooked, cooled mantou",
+          "10 g cooking oil",
+          "1 g salt",
+          "1 g ground cumin",
+          "0.5 g chili powder, optional"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Knife and cutting board",
+          "Pastry brush",
+          "Tongs"
+        ],
+        "timeline": [
+          {
+            "label": "Slice and season",
+            "detail": "Cut about 1 cm thick. Arrange in one layer, brush with oil and season."
+          },
+          {
+            "label": "First side",
+            "detail": "180°C for 8 minutes."
+          },
+          {
+            "label": "Turn",
+            "detail": "Brush and season the other side; cook at 180°C for 5 minutes."
+          }
+        ],
+        "preheatDetail": "The main source loads the slices before starting and lists no separate preheat. That sequence is retained.",
+        "completion": "Both surfaces are dry and fragrant, edges crisp and the center hot. Avoid blackening.",
+        "advancePreparation": "Use fully cooked, cooled mantou, not raw dough."
+      }
+    ]
+  },
+  {
+    "slug": "cn-homemade-custard-tarts",
+    "name": "Egg tarts with homemade custard",
+    "aliases": [
+      "Egg tarts with homemade custard",
+      "自调蛋挞液烤蛋挞"
+    ],
+    "category": "bakery",
+    "description": "Use large ready-made tart shells and mix your own cream custard. Preheat the first batch at 180°C for 3 minutes; check each batch after 12 minutes.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-13",
+    "variants": [
+      {
+        "id": "default",
+        "state": "fresh",
+        "temperatureC": 180,
+        "temperatureF": 356.0,
+        "minutes": [
+          12,
+          12
+        ],
+        "preheat": "yes",
+        "notes": [
+          "The full 15-large-tart formula is retained; quantities were not calculated from an assumed shell volume.",
+          "The independent comparison uses 8 shells, 125 ml sweetened milk and 2 eggs without cream, cooking at 180°C for 20 minutes. Its different liquid proportions, preheat and turning step at 15 minutes are not combined with this method.",
+          "The finish check and storage notes are editorial handling advice. This recipe has not been physically tested by this site."
+        ],
+        "label": "Recipe for 15 large tart shells; keep flat and cook in batches to fit your basket",
+        "portion": "Recipe for 15 large tart shells; keep flat and cook in batches to fit your basket",
+        "turn": "Keep upright. The main source does not turn the tarts.",
+        "sources": [
+          {
+            "title": "葡式蛋挞空气炸锅版葡挞",
+            "publisher": "小月月_妈咪 / 下厨房",
+            "url": "https://m.xiachufang.com/recipe/107209217/",
+            "role": "reference",
+            "locator": "用料、步骤1–6及步骤8",
+            "evidence": "15个大号挞皮；牛奶170ml、淡奶油150ml、蛋3个130g、糖36g、炼乳20g；首批180°C预热3分钟，每批180°C 12分钟，连续第二批免预热。已打开全文。"
+          },
+          {
+            "title": "空气炸锅～蛋挞，自制蛋挞液",
+            "publisher": "朵朵爱恨 / 下厨房",
+            "url": "https://m.xiachufang.com/recipe/106744229/",
+            "role": "cross-check",
+            "locator": "用料、步骤1及小贴士",
+            "evidence": "8个挞皮配旺仔牛奶125ml、鸡蛋2个、糖和炼奶各10g，无淡奶油；预热5分钟后180°C 20分钟，作者还在定型后翻面。与主参考配比不同。已打开全文。"
+          }
+        ],
+        "needsHob": false,
+        "steps": [
+          "Mix the milk, sugar and eggs until the sugar disperses. Stir in the condensed milk and cream.",
+          "Separate the frozen tart shells; the main source does not wait for them to thaw fully. Preheat the first batch at 180°C for 3 minutes.",
+          "Fill each shell about six-tenths full, place flat in the basket, then top up to eight- or nine-tenths full to avoid spilling while moving. Work in batches.",
+          "Cook at 180°C and start checking at 12 minutes. Remove when the center is set without flowing raw custard and the pastry is cooked and crisp. If still liquid, continue at 180°C and recheck.",
+          "For an immediately following batch, skip another preheat and again check after 12 minutes at 180°C. Store uncooked custard and shells chilled or frozen as appropriate to their packaging."
+        ],
+        "ingredients": [
+          "15 large egg-tart shells",
+          "170 ml milk",
+          "150 ml heavy cream",
+          "3 eggs, about 130 g in the original recipe",
+          "36 g caster sugar",
+          "20 g sweetened condensed milk"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Kitchen scale or measuring jug",
+          "Large bowl",
+          "Whisk or chopsticks",
+          "Tongs",
+          "Heat-resistant gloves"
+        ],
+        "timeline": [
+          {
+            "label": "Mix custard",
+            "detail": "Combine milk, eggs and sugar, then add cream and condensed milk."
+          },
+          {
+            "label": "First preheat",
+            "detail": "180°C for 3 minutes."
+          },
+          {
+            "label": "Each batch",
+            "detail": "Check after 12 minutes at 180°C. Do not repeat preheating for an immediately following batch."
+          }
+        ],
+        "preheatDetail": "Preheat the first batch at 180°C for 3 minutes. The author skips another preheat for an immediately following batch and still uses 180°C for 12 minutes.",
+        "completion": "The center holds its shape when gently moved and does not release raw custard when cut. Pastry is cooked and crisp. A browned top alone does not confirm the center is done.",
+        "advancePreparation": "Buy large ready-made tart shells and mix the custard. No marinating required.",
+        "deviceNote": "Shell size and basket design affect progress. Twelve minutes is a checkpoint, not a guarantee for every appliance."
+      }
+    ]
+  },
+  {
+    "slug": "cn-garlic-eggplant",
+    "name": "Eggplant with pan-cooked garlic sauce",
+    "aliases": [
+      "Eggplant with pan-cooked garlic sauce",
+      "炒蒜酱烤茄子"
+    ],
+    "category": "vegetables",
+    "description": "Roast the eggplant until soft, then briefly cook with pan-fried garlic sauce. Requires both a hob and an air fryer.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-13",
+    "variants": [
+      {
+        "id": "default",
+        "state": "fresh",
+        "temperatureC": 200,
+        "temperatureF": 392.0,
+        "minutes": [
+          26,
+          27
+        ],
+        "preheat": "unspecified",
+        "notes": [
+          "Oil 15 g, radish 10 g, soy sauce 10 g, 1 chili, 1 spring onion and cumin 0.5 g are editorial seasoning amounts, not conversions of the author’s spoons or unspecified amounts. The eggplant and whole head of garlic follow the main source.",
+          "The main method uses 200°C for 20 minutes, 5 more minutes to soften, then 1–2 minutes with sauce. The 26–27 minutes count only air frying, excluding preparation and pan work.",
+          "The independent Lan Fan comparison uses 2 long eggplants at 170°C for 25 minutes, then 160°C for 5 minutes, and pours hot oil over its garlic mixture. Different sauce methods and temperatures were not averaged.",
+          "This recipe has not been physically tested by this site."
+        ],
+        "label": "1 eggplant, cut into two sections that fit flat in the basket",
+        "portion": "1 eggplant, cut into two sections that fit flat in the basket",
+        "turn": "Turn during the first 20 minutes. After adding sauce, keep upright and watch the garlic during the brief finish.",
+        "sources": [
+          {
+            "title": "空气炸锅-蒜蓉烤茄子 超详细版",
+            "publisher": "好爱喝乌龙茶 / 下厨房",
+            "url": "https://m.xiachufang.com/recipe/106992003/",
+            "role": "reference",
+            "locator": "用料及步骤1–3",
+            "evidence": "茄子1根、蒜1头、咸萝卜干、酱油；200°C 20分钟中途翻面，摊开再200°C 5分钟，炒蒜酱铺上后1–2分钟。已打开全文。"
+          },
+          {
+            "title": "空气炸锅蒜蓉烤茄子",
+            "publisher": "懒饭App / 下厨房",
+            "url": "https://www.xiachufang.com/recipe/106930542/",
+            "role": "cross-check",
+            "locator": "用料及步骤1–4",
+            "evidence": "2根长茄子；刷油170°C 25分钟，剖开铺热油泼制蒜酱后160°C 5分钟。主参考为炒酱和200°C分段烤，未混用。已打开全文。"
+          }
+        ],
+        "needsHob": true,
+        "steps": [
+          "Wash and cut the eggplant into two sections. Brush lightly with oil and air fry at 200°C for 20 minutes, turning partway through.",
+          "Meanwhile, heat some oil in a frying pan over medium-low heat. Add garlic, optional chili and radish. Once fragrant, mix in soy sauce; do not blacken the garlic.",
+          "Slit open the cooked eggplant and spread the flesh with chopsticks. Brush lightly with a little oil and cook at 200°C for 5 minutes.",
+          "Check that the flesh is soft. If still firm, keep cooking until soft before adding the sauce.",
+          "Spread with the garlic sauce. Check after 1 minute at 200°C; the reference finish is 1–2 minutes. Remove before the garlic scorches, then add cumin and spring onion."
+        ],
+        "ingredients": [
+          "1 eggplant",
+          "1 whole head of garlic, peeled and minced",
+          "15 g cooking oil, divided between brushing and frying",
+          "10 g chopped salted dried radish",
+          "10 g light soy sauce",
+          "1 small chili, chopped, optional",
+          "1 spring onion, chopped",
+          "0.5 g ground cumin"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Frying pan and hob",
+          "Knife and cutting board",
+          "Chopsticks or tongs",
+          "Small bowl"
+        ],
+        "timeline": [
+          {
+            "label": "Roast eggplant",
+            "detail": "200°C for 20 minutes, turning partway through."
+          },
+          {
+            "label": "Make sauce alongside",
+            "detail": "Gently fry garlic, chili and radish over medium-low heat, then add soy sauce."
+          },
+          {
+            "label": "Open and soften",
+            "detail": "Spread open the flesh; cook at 200°C for 5 more minutes."
+          },
+          {
+            "label": "Add sauce",
+            "detail": "Spread the sauce and cook at 200°C for 1–2 minutes."
+          }
+        ],
+        "preheatDetail": "The main source loads the eggplant before setting the heat and gives no separate preheat. No preheat minutes have been added.",
+        "completion": "Flesh separates easily with chopsticks without firm raw areas; the sauce is fragrant, without blackened garlic. Finish softening before adding sauce rather than relying on its final 1–2 minutes.",
+        "advancePreparation": "Chop the garlic and radish and use a separate frying pan for the sauce while the eggplant roasts. No advance marinating required."
+      }
+    ]
+  },
+  {
+    "slug": "cn-roasted-potato-chunks",
+    "name": "Roasted potato chunks",
+    "aliases": [
+      "Roasted potato chunks",
+      "家常烤土豆块"
+    ],
+    "category": "vegetables",
+    "description": "Cut raw potatoes into chunks, drain and brush with oil. Cook at 180°C for 15 minutes, turn, then cook 15 minutes more.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-13",
+    "variants": [
+      {
+        "id": "default",
+        "state": "fresh",
+        "temperatureC": 180,
+        "temperatureF": 356.0,
+        "minutes": [
+          30,
+          30
+        ],
+        "preheat": "unspecified",
+        "notes": [
+          "Oil 10 g and optional chili 1 g are editorial amounts, not conversions of the author’s spoon of oil or seasoning to taste.",
+          "The main source specifies 2–3 potatoes without a precise chunk size. No unsupported centimeter measurement or weight-based time calculation has been added.",
+          "The independent Philips HD9220/HD9225 table gives 300–750 g homemade potato cubes, 180°C for 12–18 minutes, turning and half a tablespoon of oil; the same page adds 3 minutes for cold starts. Its shorter table time is not combined with the author’s 30-minute method.",
+          "This recipe has not been physically tested by this site."
+        ],
+        "label": "2–3 potatoes in similarly sized small chunks; spread out and work in batches if needed",
+        "portion": "2–3 potatoes in similarly sized small chunks; spread out and work in batches if needed",
+        "turn": "Turn after 15 minutes and brush with the remaining oil.",
+        "sources": [
+          {
+            "title": "烤土豆块 有土豆就能做 空气炸锅速成",
+            "publisher": "一只冻柿子 / 下厨房",
+            "url": "https://m.xiachufang.com/recipe/106757068/",
+            "role": "reference",
+            "locator": "用料及步骤1–2",
+            "evidence": "2–3个土豆；切块、沥干刷油、可加辣椒；180°C 15分钟，刷油翻面再15分钟。已打开全文。"
+          },
+          {
+            "title": "HD9225/HD9220 Viva Collection Airfryer 用户手册",
+            "publisher": "飞利浦 / Versuni",
+            "url": "https://dam.versuni.com/m/23d4afb77ba59ee8/original/User-Manual-Philips-Viva-Collection-Airfryer.pdf",
+            "role": "cross-check",
+            "locator": "PDF第43页：自制土豆块一行及表下冷启动说明",
+            "evidence": "300–750克，180°C 12–18分钟，翻动，加1/2汤匙油；冷启动另加3分钟。已下载官方原PDF并渲染核对。"
+          }
+        ],
+        "needsHob": false,
+        "steps": [
+          "Wash and cut the potatoes into similarly sized small chunks. If waiting before cooking, hold in water to limit discoloration; drain the surfaces thoroughly before air frying.",
+          "Spread in the basket, brush with a thin coating of oil and toss with optional chili powder. Work in batches if needed.",
+          "Cook at 180°C for 15 minutes. Turn the chunks and brush with the remaining thin coating of oil, then cook at 180°C for 15 more minutes.",
+          "Pierce a larger chunk through the center with a chopstick. Remove when soft with no firm raw core. If necessary, continue at 180°C and recheck in short intervals."
+        ],
+        "ingredients": [
+          "2–3 potatoes",
+          "10 g cooking oil, divided between both sides",
+          "1 g chili powder, optional"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Knife and cutting board",
+          "Pastry brush",
+          "Tongs",
+          "Chopstick"
+        ],
+        "timeline": [
+          {
+            "label": "Cut and drain",
+            "detail": "Cut into chunks; drain thoroughly after any soaking, then brush and season."
+          },
+          {
+            "label": "First side",
+            "detail": "180°C for 15 minutes."
+          },
+          {
+            "label": "Turn and finish",
+            "detail": "Brush lightly again; cook 15 more minutes at 180°C. Check at 30 minutes total."
+          }
+        ],
+        "preheatDetail": "The author starts heating after loading and lists no separate preheat. That sequence is retained.",
+        "completion": "A chopstick passes easily through a larger chunk with no firm raw center. Aim for golden surfaces, not blackening.",
+        "advancePreparation": "No precooking required. If cut potatoes must wait, hold in water and drain before cooking."
+      }
+    ]
+  },
+  {
+    "slug": "cn-cumin-firm-tofu",
+    "name": "Seasoned roasted firm tofu",
+    "aliases": [
+      "Seasoned roasted firm tofu",
+      "椒盐烤老豆腐"
+    ],
+    "category": "vegetables",
+    "description": "Soak firm tofu for 5 minutes, cut and drain. Air fry at 200°C for 20 minutes, turning partway through, then add seasoned salt.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-13",
+    "variants": [
+      {
+        "id": "default",
+        "state": "fresh",
+        "temperatureC": 200,
+        "temperatureF": 392.0,
+        "minutes": [
+          20,
+          20
+        ],
+        "preheat": "unspecified",
+        "notes": [
+          "Oil 5 g, seasoned salt 1 g and optional chili 0.5 g are editorial amounts. The original specifies only a thin brushed coating and seasoning after cooking.",
+          "The independent HotomYes comparison uses a Daewoo K10: small firm-tofu pieces at 180°C for 15 minutes, then turning and 10 minutes more, explicitly without preheating. Its cold-start statement is not transferred to the different main-reference appliance.",
+          "Health claims and brand-performance claims from the source articles are omitted. This recipe has not been physically tested by this site."
+        ],
+        "label": "About 400 g firm tofu; one layer with gaps, in batches if needed",
+        "portion": "About 400 g firm tofu; one layer with gaps, in batches if needed",
+        "turn": "Turn at about 10 minutes so the second side can color.",
+        "sources": [
+          {
+            "title": "烹饪看得见，一锅搞定全家美味，宜盾普多功能空炸锅",
+            "publisher": "赞美猴小猴 / 什么值得买",
+            "url": "https://post.smzdm.com/p/an3en27p/",
+            "role": "reference",
+            "locator": "“空炸锅豆腐”一节",
+            "evidence": "老豆腐约400g，泡5分钟切小块沥干，炸篮薄刷油，200°C 20分钟，约10分钟翻面，出锅撒椒盐或辣椒；机型为底部热风及加热垫。已下载原始HTML并读取全文。"
+          },
+          {
+            "title": "拒绝油腻 烧烤自由 我有大宇空气炸锅",
+            "publisher": "HotomYes / 什么值得买",
+            "url": "https://post.smzdm.com/p/a8xko4on/",
+            "role": "cross-check",
+            "locator": "“炸锅食谱-孜香豆腐”一节及紧接设备说明",
+            "evidence": "老豆腐切小块，撒盐，180°C 15分钟后翻面再10分钟；可撒孜然辣椒。作者另述大宇K10无需预热。已下载原始HTML并读取全文。"
+          }
+        ],
+        "needsHob": false,
+        "steps": [
+          "Soak the firm tofu in clean water for 5 minutes. Cut into similarly sized small pieces, drain and blot off surface moisture.",
+          "Brush a thin film of oil on basket surfaces touching the tofu. Arrange in one layer with gaps; work in batches if needed.",
+          "Select Air Fry and cook at 200°C. Turn at around 10 minutes and start checking at 20 minutes total.",
+          "Remove when both sides are golden with a formed skin and a larger piece is hot through when cut. If needed, continue at 200°C and check in short intervals.",
+          "Sprinkle with seasoned salt and optional chili powder; let cool slightly before eating."
+        ],
+        "ingredients": [
+          "About 400 g firm tofu, not silken tofu",
+          "5 g cooking oil, for a thin film on contact surfaces",
+          "1 g seasoned pepper salt",
+          "0.5 g chili powder, optional"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Knife and cutting board",
+          "Bowl",
+          "Pastry brush",
+          "Tongs",
+          "Kitchen paper"
+        ],
+        "timeline": [
+          {
+            "label": "Soak",
+            "detail": "Soak in clean water for 5 minutes, then cut and drain."
+          },
+          {
+            "label": "Air fry",
+            "detail": "Reference: 200°C for 20 minutes, turning around minute 10."
+          },
+          {
+            "label": "Season",
+            "detail": "Add seasoned salt and optional chili powder."
+          }
+        ],
+        "preheatDetail": "The main source brushes the basket, loads the tofu and starts cooking without listing a separate preheat.",
+        "completion": "Both sides are golden with a formed skin; the center of a larger piece is hot. Do not aim for dark brown or black surfaces.",
+        "advancePreparation": "Soak for 5 minutes. No marinating or precooking required; use firm tofu.",
+        "deviceNote": "The main source uses an EdenPURE appliance with bottom heating and hot air. Its 200°C, 20-minute method supplies a starting checkpoint."
+      }
+    ]
+  },
+  {
+    "slug": "cn-spiced-shiitake",
+    "name": "Cumin-chili shiitake mushrooms",
+    "aliases": [
+      "Cumin-chili shiitake mushrooms",
+      "孜然辣味烤香菇"
+    ],
+    "category": "vegetables",
+    "description": "Toss fresh shiitake in spices and let stand briefly. Preheat to 180°C, cook 10 minutes, turn and cook 8 minutes more.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-13",
+    "variants": [
+      {
+        "id": "default",
+        "state": "fresh",
+        "temperatureC": 180,
+        "temperatureF": 356.0,
+        "minutes": [
+          18,
+          18
+        ],
+        "preheat": "yes",
+        "notes": [
+          "Although the author defines tablespoon as 15 ml and teaspoon as 5 ml, this recipe uses a separate editorial weighing plan: oil 10 g, soy sauce 10 g, cumin 2 g, chili 1 g, garlic 1 g, five-spice 0.5 g, pepper 0.5 g, salt 1 g and sugar 3 g. These are not density conversions of the original spoons.",
+          "The main method uses 12 mushrooms/about 285 g at 180°C for 10+8 minutes. The independent HD9257 table uses about 800 g cauliflower and mushrooms at 180°C for 10 minutes, cold-started, cut up and tossed with 1 tablespoon oil, with turning. This is a general mushroom-and-vegetable table, not a repeat validation of this exact shiitake recipe. No load conversion or transfer of its cold-start rule was made.",
+          "This recipe has not been physically tested by this site."
+        ],
+        "label": "12 fresh shiitake, about 285 g in the main source; one layer",
+        "portion": "12 fresh shiitake, about 285 g in the main source; one layer",
+        "turn": "Turn after 10 minutes, brush lightly and cook 8 more minutes.",
+        "sources": [
+          {
+            "title": "空气炸锅烤香菇 / Air Fryer Roasted Mushrooms",
+            "publisher": "JiJi’s Kitchen / YouTube",
+            "url": "https://www.youtube.com/watch?v=Gci_S0oDzsM",
+            "role": "reference",
+            "locator": "作者视频说明：材料及做法1–6",
+            "evidence": "12朵鲜香菇约285g；去蒂划花、沥干拌自调烧烤酱、腌片刻；预热后180°C 10分钟，翻面再8分钟。已下载原始视频页并读取作者完整中英文说明。"
+          },
+          {
+            "title": "HD9257 用户手册",
+            "publisher": "飞利浦 / Versuni",
+            "url": "https://dam.versuni.com/m/1389c4ef584e73a1/original/User-Manual-Airfryer-Ferrari-HD9257-China.pdf",
+            "role": "cross-check",
+            "locator": "PDF第2页：蔬菜预设一行及空气煎炸说明",
+            "evidence": "800g花菜、菇类等；洗净切块拌1汤匙油，180°C 10分钟，翻动。本机无需预热。独立对照是菇类基础表，非同配方重复。已渲染核对。"
+          }
+        ],
+        "needsHob": false,
+        "steps": [
+          "Remove tough stems. Optionally score the caps shallowly, then wash and drain.",
+          "Mix oil, soy sauce and all seasonings. Toss the mushrooms to coat and let stand briefly while the fryer preheats to 180°C.",
+          "Arrange in one layer, gills up and caps down. Brush the surface lightly with a little oil and cook at 180°C for 10 minutes.",
+          "Turn, brush the other side lightly and continue at 180°C for 8 minutes.",
+          "Remove when soft throughout and hot through the thickest parts. If still firm or cool inside, continue at 180°C and recheck."
+        ],
+        "ingredients": [
+          "12 fresh shiitake, about 285 g",
+          "10 g corn oil, plus a little for brushing",
+          "10 g light soy sauce",
+          "2 g ground cumin",
+          "1 g chili powder",
+          "1 g garlic powder",
+          "0.5 g five-spice powder",
+          "0.5 g ground pepper",
+          "1 g salt",
+          "3 g sugar"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Knife and cutting board",
+          "Large bowl",
+          "Tongs",
+          "Kitchen scale",
+          "Pastry brush"
+        ],
+        "timeline": [
+          {
+            "label": "Prepare and coat",
+            "detail": "Remove tough stems, score the caps, wash, drain and coat."
+          },
+          {
+            "label": "Brief marinade and preheat",
+            "detail": "Let the coated mushrooms stand briefly while preheating to 180°C."
+          },
+          {
+            "label": "Air fry",
+            "detail": "180°C for 10 minutes, then turn and cook 8 more minutes."
+          }
+        ],
+        "preheatDetail": "The main source uses a preheated air fryer. Preheat to 180°C until ready; no unsupported preheat duration has been added.",
+        "completion": "The mushrooms are soft throughout and hot through thick areas without raw, firm sections; edges are dry and fragrant rather than black.",
+        "advancePreparation": "Let the seasoned fresh mushrooms stand briefly. The author specifies only a short rest, so no fixed marinating duration has been imposed."
+      }
+    ]
+  },
+  {
+    "slug": "cn-boiled-then-roasted-corn",
+    "name": "Boiled-then-roasted corn",
+    "aliases": [
+      "Boiled-then-roasted corn",
+      "先煮后烤原味玉米"
+    ],
+    "category": "vegetables",
+    "description": "Boil the corn until cooked, then roast at 200°C for 20 minutes, rotating several times. Requires both a saucepan and an air fryer.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-13",
+    "variants": [
+      {
+        "id": "default",
+        "state": "fresh",
+        "temperatureC": 200,
+        "temperatureF": 392.0,
+        "minutes": [
+          20,
+          20
+        ],
+        "preheat": "unspecified",
+        "notes": [
+          "One or two ears is an editorial single-layer portion; the main source specifies no count. Fifteen minutes is treated as the first boiling check, and corn must be cooked before air frying.",
+          "The independent sding1126 comparison uses 3 fresh ears with milk, honey and foil, cooking at 200°C for 10 minutes, then turning and cooking 8 minutes. It lists no boiling step. This recipe follows the main source’s precooked, unseasoned, uncovered method; food state and time are not treated as interchangeable.",
+          "This recipe has not been physically tested by this site."
+        ],
+        "label": "1–2 ears of corn that fit in one layer; an editorial small-batch choice",
+        "portion": "1–2 ears of corn that fit in one layer; an editorial small-batch choice",
+        "turn": "Rotate several times during cooking so the cylindrical cobs heat on all sides. The source gives no fixed rotating minutes.",
+        "sources": [
+          {
+            "title": "「空气炸锅真是伟大的发明」",
+            "publisher": "潘誉晗 / 少数派",
+            "url": "https://sspai.com/prime/story/air-fryer-recipes",
+            "role": "reference",
+            "locator": "“烤玉米”一节",
+            "evidence": "玉米先在开水中煮15分钟或蒸15分钟；熟玉米直接200°C烤20分钟，中途多转几面，无调味。已下载原始公开HTML并读取该完整章节。"
+          },
+          {
+            "title": "空气炸锅 烤玉米",
+            "publisher": "sding1126 / 下厨房",
+            "url": "https://m.xiachufang.com/recipe/106505471/",
+            "role": "cross-check",
+            "locator": "用料及步骤1–3",
+            "evidence": "新鲜玉米3根，刷牛奶蜂蜜、撒孜然黑胡椒；200°C先10分钟，翻面再8分钟，可打开锡纸继续烤；没有写先煮步骤。与主参考先煮熟、无酱、20分钟的方法不同，不将18分钟视为生熟等价。已打开全文。"
+          }
+        ],
+        "needsHob": true,
+        "steps": [
+          "Remove husks and silk and wash the corn. Bring a saucepan of water to the boil, add the corn and start checking after 15 minutes of boiling. Continue until the kernels are cooked and tender.",
+          "Lift out and drain surface water, then put straight into the basket. Cut into sections if too long, and arrange in one layer.",
+          "Air fry at 200°C for 20 minutes, rotating with tongs several times so all sides face the heat.",
+          "Remove when lightly roasted outside and hot and tender inside. Take it out sooner if it has reached the texture you want; do not aim for blackening."
+        ],
+        "ingredients": [
+          "1–2 ears fresh corn",
+          "Enough water to cover the corn in the saucepan"
+        ],
+        "equipment": [
+          "Saucepan and hob",
+          "Air fryer",
+          "Tongs",
+          "Chopstick or small knife"
+        ],
+        "timeline": [
+          {
+            "label": "Boil first",
+            "detail": "Start checking after 15 minutes in boiling water; continue until cooked."
+          },
+          {
+            "label": "Drain",
+            "detail": "Drain surface water. Do not add sauce."
+          },
+          {
+            "label": "Air fry",
+            "detail": "200°C for 20 minutes, rotating several times."
+          }
+        ],
+        "preheatDetail": "The main source puts cooked corn straight into the air fryer without listing a separate preheat.",
+        "completion": "The corn must be cooked before air frying. At serving it is hot through and tender with a lightly roasted surface, without blackening.",
+        "advancePreparation": "Boil fully, then proceed directly to air frying. This 20-minute stage is not for raw corn and is not a reheating guide for corn stored overnight."
+      }
+    ]
+  }
+]

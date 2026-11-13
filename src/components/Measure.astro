@@ -1,0 +1,8 @@
+---
+import { measureText } from '../lib/measure';
+import type { Unit } from '../lib/schema';
+import type { Language } from '../lib/locale';
+interface Props { text: string; unit: Unit; lang: Language }
+const { text, unit, lang } = Astro.props;
+---
+<span data-measure={text}>{measureText(text, unit, lang)}</span>

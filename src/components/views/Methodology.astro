@@ -2,6 +2,7 @@
 import { t } from '../../lib/i18n';
 import { localizedPath, type Language } from '../../lib/locale';
 
+import Measure from '../Measure.astro';
 import Layout from '../../layouts/Layout.astro';
 import { safetySource } from '../../lib/format';
 
@@ -10,7 +11,7 @@ const lp = (path: string) => localizedPath(path, lang);
 
 ---
 <Layout lang={lang} title={t(lang, "Cooking sources, conditions & food safety | Airfryer times")} description={t(lang, "How we select air fryer cooking references, handle differences between sources, and separate cooking settings from food safety temperatures.")} breadcrumbs={[{ name: 'Sources & safety', path: '/methodology' }]}>
-  <nav class="breadcrumbs" aria-label={t(lang, "Breadcrumb")}><a href={lp('/')}>{t(lang, "All foods")}</a><span aria-hidden="true">/</span><span>{t(lang, "Sources & safety")}</span></nav>
+  <nav class="breadcrumbs" aria-label={t(lang, "Breadcrumb")}><a href={lp('/')} data-region-home>{t(lang, "All foods")}</a><span aria-hidden="true">/</span><span>{t(lang, "Sources & safety")}</span></nav>
   <article class="prose">
     <h1>{t(lang, "Know what the time applies to.")}</h1>
     <p class="lead">{t(lang, "A cooking time is useful when the starting conditions are clear.")}</p>
@@ -21,15 +22,18 @@ const lp = (path: string) => localizedPath(path, lang);
     <p>{t(lang, "Thickness, quantity, whether food is raw or precooked, and the appliance model can change the result. Follow the preparation and portion shown. Your appliance manual and the package directions take priority for your particular product.")}</p>
     <p>{t(lang, "We only offer a selectable condition when it has its own source support. Doubling the weight does not mean doubling the time. Fresh, frozen and reheated food are not automatically interchangeable.")}</p>
     <h2>{t(lang, "Temperature units")}</h2>
-    <p>{t(lang, "Cooking settings are shown in °F from the reference. Converted °C settings are rounded to the nearest 5°C to match typical appliance controls. These are approximate settings, separate from the internal food temperatures below.")}</p>
+    <p>{t(lang, "China and US collections have independently researched recipes. Language changes the interface, not the recipe collection. Units apply to temperatures, weights and sizes together. Conversions are display values, never a nearest-notch recommendation or a cooking-time formula.")}</p>
+    <p>{t(lang, "China cooking phases stay at or below 200°C; US phases at or below 400°F. If your machine cannot select the required setting, choose a supported recipe rather than lowering the temperature and guessing a new time.")}</p>
+    <p>{t(lang, "Standard measuring spoons are used where the recipe specifies them: 1 tsp is 5 ml, 1 tbsp is 15 ml, and 1 US cup is about 240 ml. Do not substitute dining spoons or convert salt volume into grams without a specific ingredient measurement.")}</p>
     <h2 id="food-safety">{t(lang, "Check the center, not just the clock.")}</h2>
     <p>{t(lang, "Use a food thermometer for applicable foods. Some products require a higher internal temperature than the general chart; their package directions take priority.")}</p>
+    <p><Measure text={t(lang, 'The China wing and rib guides use 75°C for at least 30 seconds, with sourced household-observation guidance when no thermometer is available. The table below is the US FoodSafety.gov reference; each recipe states its applicable check.')} unit={lang === 'zh' ? 'c' : 'f'} lang={lang}/></p>
     <div class="safety-table-wrap"><table class="safety-table"><caption>{t(lang, "Selected minimum internal temperatures")}</caption><thead><tr><th scope="col">{t(lang, "Food")}</th><th scope="col">{t(lang, "Internal temperature")}</th></tr></thead><tbody>
-      <tr><th scope="row">{t(lang, "Chicken and turkey, including ground poultry")}</th><td>165°F (74°C)</td></tr>
-      <tr><th scope="row">{t(lang, "Ground beef or pork")}</th><td>160°F (71°C)</td></tr>
-      <tr><th scope="row">{t(lang, "Whole cuts of beef or pork")}</th><td>{t(lang, "145°F (63°C), then rest 3 minutes")}</td></tr>
-      <tr><th scope="row">{t(lang, "Fish")}</th><td>{t(lang, "145°F (63°C), or opaque flesh that separates easily")}</td></tr>
-      <tr><th scope="row">{t(lang, "Leftovers")}</th><td>165°F (74°C)</td></tr>
+      <tr><th scope="row">{t(lang, "Chicken and turkey, including ground poultry")}</th><td><Measure text="165°F (74°C)" unit={lang === 'zh' ? 'c' : 'f'} lang={lang}/></td></tr>
+      <tr><th scope="row">{t(lang, "Ground beef or pork")}</th><td><Measure text="160°F (71°C)" unit={lang === 'zh' ? 'c' : 'f'} lang={lang}/></td></tr>
+      <tr><th scope="row">{t(lang, "Whole cuts of beef or pork")}</th><td><Measure text={t(lang, "145°F (63°C), then rest 3 minutes")} unit={lang === 'zh' ? 'c' : 'f'} lang={lang}/></td></tr>
+      <tr><th scope="row">{t(lang, "Fish")}</th><td><Measure text={t(lang, "145°F (63°C), or opaque flesh that separates easily")} unit={lang === 'zh' ? 'c' : 'f'} lang={lang}/></td></tr>
+      <tr><th scope="row">{t(lang, "Leftovers")}</th><td><Measure text="165°F (74°C)" unit={lang === 'zh' ? 'c' : 'f'} lang={lang}/></td></tr>
     </tbody></table></div>
     <p><a href={safetySource}>{t(lang, "Read the complete FoodSafety.gov temperature chart")}</a>{t(lang, ", including guidance for shellfish and other foods.")}</p>
     <h2>{t(lang, "Corrections")}</h2>

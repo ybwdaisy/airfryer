@@ -42,7 +42,7 @@ try {
     await expect(page.locator('[data-food-row]:visible')).toHaveCount(10);
     await expect(page.locator('[data-unit="c"]')).toHaveAttribute('aria-pressed', 'true');
     await page.locator('[data-food-link="french-fries"]').click();
-    await expect(page.locator('.cooking-values [data-temperature]').first()).toHaveText('205°C');
+    await expect(page.locator('.cooking-values [data-temperature]').first()).toHaveText('204.4°C');
   });
   await check('sourced condition, fallback and source anchor', async () => {
     await page.goto(`${base}/foods/chicken-breast?variant=medium&unit=f`);
@@ -53,8 +53,8 @@ try {
     await page.locator('[data-variant-panel]:visible .source-summary a').click();
     await expect(page).toHaveURL(/#sources-large$/);
     await page.goto(`${base}/foods/chicken-breast?variant=unavailable`);
-    await expect(page.locator('#variant-select')).toHaveValue('small');
-    await page.goto(`${base}/foods/fish-sticks`);
+    await expect(page.locator('#variant-select')).toHaveValue('seasoned-6oz');
+    await page.goto(`${base}/foods/fish-sticks?unit=f`);
     await expect(page.locator('.safety-note')).toContainText('165');
     await expect(page.locator('.safety-note')).not.toContainText('145');
   });
@@ -76,7 +76,7 @@ try {
     const nojs = await browser.newContext({ javaScriptEnabled: false });
     const p = await nojs.newPage();
     await p.goto(`${base}/foods/chicken-breast`);
-    await expect(p.locator('[data-variant-panel]:visible')).toHaveCount(3);
+    await expect(p.locator('[data-variant-panel]:visible')).toHaveCount(4);
     await p.goto(`${base}/categories/frozen`);
     await expect(p.locator('[data-food-row]:visible')).toHaveCount(10);
     await nojs.close();
@@ -87,7 +87,7 @@ try {
     await page.goto(base);
     await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex, nofollow');
     const sitemap = await context.request.get(`${base}/sitemap.xml`);
-    expect((await sitemap.text()).match(/<loc>/g)).toHaveLength(118);
+    expect((await sitemap.text()).match(/<loc>/g)).toHaveLength(150);
   });
   await check('consent gates tag loading; withdrawal stops events; raw search text is excluded', async () => {
     const c = await browser.newContext();
