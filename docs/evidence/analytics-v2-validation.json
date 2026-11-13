@@ -22,6 +22,7 @@
       "language event is single and keeps current/target language separate; no-op preference clicks do not inflate counts",
       "background or off-screen time cannot qualify; revocation stops observers, timers and subsequent events",
       "withdrawal in another tab cancels pending navigation before destination delivery",
+      "clearing all local preferences in another tab returns analytics to opt-in",
       "storage-blocked navigation uses a bounded fallback and still opens the requested language",
       "sources are auxiliary interactions; only source hostname/role is sent",
       "copied production identifiers on a Vercel alias never enable collection"

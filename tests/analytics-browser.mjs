@@ -59,6 +59,11 @@ try {
   await other.locator('[data-privacy-settings]').click();await other.locator('[data-consent=denied]').click();await expect(other.locator('#google-analytics-tag')).toHaveCount(0);release();await nav;
   await expect(p).toHaveURL(analyticsOrigin+'/zh/us');await expect(p.locator('#google-analytics-tag')).toHaveCount(0);expect(f.count('language_change')).toBe(0);expect(await p.evaluate(()=>sessionStorage.getItem('airfryer:pending-navigation:v2'))).toBe(null);await f.close();
  });
+ await check('clearing all local preferences in another tab returns analytics to opt-in',async()=>{
+  const f=await fixture({granted:true}),p=f.page;await p.goto(analyticsOrigin+'/zh/china/foods/cn-orleans-wings');await expect(p.locator('#google-analytics-tag')).toHaveCount(1);
+  const other=await f.context.newPage();await other.goto(analyticsOrigin+'/foods/chicken-breast');await expect(other.locator('#google-analytics-tag')).toHaveCount(1);await other.evaluate(()=>localStorage.clear());
+  await expect(p.locator('#google-analytics-tag')).toHaveCount(0);await expect(p.locator('#consent-banner')).toBeVisible();const before=f.events.length;await p.locator('[data-unit=f]').click();expect(f.events.length).toBe(before);await f.close();
+ });
  await check('storage-blocked navigation uses a bounded fallback and still opens the requested language',async()=>{
   const f=await fixture({granted:true});await f.context.addInitScript(()=>{Object.defineProperty(window,'sessionStorage',{get(){throw new Error('Storage blocked');}});});
   await f.page.goto(analyticsOrigin+'/');await f.page.locator('[data-language-switch=zh]').click();await expect(f.page).toHaveURL(analyticsOrigin+'/zh/us');await expect.poll(()=>f.count('language_change')).toBe(1);await f.close();

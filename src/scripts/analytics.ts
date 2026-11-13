@@ -135,7 +135,8 @@ export function initAnalytics() {
     document.dispatchEvent(new CustomEvent('airfryer:consent', {detail: {granted: state === 'granted'}}));
   };
   window.addEventListener('storage', event => {
-    if(event.key !== key) return;
+    if(event.key !== key && event.key !== null) return;
+    try {if(event.storageArea !== localStorage) return;} catch {if(event.key !== key) return;}
     const next = event.newValue === 'granted' || event.newValue === 'denied' ? event.newValue : null;
     if(next !== state) choose(next,false);
   });

@@ -112,4 +112,4 @@ Google公开衡量ID：`G-B34CBGW0EF`。仅正式规范源 `https://airfryer.ybw
 
 Google依据：[GA内置Content group](https://developers.google.com/analytics/devguides/collection/ga4/reference/config#content_group)、[事件参数与自定义维度](https://developers.google.com/analytics/devguides/collection/ga4/event-parameters)、[事件级自定义维度](https://support.google.com/analytics/answer/14239696?hl=en)、[漏斗探索及用户计数](https://support.google.com/analytics/answer/9327974?hl=en)、[Google tag事件回调参数](https://developers.google.com/tag-platform/gtagjs/reference/parameters)。
 
-已完成的代码验证：Astro检查60文件，0 error/warning/hint；15项单元测试；生产输出检查与152页构建；9组埋点浏览器测试及真实SDK事件包检查；既有8组功能、8组双语与9组地区化回归（244个语言/单位页面，48个响应式布局）。统计收集在派发前被拦截，不把这些结果当后台入流。
+已完成的代码验证：Astro检查60文件，0 error/warning/hint；15项单元测试；生产输出检查与152页构建；10组埋点浏览器测试及真实SDK事件包检查；既有8组功能、8组双语与9组地区化回归（244个语言/单位页面，48个响应式布局）。统计收集在派发前被拦截，不把这些结果当后台入流。
