@@ -1,0 +1,1307 @@
+{
+  "chicken-wings": {
+    "variants": {
+      "default": {
+        "steps": [
+          "Dry the wings thoroughly. Lightly oil the basket.",
+          "Mix the measured seasonings and baking powder; toss with wings until evenly coated.",
+          "Arrange one layer, without stacking. Cook at 400°F, shaking halfway."
+        ],
+        "ingredients": [
+          "20 split chicken wingettes/drumettes",
+          "1 tsp each kosher salt, garlic powder, onion powder and sweet paprika",
+          "1/2 tsp dried oregano; 1/4 tsp each thyme and ground sage",
+          "2 tsp baking powder",
+          "Oil spray for basket"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Large mixing bowl",
+          "Paper towels",
+          "Food thermometer"
+        ],
+        "timeline": [
+          {
+            "label": "Prepare",
+            "detail": "Allow about 10 minutes to dry and coat the wings; no mandatory marinade."
+          },
+          {
+            "label": "Cook",
+            "detail": "16–22 minutes per single-layer batch; shake halfway."
+          }
+        ],
+        "preheatDetail": "The recipe does not specify a preheat duration. Use your machine’s manual for its preheat procedure.",
+        "completion": "Check the thickest center reaches 165°F (74°C); color alone is insufficient.",
+        "requiresThermometer": true
+      }
+    }
+  },
+  "chicken-thighs": {
+    "variants": {
+      "default": {
+        "steps": [
+          "Rub both sides with the half-lemon juice and measured spices.",
+          "Place skin-side down in one layer; cook batches if six do not fit.",
+          "Cook at 400°F; turn after 12 minutes."
+        ],
+        "ingredients": [
+          "6 bone-in, skin-on chicken thighs",
+          "Juice of 1/2 lemon",
+          "1 tsp each kosher salt, garlic powder and onion powder",
+          "1/4 tsp black pepper",
+          "1/2 tsp sweet paprika; 1/2 tsp dried herbs such as oregano"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs",
+          "Food thermometer"
+        ],
+        "timeline": [
+          {
+            "label": "Prepare",
+            "detail": "About 5 minutes; rub on lemon juice and seasonings. No brine or long marinade required."
+          },
+          {
+            "label": "Cook",
+            "detail": "12 minutes skin-side down, then turn and cook another 12 minutes."
+          }
+        ],
+        "preheatDetail": "The recipe does not specify preheating; do not invent a duration.",
+        "completion": "Probe the thickest meat away from bone and reach 165°F (74°C).",
+        "requiresThermometer": true
+      }
+    }
+  },
+  "chicken-drumsticks": {
+    "variants": {
+      "default": {
+        "steps": [
+          "Combine all dry-rub ingredients in a lidded bowl or food bag.",
+          "Add drumsticks and shake until coated. Cook now or use the optional refrigerated rest.",
+          "Place in one layer; cook at the displayed setting and turn at 10 minutes."
+        ],
+        "notes": [
+          "The original explicitly permits another rub. No wet marinade or breading is required."
+        ],
+        "ingredients": [
+          "8 raw chicken drumsticks, about 4 oz each",
+          "2 tsp ground black pepper",
+          "1 tbsp garlic powder; 1 tbsp onion powder",
+          "2 tsp paprika; 2 tsp cumin"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Large lidded bowl or 1-gallon food bag",
+          "Tongs",
+          "Food thermometer"
+        ],
+        "timeline": [
+          {
+            "label": "Optional rest",
+            "detail": "For more flavor, refrigerate coated drumsticks for 30 minutes; this is optional."
+          },
+          {
+            "label": "Cook",
+            "detail": "20 minutes as the first check, turning at 10 minutes."
+          }
+        ],
+        "preheatDetail": "Preheat to 400°F; the PDF gives no number of minutes.",
+        "completion": "Verify 165°F internally; continue if the 20-minute check is below target.",
+        "preheat": "yes",
+        "requiresThermometer": true
+      }
+    }
+  },
+  "turkey-breast": {
+    "variants": {
+      "default": {
+        "steps": [
+          "Combine softened butter, garlic, herbs, salt and pepper.",
+          "Dry roast; gently loosen skin and spread butter underneath and over the exterior.",
+          "Start skin-side up. Turn at 20 minutes; check the thickest center at the existing cook time."
+        ],
+        "notes": [
+          "Check the product for added brine/salt and reduce seasoning accordingly. Different weights or shapes are not covered by a multiplier."
+        ],
+        "ingredients": [
+          "3 lb fully thawed boneless, skin-on turkey breast roast",
+          "2 tbsp softened butter",
+          "2 tsp kosher salt; 1/4 tsp black pepper",
+          "3 minced garlic cloves",
+          "1 tbsp each finely chopped fresh sage, thyme and rosemary"
+        ],
+        "equipment": [
+          "Air fryer large enough for the roast",
+          "Small bowl",
+          "Paper towels",
+          "Tongs",
+          "Food thermometer",
+          "Cutting board"
+        ],
+        "timeline": [
+          {
+            "label": "Prepare",
+            "detail": "About 10 minutes; mix butter and season roast. No overnight brine required."
+          },
+          {
+            "label": "Cook",
+            "detail": "20 minutes skin-side up, turn, then another 20 minutes as the check."
+          },
+          {
+            "label": "Rest",
+            "detail": "10 minutes before slicing."
+          }
+        ],
+        "preheatDetail": "Preheat to 350°F for 3–4 minutes. Use Roast if available, as the reference directs.",
+        "completion": "Cook to 165°F; rest 10 minutes before slicing.",
+        "preheat": "yes",
+        "requiresThermometer": true
+      }
+    }
+  },
+  "meatballs": {
+    "variants": {
+      "default": {
+        "steps": [
+          "Combine Parmesan, crumbs and dry seasonings. Beat egg separately.",
+          "Add cold beef and egg; mix gently without compressing. Shape equal 1 1/2-inch balls.",
+          "Spray basket and meatball tops. Arrange apart in one layer, cook at the displayed setting and turn halfway."
+        ],
+        "notes": [
+          "Poultry alternatives in the original are outside this beef-only condition. Optional oven holding is not needed to complete a batch."
+        ],
+        "ingredients": [
+          "1 lb cold 93%-lean ground beef",
+          "1/3 cup grated Parmesan; 1/3 cup Italian-seasoned breadcrumbs",
+          "1 tbsp dried parsley",
+          "1 tsp kosher salt; 1 tsp Italian seasoning",
+          "1/2 tsp each garlic and onion powder; 1/4 tsp black pepper",
+          "1 large egg",
+          "Optional: 1/4 tsp red pepper flakes",
+          "Nonstick spray"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Mixing bowl and small egg bowl",
+          "Tray for formed meatballs",
+          "Tongs",
+          "Food thermometer"
+        ],
+        "timeline": [
+          {
+            "label": "Prepare",
+            "detail": "About 20 minutes to mix and form roughly twenty 1 1/2-inch balls; keep beef cold."
+          },
+          {
+            "label": "Cook",
+            "detail": "7–9 minutes per batch; turn halfway."
+          }
+        ],
+        "preheatDetail": "Preheat to 400°F; original does not specify minutes.",
+        "completion": "Reference requires 165°F in the center.",
+        "preheat": "yes",
+        "requiresThermometer": true
+      }
+    }
+  },
+  "pork-tenderloin": {
+    "variants": {
+      "default": {
+        "steps": [
+          "Slip a knife under the silver skin and remove it carefully.",
+          "Mix Dijon, vinegar, oil and Italian seasoning. Brush all sides; add salt and pepper.",
+          "Place in the hot basket; cut crosswise only if needed to fit. Cook at the displayed setting and measure the thickest center."
+        ],
+        "notes": [
+          "Use tenderloin, not the much thicker pork loin. The original allows early removal for carryover; reach the minimum temperature before removal."
+        ],
+        "ingredients": [
+          "1 pork tenderloin, 1 1/4–1 1/2 lb",
+          "1/2 tsp kosher salt; 1/4 tsp black pepper",
+          "1 tsp Dijon mustard",
+          "1 tbsp balsamic vinegar",
+          "1 tsp olive oil; 1/2 tsp Italian seasoning"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Sharp knife and cutting board",
+          "Small bowl and brush",
+          "Food thermometer"
+        ],
+        "timeline": [
+          {
+            "label": "Prepare",
+            "detail": "About 5 minutes to trim and coat. Optional marinating: up to 1 hour; keep refrigerated under the existing food-handling guidance."
+          },
+          {
+            "label": "Cook",
+            "detail": "16–17 minutes as the existing check."
+          },
+          {
+            "label": "Rest",
+            "detail": "At least 5 minutes before slicing."
+          }
+        ],
+        "preheatDetail": "Preheat to 400°F; no preheat duration specified.",
+        "completion": "Reach at least 145°F (63°C) before removal, then rest at least 5 minutes.",
+        "preheat": "yes",
+        "requiresThermometer": true
+      }
+    }
+  },
+  "eggplant": {
+    "variants": {
+      "parmesan-slices": {
+        "steps": [
+          "Cut across into uniform 3/8–1/2-inch rounds; discard the leafy end. Pat dry.",
+          "Brush both sides with oil. Apply salt, pepper, Italian seasoning, then Parmesan, in that order.",
+          "Arrange in one layer. Cook at the existing 375°F setting for 10–12 minutes; repeat in batches."
+        ],
+        "notes": [
+          "Use a medium eggplant. Fine grated Parmesan is essential for this coating; no breadcrumbs, sauce or egg wash required."
+        ],
+        "ingredients": [
+          "1 medium eggplant",
+          "2 tbsp olive oil",
+          "1 tsp sea salt",
+          "1/2 tsp black pepper",
+          "1 cup finely grated Parmesan, not shredded",
+          "2 tsp unsalted Italian seasoning"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Knife and cutting board",
+          "Paper towels",
+          "Oil brush"
+        ],
+        "timeline": [
+          {
+            "label": "Prepare",
+            "detail": "About 5 minutes to slice, dry and coat; no soak or marinade."
+          },
+          {
+            "label": "Cook",
+            "detail": "10–12 minutes per single-layer batch; no flipping required."
+          }
+        ],
+        "preheatDetail": "Preheat to 375°F; source gives no minute count.",
+        "completion": "Flesh must be very soft and cheese golden; check the interior, not only surface color.",
+        "preheat": "yes"
+      }
+    }
+  },
+  "tofu": {
+    "variants": {
+      "extra-firm": {
+        "steps": [
+          "Optionally wrap the block in towels and weight it with a heavy skillet for 30 minutes.",
+          "Cube tofu. Mix oil, tamari and sriracha; gently coat cubes, then toss with cornstarch.",
+          "Space cubes apart in one layer. Cook at the displayed setting and turn halfway."
+        ],
+        "notes": [
+          "Extra-firm tofu only; softer tofu may break apart. Original gives no numeric cube edge size; do not invent one."
+        ],
+        "ingredients": [
+          "14 oz extra-firm tofu",
+          "1/2 tbsp avocado oil",
+          "2 tbsp tamari",
+          "1/2 tsp sriracha",
+          "1 tbsp cornstarch"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Large bowl",
+          "Knife",
+          "For optional pressing: clean kitchen towel or paper towels and a heavy skillet, or a tofu press"
+        ],
+        "timeline": [
+          {
+            "label": "Optional pressing",
+            "detail": "30 minutes before coating; this is extra time, not part of the 11–15-minute cook."
+          },
+          {
+            "label": "Coat",
+            "detail": "Mix liquid ingredients first; toss cubes, then add cornstarch."
+          },
+          {
+            "label": "Cook",
+            "detail": "11–15 minutes per single-layer batch; turn halfway."
+          }
+        ],
+        "preheatDetail": "Preheat to 400°F; source gives no minute count.",
+        "completion": "Edges should be golden and crisp.",
+        "preheat": "yes"
+      }
+    }
+  },
+  "garlic-bread": {
+    "variants": {
+      "fresh-baguette": {
+        "steps": [
+          "Mince peeled garlic and mix with softened butter and Italian seasoning.",
+          "Spread generously to the edges of the one-inch baguette slices; add optional toppings.",
+          "Put slices apart in the hot basket; cook at the displayed setting in batches if needed."
+        ],
+        "notes": [
+          "Fresh baked baguette only; this condition does not cover frozen toast or uncooked dough."
+        ],
+        "ingredients": [
+          "8 French baguette slices, about 1 inch thick",
+          "4 tbsp softened butter",
+          "3 medium garlic cloves, minced",
+          "1/2 tsp Italian seasoning",
+          "Optional: grated Parmesan, salt and pepper"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Small bowl",
+          "Knife or garlic press",
+          "Spreading knife"
+        ],
+        "timeline": [
+          {
+            "label": "Prepare",
+            "detail": "About 5 minutes; butter must already be softened. No proofing or raw dough step."
+          },
+          {
+            "label": "Cook",
+            "detail": "3–5 minutes per batch; watch closely near the end."
+          }
+        ],
+        "preheatDetail": "Preheat to 350°F; no duration specified.",
+        "completion": "Remove at desired crispness, before garlic burns.",
+        "preheat": "yes"
+      }
+    }
+  },
+  "biscuits": {
+    "variants": {
+      "refrigerated-grands": {
+        "equipment": [
+          "Appliance-approved fitted parchment round",
+          "Tongs"
+        ],
+        "ingredients": [
+          "4 refrigerated Pillsbury Grands Flaky Layers biscuits from an 8-count can, spaced on a fitted parchment round in the reference 3.7-quart basket; keep remaining dough chilled."
+        ],
+        "completion": "Follow the final check in the steps; check at the earlier time and continue cooking if the center is not ready.",
+        "preheatDetail": "Load the food before heating; do not add a preheat phase."
+      }
+    }
+  },
+  "cinnamon-rolls": {
+    "variants": {
+      "original-can": {
+        "equipment": [
+          "Appliance-approved fitted parchment round",
+          "Tongs"
+        ],
+        "ingredients": [
+          "Pillsbury original refrigerated cinnamon rolls from an 8-count can, topping-side down on a fitted parchment round in the reference 3.7-quart basket; not jumbo Grands."
+        ],
+        "completion": "Follow the final check in the steps; check at the earlier time and continue cooking if the center is not ready.",
+        "preheatDetail": "Load the food before heating; do not add a preheat phase."
+      }
+    }
+  },
+  "cookies": {
+    "variants": {
+      "small-refrigerated": {
+        "equipment": [
+          "Appliance-approved fitted foil round",
+          "Cooling rack",
+          "Spatula"
+        ],
+        "ingredients": [
+          "5 Pillsbury Ready to Bake chocolate-chip dough rounds from a 16 oz, 24-count pack; flatten to about 1 1/2 inches and space on a fitted foil round in the reference 3.7-quart basket.",
+          "Cooking oil, just enough for the light surface coating described below."
+        ],
+        "completion": "Follow the final check in the steps; check at the earlier time and continue cooking if the center is not ready.",
+        "preheatDetail": "The recipe does not state a preheat duration. Follow your appliance manual; this is a reference range, not a universal cold-start or hot-start guarantee."
+      }
+    }
+  },
+  "chicken-breast": {
+    "variants": {
+      "small": {
+        "ingredients": [
+          "Fresh boneless, skinless breast, 5–6 oz each; thicker end pounded level; brined in the refrigerator as in the reference.",
+          "Brine: 6 cups water + ¼ cup Diamond Crystal kosher salt; if using table salt, use half that salt volume.",
+          "Olive oil spray; paprika, garlic powder, onion powder, parsley and pepper to season after brining; no extra salt."
+        ],
+        "requiresThermometer": true,
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula",
+          "Food thermometer"
+        ],
+        "completion": "Check the thickest center reaches 165°F (74°C) before serving.",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure.",
+        "historical": true,
+        "advancePreparation": "This size-chart method requires refrigerated brining for 1–2 hours.",
+        "steps": [
+          "Dissolve the specified salt in water. Submerge breasts, cover and refrigerate 1–2 hours. Do not substitute the same volume of a denser salt.",
+          "Drain; pat dry without washing raw chicken. Pound the thicker ends level, lightly spray with oil and add the listed seasonings to taste.",
+          "Preheat to 380°F and place in one layer. Cook for this size’s displayed range, turning halfway and checking from its earlier time.",
+          "Reach 165°F (74°C) in each thickest center before removal, then rest 5 minutes. Continue cooking and rechecking any piece below that temperature."
+        ],
+        "deviceNote": "This preserved size-chart method needs a selectable 380°F setting. It is not the 375°F seasoned recipe."
+      },
+      "medium": {
+        "ingredients": [
+          "Fresh boneless, skinless breast, 7–8 oz each; thicker end pounded level; brined in the refrigerator as in the reference.",
+          "Brine: 6 cups water + ¼ cup Diamond Crystal kosher salt; if using table salt, use half that salt volume.",
+          "Olive oil spray; paprika, garlic powder, onion powder, parsley and pepper to season after brining; no extra salt."
+        ],
+        "requiresThermometer": true,
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula",
+          "Food thermometer"
+        ],
+        "completion": "Check the thickest center reaches 165°F (74°C) before serving.",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure.",
+        "historical": true,
+        "advancePreparation": "This size-chart method requires refrigerated brining for 1–2 hours.",
+        "steps": [
+          "Dissolve the specified salt in water. Submerge breasts, cover and refrigerate 1–2 hours. Do not substitute the same volume of a denser salt.",
+          "Drain; pat dry without washing raw chicken. Pound the thicker ends level, lightly spray with oil and add the listed seasonings to taste.",
+          "Preheat to 380°F and place in one layer. Cook for this size’s displayed range, turning halfway and checking from its earlier time.",
+          "Reach 165°F (74°C) in each thickest center before removal, then rest 5 minutes. Continue cooking and rechecking any piece below that temperature."
+        ],
+        "deviceNote": "This preserved size-chart method needs a selectable 380°F setting. It is not the 375°F seasoned recipe."
+      },
+      "large": {
+        "ingredients": [
+          "Fresh boneless, skinless breast, 9 oz or more each; no upper size bound supplied by the recipe; thicker end pounded level; brined in the refrigerator as in the reference.",
+          "Brine: 6 cups water + ¼ cup Diamond Crystal kosher salt; if using table salt, use half that salt volume.",
+          "Olive oil spray; paprika, garlic powder, onion powder, parsley and pepper to season after brining; no extra salt."
+        ],
+        "requiresThermometer": true,
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula",
+          "Food thermometer"
+        ],
+        "completion": "Check the thickest center reaches 165°F (74°C) before serving.",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure.",
+        "historical": true,
+        "advancePreparation": "This size-chart method requires refrigerated brining for 1–2 hours.",
+        "steps": [
+          "Dissolve the specified salt in water. Submerge breasts, cover and refrigerate 1–2 hours. Do not substitute the same volume of a denser salt.",
+          "Drain; pat dry without washing raw chicken. Pound the thicker ends level, lightly spray with oil and add the listed seasonings to taste.",
+          "Preheat to 380°F and place in one layer. Cook for this size’s displayed range, turning halfway and checking from its earlier time.",
+          "Reach 165°F (74°C) in each thickest center before removal, then rest 5 minutes. Continue cooking and rechecking any piece below that temperature."
+        ],
+        "deviceNote": "This preserved size-chart method needs a selectable 380°F setting. It is not the 375°F seasoned recipe."
+      }
+    },
+    "prependVariants": [
+      {
+        "id": "seasoned-6oz",
+        "label": "Seasoned, boneless, 6 oz each",
+        "state": "fresh",
+        "temperatureF": 375,
+        "minutes": [
+          12,
+          15
+        ],
+        "portion": "Four thawed boneless, skinless breasts, 6 oz each (1½ lb total); pound thick ends level. Fit one layer per batch.",
+        "preheat": "yes",
+        "turn": "Flip after 8 minutes; check after another 4 minutes.",
+        "ingredients": [
+          "4 boneless skinless chicken breasts, 6 oz each",
+          "1 tbsp olive oil",
+          "2 tsp paprika; 1 tsp garlic powder",
+          "½ tsp each onion powder, oregano and black pepper; 1 tsp salt"
+        ],
+        "equipment": [
+          "Air fryer with a selectable 375°F Air Fry setting",
+          "Measuring spoons",
+          "Meat mallet or rolling pin",
+          "Instant-read food thermometer",
+          "Clean tongs and plate"
+        ],
+        "advancePreparation": "Refrigerate with seasoning for at least 30 minutes.",
+        "timeline": [
+          {
+            "label": "Marinate",
+            "detail": "At least 30 minutes in the refrigerator."
+          },
+          {
+            "label": "Preheat",
+            "detail": "375°F until ready; Ninja AF101: 3 minutes."
+          },
+          {
+            "label": "Air fry",
+            "detail": "12–15 minutes per single-layer batch, checking from minute 12."
+          },
+          {
+            "label": "Rest",
+            "detail": "5 minutes after the safe center temperature is reached."
+          }
+        ],
+        "preheatDetail": "Select Air Fry, 375°F and wait for ready. Ninja AF101: preheat the empty basket with crisper plate for 3 minutes; use your own appliance’s ready signal or manual.",
+        "steps": [
+          "Pat dry and pound the thick ends level. Coat with oil and all measured seasonings; cover and refrigerate at least 30 minutes. Already prepared this way? Start with preheating.",
+          "Preheat as described above. Arrange smooth-side down in one layer; batch if crowded and keep remaining raw chicken refrigerated.",
+          "Air fry at 375°F for 8 minutes, flip, then cook 4 more minutes and start checking.",
+          "Measure each breast at its thickest center. Continue cooking under-temperature pieces at the same setting and recheck; remove finished pieces individually. Rest 5 minutes before slicing."
+        ],
+        "completion": "Reach 165°F (74°C) in the thickest center before removal. Time and color alone do not confirm a safe finish.",
+        "requiresThermometer": true,
+        "deviceNote": "Use a machine that can select 375°F. Do not choose a nearby setting and reuse this clock.",
+        "notes": [
+          "Ingredient quantities cover all four breasts; cooking time is per batch, not the total for several batches.",
+          "The brined size-chart choices are a different preparation and remain available separately."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Chicken Breast",
+            "publisher": "Yumna Jawad / Feel Good Foodie",
+            "url": "https://feelgoodfoodie.net/recipe/air-fryer-chicken-breast/",
+            "role": "reference",
+            "locator": "Recipe ingredients and instructions",
+            "evidence": "Four 6 oz breasts, measured seasoning, at least 30 minutes refrigerated, 375°F, 8 minutes then flip and 4–7 more; 165°F and rest 5 minutes."
+          },
+          {
+            "title": "Air Fryer Chicken Breast",
+            "publisher": "Gina Homolka / Skinnytaste",
+            "url": "https://www.skinnytaste.com/air-fryer-chicken-breast/",
+            "role": "cross-check",
+            "locator": "Recipe card and size chart",
+            "evidence": "Uses refrigerated brining and 380°F with size-specific times. Different preparation; its cooking time is not substituted into this seasoned recipe."
+          },
+          {
+            "title": "Ninja AF101 Quick Start Guide",
+            "publisher": "Ninja",
+            "url": "https://assets.wfcdn.com/dm/document/675fc91c-ef44-45c2-9b8e-53d2af2df73d/owner%20manual",
+            "role": "cross-check",
+            "locator": "PDF pages 2–3; AF101_IG_QSG_20Recipe_MP_180626",
+            "evidence": "Original manufacturer guide archived by a retailer: preheat empty basket with crisper plate for 3 minutes; the cooking chart explicitly includes 375°F chicken and 400°F steak settings. No chart clock is substituted into the recipe."
+          }
+        ]
+      }
+    ]
+  },
+  "steak": {
+    "variants": {
+      "default": {
+        "ingredients": [
+          "4 intact sirloin steaks, 1 inch thick, about 6 oz each (1½ lb total)",
+          "Olive oil spray",
+          "1 tsp garlic powder; ½ tsp sweet paprika; 1 tsp kosher salt; ¼ tsp black pepper"
+        ],
+        "requiresThermometer": true,
+        "equipment": [
+          "Air fryer with selectable 400°F setting",
+          "Measuring spoons",
+          "Tongs",
+          "Instant-read thermometer",
+          "Foil and clean plate"
+        ],
+        "completion": "Reach at least 145°F (63°C) before removal, then rest 5 minutes. The 12-minute check does not guarantee a safe finish. Follow stricter label instructions, including mechanically tenderized beef.",
+        "preheatDetail": "Select Air Fry, 400°F and wait until ready. Ninja AF101: 3 minutes with empty basket and crisper plate; other models follow their manual.",
+        "advancePreparation": "Take steaks out of the refrigerator 30 minutes before cooking.",
+        "timeline": [
+          {
+            "label": "Before cooking",
+            "detail": "Take out 30 minutes beforehand; dry, oil and season."
+          },
+          {
+            "label": "Preheat",
+            "detail": "400°F until ready; Ninja AF101: 3 minutes."
+          },
+          {
+            "label": "Air fry",
+            "detail": "Check after 12 minutes per batch; turn after 6 minutes."
+          },
+          {
+            "label": "Rest",
+            "detail": "5 minutes after reaching at least 145°F."
+          }
+        ],
+        "steps": [
+          "Take steaks out 30 minutes beforehand. Pat dry, lightly spray oil and season both sides with the measured rub.",
+          "Preheat as described above. Arrange without overlapping; batch if needed.",
+          "Cook at 400°F for 6 minutes, turn and cook 6 more minutes.",
+          "Insert the thermometer from the side into the center. Reach at least 145°F before removal; continue cooking and checking lower-temperature pieces. Remove finished steaks individually.",
+          "Loosely tent with foil and rest 5 minutes. Slice across the grain."
+        ],
+        "notes": [
+          "Four-steak ingredient quantities; timing is for each uncrowded batch.",
+          "This guide uses the official minimum temperature, with a 5-minute rest. Do not remove early hoping carryover heat will reach it."
+        ],
+        "sources": [
+          {
+            "title": "Air Fryer Steak",
+            "publisher": "www.skinnytaste.com",
+            "url": "https://www.skinnytaste.com/air-fryer-steak/",
+            "role": "reference",
+            "locator": "Recipe ingredients, instructions, and doneness chart",
+            "evidence": "1-inch sirloin: 400°F for 12 minutes for medium, flip halfway; recipe rests steaks 5 minutes."
+          },
+          {
+            "title": "Cosori Iconic cooking times guide",
+            "publisher": "COSORI",
+            "url": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+            "role": "cross-check",
+            "locator": "Beef & Pork / New York Strip",
+            "evidence": "1-inch strip: 450°F; 6–12 min."
+          },
+          {
+            "title": "Ninja AF101 Quick Start Guide",
+            "publisher": "Ninja",
+            "url": "https://assets.wfcdn.com/dm/document/675fc91c-ef44-45c2-9b8e-53d2af2df73d/owner%20manual",
+            "role": "cross-check",
+            "locator": "PDF pages 2–3; AF101_IG_QSG_20Recipe_MP_180626",
+            "evidence": "Original manufacturer guide archived by a retailer: preheat empty basket with crisper plate for 3 minutes; the cooking chart explicitly includes 375°F chicken and 400°F steak settings. No chart clock is substituted into the recipe."
+          }
+        ]
+      }
+    },
+    "description": "Garlic-paprika sirloin, with preparation time and a thermometer finish."
+  },
+  "burger-patties": {
+    "variants": {
+      "default": {
+        "ingredients": [
+          "Fresh 80/20 ground-beef patties, ¼ lb each and about ½ inch thick; reference uses 1 lb for 4 patties."
+        ],
+        "requiresThermometer": true,
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula",
+          "Food thermometer"
+        ],
+        "completion": "Check beef or pork reaches 160°F (71°C); ground poultry needs 165°F (74°C).",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure."
+      }
+    }
+  },
+  "pork-chops": {
+    "variants": {
+      "default": {
+        "ingredients": [
+          "Fresh boneless pork chops, about 8 oz each; reference recipe allows marinating or simple salt-and-pepper seasoning.",
+          "Salt and pepper or your usual dry seasoning, to taste."
+        ],
+        "requiresThermometer": true,
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula",
+          "Food thermometer"
+        ],
+        "completion": "Reach 145°F (63°C), then rest at least 3 minutes.",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure.",
+        "steps": [
+          "Pat dry and season to taste with the listed dry seasoning.",
+          "Preheat for 5 minutes and arrange the chops in one layer.",
+          "Turn halfway, check for at least 145°F in the center, and rest at least 3 minutes."
+        ]
+      }
+    }
+  },
+  "bacon": {
+    "variants": {
+      "regular": {
+        "ingredients": [
+          "Fresh pork bacon, 5 regular-cut strips, about 6 oz total; cut strips shorter only to fit in one layer.",
+          "Cooking oil, just enough for the light surface coating described below."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula"
+        ],
+        "completion": "Follow the final check in the steps; check at the earlier time and continue cooking if the center is not ready.",
+        "preheatDetail": "Load the food before heating; do not add a preheat phase."
+      },
+      "thick": {
+        "ingredients": [
+          "Fresh pork bacon, 5 thick-cut strips, about 8–12 oz total; cut strips shorter only to fit in one layer.",
+          "Cooking oil, just enough for the light surface coating described below."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula"
+        ],
+        "completion": "Follow the final check in the steps; check at the earlier time and continue cooking if the center is not ready.",
+        "preheatDetail": "Load the food before heating; do not add a preheat phase."
+      }
+    }
+  },
+  "sausages": {
+    "variants": {
+      "default": {
+        "ingredients": [
+          "Fresh raw Italian pork sausages; reference uses 6 links and does not state individual weight."
+        ],
+        "requiresThermometer": true,
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula",
+          "Food thermometer"
+        ],
+        "completion": "Check beef or pork reaches 160°F (71°C); ground poultry needs 165°F (74°C).",
+        "preheatDetail": "The recipe does not state a preheat duration. Follow your appliance manual; this is a reference range, not a universal cold-start or hot-start guarantee."
+      }
+    }
+  },
+  "salmon": {
+    "variants": {
+      "default": {
+        "ingredients": [
+          "Fresh salmon fillets, about 6 oz each; the reference uses two. Fillets around 1 inch thick typically need 8–9 minutes within this interval.",
+          "Salt and pepper or your usual dry seasoning, to taste."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula",
+          "Food thermometer"
+        ],
+        "completion": "Check 145°F (63°C), or opaque flesh that separates easily with a fork.",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure.",
+        "requiresThermometer": true,
+        "steps": [
+          "Dry and season the fish to taste; no optional glaze is needed for this plain version.",
+          "Place the fillets apart in the preheated basket, skin down when present.",
+          "Check early and verify at least 145°F in the thickest part before serving."
+        ]
+      }
+    }
+  },
+  "cod": {
+    "variants": {
+      "default": {
+        "ingredients": [
+          "Fresh cod fillets, about 6 oz each; reference uses four, cooked without crowding.",
+          "Cooking oil, just enough for the light surface coating described below.",
+          "Salt and pepper or your usual dry seasoning, to taste.",
+          "Lemon juice, a light coating to taste."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula",
+          "Food thermometer"
+        ],
+        "completion": "Check 145°F (63°C), or opaque flesh that separates easily with a fork.",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure.",
+        "requiresThermometer": true
+      }
+    }
+  },
+  "tilapia": {
+    "variants": {
+      "default": {
+        "ingredients": [
+          "Fresh tilapia fillets, 4–6 oz each; reference recipe uses four and keeps the fillets a similar size.",
+          "Cooking oil, just enough for the light surface coating described below.",
+          "Salt and pepper or your usual dry seasoning, to taste."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula",
+          "Food thermometer"
+        ],
+        "completion": "Check 145°F (63°C), or opaque flesh that separates easily with a fork.",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure.",
+        "requiresThermometer": true
+      }
+    }
+  },
+  "shrimp": {
+    "variants": {
+      "default": {
+        "ingredients": [
+          "Fresh or fully thawed raw large shrimp, peeled and deveined; reference ingredient amount is 1 lb, with batches as needed.",
+          "Cooking oil, just enough for the light surface coating described below.",
+          "Salt and pepper or your usual dry seasoning, to taste."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula"
+        ],
+        "completion": "Flesh should be pearly or white and opaque.",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure."
+      }
+    }
+  },
+  "scallops": {
+    "variants": {
+      "default": {
+        "ingredients": [
+          "Fresh or fully thawed sea scallops; reference uses ½ lb and distinguishes these from smaller bay scallops.",
+          "Cooking oil, just enough for the light surface coating described below."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula"
+        ],
+        "completion": "Flesh should be pearly or white and opaque.",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure."
+      }
+    }
+  },
+  "broccoli": {
+    "variants": {
+      "default": {
+        "ingredients": [
+          "Fresh broccoli, 2 crowns broken into large florets; lightly oil the tops and cook in single-layer batches.",
+          "Cooking oil, just enough for the light surface coating described below.",
+          "Salt and pepper or your usual dry seasoning, to taste."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula"
+        ],
+        "completion": "Follow the final check in the steps; check at the earlier time and continue cooking if the center is not ready.",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure."
+      }
+    }
+  },
+  "cauliflower": {
+    "variants": {
+      "default": {
+        "ingredients": [
+          "Fresh cauliflower, 1 head cut into even florets; no breading; cook in single-layer batches.",
+          "Cooking oil, just enough for the light surface coating described below.",
+          "Salt and pepper or your usual dry seasoning, to taste.",
+          "Lemon juice, a light coating to taste."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula"
+        ],
+        "completion": "Follow the final check in the steps; check at the earlier time and continue cooking if the center is not ready.",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure."
+      }
+    }
+  },
+  "brussels-sprouts": {
+    "variants": {
+      "default": {
+        "ingredients": [
+          "Fresh Brussels sprouts, 1 lb, ends trimmed and halved; quarter unusually large sprouts to match the others.",
+          "Cooking oil, just enough for the light surface coating described below.",
+          "Salt and pepper or your usual dry seasoning, to taste."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula"
+        ],
+        "completion": "Follow the final check in the steps; check at the earlier time and continue cooking if the center is not ready.",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure."
+      }
+    }
+  },
+  "asparagus": {
+    "variants": {
+      "default": {
+        "ingredients": [
+          "Fresh asparagus, 1 bunch with woody ends removed; arrange in one layer.",
+          "Cooking oil, just enough for the light surface coating described below.",
+          "Salt and pepper or your usual dry seasoning, to taste."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula"
+        ],
+        "completion": "Follow the final check in the steps; check at the earlier time and continue cooking if the center is not ready.",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure."
+      }
+    }
+  },
+  "green-beans": {
+    "variants": {
+      "default": {
+        "ingredients": [
+          "Fresh green beans, 1 lb, washed, dried and trimmed; single-layer batches.",
+          "Cooking oil, just enough for the light surface coating described below."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula"
+        ],
+        "completion": "Follow the final check in the steps; check at the earlier time and continue cooking if the center is not ready.",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure."
+      }
+    }
+  },
+  "carrots": {
+    "variants": {
+      "default": {
+        "ingredients": [
+          "Fresh carrots, 1 lb, cut lengthwise into strips about ¾ inch thick; single-layer batches.",
+          "Cooking oil, just enough for the light surface coating described below.",
+          "Salt and pepper or your usual dry seasoning, to taste."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula"
+        ],
+        "completion": "Follow the final check in the steps; check at the earlier time and continue cooking if the center is not ready.",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure."
+      }
+    }
+  },
+  "zucchini": {
+    "variants": {
+      "default": {
+        "ingredients": [
+          "Fresh zucchini, 1 lb (about 3 medium), cut into 1-inch half-moons; single-layer batches.",
+          "Cooking oil, just enough for the light surface coating described below.",
+          "Salt and pepper or your usual dry seasoning, to taste."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula"
+        ],
+        "completion": "Follow the final check in the steps; check at the earlier time and continue cooking if the center is not ready.",
+        "preheatDetail": "The recipe does not state a preheat duration. Follow your appliance manual; this is a reference range, not a universal cold-start or hot-start guarantee."
+      }
+    }
+  },
+  "bell-peppers": {
+    "variants": {
+      "default": {
+        "ingredients": [
+          "Fresh bell peppers, 3 whole peppers cut into roughly ½-inch strips; remove cores and seeds and arrange in one even layer.",
+          "Cooking oil, just enough for the light surface coating described below.",
+          "Salt and pepper or your usual dry seasoning, to taste."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula"
+        ],
+        "completion": "Follow the final check in the steps; check at the earlier time and continue cooking if the center is not ready.",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure."
+      }
+    }
+  },
+  "mushrooms": {
+    "variants": {
+      "sliced": {
+        "ingredients": [
+          "16 oz mushrooms, evenly sliced; season with oil and cook in a single layer in batches.",
+          "Cooking oil, just enough for the light surface coating described below.",
+          "Salt and pepper or your usual dry seasoning, to taste."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula"
+        ],
+        "completion": "Follow the final check in the steps; check at the earlier time and continue cooking if the center is not ready.",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure."
+      }
+    }
+  },
+  "corn-on-the-cob": {
+    "variants": {
+      "fresh": {
+        "ingredients": [
+          "4 fresh ears, husks and silks removed; lightly oil; keep in one layer.",
+          "Cooking oil, just enough for the light surface coating described below."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula"
+        ],
+        "completion": "Follow the final check in the steps; check at the earlier time and continue cooking if the center is not ready.",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure."
+      }
+    }
+  },
+  "butternut-squash": {
+    "variants": {
+      "one-inch-cubes": {
+        "ingredients": [
+          "1 butternut squash, peeled and seeded, cut into approximately 1-inch cubes; oil lightly and cook in single-layer batches.",
+          "Cooking oil, just enough for the light surface coating described below.",
+          "Salt and pepper or your usual dry seasoning, to taste."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula"
+        ],
+        "completion": "Follow the final check in the steps; check at the earlier time and continue cooking if the center is not ready.",
+        "preheatDetail": "The recipe does not state a preheat duration. Follow your appliance manual; this is a reference range, not a universal cold-start or hot-start guarantee."
+      }
+    }
+  },
+  "beets": {
+    "variants": {
+      "three-quarter-inch": {
+        "ingredients": [
+          "1 lb beets, scrubbed or peeled and cut into equal 3/4-inch pieces; toss with 1 tbsp oil.",
+          "Cooking oil, just enough for the light surface coating described below."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula"
+        ],
+        "completion": "Follow the final check in the steps; check at the earlier time and continue cooking if the center is not ready.",
+        "preheatDetail": "The recipe does not state a preheat duration. Follow your appliance manual; this is a reference range, not a universal cold-start or hot-start guarantee."
+      }
+    }
+  },
+  "potatoes": {
+    "variants": {
+      "chunks": {
+        "ingredients": [
+          "1 lb baby potatoes, halved or quartered, or Yukon Gold cut into 3/4-inch chunks; lightly oil; single-layer batches.",
+          "Cooking oil, just enough for the light surface coating described below.",
+          "Salt and pepper or your usual dry seasoning, to taste."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula"
+        ],
+        "completion": "Follow the final check in the steps; check at the earlier time and continue cooking if the center is not ready.",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure."
+      },
+      "whole": {
+        "ingredients": [
+          "2 medium russet potatoes, washed, dried, pierced with a fork and lightly oiled; no foil.",
+          "Cooking oil, just enough for the light surface coating described below."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula"
+        ],
+        "completion": "Follow the final check in the steps; check at the earlier time and continue cooking if the center is not ready.",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure."
+      }
+    }
+  },
+  "sweet-potatoes": {
+    "variants": {
+      "whole": {
+        "ingredients": [
+          "2 medium sweet potatoes, washed and pierced with a fork; cook unwrapped."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula"
+        ],
+        "completion": "Follow the final check in the steps; check at the earlier time and continue cooking if the center is not ready.",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure."
+      }
+    }
+  },
+  "chickpeas": {
+    "variants": {
+      "cooked": {
+        "ingredients": [
+          "1 1/2 cups cooked chickpeas (canned is suitable), drained, rinsed and thoroughly dried; toss with 2 tsp oil.",
+          "Cooking oil, just enough for the light surface coating described below.",
+          "Salt and pepper or your usual dry seasoning, to taste."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula"
+        ],
+        "completion": "Follow the final check in the steps; check at the earlier time and continue cooking if the center is not ready.",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure."
+      }
+    }
+  },
+  "french-fries": {
+    "variants": {
+      "regular": {
+        "ingredients": [
+          "1 lb frozen fries; spread in one layer and work in batches as needed. Reference used a Cosori 5.8-quart basket.",
+          "Cooking oil, just enough for the light surface coating described below."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula"
+        ],
+        "completion": "Follow the final check in the steps; check at the earlier time and continue cooking if the center is not ready.",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure."
+      },
+      "shoestring": {
+        "ingredients": [
+          "Frozen shoestring fries (reference prefers Ore-Ida Golden Shoestring); 16 oz recipe, cooked in single-layer batches."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula"
+        ],
+        "completion": "Follow the final check in the steps; check at the earlier time and continue cooking if the center is not ready.",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure."
+      }
+    }
+  },
+  "chicken-nuggets": {
+    "variants": {
+      "fully-cooked-tyson": {
+        "ingredients": [
+          "Tyson Game Time Lightly Breaded Nuggets, fully cooked and kept frozen. The manufacturer does not specify an air-fryer batch quantity."
+        ],
+        "requiresThermometer": true,
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula",
+          "Food thermometer"
+        ],
+        "completion": "Check the thickest center reaches 165°F (74°C) before serving.",
+        "preheatDetail": "The recipe does not state a preheat duration. Follow your appliance manual; this is a reference range, not a universal cold-start or hot-start guarantee."
+      }
+    }
+  },
+  "fish-sticks": {
+    "variants": {
+      "gortons": {
+        "ingredients": [
+          "Gorton's Crunchy Breaded Fish Sticks, uncooked and kept frozen; arrange in a single layer. Package does not specify air-fryer count."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula",
+          "Food thermometer"
+        ],
+        "completion": "For this Gorton's product, cook the center to at least 165°F (74°C), following its package directions.",
+        "preheatDetail": "The recipe does not state a preheat duration. Follow your appliance manual; this is a reference range, not a universal cold-start or hot-start guarantee.",
+        "requiresThermometer": true
+      }
+    }
+  },
+  "onion-rings": {
+    "variants": {
+      "alexia": {
+        "ingredients": [
+          "Alexia Crispy Onion Rings with Panko Breading and Sea Salt, from the 13.5 oz pack; basket no more than half full."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula"
+        ],
+        "completion": "Follow the final check in the steps; check at the earlier time and continue cooking if the center is not ready.",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure."
+      }
+    }
+  },
+  "mozzarella-sticks": {
+    "variants": {
+      "frozen": {
+        "ingredients": [
+          "10 frozen breaded mozzarella sticks, spaced in one layer."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula"
+        ],
+        "completion": "Follow the final check in the steps; check at the earlier time and continue cooking if the center is not ready.",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure."
+      }
+    }
+  },
+  "tater-tots": {
+    "variants": {
+      "frozen": {
+        "ingredients": [
+          "2 cups frozen tater tots in a single layer; reference favors Ore-Ida."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula"
+        ],
+        "completion": "Follow the final check in the steps; check at the earlier time and continue cooking if the center is not ready.",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure."
+      }
+    }
+  },
+  "hash-browns": {
+    "variants": {
+      "patties": {
+        "ingredients": [
+          "4 frozen hash brown patties (Ore-Ida used in the reference), arranged in one layer."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula"
+        ],
+        "completion": "Follow the final check in the steps; check at the earlier time and continue cooking if the center is not ready.",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure."
+      }
+    }
+  },
+  "spring-rolls": {
+    "variants": {
+      "frozen-vegetable": {
+        "ingredients": [
+          "4 large frozen vegetable spring rolls, spaced in one layer. Not fresh rice-paper rolls."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula"
+        ],
+        "completion": "Follow the final check in the steps; check at the earlier time and continue cooking if the center is not ready.",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure."
+      }
+    }
+  },
+  "dumplings": {
+    "variants": {
+      "vegetable-potstickers": {
+        "ingredients": [
+          "8 oz frozen vegetable potstickers, arranged in one layer and coated lightly with oil.",
+          "Cooking oil, just enough for the light surface coating described below."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula"
+        ],
+        "completion": "Follow the final check in the steps; check at the earlier time and continue cooking if the center is not ready.",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure."
+      }
+    }
+  },
+  "jalapeno-poppers": {
+    "variants": {
+      "farm-rich": {
+        "ingredients": [
+          "Farm Rich frozen breaded cheese-filled jalapeño peppers. The manufacturer article does not state batch size; keep them in one spaced layer."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula"
+        ],
+        "completion": "Follow the final check in the steps; check at the earlier time and continue cooking if the center is not ready.",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure."
+      }
+    }
+  },
+  "pizza": {
+    "variants": {
+      "chilled-regular": {
+        "ingredients": [
+          "Previously cooked, refrigerated regular-crust pizza slices, spaced in one layer. Not raw dough, frozen pizza or deep-dish."
+        ],
+        "requiresThermometer": true,
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula",
+          "Food thermometer"
+        ],
+        "completion": "Reheat the center to 165°F (74°C).",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure."
+      }
+    }
+  },
+  "grilled-cheese": {
+    "variants": {
+      "fresh-sandwich": {
+        "ingredients": [
+          "1 sandwich: 2 bread slices with butter or mayonnaise outside and 2–3 slices cheddar inside. No meat filling."
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs or spatula"
+        ],
+        "completion": "Follow the final check in the steps; check at the earlier time and continue cooking if the center is not ready.",
+        "preheatDetail": "Preheat to the displayed setting until your appliance signals ready. If it has no ready signal, use its manual’s preheat procedure."
+      }
+    }
+  }
+}

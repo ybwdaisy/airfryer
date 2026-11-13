@@ -21,9 +21,9 @@ test('invalid cooking ranges and duplicate variant IDs are rejected', () => {
   sample.variants.push(structuredClone(sample.variants[0]));
   assert.equal(foodSchema.safeParse(sample).success, false);
 });
-test('unit display rounds appliance settings, without changing safety temperatures', () => {
-  assert.equal(temperature(400, 'c'), '205°C');
-  assert.equal(temperature(380, 'c'), '195°C');
+test('unit display converts exactly without inventing an appliance setting', () => {
+  assert.equal(temperature(400, 'c'), '204.4°C');
+  assert.equal(temperature(380, 'c'), '193.3°C');
   assert.equal(temperature(400, 'f'), '400°F');
   assert.equal(minutes([10, 10]), '10');
   assert.equal(minutes([10, 12]), '10-12');

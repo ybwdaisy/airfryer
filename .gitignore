@@ -9,3 +9,5 @@ output/
 test-results/
 playwright-report/
 .DS_Store
+
+/node_modules

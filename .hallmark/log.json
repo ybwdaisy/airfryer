@@ -1,35 +1,92 @@
 [
- {
-  "scope": "app",
-  "shape": "app screen",
-  "theme": "solstice",
-  "axes": "light/sans-serif/warm",
-  "nav": "wordmark, two reference links and a unit switch",
-  "footer": "reference colophon",
-  "imagery": "none, the working search index is the product",
-  "photos": [],
-  "signature": "cooking temperature and time beside a searchable food index",
-  "sections": [
-   "search",
-   "category filters",
-   "food index",
-   "sourced detail",
-   "safety",
-   "sources"
-  ],
-  "fingerprint": [
-   "app",
-   "search-first",
-   "ruled-index",
-   "measurement-pair",
-   "reference-sidebar",
-   "colophon"
-  ],
-  "waived": [],
-  "prompt": "English air fryer lookup on independent airfryer.ybwdaisy.com, 50 distinct food subjects, sourced conditions only, warm kitchen app",
-  "entry": "2026-11-12",
-  "sweep": "0 FAIL, 0 REFLEX, 0 WARN; finish review ship",
-  "date": "2026-11-12",
-  "mode": "build"
- }
+  {
+    "date": "2026-11-13",
+    "mode": "approved app implementation",
+    "scope": "app",
+    "theme": "brand",
+    "shape": "app screen",
+    "axes": "light/sans-serif/warm",
+    "nav": "collection and units added to preserved reference navigation",
+    "footer": "reference colophon kept",
+    "signature": "searchable regional food index with aligned cooking measurements",
+    "imagery": "actual browser screenshots; no invented food photography",
+    "photos": [],
+    "sections": [
+      "regional search",
+      "food index",
+      "before-start tools",
+      "stage timings",
+      "ingredients",
+      "air-fry settings",
+      "steps and completion",
+      "source details"
+    ],
+    "fingerprint": [
+      "app",
+      "search-first",
+      "regional-index",
+      "measurement-pair",
+      "preparedness-first",
+      "reference-colophon"
+    ],
+    "waived": [],
+    "prompt": "Implement approved regional usability plan and accepted UI for ordinary home cooks",
+    "entry": "codex/airfryer-regional-app; pending PR review; no main merge or production release",
+    "sweep": "styles and 5 rendered URLs: 0 FAIL, 0 REFLEX, 0 WARN; 25 Hallmark captures; regional browser suite checks 244 language/unit pages and 48 responsive layouts",
+    "finish_review": "independent subagent: fix; one P2 content finding (China category descriptions used US copy), resolved and confirmed by actual browser assertions; no visual direction gap",
+    "function_preservation": "old US identifiers, clocks, preparation states and share URLs retained; original search, source, unit, language, no-JS and consent suites pass"
+  },
+  {
+    "date": "2026-11-13",
+    "mode": "redesign",
+    "depth": "restyle",
+    "scope": "app",
+    "theme": "brand",
+    "shape": "app screen",
+    "axes": "light/sans-serif/warm",
+    "nav": "kept",
+    "footer": "kept",
+    "signature": "searchable food index with aligned cooking measurements",
+    "imagery": "actual browser screenshots, 8 review viewports and 20 full/fold validation captures",
+    "photos": [],
+    "waived": [],
+    "prompt": "Optimize existing airfryer UI, English fonts and provide style screenshots for review",
+    "entry": "local isolated branch codex/airfryer-ui-review; no push or deployment",
+    "sweep": "styles + four real rendered URLs: 0 FAIL, 0 REFLEX, 0 WARN; actual rendered DOM static audit: 0 FAIL; source-only Astro import analysis has two false positives confirmed by computed style",
+    "finish_review": "subagent ship, restored visible wrapping mobile category navigation",
+    "kept": "78/78 links, 1/1 fields, 4/4 hooks, 6/6 headings, 19/19 figures; source data and scripts unchanged"
+  },
+  {
+    "scope": "app",
+    "shape": "app screen",
+    "theme": "solstice",
+    "axes": "light/sans-serif/warm",
+    "nav": "wordmark, two reference links and a unit switch",
+    "footer": "reference colophon",
+    "imagery": "none, the working search index is the product",
+    "photos": [],
+    "signature": "cooking temperature and time beside a searchable food index",
+    "sections": [
+      "search",
+      "category filters",
+      "food index",
+      "sourced detail",
+      "safety",
+      "sources"
+    ],
+    "fingerprint": [
+      "app",
+      "search-first",
+      "ruled-index",
+      "measurement-pair",
+      "reference-sidebar",
+      "colophon"
+    ],
+    "waived": [],
+    "prompt": "English air fryer lookup on independent airfryer.ybwdaisy.com, 50 distinct food subjects, sourced conditions only, warm kitchen app",
+    "entry": "2026-11-12",
+    "sweep": "0 FAIL, 0 REFLEX, 0 WARN; finish review ship",
+    "date": "2026-11-12",
+    "mode": "build"
+  }
 ]

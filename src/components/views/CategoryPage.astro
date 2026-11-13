@@ -1,26 +1,22 @@
 ---
 import { t, localizeFood, localizedCategories } from '../../lib/i18n';
-import { localizedPath, type Language } from '../../lib/locale';
-
+import { type Language } from '../../lib/locale';
+import { regionHome, categoryPath, type Region } from '../../lib/region';
 import Layout from '../../layouts/Layout.astro';
 import FoodList from '../FoodList.astro';
-import { orderedFoods } from '../../lib/foods';
+import { foodsForRegion } from '../../lib/foods';
 const lang: Language = Astro.props.lang ?? 'en';
-const lp = (path: string) => localizedPath(path, lang);
-
-const categories = localizedCategories(lang);
+const region: Region = Astro.props.region ?? 'us';
+const collection = foodsForRegion(region);
+const categories = localizedCategories(lang, region).filter(c => collection.some(f => f.category === c.slug));
 const category = categories.find(c => c.slug === Astro.props.category.slug)!;
-const matching = orderedFoods.filter(f => f.category === category.slug).map(f => localizeFood(f, lang));
-
+const matching = collection.filter(f => f.category === category.slug).map(f => localizeFood(f, lang));
 ---
-<Layout lang={lang} title={lang === 'zh' ? `${category.name}空气炸锅时间与温度 | Airfryer times` : `${category.name} air fryer times & temperatures | Airfryer times`} description={category.description} breadcrumbs={[{ name: category.name, path: `/categories/${category.slug}` }]}>
-  <nav class="breadcrumbs" aria-label={t(lang, "Breadcrumb")}><a href={lp('/')}>{t(lang, "All foods")}</a><span aria-hidden="true">/</span><span>{category.name}</span></nav>
+<Layout lang={lang} region={region} title={lang === 'zh' ? `${category.name}空气炸锅时间与温度 | Airfryer times` : `${category.name} air fryer times & temperatures | Airfryer times`} description={category.description} breadcrumbs={[{name: category.name, path: categoryPath(category.slug, region, lang)}]}>
+  <nav class="breadcrumbs" aria-label={t(lang, 'Breadcrumb')}><a href={regionHome(region, lang)}>{t(lang, 'All foods')}</a><span aria-hidden="true">/</span><span>{category.name}</span></nav>
   <section class="page-intro"><h1>{category.name}</h1><p>{category.description}</p></section>
-  <nav class="category-filter" aria-label={t(lang, "Food categories")}>
-    <a href={lp('/')}>{t(lang, "All foods")}</a>
-    {categories.map(c => <a href={lp(`/categories/${c.slug}`)} aria-current={c.slug === category.slug ? 'page' : undefined}>{c.short}</a>)}
-  </nav>
-  <div class="results-heading"><h2>{t(lang, "Cooking guides")}</h2><p>{lang === 'zh' ? `${matching.length} 种食物` : `${matching.length} foods`}</p></div>
-  <FoodList lang={lang} foods={matching} />
-  <p class="list-note">{t(lang, "Use each guide’s starting condition. Times vary between machines and quantities.")}</p>
+  <nav class="category-filter" aria-label={t(lang, 'Food categories')}><a href={regionHome(region, lang)}>{t(lang, 'All foods')}</a>{categories.map(c => <a href={categoryPath(c.slug, region, lang)} aria-current={c.slug === category.slug ? 'page' : undefined}>{c.short}</a>)}</nav>
+  <div class="results-heading"><h2>{t(lang, 'Cooking guides')}</h2><p>{lang === 'zh' ? `${matching.length} 种食物` : `${matching.length} foods`}</p></div>
+  <FoodList lang={lang} region={region} foods={matching}/>
+  <p class="list-note">{t(lang, 'Use each guide’s starting condition. Times vary between machines and quantities.')}</p>
 </Layout>

@@ -1,6 +1,65 @@
 {
-  "scanned": "2026-11-12",
-  "findings": { "framework": "New independent Astro static project", "fonts": "Archivo self-hosted, one family for app scope", "palette": "Solstice long-light, warm paper and brown ink with restrained vermilion", "motion": "Control state changes only", "material": "Sourced cooking reference data; no original food photographs or cooking tests" },
-  "preserve": ["Existing ybwdaisy.com project and homepage remain untouched", "English audience, 50 distinct foods, sourced options only"],
-  "introduce": ["Independent subdomain and project", "Search-led app screen", "Warm kitchen utility design", "Per-food source records"]
+  "scanned": "2026-11-13",
+  "mode": "implementation within approved app design",
+  "scope": "app",
+  "target": [
+    "/",
+    "/zh",
+    "/china",
+    "/zh/us",
+    "/foods/chicken-breast",
+    "/zh/china/foods/cn-orleans-wings",
+    "/zh/china/foods/cn-garlic-ribs"
+  ],
+  "evidence": {
+    "system": "src/styles/tokens.css:1",
+    "shell": "src/layouts/Layout.astro:1",
+    "home": "src/components/views/Home.astro:1",
+    "detail": "src/components/views/FoodPage.astro:1",
+    "data": "docs/regional-development-status.md"
+  },
+  "preserve": [
+    "approved warm-white/warm-red DM Sans and PingFang system",
+    "original US recipe condition IDs, temperatures, clocks, share links and source anchors",
+    "search, category filters, optional analytics consent, source disclosures, no-JavaScript reading and PWA icons",
+    "independent airfryer domain and origin-scoped preferences"
+  ],
+  "introduce": [
+    "independently researched China collection and explicit region selection",
+    "consistent measurement display across operational content without device-notch rounding",
+    "tools, ingredients, advance preparation and timelines before air-frying instructions",
+    "region-specific category copy and conversion-only labels"
+  ],
+  "isolation": "codex/airfryer-regional-app; no main merge or production release",
+  "previous_ui_preflight": {
+    "scanned": "2026-11-13",
+    "mode": "redesign",
+    "depth": "restyle",
+    "scope": "app",
+    "target": [
+      "/",
+      "/zh",
+      "/foods/chicken-breast",
+      "/zh/foods/chicken-breast"
+    ],
+    "evidence": {
+      "system": "src/styles/tokens.css:1",
+      "shell": "src/layouts/Layout.astro:1",
+      "home": "src/components/views/Home.astro:20",
+      "index": "src/components/FoodList.astro:10",
+      "detail": "src/components/views/FoodPage.astro:20"
+    },
+    "preserve": [
+      "all food data, recipes and disclaimers",
+      "search, filters, routes, hooks, unit/language state and consent logic",
+      "warm red brand signal and search-led tool layout"
+    ],
+    "introduce": [
+      "DM Sans variable font, self-hosted with OFL",
+      "warm-white surface, lighter rules and outlined state controls",
+      "aligned measurement columns and clearer mobile search",
+      "all mobile category links visible after independent review"
+    ],
+    "isolation": "codex/airfryer-ui-review at /private/tmp/airfryer-ui-review; no deployment or push"
+  }
 }

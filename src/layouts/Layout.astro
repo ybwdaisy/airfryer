@@ -1,37 +1,40 @@
 ---
-import '@fontsource/archivo/latin-400.css';
-import '@fontsource/archivo/latin-500.css';
-import '@fontsource/archivo/latin-600.css';
 import '../styles/app.css';
 import Consent from '../components/Consent.astro';
 import { t } from '../lib/i18n';
 import { localizedPath, type Language } from '../lib/locale';
-interface Props { title: string; description: string; breadcrumbs?: { name: string; path: string }[]; noindex?: boolean; lang?: Language }
+import { regionFromPath, regionHome, regionName, defaultUnit, switchLanguagePath, type Region } from '../lib/region';
+interface Props { title: string; description: string; breadcrumbs?: { name: string; path: string }[]; noindex?: boolean; lang?: Language; region?: Region }
 const { title, description, breadcrumbs = [], noindex = false, lang = 'en' } = Astro.props;
 const lp = (path: string) => localizedPath(path, lang);
 const origin = 'https://airfryer.ybwdaisy.com';
 const cleanPath = Astro.url.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '').replace(/\/$/, '') || '/';
 const canonical = new URL(cleanPath, origin).href;
-const englishUrl = new URL(localizedPath(cleanPath, 'en'), origin).href;
-const chineseUrl = new URL(localizedPath(cleanPath, 'zh'), origin).href;
+
 const otherLanguage = lang === 'en' ? 'zh' : 'en';
+const region = Astro.props.region ?? regionFromPath(cleanPath);
+const initialUnit = defaultUnit(region);
+const englishUrl = new URL(switchLanguagePath(cleanPath, region, 'en'), origin).href;
+const chineseUrl = new URL(switchLanguagePath(cleanPath, region, 'zh'), origin).href;
+const home = regionHome(region, lang);
 const isProduction = import.meta.env.PROD && process.env.VERCEL_ENV === 'production';
 const candidate = import.meta.env.PUBLIC_GA_MEASUREMENT_ID ?? '';
 const gaId = isProduction && /^G-[A-Z0-9]+$/.test(candidate) ? candidate : '';
 const schema = breadcrumbs.length ? {
   '@context': 'https://schema.org', '@type': 'BreadcrumbList',
-  itemListElement: [{ name: t(lang, 'All foods'), path: '/' }, ...breadcrumbs].map((b, i) => ({
+  itemListElement: [{ name: t(lang, 'All foods'), path: home }, ...breadcrumbs].map((b, i) => ({
     '@type': 'ListItem', position: i + 1, name: b.name, item: new URL(lp(b.path), origin).href,
   })),
 } : { '@context': 'https://schema.org', '@type': 'WebSite', name: 'Airfryer times', url: origin, description };
 ---
 <!doctype html>
-<html lang={lang === 'zh' ? 'zh-CN' : 'en'}>
+<html lang={lang === 'zh' ? 'zh-CN' : 'en'} data-region={region} data-default-unit={initialUnit}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preload" href="/fonts/dm-sans-latin-variable.woff2" as="font" type="font/woff2" crossorigin />
     <meta name="description" content={description} />
-    <meta name="theme-color" content="#f1e9da" />
+    <meta name="theme-color" content="#fcf9f4" />
     <meta name="ga-measurement-id" content={gaId} />
     {(!isProduction || noindex) && <meta name="robots" content="noindex, nofollow" />}
     <link rel="canonical" href={canonical} />
@@ -55,22 +58,29 @@ const schema = breadcrumbs.length ? {
   <body>
     <a class="skip-link" href="#main">{t(lang, 'Skip to content')}</a>
     <header class="site-header container">
-      <a class="wordmark" href={lp('/')} aria-label={t(lang, 'Airfryer times home')}>
+      <a class="wordmark" href={home} data-region-home aria-label={t(lang, 'Airfryer times home')}>
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3m-6-1 1.5 2M18 5l-1.5 2M5 11h14v5a5 5 0 0 1-5 5h-4a5 5 0 0 1-5-5zM9 15h6" /></svg>
         Airfryer <span class="wordmark-tail">times</span>
       </a>
       <nav class="header-nav" aria-label={t(lang, 'Main navigation')}>
-        <a href={lp('/')}>{t(lang, 'All foods')}</a>
+        <a href={home} data-region-home>{t(lang, 'All foods')}</a>
         <a href={lp('/methodology')}>{t(lang, 'Our sources')}</a>
       </nav>
       <div class="header-controls">
-      <a class="language-toggle" href={localizedPath(cleanPath, otherLanguage)} data-language-switch={otherLanguage} data-language-path={noindex && cleanPath.endsWith('/404') ? cleanPath : undefined} hreflang={otherLanguage === 'zh' ? 'zh-CN' : 'en'} aria-label={lang === 'en' ? 'Switch to Chinese' : '切换到英文'}><span lang={otherLanguage === 'zh' ? 'zh-CN' : 'en'}>{lang === 'en' ? '中文' : 'EN'}</span></a>
-      <div class="unit-switch js-only" role="group" aria-label={t(lang, 'Temperature unit')} hidden>
-        <button type="button" data-unit="f" aria-pressed="true">°F</button>
-        <button type="button" data-unit="c" aria-pressed="false">°C</button>
+      <a class="language-toggle" href={switchLanguagePath(cleanPath, region, otherLanguage)} data-language-switch={otherLanguage} data-language-path={noindex && cleanPath.endsWith('/404') ? cleanPath : undefined} hreflang={otherLanguage === 'zh' ? 'zh-CN' : 'en'} aria-label={lang === 'en' ? 'Switch to Chinese' : '切换到英文'}><span lang={otherLanguage === 'zh' ? 'zh-CN' : 'en'}>{lang === 'en' ? '中文' : 'EN'}</span></a>
+      <div class="unit-switch js-only" role="group" aria-label={t(lang, 'Measurement units')} hidden>
+        <button type="button" data-unit="f" aria-pressed={initialUnit === 'f' ? 'true' : 'false'} title={t(lang, 'Fahrenheit, ounces and inches')}>°F</button>
+        <button type="button" data-unit="c" aria-pressed={initialUnit === 'c' ? 'true' : 'false'} title={t(lang, 'Celsius, grams and centimeters')}>°C</button>
       </div>
       </div>
     </header>
+    <div class="collection-toolbar container">
+      <nav class="collection-switch" aria-label={t(lang, 'Food collection')}>
+        <span>{t(lang, 'Food collection')}</span>
+        {(['cn', 'us'] as const).map(value => <a href={regionHome(value, lang)} data-region-select={value} aria-current={region === value ? 'page' : undefined}>{regionName(value, lang)}</a>)}
+      </nav>
+      <p class="unit-caption"><span data-unit-caption="c" hidden={initialUnit !== 'c'}>{t(lang, 'Metric: °C, g, cm')}</span><span data-unit-caption="f" hidden={initialUnit !== 'f'}>{t(lang, 'US units: °F, oz, inches')}</span></p>
+    </div>
     <main id="main" class="container">
       <slot />
     </main>

@@ -21,7 +21,7 @@ try {
     await page.goto(base+'/?q=薯条&category=frozen&unit=c');
     await expect(page.locator('[data-food-row]:visible')).toHaveCount(1);
     await page.locator('[data-language-switch="zh"]').click();
-    await expect(page).toHaveURL(/\/zh\?q=.*category=frozen&unit=c/);
+    await expect(page).toHaveURL(/\/zh\/us\?q=.*category=frozen&unit=c/);
     await expect(page.locator('html')).toHaveAttribute('lang','zh-CN');
     await expect(page.locator('[data-food-row]:visible')).toHaveCount(1);
     await expect(page.locator('[data-food-row]:visible .food-name > span')).toHaveText('薯条');
@@ -38,7 +38,7 @@ try {
   await check('explicit choice is remembered; Chinese search supports single characters and English aliases',async()=>{
     await page.goto(base);await expect(page.locator('html')).toHaveAttribute('lang','en');
     await page.locator('[data-language-switch="zh"]').click();
-    await page.goto(base);await expect(page).toHaveURL(/\/zh$/);
+    await page.goto(base);await expect(page).toHaveURL(/\/zh\/us$/);
     await page.locator('#search-input').fill('虾');await page.locator('#food-search').evaluate(f=>f.requestSubmit());
     await expect(page.locator('[data-food-row]:visible')).toHaveCount(1);
     await expect(page.locator('[data-food-row]:visible')).toHaveAttribute('data-slug','shrimp');
@@ -55,7 +55,7 @@ try {
     await expect(page.locator('link[hreflang="en"]')).toHaveAttribute('href','https://airfryer.ybwdaisy.com/foods/fish-sticks');
     await page.goto(base+'/zh/privacy');
     await expect(page.locator('#analytics-status')).toContainText(production ? '您尚未选择是否允许统计' : '当前未启用统计');
-    await expect(page.locator('article')).toContainText('温度单位、语言和统计选择');
+    await expect(page.locator('article')).toContainText('计量单位、食物集合、语言及统计偏好');
     expect(requests).toBe(0);
   });
   await check('both languages fit mobile and desktop with an accessible visible switch',async()=>{
@@ -85,7 +85,7 @@ try {
   await check('Chinese content and links work without JavaScript or local storage',async()=>{
     const c=await browser.newContext({javaScriptEnabled:false});const p=await c.newPage();
     await p.goto(base+'/zh/foods/chicken-breast');
-    await expect(p.locator('[data-variant-panel]:visible')).toHaveCount(3);
+    await expect(p.locator('[data-variant-panel]:visible')).toHaveCount(4);
     await expect(p.locator('h1')).toHaveText('鸡胸肉');
     await p.locator('[data-language-switch="en"]').click();await expect(p.locator('h1')).toHaveText('Chicken breast');
     await c.close();

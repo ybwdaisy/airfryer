@@ -1,0 +1,994 @@
+[
+  {
+    "slug": "cn-whole-sweet-potato",
+    "nameZh": "整根烤红薯",
+    "nameEn": "Whole roasted sweet potato",
+    "category": "vegetables",
+    "descriptionZh": "洗净后整根烤，不刷油；200°C 预热后放入，40 分钟起检查中心是否软透。",
+    "portionZh": "红薯 1 个；选择能平放进炸篮的一根",
+    "temperatureC": 200,
+    "minutes": [
+      40,
+      40
+    ],
+    "preheat": "yes",
+    "preheatDetailZh": "先将空气炸锅预热至 200°C，有就绪提示时等提示；主参考没有另列预热分钟数。",
+    "equipmentZh": [
+      "空气炸锅",
+      "夹子",
+      "竹签或筷子",
+      "隔热手套"
+    ],
+    "ingredientsZh": [
+      "红薯 1 个"
+    ],
+    "timelineZh": [
+      {
+        "label": "清洗",
+        "detail": "刷净表皮，去掉泥沙。"
+      },
+      {
+        "label": "预热",
+        "detail": "200°C，等机器预热就绪。"
+      },
+      {
+        "label": "气炸",
+        "detail": "200°C，40 分钟开始检查。"
+      }
+    ],
+    "stepsZh": [
+      "刷洗红薯，保留整根。装好炸篮，将机器预热至 200°C。",
+      "把红薯放入炸篮，200°C 烤 40 分钟。",
+      "戴隔热手套拉出炸篮，用竹签或筷子扎入最厚处；仍有硬心就保持 200°C 继续加热，分段复查。",
+      "中心软透后，用夹子取出，稍放凉再掰开。"
+    ],
+    "turnZh": "主参考没有单列翻面步骤，本份不另设固定翻面时间。",
+    "completionZh": "竹签或筷子能穿过最厚处，掰开中心也松软、没有硬心；到 40 分钟仍硬就继续烤。",
+    "needsHob": false,
+    "advancePreparationZh": "无需腌制或提前煮熟。",
+    "deviceNoteZh": "主参考未注明机型与重量，40 分钟是该作者的检查参考；粗大的红薯可能需要继续加热。",
+    "notesZh": [
+      "本份照用作者的 200°C 预热后整根烤法，不采用飞利浦 HD9257 的冷启动参数。",
+      "独立对照 HD9257 为 6–9 个中等红薯、180°C 35 分钟、无需预热，并要求扎孔和翻动；份量、温度、设备及启动方式均不同，没有取平均。",
+      "完成检查与分段复查为编辑操作提示；尚未经过本站实机烹饪测试。"
+    ],
+    "sources": [
+      {
+        "title": "烤红薯（空气炸锅版）",
+        "publisher": "每厨娘 / 香哈网",
+        "url": "https://m.xiangha.com/caipu/93188326.html",
+        "role": "reference",
+        "locator": "用料及步骤 1–3",
+        "evidence": "红薯1个；洗净，200°C预热，预热后整根烤40分钟。已打开全文。"
+      },
+      {
+        "title": "HD9257 用户手册",
+        "publisher": "飞利浦 / Versuni",
+        "url": "https://dam.versuni.com/m/1389c4ef584e73a1/original/User-Manual-Airfryer-Ferrari-HD9257-China.pdf",
+        "role": "cross-check",
+        "locator": "PDF第2页：空气煎炸及预设程序红薯一行",
+        "evidence": "6–9个中等红薯，180°C、35分钟；本机无需预热，烹饪中翻动，红薯划口或叉孔。已读取官方PDF文字。"
+      }
+    ],
+    "descriptionEn": "Wash and roast whole without oil. Preheat to 200°C and start checking the center after 40 minutes.",
+    "portionEn": "1 sweet potato that fits flat in the basket",
+    "preheatDetailEn": "Preheat to 200°C until the appliance is ready. The main source gives no separate preheat duration.",
+    "equipmentEn": [
+      "Air fryer",
+      "Tongs",
+      "Skewer or chopstick",
+      "Heat-resistant gloves"
+    ],
+    "ingredientsEn": [
+      "1 sweet potato"
+    ],
+    "timelineEn": [
+      {
+        "label": "Wash",
+        "detail": "Scrub off soil and rinse the skin."
+      },
+      {
+        "label": "Preheat",
+        "detail": "200°C, until the appliance is ready."
+      },
+      {
+        "label": "Air fry",
+        "detail": "200°C; start checking at 40 minutes."
+      }
+    ],
+    "stepsEn": [
+      "Scrub the sweet potato and leave it whole. Assemble the basket and preheat to 200°C.",
+      "Place it in the basket and air fry at 200°C for 40 minutes.",
+      "Using heat-resistant gloves, pull out the basket. Pierce the thickest part with a skewer or chopstick. If the center is firm, continue at 200°C and check in short intervals.",
+      "Once soft through the center, remove with tongs and let cool slightly before splitting."
+    ],
+    "turnEn": "The main source gives no turning step; no fixed turning time has been added.",
+    "completionEn": "A skewer passes through the thickest part and the opened center is soft, with no firm core. Continue cooking if it is still firm at 40 minutes.",
+    "advancePreparationEn": "No marinating or precooking required.",
+    "notesEn": [
+      "This follows the author’s preheated 200°C method, not the cold-start settings of the Philips HD9257.",
+      "The independent HD9257 reference uses 6–9 medium sweet potatoes at 180°C for 35 minutes without preheating, with piercing and turning. Load, temperature, appliance and starting conditions differ; the settings were not averaged.",
+      "The doneness check and short-interval rechecks are editorial handling advice. This recipe has not been physically tested by this site."
+    ],
+    "deviceNoteEn": "The main source names no model or weight. Treat 40 minutes as a checkpoint; a thicker sweet potato can need longer."
+  },
+  {
+    "slug": "cn-cumin-mantou-slices",
+    "nameZh": "孜然烤馒头片",
+    "nameEn": "Cumin mantou slices",
+    "category": "bakery",
+    "descriptionZh": "熟馒头切成约 1 厘米厚片，刷油撒粉；第一面烤 8 分钟，翻面再烤 5 分钟。",
+    "portionZh": "熟馒头 2 个；每批单层不重叠",
+    "temperatureC": 180,
+    "minutes": [
+      13,
+      13
+    ],
+    "preheat": "unspecified",
+    "preheatDetailZh": "主参考将馒头片装篮后开始加热，没有另列预热；本份保留这一顺序。",
+    "equipmentZh": [
+      "空气炸锅",
+      "刀与砧板",
+      "油刷",
+      "夹子"
+    ],
+    "ingredientsZh": [
+      "已经蒸熟并放凉的馒头 2 个",
+      "食用油 10 克",
+      "盐 1 克",
+      "孜然粉 1 克",
+      "辣椒粉 0.5 克，可不放"
+    ],
+    "timelineZh": [
+      {
+        "label": "切片调味",
+        "detail": "切约 1 厘米厚片，单层摆放、刷油撒粉。"
+      },
+      {
+        "label": "第一面",
+        "detail": "180°C 8 分钟。"
+      },
+      {
+        "label": "翻面",
+        "detail": "补刷薄油、撒粉，180°C 再烤 5 分钟。"
+      }
+    ],
+    "stepsZh": [
+      "把熟馒头切成约 1 厘米厚片。盐、孜然粉和可选辣椒粉先混合。",
+      "馒头片单层放入炸篮，不重叠，放不下分批。朝上的一面刷薄油，撒一部分调味粉。",
+      "180°C 烤 8 分钟后翻面。另一面补刷薄油、撒剩余调味粉，再烤 5 分钟。",
+      "检查表面是否干香、边缘酥脆；达到喜欢的程度即夹出，避免烤黑。"
+    ],
+    "turnZh": "第 8 分钟翻面，再烤 5 分钟；油与调味粉分两面使用。",
+    "completionZh": "两面干香、边缘酥脆，馒头内部热透；不追求焦黑。",
+    "needsHob": false,
+    "advancePreparationZh": "使用已经蒸熟、放凉的馒头，不适用于生面团。",
+    "notesZh": [
+      "10克油、1克盐、1克孜然粉、0.5克辣椒粉是编辑选定的调味用量，原文为适量或按口味，并非原作者量勺换算。",
+      "独立对照为裹鸡蛋液的薄片：180°C预热后4分钟、翻面2分钟；因裹层、厚度和做法不同，未采用其6分钟总时间。",
+      "尚未经过本站实机烹饪测试。"
+    ],
+    "sources": [
+      {
+        "title": "空气炸锅版烤馒头片",
+        "publisher": "石头是个小暖男 / 下厨房",
+        "url": "https://m.xiachufang.com/recipe/103823646/",
+        "role": "reference",
+        "locator": "用料及步骤1–5",
+        "evidence": "馒头2个、约1厘米厚，刷油撒椒盐/盐、孜然和辣椒；不重叠；180°C 8分钟翻面补油补粉，再5分钟。已打开全文。"
+      },
+      {
+        "title": "空气炸锅版之烤馒头片",
+        "publisher": "一汪晶莹的泉水 / 作者博客",
+        "url": "https://bianca57blog.wordpress.com/2018/12/13/%E7%A9%BA%E6%B0%94%E7%82%B8%E9%94%85%E7%89%88%E4%B9%8B%E7%83%A4%E9%A6%92%E5%A4%B4%E7%89%87/",
+        "role": "cross-check",
+        "locator": "方子及做法1–4",
+        "evidence": "馒头4个配鸡蛋1个，切片裹蛋液，180°C预热，4分钟后翻面再2分钟。与不裹蛋的一厘米厚片不同。已打开全文。"
+      }
+    ],
+    "descriptionEn": "Slice cooked mantou about 1 cm thick, brush with oil and season. Cook 8 minutes on the first side, then turn and cook 5 minutes.",
+    "portionEn": "2 cooked mantou; one non-overlapping layer per batch",
+    "preheatDetailEn": "The main source loads the slices before starting and lists no separate preheat. That sequence is retained.",
+    "equipmentEn": [
+      "Air fryer",
+      "Knife and cutting board",
+      "Pastry brush",
+      "Tongs"
+    ],
+    "ingredientsEn": [
+      "2 cooked, cooled mantou",
+      "10 g cooking oil",
+      "1 g salt",
+      "1 g ground cumin",
+      "0.5 g chili powder, optional"
+    ],
+    "timelineEn": [
+      {
+        "label": "Slice and season",
+        "detail": "Cut about 1 cm thick. Arrange in one layer, brush with oil and season."
+      },
+      {
+        "label": "First side",
+        "detail": "180°C for 8 minutes."
+      },
+      {
+        "label": "Turn",
+        "detail": "Brush and season the other side; cook at 180°C for 5 minutes."
+      }
+    ],
+    "stepsEn": [
+      "Cut the cooked mantou about 1 cm thick. Mix the salt, cumin and optional chili powder.",
+      "Arrange in a single layer without overlapping; work in batches if needed. Brush the top lightly with oil and add some seasoning.",
+      "Cook at 180°C for 8 minutes, then turn. Brush and season the other side and cook at 180°C for 5 more minutes.",
+      "Check for a dry surface and crisp edges. Remove when the texture suits you, before any blackening."
+    ],
+    "turnEn": "Turn after 8 minutes, then cook 5 more minutes. Divide oil and seasoning between both sides.",
+    "completionEn": "Both surfaces are dry and fragrant, edges crisp and the center hot. Avoid blackening.",
+    "advancePreparationEn": "Use fully cooked, cooled mantou, not raw dough.",
+    "notesEn": [
+      "The 10 g oil, 1 g salt, 1 g cumin and optional 0.5 g chili are editorial seasoning amounts. The original uses amounts to taste; these are not conversions of its spoons.",
+      "The independent comparison uses thinner slices coated in egg: preheat to 180°C, cook 4 minutes, turn and cook 2 minutes. Coating, thickness and method differ, so its 6-minute time is not used here.",
+      "This recipe has not been physically tested by this site."
+    ]
+  },
+  {
+    "slug": "cn-homemade-custard-tarts",
+    "nameZh": "自调蛋挞液烤蛋挞",
+    "nameEn": "Egg tarts with homemade custard",
+    "category": "bakery",
+    "descriptionZh": "买大号蛋挞皮，自己搅拌奶油蛋挞液；首批 180°C 预热 3 分钟，每批 12 分钟起检查。",
+    "portionZh": "大号蛋挞皮 15 个的配方；按炸篮大小分批平放",
+    "temperatureC": 180,
+    "minutes": [
+      12,
+      12
+    ],
+    "preheat": "yes",
+    "preheatDetailZh": "首批 180°C 预热 3 分钟；连续做第二批时，原作者不再预热，仍设 180°C 12 分钟。",
+    "equipmentZh": [
+      "空气炸锅",
+      "厨房秤或量杯",
+      "大碗",
+      "蛋抽或筷子",
+      "夹子",
+      "隔热手套"
+    ],
+    "ingredientsZh": [
+      "大号蛋挞皮 15 个",
+      "纯牛奶 170 毫升",
+      "淡奶油 150 毫升",
+      "鸡蛋 3 个，原作者合计约 130 克",
+      "细砂糖 36 克",
+      "炼乳 20 克"
+    ],
+    "timelineZh": [
+      {
+        "label": "搅拌蛋挞液",
+        "detail": "将牛奶、蛋、糖搅匀，再加淡奶油和炼乳。"
+      },
+      {
+        "label": "首批预热",
+        "detail": "180°C 3 分钟。"
+      },
+      {
+        "label": "每批气炸",
+        "detail": "180°C 12 分钟起检查；连续第二批不重复预热。"
+      }
+    ],
+    "stepsZh": [
+      "准备牛奶、糖和鸡蛋，搅拌至糖分散；加入炼乳与淡奶油，再搅匀。",
+      "蛋挞皮从冷冻取出分开，按主参考不专门等待完全解冻。空气炸锅首批以180°C预热3分钟。",
+      "先将蛋挞液倒到挞皮约六分满，平放入炸篮后再补到八九分满，避免移动时洒出。放不下分批。",
+      "180°C烤12分钟开始检查。中间已凝固、没有可流动的生蛋奶液，挞皮酥脆后取出；仍液态则保持180°C继续加热并复查。",
+      "连续做下一批时不再重复预热，仍从180°C 12分钟开始检查；未烤的蛋挞液和挞皮按包装要求冷藏或冷冻保存。"
+    ],
+    "turnZh": "保持正面朝上；本主参考没有翻面步骤。",
+    "completionZh": "轻晃时中心已经凝固，切开不流出生蛋奶液，挞皮烤透酥脆；表面有颜色不能单独代表中心完成。",
+    "needsHob": false,
+    "advancePreparationZh": "需要购买成品大号蛋挞皮；无需腌制，先搅拌蛋挞液。",
+    "deviceNoteZh": "不同挞皮大小与炸篮会改变加热进度；12分钟是检查点，不承诺所有机型到点都完成。",
+    "notesZh": [
+      "保留主参考15个大号蛋挞的全配方，没有按未知挞皮容积推算份量。",
+      "独立对照是8个挞皮、125毫升甜牛奶、2个蛋且不放淡奶油，180°C烤20分钟；预热和液体比例不同，未拼用其时间或第15分钟翻面做法。",
+      "完成检查、未烤材料保存提示为编辑操作说明；尚未经过本站实机烹饪测试。"
+    ],
+    "sources": [
+      {
+        "title": "葡式蛋挞空气炸锅版葡挞",
+        "publisher": "小月月_妈咪 / 下厨房",
+        "url": "https://m.xiachufang.com/recipe/107209217/",
+        "role": "reference",
+        "locator": "用料、步骤1–6及步骤8",
+        "evidence": "15个大号挞皮；牛奶170ml、淡奶油150ml、蛋3个130g、糖36g、炼乳20g；首批180°C预热3分钟，每批180°C 12分钟，连续第二批免预热。已打开全文。"
+      },
+      {
+        "title": "空气炸锅～蛋挞，自制蛋挞液",
+        "publisher": "朵朵爱恨 / 下厨房",
+        "url": "https://m.xiachufang.com/recipe/106744229/",
+        "role": "cross-check",
+        "locator": "用料、步骤1及小贴士",
+        "evidence": "8个挞皮配旺仔牛奶125ml、鸡蛋2个、糖和炼奶各10g，无淡奶油；预热5分钟后180°C 20分钟，作者还在定型后翻面。与主参考配比不同。已打开全文。"
+      }
+    ],
+    "descriptionEn": "Use large ready-made tart shells and mix your own cream custard. Preheat the first batch at 180°C for 3 minutes; check each batch after 12 minutes.",
+    "portionEn": "Recipe for 15 large tart shells; keep flat and cook in batches to fit your basket",
+    "preheatDetailEn": "Preheat the first batch at 180°C for 3 minutes. The author skips another preheat for an immediately following batch and still uses 180°C for 12 minutes.",
+    "equipmentEn": [
+      "Air fryer",
+      "Kitchen scale or measuring jug",
+      "Large bowl",
+      "Whisk or chopsticks",
+      "Tongs",
+      "Heat-resistant gloves"
+    ],
+    "ingredientsEn": [
+      "15 large egg-tart shells",
+      "170 ml milk",
+      "150 ml heavy cream",
+      "3 eggs, about 130 g in the original recipe",
+      "36 g caster sugar",
+      "20 g sweetened condensed milk"
+    ],
+    "timelineEn": [
+      {
+        "label": "Mix custard",
+        "detail": "Combine milk, eggs and sugar, then add cream and condensed milk."
+      },
+      {
+        "label": "First preheat",
+        "detail": "180°C for 3 minutes."
+      },
+      {
+        "label": "Each batch",
+        "detail": "Check after 12 minutes at 180°C. Do not repeat preheating for an immediately following batch."
+      }
+    ],
+    "stepsEn": [
+      "Mix the milk, sugar and eggs until the sugar disperses. Stir in the condensed milk and cream.",
+      "Separate the frozen tart shells; the main source does not wait for them to thaw fully. Preheat the first batch at 180°C for 3 minutes.",
+      "Fill each shell about six-tenths full, place flat in the basket, then top up to eight- or nine-tenths full to avoid spilling while moving. Work in batches.",
+      "Cook at 180°C and start checking at 12 minutes. Remove when the center is set without flowing raw custard and the pastry is cooked and crisp. If still liquid, continue at 180°C and recheck.",
+      "For an immediately following batch, skip another preheat and again check after 12 minutes at 180°C. Store uncooked custard and shells chilled or frozen as appropriate to their packaging."
+    ],
+    "turnEn": "Keep upright. The main source does not turn the tarts.",
+    "completionEn": "The center holds its shape when gently moved and does not release raw custard when cut. Pastry is cooked and crisp. A browned top alone does not confirm the center is done.",
+    "advancePreparationEn": "Buy large ready-made tart shells and mix the custard. No marinating required.",
+    "notesEn": [
+      "The full 15-large-tart formula is retained; quantities were not calculated from an assumed shell volume.",
+      "The independent comparison uses 8 shells, 125 ml sweetened milk and 2 eggs without cream, cooking at 180°C for 20 minutes. Its different liquid proportions, preheat and turning step at 15 minutes are not combined with this method.",
+      "The finish check and storage notes are editorial handling advice. This recipe has not been physically tested by this site."
+    ],
+    "deviceNoteEn": "Shell size and basket design affect progress. Twelve minutes is a checkpoint, not a guarantee for every appliance."
+  },
+  {
+    "slug": "cn-garlic-eggplant",
+    "nameZh": "炒蒜酱烤茄子",
+    "nameEn": "Eggplant with pan-cooked garlic sauce",
+    "category": "vegetables",
+    "descriptionZh": "先把茄子烤软，再铺炒好的蒜酱短烤；需要炒锅和空气炸锅两种厨具。",
+    "portionZh": "茄子 1 根，切成两段，以能平放进炸篮为准",
+    "temperatureC": 200,
+    "minutes": [
+      26,
+      27
+    ],
+    "preheat": "unspecified",
+    "preheatDetailZh": "主参考直接装入茄子后设温，没有单列预热；本份不另外补入预热分钟。",
+    "equipmentZh": [
+      "空气炸锅",
+      "炒锅与灶具",
+      "刀与砧板",
+      "筷子或夹子",
+      "小碗"
+    ],
+    "ingredientsZh": [
+      "茄子 1 根",
+      "蒜 1 整头，去皮切末",
+      "食用油 15 克，分刷茄子与炒酱用",
+      "咸萝卜干碎 10 克",
+      "生抽 10 克",
+      "小米椒 1 个，切碎，可不放",
+      "葱 1 根，切葱花",
+      "孜然粉 0.5 克"
+    ],
+    "timelineZh": [
+      {
+        "label": "先烤茄子",
+        "detail": "200°C 20分钟，中途翻面。"
+      },
+      {
+        "label": "同时炒蒜酱",
+        "detail": "中小火炒蒜、小米椒和萝卜干，加生抽。"
+      },
+      {
+        "label": "摊开烤软",
+        "detail": "摊开茄肉，200°C再烤5分钟。"
+      },
+      {
+        "label": "加酱短烤",
+        "detail": "铺酱后200°C再烤1–2分钟。"
+      }
+    ],
+    "stepsZh": [
+      "茄子洗净切成两段，表面薄刷油。放入炸篮，200°C烤20分钟，中途翻面。",
+      "烤茄子时，炒锅用中小火热油，放蒜末、小米椒碎和萝卜干碎，炒出香气后加入生抽拌匀，不把蒜炒黑。",
+      "将茄子从中间划开，用筷子摊开茄肉，表面再薄刷一点油，200°C烤5分钟。",
+      "用筷子确认茄肉已软，仍发硬时先继续烤软，再铺蒜酱。",
+      "铺上炒好的蒜酱，200°C短烤1分钟起检查，参考1–2分钟；蒜酱不焦后取出，撒孜然和葱花。"
+    ],
+    "turnZh": "最初20分钟中途翻面；铺蒜酱后不翻面，短烤并留意蒜末。",
+    "completionZh": "茄肉能用筷子轻松分开、没有生硬处；加酱后蒜香明显且没有焦黑。茄肉未软时先完成烤软阶段，不能靠最后1–2分钟补足。",
+    "needsHob": true,
+    "advancePreparationZh": "需要先切蒜和萝卜干，烤茄子时另用炒锅炒酱；无需提前腌制。",
+    "notesZh": [
+      "油15克、萝卜干10克、生抽10克、1个小米椒、1根葱和孜然0.5克是编辑选定的调味用量，不是原文“勺”或“适量”的换算。茄子1根、蒜1头沿用主参考。",
+      "主参考先200°C 20分钟，再200°C 5分钟烤软，最后1–2分钟烤酱。本份26–27分钟只计气炸，不含准备和炒酱时间。",
+      "独立对照懒饭用2根长茄子、170°C 25分钟，再160°C 5分钟，热油泼蒜酱；不同温度与酱料做法没有平均。",
+      "尚未经过本站实机烹饪测试。"
+    ],
+    "sources": [
+      {
+        "title": "空气炸锅-蒜蓉烤茄子 超详细版",
+        "publisher": "好爱喝乌龙茶 / 下厨房",
+        "url": "https://m.xiachufang.com/recipe/106992003/",
+        "role": "reference",
+        "locator": "用料及步骤1–3",
+        "evidence": "茄子1根、蒜1头、咸萝卜干、酱油；200°C 20分钟中途翻面，摊开再200°C 5分钟，炒蒜酱铺上后1–2分钟。已打开全文。"
+      },
+      {
+        "title": "空气炸锅蒜蓉烤茄子",
+        "publisher": "懒饭App / 下厨房",
+        "url": "https://www.xiachufang.com/recipe/106930542/",
+        "role": "cross-check",
+        "locator": "用料及步骤1–4",
+        "evidence": "2根长茄子；刷油170°C 25分钟，剖开铺热油泼制蒜酱后160°C 5分钟。主参考为炒酱和200°C分段烤，未混用。已打开全文。"
+      }
+    ],
+    "descriptionEn": "Roast the eggplant until soft, then briefly cook with pan-fried garlic sauce. Requires both a hob and an air fryer.",
+    "portionEn": "1 eggplant, cut into two sections that fit flat in the basket",
+    "preheatDetailEn": "The main source loads the eggplant before setting the heat and gives no separate preheat. No preheat minutes have been added.",
+    "equipmentEn": [
+      "Air fryer",
+      "Frying pan and hob",
+      "Knife and cutting board",
+      "Chopsticks or tongs",
+      "Small bowl"
+    ],
+    "ingredientsEn": [
+      "1 eggplant",
+      "1 whole head of garlic, peeled and minced",
+      "15 g cooking oil, divided between brushing and frying",
+      "10 g chopped salted dried radish",
+      "10 g light soy sauce",
+      "1 small chili, chopped, optional",
+      "1 spring onion, chopped",
+      "0.5 g ground cumin"
+    ],
+    "timelineEn": [
+      {
+        "label": "Roast eggplant",
+        "detail": "200°C for 20 minutes, turning partway through."
+      },
+      {
+        "label": "Make sauce alongside",
+        "detail": "Gently fry garlic, chili and radish over medium-low heat, then add soy sauce."
+      },
+      {
+        "label": "Open and soften",
+        "detail": "Spread open the flesh; cook at 200°C for 5 more minutes."
+      },
+      {
+        "label": "Add sauce",
+        "detail": "Spread the sauce and cook at 200°C for 1–2 minutes."
+      }
+    ],
+    "stepsEn": [
+      "Wash and cut the eggplant into two sections. Brush lightly with oil and air fry at 200°C for 20 minutes, turning partway through.",
+      "Meanwhile, heat some oil in a frying pan over medium-low heat. Add garlic, optional chili and radish. Once fragrant, mix in soy sauce; do not blacken the garlic.",
+      "Slit open the cooked eggplant and spread the flesh with chopsticks. Brush lightly with a little oil and cook at 200°C for 5 minutes.",
+      "Check that the flesh is soft. If still firm, keep cooking until soft before adding the sauce.",
+      "Spread with the garlic sauce. Check after 1 minute at 200°C; the reference finish is 1–2 minutes. Remove before the garlic scorches, then add cumin and spring onion."
+    ],
+    "turnEn": "Turn during the first 20 minutes. After adding sauce, keep upright and watch the garlic during the brief finish.",
+    "completionEn": "Flesh separates easily with chopsticks without firm raw areas; the sauce is fragrant, without blackened garlic. Finish softening before adding sauce rather than relying on its final 1–2 minutes.",
+    "advancePreparationEn": "Chop the garlic and radish and use a separate frying pan for the sauce while the eggplant roasts. No advance marinating required.",
+    "notesEn": [
+      "Oil 15 g, radish 10 g, soy sauce 10 g, 1 chili, 1 spring onion and cumin 0.5 g are editorial seasoning amounts, not conversions of the author’s spoons or unspecified amounts. The eggplant and whole head of garlic follow the main source.",
+      "The main method uses 200°C for 20 minutes, 5 more minutes to soften, then 1–2 minutes with sauce. The 26–27 minutes count only air frying, excluding preparation and pan work.",
+      "The independent Lan Fan comparison uses 2 long eggplants at 170°C for 25 minutes, then 160°C for 5 minutes, and pours hot oil over its garlic mixture. Different sauce methods and temperatures were not averaged.",
+      "This recipe has not been physically tested by this site."
+    ]
+  },
+  {
+    "slug": "cn-roasted-potato-chunks",
+    "nameZh": "家常烤土豆块",
+    "nameEn": "Roasted potato chunks",
+    "category": "vegetables",
+    "descriptionZh": "生土豆切块、沥干刷油，180°C先烤15分钟，翻面后再烤15分钟。",
+    "portionZh": "土豆2–3个，切成大小接近的家常小块；每批平铺，放不下分批",
+    "temperatureC": 180,
+    "minutes": [
+      30,
+      30
+    ],
+    "preheat": "unspecified",
+    "preheatDetailZh": "原作者装篮后开始加热，未另列预热；本份保留该顺序。",
+    "equipmentZh": [
+      "空气炸锅",
+      "刀与砧板",
+      "油刷",
+      "夹子",
+      "筷子"
+    ],
+    "ingredientsZh": [
+      "土豆2–3个",
+      "食用油10克，分两面刷",
+      "辣椒粉1克，可不放"
+    ],
+    "timelineZh": [
+      {
+        "label": "切块沥干",
+        "detail": "切块，泡过水的充分沥干，再刷油调味。"
+      },
+      {
+        "label": "第一面",
+        "detail": "180°C 15分钟。"
+      },
+      {
+        "label": "翻面再烤",
+        "detail": "补刷薄油，180°C再15分钟；总计30分钟起检查。"
+      }
+    ],
+    "stepsZh": [
+      "土豆洗净，切成大小接近的小块。暂不入锅时可泡水防变色；烤前充分沥干表面水分。",
+      "把土豆块平铺入炸篮，刷一层薄油，按口味撒辣椒粉拌匀。放不下分批。",
+      "180°C烤15分钟，翻动土豆块，补刷剩余薄油，再以180°C烤15分钟。",
+      "用筷子扎较大土豆块的中心，松软无硬心后夹出；没软透则保持180°C继续加热，分段复查。"
+    ],
+    "turnZh": "第15分钟翻动并补刷薄油。",
+    "completionZh": "较大块的中心可以用筷子轻松扎透，没有生硬心；表面金黄即可，不烤到焦黑。",
+    "needsHob": false,
+    "advancePreparationZh": "不用先煮；切好如需等待可以泡水，入锅前沥干。",
+    "notesZh": [
+      "10克油、1克可选辣椒粉是编辑选定用量，并非原文“1勺油”“适量辣椒”的换算。",
+      "主参考给2–3个土豆，没有指定切块厘米数；本份不把家常小块改成无出处的精密尺寸，也不按重量推算时间。",
+      "独立对照飞利浦HD9220/HD9225手册为300–750克自制土豆块、180°C 12–18分钟、翻动、半汤匙油；同页注明冷启动另加3分钟。本份没有将其短时表格拼到作者30分钟路线。",
+      "尚未经过本站实机烹饪测试。"
+    ],
+    "sources": [
+      {
+        "title": "烤土豆块 有土豆就能做 空气炸锅速成",
+        "publisher": "一只冻柿子 / 下厨房",
+        "url": "https://m.xiachufang.com/recipe/106757068/",
+        "role": "reference",
+        "locator": "用料及步骤1–2",
+        "evidence": "2–3个土豆；切块、沥干刷油、可加辣椒；180°C 15分钟，刷油翻面再15分钟。已打开全文。"
+      },
+      {
+        "title": "HD9225/HD9220 Viva Collection Airfryer 用户手册",
+        "publisher": "飞利浦 / Versuni",
+        "url": "https://dam.versuni.com/m/23d4afb77ba59ee8/original/User-Manual-Philips-Viva-Collection-Airfryer.pdf",
+        "role": "cross-check",
+        "locator": "PDF第43页：自制土豆块一行及表下冷启动说明",
+        "evidence": "300–750克，180°C 12–18分钟，翻动，加1/2汤匙油；冷启动另加3分钟。已下载官方原PDF并渲染核对。"
+      }
+    ],
+    "descriptionEn": "Cut raw potatoes into chunks, drain and brush with oil. Cook at 180°C for 15 minutes, turn, then cook 15 minutes more.",
+    "portionEn": "2–3 potatoes in similarly sized small chunks; spread out and work in batches if needed",
+    "preheatDetailEn": "The author starts heating after loading and lists no separate preheat. That sequence is retained.",
+    "equipmentEn": [
+      "Air fryer",
+      "Knife and cutting board",
+      "Pastry brush",
+      "Tongs",
+      "Chopstick"
+    ],
+    "ingredientsEn": [
+      "2–3 potatoes",
+      "10 g cooking oil, divided between both sides",
+      "1 g chili powder, optional"
+    ],
+    "timelineEn": [
+      {
+        "label": "Cut and drain",
+        "detail": "Cut into chunks; drain thoroughly after any soaking, then brush and season."
+      },
+      {
+        "label": "First side",
+        "detail": "180°C for 15 minutes."
+      },
+      {
+        "label": "Turn and finish",
+        "detail": "Brush lightly again; cook 15 more minutes at 180°C. Check at 30 minutes total."
+      }
+    ],
+    "stepsEn": [
+      "Wash and cut the potatoes into similarly sized small chunks. If waiting before cooking, hold in water to limit discoloration; drain the surfaces thoroughly before air frying.",
+      "Spread in the basket, brush with a thin coating of oil and toss with optional chili powder. Work in batches if needed.",
+      "Cook at 180°C for 15 minutes. Turn the chunks and brush with the remaining thin coating of oil, then cook at 180°C for 15 more minutes.",
+      "Pierce a larger chunk through the center with a chopstick. Remove when soft with no firm raw core. If necessary, continue at 180°C and recheck in short intervals."
+    ],
+    "turnEn": "Turn after 15 minutes and brush with the remaining oil.",
+    "completionEn": "A chopstick passes easily through a larger chunk with no firm raw center. Aim for golden surfaces, not blackening.",
+    "advancePreparationEn": "No precooking required. If cut potatoes must wait, hold in water and drain before cooking.",
+    "notesEn": [
+      "Oil 10 g and optional chili 1 g are editorial amounts, not conversions of the author’s spoon of oil or seasoning to taste.",
+      "The main source specifies 2–3 potatoes without a precise chunk size. No unsupported centimeter measurement or weight-based time calculation has been added.",
+      "The independent Philips HD9220/HD9225 table gives 300–750 g homemade potato cubes, 180°C for 12–18 minutes, turning and half a tablespoon of oil; the same page adds 3 minutes for cold starts. Its shorter table time is not combined with the author’s 30-minute method.",
+      "This recipe has not been physically tested by this site."
+    ]
+  },
+  {
+    "slug": "cn-cumin-firm-tofu",
+    "nameZh": "椒盐烤老豆腐",
+    "nameEn": "Seasoned roasted firm tofu",
+    "category": "vegetables",
+    "descriptionZh": "老豆腐泡水5分钟后切块沥干，200°C烤20分钟，中途翻面，出锅撒椒盐。",
+    "portionZh": "老豆腐约400克；单层留缝，放不下分批",
+    "temperatureC": 200,
+    "minutes": [
+      20,
+      20
+    ],
+    "preheat": "unspecified",
+    "preheatDetailZh": "主参考在炸篮底部刷油、摆豆腐后开始烤，未单列预热。",
+    "equipmentZh": [
+      "空气炸锅",
+      "刀与砧板",
+      "碗",
+      "油刷",
+      "夹子",
+      "厨房纸"
+    ],
+    "ingredientsZh": [
+      "老豆腐约400克，不用内酯豆腐代替",
+      "食用油5克，薄刷炸篮接触面",
+      "椒盐粉1克",
+      "辣椒粉0.5克，可不放"
+    ],
+    "timelineZh": [
+      {
+        "label": "泡水",
+        "detail": "清水浸泡5分钟，切块后沥干。"
+      },
+      {
+        "label": "气炸",
+        "detail": "200°C 20分钟参考；约第10分钟翻面。"
+      },
+      {
+        "label": "出锅调味",
+        "detail": "撒椒盐和可选辣椒粉。"
+      }
+    ],
+    "stepsZh": [
+      "老豆腐用清水浸泡5分钟，切成大小接近的小块，沥干并用厨房纸吸去表面水。",
+      "在炸篮与豆腐接触面刷薄油，豆腐单层摆开、块与块之间留缝，放不下分批。",
+      "选空气炸模式，200°C烤10分钟左右后翻面，继续烤至总计20分钟起检查。",
+      "两面金黄、表皮成形，切开中心也热透后夹出。没热透时保持200°C继续加热，分段检查。",
+      "出锅后撒椒盐及可选辣椒粉，稍放凉再吃。"
+    ],
+    "turnZh": "约第10分钟翻面，后半段让另一面上色。",
+    "completionZh": "两面金黄、表皮成形，较大块切开内部热透；不以深褐或焦黑作为目标。",
+    "needsHob": false,
+    "advancePreparationZh": "需要5分钟清水浸泡，不需腌制或预煮；选择老豆腐。",
+    "deviceNoteZh": "主参考使用宜盾普底部加热并带热风的机型；200°C 20分钟是该设备做法的起查参考。",
+    "notesZh": [
+      "5克油、1克椒盐、0.5克可选辣椒粉是编辑选定用量，原文仅写刷一层油和出锅撒椒盐/辣椒面。",
+      "独立对照HotomYes使用大宇K10，将老豆腐切小块，180°C先15分钟再翻面10分钟，并写明无需预热。设备与温度不同，未移植其冷启动声明。",
+      "原资料内的健康宣传和品牌性能评价未采用；尚未经过本站实机烹饪测试。"
+    ],
+    "sources": [
+      {
+        "title": "烹饪看得见，一锅搞定全家美味，宜盾普多功能空炸锅",
+        "publisher": "赞美猴小猴 / 什么值得买",
+        "url": "https://post.smzdm.com/p/an3en27p/",
+        "role": "reference",
+        "locator": "“空炸锅豆腐”一节",
+        "evidence": "老豆腐约400g，泡5分钟切小块沥干，炸篮薄刷油，200°C 20分钟，约10分钟翻面，出锅撒椒盐或辣椒；机型为底部热风及加热垫。已下载原始HTML并读取全文。"
+      },
+      {
+        "title": "拒绝油腻 烧烤自由 我有大宇空气炸锅",
+        "publisher": "HotomYes / 什么值得买",
+        "url": "https://post.smzdm.com/p/a8xko4on/",
+        "role": "cross-check",
+        "locator": "“炸锅食谱-孜香豆腐”一节及紧接设备说明",
+        "evidence": "老豆腐切小块，撒盐，180°C 15分钟后翻面再10分钟；可撒孜然辣椒。作者另述大宇K10无需预热。已下载原始HTML并读取全文。"
+      }
+    ],
+    "descriptionEn": "Soak firm tofu for 5 minutes, cut and drain. Air fry at 200°C for 20 minutes, turning partway through, then add seasoned salt.",
+    "portionEn": "About 400 g firm tofu; one layer with gaps, in batches if needed",
+    "preheatDetailEn": "The main source brushes the basket, loads the tofu and starts cooking without listing a separate preheat.",
+    "equipmentEn": [
+      "Air fryer",
+      "Knife and cutting board",
+      "Bowl",
+      "Pastry brush",
+      "Tongs",
+      "Kitchen paper"
+    ],
+    "ingredientsEn": [
+      "About 400 g firm tofu, not silken tofu",
+      "5 g cooking oil, for a thin film on contact surfaces",
+      "1 g seasoned pepper salt",
+      "0.5 g chili powder, optional"
+    ],
+    "timelineEn": [
+      {
+        "label": "Soak",
+        "detail": "Soak in clean water for 5 minutes, then cut and drain."
+      },
+      {
+        "label": "Air fry",
+        "detail": "Reference: 200°C for 20 minutes, turning around minute 10."
+      },
+      {
+        "label": "Season",
+        "detail": "Add seasoned salt and optional chili powder."
+      }
+    ],
+    "stepsEn": [
+      "Soak the firm tofu in clean water for 5 minutes. Cut into similarly sized small pieces, drain and blot off surface moisture.",
+      "Brush a thin film of oil on basket surfaces touching the tofu. Arrange in one layer with gaps; work in batches if needed.",
+      "Select Air Fry and cook at 200°C. Turn at around 10 minutes and start checking at 20 minutes total.",
+      "Remove when both sides are golden with a formed skin and a larger piece is hot through when cut. If needed, continue at 200°C and check in short intervals.",
+      "Sprinkle with seasoned salt and optional chili powder; let cool slightly before eating."
+    ],
+    "turnEn": "Turn at about 10 minutes so the second side can color.",
+    "completionEn": "Both sides are golden with a formed skin; the center of a larger piece is hot. Do not aim for dark brown or black surfaces.",
+    "advancePreparationEn": "Soak for 5 minutes. No marinating or precooking required; use firm tofu.",
+    "notesEn": [
+      "Oil 5 g, seasoned salt 1 g and optional chili 0.5 g are editorial amounts. The original specifies only a thin brushed coating and seasoning after cooking.",
+      "The independent HotomYes comparison uses a Daewoo K10: small firm-tofu pieces at 180°C for 15 minutes, then turning and 10 minutes more, explicitly without preheating. Its cold-start statement is not transferred to the different main-reference appliance.",
+      "Health claims and brand-performance claims from the source articles are omitted. This recipe has not been physically tested by this site."
+    ],
+    "deviceNoteEn": "The main source uses an EdenPURE appliance with bottom heating and hot air. Its 200°C, 20-minute method supplies a starting checkpoint."
+  },
+  {
+    "slug": "cn-spiced-shiitake",
+    "nameZh": "孜然辣味烤香菇",
+    "nameEn": "Cumin-chili shiitake mushrooms",
+    "category": "vegetables",
+    "descriptionZh": "鲜香菇拌香料腌片刻，180°C预热后先烤10分钟，翻面再烤8分钟。",
+    "portionZh": "鲜香菇12朵，原作者约285克；单层摆放",
+    "temperatureC": 180,
+    "minutes": [
+      18,
+      18
+    ],
+    "preheat": "yes",
+    "preheatDetailZh": "主参考要求放进已预热的空气炸锅；预热到180°C，以机器就绪提示为准，不另补分钟数。",
+    "equipmentZh": [
+      "空气炸锅",
+      "刀与砧板",
+      "大碗",
+      "夹子",
+      "厨房秤",
+      "油刷"
+    ],
+    "ingredientsZh": [
+      "鲜香菇12朵，约285克",
+      "玉米油10克，另留少量薄刷表面",
+      "生抽10克",
+      "孜然粉2克",
+      "辣椒粉1克",
+      "大蒜粉1克",
+      "五香粉0.5克",
+      "胡椒粉0.5克",
+      "盐1克",
+      "糖3克"
+    ],
+    "timelineZh": [
+      {
+        "label": "处理及拌料",
+        "detail": "去硬蒂、表面划花，洗净沥干后拌料。"
+      },
+      {
+        "label": "短腌与预热",
+        "detail": "香菇拌匀后放置片刻，同时预热到180°C。"
+      },
+      {
+        "label": "气炸",
+        "detail": "180°C 10分钟，翻面后再8分钟。"
+      }
+    ],
+    "stepsZh": [
+      "鲜香菇去硬蒂，可在菇帽表面浅划花刀，洗净后沥干。",
+      "把油、生抽和全部调味粉拌匀，放入香菇抓拌，放置片刻；同时把机器预热到180°C。",
+      "香菇菌褶朝上、菇帽朝下单层摆入炸篮，表面薄刷少量油，180°C烤10分钟。",
+      "翻面，另一面也薄刷少量油，保持180°C再烤8分钟。",
+      "确认香菇整体变软、中心热透后夹出；仍硬或中心不热，就以180°C继续加热并复查。"
+    ],
+    "turnZh": "第10分钟翻面，补刷薄油后再烤8分钟。",
+    "completionZh": "菇肉整体熟软、较厚处也热透，没有生硬处；边缘干香，不烤黑。",
+    "needsHob": false,
+    "advancePreparationZh": "鲜香菇拌调味后短暂放置入味，原文只说“片刻”，不强加具体腌制分钟。",
+    "notesZh": [
+      "原作者已注明大勺15毫升、小勺5毫升，但本份采用另一套编辑称量调味：油10克、生抽10克、孜然2克、辣椒1克、蒜粉1克、五香0.5克、胡椒0.5克、盐1克、糖3克；不是原文量勺的密度换算。",
+      "主参考12朵约285克、180°C 10+8分钟；独立厂商对照HD9257为约800克花菜和菇类、180°C 10分钟、冷启动、切块拌1汤匙油并翻动。对照是菇类混合蔬菜的基础表，不是同份完整香菇配方的重复验证，没有按份量换算或移植其冷启动规则。",
+      "尚未经过本站实机烹饪测试。"
+    ],
+    "sources": [
+      {
+        "title": "空气炸锅烤香菇 / Air Fryer Roasted Mushrooms",
+        "publisher": "JiJi’s Kitchen / YouTube",
+        "url": "https://www.youtube.com/watch?v=Gci_S0oDzsM",
+        "role": "reference",
+        "locator": "作者视频说明：材料及做法1–6",
+        "evidence": "12朵鲜香菇约285g；去蒂划花、沥干拌自调烧烤酱、腌片刻；预热后180°C 10分钟，翻面再8分钟。已下载原始视频页并读取作者完整中英文说明。"
+      },
+      {
+        "title": "HD9257 用户手册",
+        "publisher": "飞利浦 / Versuni",
+        "url": "https://dam.versuni.com/m/1389c4ef584e73a1/original/User-Manual-Airfryer-Ferrari-HD9257-China.pdf",
+        "role": "cross-check",
+        "locator": "PDF第2页：蔬菜预设一行及空气煎炸说明",
+        "evidence": "800g花菜、菇类等；洗净切块拌1汤匙油，180°C 10分钟，翻动。本机无需预热。独立对照是菇类基础表，非同配方重复。已渲染核对。"
+      }
+    ],
+    "descriptionEn": "Toss fresh shiitake in spices and let stand briefly. Preheat to 180°C, cook 10 minutes, turn and cook 8 minutes more.",
+    "portionEn": "12 fresh shiitake, about 285 g in the main source; one layer",
+    "preheatDetailEn": "The main source uses a preheated air fryer. Preheat to 180°C until ready; no unsupported preheat duration has been added.",
+    "equipmentEn": [
+      "Air fryer",
+      "Knife and cutting board",
+      "Large bowl",
+      "Tongs",
+      "Kitchen scale",
+      "Pastry brush"
+    ],
+    "ingredientsEn": [
+      "12 fresh shiitake, about 285 g",
+      "10 g corn oil, plus a little for brushing",
+      "10 g light soy sauce",
+      "2 g ground cumin",
+      "1 g chili powder",
+      "1 g garlic powder",
+      "0.5 g five-spice powder",
+      "0.5 g ground pepper",
+      "1 g salt",
+      "3 g sugar"
+    ],
+    "timelineEn": [
+      {
+        "label": "Prepare and coat",
+        "detail": "Remove tough stems, score the caps, wash, drain and coat."
+      },
+      {
+        "label": "Brief marinade and preheat",
+        "detail": "Let the coated mushrooms stand briefly while preheating to 180°C."
+      },
+      {
+        "label": "Air fry",
+        "detail": "180°C for 10 minutes, then turn and cook 8 more minutes."
+      }
+    ],
+    "stepsEn": [
+      "Remove tough stems. Optionally score the caps shallowly, then wash and drain.",
+      "Mix oil, soy sauce and all seasonings. Toss the mushrooms to coat and let stand briefly while the fryer preheats to 180°C.",
+      "Arrange in one layer, gills up and caps down. Brush the surface lightly with a little oil and cook at 180°C for 10 minutes.",
+      "Turn, brush the other side lightly and continue at 180°C for 8 minutes.",
+      "Remove when soft throughout and hot through the thickest parts. If still firm or cool inside, continue at 180°C and recheck."
+    ],
+    "turnEn": "Turn after 10 minutes, brush lightly and cook 8 more minutes.",
+    "completionEn": "The mushrooms are soft throughout and hot through thick areas without raw, firm sections; edges are dry and fragrant rather than black.",
+    "advancePreparationEn": "Let the seasoned fresh mushrooms stand briefly. The author specifies only a short rest, so no fixed marinating duration has been imposed.",
+    "notesEn": [
+      "Although the author defines tablespoon as 15 ml and teaspoon as 5 ml, this recipe uses a separate editorial weighing plan: oil 10 g, soy sauce 10 g, cumin 2 g, chili 1 g, garlic 1 g, five-spice 0.5 g, pepper 0.5 g, salt 1 g and sugar 3 g. These are not density conversions of the original spoons.",
+      "The main method uses 12 mushrooms/about 285 g at 180°C for 10+8 minutes. The independent HD9257 table uses about 800 g cauliflower and mushrooms at 180°C for 10 minutes, cold-started, cut up and tossed with 1 tablespoon oil, with turning. This is a general mushroom-and-vegetable table, not a repeat validation of this exact shiitake recipe. No load conversion or transfer of its cold-start rule was made.",
+      "This recipe has not been physically tested by this site."
+    ]
+  },
+  {
+    "slug": "cn-boiled-then-roasted-corn",
+    "nameZh": "先煮后烤原味玉米",
+    "nameEn": "Boiled-then-roasted corn",
+    "category": "vegetables",
+    "descriptionZh": "先把玉米煮熟，再200°C烤20分钟，期间转动几面；需要煮锅和空气炸锅。",
+    "portionZh": "玉米1–2根，以能单层放入炸篮为准（编辑小份安排）",
+    "temperatureC": 200,
+    "minutes": [
+      20,
+      20
+    ],
+    "preheat": "unspecified",
+    "preheatDetailZh": "主参考把煮熟玉米直接放入空气炸锅，没有另列预热。",
+    "equipmentZh": [
+      "煮锅与灶具",
+      "空气炸锅",
+      "夹子",
+      "筷子或小刀"
+    ],
+    "ingredientsZh": [
+      "新鲜玉米1–2根",
+      "清水，煮锅内足以浸没玉米"
+    ],
+    "timelineZh": [
+      {
+        "label": "先煮熟",
+        "detail": "水开后煮15分钟起检查，至玉米熟透。"
+      },
+      {
+        "label": "沥水",
+        "detail": "取出沥去表面水，不额外刷酱。"
+      },
+      {
+        "label": "气炸",
+        "detail": "200°C 20分钟，期间多转几面。"
+      }
+    ],
+    "stepsZh": [
+      "去掉玉米外叶和须，洗净。煮锅加水煮开，放入玉米，水开后煮15分钟起检查，继续至玉米粒熟软。",
+      "捞出沥去表面水，直接放入炸篮；较长而放不下时切段，单层摆开。",
+      "200°C烤20分钟，中途用夹子转动几面，让四周都受热。",
+      "表面有轻微烤香、内部仍熟软热透时夹出；已经达到喜欢的口感可提前取出，不追求焦黑。"
+    ],
+    "turnZh": "烤制中多次转动，让圆柱形玉米各面都受热；原文未规定固定转动分钟。",
+    "completionZh": "入气炸前就应煮熟；出锅时中心热透、玉米粒熟软，表面略有烤香，不以焦黑作完成标准。",
+    "needsHob": true,
+    "advancePreparationZh": "必须先煮熟，再连续气炸。本份不适用于生玉米直接套20分钟，也不作为隔夜玉米复热指南。",
+    "notesZh": [
+      "1–2根是为单层摆放选择的编辑小份，主参考没有规定根数；15分钟作为首次检查，需煮至熟透后才入气炸。",
+      "独立对照sding1126采用3根新鲜玉米、牛奶蜂蜜涂层和锡纸，200°C先10分钟翻面再8分钟，未写先煮步骤；本份采用先煮熟、无调味、裸烤路线，不把两套方法的食材状态或时间视为等价。",
+      "尚未经过本站实机烹饪测试。"
+    ],
+    "sources": [
+      {
+        "title": "「空气炸锅真是伟大的发明」",
+        "publisher": "潘誉晗 / 少数派",
+        "url": "https://sspai.com/prime/story/air-fryer-recipes",
+        "role": "reference",
+        "locator": "“烤玉米”一节",
+        "evidence": "玉米先在开水中煮15分钟或蒸15分钟；熟玉米直接200°C烤20分钟，中途多转几面，无调味。已下载原始公开HTML并读取该完整章节。"
+      },
+      {
+        "title": "空气炸锅 烤玉米",
+        "publisher": "sding1126 / 下厨房",
+        "url": "https://m.xiachufang.com/recipe/106505471/",
+        "role": "cross-check",
+        "locator": "用料及步骤1–3",
+        "evidence": "新鲜玉米3根，刷牛奶蜂蜜、撒孜然黑胡椒；200°C先10分钟，翻面再8分钟，可打开锡纸继续烤；没有写先煮步骤。与主参考先煮熟、无酱、20分钟的方法不同，不将18分钟视为生熟等价。已打开全文。"
+      }
+    ],
+    "descriptionEn": "Boil the corn until cooked, then roast at 200°C for 20 minutes, rotating several times. Requires both a saucepan and an air fryer.",
+    "portionEn": "1–2 ears of corn that fit in one layer; an editorial small-batch choice",
+    "preheatDetailEn": "The main source puts cooked corn straight into the air fryer without listing a separate preheat.",
+    "equipmentEn": [
+      "Saucepan and hob",
+      "Air fryer",
+      "Tongs",
+      "Chopstick or small knife"
+    ],
+    "ingredientsEn": [
+      "1–2 ears fresh corn",
+      "Enough water to cover the corn in the saucepan"
+    ],
+    "timelineEn": [
+      {
+        "label": "Boil first",
+        "detail": "Start checking after 15 minutes in boiling water; continue until cooked."
+      },
+      {
+        "label": "Drain",
+        "detail": "Drain surface water. Do not add sauce."
+      },
+      {
+        "label": "Air fry",
+        "detail": "200°C for 20 minutes, rotating several times."
+      }
+    ],
+    "stepsEn": [
+      "Remove husks and silk and wash the corn. Bring a saucepan of water to the boil, add the corn and start checking after 15 minutes of boiling. Continue until the kernels are cooked and tender.",
+      "Lift out and drain surface water, then put straight into the basket. Cut into sections if too long, and arrange in one layer.",
+      "Air fry at 200°C for 20 minutes, rotating with tongs several times so all sides face the heat.",
+      "Remove when lightly roasted outside and hot and tender inside. Take it out sooner if it has reached the texture you want; do not aim for blackening."
+    ],
+    "turnEn": "Rotate several times during cooking so the cylindrical cobs heat on all sides. The source gives no fixed rotating minutes.",
+    "completionEn": "The corn must be cooked before air frying. At serving it is hot through and tender with a lightly roasted surface, without blackening.",
+    "advancePreparationEn": "Boil fully, then proceed directly to air frying. This 20-minute stage is not for raw corn and is not a reheating guide for corn stored overnight.",
+    "notesEn": [
+      "One or two ears is an editorial single-layer portion; the main source specifies no count. Fifteen minutes is treated as the first boiling check, and corn must be cooked before air frying.",
+      "The independent sding1126 comparison uses 3 fresh ears with milk, honey and foil, cooking at 200°C for 10 minutes, then turning and cooking 8 minutes. It lists no boiling step. This recipe follows the main source’s precooked, unseasoned, uncovered method; food state and time are not treated as interchangeable.",
+      "This recipe has not been physically tested by this site."
+    ]
+  }
+]

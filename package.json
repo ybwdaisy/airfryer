@@ -13,7 +13,8 @@
     "test:language": "node tests/language.mjs",
     "test:production": "node scripts/check-production.mjs",
     "data:check": "node scripts/validate-data.mjs",
-    "icons:generate": "node scripts/generate-icons.mjs"
+    "icons:generate": "node scripts/generate-icons.mjs",
+    "test:regional": "node tests/regional-browser.mjs"
   },
   "engines": {
     "node": ">=22.12.0"

@@ -26,7 +26,7 @@ export function initAnalytics() {
   };
   const track = (name: string, params: AnalyticsParams = {}) => {
     if (!enabled || state !== 'granted') return;
-    window.gtag?.('event', name, { ...params, page_location: `${location.origin}${location.pathname}` });
+    window.gtag?.('event', name, { ...params, food_collection: document.documentElement.dataset.region ?? 'us', language: languageFromPath(location.pathname), measurement_units: document.documentElement.dataset.temperatureUnit ?? document.documentElement.dataset.defaultUnit ?? 'f', page_location: `${location.origin}${location.pathname}` });
   };
   const load = () => {
     if (!enabled || state !== 'granted') return;

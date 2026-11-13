@@ -1,0 +1,6 @@
+---
+import View from '../../../../components/views/FoodPage.astro';
+import { foodsForRegion } from '../../../../lib/foods';
+export function getStaticPaths() { return foodsForRegion('cn').map(food => ({ params: { slug: food.slug }, props: { food } })); }
+---
+<View lang="zh" region="cn" food={Astro.props.food}/>
