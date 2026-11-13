@@ -54,6 +54,56 @@
     "languageUnitPages": 244,
     "responsiveLayouts": 48
   },
-  "accountConfiguration": "pending: user asked to wait for concurrent GA4 conversation",
-  "productionDeployed": false
+  "accountConfiguration": "Core scope completed and read back; optional retention awaits event availability. See ga4-backend-2026-11-13.json.",
+  "productionDeployed": true,
+  "productionRelease": {
+    "checkedAt": "2026-11-13T10:56:24.895Z",
+    "url": "https://airfryer.ybwdaisy.com",
+    "pullRequest": "https://github.com/ybwdaisy/airfryer/pull/7",
+    "commit": "944ff1d92c7a3c2e0943431748f99720ddc54e47",
+    "deploymentId": "dpl_9nq1ButyJfFi6NCVMbnHC6Vy8QqQ",
+    "deploymentUrl": "https://airfryer-m99epikoi-ybwdaisys-projects.vercel.app",
+    "target": "production",
+    "status": "READY",
+    "buildDurationMilliseconds": 10415,
+    "productionSmoke": {
+      "checkedAt": "2026-11-13T10:56:24.895Z",
+      "base": "https://airfryer.ybwdaisy.com",
+      "pages": [
+        "/",
+        "/zh",
+        "/china",
+        "/zh/us",
+        "/zh/china/foods/cn-orleans-wings",
+        "/foods/chicken-breast"
+      ],
+      "sitemap": 150,
+      "appleIcon": 200,
+      "errors": []
+    },
+    "actualSdk": {
+      "source": "Live canonical production pages; real Google SDK, collection blocked before dispatch.",
+      "counts": {
+        "page_view": 5,
+        "airfryer_guide_view": 3,
+        "airfryer_section_view": 6,
+        "airfryer_guide_engaged": 1,
+        "unit_change": 1,
+        "language_change": 1,
+        "airfryer_source_open": 1,
+        "airfryer_list_view": 1,
+        "food_search": 1,
+        "food_select": 1
+      },
+      "errors": [],
+      "ingestionVerified": false
+    },
+    "errorLogScan": {
+      "recordsReturned": 0,
+      "start": "2026-11-13T10:44:32.623Z",
+      "end": "2026-11-13T10:54:32.623Z"
+    },
+    "projectLogDrains": 0,
+    "ga4BackendConfiguration": "Core scope completed and read back; optional retention awaits event availability. See ga4-backend-2026-11-13.json."
+  }
 }

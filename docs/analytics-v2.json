@@ -4,7 +4,7 @@
   "streamId": "16326517771",
   "measurementId": "G-B34CBGW0EF",
   "origin": "https://airfryer.ybwdaisy.com",
-  "backendStatus": "pending: user requested waiting for concurrent Chrome/GA4 work",
+  "backendStatus": "complete for dimensions, key event, seven-tab main exploration, three closed funnels and live ingestion; optional retention template awaits GA4 event-selector availability",
   "keyEvent": {
     "name": "airfryer_guide_engaged",
     "meaning": "Visible instruction reading for 10 foreground seconds; not cooking success",
@@ -69,11 +69,35 @@
       ]
     }
   ],
-  "savedReports": [],
-  "productionDeployed": false,
-  "ingestionVerified": false,
+  "savedReports": [
+    {
+      "url": "https://analytics.google.com/analytics/web/#/analysis/a359267445p494048879/edit/oBMNfb-gRXWjzAO1oPrmXA",
+      "name": "空气炸锅｜获客、分地区与菜谱阅读 v2",
+      "tabsConfigured": [
+        "获客渠道",
+        "地区与语言",
+        "目录到阅读",
+        "搜索到阅读",
+        "菜谱阅读（含直达）",
+        "食物与条件",
+        "阅读阶段"
+      ],
+      "verifiedAfterReload": true
+    },
+    {
+      "url": "https://analytics.google.com/analytics/web/#/analysis/a359267445p494048879/edit/rxYzJsWBST2HjswvhyY2qw",
+      "name": "空气炸锅｜回访（等待新事件进入可选列表）",
+      "status": "pending GA4 event selector availability; not an accepted meaningful-reading retention report"
+    }
+  ],
+  "productionDeployed": true,
+  "ingestionVerified": true,
   "optionalReuseDimensions": [
     "qa_traffic"
   ],
-  "contentGroupFallback": "Built-in Content group exposes the eight collection/language/unit combinations without waiting for new custom dimensions."
+  "contentGroupFallback": "Built-in Content group exposes the eight collection/language/unit combinations without waiting for new custom dimensions.",
+  "productionCommit": "944ff1d92c7a3c2e0943431748f99720ddc54e47",
+  "productionDeploymentId": "dpl_9nq1ButyJfFi6NCVMbnHC6Vy8QqQ",
+  "ingestionCoverage": "Realtime received six core event types; QA marker, collection, language, units, slug, canonical location and 10-second instruction reading values read back.",
+  "retentionStatus": "pending: new guide_engaged event is not yet selectable in the cohort UI"
 }
