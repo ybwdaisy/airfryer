@@ -1,3 +1,4 @@
+import {analyticsOrigin,serveAnalyticsOrigin} from './analytics-fixture.mjs';
 import { chromium, expect } from '@playwright/test';
 import { mkdir, writeFile } from 'node:fs/promises';
 
@@ -96,18 +97,13 @@ try {
   await check('analytics consent remains shared across language routes and translated',async()=>{
     const c=await browser.newContext();let google=0;
     await c.route(/googletagmanager\.com|google-analytics\.com/,r=>{google++;return r.fulfill({contentType:'text/javascript',body:''});});
-    await c.route(base+'/**',async route=>{
-      if(route.request().resourceType() !== 'document') return route.continue();
-      const response=await route.fetch();
-      if((response.headers()['content-type']||'').includes('text/html'))await route.fulfill({response,body:(await response.text()).replace(/<meta\b[^>]*name="ga-measurement-id"[^>]*>/,'<meta name="ga-measurement-id" content="G-B34CBGW0EF">')});
-      else await route.fulfill({response});
-    });
-    const p=await c.newPage();await p.goto(base+'/zh');expect(google).toBe(0);
+    await serveAnalyticsOrigin(c,base);
+    const p=await c.newPage();await p.goto(analyticsOrigin+'/zh');expect(google).toBe(0);
     await p.getByRole('button',{name:'允许统计',exact:true}).click();
     await expect(p.locator('#google-analytics-tag')).toHaveCount(1);
     await p.locator('[data-language-switch="en"]').click();await expect(p.locator('#consent-banner')).toBeHidden();
     await p.locator('[data-privacy-settings]').click();await p.getByRole('button',{name:'Reject analytics',exact:true}).click();
-    const before=google;await p.goto(base+'/zh/privacy');
+    const before=google;await p.goto(analyticsOrigin+'/zh/privacy');
     await expect(p.locator('#analytics-status')).toHaveText('您当前的选择：拒绝统计。');expect(google).toBe(before);
     await c.unrouteAll({behavior:'wait'});await c.close();
   });

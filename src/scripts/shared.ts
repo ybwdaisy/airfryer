@@ -1,6 +1,7 @@
 import { temperature } from '../lib/format';
 import { measureText } from '../lib/measure';
 import type { Unit } from '../lib/schema';
+import { trackNavigation } from './track-navigation';
 import { initAnalytics } from './analytics';
 import { languageFromPath } from '../lib/locale';
 import { defaultUnit, regionHome, switchLanguagePath, type Region } from '../lib/region';
@@ -41,30 +42,31 @@ function initShared() {
   document.querySelectorAll<HTMLAnchorElement>('[data-region-select]').forEach(link => {
     const chosen = link.dataset.regionSelect as Region;
     if (chosen === activeRegion) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
-    link.addEventListener('click', () => {
+    link.addEventListener('click', event => {
       save(regionKey, chosen);
       const next = new URL(regionHome(chosen, lang), location.origin);
       if (explicitUnit()) next.searchParams.set('unit', unit);
       const current = new URL(location.href);
       for (const key of ['q', 'category']) if (current.searchParams.has(key)) next.searchParams.set(key, current.searchParams.get(key)!);
       link.href = next.href;
-      window.airfryerTrack?.('region_change', { region: chosen });
+      if (chosen !== activeRegion) trackNavigation(event,link,'region_change',{target_collection:chosen});
     });
   });
   document.querySelectorAll<HTMLAnchorElement>('[data-language-switch]').forEach(link => {
-    const choose = () => {
+    const choose = (event: MouseEvent) => {
       const target = link.dataset.languageSwitch === 'zh' ? 'zh' : 'en';
       save(languageKey, target); save(regionKey, activeRegion);
       const next = new URL(location.href);
       next.pathname = switchLanguagePath(link.dataset.languagePath ?? next.pathname, activeRegion, target);
       if (explicitUnit()) next.searchParams.set('unit', unit);
       link.href = next.href;
-      window.airfryerTrack?.('language_change', { language: target });
+      trackNavigation(event,link,'language_change',{target_language:target});
     };
-    link.addEventListener('pointerdown', choose); link.addEventListener('click', choose);
+    link.addEventListener('click', choose);
   });
   document.querySelectorAll<HTMLElement>('.js-only').forEach(el => el.hidden = false);
   function applyUnit(next: Unit, persist = false) {
+    const previousUnit = unit;
     unit = next;
     document.documentElement.dataset.temperatureUnit = unit;
     document.querySelectorAll<HTMLElement>('[data-temperature]').forEach(el => {
@@ -80,7 +82,7 @@ function initShared() {
     if (persist) {
       save(unitKey, unit);
       const url = new URL(location.href); url.searchParams.set('unit', unit); history.replaceState(null, '', url);
-      window.airfryerTrack?.('unit_change', { unit });
+      if (previousUnit !== unit) window.airfryerTrack?.('unit_change', { unit, previous_unit: previousUnit });
     }
     document.dispatchEvent(new CustomEvent('airfryer:unit', { detail: { unit } }));
   }

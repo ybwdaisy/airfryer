@@ -48,7 +48,7 @@ const index = collection.map(f => ({ slug: f.slug, name: localizeFood(f, lang).n
         <p><Measure text={featuredVariant.label} unit={unit} lang={lang}/></p>
         <dl class="featured-values"><div><dt>{t(lang, 'Temperature')}</dt><dd data-temperature={featuredVariant.temperatureF} data-temperature-c={featuredVariant.temperatureC}>{temperature(featuredVariant.temperatureF, unit, featuredVariant.temperatureC)}</dd></div><div><dt>{t(lang, 'Cooking time')}</dt><dd>{minutes(featuredVariant.minutes)}<span> {t(lang, 'min')}</span></dd></div></dl>
         {featuredVariant.advancePreparation && <p class="preparation-tag"><Measure text={featuredVariant.advancePreparation} unit={unit} lang={lang}/></p>}
-        <a class="featured-link" href={foodPath(featured.slug, region, lang)}>{t(lang, 'See quantities & instructions')}</a>
+        <a class="featured-link" data-food-link={featured.slug} data-entry-point="featured" data-category={featured.category} href={foodPath(featured.slug, region, lang)}>{t(lang, 'See quantities & instructions')}</a>
       </section>}
       <section class="kitchen-tip"><h2>{t(lang, 'Before switching on')}</h2><p>{t(lang, 'Check preparation, ingredients and tools first. Marinating, hob cooking and resting are shown separately from each batch’s air-frying time.')}</p><a href={localizedPath('/methodology', lang)}>{t(lang, 'How to use these guides')}</a></section>
       <p class="source-note">{t(lang, 'Reference guides with linked sources. No claim of kitchen testing by this site.')}</p>

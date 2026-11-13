@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-13",
+  "branch": "codex/airfryer-analytics-v2",
+  "productionBase": "b6807baadf222ab730d7de8920b0677677197c46",
+  "astroCheck": {
+    "files": 60,
+    "errors": 0,
+    "warnings": 0,
+    "hints": 0
+  },
+  "unitTests": 15,
+  "build": {
+    "pages": 152,
+    "sitemapUrls": 150,
+    "productionMetadataCheck": "passed; restored noindex and disabled-analytics preview"
+  },
+  "analyticsBrowser": {
+    "checks": [
+      "unconsented reading is not replayed; direct recipe visits and post-consent instruction reading are recorded",
+      "stored consent resolves the URL condition before logging the first guide view",
+      "typing, submit and click share one search intent; all selection entrances are measured without raw query text",
+      "language event is single and keeps current/target language separate; no-op preference clicks do not inflate counts",
+      "background or off-screen time cannot qualify; revocation stops observers, timers and subsequent events",
+      "withdrawal in another tab cancels pending navigation before destination delivery",
+      "clearing all local preferences in another tab returns analytics to opt-in",
+      "storage-blocked navigation uses a bounded fallback and still opens the requested language",
+      "sources are auxiliary interactions; only source hostname/role is sent",
+      "copied production identifiers on a Vercel alias never enable collection"
+    ],
+    "errors": []
+  },
+  "realSdk": {
+    "source": "Local build served at canonical origin; real Google SDK, collection transport intercepted before network dispatch.",
+    "eventCounts": {
+      "page_view": 5,
+      "airfryer_guide_view": 3,
+      "airfryer_section_view": 6,
+      "airfryer_guide_engaged": 1,
+      "unit_change": 1,
+      "language_change": 1,
+      "airfryer_source_open": 1,
+      "airfryer_list_view": 1,
+      "food_search": 1,
+      "food_select": 1
+    },
+    "errors": [],
+    "collectionTransport": "intercepted before dispatch",
+    "ingestionVerified": false
+  },
+  "regression": {
+    "functionalGroups": 8,
+    "languageGroups": 8,
+    "regionalGroups": 9,
+    "languageUnitPages": 244,
+    "responsiveLayouts": 48
+  },
+  "accountConfiguration": "pending: user asked to wait for concurrent GA4 conversation",
+  "productionDeployed": false
+}

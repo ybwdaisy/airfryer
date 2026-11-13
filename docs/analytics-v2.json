@@ -1,0 +1,79 @@
+{
+  "version": 2,
+  "propertyId": "494048879",
+  "streamId": "16326517771",
+  "measurementId": "G-B34CBGW0EF",
+  "origin": "https://airfryer.ybwdaisy.com",
+  "backendStatus": "pending: user requested waiting for concurrent Chrome/GA4 work",
+  "keyEvent": {
+    "name": "airfryer_guide_engaged",
+    "meaning": "Visible instruction reading for 10 foreground seconds; not cooking success",
+    "countingMethod": "ONCE_PER_SESSION"
+  },
+  "segment": {
+    "scope": "event",
+    "all": [
+      {
+        "dimension": "hostName",
+        "operator": "EXACT",
+        "value": "airfryer.ybwdaisy.com"
+      },
+      {
+        "dimension": "contentGroup",
+        "operator": "FULL_REGEXP",
+        "value": "^airfryer_(cn|us)_(en|zh)_(c|f)$"
+      }
+    ]
+  },
+  "customDimensions": [
+    "food_collection",
+    "ui_language",
+    "measurement_units",
+    "food_slug",
+    "condition",
+    "entry_point",
+    "section"
+  ],
+  "funnels": [
+    {
+      "name": "目录到阅读",
+      "open": false,
+      "indirectSteps": true,
+      "maxStepMinutes": 30,
+      "events": [
+        "airfryer_list_view",
+        "airfryer_guide_view",
+        "airfryer_guide_engaged"
+      ]
+    },
+    {
+      "name": "搜索到阅读",
+      "open": false,
+      "indirectSteps": true,
+      "maxStepMinutes": 30,
+      "events": [
+        "food_search",
+        "food_select",
+        "airfryer_guide_view",
+        "airfryer_guide_engaged"
+      ]
+    },
+    {
+      "name": "菜谱阅读（含直达）",
+      "open": false,
+      "indirectSteps": true,
+      "maxStepMinutes": 30,
+      "events": [
+        "airfryer_guide_view",
+        "airfryer_guide_engaged"
+      ]
+    }
+  ],
+  "savedReports": [],
+  "productionDeployed": false,
+  "ingestionVerified": false,
+  "optionalReuseDimensions": [
+    "qa_traffic"
+  ],
+  "contentGroupFallback": "Built-in Content group exposes the eight collection/language/unit combinations without waiting for new custom dimensions."
+}

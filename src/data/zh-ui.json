@@ -197,5 +197,7 @@
   "Wings, sweet potato, mantou, egg tarts": "鸡翅、红薯、馒头片、蛋挞",
   "The China wing and rib guides use 75°C for at least 30 seconds, with sourced household-observation guidance when no thermometer is available. The table below is the US FoodSafety.gov reference; each recipe states its applicable check.": "中国集合鸡翅与小排采用中心75°C并保持至少30秒；没有温度计时，菜谱提供有出处的家庭观察方法及其局限。下表为美国FoodSafety.gov参考，各菜谱单独说明适用的完成检查。",
   "Equivalent temperature (display only)": "等值温度（仅供对照）",
-  "Show the original setting": "查看原始温度档位"
+  "Show the original setting": "查看原始温度档位",
+  "When accepted, Google Analytics measures visits, food discovery, preference changes and visible reading of recipe sections. We send counts and predefined food identifiers, never raw search text. Analytics page addresses use canonical paths without queries; unknown addresses are grouped under the error page.": "允许后，Google Analytics 会统计访问、查找食物、偏好切换及菜谱内容进入视口后的阅读情况。仅发送计数和预定义食物标识，不发送原始搜索词。统计地址使用不含查询参数的规范路径，未知地址统一归入错误页。",
+  "After you allow analytics, a pending navigation event may stay in the current tab for up to 30 seconds to connect a page change. It contains no search text and is cleared when you withdraw consent.": "允许统计后，部分跳转记录会在当前标签页短暂保留，最长30秒，避免页面切换漏记。记录不含搜索词，撤回授权后会清理。"
 }

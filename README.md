@@ -33,6 +33,8 @@ The supplied dedicated stream is `16326517771`, with public measurement ID `G-B3
 
 The build enables analytics only for `VERCEL_ENV=production`. Optional Google tags load only after a user grants consent, and can be rejected or withdrawn. Events include collection, language and measurement preferences. Page-location values omit queries, and raw search text is not sent. Cookies are explicitly scoped to the tool hostname; preference storage is origin-local. Analytics is off in local and preview builds. See [deployment steps](docs/deployment.md) for the required GA4 property configuration before release.
 
+新版埋点、有效阅读、QA隔离、漏斗与后台待执行清单见 [GA4 v2 口径](docs/analytics-v2.md)。运行 `npm run test:analytics` 验证业务触发，`npm run test:analytics-sdk` 以实际 Google SDK 检查事件包；收集请求均在派发前拦截。
+
 ## Deployment
 
 Use an independent Vercel project, the Astro preset, `npm run build`, and output `dist`. Connect only `airfryer.ybwdaisy.com`, using the DNS records Vercel actually returns. Production release follows preview acceptance. No wildcard DNS or parent-domain redirect is needed.
