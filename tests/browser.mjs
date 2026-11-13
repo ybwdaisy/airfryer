@@ -1,3 +1,4 @@
+import {analyticsOrigin,serveAnalyticsOrigin} from './analytics-fixture.mjs';
 import { chromium, expect } from '@playwright/test';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
@@ -94,16 +95,8 @@ try {
     const p = await c.newPage();
     let requests = 0;
     await c.route(/googletagmanager\.com|google-analytics\.com/, route => { requests++; return route.fulfill({ contentType: 'text/javascript', body: '' }); });
-    // Inject the real-production public identifier into preview HTML only, intercepting every Google request.
-    await c.route(`${base}/**`, async route => {
-      const response = await route.fetch();
-      if ((response.headers()['content-type'] || '').includes('text/html')) {
-        const body = (await response.text()).replace(/<meta\b[^>]*name="ga-measurement-id"[^>]*>/, '<meta name="ga-measurement-id" content="G-B34CBGW0EF">');
-        expect(body).toContain('content="G-B34CBGW0EF"');
-        await route.fulfill({ response, body });
-      } else await route.fulfill({ response });
-    });
-    await p.goto(base);
+    await serveAnalyticsOrigin(c,base);
+    await p.goto(analyticsOrigin);
     await expect(p.locator('#consent-banner')).toBeVisible();
     expect(requests).toBe(0);
     await p.locator('[data-consent="denied"]').click(); await p.reload();

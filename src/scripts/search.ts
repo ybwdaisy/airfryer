@@ -12,6 +12,19 @@ if (input && form && indexNode) {
   const list = document.querySelector('.food-rows')!;
   let category = 'all';
   let timer: ReturnType<typeof setTimeout>;
+  let analyticsTimer: ReturnType<typeof setTimeout>;
+  let lastSearch: string | null = null;
+  const emitSearch = (trigger: 'input' | 'submit' | 'selection') => {
+    const query = input.value.trim();
+    if (!query || document.visibilityState !== 'visible') return;
+    const signature = JSON.stringify([query.toLocaleLowerCase(),category]);
+    if (lastSearch === signature) return;
+    const resultCount = update();
+    const name=resultCount ? 'food_search' : 'search_no_results';
+    const params={results_count:resultCount,category,search_trigger:trigger};
+    const sent=trigger==='selection' ? window.airfryerStageSearch?.(name,params) : window.airfryerTrack?.(name,params);
+    if(sent) lastSearch=signature;
+  };
   const empty = document.querySelector<HTMLElement>('#search-empty')!;
   const count = document.querySelector('#result-count')!;
   const update = (save = true) => {
@@ -41,19 +54,27 @@ if (input && form && indexNode) {
     category = items.some(i => i.category === requested) ? requested! : 'all';
     update(false);
   };
-  input.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(() => update(), 150); });
+  input.addEventListener('input', () => {
+    clearTimeout(timer); clearTimeout(analyticsTimer);
+    timer = setTimeout(() => update(),150);
+    if (!input.value.trim()) lastSearch = null;
+    analyticsTimer = setTimeout(() => emitSearch('input'),800);
+  });
+  document.addEventListener('airfryer:consent',()=>{clearTimeout(analyticsTimer);lastSearch=null;});
   form.addEventListener('submit', e => {
-    e.preventDefault(); clearTimeout(timer);
-    const resultCount = update();
-    window.airfryerTrack?.(resultCount ? 'food_search' : 'search_no_results', { results_count: resultCount, category });
+    e.preventDefault(); clearTimeout(timer); clearTimeout(analyticsTimer);
+    update(); emitSearch('submit');
   });
   document.querySelectorAll<HTMLAnchorElement>('[data-category-filter]').forEach(link => link.addEventListener('click', e => {
     if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
-    e.preventDefault(); category = link.dataset.categoryFilter!; update();
-    window.airfryerTrack?.('category_select', { category });
+    e.preventDefault(); clearTimeout(timer); clearTimeout(analyticsTimer);
+    const previous = category; category = link.dataset.categoryFilter!; const resultCount = update();
+    if(previous !== category) window.airfryerTrack?.('category_select', {category, results_count:resultCount});
   }));
-  document.querySelector('[data-clear-search]')?.addEventListener('click', () => { input.value = ''; category = 'all'; update(); input.focus(); });
-  document.querySelectorAll<HTMLAnchorElement>('[data-food-link]').forEach(link => link.addEventListener('click', () => window.airfryerTrack?.('food_select', { food_slug: link.dataset.foodLink! })));
+  document.querySelector('[data-clear-search]')?.addEventListener('click', () => {clearTimeout(timer);clearTimeout(analyticsTimer);lastSearch=null;input.value='';category='all';update();input.focus();window.airfryerTrack?.('search_clear');});
+  document.querySelectorAll<HTMLAnchorElement>('[data-food-link]').forEach(link => link.addEventListener('click', () => {clearTimeout(analyticsTimer);emitSearch('selection');}));
   window.addEventListener('popstate', restore);
   restore();
+  form.dataset.searchReady = 'yes';
+  document.dispatchEvent(new CustomEvent('airfryer:list'));
 }
