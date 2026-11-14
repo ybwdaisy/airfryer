@@ -29,7 +29,7 @@ try {
     assert.doesNotMatch(html, /name="robots" content="noindex/);
   }
   const sitemap = await readFile('dist/sitemap.xml', 'utf8');
-  assert.equal((sitemap.match(/<loc>/g) ?? []).length, 150);
+  assert.equal((sitemap.match(/<loc>/g) ?? []).length, 172);
   console.log('Production output: configured GA ID, no unconditional Google tag, canonical hostname and crawl settings verified. No page opened and no analytics sent.');
 } finally {
   // Keep ordinary local preview output untracked and noindex, even if a production check fails.
