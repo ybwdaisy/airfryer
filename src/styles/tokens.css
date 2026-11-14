@@ -1,5 +1,6 @@
 :root {
   color-scheme: light;
+  --text-metric: 1.625rem; --text-metric-large: 3rem;
   --space-3xs: 2px; --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px; --space-md: 16px; --space-lg: 24px; --space-xl: 40px; --space-2xl: 64px; --space-3xl: 96px; --space-4xl: 144px;
   --text-xs: 0.75rem; --text-sm: 0.875rem; --text-md: 1rem; --text-lg: 1.2rem; --text-xl: 1.44rem; --text-2xl: 1.728rem; --text-3xl: 2.074rem;
   --text-display-s: 1.44rem; --text-display: 1.728rem; --text-section: 1.2rem; --text-title: 1rem; --text-lead: 1rem;
@@ -12,7 +13,7 @@
   --color-ink: oklch(25.5% 0.025 50); --color-ink-2: oklch(39% 0.023 50); --color-muted: oklch(48.5% 0.02 50);
   --color-rule: oklch(88.5% 0.014 75);
   --color-accent: oklch(52.5% 0.18 26); --color-accent-ink: oklch(99% 0.005 80); --color-focus: oklch(52% 0.18 26);
-  --color-accent-soft: oklch(95% 0.025 28); --color-accent-deep: oklch(42% 0.15 26); --color-field-border: oklch(65% 0.018 65);
+  --color-accent-soft: oklch(95% 0.025 28); --color-accent-deep: oklch(42% 0.15 26); --color-field-border: oklch(60% 0.018 65);
   --color-gold: oklch(74% 0.14 75); --color-gold-2: oklch(84% 0.11 80); --color-slot: var(--color-gold);
   --font-display: "DM Sans", ui-sans-serif, system-ui, sans-serif; --font-body: "DM Sans", ui-sans-serif, system-ui, sans-serif;
   --font-chinese: "DM Sans", "PingFang SC", "Microsoft YaHei", sans-serif;

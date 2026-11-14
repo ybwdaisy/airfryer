@@ -199,5 +199,13 @@
   "Equivalent temperature (display only)": "等值温度（仅供对照）",
   "Show the original setting": "查看原始温度档位",
   "When accepted, Google Analytics measures visits, food discovery, preference changes and visible reading of recipe sections. We send counts and predefined food identifiers, never raw search text. Analytics page addresses use canonical paths without queries; unknown addresses are grouped under the error page.": "允许后，Google Analytics 会统计访问、查找食物、偏好切换及菜谱内容进入视口后的阅读情况。仅发送计数和预定义食物标识，不发送原始搜索词。统计地址使用不含查询参数的规范路径，未知地址统一归入错误页。",
-  "After you allow analytics, a pending navigation event may stay in the current tab for up to 30 seconds to connect a page change. It contains no search text and is cleared when you withdraw consent.": "允许统计后，部分跳转记录会在当前标签页短暂保留，最长30秒，避免页面切换漏记。记录不含搜索词，撤回授权后会清理。"
+  "After you allow analytics, a pending navigation event may stay in the current tab for up to 30 seconds to connect a page change. It contains no search text and is cleared when you withdraw consent.": "允许统计后，部分跳转记录会在当前标签页短暂保留，最长30秒，避免页面切换漏记。记录不含搜索词，撤回授权后会清理。",
+  "Try:": "试试：",
+  "Clear search": "清空搜索",
+  "Search all categories": "在全部分类中搜索",
+  "Matches exist in another category.": "其他分类里有匹配的食物。",
+  "Wings": "鸡翅",
+  "Sweet potato": "红薯",
+  "Fries": "薯条",
+  "Salmon": "三文鱼"
 }

@@ -28,20 +28,21 @@ const breadcrumb = [{name: categoryName, path: categoryPath(food.category, regio
       <div class="detail-grid"><div class="cooking-guidance">
         <h2 id={`condition-${variant.id}`}><Measure text={variant.label} unit={unit} lang={lang}/></h2>
         <p class="portion"><Measure text={variant.portion} unit={unit} lang={lang}/></p>
-        <section class="before-start" data-recipe-section="preparation"><h3>{t(lang, 'Before you start')}</h3>
-          {variant.needsHob && <p class="notice dependency-note">{t(lang, 'This recipe needs a hob and pan; an air fryer alone is not enough.')}</p>}
-          {variant.advancePreparation && <p class="advance-preparation"><Measure text={variant.advancePreparation} unit={unit} lang={lang}/></p>}
-          {variant.requiresThermometer && <p class="equipment-note">{t(lang, 'Have a food thermometer ready; this guide uses it to confirm the finish.')}</p>}
-          {variant.historical && <p class="notice">{t(lang, 'Preserved source condition: this uses a different preparation from the recommended first option.')}</p>}
-          {variant.equipment && <div class="equipment-list"><h4>{t(lang, 'Tools')}</h4><ul>{variant.equipment.map(item => <li><Measure text={item} unit={unit} lang={lang}/></li>)}</ul></div>}
-        </section>
-        {variant.timeline && <section class="recipe-timeline" data-recipe-section="timing"><h3>{t(lang, 'Timing by stage')}</h3><dl>{variant.timeline.map(stage => <div><dt>{stage.label}</dt><dd><Measure text={stage.detail} unit={unit} lang={lang}/></dd></div>)}</dl></section>}
-        {variant.ingredients && <section class="ingredients" data-recipe-section="ingredients"><h3>{t(lang, 'Ingredients')}</h3><ul>{variant.ingredients.map(item => <li><Measure text={item} unit={unit} lang={lang}/></li>)}</ul></section>}
+        {(variant.needsHob || variant.advancePreparation) && <div class="recipe-alerts">{variant.needsHob && <p>{t(lang, 'Hob + air fryer required')}</p>}{variant.advancePreparation && <p><Measure text={variant.advancePreparation} unit={unit} lang={lang}/></p>}</div>}
         <section class="basket-settings"><h3>{t(lang, 'Air-frying stage')}</h3><dl class="cooking-values"><div><dt><span data-native-label={nativeUnit}>{t(lang, 'Air fryer setting')}</span><span data-converted-label={nativeUnit} hidden>{t(lang, 'Equivalent temperature (display only)')}</span></dt><dd data-temperature={variant.temperatureF} data-temperature-c={variant.temperatureC}>{temperature(variant.temperatureF, unit, variant.temperatureC)}</dd></div><div><dt>{t(lang, 'Time per batch')}</dt><dd>{minutes(variant.minutes)}<span> {t(lang, 'min')}</span></dd></div></dl>
           <p class="conversion-note" data-native-unit={nativeUnit} hidden={unit === nativeUnit}>{t(lang, 'Converted display only. Use a device with the recipe’s native setting; do not select the nearest notch or reuse the time at a different temperature.')} <button class="text-button" type="button" data-show-native-unit={nativeUnit}>{t(lang, 'Show the original setting')}</button></p>
           {variant.deviceNote && <p class="device-note"><Measure text={variant.deviceNote} unit={unit} lang={lang}/></p>}
           <dl class="cooking-facts"><div><dt>{t(lang, 'Preheat')}</dt><dd><Measure text={variant.preheatDetail ?? t(lang, preheatLabel(variant.preheat))} unit={unit} lang={lang}/></dd></div><div><dt>{t(lang, 'Turn or shake')}</dt><dd><Measure text={variant.turn} unit={unit} lang={lang}/></dd></div></dl>
         </section>
+        <section class="before-start" data-recipe-section="preparation"><h3>{t(lang, 'Before you start')}</h3>
+          {variant.needsHob && <p class="notice dependency-note">{t(lang, 'This recipe needs a hob and pan; an air fryer alone is not enough.')}</p>}
+          {variant.advancePreparation && <p class="advance-preparation"><Measure text={variant.advancePreparation} unit={unit} lang={lang}/></p>}
+          {variant.requiresThermometer && <p class="equipment-note">{t(lang, 'Have a food thermometer ready; this guide uses it to confirm the finish.')}</p>}
+          {variant.historical && <p class="notice">{t(lang, 'Preserved source condition: this uses a different preparation from the recommended first option.')}</p>}
+          {variant.equipment && <details class="equipment-list"><summary><h4>{t(lang, 'Tools')}</h4></summary><ul>{variant.equipment.map(item => <li><Measure text={item} unit={unit} lang={lang}/></li>)}</ul></details>}
+        </section>
+        {variant.timeline && <section class="recipe-timeline" data-recipe-section="timing"><h3>{t(lang, 'Timing by stage')}</h3><dl>{variant.timeline.map(stage => <div><dt>{stage.label}</dt><dd><Measure text={stage.detail} unit={unit} lang={lang}/></dd></div>)}</dl></section>}
+        {variant.ingredients && <section class="ingredients" data-recipe-section="ingredients"><h3>{t(lang, 'Ingredients')}</h3><ul>{variant.ingredients.map(item => <li><Measure text={item} unit={unit} lang={lang}/></li>)}</ul></section>}
         <section class="instructions" data-recipe-section="instructions"><h3>{t(lang, 'Step by step')}</h3><ol>{variant.steps.map(step => <li><Measure text={step} unit={unit} lang={lang}/></li>)}</ol></section>
         {variant.completion && <section class="completion-check" data-recipe-section="completion"><h3>{t(lang, 'How to check it is ready')}</h3><p><Measure text={variant.completion} unit={unit} lang={lang}/></p></section>}
         {variant.withoutThermometer && <section class="without-thermometer" data-recipe-section="without_thermometer"><h3>{t(lang, 'Without a food thermometer')}</h3><p><Measure text={variant.withoutThermometer} unit={unit} lang={lang}/></p><a href="https://www.gov.uk/government/publications/cooking-your-food/cooking-your-food">{t(lang, 'Household checks: UK Food Standards Agency')}</a></section>}

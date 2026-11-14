@@ -29,14 +29,16 @@ const index = collection.map(f => ({ slug: f.slug, name: localizeFood(f, lang).n
         <div class="search-controls"><div class="input-wrap">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="7.5"/><path d="m16 16 5 5"/></svg>
           <input id="search-input" name="q" type="search" placeholder={t(lang, region === 'cn' ? 'Wings, sweet potato, mantou, egg tarts' : 'Chicken wings, broccoli, frozen fries')} autocomplete="off" maxlength="120" aria-describedby="search-help"/>
-        </div><button class="button" type="submit">{t(lang, 'Find times')}</button></div>
+        <button class="search-clear" type="button" data-clear-query aria-label={t(lang, 'Clear search')} hidden><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><button class="button" type="submit">{t(lang, 'Find times')}</button></div>
         <p class="field-help" id="search-help">{t(lang, 'Search by name or choose a category below.')}</p>
+      <div class="search-examples js-only" hidden><span>{t(lang, 'Try:')}</span>{(region === 'cn' ? ['Wings', 'Sweet potato', 'Fries'] : ['Wings', 'Salmon', 'Fries']).map(term => <button type="button" data-search-example={t(lang, term)}>{t(lang, term)}</button>)}</div>
       </form>
       <nav class="category-filter" aria-label={t(lang, 'Food categories')}>
         <a href={regionHome(region, lang)} data-category-filter="all" aria-current="page">{t(lang, 'All foods')}</a>
         {categories.map(c => <a href={categoryPath(c.slug, region, lang)} data-category-filter={c.slug}>{c.short}</a>)}
       </nav>
       <div class="results-heading"><h2 id="results-title">{t(lang, 'Cooking guides')}</h2><p id="result-count" role="status" aria-live="polite">{resultLabel(displayFoods.length, false, lang)}</p></div>
+      <p class="search-scope-note" data-category-search-hint hidden>{t(lang, 'Matches exist in another category.')} <button class="text-button" data-reset-category type="button">{t(lang, 'Search all categories')}</button></p>
       <FoodList lang={lang} region={region} foods={displayFoods} searchable/>
       <noscript><p class="notice">{t(lang, 'Live search needs JavaScript. You can browse every guide below or use the category links.')}</p></noscript>
       <p class="list-note">{t(lang, 'Each time applies to the starting condition shown. Open a guide for quantities and source notes.')}</p>
