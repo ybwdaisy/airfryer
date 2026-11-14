@@ -14,6 +14,7 @@ export const variantSchema = z.object({
   temperatureF: z.number().min(200).max(500),
   temperatureC: z.number().min(80).max(250).optional(),
   minutes: z.tuple([z.number().positive().max(180), z.number().positive().max(180)]),
+  cookingPhases: z.array(z.object({temperatureC: z.number().min(80).max(200), minutes: z.tuple([z.number().positive().max(180), z.number().positive().max(180)])})).min(2).max(4).optional(),
   portion: z.string().min(12), preheat: z.enum(['yes', 'no', 'unspecified']),
   turn: z.string().min(3), steps: z.array(z.string().min(8)).min(2).max(12),
   notes: z.array(z.string()), sources: z.array(sourceSchema).min(2),
@@ -31,6 +32,10 @@ export const variantSchema = z.object({
   safetyOverride: z.object({ text: z.string().min(12), url: z.url().startsWith('https://') }).optional(),
 }).superRefine((v, ctx) => {
   if (v.minutes[0] > v.minutes[1]) ctx.addIssue({ code: 'custom', message: 'Time range is reversed' });
+  if (v.cookingPhases) {
+    if (v.temperatureC !== v.cookingPhases[0].temperatureC || v.cookingPhases.some(p => p.minutes[0] > p.minutes[1]) || [0,1].some(i => v.cookingPhases!.reduce((sum,p) => sum+p.minutes[i],0) !== v.minutes[i]))
+      ctx.addIssue({ code: 'custom', message: 'Cooking phases must start at the displayed setting and sum to the air-frying time' });
+  }
   if (v.sources.filter(s => s.role === 'reference').length !== 1)
     ctx.addIssue({ code: 'custom', message: 'Exactly one reference source is required' });
   if (new Set(v.sources.map(s => s.url)).size < 2 || new Set(v.sources.map(s => s.publisher.toLowerCase().trim())).size < 2)

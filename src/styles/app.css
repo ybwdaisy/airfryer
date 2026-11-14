@@ -425,7 +425,7 @@ html[lang='zh-CN'] .food-name > span { line-height: 1.5; }
   .category-filter { margin-block: var(--space-md); }
   .input-wrap { padding-left: var(--space-xs); gap: var(--space-2xs); }
   .search-clear { flex-basis: 32px; min-height: 44px; }
-  .food-row { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 20px; grid-template-areas: 'name name next' 'temp time next'; gap: var(--space-md) var(--space-sm); padding-block: var(--space-lg); }
+  .food-row { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr) 20px; grid-template-areas: 'name name next' 'temp time next'; gap: var(--space-md) var(--space-sm); padding-block: var(--space-lg); }
   .food-name { grid-area: name; }
   .food-name > span { font-size: var(--text-lg); }
   .food-name small { font-size: var(--text-sm); }
@@ -440,3 +440,11 @@ html[lang='zh-CN'] .food-name > span { line-height: 1.5; }
   .recipe-timeline dl > div + div { border-left: 0; border-top: 1px solid var(--color-rule); }
   .detail-sidebar { grid-template-columns: minmax(0, 1fr); }
 }
+
+/* Explicit stages use the same measurement surfaces as single-stage guides. */
+.row-phases { display: flex; flex-direction: column; gap: var(--space-xs); font-size: var(--text-lg); }
+.row-phases small { font-size: var(--text-sm); color: var(--color-muted); }
+.setting-stage > h4 { margin: var(--space-md) 0 var(--space-xs); font-size: var(--text-md); }
+.phase-total { margin-block: var(--space-sm) var(--space-md); font-weight: 600; }
+
+.row-time .metric-label, .row-temperature .metric-label { white-space: normal; }

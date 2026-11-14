@@ -17,7 +17,8 @@
     "test:regional": "node tests/regional-browser.mjs",
     "test:analytics": "node tests/analytics-browser.mjs",
     "test:analytics-sdk": "node tests/analytics-sdk.mjs",
-    "test:clarity": "node tests/clarity-search-browser.mjs"
+    "test:clarity": "node tests/clarity-search-browser.mjs",
+    "test:cn-expansion": "node tests/cn-expansion-browser.mjs"
   },
   "engines": {
     "node": ">=22.12.0"

@@ -38,7 +38,7 @@ test('actual bilingual catalogs reject unrelated ingredients without losing legi
  for(const lang of ['en','zh'] as const) {
   const index=(region:'cn'|'us')=>createFoodSearch(catalog.filter(f=>f.region===region).map(food=>({...food,name:lang==='zh'?copies[food.slug].name:food.name,aliases:[food.name,...food.aliases,copies[food.slug].name,...copies[food.slug].aliases]})));
   const cn=index('cn'),us=index('us');
-  for(const query of ['bacon','chips','rice'])assert.deepEqual(cn(query),[],`${lang}: ${query}`);
+  for(const query of ['bacon','chips','beetroot'])assert.deepEqual(cn(query),[],`${lang}: ${query}`);
   assert.deepEqual(us('salmon').map(f=>f.slug),['salmon']);
   assert.deepEqual(us('pizza').map(f=>f.slug),['pizza']);
   assert.equal(cn('紅薯')[0]?.slug,'cn-whole-sweet-potato');
