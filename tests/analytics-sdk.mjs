@@ -7,7 +7,7 @@ const packets=[],sdk=[],errors=[];
 const events=()=>packets.flatMap(p=>p.events);
 const count=name=>events().filter(e=>e.en===name).length;
 try {
- const c=await browser.newContext({viewport:{width:390,height:844}});
+ const c=await browser.newContext({viewport:{width:390,height:844},locale:'zh-CN'});
  await serveAnalyticsOrigin(c,base);
  // Fetch the actual public Google SDK. Block collection BEFORE dispatch, including unload beacons.
  await c.route(/google-analytics\.com|googleadservices\.com|doubleclick\.net/,async route=>{
@@ -23,17 +23,16 @@ try {
  await p.locator('[data-consent=denied]').click();await p.reload();await expect(p.locator('#consent-banner')).toBeHidden();expect(sdk).toHaveLength(0);expect(packets).toHaveLength(0);
  await p.locator('[data-privacy-settings]').click();await p.locator('[data-consent=granted]').click();await expect.poll(()=>count('page_view'),{timeout:20000}).toBe(1);await expect.poll(()=>count('airfryer_guide_view'),{timeout:15000}).toBe(1);
  await p.locator('.instructions').scrollIntoViewIfNeeded();await expect.poll(()=>count('airfryer_guide_engaged'),{timeout:18000}).toBe(1);
- await p.locator('[data-unit=f]').click();await expect.poll(()=>count('unit_change'),{timeout:10000}).toBe(1);
- await p.locator('[data-language-switch=en]').click();await expect.poll(()=>count('language_change'),{timeout:10000}).toBe(1);await expect.poll(()=>count('page_view'),{timeout:15000}).toBe(2);
- await p.locator('.source-entry summary').first().click();await expect.poll(()=>count('airfryer_source_open'),{timeout:10000}).toBe(1);
+ await p.locator('[data-kitchen-settings]').click();await p.locator('[name=preset]').selectOption('us');await p.locator('[name=language]').selectOption('en');await p.locator('#kitchen-settings').evaluate(f=>f.requestSubmit());await expect.poll(()=>count('unit_change'),{timeout:10000}).toBe(1);await expect.poll(()=>count('language_change'),{timeout:10000}).toBe(1);await expect(p).toHaveURL(analyticsOrigin+'/settings');
+ await p.goto(analyticsOrigin+'/china/foods/cn-orleans-wings');await expect(p.locator('[data-compatible-body]')).toBeHidden();await p.locator('.source-entry summary').first().click();await expect.poll(()=>count('airfryer_source_open'),{timeout:10000}).toBe(1);
  await p.goto(analyticsOrigin+'/not-found-'+privateMarker);await expect.poll(()=>events().some(e=>e.en==='page_view'&&e.dl===analyticsOrigin+'/404'),{timeout:15000}).toBe(true);
- await p.goto(analyticsOrigin+'/china');await expect.poll(()=>count('airfryer_list_view'),{timeout:15000}).toBe(1);await p.locator('#search-input').fill('Orleans');await p.locator('.food-rows [data-food-link=cn-orleans-wings]').click();await expect.poll(()=>count('food_select'),{timeout:15000}).toBe(1);await expect.poll(()=>count('food_search'),{timeout:15000}).toBe(1);
+ await p.goto(analyticsOrigin+'/china');await expect.poll(()=>count('airfryer_list_view'),{timeout:15000}).toBe(1);await p.locator('#search-input').fill('wings');await p.locator('.food-rows [data-food-link=chicken-wings]').click();await expect.poll(()=>count('food_select'),{timeout:15000}).toBe(1);await expect.poll(()=>count('food_search'),{timeout:15000}).toBe(1);
  const core=events().filter(e=>['page_view','airfryer_guide_view','airfryer_guide_engaged','unit_change','language_change','airfryer_source_open','food_select','food_search'].includes(e.en));
  expect(core.length).toBeGreaterThanOrEqual(8);
- for(const e of core){expect(e.tid).toBe('G-B34CBGW0EF');expect(e.cg1 ?? e['ep.content_group']).toBe('airfryer_qa');expect(e['ep.tool_id']).toBe('airfryer');expect(e['ep.analytics_version']).toBe('2');expect(e['ep.qa_traffic']).toBe('yes');expect(e.dl).not.toContain('?');expect(e['ep.ui_language']).toMatch(/^(zh|en)$/);expect(e['ep.food_collection']).toBe('cn');}
+ for(const e of core){expect(e.tid).toBe('G-B34CBGW0EF');expect(e.cg1 ?? e['ep.content_group']).toBe('airfryer_qa');expect(e['ep.tool_id']).toBe('airfryer');expect(e['ep.analytics_version']).toBe('2');expect(e['ep.qa_traffic']).toBe('yes');expect(e.dl).not.toContain('?');expect(e['ep.ui_language']).toMatch(/^(zh|en)$/);expect(e['ep.food_collection']).toMatch(/^(cn|us)$/);}
  expect(JSON.stringify({packets,sdk})).not.toMatch(/private-sdk-check|%40example|q=private/);
  await p.locator('[data-privacy-settings]').click();await p.locator('[data-consent=denied]').click();const before=packets.length;
- await p.locator('[data-unit=c]').click();await p.locator('.instructions').scrollIntoViewIfNeeded();await expect(p.locator('#google-analytics-tag')).toHaveCount(0);
+ await p.locator('[data-kitchen-settings]').click();await p.locator('[name=preset]').selectOption('metric');await p.locator('#kitchen-settings').evaluate(f=>f.requestSubmit());await p.goto(analyticsOrigin+'/china/foods/cn-orleans-wings');await p.locator('.instructions').scrollIntoViewIfNeeded();await expect(p.locator('#google-analytics-tag')).toHaveCount(0);
  // Use real wall-clock time to include the SDK's own batching timers after withdrawal.
  await new Promise(resolve=>setTimeout(resolve,2500));expect(packets.length).toBe(before);
  expect(errors).toEqual([]);await mkdir('output/analytics-v2',{recursive:true});await writeFile('output/analytics-v2/real-sdk.json',JSON.stringify({checkedAt:new Date().toISOString(),source:'Local build served at canonical origin; real Google SDK, collection transport intercepted before network dispatch.',sdk,counts:Object.fromEntries([...new Set(events().map(e=>e.en).filter(Boolean))].map(n=>[n,count(n)])),packets,errors,ingestionVerified:false},null,2));

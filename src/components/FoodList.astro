@@ -1,21 +1,22 @@
 ---
+import {nativeUnit} from '../lib/kitchen';
 import type { Food } from '../lib/schema';
 import { temperature, minutes } from '../lib/format';
 import { t } from '../lib/i18n';
 import { type Language } from '../lib/locale';
 import Measure from './Measure.astro';
-import { foodPath, defaultUnit, type Region } from '../lib/region';
+import { foodPath, type Region } from '../lib/region';
 interface Props { foods: Food[]; searchable?: boolean; lang?: Language; region?: Region }
-const { foods, searchable = false, lang = 'en', region = 'us' } = Astro.props;
-const unit = defaultUnit(region);
+const { foods, searchable = false, lang = 'en' } = Astro.props;
 ---
 <div class="food-list" data-food-list>
   <div class="list-head" aria-hidden="true"><span>{t(lang, 'Food & starting condition')}</span><span>{t(lang, 'Temp')}</span><span>{t(lang, 'Time')}</span><span></span></div>
   <ul class="food-rows">
     {foods.map(food => {
       const variant = food.variants[0];
-      return <li data-food-row data-slug={food.slug} data-category={food.category}>
-        <a href={foodPath(food.slug, region, lang)} class="food-row" data-food-link={food.slug}>
+      const unit = nativeUnit(variant);
+      return <li data-food-row data-slug={food.slug} data-category={food.category} data-recipe-unit={nativeUnit(variant)}>
+        <a href={foodPath(food.slug, food.region, lang)} class="food-row" data-food-link={food.slug}>
           <div class="food-name"><span>{food.name}</span><small><Measure text={variant.label} unit={unit} lang={lang}/></small>{variant.needsHob && <small class="preparation-tag">{t(lang, 'Hob + air fryer required')}</small>}{variant.advancePreparation && <small class="preparation-tag"><Measure text={variant.advancePreparation} unit={unit} lang={lang}/></small>}</div>
           <div class="row-temperature"><small class="metric-label">{t(lang, variant.cookingPhases ? 'Stage settings' : 'Temperature')}</small>{variant.cookingPhases ? <div class="row-phases">{variant.cookingPhases.map((phase,i) => <span><small>{i+1}.</small> <span data-temperature={phase.temperatureC*9/5+32} data-temperature-c={phase.temperatureC}>{temperature(phase.temperatureC*9/5+32,unit,phase.temperatureC)}</span></span>)}</div> : <span data-temperature={variant.temperatureF} data-temperature-c={variant.temperatureC}>{temperature(variant.temperatureF, unit, variant.temperatureC)}</span>}</div>
           <div class="row-time"><small class="metric-label">{t(lang, variant.cookingPhases ? 'Total air-frying time' : 'Cooking time')}</small><span>{minutes(variant.minutes)} <small>{t(lang, 'min')}</small></span></div>

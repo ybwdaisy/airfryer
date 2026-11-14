@@ -12,17 +12,16 @@ export function regionFromPath(path: string): Region {
   return 'us';
 }
 
-export function regionHome(region: Region, lang: Language): string {
-  if (region === 'cn') return lang === 'zh' ? '/zh' : '/china';
-  return lang === 'zh' ? '/zh/us' : '/';
+export function regionHome(_region: Region, lang: Language): string {
+  return lang === 'zh' ? '/zh' : '/';
 }
 
 export function foodPath(slug: string, region: Region, lang: Language): string {
   return localizedPath(`${region === 'cn' ? '/china' : ''}/foods/${slug}`, lang);
 }
 
-export function categoryPath(slug: string, region: Region, lang: Language): string {
-  return localizedPath(`${region === 'cn' ? '/china' : ''}/categories/${slug}`, lang);
+export function categoryPath(slug: string, _region: Region, lang: Language): string {
+  return localizedPath(`/categories/${slug}`, lang);
 }
 
 export function switchLanguagePath(path: string, region: Region, lang: Language): string {

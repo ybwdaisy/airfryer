@@ -40,6 +40,6 @@ test('language paths preserve page, search state and anchors without double-pref
   assert.equal(languageFromPath('/zh/foods/fish-sticks'),'zh');
   assert.equal(languageFromPath('/foods/fish-sticks'),'en');
   assert.equal(languageFromPath('/zhang'),'en');
-  assert.equal(resultLabel(1,true,'en'),'1 food found');
-  assert.equal(resultLabel(0,true,'zh'),'0 种食物符合条件');
+  assert.equal(resultLabel(1,true,'en'),'1 recipe found');
+  assert.equal(resultLabel(0,true,'zh'),'0 道做法符合条件');
 });

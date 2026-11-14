@@ -1,18 +1,18 @@
 ---
 import { t, localizeFood, localizedCategories } from '../../lib/i18n';
-import { type Language } from '../../lib/locale';
+import { localizedPath, type Language } from '../../lib/locale';
 import { regionHome, foodPath, categoryPath, defaultUnit } from '../../lib/region';
 import Layout from '../../layouts/Layout.astro';
 import FoodList from '../FoodList.astro';
 import Measure from '../Measure.astro';
-import { foodsForRegion } from '../../lib/foods';
+import { libraryFoods } from '../../lib/foods';
 import { temperature, minutes, preheatLabel, safetyGuides, safetySource } from '../../lib/format';
 const lang: Language = Astro.props.lang ?? 'en';
 const food = localizeFood(Astro.props.food, lang);
 const region = food.region;
 const unit = defaultUnit(region);
 const categoryName = localizedCategories(lang, region).find(c => c.slug === food.category)!.name;
-const related = foodsForRegion(region).filter(f => f.category === food.category && f.slug !== food.slug).slice(0, 4).map(f => localizeFood(f, lang));
+const related = libraryFoods.filter(f => f.category === food.category && f.slug !== food.slug).map(f => localizeFood(f, lang));
 const breadcrumb = [{name: categoryName, path: categoryPath(food.category, region, lang)}, {name: food.name, path: foodPath(food.slug, region, lang)}];
 ---
 <Layout lang={lang} region={region} title={lang === 'zh' ? `${food.name}空气炸锅时间与温度 | Airfryer times` : `${food.name} air fryer time & temperature | Airfryer times`} description={food.description} breadcrumbs={breadcrumb}>
@@ -24,13 +24,14 @@ const breadcrumb = [{name: categoryName, path: categoryPath(food.category, regio
     const safetyUrl = variant.safetyOverride?.url ?? safetySource;
     const sourcesAnchor = variant.id === food.variants[0].id ? 'sources' : `sources-${variant.id}`;
     const nativeUnit = variant.temperatureC === undefined ? 'f' : 'c';
-    return <section class="variant-panel" data-variant-panel={variant.id} aria-labelledby={`condition-${variant.id}`}>
-      <div class="detail-grid"><div class="cooking-guidance">
+    return <section class="variant-panel" data-recipe-unit={nativeUnit} data-variant-panel={variant.id} aria-labelledby={`condition-${variant.id}`}>
+      <div class="kitchen-mismatch" data-unsupported-note hidden><h2>{t(lang,'No matching method for your kitchen yet')}</h2><p>{t(lang, nativeUnit === 'c' ? 'This reference uses Celsius settings.' : 'This reference uses Fahrenheit settings.')} {t(lang,'This exact preparation is only sourced in the other temperature scale. We have not converted its setting or reused its time.')}</p><a href={`${regionHome(region,lang)}?q=${encodeURIComponent(food.name)}`}>{t(lang,'Find another recipe')}</a> <a href={localizedPath('/settings',lang)}>{t(lang,'Kitchen settings')}</a></div>
+      <div class="detail-grid" data-compatible-body><div class="cooking-guidance">
         <h2 id={`condition-${variant.id}`}><Measure text={variant.label} unit={unit} lang={lang}/></h2>
         <p class="portion"><Measure text={variant.portion} unit={unit} lang={lang}/></p>
         {(variant.needsHob || variant.advancePreparation) && <div class="recipe-alerts">{variant.needsHob && <p>{t(lang, 'Hob + air fryer required')}</p>}{variant.advancePreparation && <p><Measure text={variant.advancePreparation} unit={unit} lang={lang}/></p>}</div>}
         <section class="basket-settings"><h3>{t(lang, 'Air-frying stage')}</h3>{(variant.cookingPhases ?? [{temperatureC:variant.temperatureC,minutes:variant.minutes}]).map((phase,i) => <div class="setting-stage">{variant.cookingPhases && <h4>{t(lang,'Stage')} {i+1}</h4>}<dl class="cooking-values"><div><dt><span data-native-label={nativeUnit}>{t(lang, 'Air fryer setting')}</span><span data-converted-label={nativeUnit} hidden>{t(lang, 'Equivalent temperature (display only)')}</span></dt><dd data-temperature={phase.temperatureC === undefined ? variant.temperatureF : phase.temperatureC*9/5+32} data-temperature-c={phase.temperatureC}>{temperature(phase.temperatureC === undefined ? variant.temperatureF : phase.temperatureC*9/5+32, unit, phase.temperatureC)}</dd></div><div><dt>{t(lang, variant.cookingPhases ? 'Time for this stage' : 'Time per batch')}</dt><dd>{minutes(phase.minutes)}<span> {t(lang, 'min')}</span></dd></div></dl></div>)}{variant.cookingPhases && <p class="phase-total">{t(lang,'Total air-frying time')}: {minutes(variant.minutes)} {t(lang,'min')}</p>}
-          <p class="conversion-note" data-native-unit={nativeUnit} hidden={unit === nativeUnit}>{t(lang, 'Converted display only. Use a device with the recipe’s native setting; do not select the nearest notch or reuse the time at a different temperature.')} <button class="text-button" type="button" data-show-native-unit={nativeUnit}>{t(lang, 'Show the original setting')}</button></p>
+
           {variant.deviceNote && <p class="device-note"><Measure text={variant.deviceNote} unit={unit} lang={lang}/></p>}
           <dl class="cooking-facts"><div><dt>{t(lang, 'Preheat')}</dt><dd><Measure text={variant.preheatDetail ?? t(lang, preheatLabel(variant.preheat))} unit={unit} lang={lang}/></dd></div><div><dt>{t(lang, 'Turn or shake')}</dt><dd><Measure text={variant.turn} unit={unit} lang={lang}/></dd></div></dl>
         </section>
@@ -51,7 +52,7 @@ const breadcrumb = [{name: categoryName, path: categoryPath(food.category, regio
         <section class="safety-note"><h2>{t(lang, safetyText ? 'Check before serving' : 'Leave room for air')}</h2><p><Measure text={safetyText ?? t(lang, 'Use the preparation and quantity shown. Spread food evenly and avoid packing the basket tightly.')} unit={unit} lang={lang}/></p>{safetyText && <a href={safetyUrl}>{t(lang, 'Read the temperature guidance')}</a>}</section>
         <section class="source-summary"><h2>{t(lang, 'Where this guide comes from')}</h2><p>{t(lang, 'The reference below sets the displayed timing. A second source records comparable guidance and any differences.')}</p><a href={`#${sourcesAnchor}`}>{t(lang, 'Read the source notes')}</a></section>
       </aside></div>
-      <section class="sources" id={`sources-${variant.id}`} data-source-panel={variant.id}>{variant.id === food.variants[0].id && <span id="sources" aria-hidden="true"></span>}<h2>{t(lang, 'Source notes')}</h2><p class="section-description">{t(lang, 'Reference research, not cooking tests by this site. Reviewed')} <time datetime={food.reviewedAt}>{food.reviewedAt}</time>.</p><p class="section-description">{t(lang, 'Source excerpts retain their original units; the cooking instructions above follow your selected display units.')}</p>
+      <section class="sources" id={`sources-${variant.id}`} data-source-panel={variant.id}>{variant.id === food.variants[0].id && <span id="sources" aria-hidden="true"></span>}<h2>{t(lang, 'Source notes')}</h2><p class="section-description">{t(lang, 'Reference research, not cooking tests by this site. Reviewed')} <time datetime={food.reviewedAt}>{food.reviewedAt}</time>.</p><p class="section-description">{t(lang, 'Cooking temperatures keep their sourced scale. Ingredient measures follow your kitchen settings.')}</p>
       {variant.sources.map(source => <details class="source-entry" data-source-role={source.role}><summary><span>{source.publisher}</span><small>{t(lang, source.role === 'reference' ? 'Timing reference' : 'Cross-check')}</small></summary><div class="source-body"><a href={source.url}>{source.title}</a><p>{source.evidence}</p><p class="source-locator">{t(lang, 'Location:')} {source.locator}</p></div></details>)}
       </section>
     </section>;

@@ -7,5 +7,5 @@ export function localizedPath(path: string, language: Language): string {
   return (language === 'zh' ? `/zh${bare === '/' ? '' : bare}` : bare) + suffix;
 }
 export function resultLabel(count: number, searching: boolean, language: Language): string {
-  return language === 'zh' ? `${count} 种食物${searching ? '符合条件' : ''}` : `${count} ${count === 1 ? 'food' : 'foods'}${searching ? ' found' : ''}`;
+  return language === 'zh' ? `${count} 道做法${searching ? '符合条件' : ''}` : `${count} ${count === 1 ? 'recipe' : 'recipes'}${searching ? ' found' : ''}`;
 }

@@ -3,19 +3,19 @@ import '../styles/app.css';
 import Consent from '../components/Consent.astro';
 import { t } from '../lib/i18n';
 import { localizedPath, type Language } from '../lib/locale';
-import { regionFromPath, regionHome, regionName, defaultUnit, switchLanguagePath, type Region } from '../lib/region';
+import { regionFromPath, regionHome, defaultUnit, switchLanguagePath, type Region } from '../lib/region';
 interface Props { title: string; description: string; breadcrumbs?: { name: string; path: string }[]; noindex?: boolean; lang?: Language; region?: Region }
 const { title, description, breadcrumbs = [], noindex = false, lang = 'en' } = Astro.props;
 const lp = (path: string) => localizedPath(path, lang);
 const origin = 'https://airfryer.ybwdaisy.com';
 const cleanPath = Astro.url.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '').replace(/\/$/, '') || '/';
-const canonical = new URL(cleanPath, origin).href;
+const canonicalPath = cleanPath === '/china' ? '/' : cleanPath === '/zh/us' ? '/zh' : cleanPath.replace('/china/categories/', '/categories/');
+const canonical = new URL(canonicalPath, origin).href;
 
-const otherLanguage = lang === 'en' ? 'zh' : 'en';
 const region = Astro.props.region ?? regionFromPath(cleanPath);
 const initialUnit = defaultUnit(region);
-const englishUrl = new URL(switchLanguagePath(cleanPath, region, 'en'), origin).href;
-const chineseUrl = new URL(switchLanguagePath(cleanPath, region, 'zh'), origin).href;
+const englishUrl = new URL(switchLanguagePath(canonicalPath, region, 'en'), origin).href;
+const chineseUrl = new URL(switchLanguagePath(canonicalPath, region, 'zh'), origin).href;
 const home = regionHome(region, lang);
 const isProduction = import.meta.env.PROD && process.env.VERCEL_ENV === 'production';
 const candidate = import.meta.env.PUBLIC_GA_MEASUREMENT_ID ?? '';
@@ -67,21 +67,11 @@ const schema = breadcrumbs.length ? {
         <a href={lp('/methodology')}>{t(lang, 'Our sources')}</a>
       </nav>
       <div class="header-controls">
-      <a class="language-toggle" href={switchLanguagePath(cleanPath, region, otherLanguage)} data-language-switch={otherLanguage} data-language-path={noindex && cleanPath.endsWith('/404') ? cleanPath : undefined} hreflang={otherLanguage === 'zh' ? 'zh-CN' : 'en'} aria-label={lang === 'en' ? 'Switch to Chinese' : '切换到英文'}><span lang={otherLanguage === 'zh' ? 'zh-CN' : 'en'}>{lang === 'en' ? '中文' : 'EN'}</span></a>
-      <div class="unit-switch js-only" role="group" aria-label={t(lang, 'Measurement units')} hidden>
-        <button type="button" data-unit="f" aria-pressed={initialUnit === 'f' ? 'true' : 'false'} title={t(lang, 'Fahrenheit, ounces and inches')}>°F</button>
-        <button type="button" data-unit="c" aria-pressed={initialUnit === 'c' ? 'true' : 'false'} title={t(lang, 'Celsius, grams and centimeters')}>°C</button>
-      </div>
+      <a class="settings-link" href={lp('/settings')} data-kitchen-settings>{t(lang,'Settings')}</a>
       </div>
     </header>
-    <div class="collection-toolbar container">
-      <nav class="collection-switch" aria-label={t(lang, 'Food collection')}>
-        <span>{t(lang, 'Food collection')}</span>
-        {(['cn', 'us'] as const).map(value => <a href={regionHome(value, lang)} data-region-select={value} aria-current={region === value ? 'page' : undefined}>{regionName(value, lang)}</a>)}
-      </nav>
-      <p class="unit-caption"><span data-unit-caption="c" hidden={initialUnit !== 'c'}>{t(lang, 'Metric: °C, g, cm')}</span><span data-unit-caption="f" hidden={initialUnit !== 'f'}>{t(lang, 'US units: °F, oz, inches')}</span></p>
-    </div>
     <main id="main" class="container">
+      <noscript><p class="notice">{t(lang,'Kitchen settings need JavaScript. Without it, recipes keep their original-source units.')}</p></noscript>
       <slot />
     </main>
     <footer class="site-footer container">

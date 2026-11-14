@@ -1,100 +1,135 @@
 {
   "scanned": "2026-11-14",
-  "mode": "redesign",
-  "depth": "full",
+  "mode": "implementation within established app design",
   "scope": "app",
   "theme": "brand",
   "target": [
     "/",
     "/zh",
-    "/china",
-    "/zh/us",
+    "/settings",
+    "/zh/settings",
     "/foods/chicken-breast",
-    "/zh/china/foods/cn-orleans-wings"
+    "/zh/china/foods/cn-brown-sugar-ciba"
   ],
   "evidence": {
     "system": "src/styles/tokens.css",
-    "home": "src/components/views/Home.astro",
-    "index": "src/components/FoodList.astro",
-    "detail": "src/components/views/FoodPage.astro",
-    "search": "src/lib/food-search.ts"
+    "shell": "src/layouts/Layout.astro",
+    "settings": "src/components/views/Settings.astro",
+    "preferences": "src/lib/kitchen.ts",
+    "search": "src/scripts/search.ts",
+    "validation": "docs/kitchen-settings-2026-11-14.md"
   },
   "preserve": [
-    "warm white and red brand, DM Sans and Chinese system fonts",
-    "regional recipes, quantities, temperatures, times, sources and restrictions",
-    "routes, languages, units, consent, GA4 event names and privacy gates",
-    "keyboard operation and no-JavaScript recipe reading"
+    "warm paper, red, DM Sans and Chinese system typography",
+    "all original recipe facts, preparation conditions, source links, route identifiers and anchors",
+    "fuzzy search, categories, consent and historical analytics events",
+    "keyboard focus, mobile usability, no-JavaScript reference reading"
   ],
   "introduce": [
-    "larger food names and separate temperature/time surfaces",
-    "air-frying settings and required advance preparation before supporting details",
-    "grouped ingredients, numbered steps and native equipment disclosure",
-    "short names, synonyms, normalization, bounded English spelling tolerance, composition handling and category recovery"
+    "one saved kitchen preset and independent interface language in Settings",
+    "unified library with only verified native-scale methods actionable by default",
+    "separate discovery results for foods without a verified method in the selected scale",
+    "explicit storage-failure feedback, including language navigation"
   ],
-  "isolation": "codex/airfryer-clarity-search; review PR only, no merge or deployment",
+  "isolation": "codex/airfryer-kitchen-settings; PR for review; no production merge or deployment",
   "previous": {
-    "scanned": "2026-11-13",
-    "mode": "implementation within approved app design",
+    "scanned": "2026-11-14",
+    "mode": "redesign",
+    "depth": "full",
     "scope": "app",
+    "theme": "brand",
     "target": [
       "/",
       "/zh",
       "/china",
       "/zh/us",
       "/foods/chicken-breast",
-      "/zh/china/foods/cn-orleans-wings",
-      "/zh/china/foods/cn-garlic-ribs"
+      "/zh/china/foods/cn-orleans-wings"
     ],
     "evidence": {
-      "system": "src/styles/tokens.css:1",
-      "shell": "src/layouts/Layout.astro:1",
-      "home": "src/components/views/Home.astro:1",
-      "detail": "src/components/views/FoodPage.astro:1",
-      "data": "docs/regional-development-status.md"
+      "system": "src/styles/tokens.css",
+      "home": "src/components/views/Home.astro",
+      "index": "src/components/FoodList.astro",
+      "detail": "src/components/views/FoodPage.astro",
+      "search": "src/lib/food-search.ts"
     },
     "preserve": [
-      "approved warm-white/warm-red DM Sans and PingFang system",
-      "original US recipe condition IDs, temperatures, clocks, share links and source anchors",
-      "search, category filters, optional analytics consent, source disclosures, no-JavaScript reading and PWA icons",
-      "independent airfryer domain and origin-scoped preferences"
+      "warm white and red brand, DM Sans and Chinese system fonts",
+      "regional recipes, quantities, temperatures, times, sources and restrictions",
+      "routes, languages, units, consent, GA4 event names and privacy gates",
+      "keyboard operation and no-JavaScript recipe reading"
     ],
     "introduce": [
-      "independently researched China collection and explicit region selection",
-      "consistent measurement display across operational content without device-notch rounding",
-      "tools, ingredients, advance preparation and timelines before air-frying instructions",
-      "region-specific category copy and conversion-only labels"
+      "larger food names and separate temperature/time surfaces",
+      "air-frying settings and required advance preparation before supporting details",
+      "grouped ingredients, numbered steps and native equipment disclosure",
+      "short names, synonyms, normalization, bounded English spelling tolerance, composition handling and category recovery"
     ],
-    "isolation": "codex/airfryer-regional-app; no main merge or production release",
-    "previous_ui_preflight": {
+    "isolation": "codex/airfryer-clarity-search; review PR only, no merge or deployment",
+    "previous": {
       "scanned": "2026-11-13",
-      "mode": "redesign",
-      "depth": "restyle",
+      "mode": "implementation within approved app design",
       "scope": "app",
       "target": [
         "/",
         "/zh",
+        "/china",
+        "/zh/us",
         "/foods/chicken-breast",
-        "/zh/foods/chicken-breast"
+        "/zh/china/foods/cn-orleans-wings",
+        "/zh/china/foods/cn-garlic-ribs"
       ],
       "evidence": {
         "system": "src/styles/tokens.css:1",
         "shell": "src/layouts/Layout.astro:1",
-        "home": "src/components/views/Home.astro:20",
-        "index": "src/components/FoodList.astro:10",
-        "detail": "src/components/views/FoodPage.astro:20"
+        "home": "src/components/views/Home.astro:1",
+        "detail": "src/components/views/FoodPage.astro:1",
+        "data": "docs/regional-development-status.md"
       },
       "preserve": [
-        "all food data, recipes and disclaimers",
-        "search, filters, routes, hooks, unit/language state and consent logic",
-        "warm red brand signal and search-led tool layout"
+        "approved warm-white/warm-red DM Sans and PingFang system",
+        "original US recipe condition IDs, temperatures, clocks, share links and source anchors",
+        "search, category filters, optional analytics consent, source disclosures, no-JavaScript reading and PWA icons",
+        "independent airfryer domain and origin-scoped preferences"
       ],
       "introduce": [
-        "DM Sans variable font, self-hosted with OFL",
-        "warm-white surface, lighter rules and outlined state controls",
-        "aligned measurement columns and clearer mobile search",
-        "all mobile category links visible after independent review"
+        "independently researched China collection and explicit region selection",
+        "consistent measurement display across operational content without device-notch rounding",
+        "tools, ingredients, advance preparation and timelines before air-frying instructions",
+        "region-specific category copy and conversion-only labels"
       ],
-      "isolation": "codex/airfryer-ui-review at /private/tmp/airfryer-ui-review; no deployment or push"
+      "isolation": "codex/airfryer-regional-app; no main merge or production release",
+      "previous_ui_preflight": {
+        "scanned": "2026-11-13",
+        "mode": "redesign",
+        "depth": "restyle",
+        "scope": "app",
+        "target": [
+          "/",
+          "/zh",
+          "/foods/chicken-breast",
+          "/zh/foods/chicken-breast"
+        ],
+        "evidence": {
+          "system": "src/styles/tokens.css:1",
+          "shell": "src/layouts/Layout.astro:1",
+          "home": "src/components/views/Home.astro:20",
+          "index": "src/components/FoodList.astro:10",
+          "detail": "src/components/views/FoodPage.astro:20"
+        },
+        "preserve": [
+          "all food data, recipes and disclaimers",
+          "search, filters, routes, hooks, unit/language state and consent logic",
+          "warm red brand signal and search-led tool layout"
+        ],
+        "introduce": [
+          "DM Sans variable font, self-hosted with OFL",
+          "warm-white surface, lighter rules and outlined state controls",
+          "aligned measurement columns and clearer mobile search",
+          "all mobile category links visible after independent review"
+        ],
+        "isolation": "codex/airfryer-ui-review at /private/tmp/airfryer-ui-review; no deployment or push"
+      }
     }
   }
 }

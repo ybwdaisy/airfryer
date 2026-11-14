@@ -1,26 +1,25 @@
 ---
 import { t, localizeFood, localizedCategories, searchAliases } from '../../lib/i18n';
 import { localizedPath, resultLabel, type Language } from '../../lib/locale';
-import { regionHome, foodPath, categoryPath, defaultUnit, type Region } from '../../lib/region';
+import { regionHome, foodPath, categoryPath, type Region } from '../../lib/region';
 import Layout from '../../layouts/Layout.astro';
 import FoodList from '../FoodList.astro';
-import { foodsForRegion } from '../../lib/foods';
-import { temperature, minutes } from '../../lib/format';
 import Measure from '../Measure.astro';
+import {temperature,minutes} from '../../lib/format';
+import {nativeUnit} from '../../lib/kitchen';
+import { libraryFoods } from '../../lib/foods';
 const lang: Language = Astro.props.lang ?? 'en';
 const region: Region = Astro.props.region ?? 'us';
-const unit = defaultUnit(region);
-const collection = foodsForRegion(region);
+const collection = libraryFoods;
 const displayFoods = collection.map(f => localizeFood(f, lang));
-const categories = localizedCategories(lang, region).filter(c => collection.some(f => f.category === c.slug));
-const featured = displayFoods[0];
-const featuredVariant = featured?.variants[0];
-const index = collection.map(f => ({ slug: f.slug, name: localizeFood(f, lang).name, aliases: searchAliases(f), category: f.category }));
+const categories = localizedCategories(lang).filter(c => collection.some(f => f.category === c.slug));
+const featured=['cn-orleans-wings','chicken-wings'].map(slug=>displayFoods.find(f=>f.slug===slug)!);
+const index = collection.map(f => ({ slug: f.slug, name: localizeFood(f, lang).name, aliases: searchAliases(f), category: f.category, unit: f.variants[0].temperatureC === undefined ? 'f' : 'c', path: foodPath(f.slug,f.region,lang) }));
 ---
 <Layout lang={lang} region={region} title={t(lang, 'Air fryer cooking times & temperatures | Airfryer times')} description={t(lang, 'Find air fryer cooking times and temperatures for meat, vegetables and frozen favorites. Clear starting conditions, source links and food safety checks.')}>
   <section class="page-intro" aria-labelledby="page-title">
     <h1 id="page-title">{t(lang, 'What’s going in the air fryer?')}</h1>
-    <p>{t(lang, region === 'cn' ? 'China recipes use native Celsius methods at 200°C or below.' : 'US recipes use native Fahrenheit methods at 400°F or below.')}</p>
+    <p>{t(lang, 'Set up your kitchen once. Find a recipe and follow its sourced settings.')}</p>
   </section>
   <div class="workbench">
     <section class="search-workspace" aria-label={t(lang, 'Find a food')}>
@@ -28,30 +27,28 @@ const index = collection.map(f => ({ slug: f.slug, name: localizeFood(f, lang).n
         <label for="search-input">{t(lang, 'Search a food')}</label>
         <div class="search-controls"><div class="input-wrap">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="7.5"/><path d="m16 16 5 5"/></svg>
-          <input id="search-input" name="q" type="search" placeholder={t(lang, region === 'cn' ? 'Wings, sweet potato, mantou, egg tarts' : 'Chicken wings, broccoli, frozen fries')} autocomplete="off" maxlength="120" aria-describedby="search-help"/>
+          <input id="search-input" name="q" type="search" placeholder={t(lang,'Chicken wings, broccoli, frozen fries')} autocomplete="off" maxlength="120" aria-describedby="search-help"/>
         <button class="search-clear" type="button" data-clear-query aria-label={t(lang, 'Clear search')} hidden><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><button class="button" type="submit">{t(lang, 'Find times')}</button></div>
         <p class="field-help" id="search-help">{t(lang, 'Search by name or choose a category below.')}</p>
-      <div class="search-examples js-only" hidden><span>{t(lang, 'Try:')}</span>{(region === 'cn' ? ['Wings', 'Sweet potato', 'Fries'] : ['Wings', 'Salmon', 'Fries']).map(term => <button type="button" data-search-example={t(lang, term)}>{t(lang, term)}</button>)}</div>
+      <div class="search-examples js-only" hidden><span>{t(lang, 'Try:')}</span>{(['Wings', 'Sweet potato', 'Fries']).map(term => <button type="button" data-search-example={t(lang, term)}>{t(lang, term)}</button>)}</div>
       </form>
       <nav class="category-filter" aria-label={t(lang, 'Food categories')}>
         <a href={regionHome(region, lang)} data-category-filter="all" aria-current="page">{t(lang, 'All foods')}</a>
         {categories.map(c => <a href={categoryPath(c.slug, region, lang)} data-category-filter={c.slug}>{c.short}</a>)}
       </nav>
+      <p class="kitchen-summary"><span data-kitchen-summary></span> <a href={localizedPath('/settings',lang)}>{t(lang,'Kitchen settings')}</a></p>
       <div class="results-heading"><h2 id="results-title">{t(lang, 'Cooking guides')}</h2><p id="result-count" role="status" aria-live="polite">{resultLabel(displayFoods.length, false, lang)}</p></div>
       <p class="search-scope-note" data-category-search-hint hidden>{t(lang, 'Matches exist in another category.')} <button class="text-button" data-reset-category type="button">{t(lang, 'Search all categories')}</button></p>
+
       <FoodList lang={lang} region={region} foods={displayFoods} searchable/>
+      <div class="unavailable-results" data-unavailable-results aria-live="polite" hidden><h3>{t(lang,'More matching foods')}</h3><p>{t(lang,'These foods do not yet have a verified method for your kitchen temperature scale.')}</p><ul data-unavailable-list></ul></div>
       <noscript><p class="notice">{t(lang, 'Live search needs JavaScript. You can browse every guide below or use the category links.')}</p></noscript>
       <p class="list-note">{t(lang, 'Each time applies to the starting condition shown. Open a guide for quantities and source notes.')}</p>
-      <a class="other-collection" href={regionHome(region === 'cn' ? 'us' : 'cn', lang)} data-region-select={region === 'cn' ? 'us' : 'cn'}>{t(lang, 'Browse the other collection')}</a>
+
     </section>
     <aside class="kitchen-notes">
-      {featured && featuredVariant && <section class="featured-guide" aria-labelledby="featured-title">
-        <h2 id="featured-title">{t(lang, 'Start with')}{lang === 'en' ? ' ' : ''}{featured.name.toLowerCase()}</h2>
-        <p><Measure text={featuredVariant.label} unit={unit} lang={lang}/></p>
-        <dl class="featured-values"><div><dt>{t(lang, 'Temperature')}</dt><dd data-temperature={featuredVariant.temperatureF} data-temperature-c={featuredVariant.temperatureC}>{temperature(featuredVariant.temperatureF, unit, featuredVariant.temperatureC)}</dd></div><div><dt>{t(lang, 'Cooking time')}</dt><dd>{minutes(featuredVariant.minutes)}<span> {t(lang, 'min')}</span></dd></div></dl>
-        {featuredVariant.advancePreparation && <p class="preparation-tag"><Measure text={featuredVariant.advancePreparation} unit={unit} lang={lang}/></p>}
-        <a class="featured-link" data-food-link={featured.slug} data-entry-point="featured" data-category={featured.category} href={foodPath(featured.slug, region, lang)}>{t(lang, 'See quantities & instructions')}</a>
-      </section>}
+      {featured.map(food=>{const v=food.variants[0],u=nativeUnit(v);return <section class="featured-guide" data-kitchen-featured={u} hidden={u!==(region==='cn'?'c':'f')}><h2>{t(lang,'Start with')} {food.name}</h2><p><Measure text={v.label} unit={u} lang={lang}/></p><dl class="featured-values"><div><dt>{t(lang,'Temperature')}</dt><dd data-temperature={v.temperatureF} data-temperature-c={v.temperatureC}>{temperature(v.temperatureF,u,v.temperatureC)}</dd></div><div><dt>{t(lang,'Cooking time')}</dt><dd>{minutes(v.minutes)}<span> {t(lang,'min')}</span></dd></div></dl>{v.advancePreparation&&<p class="preparation-tag"><Measure text={v.advancePreparation} unit={u} lang={lang}/></p>}<a class="featured-link" data-food-link={food.slug} data-entry-point="featured" href={foodPath(food.slug,food.region,lang)}>{t(lang,'See quantities & instructions')}</a></section>;})}
+
       <section class="kitchen-tip"><h2>{t(lang, 'Before switching on')}</h2><p>{t(lang, 'Check preparation, ingredients and tools first. Marinating, hob cooking and resting are shown separately from each batch’s air-frying time.')}</p><a href={localizedPath('/methodology', lang)}>{t(lang, 'How to use these guides')}</a></section>
       <p class="source-note">{t(lang, 'Reference guides with linked sources. No claim of kitchen testing by this site.')}</p>
     </aside>

@@ -16,10 +16,10 @@ function decimalFractions(text: string): string {
 }
 
 /** Display conversion only: never computes cooking time or chooses an appliance setting. */
-export function measureText(original: string, unit: Unit, lang: Language = 'en'): string {
+export function measureText(original: string, unit: Unit, lang: Language = 'en', preserveTemperature = false): string {
   let text = decimalFractions(original);
   // Keep the authority's published safety-temperature pair rather than rounding it again.
-  text = text.replace(/(\d+(?:\.\d+)?\s*°F)\s*[（(](\d+(?:\.\d+)?\s*°C)[）)]/g, (_, f, c) => unit === 'c' ? c : f)
+  if (!preserveTemperature) text = text.replace(/(\d+(?:\.\d+)?\s*°F)\s*[（(](\d+(?:\.\d+)?\s*°C)[）)]/g, (_, f, c) => unit === 'c' ? c : f)
     .replace(/(\d+(?:\.\d+)?\s*°C)\s*[（(](\d+(?:\.\d+)?\s*°F)[）)]/g, (_, c, f) => unit === 'c' ? c : f)
     .replace(/(\d+(?:\.\d+)?)(?:\s*[–−-]\s*(\d+(?:\.\d+)?))?\s*°([CF])/g, (_, a, b, source) => {
       const value = (n: string) => rounded(source.toLowerCase() === unit ? +n : unit === 'c' ? (+n - 32) * 5 / 9 : +n * 9 / 5 + 32);
