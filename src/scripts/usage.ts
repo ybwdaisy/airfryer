@@ -26,7 +26,7 @@ export function initUsageAnalytics(track: Track, allowed: () => boolean) {
   const sync = () => {
     if (!active || !allowed() || document.visibilityState!=='visible') return;
     const v=variant();
-    if (v && !viewed.has(v.id) && track('airfryer_guide_view',recipeParams())) viewed.add(v.id);
+    if (v && currentPanel()?.dataset.kitchenCompatible!=='false' && !viewed.has(v.id) && track('airfryer_guide_view',recipeParams())) viewed.add(v.id);
     else if (!v && !listViewed && document.querySelector('[data-food-list]')) {
       const search = document.querySelector<HTMLElement>('#food-search');
       if (search && search.dataset.searchReady !== 'yes') return;
@@ -38,7 +38,7 @@ export function initUsageAnalytics(track: Track, allowed: () => boolean) {
     const now=performance.now(), elapsed=Math.min(now-last,500);last=now;
     if(!active || !allowed() || document.visibilityState!=='visible') return;
     const v=variant(), panel=currentPanel();
-    if(!v || !panel || panel.hidden) return;
+    if(!v || !panel || panel.hidden || panel.dataset.kitchenCompatible==='false') return;
     for(const section of panel.querySelectorAll<HTMLElement>('[data-recipe-section]')) {
       const key=`${v.id}:${section.dataset.recipeSection}`;
       if(visible.has(section) && !sections.has(key) && track('airfryer_section_view',{...recipeParams(),section:section.dataset.recipeSection!})) sections.add(key);
@@ -64,6 +64,7 @@ export function initUsageAnalytics(track: Track, allowed: () => boolean) {
   const stop = () => {active=false;observer?.disconnect();observer=undefined;clearInterval(timer);timer=undefined;visible.clear();reading.clear();};
   document.addEventListener('visibilitychange',()=>{last=performance.now();if(document.visibilityState==='visible') sync();});
   document.addEventListener('airfryer:list',sync);
+  document.addEventListener('airfryer:kitchen',()=>{last=performance.now();sync();});
   document.addEventListener('airfryer:condition',()=>{last=performance.now();sync();});
   document.addEventListener('click',event=>{
     if(!(event.target instanceof Element) || !allowed()) return;

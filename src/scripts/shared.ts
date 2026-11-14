@@ -1,100 +1,52 @@
-import { temperature } from '../lib/format';
-import { measureText } from '../lib/measure';
-import type { Unit } from '../lib/schema';
-import { trackNavigation } from './track-navigation';
-import { initAnalytics } from './analytics';
-import { languageFromPath } from '../lib/locale';
-import { defaultUnit, regionHome, switchLanguagePath, type Region } from '../lib/region';
+import {temperature} from '../lib/format';
+import {measureText} from '../lib/measure';
+import {initAnalytics} from './analytics';
+import {localizedPath} from '../lib/locale';
+import {kitchenKey,presetUnit,readKitchen,unifiedHome} from '../lib/kitchen';
 
-const languageKey = 'airfryer:language:v1';
-const regionKey = 'airfryer:region:v1';
-const unitKey = 'airfryer:unit';
-const read = (key: string) => { try { return localStorage.getItem(key); } catch { return null; } };
-const save = (key: string, value: string) => { try { localStorage.setItem(key, value); } catch { /* Explicit controls work with storage disabled. */ } };
-const lang = languageFromPath(location.pathname);
-const sourceRegion = document.documentElement.dataset.region === 'cn' ? 'cn' : 'us';
-const storedRegion = read(regionKey);
-const region: Region = storedRegion === 'cn' || storedRegion === 'us' ? storedRegion : sourceRegion;
-
-function restoreHome(): boolean {
-  if (!['/', '/zh'].includes(location.pathname)) return false;
-  const preferredLang = location.pathname === '/' && read(languageKey) === 'zh' ? 'zh' : lang;
-  const preferredRegion = storedRegion === 'cn' || storedRegion === 'us' ? storedRegion : (preferredLang === 'zh' ? 'cn' : 'us');
-  const target = regionHome(preferredRegion, preferredLang);
-  if (target === location.pathname) return false;
-  location.replace(target + location.search + location.hash);
-  return true;
-}
-
-function initShared() {
-  const activeRegion: Region = /^\/(?:zh\/)?(?:china|foods|categories|us)(?:\/|$)/.test(location.pathname) || ['/', '/zh'].includes(location.pathname) ? sourceRegion : region;
-  document.documentElement.dataset.region = activeRegion;
-  const urlUnit = new URL(location.href).searchParams.get('unit');
-  const storedUnit = read(unitKey);
-  const explicitUnit = () => ['c', 'f'].includes(new URL(location.href).searchParams.get('unit') || '') || ['c', 'f'].includes(read(unitKey) || '');
-  const getUnit = (): Unit => {
-    const requested = new URL(location.href).searchParams.get('unit');
-    const stored = read(unitKey);
-    return requested === 'c' || requested === 'f' ? requested : stored === 'c' || stored === 'f' ? stored : defaultUnit(activeRegion);
+const lang=document.documentElement.lang==='zh-CN'?'zh':'en';
+const read=(key:string)=>{try{return localStorage.getItem(key);}catch{return null;}};
+const temporary=new URL(location.href).searchParams.get('kitchen');
+// A saved interface language applies to later visits and shared references as well.
+const preferred=read('airfryer:language:v1');
+const canonicalPath=new URL(document.querySelector<HTMLLinkElement>('link[rel=canonical]')!.href).pathname;
+if((preferred==='zh'||preferred==='en') && preferred!==lang && !temporary) location.replace(localizedPath(canonicalPath,preferred)+location.search+location.hash);
+else {
+  const apply=()=>{
+    const preset=readKitchen(),unit=presetUnit(preset);
+    document.documentElement.dataset.temperatureUnit=unit;
+    document.documentElement.dataset.kitchenPreset=preset;
+    if(!document.querySelector('#variant-data'))document.documentElement.dataset.region=unit==='c'?'cn':'us';
+    document.querySelectorAll<HTMLElement>('[data-temperature]').forEach(el=>{
+      const c=el.dataset.temperatureC===undefined?undefined:Number(el.dataset.temperatureC);
+      el.textContent=temperature(Number(el.dataset.temperature),c===undefined?'f':'c',c);
+    });
+    document.querySelectorAll<HTMLElement>('[data-measure]').forEach(el=>el.textContent=measureText(el.dataset.measure!,unit,lang,true));
+    document.querySelectorAll<HTMLElement>('[data-food-row]').forEach(el=>el.hidden=el.dataset.recipeUnit!==unit);
+    document.querySelectorAll<HTMLElement>('[data-variant-panel]').forEach(panel=>{
+      const compatible=panel.dataset.recipeUnit===unit;
+      panel.dataset.kitchenCompatible=String(compatible);
+      panel.querySelectorAll<HTMLElement>('[data-compatible-body]').forEach(el=>el.hidden=!compatible);
+      panel.querySelectorAll<HTMLElement>('[data-unsupported-note]').forEach(el=>el.hidden=compatible);
+    });
+    document.querySelectorAll<HTMLElement>('[data-kitchen-summary]').forEach(el=>el.textContent=lang==='zh'?(preset==='metric'?'公制厨房：°C、克、毫升、厘米':'美制厨房：°F、盎司、量杯、英寸'):(preset==='metric'?'Metric kitchen: °C, g, mL, cm':'US customary kitchen: °F, oz, cups, inches'));
+    document.querySelectorAll<HTMLElement>('[data-kitchen-featured]').forEach(el=>el.hidden=el.dataset.kitchenFeatured!==unit);
+    document.querySelectorAll<HTMLElement>('.related').forEach(section=>{let shown=0;section.querySelectorAll<HTMLElement>('[data-food-row]').forEach(row=>{row.hidden=row.dataset.recipeUnit!==unit || shown>=4;if(!row.hidden)shown++;});section.hidden=shown===0;});
+    const count=[...document.querySelectorAll<HTMLElement>('[data-food-row]')].filter(el=>!el.hidden).length;
+    document.querySelectorAll<HTMLElement>('[data-category-count]').forEach(el=>el.textContent=lang==='zh'?`${count} 道做法`:`${count} recipes`);
+    document.querySelectorAll<HTMLElement>('[data-category-empty]').forEach(el=>el.hidden=count>0);
+    document.documentElement.dataset.kitchenReady='yes';
+    document.dispatchEvent(new CustomEvent('airfryer:kitchen',{detail:{unit,preset}}));
   };
-  let unit: Unit = urlUnit === 'c' || urlUnit === 'f' ? urlUnit : storedUnit === 'c' || storedUnit === 'f' ? storedUnit : defaultUnit(activeRegion);
-  document.querySelectorAll<HTMLAnchorElement>('[data-region-home]').forEach(link => { link.href = regionHome(activeRegion, lang); link.addEventListener('click', () => save(regionKey, activeRegion)); });
-  document.querySelectorAll<HTMLAnchorElement>('[data-region-select]').forEach(link => {
-    const chosen = link.dataset.regionSelect as Region;
-    if (chosen === activeRegion) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
-    link.addEventListener('click', event => {
-      save(regionKey, chosen);
-      const next = new URL(regionHome(chosen, lang), location.origin);
-      if (explicitUnit()) next.searchParams.set('unit', unit);
-      const current = new URL(location.href);
-      for (const key of ['q', 'category']) if (current.searchParams.has(key)) next.searchParams.set(key, current.searchParams.get(key)!);
-      link.href = next.href;
-      if (chosen !== activeRegion) trackNavigation(event,link,'region_change',{target_collection:chosen});
-    });
+  document.querySelectorAll<HTMLElement>('.js-only').forEach(el=>el.hidden=false);
+  document.querySelectorAll<HTMLAnchorElement>('[data-region-home]').forEach(a=>a.href=unifiedHome(lang));
+  // Temporary URL state is only used when browser storage rejected a save.
+  document.addEventListener('click',event=>{
+    if(!(event.target instanceof Element)||!new URL(location.href).searchParams.get('kitchen'))return;
+    const a=event.target.closest<HTMLAnchorElement>('a[href]');if(!a||a.origin!==location.origin||a.hash)return;
+    const next=new URL(a.href);next.searchParams.set('kitchen',readKitchen());a.href=next.href;
   });
-  document.querySelectorAll<HTMLAnchorElement>('[data-language-switch]').forEach(link => {
-    const choose = (event: MouseEvent) => {
-      const target = link.dataset.languageSwitch === 'zh' ? 'zh' : 'en';
-      save(languageKey, target); save(regionKey, activeRegion);
-      const next = new URL(location.href);
-      next.pathname = switchLanguagePath(link.dataset.languagePath ?? next.pathname, activeRegion, target);
-      if (explicitUnit()) next.searchParams.set('unit', unit);
-      link.href = next.href;
-      trackNavigation(event,link,'language_change',{target_language:target});
-    };
-    link.addEventListener('click', choose);
-  });
-  document.querySelectorAll<HTMLElement>('.js-only').forEach(el => el.hidden = false);
-  function applyUnit(next: Unit, persist = false) {
-    const previousUnit = unit;
-    unit = next;
-    document.documentElement.dataset.temperatureUnit = unit;
-    document.querySelectorAll<HTMLElement>('[data-temperature]').forEach(el => {
-      const c = el.dataset.temperatureC === undefined ? undefined : Number(el.dataset.temperatureC);
-      el.textContent = temperature(Number(el.dataset.temperature), unit, c);
-    });
-    document.querySelectorAll<HTMLElement>('[data-measure]').forEach(el => el.textContent = measureText(el.dataset.measure!, unit, lang));
-    document.querySelectorAll<HTMLElement>('[data-unit-caption]').forEach(el => el.hidden = el.dataset.unitCaption !== unit);
-    document.querySelectorAll<HTMLElement>('[data-native-unit]').forEach(el => el.hidden = el.dataset.nativeUnit === unit);
-    document.querySelectorAll<HTMLElement>('[data-native-label]').forEach(el => el.hidden = el.dataset.nativeLabel !== unit);
-    document.querySelectorAll<HTMLElement>('[data-converted-label]').forEach(el => el.hidden = el.dataset.convertedLabel === unit);
-    document.querySelectorAll<HTMLButtonElement>('button[data-unit]').forEach(el => el.setAttribute('aria-pressed', String(el.dataset.unit === unit)));
-    if (persist) {
-      save(unitKey, unit);
-      const url = new URL(location.href); url.searchParams.set('unit', unit); history.replaceState(null, '', url);
-      if (previousUnit !== unit) window.airfryerTrack?.('unit_change', { unit, previous_unit: previousUnit });
-    }
-    document.dispatchEvent(new CustomEvent('airfryer:unit', { detail: { unit } }));
-  }
-  document.querySelectorAll<HTMLButtonElement>('button[data-unit]').forEach(el => el.addEventListener('click', () => applyUnit(el.dataset.unit as Unit, true)));
-  document.querySelectorAll<HTMLButtonElement>('[data-show-native-unit]').forEach(el => el.addEventListener('click', () => applyUnit(el.dataset.showNativeUnit as Unit, true)));
-  window.addEventListener('popstate', () => applyUnit(getUnit()));
-  document.addEventListener('click', e => {
-    if (!(e.target instanceof Element)) return;
-    const link = e.target.closest<HTMLAnchorElement>('a[href]');
-    if (!link || link.dataset.languageSwitch || link.dataset.regionSelect || link.origin !== location.origin || link.hash || !explicitUnit()) return;
-    const next = new URL(link.href); next.searchParams.set('unit', unit); link.href = next.href;
-  });
-  applyUnit(unit); initAnalytics();
+  window.addEventListener('storage',e=>{if(e.key===kitchenKey||e.key===null)apply();});
+  document.addEventListener('airfryer:settings-saved',apply);
+  apply();initAnalytics();
 }
-if (!restoreHome()) initShared();

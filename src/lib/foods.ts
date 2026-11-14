@@ -20,3 +20,6 @@ export const orderedFoods = [...foods].sort((a, b) => {
   return (ai < 0 ? 100 : ai) - (bi < 0 ? 100 : bi) || a.name.localeCompare(b.name);
 });
 export function foodsForRegion(region: Region): Food[] { return region === 'cn' ? foods.filter(f => f.region === 'cn') : orderedFoods.filter(f => f.region === 'us'); }
+
+/** One searchable recipe library; source-region metadata remains provenance only. */
+export const libraryFoods = [...foods.filter(f=>f.region==='cn'), ...orderedFoods.filter(f=>f.region==='us')];

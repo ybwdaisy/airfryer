@@ -57,10 +57,10 @@ test('display conversion keeps whole ranges, dimensions and published safety pai
   assert.equal(measureText('1 tsp salt; ½ tbsp oil','c','zh'), '1茶匙 salt; 0.5汤匙 oil');
   assert.equal(measureText('1 tsp salt','c','zh').includes('毫升'), false);
 });
-test('language navigation keeps region, and old Chinese food paths retain US meaning', () => {
+test('language navigation unifies home while old Chinese recipe paths retain their meaning', () => {
   assert.equal(regionHome('cn','zh'), '/zh');
-  assert.equal(switchLanguagePath('/', 'us','zh'), '/zh/us');
-  assert.equal(switchLanguagePath('/zh','cn','en'), '/china');
+  assert.equal(switchLanguagePath('/', 'us','zh'), '/zh');
+  assert.equal(switchLanguagePath('/zh','cn','en'), '/');
   assert.equal(foodPath('cn-orleans-wings','cn','zh'), '/zh/china/foods/cn-orleans-wings');
   assert.equal(regionFromPath('/zh/foods/chicken-wings'), 'us');
   assert.equal(regionFromPath('/zh/china/foods/cn-orleans-wings'), 'cn');

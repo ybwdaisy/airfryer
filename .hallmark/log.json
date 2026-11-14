@@ -1,6 +1,42 @@
 [
   {
     "date": "2026-11-14",
+    "mode": "app flow extension",
+    "scope": "app",
+    "shape": "app screen",
+    "theme": "brand",
+    "axes": "light/sans-serif/warm",
+    "nav": "single Settings entry; saved preferences replace per-page region, unit and language controls",
+    "footer": "preserved reference colophon",
+    "imagery": "real browser captures of working settings and food library",
+    "photos": [],
+    "signature": "native-scale cooking settings beside a kitchen-filtered searchable food index",
+    "sections": [
+      "search",
+      "category filters",
+      "kitchen summary",
+      "actionable food index",
+      "other matching foods",
+      "settings form",
+      "sourced recipe guidance"
+    ],
+    "fingerprint": [
+      "app",
+      "search-first",
+      "saved-kitchen",
+      "native-scale",
+      "discovery-results",
+      "reference-colophon"
+    ],
+    "waived": [],
+    "prompt": "Save one kitchen unit configuration and independent language; show directly usable recipes by default while search still discovers other foods",
+    "entry": "codex/airfryer-kitchen-settings; PR review only",
+    "sweep": "0 FAIL, 0 WARN on styles and two rendered URLs; two inherited preparation/safety stripe findings dismissed; 11 real-browser groups including 144 recipe/profile visits and responsive captures pass",
+    "finish_review": "fresh-context independent reviewer: fix; one P2 temporary storage warning lost on language navigation; resolved and browser-tested",
+    "preservation": "original 72 recipes, 78 conditions, source-native temperature arrays, stages, source anchors, selected-condition links, consent and no-JavaScript reference reading verified"
+  },
+  {
+    "date": "2026-11-14",
     "mode": "redesign",
     "depth": "full",
     "scope": "app",

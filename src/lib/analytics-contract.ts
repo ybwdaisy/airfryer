@@ -31,14 +31,15 @@ export function pageType(path: string): string {
   if (/\/(?:foods)\//.test(p)) return 'recipe';
   if (/\/categories\//.test(p)) return 'category';
   if (['/','/zh','/china','/zh/us'].includes(p)) return 'home';
+  if (/\/settings$/.test(p)) return 'settings';
   if (/\/privacy$/.test(p)) return 'privacy';
   if (/\/methodology$/.test(p)) return 'reference';
   return 'not_found';
 }
 
 export type NavigationSource = {path:string; collection:'cn'|'us'; language:'en'|'zh'; units:'c'|'f'; qa:'yes'|'no'; category:string};
-export type PendingNavigation = {before?: {name:'food_search'|'search_no_results';params:AnalyticsParams}; name:string; params:AnalyticsParams; target:string; source:NavigationSource; createdAt:number};
-const isPath = (value: unknown): value is string => typeof value==='string' && (value==='/zh' || /^\/(?:zh\/)?(?:(?:china\/)?(?:foods\/[a-z0-9-]{1,64}|categories\/(?:meat|seafood|vegetables|frozen|bakery|reheat))|methodology|privacy|404|china|us)?$/.test(value));
+export type PendingNavigation = {before?: {name:'food_search'|'search_no_results'|'unit_change';params:AnalyticsParams}; name:string; params:AnalyticsParams; target:string; source:NavigationSource; createdAt:number};
+const isPath = (value: unknown): value is string => typeof value==='string' && (value==='/zh' || /^\/(?:zh\/)?(?:(?:china\/)?(?:foods\/[a-z0-9-]{1,64}|categories\/(?:meat|seafood|vegetables|frozen|bakery|reheat))|methodology|privacy|settings|404|china|us)?$/.test(value));
 export function canonicalAnalyticsPath(href:string | null): string {
   try {const u=new URL(href || '');return u.origin==='https://airfryer.ybwdaisy.com' && isPath(u.pathname) ? u.pathname : '/404';}catch{return '/404';}
 }
@@ -48,7 +49,7 @@ export function parsePendingNavigation(raw:string | null, now:number, target:str
     if(!p || !['food_select','language_change','region_change'].includes(p.name) || !isPath(p.target) || p.target!==target || typeof p.createdAt!=='number' || now-p.createdAt<0 || now-p.createdAt>30_000) return null;
     const s=p.source;
     if(!s || !isPath(s.path) || !['cn','us'].includes(s.collection) || !['en','zh'].includes(s.language) || !['c','f'].includes(s.units) || !['yes','no'].includes(s.qa) || !categories.includes(s.category)) return null;
-    return {...(p.before && ['food_search','search_no_results'].includes(p.before.name) ? {before:{name:p.before.name as 'food_search'|'search_no_results',params:sanitizeAnalyticsParams(p.before.params || {})}} : {}),name:p.name,params:sanitizeAnalyticsParams(p.params || {}),target:p.target,createdAt:p.createdAt,source:{path:s.path,collection:s.collection,language:s.language,units:s.units,qa:s.qa,category:s.category}};
+    return {...(p.before && ['food_search','search_no_results','unit_change'].includes(p.before.name) ? {before:{name:p.before.name as 'food_search'|'search_no_results'|'unit_change',params:sanitizeAnalyticsParams(p.before.params || {})}} : {}),name:p.name,params:sanitizeAnalyticsParams(p.params || {}),target:p.target,createdAt:p.createdAt,source:{path:s.path,collection:s.collection,language:s.language,units:s.units,qa:s.qa,category:s.category}};
   } catch {return null;}
 }
 

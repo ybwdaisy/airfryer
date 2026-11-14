@@ -1,7 +1,7 @@
-/* Hallmark · shape: app screen · genre: editorial · theme: brand · redesign: full
+/* Hallmark · shape: app screen · genre: editorial · theme: brand · change: saved kitchen settings
  * paper: oklch(98.4% 0.008 80) · accent: oklch(52.5% 0.18 26) · display: DM Sans · body: DM Sans
- * nav: kept · signature: searchable food index with aligned cooking measurements · states: full, filtered, empty, consent
- * axes: light/sans-serif/warm · posture: restrained · copy: verbatim · scope: app · finish-review: subagent · 2 findings · 2 resolved · gap: none · v2.0.0 */
+ * nav: settings entry · signature: searchable food index with aligned cooking measurements · states: available, discovery, mismatch, saved, temporary, consent
+ * axes: light/sans-serif/warm · posture: restrained · copy: sourced recipes preserved · scope: app · finish-review: subagent · 1 finding · 1 resolved · gap: none · v2.0.0 */
 /* Hallmark · pre-emit critique: P4 H4 E4 S4 R5 V3 · weakest: V, retained the food index shell and differentiated type, surface and control hierarchy */
 /* Hallmark · waive 49b · source model identifiers occupy no more than two lines at 320px · the linked manufacturer manual title keeps its provenance readable without horizontal overflow */
 /* Hallmark · dismissed 3 · accent rules identify required preparation and safety checks in a cooking tool, rather than decorating general content */
@@ -448,3 +448,30 @@ html[lang='zh-CN'] .food-name > span { line-height: 1.5; }
 .phase-total { margin-block: var(--space-sm) var(--space-md); font-weight: 600; }
 
 .row-time .metric-label, .row-temperature .metric-label { white-space: normal; }
+
+/* Kitchen preferences reuse the existing app typography, controls and measurement surfaces. */
+.settings-link { display: inline-flex; align-items: center; min-height: 44px; padding-inline: var(--space-sm); font-size: var(--text-sm); text-decoration: none; border: 1px solid var(--color-rule); border-radius: var(--radius-input); }
+.settings-link:hover { background: var(--color-paper-2); }
+.settings-link:active { transform: translateY(1px); }
+.settings-layout { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: var(--space-xl); max-width: 64rem; }
+.settings-form { padding: var(--space-lg); background: var(--color-paper-2); border-radius: var(--radius-card); }
+.settings-field { margin-bottom: var(--space-lg); }
+.settings-field label { display: block; font-weight: 600; margin-bottom: var(--space-xs); }
+.settings-field select { width: 100%; min-height: 52px; padding: var(--space-sm); background: var(--color-paper); color: var(--color-ink); border: 1px solid var(--color-field-border); border-radius: var(--radius-input); }
+.settings-field select:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+.settings-status { min-height: 1lh; margin-top: var(--space-md); }
+.settings-note h2 { font-size: var(--text-xl); margin-bottom: var(--space-md); }
+.settings-note p + p { margin-top: var(--space-md); }
+.settings-return { margin-top: var(--space-xl); }
+.kitchen-summary { margin-bottom: var(--space-lg); font-size: var(--text-sm); color: var(--color-muted); }
+.kitchen-summary a { margin-left: var(--space-xs); }
+.unavailable-results, .kitchen-mismatch { padding: var(--space-lg); margin-block: var(--space-lg); background: var(--color-paper-2); border: 1px solid var(--color-rule); border-radius: var(--radius-card); }
+.unavailable-results h3, .kitchen-mismatch h2 { font-size: var(--text-lg); margin-bottom: var(--space-sm); }
+.unavailable-results ul { margin-bottom: 0; padding-left: var(--space-md); }
+.unavailable-results a, .kitchen-mismatch a { display: inline-block; min-height: 44px; padding-block: var(--space-xs); font-size: var(--text-sm); }
+.kitchen-mismatch a + a { margin-left: var(--space-md); }
+@media (max-width: 40rem) {
+ .settings-layout { grid-template-columns: minmax(0, 1fr); gap: var(--space-xl); }
+ .settings-form { padding: var(--space-md); }
+ .settings-field select { font-size: var(--text-md); }
+}

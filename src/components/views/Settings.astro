@@ -1,0 +1,21 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import {t} from '../../lib/i18n';
+import {localizedPath,type Language} from '../../lib/locale';
+const lang:Language=Astro.props.lang??'en';
+---
+<Layout lang={lang} title={`${t(lang,'Kitchen settings')} | Airfryer times`} description={t(lang,'Set up your kitchen once. Your preferences stay in this browser.')} noindex>
+  <section class="page-intro"><h1>{t(lang,'Kitchen settings')}</h1><p>{t(lang,'Set up your kitchen once. Your preferences stay in this browser.')}</p></section>
+  <div class="settings-layout">
+    <form id="kitchen-settings" class="settings-form js-only" hidden>
+      <div class="settings-field"><label for="kitchen-preset">{t(lang,'Kitchen preset')}</label><select id="kitchen-preset" name="preset" aria-describedby="preset-help"><option value="metric">{t(lang,'Metric — °C, g, mL, cm')}</option><option value="us">{t(lang,'US customary — °F, oz, cups, inches')}</option></select><p class="field-help" id="preset-help">{t(lang,'One preset for recipe temperature scale, ingredient weights, volumes and sizes.')}</p></div>
+      <div class="settings-field"><label for="interface-language">{t(lang,'Interface language')}</label><select id="interface-language" name="language" aria-describedby="language-help"><option value="en">English</option><option value="zh">中文</option></select><p class="field-help" id="language-help">{t(lang,'Language does not change your kitchen units.')}</p></div>
+      <button class="button" type="submit">{t(lang,'Save settings')}</button>
+      <p class="settings-status" role="status" data-settings-status data-saved={t(lang,'Saved. Future pages and visits will use this kitchen preset.')} data-temporary={t(lang,'Applied for this visit. Browser storage is unavailable, so these settings could not be saved for future visits.')} hidden></p>
+    </form>
+    <p class="notice" data-settings-fallback>{t(lang,'Enable JavaScript to save kitchen settings. You can still read recipes in their original temperature scale.')}</p>
+    <aside class="settings-note"><h2>{t(lang,'Settings you can cook with')}</h2><p>{t(lang,'Recipes use verified settings in the temperature scale you choose. Cooking times are never reused at a converted temperature.')}</p><p>{t(lang,'Other foods remain searchable. Their recipe becomes available when a verified method for your kitchen is added.')}</p><p>{t(lang,'Check that your air fryer can select the stated setting. Changing units does not change a machine’s temperature limit or available notches.')}</p></aside>
+  </div>
+  <p class="settings-return"><a href={localizedPath('/',lang)} data-back-to-foods>{t(lang,'Back to recipes')}</a></p>
+  <script>import '../../scripts/settings.ts';</script>
+</Layout>

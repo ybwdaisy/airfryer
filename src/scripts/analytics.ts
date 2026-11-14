@@ -8,7 +8,7 @@ declare global {
     gtag?: (...args: unknown[]) => void;
     airfryerTrack?: (name: string, params?: AnalyticsParams, completed?: () => void) => boolean;
     airfryerStageSearch?: (name: string, params: AnalyticsParams) => boolean;
-    airfryerQueueNavigation?: (name: string, params: AnalyticsParams, target: string) => boolean;
+    airfryerQueueNavigation?: (name: string, params: AnalyticsParams, target: string, before?: {name:'unit_change';params:AnalyticsParams}) => boolean;
     [key: `ga-disable-${string}`]: boolean;
   }
 }
@@ -58,9 +58,9 @@ export function initAnalytics() {
   };
   const clearPending = () => {try {sessionStorage.removeItem(pendingKey);} catch { /* Storage is optional. */ }};
   if(state!=='granted') clearPending();
-  const queueNavigation = (name:string, params:AnalyticsParams, target:string): boolean => {
+  const queueNavigation = (name:string, params:AnalyticsParams, target:string, before?:{name:'unit_change';params:AnalyticsParams}): boolean => {
     if(!enabled || state!=='granted' || !['food_select','language_change','region_change'].includes(name)) return false;
-    const pending={...(name==='food_select' && stagedSearch ? {before:stagedSearch} : {}),name,params:sanitizeAnalyticsParams(params),target,source:sourceContext(),createdAt:Date.now()};
+    const pending={...(before ? {before:{name:before.name,params:sanitizeAnalyticsParams(before.params)}} : {}),...(name==='food_select' && stagedSearch ? {before:stagedSearch} : {}),name,params:sanitizeAnalyticsParams(params),target,source:sourceContext(),createdAt:Date.now()};
     if(!parsePendingNavigation(JSON.stringify(pending),Date.now(),target)) return false;
     try {sessionStorage.setItem(pendingKey,JSON.stringify(pending));stagedSearch=null;return true;} catch {return false;}
   };

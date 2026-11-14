@@ -28,7 +28,7 @@ export function localizeFood(food: Food, language: Language): Food {
     return {...v, ...translated, safetyOverride: v.safetyOverride ? {...v.safetyOverride, text: translated.safetyOverride!} : undefined};
   })};
 }
-export function searchAliases(food: Food): string[] { const copy = chineseCopy(food.slug); return [food.name, ...food.aliases, copy.name, ...copy.aliases]; }
+export function searchAliases(food: Food): string[] { const copy = chineseCopy(food.slug); return [food.name, ...food.aliases, copy.name, ...copy.aliases, ...(food.slug === 'cn-orleans-wings' ? ['chicken wings','wings'] : [])]; }
 const categoryZh: Record<string, [string,string,string]> = {
   meat:['肉类与禽肉','肉类与禽肉','鸡肉、牛肉和猪肉的烹饪条件，以及中心温度检查。'],
   seafood:['鱼虾与海鲜','海鲜','鱼片、虾和扇贝，均注明适用的起始状态。'],
