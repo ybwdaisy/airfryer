@@ -26,6 +26,15 @@ test('China rejects above-200°C phases and US rejects above-400°F settings', (
   const us = foods.find(f => f.region === 'us')!;
   assert.equal(foodSchema.safeParse({...us, variants: [{...us.variants[0], temperatureF: 425}]}).success, false);
 });
+test('multi-stage guides keep every temperature and require correct total time', () => {
+  const ciba=foods.find(f=>f.slug==='cn-brown-sugar-ciba')!;
+  const v=ciba.variants[0];
+  assert.deepEqual(v.cookingPhases,[{temperatureC:180,minutes:[8,8]},{temperatureC:200,minutes:[6,6]}]);
+  assert.equal(foodSchema.safeParse({...ciba,variants:[{...v,minutes:[8,8]}]}).success,false);
+  assert.equal(foodSchema.safeParse({...ciba,variants:[{...v,cookingPhases:[{temperatureC:180,minutes:[8,8]},{temperatureC:205,minutes:[6,6]}]}]}).success,false);
+  assert.equal(foodSchema.safeParse({...ciba,variants:[{...v,temperatureC:200}]}).success,false);
+  assert.equal(foods.find(f=>f.slug==='cn-frozen-hash-browns')!.variants[0].preheat,'no');
+});
 test('all conditions expose tools, ingredients, completion checks and complete Chinese equivalents', () => {
   const old = read('zh-foods.json'), regional = read('regional-zh.json');
   for (const f of foods) for (const v of f.variants) {

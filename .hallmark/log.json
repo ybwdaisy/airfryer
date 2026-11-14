@@ -1,5 +1,42 @@
 [
   {
+    "date": "2026-11-14",
+    "mode": "redesign",
+    "depth": "full",
+    "scope": "app",
+    "shape": "app screen",
+    "theme": "brand",
+    "axes": "light/sans-serif/warm",
+    "nav": "preserved collection, language and units; tighter mobile spacing",
+    "footer": "reference colophon preserved",
+    "imagery": "working tool UI, no food image assets supplied",
+    "signature": "searchable food names with prominent temperature and time pairs",
+    "sections": [
+      "search and examples",
+      "category filters",
+      "food index with measurements",
+      "settings and preparation",
+      "ingredients and stages",
+      "numbered steps",
+      "safety and sources"
+    ],
+    "fingerprint": [
+      "app",
+      "search-first",
+      "ruled-index",
+      "measurement-surfaces",
+      "settings-first-detail",
+      "reference-sidebar"
+    ],
+    "waived": [
+      "49b: unshortened manufacturer manual model title wraps to at most two lines at 320px"
+    ],
+    "prompt": "Improve hierarchy of a text-heavy cooking tool and support fuzzy search without unrelated food matches",
+    "finish_review": "fresh-context subagent: fix, 2 search findings, both resolved and tested on actual bilingual catalogs",
+    "preservation": "65/65 links, 2/2 fields, 4/4 test hooks, 39/39 headings, 13/13 figures",
+    "sweep": "rendered issues resolved, one documented source-title wrap waiver; Astro-only static CSS import false positives checked against compiled HTML and browser styles"
+  },
+  {
     "date": "2026-11-13",
     "mode": "approved app implementation",
     "scope": "app",

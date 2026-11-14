@@ -88,7 +88,7 @@ try {
     await page.goto(base);
     await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex, nofollow');
     const sitemap = await context.request.get(`${base}/sitemap.xml`);
-    expect((await sitemap.text()).match(/<loc>/g)).toHaveLength(150);
+    expect((await sitemap.text()).match(/<loc>/g)).toHaveLength(172);
   });
   await check('consent gates tag loading; withdrawal stops events; raw search text is excluded', async () => {
     const c = await browser.newContext();

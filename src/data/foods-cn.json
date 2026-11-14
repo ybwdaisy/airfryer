@@ -200,7 +200,23 @@
         "safetyOverride": {
           "text": "Confirm fully cooked in the braising phase: thick meat away from bone reaches 75°C for at least 30 seconds.",
           "url": "https://www.cfs.gov.hk/english/trade_zone/safe_kitchen/Cooking_and_reheating.html"
-        }
+        },
+        "cookingPhases": [
+          {
+            "temperatureC": 200,
+            "minutes": [
+              3,
+              3
+            ]
+          },
+          {
+            "temperatureC": 180,
+            "minutes": [
+              4,
+              4
+            ]
+          }
+        ]
       }
     ]
   },
@@ -1003,6 +1019,852 @@
         "preheatDetail": "The main source puts cooked corn straight into the air fryer without listing a separate preheat.",
         "completion": "The corn must be cooked before air frying. At serving it is hot through and tender with a lightly roasted surface, without blackening.",
         "advancePreparation": "Boil fully, then proceed directly to air frying. This 20-minute stage is not for raw corn and is not a reheating guide for corn stored overnight."
+      }
+    ]
+  },
+  {
+    "slug": "cn-frozen-youtiao",
+    "name": "Frozen youtiao",
+    "aliases": [
+      "油条",
+      "油條",
+      "炸油条",
+      "youtiao",
+      "Chinese dough sticks"
+    ],
+    "category": "frozen",
+    "description": "A frozen Sinian semi-prepared youtiao breakfast, turned halfway.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-14",
+    "variants": [
+      {
+        "id": "default",
+        "state": "frozen",
+        "temperatureC": 180,
+        "temperatureF": 356.0,
+        "minutes": [
+          10,
+          10
+        ],
+        "preheat": "yes",
+        "label": "Sinian frozen youtiao, unthawed",
+        "portion": "One uncrowded layer of whole frozen youtiao; split a large bag into batches.",
+        "ingredients": [
+          "Sinian frozen youtiao, enough for one layer"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs"
+        ],
+        "steps": [
+          "Remove every wrapper. Keep the youtiao frozen while preheating.",
+          "After preheating, arrange one layer with gaps. Add no oil for this reference preparation.",
+          "Change to 180°C. Cook 5 minutes, turn each piece, then cook 5 more minutes.",
+          "Check the centre of a larger piece before serving."
+        ],
+        "turn": "Turn after 5 minutes.",
+        "completion": "The outside is crisp and expanded; the centre is hot with no frozen core or sticky uncooked dough.",
+        "preheatDetail": "Preheat empty at 200°C for 5 minutes; after loading change to 180°C.",
+        "deviceNote": "Use the stated Celsius setting in Air Fry mode. Do not round it to another notch; all heating here stays at or below 200°C.",
+        "notes": [
+          "This timing is for the linked semi-prepared frozen product. Raw homemade dough and already-fried takeaway youtiao need separate guidance; product instructions take priority.",
+          "Air-fried youtiao has a different texture from freshly deep-fried youtiao; avoid repeatedly extending the cook just to imitate that texture."
+        ],
+        "sources": [
+          {
+            "title": "空气炸锅版油条",
+            "publisher": "瑞贝卡UPUP / 下厨房",
+            "url": "https://www.xiachufang.com/recipe/100627797/",
+            "role": "reference",
+            "locator": "Ingredients and numbered cooking steps",
+            "evidence": "Sinian frozen youtiao, no thawing or added oil; preheat 200°C 5 minutes, cook 180°C 5+5 minutes."
+          },
+          {
+            "title": "空气炸锅烤油条",
+            "publisher": "啷个哩个啷啷 / 下厨房",
+            "url": "https://www.xiachufang.com/recipe/107093911/",
+            "role": "cross-check",
+            "locator": "Ingredients and numbered cooking steps",
+            "evidence": "Independent Sinian reference: 3 pieces, 180°C 10 minutes, turn at 5; brushes oil, unlike the main reference."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-brown-sugar-ciba",
+    "name": "Brown-sugar ciba sticks",
+    "aliases": [
+      "糍粑",
+      "红糖糍粑",
+      "紅糖糍粑",
+      "brown sugar rice cakes",
+      "ciba"
+    ],
+    "category": "frozen",
+    "description": "Frozen rice-cake sticks finished with their separate syrup and soybean powder.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-14",
+    "variants": [
+      {
+        "id": "default",
+        "state": "frozen",
+        "temperatureC": 180,
+        "temperatureF": 356.0,
+        "minutes": [
+          14,
+          14
+        ],
+        "preheat": "unspecified",
+        "label": "Frozen unfilled sticks: 180°C, then 200°C",
+        "portion": "One layer of separated frozen sticks from a pack with separate syrup and soybean powder.",
+        "ingredients": [
+          "Frozen ciba sticks, one layer",
+          "Cooking oil, a thin coating on every side",
+          "The supplied brown-sugar syrup and cooked soybean powder"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs",
+          "A shallow tray permitted by your air fryer",
+          "Oil brush"
+        ],
+        "steps": [
+          "Keep the sticks frozen and separate them. Remove topping sachets first. Soften frozen syrup separately; if its package permits, put the sealed sachet in warm water, then dry its outside before opening.",
+          "Coat all sides lightly with oil. Arrange with gaps in the permitted shallow tray.",
+          "Cook at 180°C for 8 minutes. Change to 200°C and cook for 6 minutes.",
+          "Open one stick to check the middle. Once ready, remove and add syrup and cooked soybean powder outside the fryer."
+        ],
+        "turn": "At minute 8, change 180°C to 200°C. The reference does not require turning.",
+        "completion": "The shell is set and lightly crisp; the centre is soft throughout without a cold, hard core.",
+        "preheatDetail": "Load the prepared food and set the temperature below. If your machine requires a preheat cycle, finish that cycle before loading; food cooking time starts after loading.",
+        "deviceNote": "Use the stated Celsius setting in Air Fry mode. Do not round it to another notch; all heating here stays at or below 200°C.",
+        "notes": [
+          "Use unfilled long sticks. Filled mochi, thick homemade rice cakes and fresh dough are different conditions. Syrup never goes into the hot basket."
+        ],
+        "sources": [
+          {
+            "title": "空气炸锅红糖糍粑",
+            "publisher": "喵咩咩一一 / 下厨房",
+            "url": "https://www.xiachufang.com/recipe/106046222/",
+            "role": "reference",
+            "locator": "Ingredients and numbered cooking steps",
+            "evidence": "Frozen packaged sticks with separate syrup/powder: oil coating, 180°C 8 minutes then 200°C 6; toppings after cooking."
+          },
+          {
+            "title": "红糖糍粑空气炸锅版",
+            "publisher": "非同小可 / 下厨房",
+            "url": "https://www.xiachufang.com/recipe/106919736/",
+            "role": "cross-check",
+            "locator": "Ingredients and numbered cooking steps",
+            "evidence": "Independent frozen-stick method: no thawing, oil, 180°C 8 then 200°C 5 minutes; separate toppings after cooking. Its shorter finish is not averaged."
+          }
+        ],
+        "cookingPhases": [
+          {
+            "temperatureC": 180,
+            "minutes": [
+              8,
+              8
+            ]
+          },
+          {
+            "temperatureC": 200,
+            "minutes": [
+              6,
+              6
+            ]
+          }
+        ],
+        "timeline": [
+          {
+            "label": "First stage",
+            "detail": "180°C for 8 minutes."
+          },
+          {
+            "label": "Second stage",
+            "detail": "200°C for 6 minutes; add toppings after removal."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-frozen-hash-browns",
+    "name": "Frozen hash-brown patties",
+    "aliases": [
+      "薯饼",
+      "薯餅",
+      "土豆饼",
+      "hash browns",
+      "hash-brown patties"
+    ],
+    "category": "frozen",
+    "description": "Whole frozen potato patties, cooked without preheating.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-14",
+    "variants": [
+      {
+        "id": "default",
+        "state": "frozen",
+        "temperatureC": 160,
+        "temperatureF": 320.0,
+        "minutes": [
+          15,
+          15
+        ],
+        "preheat": "no",
+        "label": "Frozen ready-made patties, cold start",
+        "portion": "3 patties in the source’s 5 L basket; in smaller baskets use only what fits in one layer.",
+        "ingredients": [
+          "3 frozen hash-brown patties"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs"
+        ],
+        "steps": [
+          "Remove all packaging and separate the frozen patties. Do not thaw.",
+          "Place one layer in the unheated basket; do not stack.",
+          "Cook at 160°C for 10 minutes. Turn, change to 180°C and cook 5 minutes.",
+          "Check a thicker patty in the middle and serve once hot and crisp."
+        ],
+        "turn": "After 10 minutes, turn and change to 180°C.",
+        "completion": "Both surfaces are crisp and the potato centre is hot, with no frozen core.",
+        "preheatDetail": "No preheating: load the frozen patties into the cold basket.",
+        "deviceNote": "Use the stated Celsius setting in Air Fry mode. Do not round it to another notch; all heating here stays at or below 200°C.",
+        "notes": [
+          "For formed frozen patties; do not apply to wet homemade grated-potato mixtures. Follow any specific package cooking directions."
+        ],
+        "sources": [
+          {
+            "title": "空气炸锅烤薯饼",
+            "publisher": "眼镜不戴眼镜 / 下厨房",
+            "url": "https://www.xiachufang.com/recipe/106632874/",
+            "role": "reference",
+            "locator": "Ingredients and numbered cooking steps",
+            "evidence": "Frozen patties without thawing/preheat; 3 in 5 L fryer; 160°C 10 minutes, flip, 180°C 5."
+          },
+          {
+            "title": "超好吃的薯饼",
+            "publisher": "月月的妈66 / 下厨房",
+            "url": "https://www.xiachufang.com/recipe/107445817/",
+            "role": "cross-check",
+            "locator": "Ingredients and numbered cooking steps",
+            "evidence": "Independent Simplot frozen-patty method: no thawing or added oil, 180°C 15 minutes. Different brand/profile; its setting is not substituted."
+          }
+        ],
+        "cookingPhases": [
+          {
+            "temperatureC": 160,
+            "minutes": [
+              10,
+              10
+            ]
+          },
+          {
+            "temperatureC": 180,
+            "minutes": [
+              5,
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-egg-shouzhua-pancake",
+    "name": "Egg shouzhua pancake",
+    "aliases": [
+      "手抓饼",
+      "手抓餅",
+      "鸡蛋饼",
+      "shouzhua pancake",
+      "egg pancake"
+    ],
+    "category": "bakery",
+    "description": "A bought pancake sheet with one egg spread thinly over the top.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-14",
+    "variants": [
+      {
+        "id": "default",
+        "state": "ready-to-bake",
+        "temperatureC": 180,
+        "temperatureF": 356.0,
+        "minutes": [
+          13,
+          13
+        ],
+        "preheat": "unspecified",
+        "label": "One plain ready-to-cook pancake sheet with one egg",
+        "portion": "One pancake sheet laid flat, not folded; one egg spread thinly over it.",
+        "ingredients": [
+          "1 plain ready-to-cook shouzhua pancake sheet",
+          "1 egg",
+          "Chilli powder, a pinch if wanted"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs",
+          "Mixing bowl",
+          "Spoon and a shallow non-stick tray permitted by your fryer"
+        ],
+        "steps": [
+          "Prepare the sheet as its pack directs; remove both separator films. Beat the egg in a bowl.",
+          "Lay the sheet flat in the permitted shallow tray. Cook at 180°C for 5 minutes.",
+          "Turn the sheet and spread the beaten egg in a thin layer on top. Cook at 180°C for 8 more minutes.",
+          "Check the thickest egg patch and pancake centre. Sprinkle optional chilli only after cooking."
+        ],
+        "turn": "Turn after 5 minutes, then add the egg.",
+        "completion": "The egg is fully set, including yolk, and the pancake has no sticky raw dough inside.",
+        "preheatDetail": "Load the prepared food and set the temperature below. If your machine requires a preheat cycle, finish that cycle before loading; food cooking time starts after loading.",
+        "deviceNote": "Use the stated Celsius setting in Air Fry mode. Do not round it to another notch; all heating here stays at or below 200°C.",
+        "notes": [
+          "Use a single bought sheet prepared according to its pack, not a homemade thick pancake or a filled wrap. Discard unused raw egg."
+        ],
+        "sources": [
+          {
+            "title": "手抓饼无料版（空气炸锅）",
+            "publisher": "我只有一个空气炸锅 / 下厨房",
+            "url": "https://www.xiachufang.com/recipe/107616067/",
+            "role": "reference",
+            "locator": "Ingredients and numbered cooking steps",
+            "evidence": "One pancake sheet and one egg: 180°C 5 minutes, flip/add egg, then 8 minutes."
+          },
+          {
+            "title": "懒人空气炸锅手抓饼",
+            "publisher": "爱瞎鼓捣 / 下厨房",
+            "url": "https://www.xiachufang.com/recipe/107498687/",
+            "role": "cross-check",
+            "locator": "Ingredients and numbered cooking steps",
+            "evidence": "Independent sheet-then-egg sequence with a shorter 180°C finish and extra fillings. Its timing/fillings are not transplanted."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-garlic-pumpkin",
+    "name": "Garlic roasted pumpkin",
+    "aliases": [
+      "南瓜",
+      "贝贝南瓜",
+      "烤南瓜",
+      "pumpkin",
+      "kabocha"
+    ],
+    "category": "vegetables",
+    "description": "Pumpkin chunks and garlic, coated lightly before roasting.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-14",
+    "variants": [
+      {
+        "id": "default",
+        "state": "fresh",
+        "temperatureC": 200,
+        "temperatureF": 392.0,
+        "minutes": [
+          20,
+          20
+        ],
+        "preheat": "unspecified",
+        "label": "Fresh peeled pumpkin chunks with garlic",
+        "portion": "500 g pumpkin flesh and one head of garlic; cook in batches if they cannot lie in one layer.",
+        "ingredients": [
+          "500 g peeled, deseeded pumpkin",
+          "1 head garlic, cloves separated with skins left on",
+          "Olive oil, enough for a light coating; salt and black pepper, small pinches"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Mixing bowl",
+          "Knife and board",
+          "Tongs"
+        ],
+        "steps": [
+          "Peel and deseed the pumpkin, rinse and dry. Cut into similar small chunks. Rinse the garlic cloves and dry.",
+          "Toss pumpkin and garlic with oil, salt and pepper. Spread in one layer.",
+          "Set 200°C for 20 minutes. Open partway through to inspect and redistribute pieces.",
+          "Test the thickest pumpkin piece with a chopstick before removing. Peel the cooked garlic before eating."
+        ],
+        "turn": "Inspect and redistribute partway through; no fixed turn minute is given in the reference.",
+        "completion": "A chopstick slides through the thickest centre easily; the pumpkin is tender, not hard inside.",
+        "preheatDetail": "Load the prepared food and set the temperature below. If your machine requires a preheat cycle, finish that cycle before loading; food cooking time starts after loading.",
+        "deviceNote": "Use the stated Celsius setting in Air Fry mode. Do not round it to another notch; all heating here stays at or below 200°C.",
+        "notes": [
+          "Keep pieces similar and spread out. Whole pumpkin and large wedges need separately supported timing."
+        ],
+        "sources": [
+          {
+            "title": "烤南瓜",
+            "publisher": "多幸福多快乐 / 美食天下",
+            "url": "https://home.meishichina.com/recipe-301440.html",
+            "role": "reference",
+            "locator": "Ingredients and numbered cooking steps",
+            "evidence": "500 g pumpkin, one head garlic, oil/salt/pepper; 200°C about 20 minutes, inspect during cooking."
+          },
+          {
+            "title": "空气炸锅烤南瓜",
+            "publisher": "小小多和包子 / 美食天下",
+            "url": "https://home.meishichina.com/recipe-564520.html",
+            "role": "cross-check",
+            "locator": "Ingredients and numbered cooking steps",
+            "evidence": "Independent chestnut-pumpkin chunks: 180°C 10 minutes, turn and another 5–8; different seasoning/profile, not averaged."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-sauced-enoki",
+    "name": "Sauced roasted enoki",
+    "aliases": [
+      "金针菇",
+      "烤金针菇",
+      "enoki",
+      "enoki mushrooms"
+    ],
+    "category": "vegetables",
+    "description": "Thin bundles, turned once, with sauce added near the end.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-14",
+    "variants": [
+      {
+        "id": "default",
+        "state": "fresh",
+        "temperatureC": 180,
+        "temperatureF": 356.0,
+        "minutes": [
+          10,
+          12
+        ],
+        "preheat": "unspecified",
+        "label": "250 g fresh enoki in thin bundles",
+        "portion": "250 g enoki, spread thinly in a shallow tray permitted by your machine.",
+        "ingredients": [
+          "250 g enoki mushrooms",
+          "Light soy sauce, oyster sauce and drinking water: 1 tbsp each",
+          "Corn oil: 1/2 tbsp for sauce, plus a thin layer for the tray",
+          "Chopped preserved chilli: 1 tbsp; chopped spring onion, a little"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Knife and board",
+          "Tongs",
+          "Mixing bowl",
+          "Shallow foil tray approved for your fryer; tablespoon measure"
+        ],
+        "steps": [
+          "Trim about 1 cm from the roots. Rinse, split into little-finger-thick bundles and drain well.",
+          "Brush the tray lightly with oil. Spread enoki thinly, cook at 180°C for 5 minutes, then turn and cook another 3–5 minutes.",
+          "Mix soy, oyster sauce, water and the measured oil. Pour over the mushrooms, add preserved chilli and cook at 180°C for 2 minutes.",
+          "Check the centre bundles are hot and tender; scatter spring onion after removing."
+        ],
+        "turn": "After 5 minutes, turn the lower bundles upward. Add sauce after the following 3–5 minutes.",
+        "completion": "Every bundle is hot and soft throughout, with no cool, firm clump remaining.",
+        "preheatDetail": "Load the prepared food and set the temperature below. If your machine requires a preheat cycle, finish that cycle before loading; food cooking time starts after loading.",
+        "deviceNote": "Requires a shallow foil tray allowed by your fryer manual. Keep it below the heater and do not obstruct the air passages.",
+        "notes": [],
+        "sources": [
+          {
+            "title": "烤金针菇（空气炸锅版）",
+            "publisher": "小小多和包子 / 美食天下",
+            "url": "https://home.meishichina.com/recipe-560972.html",
+            "role": "reference",
+            "locator": "Ingredients and numbered cooking steps",
+            "evidence": "250 g, 180°C 5 then 3–5 minutes; soy/oyster/water 1 tbsp each and oil 1/2 tbsp; add sauce/chilli, cook 2 more minutes."
+          },
+          {
+            "title": "金针菇-空气炸锅",
+            "publisher": "北冥有鲲7 / 下厨房",
+            "url": "https://www.xiachufang.com/recipe/106968140/",
+            "role": "cross-check",
+            "locator": "Ingredients and numbered cooking steps",
+            "evidence": "Independent 180°C sauced-enoki preparation uses 20 minutes and adds sauce earlier. Cross-check technique only; do not transplant its time."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-roasted-peanuts",
+    "name": "Salted roasted peanuts",
+    "aliases": [
+      "花生",
+      "花生米",
+      "烤花生",
+      "peanuts",
+      "roasted peanuts"
+    ],
+    "category": "vegetables",
+    "description": "Dry raw kernels, shaken halfway and cooled before judging crispness.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-14",
+    "variants": [
+      {
+        "id": "default",
+        "state": "fresh",
+        "temperatureC": 180,
+        "temperatureF": 356.0,
+        "minutes": [
+          6,
+          6
+        ],
+        "preheat": "yes",
+        "label": "Dry raw shelled kernels; cool before tasting",
+        "portion": "250 g dry raw peanut kernels, spread evenly without a deep pile.",
+        "ingredients": [
+          "250 g dry raw peanut kernels",
+          "5 ml cooking oil",
+          "2 g salt, added after cooking"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Mixing bowl",
+          "Kitchen scale and 5 ml teaspoon",
+          "Heatproof plate"
+        ],
+        "steps": [
+          "Pick out damaged kernels. Stir the dry peanuts with the measured oil until lightly coated.",
+          "Preheat at 180°C for 5 minutes. Spread the peanuts evenly in the basket.",
+          "Cook at 180°C for 3 minutes, shake thoroughly, then cook 3 more minutes; watch closely near the end.",
+          "Tip onto a heatproof plate, stir in salt, and cool before tasting for crispness."
+        ],
+        "turn": "Shake and mix after 3 minutes.",
+        "completion": "A light roasted aroma, without blackened kernels; after cooling, a kernel breaks crisply rather than bending.",
+        "preheatDetail": "Preheat empty at 180°C for 5 minutes.",
+        "deviceNote": "Only use a fryer that permits roasting loose kernels, with holes too small for peanuts to fall through. If the manual forbids nuts/beans, do not use this guide.",
+        "notes": [],
+        "sources": [
+          {
+            "title": "空气炸锅一一花生米",
+            "publisher": "蓉意 / 美食天下",
+            "url": "https://home.meishichina.com/recipe-352742.html",
+            "role": "reference",
+            "locator": "Ingredients and numbered cooking steps",
+            "evidence": "250 g dry peanuts, 5 ml oil, 2 g salt; preheat 180°C 5, cook 3+3 minutes; salt and cool afterwards."
+          },
+          {
+            "title": "空气炸锅版炸花生米",
+            "publisher": "厨色 / 美食天下",
+            "url": "https://home.meishichina.com/recipe-625455.html",
+            "role": "cross-check",
+            "locator": "Ingredients and numbered cooking steps",
+            "evidence": "Independent 200 g rinsed/drained method cooks 180°C 5 plus 4–5 minutes; moisture/portion differs, so its longer time is not averaged."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-pepper-broccoli",
+    "name": "Black-pepper roasted broccoli",
+    "aliases": [
+      "西兰花",
+      "西蓝花",
+      "青花菜",
+      "烤西兰花",
+      "broccoli",
+      "broccoli florets"
+    ],
+    "category": "vegetables",
+    "description": "Fresh florets roasted directly, with a check from minute 10.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-14",
+    "variants": [
+      {
+        "id": "default",
+        "state": "fresh",
+        "temperatureC": 180,
+        "temperatureF": 356.0,
+        "minutes": [
+          10,
+          15
+        ],
+        "preheat": "yes",
+        "label": "Fresh small florets, rinsed and dried",
+        "portion": "1 head of broccoli, split into small similar florets; one uncrowded layer per batch.",
+        "ingredients": [
+          "1 head broccoli",
+          "Olive oil, enough to coat the florets lightly",
+          "Salt and ground black pepper, small pinches"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Mixing bowl",
+          "Knife and board",
+          "Tongs"
+        ],
+        "steps": [
+          "Rinse and cut into small similar florets. Drain and dry the surface well.",
+          "Toss with a thin coating of oil, salt and pepper. Preheat at 180°C for 5 minutes.",
+          "Spread loosely in one layer and cook at 180°C. Check at 10 minutes; continue up to the reference’s 15-minute point as needed.",
+          "Remove once the stems are tender and tips only lightly coloured."
+        ],
+        "turn": "No fixed turn minute in the main reference; open and inspect at minute 10.",
+        "completion": "A fork enters the thicker stem easily; tips are lightly coloured, not charred.",
+        "preheatDetail": "Preheat empty at 180°C for 5 minutes.",
+        "deviceNote": "Use the stated Celsius setting in Air Fry mode. Do not round it to another notch; all heating here stays at or below 200°C.",
+        "notes": [
+          "Small, evenly sized florets cook more evenly; stop before the tips blacken."
+        ],
+        "sources": [
+          {
+            "title": "空气炸锅版西兰花",
+            "publisher": "爱做梦的呶呶 / 下厨房",
+            "url": "https://www.xiachufang.com/recipe/103826984/",
+            "role": "reference",
+            "locator": "Ingredients and numbered cooking steps",
+            "evidence": "One head, oil/salt/pepper; preheat 5 minutes, 180°C 15 minutes with a 10-minute softer option."
+          },
+          {
+            "title": "空气炸锅「烤西兰花」",
+            "publisher": "一颗糖572196 / 下厨房",
+            "url": "https://www.xiachufang.com/recipe/106856206/",
+            "role": "cross-check",
+            "locator": "Ingredients and numbered cooking steps",
+            "evidence": "Independent direct-floret method, 180°C 10 minutes and a halfway turn; different seasoning. Salt-water disinfectant claims are not adopted."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-crispy-banana",
+    "name": "Breadcrumb-crusted banana",
+    "aliases": [
+      "香蕉",
+      "炸香蕉",
+      "脆皮香蕉",
+      "banana",
+      "breaded banana"
+    ],
+    "category": "bakery",
+    "description": "Banana segments with starch, egg and sweet breadcrumbs.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-14",
+    "variants": [
+      {
+        "id": "default",
+        "state": "fresh",
+        "temperatureC": 180,
+        "temperatureF": 356.0,
+        "minutes": [
+          10,
+          10
+        ],
+        "preheat": "unspecified",
+        "label": "Fresh banana segments with a dry breadcrumb coating",
+        "portion": "3 bananas and 1 beaten egg; spread the coated pieces in one layer and batch if needed.",
+        "ingredients": [
+          "3 bananas",
+          "1 egg, beaten",
+          "Cornstarch and sweet breadcrumbs: a shallow plate each, enough for a thin coating"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Knife and board",
+          "Tongs",
+          "Three shallow coating dishes"
+        ],
+        "steps": [
+          "Peel and cut bananas into similar segments. Prepare separate starch, beaten egg and breadcrumb dishes.",
+          "Roll each segment in starch and shake off excess; dip in egg, then press breadcrumbs on lightly.",
+          "Arrange one layer and cook at 180°C for 10 minutes. Do not pour leftover egg into the basket.",
+          "Check the coating is cooked and dry. Remove carefully and let the hot centre cool slightly."
+        ],
+        "turn": "The main reference does not require turning; keep pieces separated.",
+        "completion": "The coating is set and lightly golden, without wet raw egg; the banana centre is soft.",
+        "preheatDetail": "Load the prepared food and set the temperature below. If your machine requires a preheat cycle, finish that cycle before loading; food cooking time starts after loading.",
+        "deviceNote": "Use the stated Celsius setting in Air Fry mode. Do not round it to another notch; all heating here stays at or below 200°C.",
+        "notes": [
+          "Keep the crumb layer thin; discard leftover egg-contaminated coating ingredients. A wet pourable batter is a different preparation."
+        ],
+        "sources": [
+          {
+            "title": "香蕉新吃法 炸香蕉 空气炸锅食谱",
+            "publisher": "幸福的面点师 / 下厨房",
+            "url": "https://www.xiachufang.com/recipe/106155389/",
+            "role": "reference",
+            "locator": "Ingredients and numbered cooking steps",
+            "evidence": "3 bananas, 1 egg, cornstarch and sweet breadcrumbs; coat in that order, 180°C 10 minutes."
+          },
+          {
+            "title": "脆皮香蕉",
+            "publisher": "tgcyy / 美食天下",
+            "url": "https://home.meishichina.com/recipe-378948.html",
+            "role": "cross-check",
+            "locator": "Ingredients and numbered cooking steps",
+            "evidence": "Independent flour/egg/breadcrumb preparation uses 2 bananas and an 8-minute device timer; no temperature stated, so only coating technique is cross-checked."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-butter-sugar-toast",
+    "name": "Butter-sugar toast",
+    "aliases": [
+      "吐司",
+      "土司",
+      "烤面包",
+      "黄油吐司",
+      "butter toast",
+      "sugar toast"
+    ],
+    "category": "bakery",
+    "description": "Two ready-baked bread slices, lightly coated and watched from minute 5.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-14",
+    "variants": [
+      {
+        "id": "default",
+        "state": "fresh",
+        "temperatureC": 180,
+        "temperatureF": 356.0,
+        "minutes": [
+          5,
+          6
+        ],
+        "preheat": "unspecified",
+        "label": "Ready-baked sliced toast, butter and sugar",
+        "portion": "2 slices of ready-baked toast, laid in one layer; no sandwich fillings.",
+        "ingredients": [
+          "2 toast slices",
+          "Soft butter, enough to coat the surface thinly",
+          "White sugar, a thin even sprinkle"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Knife and board",
+          "Butter knife or pastry brush",
+          "Tongs"
+        ],
+        "steps": [
+          "Make shallow cross-hatch cuts without cutting through the slices. Soften butter enough to spread.",
+          "Spread butter thinly, sprinkle sugar evenly, then place one layer in the basket.",
+          "Cook at 180°C for 5 minutes and inspect. The reference allows 5–6 minutes; stop when lightly coloured.",
+          "Let the surface cool briefly so the hot topping is safe to eat."
+        ],
+        "turn": "No turning specified; inspect from minute 5.",
+        "completion": "Edges lightly golden and surface crisp; sugar and bread are not blackened.",
+        "preheatDetail": "Load the prepared food and set the temperature below. If your machine requires a preheat cycle, finish that cycle before loading; food cooking time starts after loading.",
+        "deviceNote": "Use the stated Celsius setting in Air Fry mode. Do not round it to another notch; all heating here stays at or below 200°C.",
+        "notes": [
+          "Butter should spread as a thin layer. This is ready-baked bread, not raw dough or an egg-milk-soaked bread pudding."
+        ],
+        "sources": [
+          {
+            "title": "空气炸锅：黄油焦糖吐司",
+            "publisher": "冬天姐姐 / 下厨房",
+            "url": "https://www.xiachufang.com/recipe/106546937/",
+            "role": "reference",
+            "locator": "Ingredients and numbered cooking steps",
+            "evidence": "2 slices, butter and sugar on cross-hatched bread; 180°C 5–6 minutes."
+          },
+          {
+            "title": "超好吃的烤吐司，空气炸锅就能做",
+            "publisher": "77的厨房日记 / 下厨房",
+            "url": "https://www.xiachufang.com/recipe/106855513/",
+            "role": "cross-check",
+            "locator": "Ingredients and numbered cooking steps",
+            "evidence": "Independent butter/sugar toast at 180°C, 5 minutes plus a 3-minute flipped finish; its longer profile is not averaged."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-frozen-popcorn-chicken",
+    "name": "Frozen popcorn chicken",
+    "aliases": [
+      "鸡米花",
+      "雞米花",
+      "冷冻鸡米花",
+      "popcorn chicken"
+    ],
+    "category": "frozen",
+    "description": "Small frozen breaded chicken pieces, with a centre check before serving.",
+    "region": "cn",
+    "safety": "poultry",
+    "reviewedAt": "2026-11-14",
+    "variants": [
+      {
+        "id": "default",
+        "state": "frozen",
+        "temperatureC": 180,
+        "temperatureF": 356.0,
+        "minutes": [
+          16,
+          18
+        ],
+        "preheat": "yes",
+        "label": "Frozen small breaded chicken pieces, not chicken strips",
+        "portion": "Only enough frozen pieces to cover the basket in a single layer; leave the rest frozen.",
+        "ingredients": [
+          "Frozen popcorn chicken suitable for air-frying"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs",
+          "Clean knife and plate; food thermometer recommended"
+        ],
+        "steps": [
+          "Read the package first. If it gives air-fryer directions, use them; do not assume browned breading means cooked chicken.",
+          "Keep pieces frozen. Preheat at 180°C for 5 minutes, then spread one layer.",
+          "Cook at 180°C for 8 minutes. Shake and turn, then cook another 8–10 minutes.",
+          "Check larger pieces in the centre before serving; if not cooked through, continue at the same setting and recheck."
+        ],
+        "turn": "Shake and turn after 8 minutes.",
+        "completion": "A clean probe in the thickest centre reaches 75°C for at least 30 seconds.",
+        "preheatDetail": "Preheat empty at 180°C for 5 minutes, then load food and start its cooking timer.",
+        "deviceNote": "Use the stated Celsius setting in Air Fry mode. Do not round it to another notch; all heating here stays at or below 200°C.",
+        "notes": [
+          "Follow the actual package instructions if they differ. Thick nuggets, strips and raw homemade breaded chicken are separate cases."
+        ],
+        "sources": [
+          {
+            "title": "空气炸锅鸡米花（速冻版）",
+            "publisher": "重八 / 下厨房",
+            "url": "https://www.xiachufang.com/recipe/104488032/",
+            "role": "reference",
+            "locator": "Ingredients and numbered cooking steps",
+            "evidence": "Frozen bagged pieces; preheat 5 minutes, 180°C 8 minutes, turn, then 8–10 minutes."
+          },
+          {
+            "title": "HD9100 Chinese user manual",
+            "publisher": "Philips / Versuni",
+            "url": "https://ot-dam.versuni.com/adaptivemedia/rendition?id=62bcac1b9356a420d6d41cdf3898599f92f74bf3",
+            "role": "cross-check",
+            "locator": "Ingredients and numbered cooking steps",
+            "evidence": "Cooking table: frozen popcorn chicken, 250 g, 180°C 14–16 minutes; model/portion differs, not a replacement for the selected recipe."
+          },
+          {
+            "title": "Cooking food safely",
+            "publisher": "UK Government / Food Standards Agency",
+            "url": "https://www.gov.uk/food-hygiene-businesses/cooking",
+            "role": "cross-check",
+            "locator": "Ingredients and numbered cooking steps",
+            "evidence": "Poultry must be steaming throughout with no pink meat and clear juices; 75°C for 30 seconds is one measured combination."
+          }
+        ],
+        "withoutThermometer": "Cut open a larger piece with a clean knife: it must steam throughout, with no pink raw meat and clear juices. Appearance does not measure core temperature; a thermometer is recommended.",
+        "safetyOverride": {
+          "text": "A clean probe in the thickest centre reaches 75°C for at least 30 seconds.",
+          "url": "https://www.cfs.gov.hk/english/trade_zone/safe_kitchen/Cooking_and_reheating.html"
+        }
       }
     ]
   }

@@ -11,11 +11,11 @@ try {
  const p=await c.newPage();p.on('pageerror',e=>errors.push(e.message));
  await check('fresh entry: English US, direct Chinese entry: China with Celsius and grams',async()=>{
   await p.goto(base);await expect(p.locator('html')).toHaveAttribute('lang','en');await expect(p.locator('[data-food-row]:visible')).toHaveCount(50);
-  await p.goto(base+'/zh');await expect(p.locator('html')).toHaveAttribute('data-region','cn');await expect(p.locator('[data-food-row]:visible')).toHaveCount(11);await expect(p.locator('[data-unit=c]')).toHaveAttribute('aria-pressed','true');
+  await p.goto(base+'/zh');await expect(p.locator('html')).toHaveAttribute('data-region','cn');await expect(p.locator('[data-food-row]:visible')).toHaveCount(22);await expect(p.locator('[data-unit=c]')).toHaveAttribute('aria-pressed','true');
   await p.locator('.food-rows [data-food-link="cn-orleans-wings"]').click();await expect(p.locator('.ingredients')).toContainText('500克');await expect(p.locator('.cooking-values [data-temperature]')).toHaveText('200°C');await expect(p.locator('.without-thermometer')).toBeVisible();
  });
  await check('ribs disclose hob, braising and two heating phases before the cooking steps',async()=>{
-  await p.goto(base+'/zh/china/foods/cn-garlic-ribs');await expect(p.locator('.before-start')).toContainText('无法只靠空气炸锅');await expect(p.locator('.recipe-timeline')).toContainText('15分钟');await expect(p.locator('.recipe-timeline')).toContainText('180°C');await expect(p.locator('.cooking-values')).toContainText('7');
+  await p.goto(base+'/zh/china/foods/cn-garlic-ribs');await expect(p.locator('.before-start')).toContainText('无法只靠空气炸锅');await expect(p.locator('.recipe-timeline')).toContainText('15分钟');await expect(p.locator('.recipe-timeline')).toContainText('180°C');await expect(p.locator('.phase-total')).toContainText('7');await expect(p.locator('.cooking-values [data-temperature]')).toHaveText(['200°C','180°C']);
   expect(await p.locator('.dependency-note').evaluate(el=>Boolean(el.compareDocumentPosition(document.querySelector('.instructions')) & Node.DOCUMENT_POSITION_FOLLOWING))).toBe(true);
  });
  await check('language retains collection and measurements; changing collection is explicit and remembered',async()=>{
