@@ -18,12 +18,12 @@
   --font-display: "DM Sans", ui-sans-serif, system-ui, sans-serif; --font-body: "DM Sans", ui-sans-serif, system-ui, sans-serif;
   --font-chinese: "DM Sans", "PingFang SC", "Microsoft YaHei", sans-serif;
   --font-outlier: var(--font-body);
-  --radius-card: 12px; --radius-input: 10px; --radius-row: 8px; --radius-pill: 999px; --rule-hair: 1px; --rule-bar: 2px;
+  --radius-card: 10px; --radius-input: 8px; --radius-row: 8px; --radius-pill: 999px; --rule-hair: 1px; --rule-bar: 2px;
   --shadow-card: none;
   --tracking-display: -0.025em; --display-weight: 600;
   --space-control: 20px;
   --text-heading: 2.488rem; --text-value: 2.986rem;
-  --container-app: 1248px; --gutter: 48px;
+  --container-app: 1040px; --gutter: 32px;
 }
 
 @font-face {
