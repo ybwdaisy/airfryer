@@ -1,5 +1,45 @@
 [
   {
+    "date": "2026-11-15",
+    "mode": "redesign",
+    "depth": "full",
+    "scope": "app",
+    "shape": "app screen",
+    "theme": "brand",
+    "axes": "light/sans-serif/warm",
+    "nav": "wordmark and Settings; duplicate destinations remain reachable through breadcrumbs and footer",
+    "footer": "preserved source, privacy, consent and disclaimer",
+    "imagery": "working app UI; before and after screenshots, four phone and desktop viewport captures",
+    "photos": [],
+    "signature": "food names and source-native settings in one quiet index",
+    "sections": [
+      "search",
+      "categories",
+      "aligned food index",
+      "preparation",
+      "native cooking settings",
+      "ingredients and instructions",
+      "finish checks",
+      "reference details"
+    ],
+    "fingerprint": [
+      "app",
+      "task-label",
+      "ruled-index",
+      "native-controls",
+      "single-column-reading",
+      "saved-kitchen"
+    ],
+    "waived": [
+      "49b: full manufacturer model title wraps to two lines at 320px without horizontal overflow"
+    ],
+    "prompt": "Make the cooking app direct and simple like Linear or Apple Notes; remove slogans and secondary labels while preserving behavior and improving UX, DX and AX",
+    "entry": "codex/airfryer-simple; review PR only, no merge or production release",
+    "sweep": "0 FAIL, 0 WARN, 0 open REFLEX; 90/90 links,3/3 fields,1/1 figures;19/26 headings with7 deliberate removals recorded; unchanged11-group browser suite passes",
+    "finish_review": "fresh-context independent reviewer ship, zero blocking findings; actual Chrome confirms native disclosure keyboard/focus/expanded state and accessible recipe names",
+    "function_preservation": "26 unit tests,144 recipe/preset visits,exact phases,old condition/source links,consent and actual SDK intercepted transport pass"
+  },
+  {
     "date": "2026-11-14",
     "mode": "app flow extension",
     "scope": "app",

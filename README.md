@@ -10,10 +10,10 @@ Node.js 24 LTS is recommended. Run `npm ci`, `npm run check`, `npm test`, `npm r
 
 Browser icons use `public/favicon.svg`; the opaque home-screen artwork is `public/icon.svg`. After editing either source, run `npm run icons:generate` and commit the generated PNG/ICO files. The shared layout declares the 180px Apple Touch icon, browser fallbacks and manifest on every page. The manifest keeps browser navigation; no offline or standalone app behavior is introduced.
 
-- Independent collections: 11 China home-cooking dishes and 50 US food subjects, with 67 separately sourced conditions in total.
-- Static detail and category pages remain readable without JavaScript; live fuzzy search, local measurement and collection preferences and condition selection enhance them in the browser.
+- One searchable library: 72 recipes and 78 separately sourced conditions. The default list shows methods available in the saved kitchen temperature scale: currently 22 Celsius recipes or 50 Fahrenheit recipes. Search separately discovers foods without a verified method in that scale.
+- Native links, forms, lists and disclosures keep the interface and markup simple. Detail and category pages remain readable without JavaScript, in the source-native units. Live fuzzy search, saved kitchen/language settings and condition selection enhance them in the browser.
 - The selected condition, search and filter live in the URL. Unsupported conditions fall back to the food's first sourced condition; no weight multiplier or generated cooking advice is used.
-- Reference temperature/time comes from one source. Independent cross-checks and mismatches are disclosed, not averaged. China methods use native Celsius settings at or below 200°C; US methods use Fahrenheit at or below 400°F. Display conversion covers temperature, weight and size without choosing an appliance notch or calculating a different cooking time. Official internal-temperature guidance is separate.
+- Reference temperature/time comes from one source. Independent cross-checks and mismatches are disclosed, not averaged. China methods use native Celsius settings at or below 200°C; US methods use Fahrenheit at or below 400°F. Ingredient weight, volume and size can follow the saved kitchen preset; appliance temperatures are never converted into executable settings or paired with reused times. Official internal-temperature guidance is separate.
 
 Food data lives in `src/data/foods-{a,b,cn}.json`; `recipe-overrides.json` enriches retained US conditions without changing their original clocks; schema and research requirements are documented in [the data contract](docs/data-contract.md). Each public condition has at least two independently authored source records, including source locations and concise evidence. This site has not performed physical cooking tests. References using a lower culinary doneness target do not override the official safety checks shown here.
 
@@ -21,11 +21,15 @@ Food data lives in `src/data/foods-{a,b,cn}.json`; `recipe-overrides.json` enric
 
 ## Languages
 
-Collection homes are `/` (US, English), `/zh/us` (US, Chinese), `/china` (China, English), and `/zh` (China, Chinese). Legacy `/foods/*` and `/zh/foods/*` retain US semantics; new China recipes use `/china/foods/*` and `/zh/china/foods/*`.
+The unified homes are `/` (English) and `/zh` (Chinese). Old collection and category URLs remain reachable and canonicalize to the unified lists. Original US recipe paths `/foods/*` and `/zh/foods/*`, China paths `/china/foods/*` and `/zh/china/foods/*`, condition IDs and source anchors remain stable. The sitemap contains 162 canonical URLs; settings pages are noindex.
 
-The header switches between English and Chinese while retaining the current page, search, category, measurement units, food collection, preparation condition and anchor. The latest explicit language choice is stored under the origin-local key `airfryer:language:v1`; returning to the bare homepage restores the selected language and collection. Fresh visits default to English even with a Chinese browser locale. Language links and Chinese guides also work without JavaScript; storage failure leaves explicit navigation usable.
+Settings at `/settings` or `/zh/settings` save one kitchen preset and an independent interface language in origin-local browser storage. Old explicit unit preferences migrate once; shared `unit` query parameters cannot override saved preferences. Storage failure produces an explicit temporary-only notice. Fresh homepage visits default to English; saved language applies to later visits and reference links. With JavaScript disabled, direct Chinese routes remain readable, while saved settings are unavailable.
 
-`src/data/zh-foods.json` preserves historical Chinese copy; `regional-zh.json` supplies complete Chinese copy for the enriched and new recipes. Both languages use the same structured cooking facts; they do not share a single region’s food list. Publisher names, article titles and evidence retain original wording and units in folded source details. `src/data/zh-ui.json` contains the interface copy. `npm test` checks translation coverage and numeric preservation; `npm run test:language` checks navigation, Chinese search, metadata, mobile layout and shared consent with Google traffic intercepted. `npm run test:regional` checks the two collections, complete measurement switching, old share links, preparation dependencies, no-JavaScript content, and 48 responsive layouts. Both languages have self-canonicals and alternate-language links; the sitemap has 150 URLs.
+`src/data/zh-foods.json` preserves historical Chinese copy; `regional-zh.json` supplies the enriched and new recipe copy. Both languages preserve the same cooking facts. Publisher names, article titles and evidence retain original wording and units in folded source details; `zh-ui.json` contains interface copy.
+
+The established app system is recorded in [design.md](design.md): direct task labels, aligned settings, native controls and one consolidated stylesheet. Keep the structured `food-index` and `variant-data` nodes, canonical links and heading/field semantics usable by assistive technology and agents. Do not create a separate agent interface for visual changes.
+
+`npm run test:browser` runs the complete 11-group workflow, including 144 recipe/preset visits, responsive layouts, fuzzy search, saved settings, old links, no-JavaScript reading and consent. The language, regional, clarity, expansion and analytics commands select their corresponding groups from the same suite. Tests intercept Google requests; do not treat test output as real cooking or GA4 ingestion evidence.
 
 ## Analytics and privacy
 
@@ -33,7 +37,7 @@ The supplied dedicated stream is `16326517771`, with public measurement ID `G-B3
 
 The build enables analytics only for `VERCEL_ENV=production`. Optional Google tags load only after a user grants consent, and can be rejected or withdrawn. Events include collection, language and measurement preferences. Page-location values omit queries, and raw search text is not sent. Cookies are explicitly scoped to the tool hostname; preference storage is origin-local. Analytics is off in local and preview builds. See [deployment steps](docs/deployment.md) for the required GA4 property configuration before release.
 
-新版埋点、有效阅读、QA隔离、漏斗与后台待执行清单见 [GA4 v2 口径](docs/analytics-v2.md)。运行 `npm run test:analytics` 验证业务触发，`npm run test:analytics-sdk` 以实际 Google SDK 检查事件包；收集请求均在派发前拦截。
+埋点、有效阅读、QA隔离、漏斗与后台配置记录见 [GA4 v2 口径](docs/analytics-v2.md)。运行 `npm run test:analytics` 验证业务触发，`npm run test:analytics-sdk` 以实际 Google SDK 检查事件包；收集请求均在派发前拦截。
 
 ## Deployment
 

@@ -29,8 +29,7 @@ else {
       panel.querySelectorAll<HTMLElement>('[data-compatible-body]').forEach(el=>el.hidden=!compatible);
       panel.querySelectorAll<HTMLElement>('[data-unsupported-note]').forEach(el=>el.hidden=compatible);
     });
-    document.querySelectorAll<HTMLElement>('[data-kitchen-summary]').forEach(el=>el.textContent=lang==='zh'?(preset==='metric'?'公制厨房：°C、克、毫升、厘米':'美制厨房：°F、盎司、量杯、英寸'):(preset==='metric'?'Metric kitchen: °C, g, mL, cm':'US customary kitchen: °F, oz, cups, inches'));
-    document.querySelectorAll<HTMLElement>('[data-kitchen-featured]').forEach(el=>el.hidden=el.dataset.kitchenFeatured!==unit);
+    document.querySelectorAll<HTMLElement>('[data-kitchen-summary]').forEach(el=>el.textContent=preset==='metric'?'°C, g, mL, cm':'°F, oz, cups, inches');
     document.querySelectorAll<HTMLElement>('.related').forEach(section=>{let shown=0;section.querySelectorAll<HTMLElement>('[data-food-row]').forEach(row=>{row.hidden=row.dataset.recipeUnit!==unit || shown>=4;if(!row.hidden)shown++;});section.hidden=shown===0;});
     const count=[...document.querySelectorAll<HTMLElement>('[data-food-row]')].filter(el=>!el.hidden).length;
     document.querySelectorAll<HTMLElement>('[data-category-count]').forEach(el=>el.textContent=lang==='zh'?`${count} 道做法`:`${count} recipes`);
