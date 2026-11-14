@@ -1,0 +1,259 @@
+{
+  "checkedAt": "2026-11-13T13:22:08Z",
+  "propertyId": "494048879",
+  "customDimensions": [
+    {
+      "name": "Airfryer 食物集合",
+      "parameter": "food_collection",
+      "scope": "event",
+      "savedAndReadBack": true
+    },
+    {
+      "name": "Airfryer 界面语言",
+      "parameter": "ui_language",
+      "scope": "event",
+      "savedAndReadBack": true
+    },
+    {
+      "name": "Airfryer 计量单位",
+      "parameter": "measurement_units",
+      "scope": "event",
+      "savedAndReadBack": true
+    },
+    {
+      "name": "Airfryer 食物标识",
+      "parameter": "food_slug",
+      "scope": "event",
+      "savedAndReadBack": true
+    },
+    {
+      "name": "Airfryer 食物条件",
+      "parameter": "condition",
+      "scope": "event",
+      "savedAndReadBack": true
+    },
+    {
+      "name": "Airfryer 入口位置",
+      "parameter": "entry_point",
+      "scope": "event",
+      "savedAndReadBack": true
+    },
+    {
+      "name": "Airfryer 阅读阶段",
+      "parameter": "section",
+      "scope": "event",
+      "savedAndReadBack": true
+    }
+  ],
+  "quota": {
+    "before": 7,
+    "after": 14,
+    "limit": 50
+  },
+  "keyEvent": {
+    "name": "airfryer_guide_engaged",
+    "countingMethod": "ONCE_PER_SESSION",
+    "noDefaultMonetaryValue": true,
+    "savedAndReadBack": true
+  },
+  "exploration": {
+    "url": "https://analytics.google.com/analytics/web/#/analysis/a359267445p494048879/edit/oBMNfb-gRXWjzAO1oPrmXA",
+    "name": "空气炸锅｜获客、分地区与菜谱阅读 v2",
+    "dateRange": "last 30 complete days; UI 2026-10-14 through 2026-11-12",
+    "segment": {
+      "name": "Airfryer v2｜正常访问事件",
+      "scope": "event",
+      "hostnameExact": "airfryer.ybwdaisy.com",
+      "contentGroupRegex": "^airfryer_(cn|us)_(en|zh)_(c|f)$",
+      "savedToProperty": true,
+      "verifiedAfterReload": true
+    },
+    "tabs": [
+      {
+        "name": "获客渠道",
+        "configured": true,
+        "rows": [
+          "sessionSourceMedium"
+        ],
+        "metrics": [
+          "engagedSessions",
+          "totalUsers",
+          "sessions",
+          "keyEvents"
+        ],
+        "verifiedAfterReload": true,
+        "segment": "Airfryer v2｜正常访问事件"
+      },
+      {
+        "name": "地区与语言",
+        "configured": true,
+        "rows": [
+          "food_collection"
+        ],
+        "columns": [
+          "ui_language"
+        ],
+        "metrics": [
+          "totalUsers",
+          "eventCount"
+        ],
+        "verifiedAfterReload": true,
+        "segment": "Airfryer v2｜正常访问事件"
+      },
+      {
+        "name": "目录到阅读",
+        "configured": true,
+        "verifiedAfterReload": true,
+        "closed": true,
+        "indirectSteps": true,
+        "events": [
+          "airfryer_list_view",
+          "airfryer_guide_view",
+          "airfryer_guide_engaged"
+        ],
+        "savedStepWindowsMinutes": [
+          30,
+          30
+        ],
+        "segment": "Airfryer v2｜正常访问事件"
+      },
+      {
+        "name": "搜索到阅读",
+        "configured": true,
+        "verifiedAfterReload": true,
+        "closed": true,
+        "indirectSteps": true,
+        "events": [
+          "food_search",
+          "food_select",
+          "airfryer_guide_view",
+          "airfryer_guide_engaged"
+        ],
+        "savedStepWindowsMinutes": [
+          30,
+          30,
+          30
+        ],
+        "segment": "Airfryer v2｜正常访问事件"
+      },
+      {
+        "name": "菜谱阅读（含直达）",
+        "configured": true,
+        "verifiedAfterReload": true,
+        "closed": true,
+        "indirectSteps": true,
+        "events": [
+          "airfryer_guide_view",
+          "airfryer_guide_engaged"
+        ],
+        "savedStepWindowsMinutes": [
+          30
+        ],
+        "segment": "Airfryer v2｜正常访问事件"
+      },
+      {
+        "name": "食物与条件",
+        "configured": true,
+        "verifiedAfterReload": true,
+        "rows": [
+          "food_slug",
+          "condition"
+        ],
+        "columns": [
+          "eventName"
+        ],
+        "eventNameRegex": "^airfryer_guide_(view|engaged)$",
+        "metrics": [
+          "totalUsers",
+          "eventCount"
+        ],
+        "segment": "Airfryer v2｜正常访问事件"
+      },
+      {
+        "name": "阅读阶段",
+        "configured": true,
+        "verifiedAfterReload": true,
+        "rows": [
+          "section"
+        ],
+        "eventNameExact": "airfryer_section_view",
+        "metrics": [
+          "totalUsers",
+          "eventCount"
+        ],
+        "segment": "Airfryer v2｜正常访问事件"
+      }
+    ],
+    "savedAndReopened": true
+  },
+  "realtime": {
+    "verified": true,
+    "observedEvents": [
+      "airfryer_list_view",
+      "food_search",
+      "food_select",
+      "airfryer_guide_view",
+      "airfryer_section_view",
+      "airfryer_guide_engaged"
+    ],
+    "guideEngagedCount": 2,
+    "keyEventCount": 2,
+    "guideEngagedParameterKeysObserved": [
+      "advance_preparation",
+      "analytics_version",
+      "category",
+      "condition",
+      "content_group",
+      "debug_mode",
+      "engagement_time_msec",
+      "food_collection",
+      "food_slug"
+    ],
+    "parameterValuesVerified": true,
+    "qaValueVerified": true,
+    "countScope": "Aggregate visible Realtime window includes QA visits; not a per-test deduplication assertion.",
+    "parameterValues": {
+      "content_group": "airfryer_qa",
+      "food_collection": "cn",
+      "food_slug": "cn-orleans-wings",
+      "measurement_units": "c",
+      "qa_traffic": "yes",
+      "ui_language": "zh",
+      "page_location": "https://airfryer.ybwdaisy.com/zh/china/foods/cn-orleans-wings",
+      "read_seconds": "10",
+      "section": "instructions"
+    }
+  },
+  "approvalRejection": {
+    "action": "Funnel selector button 创建事件：“airfryer_list_view”",
+    "reason": "Reviewer interpreted it as persistent event creation in the shared property.",
+    "actionExecuted": false,
+    "nextApproach": "Use existing events or an Event name dimension filter in the funnel; do not create backend derived-event configurations.",
+    "resolution": "Did not click the rejected Create event option. Funnels use the predefined Event name dimension with exact literal filters; no derived-event configuration was created.",
+    "resolved": true
+  },
+  "blocker": null,
+  "fullAcceptanceComplete": false,
+  "sharedStreamSettingsChanged": false,
+  "qaConsentRestorePending": false,
+  "requestedScopeComplete": true,
+  "qaConsentAfterAcceptance": "denied via visible production-site Analytics choices button",
+  "funnelSaveReview": "Window-related saves were initially rejected. Each interval was explicitly confirmed/read back at 30 minutes, then saves succeeded. All three funnels were reopened after browser reload and every stored interval read back again.",
+  "retention": {
+    "url": "https://analytics.google.com/analytics/web/#/analysis/a359267445p494048879/edit/rxYzJsWBST2HjswvhyY2qw",
+    "name": "空气炸锅｜回访（等待新事件进入可选列表）",
+    "status": "pending GA4 event selector availability; not an accepted meaningful-reading retention report",
+    "intendedInclusionEvent": "airfryer_guide_engaged",
+    "intendedReturnEvent": "airfryer_guide_engaged",
+    "currentInclusion": "first_touch",
+    "currentReturn": "any_event",
+    "currentDateRange": {
+      "start": "2026-09-14",
+      "end": "2026-11-12",
+      "mode": "fixed custom; not rolling"
+    },
+    "granularity": "daily",
+    "segment": "Airfryer v2｜正常访问事件",
+    "reason": "Typing airfryer_guide_engaged in the cohort inclusion selector returned No results; Enter and blur reverted to First touch. Do not interpret the pending template as meaningful-reading retention."
+  }
+}
