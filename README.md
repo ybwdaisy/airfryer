@@ -10,7 +10,7 @@ Node.js 24 LTS is recommended. Run `npm ci`, `npm run check`, `npm test`, `npm r
 
 Browser icons use `public/favicon.svg`; the opaque home-screen artwork is `public/icon.svg`. After editing either source, run `npm run icons:generate` and commit the generated PNG/ICO files. The shared layout declares the 180px Apple Touch icon, browser fallbacks and manifest on every page. The manifest keeps browser navigation; no offline or standalone app behavior is introduced.
 
-- One searchable library: 72 recipes and 78 separately sourced conditions. The default list shows methods available in the saved kitchen temperature scale: currently 22 Celsius recipes or 50 Fahrenheit recipes. Search separately discovers foods without a verified method in that scale.
+- One searchable library: 75 recipes and 81 separately sourced conditions. The default list shows methods available in the saved kitchen temperature scale: currently 25 Celsius recipes or 50 Fahrenheit recipes. Search separately discovers foods without a verified method in that scale.
 - Native links, forms, lists and disclosures keep the interface and markup simple. Detail and category pages remain readable without JavaScript, in the source-native units. Live fuzzy search, saved kitchen/language settings and condition selection enhance them in the browser.
 - The selected condition, search and filter live in the URL. Unsupported conditions fall back to the food's first sourced condition; no weight multiplier or generated cooking advice is used.
 - Reference temperature/time comes from one source. Independent cross-checks and mismatches are disclosed, not averaged. China methods use native Celsius settings at or below 200°C; US methods use Fahrenheit at or below 400°F. Ingredient weight, volume and size can follow the saved kitchen preset; appliance temperatures are never converted into executable settings or paired with reused times. Official internal-temperature guidance is separate.
@@ -21,15 +21,17 @@ Food data lives in `src/data/foods-{a,b,cn}.json`; `recipe-overrides.json` enric
 
 ## Languages
 
-The unified homes are `/` (English) and `/zh` (Chinese). Old collection and category URLs remain reachable and canonicalize to the unified lists. Original US recipe paths `/foods/*` and `/zh/foods/*`, China paths `/china/foods/*` and `/zh/china/foods/*`, condition IDs and source anchors remain stable. The sitemap contains 162 canonical URLs; settings pages are noindex.
+The unified homes are `/` (English) and `/zh` (Chinese). Old collection and category URLs remain reachable and canonicalize to the unified lists. Original US recipe paths `/foods/*` and `/zh/foods/*`, China paths `/china/foods/*` and `/zh/china/foods/*`, condition IDs and source anchors remain stable. The sitemap contains 168 canonical URLs; settings pages are noindex.
 
 Settings at `/settings` or `/zh/settings` save one kitchen preset and an independent interface language in origin-local browser storage. Old explicit unit preferences migrate once; shared `unit` query parameters cannot override saved preferences. Storage failure produces an explicit temporary-only notice. Fresh homepage visits default to English; saved language applies to later visits and reference links. With JavaScript disabled, direct Chinese routes remain readable, while saved settings are unavailable.
 
 `src/data/zh-foods.json` preserves historical Chinese copy; `regional-zh.json` supplies the enriched and new recipe copy. Both languages preserve the same cooking facts. Publisher names, article titles and evidence retain original wording and units in folded source details; `zh-ui.json` contains interface copy.
 
+Starting-state search recognizes frozen, fresh/thawed and reheat terms before filtering methods. A different-state recovery link shows the required preparation and never counts as a directly matching frozen method. See [the coverage record](docs/food-coverage-2026-11-15.md).
+
 The established app system is recorded in [design.md](design.md): direct task labels, aligned settings, native controls and one consolidated stylesheet. Keep the structured `food-index` and `variant-data` nodes, canonical links and heading/field semantics usable by assistive technology and agents. Do not create a separate agent interface for visual changes.
 
-`npm run test:browser` runs the complete 11-group workflow, including 144 recipe/preset visits, responsive layouts, fuzzy search, saved settings, old links, no-JavaScript reading and consent. The language, regional, clarity, expansion and analytics commands select their corresponding groups from the same suite. Tests intercept Google requests; do not treat test output as real cooking or GA4 ingestion evidence.
+`npm run test:browser` runs the complete 12-group workflow, including 150 recipe/preset visits, responsive layouts, fuzzy search, saved settings, old links, no-JavaScript reading and consent. The language, regional, clarity, expansion and analytics commands select their corresponding groups from the same suite. Tests intercept Google requests; do not treat test output as real cooking or GA4 ingestion evidence.
 
 ## Analytics and privacy
 

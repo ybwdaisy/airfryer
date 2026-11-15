@@ -10,7 +10,12 @@ const region: Region = Astro.props.region ?? 'us';
 const collection = libraryFoods;
 const displayFoods = collection.map(f => localizeFood(f, lang));
 const categories = localizedCategories(lang).filter(c => collection.some(f => f.category === c.slug));
-const index = collection.map(f => ({ slug: f.slug, name: localizeFood(f, lang).name, aliases: searchAliases(f), category: f.category, unit: f.variants[0].temperatureC === undefined ? 'f' : 'c', path: foodPath(f.slug,f.region,lang) }));
+const index = collection.map(f => {
+  const localized=localizeFood(f,lang),variant=localized.variants[0];
+  return {slug:f.slug,name:localized.name,aliases:searchAliases(f),category:f.category,
+    state:variant.state,label:variant.label,preparation:variant.advancePreparation,
+    unit:variant.temperatureC===undefined?'f':'c',path:foodPath(f.slug,f.region,lang)};
+});
 ---
 <Layout lang={lang} region={region} title={t(lang, 'Air fryer cooking times & temperatures | Airfryer times')} description={t(lang, 'Find air fryer cooking times and temperatures for meat, vegetables and frozen favorites. Clear starting conditions, source links and food safety checks.')}>
   <div class="workbench">

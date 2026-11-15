@@ -1,14 +1,14 @@
 import {readKitchen,presetUnit} from '../lib/kitchen';
-import { createFoodSearch } from '../lib/food-search';
+import { createRecipeSearch,type RecipeSearchFood } from '../lib/recipe-search';
 import { languageFromPath, resultLabel } from '../lib/locale';
 const language = languageFromPath(location.pathname);
-type Item = { slug: string; name: string; aliases: string[]; category: string; unit: string; path: string };
+type Item = RecipeSearchFood & {unit:string;path:string;label:string;preparation?:string};
 const input = document.querySelector<HTMLInputElement>('#search-input');
 const form = document.querySelector<HTMLFormElement>('#food-search');
 const indexNode = document.querySelector('#food-index');
 if (input && form && indexNode) {
   const items = JSON.parse(indexNode.textContent ?? '[]') as Item[];
-  const search = createFoodSearch(items);
+  const search = createRecipeSearch(items);
   const rows = new Map([...document.querySelectorAll<HTMLElement>('[data-food-row]')].map(row => [row.dataset.slug!, row]));
   const list = document.querySelector('.food-rows')!;
   let category = 'all';
@@ -31,11 +31,23 @@ if (input && form && indexNode) {
   const count = document.querySelector('#result-count')!;
   const update = (save = true) => {
     const query = input.value.trim();
-    const result = query ? search(query) : items;
+    const result = search(query);
     const currentUnit=presetUnit(readKitchen());
-    const filtered=result.filter(item=>category==='all'||item.category===category);
+    const filtered=result.matches.filter(item=>category==='all'||item.category===category);
     const matches=filtered.filter(item=>item.unit===currentUnit);
     const others=query?filtered.filter(item=>item.unit!==currentUnit):[];
+    const alternatives=result.alternatives.filter(item=>item.unit===currentUnit&&(category==='all'||item.category===category));
+    const alternativeList=empty.querySelector<HTMLElement>('[data-state-alternatives]');
+    if(alternativeList){
+      alternativeList.hidden=matches.length>0||!alternatives.length;
+      alternativeList.replaceChildren(...alternatives.map(item=>{
+        const li=document.createElement('li'),a=document.createElement('a'),detail=document.createElement('small');
+        li.dataset.category=item.category;a.href=item.path;a.dataset.foodLink=item.slug;
+        a.dataset.entryPoint='search';a.textContent=item.name;
+        detail.textContent=[item.label,item.preparation].filter(Boolean).join(' / ');
+        a.append(document.createTextNode(' '),detail);li.append(a);return li;
+      }));
+    }
     const otherPanel=document.querySelector<HTMLElement>('[data-unavailable-results]');
     const otherList=document.querySelector<HTMLElement>('[data-unavailable-list]');
     if(otherPanel&&otherList){otherPanel.hidden=!others.length;otherList.replaceChildren(...others.map(item=>{const li=document.createElement('li'),a=document.createElement('a');a.href=item.path;a.textContent=item.name;li.append(a);return li;}));}
@@ -44,10 +56,10 @@ if (input && form && indexNode) {
     count.textContent = resultLabel(matches.length, Boolean(query), language);
     empty.hidden = matches.length > 0;
     const title=empty.querySelector('h3'),hint=empty.querySelector('p');
-    if(title)title.textContent=language==='zh'?(others.length?'暂缺当前厨房配置的做法':'没有找到匹配食物'):(others.length?'No verified method for your kitchen yet':'No matching food yet');
-    if(hint)hint.textContent=language==='zh'?(others.length?'下方有其他匹配食物；补齐当前温标参考后才会提供可操作参数。':'试试食材简称或其他拼写。'):(others.length?'Other matching foods are listed below. Their actionable methods need a verified reference in your temperature scale.':'Try another spelling or a broader ingredient name.');
+    if(title)title.textContent=result.conflict?(language==='zh'?'请选择一种起始状态':'Choose one starting condition'):alternatives.length?(language==='zh'?'当前没有这种起始状态的做法':'No method for that starting condition'):language==='zh'?(others.length?'暂缺当前厨房配置的做法':'没有找到匹配食物'):(others.length?'No verified method for your kitchen yet':'No matching food yet');
+    if(hint)hint.textContent=result.conflict?(language==='zh'?'例如“冷冻鸡翅”或“解冻鸡翅”。':'Try frozen wings or thawed wings.'):alternatives.length?(language==='zh'?'以下做法使用其他起始状态，请先按标注完成准备。':'These methods use another starting condition. Follow the preparation shown.'):language==='zh'?(others.length?'下方有其他匹配食物；补齐当前温标参考后才会提供可操作参数。':'试试食材简称或其他拼写。'):(others.length?'Other matching foods are listed below. Their actionable methods need a verified reference in your temperature scale.':'Try another spelling or a broader ingredient name.');
     const clear = document.querySelector<HTMLButtonElement>('[data-clear-query]'); if(clear) clear.hidden=!query;
-    const reset = document.querySelector<HTMLElement>('[data-category-search-hint]'); if(reset) reset.hidden=!(query && category!=='all' && matches.length===0 && result.some(item=>item.unit===currentUnit));
+    const reset = document.querySelector<HTMLElement>('[data-category-search-hint]'); if(reset) reset.hidden=!(query && category!=='all' && matches.length===0 && [...result.matches,...result.alternatives].some(item=>item.unit===currentUnit));
     const head = document.querySelector<HTMLElement>('.list-head'); if (head) head.hidden = matches.length === 0;
     document.querySelectorAll<HTMLAnchorElement>('[data-category-filter]').forEach(link => {
       if (link.dataset.categoryFilter === category) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
@@ -93,7 +105,9 @@ if (input && form && indexNode) {
   document.querySelector('[data-clear-query]')?.addEventListener('click',()=>{clearTimeout(timer);clearTimeout(analyticsTimer);lastSearch=null;input.value='';update();input.focus();window.airfryerTrack?.('search_clear');});
   document.querySelector('[data-reset-category]')?.addEventListener('click',()=>{clearTimeout(timer);clearTimeout(analyticsTimer);category='all';const results_count=update();window.airfryerTrack?.('category_select',{category,results_count});emitSearch('submit');});
   document.querySelectorAll<HTMLButtonElement>('[data-search-example]').forEach(button=>button.addEventListener('click',()=>{clearTimeout(timer);clearTimeout(analyticsTimer);input.value=button.dataset.searchExample!;update();emitSearch('submit');input.focus();}));
-  document.querySelectorAll<HTMLAnchorElement>('[data-food-link]').forEach(link => link.addEventListener('click', () => {clearTimeout(analyticsTimer);emitSearch('selection');}));
+  document.querySelector('.search-workspace')?.addEventListener('click',event=>{
+    if(event.target instanceof Element && event.target.closest('[data-food-link]')){clearTimeout(analyticsTimer);emitSearch('selection');}
+  });
   document.addEventListener('airfryer:kitchen',()=>{clearTimeout(timer);clearTimeout(analyticsTimer);lastSearch=null;update(false);});
   window.addEventListener('popstate', restore);
   restore();

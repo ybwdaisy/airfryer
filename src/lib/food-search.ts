@@ -1,8 +1,8 @@
 import Fuse from 'fuse.js';
 
 export type SearchFood = {slug: string; name: string; aliases: string[]; category: string};
-const traditional: Record<string,string> = {'雞':'鸡','凍':'冻','條':'条','饅':'馒','頭':'头','撻':'挞','蝦':'虾','魚':'鱼','飯':'饭','燒':'烧','馬':'马','鈴':'铃','紅':'红','蘭':'兰','奧':'奥','爾':'尔','餅':'饼'};
-export const normalizeSearch = (text: string) => text.normalize('NFKC').toLowerCase().replace(/[雞凍條饅頭撻蝦魚飯燒馬鈴紅蘭奧爾餅]/g,c=>traditional[c]).replace(/[^\p{L}\p{N}]+/gu,' ').trim();
+const traditional: Record<string,string> = {'雞':'鸡','凍':'冻','條':'条','饅':'馒','頭':'头','撻':'挞','蝦':'虾','魚':'鱼','飯':'饭','燒':'烧','馬':'马','鈴':'铃','紅':'红','蘭':'兰','奧':'奥','爾':'尔','餅':'饼','鮮':'鲜','復':'复','熱':'热'};
+export const normalizeSearch = (text: string) => text.normalize('NFKC').toLowerCase().replace(/[雞凍條饅頭撻蝦魚飯燒馬鈴紅蘭奧爾餅鮮復熱]/g,c=>traditional[c]).replace(/[^\p{L}\p{N}]+/gu,' ').trim();
 // Everyday ingredient names, not alternative cooking conditions or methods.
 const synonyms = [
   ['鸡翅','鸡中翅','中翅','鸡翼'], ['红薯','地瓜','番薯','蕃薯'],
