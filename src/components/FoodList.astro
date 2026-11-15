@@ -29,5 +29,6 @@ const { foods, searchable = false, lang = 'en' } = Astro.props;
 {searchable && <div class="empty-state" id="search-empty" hidden>
   <h3>{t(lang, 'No matching food yet')}</h3>
   <p>{t(lang, 'Try another spelling or a broader name, such as chicken or potato.')}</p>
+  <ul class="state-alternatives" data-state-alternatives hidden></ul>
   <button type="button" class="button button-quiet" data-clear-search>{t(lang, 'Show all foods')}</button>
 </div>}

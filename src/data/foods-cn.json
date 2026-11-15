@@ -1867,5 +1867,270 @@
         }
       }
     ]
+  },
+  {
+    "slug": "cn-chicken-breast",
+    "name": "Pepper chicken breast",
+    "aliases": [
+      "chicken breast",
+      "boneless chicken",
+      "skinless chicken"
+    ],
+    "category": "meat",
+    "description": "Fresh boneless breasts with a simple salt-and-pepper coating; lightly even the thick end first.",
+    "region": "cn",
+    "safety": "poultry",
+    "reviewedAt": "2026-11-15",
+    "variants": [
+      {
+        "id": "default",
+        "state": "fresh",
+        "temperatureF": 392,
+        "temperatureC": 200,
+        "minutes": [
+          11,
+          12
+        ],
+        "label": "Fresh boneless breasts, about 180 g each, even thickness",
+        "portion": "2 fresh boneless chicken breasts, about 180 g each; lightly even the thick end, keep one uncrowded layer.",
+        "preheat": "no",
+        "turn": "Turn halfway, about minute 6. Start checking at minute 11.",
+        "ingredients": [
+          "2 boneless chicken breasts, about 180 g each",
+          "10 g neutral cooking oil",
+          "2 g salt",
+          "0.5 g ground black pepper"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Rolling pin and food bag",
+          "Tongs",
+          "Kitchen scale",
+          "Food thermometer recommended"
+        ],
+        "advancePreparation": "Lightly even out the thick end before cooking.",
+        "preheatDetail": "Start without preheating, as in the reference. Select Air Fry at 200°C.",
+        "steps": [
+          "Lightly tap the thicker end inside a food bag until the thickness is even; do not pound into a thin steak.",
+          "Mix the listed spices, coat both breasts, then coat with the oil.",
+          "Place apart in one layer at 200°C; turn halfway and check from minute 11.",
+          "Keep cooking and recheck any piece that has not passed the finish check."
+        ],
+        "completion": "Check the thickest center reaches 75°C and stays there for 30 seconds.",
+        "withoutThermometer": "Cut into the thickest part with a clean knife: it must be steaming hot, with no pink raw meat and clear juices. If any check fails, continue heating and recheck. These observations cannot measure core temperature.",
+        "deviceNote": "Requires a selectable 200°C setting; larger or uneven breasts are outside this timing.",
+        "notes": [
+          "Morrisons uses smaller 150–200 g breasts and 10–12 minutes at 200°C; its time is not averaged with the reference.",
+          "Oil, salt and pepper amounts are a simple site-editor seasoning option; the reference supplies the portion, preparation and cooking settings, not these seasoning weights."
+        ],
+        "timeline": [
+          {
+            "label": "Prepare",
+            "detail": "Even the thick end and coat with oil and spices."
+          },
+          {
+            "label": "Air fry",
+            "detail": "11–12 minutes; turn halfway and verify doneness."
+          }
+        ],
+        "safetyOverride": {
+          "text": "Check the thickest center reaches 75°C and stays there for 30 seconds.",
+          "url": "https://www.cfs.gov.hk/english/trade_zone/safe_kitchen/Cooking_and_reheating.html"
+        },
+        "sources": [
+          {
+            "title": "Air Fryer Chicken Breast",
+            "publisher": "Nicky Corbishley / Kitchen Sanctuary",
+            "url": "https://www.kitchensanctuary.com/air-fryer-chicken-breast/",
+            "role": "reference",
+            "locator": "Ingredients, instructions and size notes",
+            "evidence": "Two approximately 180 g breasts; lightly even the thick end, no preheat, 200°C for 11–12 minutes, turn halfway. Seasoning weights on this site are an explicitly separate editorial option."
+          },
+          {
+            "title": "Air Fryer Chicken Breast",
+            "publisher": "Morrisons",
+            "url": "https://groceries.morrisons.com/recipes/air-fryer-chicken-breast/2jVy2tKwuxAFG2SRZNXzQB",
+            "role": "cross-check",
+            "locator": "Ingredients and steps 1–5",
+            "evidence": "Independently authored: two 150–200 g breasts, even thickness, 200°C for 10–12 minutes and halfway turn; different portion and time are disclosed."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-salmon",
+    "name": "Simple salmon fillets",
+    "aliases": [
+      "salmon",
+      "salmon fillet",
+      "salmon filet"
+    ],
+    "category": "seafood",
+    "description": "Fresh 130 g salmon fillets with a simple oil, salt and pepper coating, arranged in one layer.",
+    "region": "cn",
+    "safety": "fish",
+    "reviewedAt": "2026-11-15",
+    "variants": [
+      {
+        "id": "default",
+        "state": "fresh",
+        "temperatureF": 356,
+        "temperatureC": 180,
+        "minutes": [
+          8,
+          10
+        ],
+        "label": "Fresh fillets, about 130 g each",
+        "portion": "4 fresh salmon fillets, about 130 g each, skin on or off; one layer with space between pieces, batch if needed.",
+        "preheat": "unspecified",
+        "turn": "The reference has no turning step; check from minute 8.",
+        "ingredients": [
+          "4 salmon fillets, about 130 g each",
+          "8 g olive oil",
+          "2 g salt",
+          "0.5 g ground black pepper"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Kitchen brush or coating plate",
+          "Spatula",
+          "Kitchen scale",
+          "Food thermometer, optional"
+        ],
+        "preheatDetail": "If your machine requires preheating, follow its instructions at 180°C; start the cooking clock when fish enters the basket.",
+        "steps": [
+          "Pat the thawed fillets dry. Mix the measured seasoning, rub with oil and lightly coat.",
+          "Arrange apart in one layer at 180°C. Check from minute 8; the reference range is 8–10 minutes.",
+          "Check the thickest part before serving; continue heating and recheck if not ready."
+        ],
+        "completion": "The thickest flesh should be opaque and separate easily with a fork; if measuring, verify at least 63°C in the center.",
+        "deviceNote": "Uses 180°C. Larger or thicker fillets need further checks; do not scale the time by weight.",
+        "notes": [
+          "Taming Twins also uses approximately 130 g fillets at 180°C but gives 8–12 minutes with foil; this guide keeps Good Food’s preparation and 8–10-minute range.",
+          "This is a fresh/thawed method. It does not establish a frozen-start cooking time.",
+          "The weighed oil, salt and pepper are a simple site-editor seasoning option, separate from the source’s spoon-measured herb mixture."
+        ],
+        "timeline": [
+          {
+            "label": "Prepare",
+            "detail": "Coat thawed fillets with the measured oil and seasoning."
+          },
+          {
+            "label": "Air fry",
+            "detail": "8–10 minutes at 180°C; check the thickest flesh."
+          }
+        ],
+        "safetyOverride": {
+          "text": "Fish should be opaque and separate easily with a fork; if measuring, verify at least 63°C in the center.",
+          "url": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+        },
+        "sources": [
+          {
+            "title": "Air fryer salmon",
+            "publisher": "Samuel Goldsmith / Good Food",
+            "url": "https://www.bbcgoodfood.com/recipes/air-fryer-salmon",
+            "role": "reference",
+            "locator": "Ingredients and method step 2",
+            "evidence": "Four 130 g fillets in one layer at 180°C for 8–10 minutes. Larger fillets need further checks. This site separately supplies a simple weighed seasoning option."
+          },
+          {
+            "title": "Air Fryer Salmon",
+            "publisher": "Sarah Rossi / Taming Twins",
+            "url": "https://www.tamingtwins.com/air-fryer-salmon/",
+            "role": "cross-check",
+            "locator": "Recipe instructions and salmon-size notes",
+            "evidence": "Independently uses 130 g fillets and 180°C, but 8–12 minutes with foil; not transplanted or averaged."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-frozen-kimchi-dumplings",
+    "name": "Frozen kimchi dumplings",
+    "aliases": [
+      "dumplings",
+      "frozen dumplings",
+      "mandu",
+      "gyoza"
+    ],
+    "category": "frozen",
+    "description": "Frozen Korean-style kimchi dumplings for a crisp finish, following Midea’s 245 g batch.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-15",
+    "variants": [
+      {
+        "id": "default",
+        "state": "frozen",
+        "temperatureF": 338,
+        "temperatureC": 170,
+        "minutes": [
+          16,
+          16
+        ],
+        "label": "Frozen kimchi dumplings, 245 g per batch",
+        "portion": "245 g frozen Korean-style kimchi dumplings suitable for air frying; keep separate in one layer. Not a general method for large raw meat dumplings.",
+        "preheat": "no",
+        "turn": "Check browning and adjust position if needed; do not judge filling by the wrapper alone.",
+        "ingredients": [
+          "245 g frozen kimchi dumplings",
+          "1 tsp cooking oil"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Kitchen scale",
+          "Brush",
+          "Tongs",
+          "Food thermometer if the filling contains raw meat"
+        ],
+        "preheatDetail": "The manufacturer method starts directly with the loaded basket; use 170°C without adding a separate preheat.",
+        "steps": [
+          "Check the package permits air frying; follow product-specific instructions when provided. Keep the dumplings frozen and separate.",
+          "Arrange 245 g in one layer without overlap. Brush the listed oil over the surface.",
+          "Start at 170°C for the reference 16 minutes, then open a larger dumpling and check the center before serving."
+        ],
+        "completion": "The filling must be steaming hot throughout. If the package identifies raw meat filling, verify 75°C for 30 seconds at the center; continue heating and recheck if not met.",
+        "deviceNote": "Uses 170°C. This kimchi-dumpling reference does not establish times for oversized raw meat dumplings or products that prohibit air frying.",
+        "notes": [
+          "The source does not identify a brand or whether the filling was precooked. Do not infer raw/precooked equivalence; check the package first.",
+          "Bibigo’s FAQ gives different product-dependent guidance at 180–200°C and directs users to the package. It does not validate Midea’s exact 16-minute clock."
+        ],
+        "timeline": [
+          {
+            "label": "Prepare",
+            "detail": "Weigh 245 g, arrange frozen dumplings and brush with 1 tsp oil."
+          },
+          {
+            "label": "Air fry",
+            "detail": "170°C for 16 minutes, then check the center."
+          }
+        ],
+        "safetyOverride": {
+          "text": "The filling must be steaming hot throughout; raw meat filling needs a verified 75°C for 30 seconds. Package-specific requirements take priority.",
+          "url": "https://www.cfs.gov.hk/english/trade_zone/safe_kitchen/Cooking_and_reheating.html"
+        },
+        "sources": [
+          {
+            "title": "Air Fryer Recipes: Korean Kimchi Dumplings",
+            "publisher": "Midea",
+            "url": "https://www.midea.com/content/dam/midea-aem/global/small-appliances/air-fryers/SDA%20Midea%20air%20fryer%20recipes%20book.pdf",
+            "role": "reference",
+            "locator": "PDF page 23, printed pages 41–42; visually inspected",
+            "evidence": "Frozen kimchi dumplings 245 g and oil 1 tsp; one layer, brush oil, start at 170°C for 16 minutes. No water or steam mode specified."
+          },
+          {
+            "title": "Dumplings: optimal air-fryer temperature and time",
+            "publisher": "Bibigo",
+            "url": "https://bibigo.eu/en/faq/",
+            "role": "cross-check",
+            "locator": "Dumplings FAQ / optimal temperature and cooking time",
+            "evidence": "Independent manufacturer gives 180–200°C for about 8–10 minutes depending on product, and prioritizes package instructions; not the same product or clock."
+          }
+        ],
+        "advancePreparation": "Check package air-fry suitability first; have a food thermometer ready if the filling contains raw meat."
+      }
+    ]
   }
 ]

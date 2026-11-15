@@ -143,6 +143,10 @@ input::placeholder { color: var(--color-muted); opacity: 1; }
 .empty-state h3 { font-size: var(--text-lg); }
 .empty-state p { margin-top: var(--space-sm); color: var(--color-muted); }
 .empty-state .button { margin-top: var(--space-md); }
+.state-alternatives { list-style: none; margin: var(--space-md) 0 0; padding: 0; }
+.state-alternatives li { border-bottom: 1px solid var(--color-rule); }
+.state-alternatives a { display: block; min-height: 44px; padding-block: var(--space-sm); text-decoration: none; }
+.state-alternatives small { display: block; color: var(--color-muted); font-size: var(--text-sm); text-decoration: none; }
 .unavailable-results, .kitchen-mismatch { margin-block: var(--space-lg); padding-block: var(--space-lg); border-block: 1px solid var(--color-rule); }
 .unavailable-results h3, .kitchen-mismatch h2 { margin-bottom: var(--space-sm); font-size: var(--text-lg); line-height: 1.4; }
 .unavailable-results p, .kitchen-mismatch p { color: var(--color-muted); font-size: var(--text-sm); }
