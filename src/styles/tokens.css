@@ -9,7 +9,7 @@
   --color-error: oklch(52% 0.19 27); --color-success: oklch(50% 0.12 150);
   --container: 1440px; --gutter: 64px; --gap-columns: 32px; --section-gap-s: 120px; --section-gap: 144px; --section-gap-l: 176px;
   --z-base: 1; --z-raised: 10; --z-dropdown: 100; --z-sticky: 200; --z-sticky-nav: 300; --z-modal: 400; --z-toast: 500; --z-tooltip: 600;
-  --color-paper: oklch(98.4% 0.008 80); --color-paper-2: oklch(96.3% 0.011 80); --color-paper-3: oklch(93.5% 0.015 80);
+  --color-paper: oklch(99% 0.004 80); --color-paper-2: oklch(97% 0.008 80); --color-paper-3: oklch(93.8% 0.015 80);
   --color-ink: oklch(25.5% 0.025 50); --color-ink-2: oklch(39% 0.023 50); --color-muted: oklch(48.5% 0.02 50);
   --color-rule: oklch(88.5% 0.014 75);
   --color-accent: oklch(52.5% 0.18 26); --color-accent-ink: oklch(99% 0.005 80); --color-focus: oklch(52% 0.18 26);
@@ -18,12 +18,14 @@
   --font-display: "DM Sans", ui-sans-serif, system-ui, sans-serif; --font-body: "DM Sans", ui-sans-serif, system-ui, sans-serif;
   --font-chinese: "DM Sans", "PingFang SC", "Microsoft YaHei", sans-serif;
   --font-outlier: var(--font-body);
-  --radius-card: 10px; --radius-input: 8px; --radius-row: 8px; --radius-pill: 999px; --rule-hair: 1px; --rule-bar: 2px;
+  --radius-card: 16px; --radius-input: 12px; --radius-row: 10px; --radius-pill: 999px; --rule-hair: 1px; --rule-bar: 2px;
   --shadow-card: none;
   --tracking-display: -0.025em; --display-weight: 600;
   --space-control: 20px;
   --text-heading: 2.488rem; --text-value: 2.986rem;
-  --container-app: 1040px; --gutter: 32px;
+  --container-app: 1120px; --gutter: 32px;
+  --color-cooking: oklch(96.5% 0.036 85); --color-preparation: oklch(96.5% 0.018 35); --color-preparation-ink: oklch(38% 0.065 60);
+  --space-card: 20px; --text-recipe-title: 2.074rem; --text-row-value: 1.5rem;
 }
 
 @font-face {

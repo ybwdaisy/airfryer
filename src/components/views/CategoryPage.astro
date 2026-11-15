@@ -4,6 +4,7 @@ import { type Language } from '../../lib/locale';
 import { regionHome, categoryPath, type Region } from '../../lib/region';
 import Layout from '../../layouts/Layout.astro';
 import FoodList from '../FoodList.astro';
+import CategoryNav from '../CategoryNav.astro';
 import { libraryFoods } from '../../lib/foods';
 const lang: Language = Astro.props.lang ?? 'en';
 const region: Region = Astro.props.region ?? 'us';
@@ -15,7 +16,7 @@ const matching = collection.filter(f => f.category === category.slug).map(f => l
 <Layout lang={lang} region={region} title={lang === 'zh' ? `${category.name}空气炸锅时间与温度 | Airfryer times` : `${category.name} air fryer times & temperatures | Airfryer times`} description={category.description} breadcrumbs={[{name: category.name, path: categoryPath(category.slug, region, lang)}]}>
   <nav class="breadcrumbs" aria-label={t(lang, 'Breadcrumb')}><a href={regionHome(region, lang)}>{t(lang, 'All foods')}</a><span aria-hidden="true">/</span><span>{category.name}</span></nav>
   <section class="page-intro"><h1>{category.name}</h1></section>
-  <nav class="category-filter" aria-label={t(lang, 'Food categories')}><a href={regionHome(region, lang)}>{t(lang, 'All foods')}</a>{categories.map(c => <a href={categoryPath(c.slug, region, lang)} aria-current={c.slug === category.slug ? 'page' : undefined}>{c.short}</a>)}</nav>
+  <CategoryNav lang={lang} region={region} selected={category.slug}/>
   <div class="results-heading"><h2 class="visually-hidden">{t(lang, 'Cooking guides')}</h2><p data-category-count>{lang === 'zh' ? `${matching.length} 种食物` : `${matching.length} foods`}</p></div>
   <p data-category-empty hidden>{t(lang,'No verified method in your kitchen temperature scale yet.')}</p>
   <FoodList lang={lang} region={region} foods={matching}/>

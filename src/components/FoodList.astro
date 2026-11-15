@@ -11,7 +11,7 @@ const { foods, searchable = false, lang = 'en' } = Astro.props;
 ---
 <div class="food-list" data-food-list>
   <div class="list-head" aria-hidden="true"><span>{t(lang, 'Food & starting condition')}</span><span>{t(lang, 'Temp')}</span><span>{t(lang, 'Time')}</span><span></span></div>
-  <ul class="food-rows">
+  <ul class="food-rows" role="list">
     {foods.map(food => {
       const variant = food.variants[0];
       const unit = nativeUnit(variant);

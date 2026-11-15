@@ -2,14 +2,15 @@
 import Layout from '../../layouts/Layout.astro';
 import {t} from '../../lib/i18n';
 import {localizedPath,type Language} from '../../lib/locale';
+import Icon from '../Icon.astro';
 const lang:Language=Astro.props.lang??'en';
 ---
 <Layout lang={lang} title={`${t(lang,'Kitchen settings')} | Airfryer times`} description={t(lang,'Set up your kitchen once. Your preferences stay in this browser.')} noindex>
-  <section class="page-intro"><h1>{t(lang,'Kitchen settings')}</h1></section>
+  <section class="page-intro settings-intro"><h1>{t(lang,'Kitchen settings')}</h1></section>
   <div class="settings-layout">
     <form id="kitchen-settings" class="settings-form js-only" hidden>
-      <div class="settings-field"><label for="kitchen-preset">{t(lang,'Kitchen preset')}</label><select id="kitchen-preset" name="preset"><option value="metric">{t(lang,'Metric — °C, g, mL, cm')}</option><option value="us">{t(lang,'US customary — °F, oz, cups, inches')}</option></select></div>
-      <div class="settings-field"><label for="interface-language">{t(lang,'Interface language')}</label><select id="interface-language" name="language"><option value="en">English</option><option value="zh">中文</option></select></div>
+      <div class="settings-field"><label for="kitchen-preset"><Icon name="thermometer" size={20}/>{t(lang,'Kitchen preset')}</label><select id="kitchen-preset" name="preset"><option value="metric">{t(lang,'Metric — °C, g, mL, cm')}</option><option value="us">{t(lang,'US customary — °F, oz, cups, inches')}</option></select></div>
+      <div class="settings-field"><label for="interface-language"><Icon name="language" size={20}/>{t(lang,'Interface language')}</label><select id="interface-language" name="language"><option value="en">English</option><option value="zh">中文</option></select></div>
       <button class="button" type="submit">{t(lang,'Save settings')}</button>
       <p class="settings-status" role="status" data-settings-status data-saved={t(lang,'Saved')} data-temporary={t(lang,'Applied for this visit. Browser storage is unavailable, so these settings could not be saved for future visits.')} hidden></p>
     </form>

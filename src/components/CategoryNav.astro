@@ -1,0 +1,13 @@
+---
+import {t,localizedCategories} from '../lib/i18n';
+import {regionHome,categoryPath,type Region} from '../lib/region';
+import type {Language} from '../lib/locale';
+import Icon from './Icon.astro';
+interface Props {lang:Language;region:Region;selected?:string;searchable?:boolean}
+const {lang,region,selected='all',searchable=false}=Astro.props;
+const categories=localizedCategories(lang);
+---
+<nav class="category-filter" aria-label={t(lang,'Food categories')}>
+  <a href={regionHome(region,lang)} data-category-filter={searchable?'all':undefined} aria-current={selected==='all'?'page':undefined}><span class="category-picture category-all"><Icon name="grid"/></span><span>{t(lang,'All foods')}</span></a>
+  {categories.map(c=><a href={categoryPath(c.slug,region,lang)} data-category-filter={searchable?c.slug:undefined} aria-current={selected===c.slug?'page':undefined}><img class="category-picture" src={`/images/categories/${c.slug}.jpg`} width="64" height="64" alt="" decoding="async"/><span>{c.short}</span></a>)}
+</nav>
