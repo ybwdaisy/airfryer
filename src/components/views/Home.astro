@@ -1,15 +1,15 @@
 ---
-import { t, localizeFood, localizedCategories, searchAliases } from '../../lib/i18n';
+import { t, localizeFood, searchAliases } from '../../lib/i18n';
 import { resultLabel, type Language } from '../../lib/locale';
-import { regionHome, foodPath, categoryPath, type Region } from '../../lib/region';
+import { regionHome, foodPath, type Region } from '../../lib/region';
 import Layout from '../../layouts/Layout.astro';
 import FoodList from '../FoodList.astro';
+import CategoryNav from '../CategoryNav.astro';
 import { libraryFoods } from '../../lib/foods';
 const lang: Language = Astro.props.lang ?? 'en';
 const region: Region = Astro.props.region ?? 'us';
 const collection = libraryFoods;
 const displayFoods = collection.map(f => localizeFood(f, lang));
-const categories = localizedCategories(lang).filter(c => collection.some(f => f.category === c.slug));
 const index = collection.map(f => {
   const localized=localizeFood(f,lang),variant=localized.variants[0];
   return {slug:f.slug,name:localized.name,aliases:searchAliases(f),category:f.category,
@@ -29,10 +29,7 @@ const index = collection.map(f => {
         <p class="field-help" id="search-help">{t(lang, 'Search by name or choose a category below.')}</p>
       <div class="search-examples js-only" hidden>{(['Wings', 'Sweet potato', 'Fries']).map(term => <button type="button" data-search-example={t(lang, term)}>{t(lang, term)}</button>)}</div>
       </form>
-      <nav class="category-filter" aria-label={t(lang, 'Food categories')}>
-        <a href={regionHome(region, lang)} data-category-filter="all" aria-current="page">{t(lang, 'All foods')}</a>
-        {categories.map(c => <a href={categoryPath(c.slug, region, lang)} data-category-filter={c.slug}>{c.short}</a>)}
-      </nav>
+      <CategoryNav lang={lang} region={region} searchable/>
 
       <div class="results-heading"><h2 id="results-title" class="visually-hidden">{t(lang, 'Cooking guides')}</h2><p id="result-count" role="status" aria-live="polite">{resultLabel(displayFoods.length, false, lang)}</p><span class="kitchen-summary" data-kitchen-summary></span></div>
       <p class="search-scope-note" data-category-search-hint hidden>{t(lang, 'Matches exist in another category.')} <button class="text-button" data-reset-category type="button">{t(lang, 'Search all categories')}</button></p>

@@ -1,6 +1,7 @@
 ---
 import '../styles/app.css';
 import Consent from '../components/Consent.astro';
+import Icon from '../components/Icon.astro';
 import { t } from '../lib/i18n';
 import { localizedPath, type Language } from '../lib/locale';
 import { regionFromPath, regionHome, defaultUnit, switchLanguagePath, type Region } from '../lib/region';
@@ -64,7 +65,7 @@ const schema = breadcrumbs.length ? {
       </a>
 
       <div class="header-controls">
-      <a class="settings-link" href={lp('/settings')} data-kitchen-settings>{t(lang,'Settings')}</a>
+      <a class="settings-link" href={lp('/settings')} data-kitchen-settings><Icon name="settings" size={20}/>{t(lang,'Settings')}</a>
       </div>
     </header>
     <main id="main" class="container">
@@ -79,6 +80,14 @@ const schema = breadcrumbs.length ? {
         <button type="button" class="text-button js-only" data-privacy-settings hidden>{t(lang, 'Analytics choices')}</button>
       </nav>
     </footer>
+    <details class="photo-credits container" data-credits><summary>{lang==='zh'?'分类图片来源':'Category photographs'}</summary><p>{lang==='zh'?'Wikimedia Commons 分类示意图片，非本站菜谱实测成品。':'Category illustrations from Wikimedia Commons, not results of recipe tests by this site.'}</p><ul>
+      <li><a href="https://commons.wikimedia.org/wiki/File:Home-made_chicken_wings.jpg">JIP: Home-made chicken wings</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
+      <li><a href="https://commons.wikimedia.org/wiki/File:Raw_salmon_fillets.jpg">FULVIO_TOGNON: Raw salmon fillets</a>, CC0</li>
+      <li><a href="https://commons.wikimedia.org/wiki/File:Broccoli.jpg">USDA Lance Cheung: Broccoli</a>, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></li>
+      <li><a href="https://commons.wikimedia.org/wiki/File:French_Fries.JPG">StockSnap: French Fries</a>, CC0</li>
+      <li><a href="https://commons.wikimedia.org/wiki/File:6312_sourdough_bread.jpg">Virtual-Pano: Sourdough bread</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
+      <li><a href="https://commons.wikimedia.org/wiki/File:Homemade_Pizza.jpg">Alanthebox: Homemade Pizza</a>, CC0</li>
+    </ul><p>{lang==='zh'?'仅缩略展示及 CSS 裁切；照片各自保留上述许可。':'Thumbnail display and CSS crops only; each photograph retains its stated license.'}</p></details>
     <Consent lang={lang} />
     <script>
       import '../scripts/shared.ts';

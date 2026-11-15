@@ -29,7 +29,7 @@ Settings at `/settings` or `/zh/settings` save one kitchen preset and an indepen
 
 Starting-state search recognizes frozen, fresh/thawed and reheat terms before filtering methods. A different-state recovery link shows the required preparation and never counts as a directly matching frozen method. See [the coverage record](docs/food-coverage-2026-11-15.md).
 
-The established app system is recorded in [design.md](design.md): direct task labels, aligned settings, native controls and one consolidated stylesheet. Keep the structured `food-index` and `variant-data` nodes, canonical links and heading/field semantics usable by assistive technology and agents. Do not create a separate agent interface for visual changes.
+The current household-cooking app system is recorded in [design.md](design.md): recognizable category photographs, independently linked recipes, clear preparation/cooking/readiness groups, native controls and one consolidated stylesheet. The previous ruled-index visual constraint was replaced at the user’s request; see [the redesign record](docs/family-ui-redesign-2026-11-15.md). Keep the structured `food-index` and `variant-data` nodes, canonical links and heading/field semantics usable by assistive technology and agents. Do not create a separate agent interface for visual changes.
 
 `npm run test:browser` runs the complete 12-group workflow, including 150 recipe/preset visits, responsive layouts, fuzzy search, saved settings, old links, no-JavaScript reading and consent. The language, regional, clarity, expansion and analytics commands select their corresponding groups from the same suite. Tests intercept Google requests; do not treat test output as real cooking or GA4 ingestion evidence.
 

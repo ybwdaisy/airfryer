@@ -6,6 +6,55 @@
     "scope": "app",
     "shape": "app screen",
     "theme": "brand",
+    "axes": "light/grotesk-sans/warm",
+    "nav": "preserved wordmark and Settings, recognizable photo category links",
+    "footer": "existing privacy/source/consent destinations, collapsed photograph attribution",
+    "imagery": "6 natural licensed local category photographs, not recipe-test results",
+    "photos": [
+      "Home-made_chicken_wings.jpg",
+      "Raw_salmon_fillets.jpg",
+      "Broccoli.jpg",
+      "French_Fries.JPG",
+      "6312_sourdough_bread.jpg",
+      "Homemade_Pizza.jpg"
+    ],
+    "signature": "recognizable food categories and clearly grouped source-native cooking settings",
+    "sections": [
+      "search",
+      "photo category navigation",
+      "recipe cards",
+      "required preparation",
+      "cooking settings",
+      "ingredients",
+      "numbered steps",
+      "finish checks",
+      "source evidence"
+    ],
+    "fingerprint": [
+      "app",
+      "photo-categories",
+      "recipe-cards",
+      "preparation-first",
+      "cooking-surface",
+      "reference-sidebar"
+    ],
+    "waived": [
+      "49b: original manufacturer manual model title wraps at320px without overflow"
+    ],
+    "prompt": "Replace the previously locked UI with a design appropriate for the cooking product and ordinary household users; preserve facts and behavior",
+    "entry": "codex/airfryer-family-ui; review PR only, no production deployment",
+    "sweep": "0 FAIL,0 WARN,1 existing source-title waiver;93/93 links,3/3 fields,20/20 headings,1/1 figures retained",
+    "finish_review": "fresh-context independent reviewer: fix, one mobile browse-density finding; resolved and recaptured. At390px first recipe moves500 to415px Chinese and522 to454px English; all category hit targets exceed44px",
+    "function_preservation": "unchanged12-group real-browser suite including150 recipe/preset visits,29 unit tests,320–1920px layout and local photograph loading checks pass",
+    "limits": "UI/browser checks, no physical cooking or real-person usability study"
+  },
+  {
+    "date": "2026-11-15",
+    "mode": "redesign",
+    "depth": "full",
+    "scope": "app",
+    "shape": "app screen",
+    "theme": "brand",
     "axes": "light/sans-serif/warm",
     "nav": "wordmark and Settings; duplicate destinations remain reachable through breadcrumbs and footer",
     "footer": "preserved source, privacy, consent and disclaimer",

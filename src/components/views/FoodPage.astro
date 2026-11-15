@@ -5,6 +5,7 @@ import { regionHome, foodPath, categoryPath, defaultUnit } from '../../lib/regio
 import Layout from '../../layouts/Layout.astro';
 import FoodList from '../FoodList.astro';
 import Measure from '../Measure.astro';
+import Icon from '../Icon.astro';
 import { libraryFoods } from '../../lib/foods';
 import { temperature, minutes, preheatLabel, safetyGuides, safetySource } from '../../lib/format';
 const lang: Language = Astro.props.lang ?? 'en';
@@ -29,22 +30,22 @@ const breadcrumb = [{name: categoryName, path: categoryPath(food.category, regio
       <div class="detail-grid" data-compatible-body><div class="cooking-guidance">
         <h2 id={`condition-${variant.id}`}><Measure text={variant.label} unit={unit} lang={lang}/></h2>
         <p class="portion"><Measure text={variant.portion} unit={unit} lang={lang}/></p>
-        <section class="before-start" data-recipe-section="preparation"><h3>{t(lang, 'Before you start')}</h3>
+        <section class:list={['before-start',{'has-preparation':variant.needsHob||variant.advancePreparation||variant.requiresThermometer||variant.historical}]} data-recipe-section="preparation"><h3><Icon name="info" size={20}/>{t(lang, 'Before you start')}</h3>
           {variant.needsHob && <p class="notice dependency-note">{t(lang, 'This recipe needs a hob and pan; an air fryer alone is not enough.')}</p>}
           {variant.advancePreparation && <p class="advance-preparation"><Measure text={variant.advancePreparation} unit={unit} lang={lang}/></p>}
           {variant.requiresThermometer && <p class="equipment-note">{t(lang, 'Have a food thermometer ready; this guide uses it to confirm the finish.')}</p>}
           {variant.historical && <p class="notice">{t(lang, 'Preserved source condition: this uses a different preparation from the recommended first option.')}</p>}
           {variant.equipment && <details class="equipment-list"><summary><h4>{t(lang, 'Tools')}</h4></summary><ul>{variant.equipment.map(item => <li><Measure text={item} unit={unit} lang={lang}/></li>)}</ul></details>}
         </section>
-        <section class="basket-settings" aria-label={t(lang, 'Air-frying stage')}>{(variant.cookingPhases ?? [{temperatureC:variant.temperatureC,minutes:variant.minutes}]).map((phase,i) => <div class="setting-stage">{variant.cookingPhases && <h4>{t(lang,'Stage')} {i+1}</h4>}<dl class="cooking-values"><div><dt>{t(lang, 'Temperature')}</dt><dd data-temperature={phase.temperatureC === undefined ? variant.temperatureF : phase.temperatureC*9/5+32} data-temperature-c={phase.temperatureC}>{temperature(phase.temperatureC === undefined ? variant.temperatureF : phase.temperatureC*9/5+32, unit, phase.temperatureC)}</dd></div><div><dt>{t(lang, variant.cookingPhases ? 'Time for this stage' : 'Time per batch')}</dt><dd>{minutes(phase.minutes)}<span> {t(lang, 'min')}</span></dd></div></dl></div>)}{variant.cookingPhases && <p class="phase-total">{t(lang,'Total air-frying time')}: {minutes(variant.minutes)} {t(lang,'min')}</p>}
+        <section class="basket-settings" aria-label={t(lang, 'Air-frying stage')}>{(variant.cookingPhases ?? [{temperatureC:variant.temperatureC,minutes:variant.minutes}]).map((phase,i) => <div class="setting-stage">{variant.cookingPhases && <h4>{t(lang,'Stage')} {i+1}</h4>}<dl class="cooking-values"><div><dt><Icon name="thermometer" size={20}/>{t(lang, 'Temperature')}</dt><dd data-temperature={phase.temperatureC === undefined ? variant.temperatureF : phase.temperatureC*9/5+32} data-temperature-c={phase.temperatureC}>{temperature(phase.temperatureC === undefined ? variant.temperatureF : phase.temperatureC*9/5+32, unit, phase.temperatureC)}</dd></div><div><dt><Icon name="clock" size={20}/>{t(lang, variant.cookingPhases ? 'Time for this stage' : 'Time per batch')}</dt><dd>{minutes(phase.minutes)}<span> {t(lang, 'min')}</span></dd></div></dl></div>)}{variant.cookingPhases && <p class="phase-total">{t(lang,'Total air-frying time')}: {minutes(variant.minutes)} {t(lang,'min')}</p>}
 
           {variant.deviceNote && <p class="device-note"><Measure text={variant.deviceNote} unit={unit} lang={lang}/></p>}
           <dl class="cooking-facts"><div><dt>{t(lang, 'Preheat')}</dt><dd><Measure text={variant.preheatDetail ?? t(lang, preheatLabel(variant.preheat))} unit={unit} lang={lang}/></dd></div><div><dt>{t(lang, 'Turn or shake')}</dt><dd><Measure text={variant.turn} unit={unit} lang={lang}/></dd></div></dl>
         </section>
         {variant.timeline && <details class="recipe-timeline" data-recipe-section="timing"><summary><h3>{t(lang, 'Timing by stage')}</h3></summary><dl>{variant.timeline.map(stage => <div><dt>{stage.label}</dt><dd><Measure text={stage.detail} unit={unit} lang={lang}/></dd></div>)}</dl></details>}
-        {variant.ingredients && <section class="ingredients" data-recipe-section="ingredients"><h3>{t(lang, 'Ingredients')}</h3><ul>{variant.ingredients.map(item => <li><Measure text={item} unit={unit} lang={lang}/></li>)}</ul></section>}
-        <section class="instructions" data-recipe-section="instructions"><h3>{t(lang, 'Step by step')}</h3><ol>{variant.steps.map(step => <li><Measure text={step} unit={unit} lang={lang}/></li>)}</ol></section>
-        {variant.completion && <section class="completion-check" data-recipe-section="completion"><h3>{t(lang, 'How to check it is ready')}</h3><p><Measure text={variant.completion} unit={unit} lang={lang}/></p></section>}
+        {variant.ingredients && <section class="ingredients" data-recipe-section="ingredients"><h3><Icon name="utensils"/>{t(lang, 'Ingredients')}</h3><ul>{variant.ingredients.map(item => <li><Measure text={item} unit={unit} lang={lang}/></li>)}</ul></section>}
+        <section class="instructions" data-recipe-section="instructions"><h3><Icon name="book"/>{t(lang, 'Step by step')}</h3><ol role="list">{variant.steps.map(step => <li><Measure text={step} unit={unit} lang={lang}/></li>)}</ol></section>
+        {variant.completion && <section class="completion-check" data-recipe-section="completion"><h3><Icon name="check"/>{t(lang, 'How to check it is ready')}</h3><p><Measure text={variant.completion} unit={unit} lang={lang}/></p></section>}
         {variant.withoutThermometer && <section class="without-thermometer" data-recipe-section="without_thermometer"><h3>{t(lang, 'Without a food thermometer')}</h3><p><Measure text={variant.withoutThermometer} unit={unit} lang={lang}/></p><a href="https://www.gov.uk/government/publications/cooking-your-food/cooking-your-food">{t(lang, 'Household checks: UK Food Standards Agency')}</a></section>}
         <section class="reference-notes"><h3>{t(lang, 'Recipe notes')}</h3><p><Measure text={food.description} unit={unit} lang={lang}/></p>{variant.notes.length > 0 && <ul>{variant.notes.map(note => <li><Measure text={note} unit={unit} lang={lang}/></li>)}</ul>}</section>
       </div><aside class="detail-sidebar">
