@@ -46,7 +46,7 @@ export function canonicalAnalyticsPath(href:string | null): string {
 export function parsePendingNavigation(raw:string | null, now:number, target:string): PendingNavigation | null {
   try {
     const p=JSON.parse(raw || 'null');
-    if(!p || !['food_select','language_change','region_change'].includes(p.name) || !isPath(p.target) || p.target!==target || typeof p.createdAt!=='number' || now-p.createdAt<0 || now-p.createdAt>30_000) return null;
+    if(!p || !['food_select','language_change','region_change','unit_change'].includes(p.name) || !isPath(p.target) || p.target!==target || typeof p.createdAt!=='number' || now-p.createdAt<0 || now-p.createdAt>30_000) return null;
     const s=p.source;
     if(!s || !isPath(s.path) || !['cn','us'].includes(s.collection) || !['en','zh'].includes(s.language) || !['c','f'].includes(s.units) || !['yes','no'].includes(s.qa) || !categories.includes(s.category)) return null;
     return {...(p.before && ['food_search','search_no_results','unit_change'].includes(p.before.name) ? {before:{name:p.before.name as 'food_search'|'search_no_results'|'unit_change',params:sanitizeAnalyticsParams(p.before.params || {})}} : {}),name:p.name,params:sanitizeAnalyticsParams(p.params || {}),target:p.target,createdAt:p.createdAt,source:{path:s.path,collection:s.collection,language:s.language,units:s.units,qa:s.qa,category:s.category}};

@@ -16,6 +16,8 @@ test('navigation handoff is destination-bound, short-lived, sanitized and query-
  const record={name:'food_select',params:{food_slug:'cn-orleans-wings',search_term:'private@example.com'},source:{path:'/zh',collection:'cn',language:'zh',units:'c',qa:'no',category:'all'},target:'/zh/china/foods/cn-orleans-wings',createdAt:1000};
  const parse=(value:unknown,now=2000,target=record.target)=>parsePendingNavigation(JSON.stringify(value),now,target);
  assert.deepEqual(parse(record)!.params,{food_slug:'cn-orleans-wings'});assert.equal(parse(record,32000),null);assert.equal(parse(record,0),null);assert.equal(parse(record,2000,'/'),null);assert.equal(parse({...record,source:{...record.source,path:'/zh?q=private'}}),null);assert.equal(parse({...record,name:'arbitrary'}),null);
+ const unit={...record,name:'unit_change',target:'/',source:{...record.source,path:'/settings',units:'f'},params:{unit:'c',previous_unit:'f',search_term:'private@example.com'}};
+ assert.deepEqual(parse(unit,2000,'/')!.params,{unit:'c',previous_unit:'f'});assert.equal(parse(unit,2000,'/zh'),null);assert.equal(parse(unit,32000,'/'),null);
  assert.equal(canonicalAnalyticsPath('https://airfryer.ybwdaisy.com/zh?private=yes'),'/zh');assert.equal(canonicalAnalyticsPath('https://example.com/private'),'/404');assert.equal(canonicalAnalyticsPath('https://airfryer.ybwdaisy.com/private@example.com'),'/404');
 });
 
