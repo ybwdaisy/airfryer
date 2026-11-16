@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="#f1e9da"/><g transform="translate(2 2) scale(.875)" fill="none" stroke="#462d20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4v4M7 8l2 2m16-2-2 2M6 14h20v8a6 6 0 0 1-6 6h-8a6 6 0 0 1-6-6zM12 19h8"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" color="#fdfbf8"><rect width="64" height="64" fill="#bc2d2d"/>
+  <title>Airfryer times</title>
+  <rect id="logo-background" width="64" height="64" rx="16" fill="#bc2d2d"/>
+  <g transform="translate(2 2) scale(.9375)" id="logo-glyph" fill="currentColor">
+    <path fill-rule="evenodd" d="M25 10h14c9 0 14 6 14 15v12l-3 10c-1 6-5 9-11 9H25c-6 0-10-3-11-9l-3-10V25c0-9 5-15 14-15Zm15 13a8 8 0 1 0-16 0 8 8 0 0 0 16 0ZM17.5 35.5h29a1.5 1.5 0 0 1 0 3h-29a1.5 1.5 0 0 1 0-3ZM32 42a2.5 2.5 0 0 1 2.5 2.5v4a2.5 2.5 0 0 1-5 0v-4A2.5 2.5 0 0 1 32 42Z"/>
+    <path d="M32 18.5V23l3.5 2.5" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

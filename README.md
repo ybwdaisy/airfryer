@@ -8,7 +8,7 @@ Node.js 24 LTS is recommended. Run `npm ci`, `npm run check`, `npm test`, `npm r
 
 ## Content and behavior
 
-Browser icons use `public/favicon.svg`; the opaque home-screen artwork is `public/icon.svg`. After editing either source, run `npm run icons:generate` and commit the generated PNG/ICO files. The shared layout declares the 180px Apple Touch icon, browser fallbacks and manifest on every page. The manifest keeps browser navigation; no offline or standalone app behavior is introduced.
+The logo master is `public/logo.svg`: a solid air-fryer silhouette with a timer dial, in the existing warm red. Run `npm run icons:generate` after editing it and commit all generated SVG/PNG/ICO exports. This also produces `logo-mark.svg` for monochrome use. The header, browser favicons, opaque 180px Apple Touch icon and 192/512px manifest icons share the same geometry; do not edit generated icons independently. Icon references carry a cache version. The manifest keeps browser navigation; no offline or standalone app behavior is introduced.
 
 - One searchable library: 75 recipes and 81 separately sourced conditions. The default list shows methods available in the saved kitchen temperature scale: currently 25 Celsius recipes or 50 Fahrenheit recipes. Search separately discovers foods without a verified method in that scale.
 - Native links, forms, lists and disclosures keep the interface and markup simple. Detail and category pages remain readable without JavaScript, in the source-native units. Live fuzzy search, saved kitchen/language settings and condition selection enhance them in the browser.
