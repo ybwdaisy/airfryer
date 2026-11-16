@@ -10,7 +10,7 @@ The user explicitly replaced the previous locked, ruled-index design on 2026-11-
 
 ## Visual system
 
-- Keep the established air-fryer mark, red action/focus signal, self-hosted DM Sans and PingFang/system Chinese. Use a brighter neutral ground and restrained warm surfaces for preparation and cooking parameters.
+- Use the solid appliance/timer mark from `public/logo.svg`, red action/focus signal, self-hosted DM Sans and PingFang/system Chinese. The user replaced the earlier open-basket mark on 2026-11-16. Header, browser and home-screen exports share this single master. Use a brighter neutral ground and restrained warm surfaces for preparation and cooking parameters.
 - The home is a food directory, not a marketing page or a spreadsheet. Category photographs help recognition; each independently linked recipe has its name/condition above a clearly labelled temperature/time pair. Two columns on desktop, one on phones; the whole item is a link.
 - Photographs belong only to category navigation. They do not claim to show a particular recipe, portion, raw/frozen state or a test result. Host small licensed files locally, preserve provenance and keep their attribution in native footer disclosure. Do not repeat a category image as a fake recipe photo.
 - The recipe leads with the food and exact starting condition, then mandatory preparation, then cooking settings. Ingredients, numbered steps and finish checks follow with clear visual grouping. Tools, extra timeline detail and source evidence use existing native disclosures.

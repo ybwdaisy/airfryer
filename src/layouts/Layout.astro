@@ -42,11 +42,11 @@ const schema = breadcrumbs.length ? {
     <link rel="alternate" hreflang="en" href={englishUrl} />
     <link rel="alternate" hreflang="zh-CN" href={chineseUrl} />
     <link rel="alternate" hreflang="x-default" href={englishUrl} />
-    <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/svg+xml" sizes="any" href="/favicon.svg?v=2" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=1" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32 48x48" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=3" />
+    <link rel="icon" type="image/svg+xml" sizes="any" href="/favicon.svg?v=3" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=3" />
+    <link rel="manifest" href="/site.webmanifest?v=3" />
     <meta name="application-name" content="Airfryer times" />
     <meta name="apple-mobile-web-app-title" content="Airfryer" />
     <meta property="og:title" content={title} />
@@ -60,7 +60,7 @@ const schema = breadcrumbs.length ? {
     <a class="skip-link" href="#main">{t(lang, 'Skip to content')}</a>
     <header class="site-header container">
       <a class="wordmark" href={home} data-region-home aria-label={t(lang, 'Airfryer times home')}>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3m-6-1 1.5 2M18 5l-1.5 2M5 11h14v5a5 5 0 0 1-5 5h-4a5 5 0 0 1-5-5zM9 15h6" /></svg>
+        <img class="brand-mark" src="/logo.svg" width="32" height="32" alt="" aria-hidden="true"/>
         Airfryer <span class="wordmark-tail">times</span>
       </a>
 

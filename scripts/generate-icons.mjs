@@ -2,8 +2,19 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import sharp from 'sharp';
 
 const publicDir = new URL('../public/', import.meta.url);
-const favicon = await readFile(new URL('favicon.svg', publicDir));
-const appIcon = await readFile(new URL('icon.svg', publicDir));
+// One vector master keeps the header, browser and home-screen identities in sync.
+const logo = await readFile(new URL('logo.svg', publicDir), 'utf8');
+const background = logo.match(/<rect\s+id="logo-background"[^>]+fill="(#[\da-f]{6})"/i)?.[1];
+if (!background) throw new Error('The logo master must declare its opaque background.');
+const favicon = Buffer.from(logo);
+// Home-screen icons have square, opaque corners; the platform applies its own mask.
+const appIcon = Buffer.from(logo
+  .replace(/(<svg\b[^>]*>)/, `$1<rect width="64" height="64" fill="${background}"/>`)
+  .replace('<g id="logo-glyph"', '<g transform="translate(2 2) scale(.9375)" id="logo-glyph"'));
+const mark = logo.replace(/^ *<rect\s+id="logo-background"[^>]*\/>\n/m, '').replace(/color="#[\da-f]{6}"/i, `color="${background}"`);
+await writeFile(new URL('favicon.svg', publicDir), favicon);
+await writeFile(new URL('icon.svg', publicDir), appIcon);
+await writeFile(new URL('logo-mark.svg', publicDir), mark);
 await mkdir(new URL('icons/', publicDir), { recursive: true });
 for (const size of [16, 32]) {
   await sharp(favicon).resize(size, size).png().toFile(new URL(`favicon-${size}x${size}.png`, publicDir).pathname);
@@ -47,4 +58,4 @@ for (const [index, frame] of frames.entries()) {
   offset += frame.bytes.length;
 }
 await writeFile(new URL('favicon.ico', publicDir), Buffer.concat([directory, ...frames.map(frame => frame.bytes)]));
-console.log('Generated browser favicons, opaque 180px Apple Touch icon, and 192/512px manifest icons.');
+console.log('Generated monochrome mark, browser favicons, opaque 180px Apple Touch icon, and 192/512px manifest icons from logo.svg.');
