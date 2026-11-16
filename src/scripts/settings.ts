@@ -1,4 +1,4 @@
-import {readKitchen,saveKitchen,presetUnit,type KitchenPreset} from '../lib/kitchen';
+import {readKitchen,saveKitchen,presetUnit,unifiedHome,type KitchenPreset} from '../lib/kitchen';
 import {languageFromPath} from '../lib/locale';
 const form=document.querySelector<HTMLFormElement>('#kitchen-settings');
 if(form){
@@ -18,22 +18,24 @@ if(form){
   const saved=saveKitchen(chosen);let languageSaved=false;
   try{localStorage.setItem('airfryer:language:v1',target);languageSaved=true;}catch{}
   const persistent=saved&&languageSaved;
-  const destination=target==='zh'?'/zh/settings':'/settings';
+  const destination=persistent?unifiedHome(target):(target==='zh'?'/zh/settings':'/settings');
   const path=destination+(!persistent?`?kitchen=${chosen}&save=temporary`:'');
+  let moved=false;const move=()=>{if(!moved){moved=true;location.assign(path);}};
   // Capture the previous page context before applying the new preset.
-  const queued=target!==lang && window.airfryerQueueNavigation?.('language_change',{target_language:target},destination,before);
-  if(before&&!queued)window.airfryerTrack?.(before.name,before.params);
+  const queued=target!==lang
+   ?window.airfryerQueueNavigation?.('language_change',{target_language:target},destination,before)
+   :persistent&&before&&window.airfryerQueueNavigation?.(before.name,before.params,destination);
+  const waitForUnit=before&&!queued&&window.airfryerTrack?.(before.name,before.params,persistent&&target===lang?move:undefined);
   const url=new URL(location.href);url.searchParams.delete('unit');url.searchParams.delete('save');
   if(persistent)url.searchParams.delete('kitchen');else url.searchParams.set('kitchen',chosen);
   history.replaceState(null,'',url);
   document.dispatchEvent(new CustomEvent('airfryer:settings-saved'));
   status.textContent=persistent?status.dataset.saved!:status.dataset.temporary!;status.hidden=false;
-  document.querySelectorAll<HTMLAnchorElement>('[data-back-to-foods]').forEach(a=>{a.href=(target==='zh'?'/zh':'/')+(!persistent?`?kitchen=${chosen}`:'');});
+  document.querySelectorAll<HTMLAnchorElement>('[data-back-to-foods]').forEach(a=>{a.href=unifiedHome(target)+(!persistent?`?kitchen=${chosen}`:'');});
   if(target!==lang){
-   if(queued){location.assign(path);return;}
-   let moved=false;const move=()=>{if(!moved){moved=true;location.assign(path);}};
+   if(queued){move();return;}
    if(!window.airfryerTrack?.('language_change',{target_language:target},move))move();else setTimeout(move,350);
-  }
+  }else if(persistent){if(waitForUnit)setTimeout(move,350);else move();}
  });
  window.addEventListener('storage',e=>{if(e.key==='airfryer:kitchen:v1'||e.key===null)preset.value=readKitchen();});
 }
