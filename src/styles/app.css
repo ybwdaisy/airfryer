@@ -2,7 +2,7 @@
  * paper: oklch(99% 0.004 80) · accent: oklch(52.5% 0.18 26) · display: DM Sans · body: DM Sans
  * nav: preserved · signature: food category photographs and a clearly grouped cooking setting · scope: app
  * states: full, filtered, empty, mismatch, saved, temporary, consent · posture: restrained · axes: light/grotesk-sans/warm
- * imagery: 6 licensed category photographs, local thumbnails, natural · list: mobile-first compact rows, natural heights · finish-review: subagent ship, compact list reviewed at 320/390/1280px · v2.0.0 */
+ * imagery: 6 licensed category photographs, local thumbnails, natural · list: language-aware mobile rows, natural heights · finish-review: subagent ship, English full-width names reviewed at 320/390/641/1280px · v2.0.0 */
 /* Hallmark · pre-emit critique: P4 H5 E4 S4 R4 V4 · weakest: S, food photographs belong to category navigation rather than claiming an untested recipe result */
 /* Hallmark · waive 49b · source model identifiers occupy no more than two lines at 320px · the linked manufacturer manual title keeps its provenance readable without horizontal overflow */
 @import './tokens.css';
@@ -239,7 +239,6 @@ input::placeholder { color: var(--color-muted); opacity: 1; }
   .row-time > span > small { font-size: var(--text-xs); }
   .food-row .metric-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
   .food-row .phase-time-label { position: static; display: block; width: auto; height: auto; clip-path: none; margin-bottom: var(--space-2xs); font-size: var(--text-xs); }
-  html[lang='en'] .food-row .phase-time-label { max-width: 12ch; white-space: normal; }
   .food-row > .preparation-tag { margin-top: var(--space-2xs); }
   .row-chevron { width: 16px; height: 16px; align-self: center; }
   .cooking-values { gap: var(--space-md); padding-block: var(--space-xs); margin-block: var(--space-xs); }
@@ -253,4 +252,14 @@ input::placeholder { color: var(--color-muted); opacity: 1; }
   .site-footer { margin-top: var(--space-xl); }
   .consent { bottom: var(--space-sm); left: var(--space-sm); right: var(--space-sm); padding: var(--space-md); gap: var(--space-md); max-height: 85dvh; overflow-y: auto; }
   .safety-table th, .safety-table td { padding-right: var(--space-xs); }
+}
+@media (max-width: 60rem) {
+  html[lang='en'] .food-row { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 16px; grid-template-areas: 'name name arrow' 'temp time time' 'prep prep prep'; align-items: start; column-gap: var(--space-sm); row-gap: var(--space-xs); padding: var(--space-md) 0; }
+  html[lang='en'] .food-name > span { text-wrap: balance; }
+  html[lang='en'] .row-temperature, html[lang='en'] .row-time { display: flex; align-items: baseline; align-self: start; gap: var(--space-xs); font-size: var(--text-lg); text-align: left; white-space: nowrap; }
+  html[lang='en'] .row-time { justify-content: flex-end; }
+  html[lang='en'] .food-row .metric-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  html[lang='en'] .food-row .phase-time-label { position: static; display: inline; width: auto; height: auto; max-width: none; margin: 0; clip-path: none; font-size: var(--text-xs); }
+  html[lang='en'] .food-row > .preparation-tag { margin-top: 0; }
+  html[lang='en'] .row-chevron { width: 16px; height: 16px; align-self: start; margin-top: var(--space-2xs); }
 }
