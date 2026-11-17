@@ -1,15 +1,15 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { readFileSync, readdirSync } from 'node:fs';
 import { assembleCatalog } from '../src/lib/catalog.ts';
 import { measureText, setting } from '../src/lib/measure.ts';
 import { regionHome, switchLanguagePath, foodPath, regionFromPath } from '../src/lib/region.ts';
 import { foodSchema } from '../src/lib/schema.ts';
 const read = (name: string) => JSON.parse(readFileSync(new URL(`../src/data/${name}`, import.meta.url), 'utf8'));
 const original = [...read('foods-a.json'), ...read('foods-b.json')];
-const foods = assembleCatalog([...original, ...read('foods-cn.json')], read('recipe-overrides.json'));
+const foods = assembleCatalog(readdirSync(new URL('../src/data/',import.meta.url)).filter(f=>/^foods-.+\.json$/.test(f)).flatMap(read), read('recipe-overrides.json'));
 test('regional collections are independent; existing US condition parameters and identifiers remain intact', () => {
-  assert.equal(foods.filter(f => f.region === 'us').length, 50);
+  assert.equal(foods.filter(f => f.region === 'us').length, 60);
   assert.ok(foods.filter(f => f.region === 'cn').length > 5);
   for (const f of original) for (const v of f.variants) {
     const preserved = foods.find(x => x.slug === f.slug)!.variants.find(x => x.id === v.id)!;

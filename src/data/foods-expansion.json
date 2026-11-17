@@ -1,0 +1,2791 @@
+[
+  {
+    "slug": "cn-paprika-chicken-thighs",
+    "name": "Paprika chicken thighs",
+    "aliases": [
+      "甜椒粉烤带骨鸡上腿",
+      "大鸡腿",
+      "鸡腿排",
+      "chicken thighs"
+    ],
+    "category": "meat",
+    "description": "4 raw bone-in chicken thighs, skin on; one uncrowded layer per batch.",
+    "region": "cn",
+    "safety": "poultry",
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Raw bone-in thighs",
+        "state": "fresh",
+        "temperatureF": 356,
+        "temperatureC": 180,
+        "minutes": [
+          20,
+          25
+        ],
+        "preheat": "no",
+        "portion": "4 raw bone-in chicken thighs, skin on; one uncrowded layer per batch.",
+        "turn": "Turn after 10 minutes.",
+        "ingredients": [
+          "4 bone-in chicken thighs",
+          "1 tsp olive oil; 1 tsp paprika",
+          "½ tsp each mixed herbs, garlic granules, salt and black pepper"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Mixing bowl",
+          "Tongs",
+          "Food thermometer recommended"
+        ],
+        "steps": [
+          "Dry the thighs, rub with oil, then coat with the mixed seasonings.",
+          "Arrange skin-side down in one layer; cook at 180°C for 10 minutes.",
+          "Turn skin-side up and cook another 10–15 minutes. Check the thickest part before serving."
+        ],
+        "notes": [],
+        "preheatDetail": "Load the cold basket, then select 180°C. No separate preheat in this method.",
+        "completion": "Cook through; measure the thickest centre to 75°C for at least 30 seconds.",
+        "sources": [
+          {
+            "title": "Air fryer chicken thighs",
+            "publisher": "Good Food / Samuel Goldsmith",
+            "url": "https://www.bbcgoodfood.com/recipes/air-fryer-chicken-thighs",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "4 bone-in thighs; 180C, 10 minutes skin-down then 10–15 skin-up. No separate preheat stated."
+          },
+          {
+            "title": "Air Fryer Chicken Thighs",
+            "publisher": "www.skinnytaste.com",
+            "url": "https://www.skinnytaste.com/air-fryer-chicken-thighs/",
+            "role": "cross-check",
+            "locator": "Recipe ingredients and instructions",
+            "evidence": "Independent comparison only: 6 bone-in, skin-on thighs; 400°F for 12 minutes per side (24 total). Different preparation/portion;its clock is not used here."
+          },
+          {
+            "title": "Cooking your food",
+            "publisher": "UK Food Standards Agency",
+            "url": "https://www.gov.uk/government/publications/cooking-your-food/cooking-your-food",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Sections2.1,4.1and8 explain household doneness checks:steaming hot centre,no pink meat and clear juices;fish opaque and flaky. These observations do not measure a core temperature."
+          }
+        ],
+        "safetyOverride": {
+          "text": "Measure the thickest centre: reach 75°C and hold for at least 30 seconds.",
+          "url": "https://www.cfs.gov.hk/english/trade_zone/safe_kitchen/Cooking_and_reheating.html"
+        },
+        "withoutThermometer": "Cut the thickest piece with a clean knife: steaming hot throughout, no raw pink meat and clear juices. If any check fails, continue cooking and recheck. These observations do not measure core temperature; a thermometer is recommended.",
+        "timeline": [
+          {
+            "label": "Skin-side down",
+            "detail": "180°C for 10 minutes."
+          },
+          {
+            "label": "Skin-side up",
+            "detail": "180°C for 10–15 minutes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-fresh-sausages",
+    "name": "Fresh pork sausages",
+    "aliases": [
+      "新鲜猪肉肠",
+      "生香肠",
+      "猪肉烤肠",
+      "sausage links"
+    ],
+    "category": "meat",
+    "description": "6 raw chilled pork sausage links; separate them in a single layer.",
+    "region": "cn",
+    "safety": "ground-meat",
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Raw chilled pork links",
+        "state": "fresh",
+        "temperatureF": 356,
+        "temperatureC": 180,
+        "minutes": [
+          10,
+          15
+        ],
+        "preheat": "no",
+        "portion": "6 raw chilled pork sausage links; separate them in a single layer.",
+        "turn": "Turn every 5 minutes.",
+        "ingredients": [
+          "6 raw pork sausage links"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Mixing bowl",
+          "Tongs",
+          "Food thermometer recommended"
+        ],
+        "steps": [
+          "Separate the chilled links. Do not add oil or substitute frozen links.",
+          "Load one layer and cook at 180°C for 10–15 minutes, turning every 5 minutes.",
+          "Check from minute 10; the centre must be cooked through before serving."
+        ],
+        "notes": [],
+        "preheatDetail": "Load the cold basket, then select 180°C. No separate preheat in this method.",
+        "completion": "Cook through; measure the thickest centre to 75°C for at least 30 seconds.",
+        "sources": [
+          {
+            "title": "Air fryer sausages",
+            "publisher": "Good Food / Samuel Goldsmith",
+            "url": "https://www.bbcgoodfood.com/recipes/air-fryer-sausages",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "6 sausage links, one layer; 180C for 10–15 minutes, turn every 5; centre 75C."
+          },
+          {
+            "title": "Air Fryer Sausages",
+            "publisher": "cookthestory.com",
+            "url": "https://cookthestory.com/air-fryer-sausages/",
+            "role": "cross-check",
+            "locator": "Recipe ingredients and instructions",
+            "evidence": "Independent comparison only: 6 raw Italian links in one layer; 400°F for 9–12 minutes. Individual weight is not given. Different preparation/portion;its clock is not used here."
+          },
+          {
+            "title": "Cooking your food",
+            "publisher": "UK Food Standards Agency",
+            "url": "https://www.gov.uk/government/publications/cooking-your-food/cooking-your-food",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Sections2.1,4.1and8 explain household doneness checks:steaming hot centre,no pink meat and clear juices;fish opaque and flaky. These observations do not measure a core temperature."
+          }
+        ],
+        "safetyOverride": {
+          "text": "Measure the thickest centre: reach 75°C and hold for at least 30 seconds.",
+          "url": "https://www.cfs.gov.hk/english/trade_zone/safe_kitchen/Cooking_and_reheating.html"
+        },
+        "withoutThermometer": "Cut the thickest piece with a clean knife: steaming hot throughout, no raw pink meat and clear juices. If any check fails, continue cooking and recheck. These observations do not measure core temperature; a thermometer is recommended."
+      }
+    ]
+  },
+  {
+    "slug": "cn-streaky-bacon",
+    "name": "Streaky bacon",
+    "aliases": [
+      "薄切培根",
+      "bacon rashers"
+    ],
+    "category": "meat",
+    "description": "6 thin streaky bacon rashers; cook only as many as fit without overlap.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Chilled streaky rashers",
+        "state": "fresh",
+        "temperatureF": 392,
+        "temperatureC": 200,
+        "minutes": [
+          6,
+          10
+        ],
+        "preheat": "no",
+        "portion": "6 thin streaky bacon rashers; cook only as many as fit without overlap.",
+        "turn": "No turn specified; check at 6 minutes.",
+        "ingredients": [
+          "6 streaky bacon rashers"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Tongs; paper towels"
+        ],
+        "steps": [
+          "Arrange the rashers flat in the cold basket without overlap.",
+          "Set 200°C and cook 6–10 minutes. Check at 6; remove once cooked to your preferred crispness.",
+          "Lift onto paper towels. Later batches start hot and may finish sooner."
+        ],
+        "notes": [],
+        "preheatDetail": "Load the cold basket, then select 200°C. No separate preheat in this method.",
+        "completion": "Cooked through, with browned edges and no uncooked areas.",
+        "sources": [
+          {
+            "title": "Air fryer bacon",
+            "publisher": "Good Food / Samuel Goldsmith",
+            "url": "https://www.bbcgoodfood.com/recipes/air-fryer-bacon",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "6 streaky rashers, no overlap; 200C for 6–10 minutes. Back bacon uses a different clock."
+          },
+          {
+            "title": "Crispy Air Fryer Bacon",
+            "publisher": "natashaskitchen.com",
+            "url": "https://natashaskitchen.com/air-fryer-bacon/",
+            "role": "cross-check",
+            "locator": "Recipe ingredients, instructions, and preheat/turn FAQs",
+            "evidence": "Independent comparison only: 350°F: regular-cut 7–9 minutes, thick-cut 10–12 minutes. Five strips; no preheat or flip. Different preparation/portion;its clock is not used here."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-garlic-baguettes",
+    "name": "Garlic butter baguettes",
+    "aliases": [
+      "蒜香黄油法棍",
+      "蒜蓉面包",
+      "garlic bread"
+    ],
+    "category": "bakery",
+    "description": "2 baked baguettes, about 125 g each; cut slits every 2–3 cm without slicing through.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Small baked baguettes, garlic butter",
+        "state": "fresh",
+        "temperatureF": 356,
+        "temperatureC": 180,
+        "minutes": [
+          8,
+          10
+        ],
+        "preheat": "yes",
+        "portion": "2 baked baguettes, about 125 g each; cut slits every 2–3 cm without slicing through.",
+        "turn": "No turn; check from minute 8.",
+        "ingredients": [
+          "2 small baked baguettes; 50 g softened butter",
+          "3 crushed garlic cloves; 2 tbsp chopped parsley"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Mixing bowl",
+          "Tongs"
+        ],
+        "steps": [
+          "Make the slits. Stir the soft butter with crushed garlic and parsley.",
+          "Spread the mixture into the cuts. Preheat to 180°C.",
+          "Cook in uncrowded batches for 8–10 minutes, until the bread is crisp and golden."
+        ],
+        "notes": [],
+        "preheatDetail": "Preheat to 180°C using the appliance ready signal; the recipe gives no separate preheat duration.",
+        "completion": "Hot through, golden and crisp; garlic must not burn.",
+        "sources": [
+          {
+            "title": "Air fryer garlic bread",
+            "publisher": "Good Food / Samuel Goldsmith",
+            "url": "https://www.bbcgoodfood.com/recipes/air-fryer-garlic-bread",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "2 baguettes about125g each;50g butter,3 cloves,2tbsp parsley;180C8–10min."
+          },
+          {
+            "title": "Air Fryer Garlic Bread",
+            "publisher": "Simply Air Fryer (Lisa Wychopen)",
+            "url": "https://www.simplyairfryer.com/air-fryer-garlic-bread/",
+            "role": "cross-check",
+            "locator": "Ingredients and step-by-step instructions",
+            "evidence": "Independent comparison only: 1-inch baguette slices; preheat 350°F; 3–5 minutes. Different preparation/portion;its clock is not used here."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-brussels-sprouts",
+    "name": "Roasted Brussels sprouts",
+    "aliases": [
+      "烤抱子甘蓝",
+      "孢子甘蓝",
+      "球芽甘蓝",
+      "brussels sprouts"
+    ],
+    "category": "vegetables",
+    "description": "350 g fresh Brussels sprouts; trim bases and loose outer leaves, then cook in one layer.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Fresh trimmed whole sprouts",
+        "state": "fresh",
+        "temperatureF": 356,
+        "temperatureC": 180,
+        "minutes": [
+          10,
+          15
+        ],
+        "preheat": "yes",
+        "portion": "350 g fresh Brussels sprouts; trim bases and loose outer leaves, then cook in one layer.",
+        "turn": "Toss halfway through.",
+        "ingredients": [
+          "350 g fresh Brussels sprouts",
+          "1 tsp vegetable oil; salt and pepper"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Mixing bowl",
+          "Tongs"
+        ],
+        "steps": [
+          "Trim and dry the sprouts, then toss with oil, salt and pepper.",
+          "Preheat to 180°C and load in one layer. Cook for 10–15 minutes, tossing halfway.",
+          "Test a larger sprout with a fork; serve when the centre is tender."
+        ],
+        "notes": [],
+        "preheatDetail": "Preheat to 180°C using the appliance ready signal; the recipe gives no separate preheat duration.",
+        "completion": "Tender centres with browned outer leaves.",
+        "sources": [
+          {
+            "title": "Air fryer brussels sprouts",
+            "publisher": "Good Food / Samuel Goldsmith",
+            "url": "https://www.bbcgoodfood.com/recipes/air-fryer-brussels-sprouts",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Fresh350g branch:180C10–15min singlelayer,toss halfway; frozen branch not used."
+          },
+          {
+            "title": "Air Fryer Brussels Sprouts",
+            "publisher": "www.wellplated.com",
+            "url": "https://www.wellplated.com/air-fryer-brussels-sprouts/",
+            "role": "cross-check",
+            "locator": "Recipe ingredients and instructions",
+            "evidence": "Independent comparison only: 1 lb halved; preheat 375°F; cook 5+5+2–4 minutes, shaking at the stated checks. Different preparation/portion;its clock is not used here."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-omelette",
+    "name": "Two-egg omelette",
+    "aliases": [
+      "两蛋烘蛋",
+      "鸡蛋饼",
+      "煎蛋饼",
+      "omelet",
+      "omelette"
+    ],
+    "category": "bakery",
+    "description": "2 eggs and 15 g butter in an air-fryer-safe non-stick pan; no raw meat fillings.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Beaten eggs in a heatproof pan",
+        "state": "fresh",
+        "temperatureF": 356,
+        "temperatureC": 180,
+        "minutes": [
+          8,
+          10
+        ],
+        "preheat": "yes",
+        "portion": "2 eggs and 15 g butter in an air-fryer-safe non-stick pan; no raw meat fillings.",
+        "turn": "No flipping needed.",
+        "ingredients": [
+          "2 eggs; 15 g butter; black pepper"
+        ],
+        "equipment": [
+          "Air fryer; air-fryer-safe non-stick pan",
+          "Bowl, whisk and oven gloves"
+        ],
+        "steps": [
+          "Preheat the pan as above. Beat the eggs with black pepper.",
+          "Pour into the buttered pan; cook at 180°C for 8–10 minutes.",
+          "Check that the centre has set; remove with oven gloves."
+        ],
+        "notes": [],
+        "preheatDetail": "Heat the pan in the air fryer at 180°C until ready. Add butter and heat for 30 seconds.",
+        "completion": "Puffed and golden, with the centre set and no liquid raw egg.",
+        "sources": [
+          {
+            "title": "Air fryer omelette",
+            "publisher": "Good Food / Samuel Goldsmith",
+            "url": "https://www.bbcgoodfood.com/recipes/air-fryer-omelette",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "2eggs15g butter;preheat pan180C,butter30sec,egg8–10min;fillings optional."
+          },
+          {
+            "title": "Air fryer omelette",
+            "publisher": "Arla UK",
+            "url": "https://www.arlafoods.co.uk/recipes/air-fryer-omelette/",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Independent4egg,milk-and-cheese mixture;180C6–7min. Different mixture and depth; not used for timing."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-fried-eggs",
+    "name": "Eggs in a small baking tin",
+    "aliases": [
+      "小烤盘煎蛋",
+      "煎蛋",
+      "荷包蛋",
+      "fried eggs"
+    ],
+    "category": "bakery",
+    "description": "2 eggs in a shallow heatproof tin that fits inside the basket; do not crack into basket holes.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Cracked eggs in a shallow heatproof tin",
+        "state": "fresh",
+        "temperatureF": 356,
+        "temperatureC": 180,
+        "minutes": [
+          4,
+          8
+        ],
+        "preheat": "yes",
+        "portion": "2 eggs in a shallow heatproof tin that fits inside the basket; do not crack into basket holes.",
+        "turn": "Rotate the tin halfway if heating is uneven.",
+        "ingredients": [
+          "2 eggs; 2 tsp vegetable oil"
+        ],
+        "equipment": [
+          "Air fryer; shallow heatproof tin",
+          "Oven gloves"
+        ],
+        "steps": [
+          "Heat the oiled tin as above; handle it with oven gloves.",
+          "Crack in both eggs. Cook at 180°C for 4–8 minutes and inspect the yolk and white.",
+          "Use the longer end for fully set yolks; if still liquid, keep cooking and check again."
+        ],
+        "notes": [],
+        "preheatDetail": "Heat the tin with the oil at 180°C for 2 minutes before adding eggs.",
+        "completion": "For a fully cooked egg, both white and yolk are set.",
+        "sources": [
+          {
+            "title": "Air fryer fried egg",
+            "publisher": "Good Food / Samuel Goldsmith",
+            "url": "https://www.bbcgoodfood.com/recipes/air-fryer-fried-egg",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "2eggs,2tspoil;heat oil180C2min then eggs180C4–8min; header total includesoilheat."
+          },
+          {
+            "title": "Air Fryer Ramekin Eggs",
+            "publisher": "Country Lane Foods",
+            "url": "https://countrylanefoods.co.uk/air-fryer-ramekin-eggs/",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Independent ramekin method uses no preheat. Supports using a heatproof container; different tin, oil and timing."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-french-toast",
+    "name": "French toast",
+    "aliases": [
+      "法式蛋奶吐司",
+      "西多士",
+      "french toast"
+    ],
+    "category": "bakery",
+    "description": "2 thick brioche slices; cook flat in one layer on secured, food-weighted parchment.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Thick brioche dipped in egg and milk",
+        "state": "fresh",
+        "temperatureF": 356,
+        "temperatureC": 180,
+        "minutes": [
+          12,
+          14
+        ],
+        "preheat": "yes",
+        "portion": "2 thick brioche slices; cook flat in one layer on secured, food-weighted parchment.",
+        "turn": "Turn after 6–7 minutes; add remaining sugar.",
+        "ingredients": [
+          "2 thick brioche slices; 1 egg",
+          "40 mL whole milk; 1 tbsp double cream",
+          "½ tsp vanilla; pinch cinnamon and salt; 1 tbsp demerara sugar"
+        ],
+        "equipment": [
+          "Air fryer; shallow bowl",
+          "Approved baking parchment; spatula"
+        ],
+        "steps": [
+          "Whisk egg, milk, cream, vanilla, cinnamon and salt. Preheat 180°C without loose paper.",
+          "Coat both sides of the brioche; place on parchment and sprinkle with half the sugar.",
+          "Cook 6–7 minutes, flip, add remaining sugar and cook another 6–7 minutes."
+        ],
+        "notes": [],
+        "preheatDetail": "Preheat to 180°C using the appliance ready signal; the recipe gives no separate preheat duration.",
+        "completion": "Golden outside; egg coating set, with no wet raw egg inside.",
+        "sources": [
+          {
+            "title": "Air fryer french toast",
+            "publisher": "Good Food / Ailsa Burt",
+            "url": "https://www.bbcgoodfood.com/recipes/air-fryer-french-toast",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "2thick brioche,1egg,40mL milk,1tbspcream,vanilla,cinnamon,1tbspsugar;180C6–7+6–7min."
+          },
+          {
+            "title": "Air Fryer French Toast",
+            "publisher": "Amanda’s Cookin’",
+            "url": "https://amandascookin.com/air-fryer-french-toast/",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Independent recipe cooks egg-dipped bread at370F. Its bread and cooking time differ; no converted setting is used."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-blueberry-muffins",
+    "name": "Blueberry muffins",
+    "aliases": [
+      "蓝莓麦芬",
+      "玛芬",
+      "纸杯蛋糕",
+      "muffins"
+    ],
+    "category": "bakery",
+    "description": "Makes 6–8 muffins; fill sturdy silicone cases or a muffin tin three-quarters full.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Fresh batter in supported muffin cases",
+        "state": "ready-to-bake",
+        "temperatureF": 320,
+        "temperatureC": 160,
+        "minutes": [
+          12,
+          15
+        ],
+        "preheat": "yes",
+        "portion": "Makes 6–8 muffins; fill sturdy silicone cases or a muffin tin three-quarters full.",
+        "turn": "Do not flip. Check at 12 minutes.",
+        "ingredients": [
+          "60 mL oil; 75 g natural yogurt; 1 egg; 30 mL milk",
+          "100 g caster sugar; 150 g self-raising flour; ¼tsp baking soda",
+          "75 g blueberries"
+        ],
+        "equipment": [
+          "Air fryer; sturdy silicone cases or muffin tin",
+          "Bowl, whisk, skewer; oven gloves"
+        ],
+        "steps": [
+          "Mix oil, yogurt, egg, milk. Fold in sugar, flour and soda, then blueberries.",
+          "Fill supported cases three-quarters full. Leave space around each.",
+          "Bake 160°C for 12–15 minutes. Test the centre with a clean skewer."
+        ],
+        "notes": [
+          "Use self-raising flour; plain flour alone is not an equivalent ingredient."
+        ],
+        "preheatDetail": "Preheat 160°C for 2 minutes. Keep empty paper liners out of the air fryer.",
+        "completion": "Golden tops; a skewer through the centre comes out without wet batter.",
+        "sources": [
+          {
+            "title": "Air fryer muffins",
+            "publisher": "Good Food / Samuel Goldsmith",
+            "url": "https://www.bbcgoodfood.com/recipes/air-fryer-muffins",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "6–8muffins,75g blueberries;160C2minpreheat,12–15minbake;cases¾full."
+          },
+          {
+            "title": "Air fryer muffins",
+            "publisher": "Arla UK",
+            "url": "https://www.arlafoods.co.uk/recipes/air-fryer-muffins/",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Independent vanilla batter,6sturdycases,165C10min. Different recipe; not a second clock for this batter."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-sausage-beef-meatballs",
+    "name": "Sausage and beef meatballs",
+    "aliases": [
+      "猪肉肠牛肉丸",
+      "肉丸",
+      "meatballs"
+    ],
+    "category": "meat",
+    "description": "Make 20–25 meatballs from the full mixture; cook in single-layer batches.",
+    "region": "cn",
+    "safety": "ground-meat",
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Fresh small meatballs, chilled 20 minutes",
+        "state": "fresh",
+        "temperatureF": 356,
+        "temperatureC": 180,
+        "minutes": [
+          10,
+          12
+        ],
+        "preheat": "yes",
+        "portion": "Make 20–25 meatballs from the full mixture; cook in single-layer batches.",
+        "turn": "Move/turn halfway through.",
+        "ingredients": [
+          "4 raw pork sausages, casing removed; 500 g minced beef",
+          "½ onion finely chopped; 50 g parmesan; 50 g fresh breadcrumbs",
+          "1 egg; handful parsley; salt and pepper"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Mixing bowl",
+          "Tongs",
+          "Food thermometer recommended"
+        ],
+        "steps": [
+          "Mix sausage meat thoroughly with beef and all remaining ingredients.",
+          "Shape 20–25 equal balls and refrigerate 20 minutes. Preheat 180°C.",
+          "Cook one layer 10–12 minutes, turning halfway; check a larger meatball at its centre."
+        ],
+        "notes": [],
+        "preheatDetail": "Preheat to 180°C using the appliance ready signal; the recipe gives no separate preheat duration.",
+        "completion": "Cook through; measure the thickest centre to 75°C for at least 30 seconds.",
+        "sources": [
+          {
+            "title": "Air fryer meatballs",
+            "publisher": "Good Food / Samuel Goldsmith",
+            "url": "https://www.bbcgoodfood.com/recipes/air-fryer-meatballs",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "4sausages+500gbeef,50gparmesan,50gbreadcrumbs,½onion,egg,parsley;20–25balls,chill20min;180C10–12min."
+          },
+          {
+            "title": "Air Fryer Meatballs",
+            "publisher": "www.wellplated.com",
+            "url": "https://www.wellplated.com/air-fryer-meatballs/",
+            "role": "cross-check",
+            "locator": "Recipe ingredients, directions, and size tip",
+            "evidence": "Independent comparison only: 1½-inch meatballs; preheat 400°F, cook 7–9 minutes, turn halfway. Recipe allows lean beef and specifies a 165°F finish. Different preparation/portion;its clock is not used here."
+          },
+          {
+            "title": "Cooking your food",
+            "publisher": "UK Food Standards Agency",
+            "url": "https://www.gov.uk/government/publications/cooking-your-food/cooking-your-food",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Sections2.1,4.1and8 explain household doneness checks:steaming hot centre,no pink meat and clear juices;fish opaque and flaky. These observations do not measure a core temperature."
+          }
+        ],
+        "advancePreparation": "Chill shaped meatballs 20 minutes.",
+        "safetyOverride": {
+          "text": "Measure the thickest centre: reach 75°C and hold for at least 30 seconds.",
+          "url": "https://www.cfs.gov.hk/english/trade_zone/safe_kitchen/Cooking_and_reheating.html"
+        },
+        "withoutThermometer": "Cut the thickest piece with a clean knife: steaming hot throughout, no raw pink meat and clear juices. If any check fails, continue cooking and recheck. These observations do not measure core temperature; a thermometer is recommended."
+      }
+    ]
+  },
+  {
+    "slug": "cn-halloumi",
+    "name": "Halloumi slices",
+    "aliases": [
+      "烤哈罗米奶酪",
+      "哈鲁米奶酪",
+      "halloumi"
+    ],
+    "category": "vegetables",
+    "description": "225 g halloumi, cut into 6 slices about 6 cm long and 1 cm thick.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Firm grilling cheese, 1 cm slices",
+        "state": "fresh",
+        "temperatureF": 392,
+        "temperatureC": 200,
+        "minutes": [
+          10,
+          13
+        ],
+        "preheat": "yes",
+        "portion": "225 g halloumi, cut into 6 slices about 6 cm long and 1 cm thick.",
+        "turn": "Turn at 8 minutes.",
+        "ingredients": [
+          "225 g halloumi; 1 tsp olive oil"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Mixing bowl",
+          "Tongs"
+        ],
+        "steps": [
+          "Pat the cheese dry and brush with oil. Preheat as above.",
+          "Cook 200°C for 8 minutes in one layer, then flip.",
+          "Cook another 2–5 minutes until golden; serve hot."
+        ],
+        "notes": [],
+        "preheatDetail": "Preheat 200°C for 2 minutes.",
+        "completion": "Golden surfaces, hot and softened inside.",
+        "sources": [
+          {
+            "title": "Air fryer halloumi",
+            "publisher": "Good Food / Samuel Goldsmith",
+            "url": "https://www.bbcgoodfood.com/recipes/air-fryer-halloumi",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "225g6slices,6cm×1cm;1tspoil;200C2minpreheat,8+2–5mincook;notheaderrounded15."
+          },
+          {
+            "title": "Air fryer halloumi",
+            "publisher": "Arla UK",
+            "url": "https://www.arlafoods.co.uk/recipes/air-fryer-halloumi/",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Independent halloumi cube method. Supports grilling cheese suitability; cubes have different timing."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-ham-cheese-toastie",
+    "name": "Ham and cheese toastie",
+    "aliases": [
+      "火腿芝士热三明治",
+      "热压吐司",
+      "芝士三明治",
+      "cheese sandwich",
+      "toastie"
+    ],
+    "category": "bakery",
+    "description": "1 sandwich: 2 bread slices, 1 thick cooked-ham slice and 50 g mature cheddar.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Bread with cooked ham and cheese",
+        "state": "fresh",
+        "temperatureF": 374,
+        "temperatureC": 190,
+        "minutes": [
+          10,
+          10
+        ],
+        "preheat": "yes",
+        "portion": "1 sandwich: 2 bread slices, 1 thick cooked-ham slice and 50 g mature cheddar.",
+        "turn": "Turn once during cooking.",
+        "ingredients": [
+          "2 bread slices; 20 g soft butter",
+          "50 g grated cheddar; 1 thick cooked-ham slice; ½tsp mustard"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Mixing bowl",
+          "Tongs"
+        ],
+        "steps": [
+          "Butter the outer bread faces. Mix remaining butter with cheese and mustard.",
+          "Spread filling inside, sandwich the cooked ham and press closed. Preheat 190°C.",
+          "Air fry 10 minutes, turning once, until the bread is crisp and cheese melted."
+        ],
+        "notes": [],
+        "preheatDetail": "Preheat to 190°C using the appliance ready signal; the recipe gives no separate preheat duration.",
+        "completion": "Golden bread, melted cheese and hot ham in the centre.",
+        "sources": [
+          {
+            "title": "Air fryer cheese ham toastie",
+            "publisher": "Good Food / Silvana Franco",
+            "url": "https://www.bbcgoodfood.com/recipes/air-fryer-cheese-ham-toastie",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "1sandwich,2slices,20gbutter,50gcheddar,½tspmustard,1thickham;190C10minturnonce."
+          },
+          {
+            "title": "Air Fryer Grilled Cheese",
+            "publisher": "Love & Lemons (Jeanine Donofrio)",
+            "url": "https://www.loveandlemons.com/air-fryer-grilled-cheese/",
+            "role": "cross-check",
+            "locator": "Recipe card",
+            "evidence": "Independent comparison only: 1 sandwich; preheat 375°F; 3–5 minutes then 2–5 after flipping. Different preparation/portion;its clock is not used here."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-banana-bread",
+    "name": "Banana loaf cake",
+    "aliases": [
+      "香蕉磅蛋糕",
+      "香蕉面包",
+      "banana bread",
+      "banana cake"
+    ],
+    "category": "bakery",
+    "description": "1 loaf in a 1-litre tin; confirm the tin fits with room for airflow before mixing.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Fresh batter in a 1 L loaf tin",
+        "state": "ready-to-bake",
+        "temperatureF": 320,
+        "temperatureC": 160,
+        "minutes": [
+          45,
+          60
+        ],
+        "preheat": "yes",
+        "portion": "1 loaf in a 1-litre tin; confirm the tin fits with room for airflow before mixing.",
+        "turn": "Check browning at 20 minutes. Do not flip.",
+        "ingredients": [
+          "150 mL oil; 150 g caster sugar; 150 g self-raising flour",
+          "1 tsp baking powder; 2 eggs; 2 overripe bananas"
+        ],
+        "equipment": [
+          "Air fryer; 1 L loaf tin; baking parchment",
+          "Mixing bowl; fork; skewer; oven gloves; wire rack"
+        ],
+        "steps": [
+          "Oil and line the tin. Preheat 160°C. Mash bananas.",
+          "Mix oil, sugar, flour, baking powder and eggs; fold in banana. Pour into tin.",
+          "Bake 45–60 minutes. At 20 minutes check browning; if darkening, secure foil over the tin only if your manual permits.",
+          "Check the centre with a skewer, then cool on a rack before slicing."
+        ],
+        "notes": [
+          "The 1 L loaf clock does not apply to muffin cups. The source also offers 140°C if browning; it is not a fixed extra phase."
+        ],
+        "preheatDetail": "Preheat to 160°C using the appliance ready signal; the recipe gives no separate preheat duration.",
+        "completion": "Centre skewer clean with no wet batter; crust colour alone is insufficient.",
+        "sources": [
+          {
+            "title": "Air fryer banana bread",
+            "publisher": "Good Food / Samuel Goldsmith",
+            "url": "https://www.bbcgoodfood.com/recipes/air-fryer-banana-bread",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "1Ltin;150mLoil,150gsugar,150gselfraisingflour,1tspbakingpowder,2eggs,2bananas;160C45–60min;check20min."
+          },
+          {
+            "title": "Air Fryer Banana Bread",
+            "publisher": "Supergolden Bakes",
+            "url": "https://www.supergoldenbakes.com/air-fryer-banana-bread/",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Independent banana-bread formula;160Cpreheat5min. Different pan and batter; no shared baking clock."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-garlic-mushrooms",
+    "name": "Garlic roasted mushrooms",
+    "aliases": [
+      "蒜香烤口蘑",
+      "白蘑菇",
+      "栗蘑",
+      "mushrooms"
+    ],
+    "category": "vegetables",
+    "description": "300 g chestnut/button mushrooms, quartered or sliced; spread without crowding.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Fresh mushrooms, quartered or sliced",
+        "state": "fresh",
+        "temperatureF": 392,
+        "temperatureC": 200,
+        "minutes": [
+          12,
+          15
+        ],
+        "preheat": "yes",
+        "portion": "300 g chestnut/button mushrooms, quartered or sliced; spread without crowding.",
+        "turn": "Mix halfway through.",
+        "ingredients": [
+          "300 g mushrooms; 1 tbsp neutral oil",
+          "½tsp garlic powder; few thyme leaves; salt and pepper"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Mixing bowl",
+          "Tongs"
+        ],
+        "steps": [
+          "Dry and cut mushrooms. Toss with garlic, thyme, salt, pepper and oil.",
+          "Preheat 200°C; cook 12–15 minutes, mixing halfway.",
+          "Remove when tender and beginning to brown; this guide cooks mushrooms only."
+        ],
+        "notes": [],
+        "preheatDetail": "Preheat to 200°C using the appliance ready signal; the recipe gives no separate preheat duration.",
+        "completion": "Soft inside, with browned edges.",
+        "sources": [
+          {
+            "title": "Air fryer mushrooms on toast",
+            "publisher": "Good Food / Samuel Goldsmith",
+            "url": "https://www.bbcgoodfood.com/recipes/air-fryer-mushrooms-on-toast",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "300gmushrooms,quarter/slice,½tspgarlic,thyme,1tbspoil;200C12–15min,mixhalfway. Optional serving toast excluded."
+          },
+          {
+            "title": "Air Fryer Mushrooms",
+            "publisher": "Air Frying Foodie (Becky Abbott)",
+            "url": "https://airfryingfoodie.com/air-fryer-mushrooms/",
+            "role": "cross-check",
+            "locator": "Recipe card and How to Make",
+            "evidence": "Independent comparison only: 16 oz sliced; preheat; 400°F for 5–7 minutes; turn halfway. Different preparation/portion;its clock is not used here."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-scones",
+    "name": "Plain scones",
+    "aliases": [
+      "原味司康",
+      "英式松饼",
+      "scones"
+    ],
+    "category": "bakery",
+    "description": "Makes 6–8 small scones; dough 4–5 cm thick, cut with a 5 cm round cutter.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Fresh dough, 5 cm round cutter",
+        "state": "ready-to-bake",
+        "temperatureF": 356,
+        "temperatureC": 180,
+        "minutes": [
+          14,
+          18
+        ],
+        "preheat": "yes",
+        "portion": "Makes 6–8 small scones; dough 4–5 cm thick, cut with a 5 cm round cutter.",
+        "turn": "Do not flip; check at 14 minutes.",
+        "ingredients": [
+          "175 g self-raising flour; ½tsp baking powder; pinch salt",
+          "50 g cold butter; 2 tbsp caster sugar; ½tsp vanilla",
+          "90 mL milk, plus a little for brushing"
+        ],
+        "equipment": [
+          "Air fryer; bowl; 5 cm round cutter",
+          "Brush; oven gloves"
+        ],
+        "steps": [
+          "Rub diced cold butter into flour, baking powder and salt until crumbly; add sugar.",
+          "Mix vanilla with milk and add gradually to form a soft dough.",
+          "Pat 4–5 cm thick; cut 5 cm rounds. Preheat 180°C, brush tops with milk.",
+          "Bake 14–18 minutes until risen, golden and baked through."
+        ],
+        "notes": [],
+        "preheatDetail": "Preheat to 180°C using the appliance ready signal; the recipe gives no separate preheat duration.",
+        "completion": "Risen and golden, no sticky raw dough in the middle.",
+        "sources": [
+          {
+            "title": "Air fryer scones",
+            "publisher": "Good Food / Samuel Goldsmith",
+            "url": "https://www.bbcgoodfood.com/recipes/air-fryer-scones",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "175gselfraisingflour,½tspbakingpowder,50gbutter,2tbspsugar,½tspvanilla,90mLmilk;4–5cmdeep5cmround;180C14–18min."
+          },
+          {
+            "title": "Air fryer scones",
+            "publisher": "Arla UK",
+            "url": "https://www.arlafoods.co.uk/recipes/air-fryer-scones/",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Different yogurt dough,2large rounds,180C15min. Its shape and clock are not substituted."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-crispy-chickpeas",
+    "name": "Crispy canned chickpeas",
+    "aliases": [
+      "香脆鹰嘴豆",
+      "烤鹰嘴豆",
+      "chickpeas",
+      "garbanzo beans"
+    ],
+    "category": "vegetables",
+    "description": "One 400 g can of cooked chickpeas, drained; 400 g is the can size, not drained bean weight.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Cooked canned chickpeas, drained and dried",
+        "state": "fresh",
+        "temperatureF": 392,
+        "temperatureC": 200,
+        "minutes": [
+          15,
+          20
+        ],
+        "preheat": "yes",
+        "portion": "One 400 g can of cooked chickpeas, drained; 400 g is the can size, not drained bean weight.",
+        "turn": "Shake during cooking for even browning.",
+        "ingredients": [
+          "1×400 g can cooked chickpeas; ½tbsp oil",
+          "1 tsp smoked paprika; ½tsp each garlic and onion powder"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Mixing bowl",
+          "Tongs"
+        ],
+        "steps": [
+          "Drain the beans and dry thoroughly with paper towels. Do not use raw dried chickpeas.",
+          "Toss with oil and powders. Preheat 200°C.",
+          "Spread loosely and cook 15–20 minutes, checking and shaking until crisp."
+        ],
+        "notes": [],
+        "preheatDetail": "Preheat to 200°C using the appliance ready signal; the recipe gives no separate preheat duration.",
+        "completion": "Dry and crisp outside; allow to cool slightly before tasting.",
+        "sources": [
+          {
+            "title": "Air fryer chickpeas",
+            "publisher": "Good Food",
+            "url": "https://www.bbcgoodfoodme.com/recipes/air-fryer-chickpeas/",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "400gcan,½tbspoil,1tsppaprika,½tspgarlic/onion;200C15–20min;drained cookedbeans."
+          },
+          {
+            "title": "Air Fryer Chickpeas",
+            "publisher": "Love & Lemons (Jeanine Donofrio)",
+            "url": "https://www.loveandlemons.com/air-fryer-chickpeas/",
+            "role": "cross-check",
+            "locator": "Recipe card",
+            "evidence": "Independent comparison only: 1 1/2 cups cooked, dried chickpeas; preheat 400°F; 10–15 minutes, toss halfway. Different preparation/portion;its clock is not used here."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-pointed-cabbage",
+    "name": "Roasted pointed cabbage",
+    "aliases": [
+      "烤牛心包菜",
+      "尖头包菜",
+      "牛心甘蓝",
+      "cabbage",
+      "pointed cabbage"
+    ],
+    "category": "vegetables",
+    "description": "1 pointed cabbage, cut into 4 wedges with the root attached; single-layer batches.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Fresh pointed cabbage, in 4 wedges",
+        "state": "fresh",
+        "temperatureF": 356,
+        "temperatureC": 180,
+        "minutes": [
+          15,
+          15
+        ],
+        "preheat": "yes",
+        "portion": "1 pointed cabbage, cut into 4 wedges with the root attached; single-layer batches.",
+        "turn": "No fixed turn; inspect at 10–12 minutes.",
+        "ingredients": [
+          "1 pointed cabbage; 2 tbsp soft butter",
+          "1 tsp flaky salt; ½tsp black pepper"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Mixing bowl",
+          "Tongs"
+        ],
+        "steps": [
+          "Remove damaged leaves; cut into 4 wedges without cutting away the connecting root.",
+          "Brush with butter and add salt and pepper. Preheat as above.",
+          "Cook 180°C forabout 15 minutes; check the thick core with a fork."
+        ],
+        "notes": [],
+        "preheatDetail": "Preheat 180°C for 3–5 minutes.",
+        "completion": "Fork enters the thick core easily; edges browned but not burnt.",
+        "sources": [
+          {
+            "title": "Air fryer cabbage",
+            "publisher": "Arla UK",
+            "url": "https://www.arlafoods.co.uk/recipes/air-fryer-cabbage/",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "1pointedcabbagequartered,2tbspbutter,1tspsalt,½tsppepper;180C15min;FAQpreheat3–5min/check10–12. Optional garnish omitted."
+          },
+          {
+            "title": "Air Fryer Cabbage",
+            "publisher": "The Food Hussy",
+            "url": "https://www.thefoodhussy.com/air-fryer-fried-cabbage/",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Independent cabbage air-frying method. Different cabbage shape and portion; only the preparation approach is cross-checked."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-parmesan-asparagus",
+    "name": "Parmesan asparagus",
+    "aliases": [
+      "帕尔马芝士烤芦笋",
+      "芦笋",
+      "asparagus"
+    ],
+    "category": "vegetables",
+    "description": "500 g green asparagus of similar thickness; trim woody ends and cook in one layer.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Fresh green spears, woody ends removed",
+        "state": "fresh",
+        "temperatureF": 392,
+        "temperatureC": 200,
+        "minutes": [
+          8,
+          10
+        ],
+        "preheat": "yes",
+        "portion": "500 g green asparagus of similar thickness; trim woody ends and cook in one layer.",
+        "turn": "Shake occasionally; add cheese halfway.",
+        "ingredients": [
+          "500 g asparagus; 60 g soft butter; 25 g parmesan",
+          "½tsp flaky salt; 1 tsp garlic powder; black pepper"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Mixing bowl",
+          "Tongs"
+        ],
+        "steps": [
+          "Rinse, dry and trim spears. Preheat 200°C using the ready signal.",
+          "Arrange one layer; dot with butter and season with salt, garlic and pepper.",
+          "Cook 8–10 minutes, shake occasionally and add parmesan halfway."
+        ],
+        "notes": [
+          "Optional toasted seeds and serving sauce are omitted; no hob step is needed for this version."
+        ],
+        "preheatDetail": "Preheat to 200°C using the appliance ready signal; the recipe gives no separate preheat duration.",
+        "completion": "Tender stems and lightly browned tips.",
+        "sources": [
+          {
+            "title": "Air fryer asparagus",
+            "publisher": "Arla UK",
+            "url": "https://www.arlafoods.co.uk/recipes/air-fryer-asparagus/",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "500ggreenasparagus60gbutter25gparmesan½tspsalt1tspgarlic;200C8–10min;cheesehalfway;optional garnish excluded."
+          },
+          {
+            "title": "Air Fryer Asparagus",
+            "publisher": "www.loveandlemons.com",
+            "url": "https://www.loveandlemons.com/air-fryer-asparagus/",
+            "role": "cross-check",
+            "locator": "Recipe ingredients and instructions",
+            "evidence": "Independent comparison only: 1 trimmed bunch; preheat 370°F; single layer, 6–8 minutes, flip halfway. Different preparation/portion;its clock is not used here."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-cauliflower-wedges",
+    "name": "Parboiled cauliflower wedges",
+    "aliases": [
+      "先焯后烤花菜瓣",
+      "花菜",
+      "菜花",
+      "花椰菜",
+      "cauliflower"
+    ],
+    "category": "vegetables",
+    "description": "1 small cauliflower, parboiled whole then cut into 4 wedges with stems holding florets together.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Fresh cauliflower, parboiled 5 minutes",
+        "state": "fresh",
+        "temperatureF": 392,
+        "temperatureC": 200,
+        "minutes": [
+          10,
+          20
+        ],
+        "preheat": "yes",
+        "portion": "1 small cauliflower, parboiled whole then cut into 4 wedges with stems holding florets together.",
+        "turn": "Turn occasionally; check from 10 minutes.",
+        "ingredients": [
+          "1 small cauliflower; 1 garlic clove; 2 tbsp olive oil",
+          "1 tsp flaky salt; water and a little salt for boiling"
+        ],
+        "equipment": [
+          "Air fryer; hob and saucepan",
+          "Colander; knife; tongs"
+        ],
+        "steps": [
+          "Remove outer leaves, rinse and boil the whole small cauliflower in lightly salted water 5 minutes.",
+          "Drain thoroughly, cut 4 wedges. Mix crushed garlic with oil and coat the wedges.",
+          "Preheat 200°C; add salt and cook 10–20 minutes, turning occasionally."
+        ],
+        "notes": [],
+        "preheatDetail": "Preheat to 200°C using the appliance ready signal; the recipe gives no separate preheat duration.",
+        "completion": "Stems tender when pierced and surfaces lightly browned.",
+        "sources": [
+          {
+            "title": "Air fryer cauliflower",
+            "publisher": "Arla UK",
+            "url": "https://www.arlafoods.co.uk/recipes/air-fryer-cauliflower/",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "1smallcauliflowerparboiled5min,4wedges,1clove,2tbspoil,1tspsalt;200C10–20minturnoccasionally;optional dressing excluded."
+          },
+          {
+            "title": "Air Fryer Cauliflower",
+            "publisher": "www.wholesomeyum.com",
+            "url": "https://www.wholesomeyum.com/air-fryer-cauliflower/",
+            "role": "cross-check",
+            "locator": "Recipe ingredients and instructions",
+            "evidence": "Independent comparison only: 1 head in florets; preheat 380°F; single-layer batches, 7–10 minutes, shaking halfway. Different preparation/portion;its clock is not used here."
+          }
+        ],
+        "advancePreparation": "Requires a hob: boil cauliflower in lightly salted water 5 minutes before air frying.",
+        "needsHob": true,
+        "timeline": [
+          {
+            "label": "Hob preparation",
+            "detail": "Boil whole cauliflower 5 minutes, then drain."
+          },
+          {
+            "label": "Air fry",
+            "detail": "200°C for 10–20 minutes after preheating."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-apple-crumble",
+    "name": "Bramley apple crumble",
+    "aliases": [
+      "酸苹果燕麦酥粒",
+      "苹果酥",
+      "apple crumble"
+    ],
+    "category": "bakery",
+    "description": "600 g peeled, cored Bramley cooking apples in a basket-fitting heatproof dish.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Fresh chopped cooking apples, covered first",
+        "state": "fresh",
+        "temperatureF": 356,
+        "temperatureC": 180,
+        "minutes": [
+          20,
+          22
+        ],
+        "preheat": "yes",
+        "portion": "600 g peeled, cored Bramley cooking apples in a basket-fitting heatproof dish.",
+        "turn": "Stir apples after 10–12 minutes, then add crumble.",
+        "ingredients": [
+          "600 g prepared cooking apples; 1 tsp cinnamon; 2 tbsp caster sugar; 30 mL water",
+          "100 g cold butter; 150 g plain flour; 75 g demerara sugar; 2 tbsp oats"
+        ],
+        "equipment": [
+          "Air fryer; heatproof dish and oven-safe lid",
+          "Bowl; oven gloves"
+        ],
+        "steps": [
+          "Preheat 180°C. Mix apples, cinnamon, caster sugar and water in the dish; cover with an oven-safe lid.",
+          "Cook 10–12 minutes. Meanwhile rub butter into flour and mix with demerara sugar, oats and a pinch of salt.",
+          "Uncover, stir softened apples and spread crumble evenly. Cook another 10 minutes.",
+          "Allow the filling to cool slightly before serving."
+        ],
+        "notes": [],
+        "preheatDetail": "Preheat to 180°C using the appliance ready signal; the recipe gives no separate preheat duration.",
+        "completion": "Apples soft and juicy; crumble golden and cooked through.",
+        "sources": [
+          {
+            "title": "Air fryer bramley apple crumble",
+            "publisher": "Good Food / Silvana Franco",
+            "url": "https://www.bbcgoodfood.com/recipes/air-fryer-bramley-apple-crumble",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "600gBramley,1tspcinnamon,2tbspsugar,2tbspwater;180Ccovered10–12min+crumble10min;100gbutter150gflour75gsugar2tbspoats."
+          },
+          {
+            "title": "Air Fryer Apple Crumble",
+            "publisher": "Farmersgirl Kitchen",
+            "url": "https://www.farmersgirlkitchen.co.uk/wprm_print/30888",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Independent ovenproof-dish crumble method175C20min. Different quantity and preparation; not combined with this staged clock."
+          }
+        ],
+        "timeline": [
+          {
+            "label": "Soften apples",
+            "detail": "180°C, covered, 10–12 minutes."
+          },
+          {
+            "label": "Bake crumble",
+            "detail": "Uncover, add crumble; 180°C for 10 minutes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-honey-pork-belly",
+    "name": "Honey-glazed pork belly slices",
+    "aliases": [
+      "蜜汁烤五花肉片",
+      "烤肉",
+      "五花肉",
+      "pork belly"
+    ],
+    "category": "meat",
+    "description": "300 g raw pork belly sliced about 5 mm thick; single layer, without stacking.",
+    "region": "cn",
+    "safety": "whole-meat",
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Raw pork belly, 5 mm slices, marinated",
+        "state": "fresh",
+        "temperatureF": 356,
+        "temperatureC": 180,
+        "minutes": [
+          15,
+          15
+        ],
+        "preheat": "no",
+        "portion": "300 g raw pork belly sliced about 5 mm thick; single layer, without stacking.",
+        "turn": "Turn after 5 minutes and again after 10 minutes.",
+        "ingredients": [
+          "300 g pork belly; 1 tbsp honey barbecue sauce",
+          "1 tbsp each cooking wine and light soy sauce",
+          "1 tsp each five-spice, chilli powder and salt"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Mixing bowl",
+          "Tongs",
+          "Food thermometer recommended"
+        ],
+        "steps": [
+          "Slice to 5 mm; mix with sauce, wine, soy and spices. Refrigerate 30 minutes.",
+          "Arrange one layer in the cold basket. If using parchment, load it with the meat; never preheat it empty.",
+          "Cook 180°C for 5 minutes, flip and cook 5 more; flip again and cook 5 minutes.",
+          "Check the thickest slice is cooked through; transfer with clean tongs."
+        ],
+        "notes": [],
+        "preheatDetail": "Load the cold basket, then select 180°C. No separate preheat in this method.",
+        "completion": "Cook through; measure the thickest centre to 75°C for at least 30 seconds.",
+        "sources": [
+          {
+            "title": "空气炸锅烤蜜汁五花肉",
+            "publisher": "小小多和包子 / 美食天下",
+            "url": "https://home.meishichina.com/recipe-567847.html",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "300g,5mm slices;1tbspbarbecuesauce,wine,soy;1tspspices/salt;marinate30min;180C5+5+5minturneach."
+          },
+          {
+            "title": "简易版蒜香蜜汁猪颈肉",
+            "publisher": "zheng_joan / 下厨房",
+            "url": "https://m.xiachufang.com/recipe/106779397/",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Independent author allows porkbelly but uses400gthickerpieces,4hmarinade,180C20–25min. Not this slice clock."
+          },
+          {
+            "title": "Cooking your food",
+            "publisher": "UK Food Standards Agency",
+            "url": "https://www.gov.uk/government/publications/cooking-your-food/cooking-your-food",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Sections2.1,4.1and8 explain household doneness checks:steaming hot centre,no pink meat and clear juices;fish opaque and flaky. These observations do not measure a core temperature."
+          }
+        ],
+        "advancePreparation": "Marinate 30 minutes in the refrigerator.",
+        "safetyOverride": {
+          "text": "Measure the thickest centre: reach 75°C and hold for at least 30 seconds.",
+          "url": "https://www.cfs.gov.hk/english/trade_zone/safe_kitchen/Cooking_and_reheating.html"
+        },
+        "withoutThermometer": "Cut the thickest piece with a clean knife: steaming hot throughout, no raw pink meat and clear juices. If any check fails, continue cooking and recheck. These observations do not measure core temperature; a thermometer is recommended.",
+        "timeline": [
+          {
+            "label": "Marinate",
+            "detail": "30 minutes refrigerated; not part of air-frying time."
+          },
+          {
+            "label": "Air fry",
+            "detail": "180°C for 15 minutes; turn every 5 minutes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-roasted-hairtail",
+    "name": "Marinated narrow hairtail pieces",
+    "aliases": [
+      "酱烤窄带鱼段",
+      "带鱼",
+      "刀鱼",
+      "hairtail",
+      "ribbonfish"
+    ],
+    "category": "seafood",
+    "description": "10 narrow hairtail pieces, fully thawed; single layer. Thick wide pieces require another method.",
+    "region": "cn",
+    "safety": "fish",
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Thawed narrow hairtail, marinated",
+        "state": "fresh",
+        "temperatureF": 356,
+        "temperatureC": 180,
+        "minutes": [
+          10,
+          10
+        ],
+        "preheat": "yes",
+        "portion": "10 narrow hairtail pieces, fully thawed; single layer. Thick wide pieces require another method.",
+        "turn": "No fixed turn in the reference; check at 10 minutes.",
+        "ingredients": [
+          "10 narrow hairtail pieces",
+          "20 g soy sauce; 20 g oyster sauce; 15 g cooking wine; 2 g salt"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Mixing bowl",
+          "Tongs",
+          "Food thermometer recommended"
+        ],
+        "steps": [
+          "Pat the prepared fish dry, coat with the measured marinade and refrigerate for several hours, turning occasionally.",
+          "Preheat as above. Drain excess marinade; spread fish in one layer.",
+          "Cook 180°C about 10 minutes, check the thickest piece; rest briefly before lifting so it does not break."
+        ],
+        "notes": [
+          "The original gives 10 pieces but no piece weight or thickness; the clock is limited to narrow hairtail. Watch for fine bones."
+        ],
+        "preheatDetail": "Preheat 180°C for 5 minutes.",
+        "completion": "Cook through; measure the thickest centre to 75°C for at least 30 seconds.",
+        "sources": [
+          {
+            "title": "空气炸锅版炸带鱼",
+            "publisher": "Meggy跳舞的苹果 / 美食天下",
+            "url": "https://home.meishichina.com/recipe-209364.html",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "10narrowpieces;20gsoy20goyster15gwine2gsalt;marinateseveralhours;180C5minpreheat,10mincook."
+          },
+          {
+            "title": "葱炸带鱼",
+            "publisher": "Philips",
+            "url": "https://www.hotairfrying.com/airfryrecipebooks/airfryer-recipes-chinese.pdf",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Manufacturer recipe:marinatedhairtail,singlelayer,180C5minpreheat10mincook. Different marinade; only reference author portion is used."
+          },
+          {
+            "title": "Cooking your food",
+            "publisher": "UK Food Standards Agency",
+            "url": "https://www.gov.uk/government/publications/cooking-your-food/cooking-your-food",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Sections2.1,4.1and8 explain household doneness checks:steaming hot centre,no pink meat and clear juices;fish opaque and flaky. These observations do not measure a core temperature."
+          }
+        ],
+        "advancePreparation": "Marinate refrigerated for several hours; the source gives no exact hour count.",
+        "safetyOverride": {
+          "text": "Measure the thickest centre: reach 75°C and hold for at least 30 seconds.",
+          "url": "https://www.cfs.gov.hk/english/trade_zone/safe_kitchen/Cooking_and_reheating.html"
+        },
+        "withoutThermometer": "Check the thickest part: opaque flesh that separates easily and is steaming hot. These observations do not measure core temperature."
+      }
+    ]
+  },
+  {
+    "slug": "cn-lotus-chips",
+    "name": "Thin lotus root chips",
+    "aliases": [
+      "香脆烤藕片",
+      "莲藕",
+      "藕片",
+      "莲藕脆片",
+      "lotus root"
+    ],
+    "category": "vegetables",
+    "description": "1 section of fresh lotus root, peeled and very thinly sliced; single-layer batches.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Raw lotus root, very thin slices",
+        "state": "fresh",
+        "temperatureF": 374,
+        "temperatureC": 190,
+        "minutes": [
+          10,
+          10
+        ],
+        "preheat": "yes",
+        "portion": "1 section of fresh lotus root, peeled and very thinly sliced; single-layer batches.",
+        "turn": "Turn and separate slices several times.",
+        "ingredients": [
+          "1 section lotus root; oil and salt"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Mixing bowl",
+          "Tongs"
+        ],
+        "steps": [
+          "Peel, slice very thinly and dry the lotus root.",
+          "For one section, start with 5 mL oil and 0.5 g salt, toss to coat; these are editorial seasoning amounts.",
+          "Preheat as above; spread one layer and cook 190°C about 10 minutes, turning and separating repeatedly."
+        ],
+        "notes": [
+          "Reference gives one section and seasoning to taste, not grams.5 mL oil/0.5 g salt are editorial starting amounts, not source measurements."
+        ],
+        "preheatDetail": "Preheat 190°C for 3 minutes.",
+        "completion": "Edges lightly coloured and slices crisp after a brief cooling; remove darkening pieces first.",
+        "sources": [
+          {
+            "title": "炸藕片",
+            "publisher": "海蓝澜 / 美食天下",
+            "url": "https://home.meishichina.com/recipe-329645.html",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "1section,verythin;oilandsalttotaste;190C3minpreheat10mincook;turnoccasionally."
+          },
+          {
+            "title": "空气炸锅版莲藕脆片",
+            "publisher": "西镇一婶美食研究室 / 下厨房",
+            "url": "https://m.xiachufang.com/recipe/103316209/",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Independent thin-slice recipe uses vinegar soak and165C12–15min;not averaged with190C method."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-pepper-king-oyster",
+    "name": "Pepper king oyster mushrooms",
+    "aliases": [
+      "黑椒烤杏鲍菇",
+      "杏鲍菇",
+      "king oyster mushrooms",
+      "eryngii"
+    ],
+    "category": "vegetables",
+    "description": "200 g king oyster mushrooms, sliced lengthways about 5 mm thick; do not stack.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Fresh king oyster mushrooms, 5 mm slices",
+        "state": "fresh",
+        "temperatureF": 356,
+        "temperatureC": 180,
+        "minutes": [
+          20,
+          20
+        ],
+        "preheat": "unspecified",
+        "portion": "200 g king oyster mushrooms, sliced lengthways about 5 mm thick; do not stack.",
+        "turn": "Turn at 15 minutes.",
+        "ingredients": [
+          "200 g king oyster mushrooms; 1 tbsp oil",
+          "¼tsp sea salt; ⅓tsp crushed black pepper"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Mixing bowl",
+          "Tongs"
+        ],
+        "steps": [
+          "Rinse briefly, dry and slice 5 mm thick lengthways.",
+          "Toss with oil, salt and pepper; arrange without stacking.",
+          "Cook 180°C for 15 minutes, turn and cook another 5 minutes."
+        ],
+        "notes": [],
+        "preheatDetail": "Preheat to 180°C using the appliance ready signal; the recipe gives no separate preheat duration.",
+        "completion": "Soft inside, with browned edges; not a dehydrated mushroom crisp.",
+        "sources": [
+          {
+            "title": "气炸椒盐杏鲍菇",
+            "publisher": "小女人天地",
+            "url": "https://ccwenwen.blogspot.com/2025/10/air-fried-eryngii-mushroom.html",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "200g,5mm slices,1tbspoil,¼tspsalt,⅓tsppepper;180C15+5min. Optional curry finishing seasoning omitted."
+          },
+          {
+            "title": "空气炸锅版的烤杏鲍菇",
+            "publisher": "一只小包子 / 下厨房",
+            "url": "https://m.xiachufang.com/recipe/107193165/",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Independent2mushroomchunkrecipe200C20min,stirfrequently. Different cut and temperature;not slice timing."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-roasted-chives",
+    "name": "Barbecue Chinese chives",
+    "aliases": [
+      "烧烤味韭菜",
+      "烤韭菜",
+      "韭菜",
+      "Chinese chives"
+    ],
+    "category": "vegetables",
+    "description": "240 g Chinese chives, rinsed and drained; spread loosely, not packed deep.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Fresh cut Chinese chives",
+        "state": "fresh",
+        "temperatureF": 374,
+        "temperatureC": 190,
+        "minutes": [
+          20,
+          20
+        ],
+        "preheat": "yes",
+        "portion": "240 g Chinese chives, rinsed and drained; spread loosely, not packed deep.",
+        "turn": "Stir after 5, 10 and 15 minutes; brush remaining sauce at 10.",
+        "ingredients": [
+          "240 g chives; 1 g salt",
+          "10 mL oil; 5 mL light soy; 2 g barbecue powder; pinch chicken seasoning"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Mixing bowl",
+          "Tongs"
+        ],
+        "steps": [
+          "Dry and cut chives. Mix salt, oil, soy, barbecue powder and chicken seasoning.",
+          "Preheat 190°C; spread chives loosely and brush half the sauce.",
+          "Cook 10 minutes, stirring halfway. Brush remaining sauce; continue up to 10 minutes, stirring and checking for browning.",
+          "Remove once tender and hot; thin leaves must not char while waiting for the timer."
+        ],
+        "notes": [
+          "Reference supplies 240 g chives and 1 g salt; oil, soy and spice amounts above are editorial starting amounts. Other recipes use much shorter clocks with different loads."
+        ],
+        "preheatDetail": "Preheat to 190°C using the appliance ready signal; the recipe gives no separate preheat duration.",
+        "completion": "Tender and hot throughout, without burnt leaf tips.",
+        "sources": [
+          {
+            "title": "空气炸锅烤韭菜",
+            "publisher": "美乐猪 / 美食天下",
+            "url": "https://home.meishichina.com/recipe-637212.html",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "240gchives1gsalt;preheated190C10+10min,stirhalfwayeachphase,brushsaucebetween;otherseasoningstotaste."
+          },
+          {
+            "title": "空气炸锅烤韭菜",
+            "publisher": "么么是妖精 / 下厨房",
+            "url": "https://m.xiachufang.com/recipe/104345484/",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Independent foil-lined smaller unspecified load180C7min,and8minburnt. Demonstrates why checking leaf doneness matters;not a combined clock."
+          }
+        ],
+        "timeline": [
+          {
+            "label": "First cook",
+            "detail": "190°C for 10 minutes; stir midway."
+          },
+          {
+            "label": "Brush and finish",
+            "detail": "Brush remaining sauce; up to 10 minutes more, checking tender leaves."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-crispy-okra",
+    "name": "Breadcrumb-crusted okra",
+    "aliases": [
+      "面包糠脆皮秋葵",
+      "秋葵",
+      "okra"
+    ],
+    "category": "vegetables",
+    "description": "100 g fresh okra, trimmed and cut into even bite-size pieces; one uncrowded layer.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Fresh okra, egg and breadcrumb coating",
+        "state": "fresh",
+        "temperatureF": 392,
+        "temperatureC": 200,
+        "minutes": [
+          10,
+          10
+        ],
+        "preheat": "unspecified",
+        "portion": "100 g fresh okra, trimmed and cut into even bite-size pieces; one uncrowded layer.",
+        "turn": "Inspect the coating during cooking.",
+        "ingredients": [
+          "100 g okra; 1 garlic clove; 1 egg",
+          "Pepper salt; breadcrumbs to coat; oil spray"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Mixing bowl",
+          "Tongs"
+        ],
+        "steps": [
+          "Dry trimmed okra, cut evenly and mix with garlic and pepper salt.",
+          "Coat in beaten egg, then breadcrumbs; shake off loose excess.",
+          "Arrange one layer, lightly spray oil and cook 200°C for 10 minutes; check for dry uncooked coating."
+        ],
+        "notes": [],
+        "preheatDetail": "Preheat to 200°C using the appliance ready signal; the recipe gives no separate preheat duration.",
+        "completion": "Okra tender; egg coating cooked through, crust lightly golden.",
+        "sources": [
+          {
+            "title": "酥脆氣炸秋葵",
+            "publisher": "tasty-note / Kazu",
+            "url": "https://tasty-note.com/airfryer-fired-okra/",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Fresh100gokra,1clove,1egg,pepper-salt,cornmeal;oil spray200C10min. Source explicitly allows breadcrumbs in place of corn flour;no separate preheat duration."
+          },
+          {
+            "title": "Air Fryer Okra",
+            "publisher": "The Pioneer Woman",
+            "url": "https://www.thepioneerwoman.com/food-cooking/recipes/a39602104/air-fryer-okra-recipe/",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Independent cornmeal-breaded okra400F12min. Different load and formula;not converted to a Celsius clock."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-teriyaki-squid",
+    "name": "Teriyaki whole squid",
+    "aliases": [
+      "照烧烤鱿鱼",
+      "鱿鱼",
+      "烤鱿鱼",
+      "squid"
+    ],
+    "category": "seafood",
+    "description": "1 cleaned raw squid, fully thawed; fits flat with room in the basket. Not dried squid or thick rings.",
+    "region": "cn",
+    "safety": "shellfish",
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Cleaned thawed whole squid",
+        "state": "fresh",
+        "temperatureF": 392,
+        "temperatureC": 200,
+        "minutes": [
+          15,
+          15
+        ],
+        "preheat": "yes",
+        "portion": "1 cleaned raw squid, fully thawed; fits flat with room in the basket. Not dried squid or thick rings.",
+        "turn": "Turn and brush sauce every 5 minutes.",
+        "ingredients": [
+          "1 squid; 10 mL neutral oil",
+          "5 mL cooking wine; 0.5 g salt; 15 mL teriyaki sauce"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Mixing bowl",
+          "Tongs",
+          "Food thermometer recommended"
+        ],
+        "steps": [
+          "Remove innards, beak and hard cartilage; pat dry and coat with salt, wine and oil.",
+          "Preheat as above; lay squid flat and cook 200°C for 15 minutes.",
+          "Every 5 minutes, turn and brush a thin layer of teriyaki sauce. Check thick flesh before slicing."
+        ],
+        "notes": [
+          "Reference gives one squid but no weight; do not apply its clock to oversized specimens. Salt, wine and sauce amounts are editorial starting amounts."
+        ],
+        "preheatDetail": "Preheat 200°C for 5 minutes.",
+        "completion": "Cook through; measure the thickest centre to 75°C for at least 30 seconds.",
+        "sources": [
+          {
+            "title": "照烧鱿鱼",
+            "publisher": "飞利浦健康厨房 / 美食天下",
+            "url": "https://home.meishichina.com/recipe-145759.html",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "1squid,10mLoil,salt/wine/teriyakitotaste;200C5minpreheat15mincook;turnandbrushevery5min."
+          },
+          {
+            "title": "煎烤鱿鱼",
+            "publisher": "Theophylline / 下厨房",
+            "url": "https://m.xiachufang.com/recipe/104633379/",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Independent2squidcutpieces,15minmarinade;200C5minpreheat15mincook. Different cut;not a whole-squid size guarantee."
+          },
+          {
+            "title": "Cooking your food",
+            "publisher": "UK Food Standards Agency",
+            "url": "https://www.gov.uk/government/publications/cooking-your-food/cooking-your-food",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Sections2.1,4.1and8 explain household doneness checks:steaming hot centre,no pink meat and clear juices;fish opaque and flaky. These observations do not measure a core temperature."
+          }
+        ],
+        "advancePreparation": "Season with salt and wine while preheating; no long marinade is specified.",
+        "safetyOverride": {
+          "text": "Measure the thickest centre: reach 75°C and hold for at least 30 seconds.",
+          "url": "https://www.cfs.gov.hk/english/trade_zone/safe_kitchen/Cooking_and_reheating.html"
+        },
+        "withoutThermometer": "Cut the thickest flesh:it should be opaque,firm and steaming hot,without a translucent raw centre. These observations do not measure core temperature;a thermometer is recommended."
+      }
+    ]
+  },
+  {
+    "slug": "cn-japanese-kirimochi",
+    "name": "Japanese hard rice cakes",
+    "aliases": [
+      "原味日式烤年糕",
+      "日式切饼",
+      "日式年糕",
+      "kirimochi",
+      "mochi"
+    ],
+    "category": "bakery",
+    "description": "200 g packaged Japanese hard rice cakes; unwrapped and spaced for expansion.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Packaged unfrozen Japanese hard mochi",
+        "state": "ready-to-bake",
+        "temperatureF": 356,
+        "temperatureC": 180,
+        "minutes": [
+          6,
+          6
+        ],
+        "preheat": "unspecified",
+        "portion": "200 g packaged Japanese hard rice cakes; unwrapped and spaced for expansion.",
+        "turn": "Check expansion during cooking; do not crowd.",
+        "ingredients": [
+          "200 g Japanese hard kirimochi"
+        ],
+        "equipment": [
+          "Air fryer; non-stick basket",
+          "Tongs"
+        ],
+        "steps": [
+          "Confirm package is Japanese hard kirimochi suitable for dry roasting; remove all wrapping.",
+          "Space pieces apart in the basket; set 180°C for 6 minutes.",
+          "Check that centres are soft and pieces puffed; serve carefully in small bites."
+        ],
+        "notes": [
+          "This clock is not for frozen mochi, filled mochi, tangyuan or other rice-cake styles. Sticky mochi needs small bites."
+        ],
+        "preheatDetail": "Preheat to 180°C using the appliance ready signal; the recipe gives no separate preheat duration.",
+        "completion": "Puffed and soft to the centre, without a hard core.",
+        "sources": [
+          {
+            "title": "空气炸锅——炸年糕",
+            "publisher": "CARL妈妈 / 下厨房",
+            "url": "https://m.xiachufang.com/recipe/104285280/",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "200gpackagedJapanese ricecakes,unwrap,180C6min;no mandatoryscoring."
+          },
+          {
+            "title": "エアフライヤー",
+            "publisher": "マッキーママ",
+            "url": "https://ameblo.jp/tukuba-tupper/entry-12784365330.html",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Independent Japanese home-cook mochi method180C6min;uses brown-rice mochi. Different product;package directions still take precedence."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cn-cumin-potato-chips",
+    "name": "Cumin potato crisps",
+    "aliases": [
+      "孜然薄薯片",
+      "薯片",
+      "土豆片",
+      "potato chips",
+      "crisps"
+    ],
+    "category": "vegetables",
+    "description": "1 potato, sliced thin with a mandoline; the reference divides it into 2 single-layer batches.",
+    "region": "cn",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Raw potato, mandoline-thin slices",
+        "state": "fresh",
+        "temperatureF": 356,
+        "temperatureC": 180,
+        "minutes": [
+          13,
+          15
+        ],
+        "preheat": "no",
+        "portion": "1 potato, sliced thin with a mandoline; the reference divides it into 2 single-layer batches.",
+        "turn": "Turn at 8 minutes; remove crisp pieces first.",
+        "ingredients": [
+          "1 potato; 1 tbsp corn oil",
+          "1 g cumin seasoning mix(editorial starting amount)"
+        ],
+        "equipment": [
+          "Air fryer; mandoline with hand guard",
+          "Bowl; paper towels; tongs"
+        ],
+        "steps": [
+          "Peel and slice thinly with a guarded mandoline. Soak in water several minutes; dry thoroughly.",
+          "Toss all slices with oil and a little seasoning; split into 2 batches.",
+          "Cook 180°C 8 minutes, flip, then 5 minutes. Remove crisp pieces; soft ones may need 1–2 minutes more."
+        ],
+        "notes": [],
+        "preheatDetail": "Load the cold basket, then select 180°C. No separate preheat in this method.",
+        "completion": "Dry and crisp after briefly cooling; no burnt dark edges.",
+        "sources": [
+          {
+            "title": "孜然薯片（空气炸锅版）",
+            "publisher": "小小多和包子 / 美食天下",
+            "url": "https://home.meishichina.com/recipe-553526.html",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "1potatomandoline-thin,soakminutes,dry,1tbspoil,littleseasoning;2batches;180C8+5min,1–2extraifsoft."
+          },
+          {
+            "title": "Air Fryer Homemade Potato Chips",
+            "publisher": "Fork To Spoon",
+            "url": "https://forktospoon.com/air-fryer-homemade-potato-chips/",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Independent thin-sliced potato method with soaking and350Fpreheat. Different batch;no temperature conversion used."
+          }
+        ],
+        "advancePreparation": "Soak slices in water for several minutes, then dry thoroughly."
+      }
+    ]
+  },
+  {
+    "slug": "cn-breaded-plaice",
+    "name": "Breaded thin plaice fillets",
+    "aliases": [
+      "面包糠薄鲽鱼柳",
+      "鲽鱼",
+      "比目鱼",
+      "炸鱼柳",
+      "plaice",
+      "breaded fish"
+    ],
+    "category": "seafood",
+    "description": "6 thin plaice fillets, about 300 g total; the reference cooks 3 at a time in 2 batches.",
+    "region": "cn",
+    "safety": "fish",
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Raw thin plaice fillets, not frozen breaded fish",
+        "state": "fresh",
+        "temperatureF": 392,
+        "temperatureC": 200,
+        "minutes": [
+          8,
+          8
+        ],
+        "preheat": "unspecified",
+        "portion": "6 thin plaice fillets, about 300 g total; the reference cooks 3 at a time in 2 batches.",
+        "turn": "Turn and brush remaining butter at 4 minutes.",
+        "ingredients": [
+          "6 thin plaice fillets, about 300 g; 60 g flour; 2 eggs",
+          "75 g breadcrumbs; 1 tsp fine salt; black pepper; 50 g melted butter"
+        ],
+        "equipment": [
+          "Air fryer; 3 shallow plates",
+          "Brush; spatula; microwave-safe butter bowl if needed",
+          "Food thermometer recommended"
+        ],
+        "steps": [
+          "Pat fish dry. Prepare flour, beaten egg and breadcrumbs mixed with salt and pepper in separate plates.",
+          "Coat fish with flour, egg, then crumbs. Arrange 3 fillets in one layer; brush with¼of the butter.",
+          "Cook 200°C 4 minutes, flip, brush another¼butter and cook 4 minutes. Repeat for second batch."
+        ],
+        "notes": [],
+        "preheatDetail": "Preheat to 200°C using the appliance ready signal; the recipe gives no separate preheat duration.",
+        "completion": "Cook through; measure the thickest centre to 75°C for at least 30 seconds.",
+        "sources": [
+          {
+            "title": "Air fryer fish fillets",
+            "publisher": "Arla UK",
+            "url": "https://www.arlafoods.co.uk/recipes/air-fryer-fish-fillets/",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "6plaicefillets(about300g),60gflour2eggs75gcrumbs1tspsalt50gbutter;2batches,200C4+4min;thin fresh breaded fish."
+          },
+          {
+            "title": "Air Fryer Fish",
+            "publisher": "Little Sunny Kitchen",
+            "url": "https://littlesunnykitchen.com/air-fryer-fish/",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Independent breaded fish method with different species and thickness;supports drying fish and single-layer cooking,not thin-plaice timing."
+          },
+          {
+            "title": "Cooking your food",
+            "publisher": "UK Food Standards Agency",
+            "url": "https://www.gov.uk/government/publications/cooking-your-food/cooking-your-food",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Sections2.1,4.1and8 explain household doneness checks:steaming hot centre,no pink meat and clear juices;fish opaque and flaky. These observations do not measure a core temperature."
+          }
+        ],
+        "advancePreparation": "Butter must be melted first; use a microwave if needed. Thaw plain frozen fillets fully in the refrigerator.",
+        "safetyOverride": {
+          "text": "Measure the thickest centre: reach 75°C and hold for at least 30 seconds.",
+          "url": "https://www.cfs.gov.hk/english/trade_zone/safe_kitchen/Cooking_and_reheating.html"
+        },
+        "withoutThermometer": "Check the thickest part: opaque flesh that separates easily and is steaming hot. These observations do not measure core temperature."
+      }
+    ]
+  },
+  {
+    "slug": "peaches",
+    "name": "Cinnamon peaches",
+    "aliases": [
+      "肉桂烤桃子",
+      "桃子",
+      "黄桃",
+      "peach halves"
+    ],
+    "category": "bakery",
+    "description": "2 large ripe but firm peaches, halved and pitted; 4 halves in one layer.",
+    "region": "us",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Ripe firm peaches, halved",
+        "state": "fresh",
+        "temperatureF": 350,
+        "minutes": [
+          8,
+          8
+        ],
+        "preheat": "unspecified",
+        "portion": "2 large ripe but firm peaches, halved and pitted; 4 halves in one layer.",
+        "turn": "Turn after 4 minutes.",
+        "ingredients": [
+          "2 large peaches; 2 tsp melted butter",
+          "2 tsp brown sugar; ⅛tsp cinnamon"
+        ],
+        "equipment": [
+          "Air fryer; microwave-safe butter bowl",
+          "Brush; tongs"
+        ],
+        "steps": [
+          "Halve and pit peaches. Brush cut faces with melted butter, sprinkle sugar mixed with cinnamon.",
+          "Place cut-side down; air fry 350°F for 4 minutes.",
+          "Turn cut-side up and cook 4 minutes more; remove once tender."
+        ],
+        "notes": [],
+        "preheatDetail": "Preheat to 350°F using the appliance ready signal; the recipe gives no separate preheat duration.",
+        "completion": "Soft and hot flesh, lightly caramelized surface; not collapsed mush.",
+        "sources": [
+          {
+            "title": "Air Fryer Peaches",
+            "publisher": "Skinnytaste / Gina Homolka",
+            "url": "https://www.skinnytaste.com/air-fryer-peaches/",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "2largepeaches2tspbutter2tspbrownsugar⅛tspcinnamon;350F4mincutdown+4minup."
+          },
+          {
+            "title": "Air Fryer Peaches",
+            "publisher": "The Conscious Plant Kitchen / Carine Claudepierre",
+            "url": "https://www.theconsciousplantkitchen.com/air-fryer-peaches/",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Independent peach-half recipe with different fat and timing;not substituted into the reference method."
+          }
+        ],
+        "advancePreparation": "Melt butter before starting; use a microwave if needed."
+      }
+    ]
+  },
+  {
+    "slug": "croutons",
+    "name": "Garlic croutons",
+    "aliases": [
+      "蒜香面包丁",
+      "面包丁",
+      "croutons",
+      "salad croutons"
+    ],
+    "category": "bakery",
+    "description": "6 slices baked bread, cut into even cubes; single-layer batches.",
+    "region": "us",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Baked bread, cubed",
+        "state": "fresh",
+        "temperatureF": 350,
+        "minutes": [
+          5,
+          10
+        ],
+        "preheat": "yes",
+        "portion": "6 slices baked bread, cut into even cubes; single-layer batches.",
+        "turn": "Shake every 2 minutes.",
+        "ingredients": [
+          "6 bread slices; 1 tbsp olive oil",
+          "1 tsp garlic powder; 1 tsp dried parsley; salt and pepper"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Mixing bowl",
+          "Tongs"
+        ],
+        "steps": [
+          "Cut bread evenly and toss with oil, garlic, parsley, salt and pepper.",
+          "Preheat 350°F and arrange one layer without piling up.",
+          "Cook 5–10 minutes, shaking every 2 minutes; remove when dry and golden."
+        ],
+        "notes": [],
+        "preheatDetail": "Preheat to 350°F using the appliance ready signal; the recipe gives no separate preheat duration.",
+        "completion": "Dry and crunchy after brief cooling; no burnt garlic.",
+        "sources": [
+          {
+            "title": "Air Fryer Croutons",
+            "publisher": "Spend With Pennies / Holly Nilsson",
+            "url": "https://www.spendwithpennies.com/air-fryer-croutons/",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "6slices,1tbspoil,1tspgarlic1tspparsley;preheat350F;singlelayer5–10minshakeevery2."
+          },
+          {
+            "title": "Air Fryer Croutons",
+            "publisher": "The Recipe Critic / Alyssa Rivers",
+            "url": "https://therecipecritic.com/air-fryer-croutons/",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Independent1inchFrenchbreadcubes with parmesan;390F6–7min. Different seasoning/cube size;not mixed with350F reference."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "frozen-waffles",
+    "name": "Frozen toaster waffles",
+    "aliases": [
+      "冷冻薄华夫饼",
+      "华夫饼",
+      "Eggo homestyle waffles",
+      "frozen waffles"
+    ],
+    "category": "frozen",
+    "description": "4 regular-sized frozen toaster waffles, such as Eggo Homestyle; single layer, not thick Belgian waffles.",
+    "region": "us",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Frozen cooked regular toaster waffles",
+        "state": "frozen",
+        "temperatureF": 360,
+        "minutes": [
+          6,
+          6
+        ],
+        "preheat": "yes",
+        "portion": "4 regular-sized frozen toaster waffles, such as Eggo Homestyle; single layer, not thick Belgian waffles.",
+        "turn": "Flip after 3 minutes.",
+        "ingredients": [
+          "4 frozen regular toaster waffles"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Mixing bowl",
+          "Tongs"
+        ],
+        "steps": [
+          "Keep waffles frozen until ready. Preheat 360°F; check package directions first.",
+          "Arrange one layer without overlap and cook 6 minutes, flipping halfway.",
+          "Serve once crisp outside and hot to the centre."
+        ],
+        "notes": [],
+        "preheatDetail": "Preheat to 360°F using the appliance ready signal; the recipe gives no separate preheat duration.",
+        "completion": "Edges crisp and centre hot; follow any package core-temperature instruction.",
+        "sources": [
+          {
+            "title": "Air fryer frozen waffles",
+            "publisher": "Air Frying Foodie / Jen Gamble",
+            "url": "https://airfryingfoodie.com/air-fryer-frozen-waffles/",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "4Eggo/regularwaffles,preheat360F,6minfliphalfway;5.8qtCosori;notthickBelgianwaffles."
+          },
+          {
+            "title": "Fried Chicken and Waffles",
+            "publisher": "Ninja Test Kitchen",
+            "url": "https://www.sharkninja.com/fried-chicken-and-waffles/REC2907.html",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Steps9–11:separate waffle phase,preheat360F3min,cookfrozenwaffles6min,unstacked. Chicken phase not used."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cheese-quesadillas",
+    "name": "Cheese quesadillas",
+    "aliases": [
+      "芝士墨西哥夹饼",
+      "墨西哥薄饼",
+      "芝士夹饼",
+      "quesadilla"
+    ],
+    "category": "bakery",
+    "description": "2 flour tortillas, 8 inches each; 1 cup shredded Colby-Jack total; fold each in half.",
+    "region": "us",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Flour tortilla filled with cheese, no raw meat",
+        "state": "fresh",
+        "temperatureF": 350,
+        "minutes": [
+          6,
+          6
+        ],
+        "preheat": "no",
+        "portion": "2 flour tortillas, 8 inches each; 1 cup shredded Colby-Jack total; fold each in half.",
+        "turn": "Flip at 3 minutes.",
+        "ingredients": [
+          "2×8-inch flour tortillas; 1 cup shredded Colby-Jack"
+        ],
+        "equipment": [
+          "Air fryer; spatula",
+          "Toothpicks if needed to keep tortillas closed"
+        ],
+        "steps": [
+          "Divide cheese between tortillas, fold in half and press closed.",
+          "Lay folded tortillas flat. If lifting, use a toothpick; remove it before eating.",
+          "Air fry 350°F 3 minutes, flip and cook another 3 minutes."
+        ],
+        "notes": [],
+        "preheatDetail": "Load the cold basket, then select 350°F. No separate preheat in this method.",
+        "completion": "Cheese melted and tortilla crisp and golden.",
+        "sources": [
+          {
+            "title": "Air Fryer Quesadilla",
+            "publisher": "The Recipe Critic / Alyssa Rivers",
+            "url": "https://therecipecritic.com/air-fryer-quesadilla/",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "2×8inchflourtortillas,1cupColbyJack;foldhalf;350F3+3min."
+          },
+          {
+            "title": "Air Fryer Quesadillas",
+            "publisher": "Momsdish",
+            "url": "https://momsdish.com/air-fryer-quesadillas",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Independent cheese quesadillas350F8min,fliphalfway;toothpick prevents lifting. Its8min clock is not used here."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "caramelized-bananas",
+    "name": "Caramelized banana halves",
+    "aliases": [
+      "焦糖香蕉",
+      "烤香蕉",
+      "焦糖香蕉",
+      "bananas"
+    ],
+    "category": "bakery",
+    "description": "4 medium ripe firm bananas, split lengthways; single-layer batches, not overripe mushy fruit.",
+    "region": "us",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Ripe firm bananas, peeled and split",
+        "state": "fresh",
+        "temperatureF": 380,
+        "minutes": [
+          6,
+          8
+        ],
+        "preheat": "unspecified",
+        "portion": "4 medium ripe firm bananas, split lengthways; single-layer batches, not overripe mushy fruit.",
+        "turn": "Gently turn lengthways halfway, keeping topping on the fruit.",
+        "ingredients": [
+          "4 medium bananas; 4 tbsp melted unsalted butter",
+          "1 tbsp brown sugar; 1 tsp cinnamon"
+        ],
+        "equipment": [
+          "Air fryer; microwave-safe butter bowl",
+          "Brush; spatula"
+        ],
+        "steps": [
+          "Peel and split bananas. Mix brown sugar with cinnamon.",
+          "Brush with melted butter and spoon sugar mixture over the cut faces. Lightly grease the basket.",
+          "Cook in one layer at 380°F for 6–8 minutes; turn gently halfway and serve warm."
+        ],
+        "notes": [],
+        "preheatDetail": "Preheat to 380°F using the appliance ready signal; the recipe gives no separate preheat duration.",
+        "completion": "Golden surface and warm soft centre; fruit still holds together.",
+        "sources": [
+          {
+            "title": "Air fryer bananas",
+            "publisher": "Air Frying Foodie / Becky Abbott",
+            "url": "https://airfryingfoodie.com/air-fryer-bananas/",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "4mediumbananas4tbspbutter1tbspbrownsugar1tspcinnamon;380F6–8min,gentlyturnlengthwayshalfway."
+          },
+          {
+            "title": "Air Fryer Bananas",
+            "publisher": "Colleen Christensen Nutrition",
+            "url": "https://colleenchristensennutrition.com/air-fryer-bananas/",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Independent peeled banana halves with butter,cinnamon and brown sugar;10–12min,different load/method. Not used for reference timing."
+          }
+        ],
+        "advancePreparation": "Butter must be melted first; use a microwave if needed."
+      }
+    ]
+  },
+  {
+    "slug": "brown-sugar-pineapple",
+    "name": "Brown sugar pineapple",
+    "aliases": [
+      "红糖烤菠萝",
+      "菠萝",
+      "凤梨",
+      "pineapple"
+    ],
+    "category": "bakery",
+    "description": "4 cups fresh pineapple slices of similar thickness; single-layer batches.",
+    "region": "us",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Fresh pineapple slices",
+        "state": "fresh",
+        "temperatureF": 390,
+        "minutes": [
+          10,
+          12
+        ],
+        "preheat": "yes",
+        "portion": "4 cups fresh pineapple slices of similar thickness; single-layer batches.",
+        "turn": "Check edges during cooking; no fixed flip in reference.",
+        "ingredients": [
+          "4 cups pineapple slices; ½cup brown sugar",
+          "½cup melted unsalted butter; 1 tsp cinnamon"
+        ],
+        "equipment": [
+          "Air fryer; bowl; microwave-safe butter bowl",
+          "Tongs"
+        ],
+        "steps": [
+          "Mix melted butter, brown sugar and cinnamon. Toss with pineapple slices.",
+          "Preheat as above; lift slices into the basket without pouring in excess glaze.",
+          "Cook 390°F for 10–12 minutes in one layer, until edges turn golden."
+        ],
+        "notes": [],
+        "preheatDetail": "Preheat 390°F using the ready signal, or 2–3 minutes as the reference suggests.",
+        "completion": "Warm juicy fruit with golden edges; glaze not blackened.",
+        "sources": [
+          {
+            "title": "Air Fryer Brown Sugar Pineapple",
+            "publisher": "The Recipe Critic / Alyssa Rivers",
+            "url": "https://therecipecritic.com/air-fryer-pineapple/",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "4cupsslicedpineapple½cupbrownsugar½cupbutter1tspcinnamon;390F10–12min;preheat2–3minFAQ."
+          },
+          {
+            "title": "Air Fryer Pineapple",
+            "publisher": "This Healthy Kitchen / Rosa",
+            "url": "https://thishealthykitchen.com/air-fryer-pineapple/",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Independent fresh-pineapple method with maple syrup and optional butter;different glaze and batch. No averaged clock."
+          }
+        ],
+        "advancePreparation": "Peel, core and slice pineapple; butter must be melted first."
+      }
+    ]
+  },
+  {
+    "slug": "oat-stuffed-apples",
+    "name": "Oat-stuffed baked apples",
+    "aliases": [
+      "燕麦坚果烤苹果",
+      "烤苹果",
+      "苹果",
+      "baked apples"
+    ],
+    "category": "bakery",
+    "description": "4 medium apples, cores hollowed about¾inch wide without cutting through the base.",
+    "region": "us",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Whole medium apples, cored and filled",
+        "state": "fresh",
+        "temperatureF": 350,
+        "minutes": [
+          8,
+          10
+        ],
+        "preheat": "unspecified",
+        "portion": "4 medium apples, cores hollowed about¾inch wide without cutting through the base.",
+        "turn": "Keep upright; check centre softness at 8 minutes.",
+        "ingredients": [
+          "4 medium apples; 2 tbsp each oats, raisins and chopped walnuts",
+          "1 tbsp brown sugar; ½tsp cinnamon; 1 tbsp melted butter"
+        ],
+        "equipment": [
+          "Air fryer; apple corer or small spoon",
+          "Bowl; microwave-safe butter bowl; tongs"
+        ],
+        "steps": [
+          "Mix oats, raisins, nuts, sugar, cinnamon and butter.",
+          "Remove apple tops and cores; trim a little off the base to stand upright, keeping a closed bottom. Fill the cavity.",
+          "Cook 350°F for 8–10 minutes. Test flesh near the core; continue if still hard."
+        ],
+        "notes": [],
+        "preheatDetail": "Preheat to 350°F using the appliance ready signal; the recipe gives no separate preheat duration.",
+        "completion": "Flesh near the core is soft; filling hot. Time is an initial check, not a guarantee for every apple size.",
+        "sources": [
+          {
+            "title": "Air fryer baked apples",
+            "publisher": "Air Frying Foodie / Becky Abbott",
+            "url": "https://airfryingfoodie.com/air-fryer-baked-apples/",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "4mediumapples,2tbspeachoats/raisins/walnuts,1tbspbrownsugar,½tspcinnamon,1tbspbutter;350F8–10min."
+          },
+          {
+            "title": "Air Fryer Baked Apples",
+            "publisher": "Cook It Real Good",
+            "url": "https://www.cookitrealgood.com/air-fryer-baked-apples/",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Independent apple halves with oat topping,180C15min;different shape. Supports softness check,not a whole-apple clock."
+          }
+        ],
+        "advancePreparation": "Melt butter before mixing; if needed, use a microwave."
+      }
+    ]
+  },
+  {
+    "slug": "bagel-chips",
+    "name": "Garlic bagel chips",
+    "aliases": [
+      "蒜香贝果脆片",
+      "贝果片",
+      "贝果脆",
+      "bagel chips"
+    ],
+    "category": "bakery",
+    "description": "1 baked bagel, cut into thin even slices; spread in one layer.",
+    "region": "us",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Baked bagel, thin slices",
+        "state": "fresh",
+        "temperatureF": 350,
+        "minutes": [
+          6,
+          8
+        ],
+        "preheat": "unspecified",
+        "portion": "1 baked bagel, cut into thin even slices; spread in one layer.",
+        "turn": "Check often; reference has no fixed turn.",
+        "ingredients": [
+          "1 bagel; 2 tbsp olive oil; 1 heaped tsp grated parmesan",
+          "1 tsp dried oregano; ½tsp garlic powder"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Mixing bowl",
+          "Tongs"
+        ],
+        "steps": [
+          "Slice the bagel thinly and toss with oil, parmesan, oregano and garlic powder.",
+          "Arrange evenly on the rack in one layer. Cook 350°F for 6–8 minutes.",
+          "Remove once crisp and allow to cool. Use garlic powder, not fresh minced garlic."
+        ],
+        "notes": [],
+        "preheatDetail": "Preheat to 350°F using the appliance ready signal; the recipe gives no separate preheat duration.",
+        "completion": "Dry, crisp and lightly golden after cooling.",
+        "sources": [
+          {
+            "title": "Garlic Bread Chips",
+            "publisher": "ZWILLING",
+            "url": "https://www.zwilling.com/us/electrics-recipes/airfryer-garlic-bread-chips.html",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "1bagel2tbspoil1heapedtspparmesan1tsporegano½tspgarlic;350F6–8min;cool."
+          },
+          {
+            "title": "Everything Bagel Chips",
+            "publisher": "Hip2Save / Lina",
+            "url": "https://hip2save.com/recipes/bagel-chips/",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Independent1/8inchbagelslices,butter/everythingseasoning/parmesan;350F5–6min,turnhalfway. Different seasoning/thickness."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "frozen-kirkland-tempura-shrimp",
+    "name": "Frozen Kirkland tempura shrimp",
+    "aliases": [
+      "冷冻Kirkland天妇罗虾",
+      "天妇罗虾",
+      "Costco tempura shrimp",
+      "tempura shrimp"
+    ],
+    "category": "frozen",
+    "description": "5 frozen Kirkland tempura shrimp in one layer; this is a cooked frozen product, not raw battered shrimp.",
+    "region": "us",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Frozen fully cooked Kirkland tempura shrimp",
+        "state": "frozen",
+        "temperatureF": 375,
+        "minutes": [
+          8,
+          8
+        ],
+        "preheat": "yes",
+        "portion": "5 frozen Kirkland tempura shrimp in one layer; this is a cooked frozen product, not raw battered shrimp.",
+        "turn": "Flip at 4 minutes.",
+        "ingredients": [
+          "5 Kirkland frozen tempura shrimp; included dipping sauce optional"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Mixing bowl",
+          "Tongs"
+        ],
+        "steps": [
+          "Check the package still identifies the product as fully cooked; follow its current heating directions first. Preheat 375°F.",
+          "Put 5 frozen shrimp in one layer, without overlap or thawing.",
+          "Cook 8 minutes, flipping after 4. Serve when coating is crisp and centre hot."
+        ],
+        "notes": [],
+        "preheatDetail": "Preheat to 375°F using the appliance ready signal; the recipe gives no separate preheat duration.",
+        "completion": "Golden coating and hot centre; meet any package temperature requirement.",
+        "sources": [
+          {
+            "title": "Air Fryer Frozen Tempura Shrimp",
+            "publisher": "The Default Cook / Anne Aslanides",
+            "url": "https://thedefaultcook.com/air-fryer-frozen-tempura-shrimp/",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Kirklandfullycookedfrozenproduct,5pictured;preheat375F,cook8minfliphalfway;notrawshrimp."
+          },
+          {
+            "title": "Air fryer frozen shrimp tempura",
+            "publisher": "Air Frying Foodie / Jen Gamble",
+            "url": "https://airfryingfoodie.com/air-fryer-frozen-shrimp-tempura/",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Independent8frozenpreparedtempurashrimp;375F3minpreheat,8mincookfliphalfway. Different quantity;not generalized to raw batter."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "frozen-mini-corn-dogs",
+    "name": "Frozen mini corn dogs",
+    "aliases": [
+      "冷冻迷你玉米热狗",
+      "迷你热狗",
+      "玉米热狗",
+      "mini corn dogs"
+    ],
+    "category": "frozen",
+    "description": "20 mini corn dogs total; the reference suggests 10 perbatch for a smaller basket. No overlap.",
+    "region": "us",
+    "safety": null,
+    "reviewedAt": "2026-11-17",
+    "variants": [
+      {
+        "id": "default",
+        "label": "Frozen ready-made mini corn dogs",
+        "state": "frozen",
+        "temperatureF": 380,
+        "minutes": [
+          9,
+          11
+        ],
+        "preheat": "unspecified",
+        "portion": "20 mini corn dogs total; the reference suggests 10 perbatch for a smaller basket. No overlap.",
+        "turn": "Reference needs no turn; check centre at 9 minutes.",
+        "ingredients": [
+          "20 frozen ready-made mini corn dogs"
+        ],
+        "equipment": [
+          "Air fryer",
+          "Mixing bowl",
+          "Tongs"
+        ],
+        "steps": [
+          "Check package heating instructions first; keep mini corn dogs frozen until cooking.",
+          "Arrange without overlap; use 10 perbatch if the basket is small.",
+          "Cook 380°F for 9–11 minutes. Cut one to check the centre is piping hot; continue if cold."
+        ],
+        "notes": [],
+        "preheatDetail": "Preheat to 380°F using the appliance ready signal; the recipe gives no separate preheat duration.",
+        "completion": "Crisp golden coating and piping-hot sausage centre; package core-temperature instructions take priority.",
+        "sources": [
+          {
+            "title": "Air fryer mini corn dogs",
+            "publisher": "Air Frying Foodie / Jen Gamble",
+            "url": "https://airfryingfoodie.com/air-fryer-mini-corn-dogs/",
+            "role": "reference",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "20frozenminicorndogs,10perbatchifsmallbasket;380F9–11min;FAQnoturn. Header8minisnotmethodtime."
+          },
+          {
+            "title": "Mini Corn Dogs in the Air Fryer",
+            "publisher": "Everyday Family Cooking / Samantha Erb",
+            "url": "https://www.everydayfamilycooking.com/mini-corn-dogs-in-air-fryer/",
+            "role": "cross-check",
+            "locator": "Ingredients and air-fryer method",
+            "evidence": "Independent15frozenmini corndogs,StateFairexample;380F8–10min,fliphalfway,checkcentre. Separate clock,not averaged."
+          }
+        ]
+      }
+    ]
+  }
+]
