@@ -1,0 +1,46 @@
+{
+  "cn-orleans-wings": {
+    "en": {"label": "Thawed mid-joint wings", "preparation": "Marinate in the fridge for at least 6 hours."},
+    "zh": {"label": "彻底解冻的鸡中翅", "preparation": "需冷藏腌制至少 6 小时"}
+  },
+  "cn-garlic-ribs": {
+    "en": {"label": "Fully braised ribs, still hot", "preparation": "Braise fully on the hob first. Time shown is the air-fry finish only."},
+    "zh": {"label": "炖熟的小排，趁热气炸", "preparation": "需先用炒锅炖至熟透；所示时间仅为最后气炸"}
+  },
+  "cn-whole-sweet-potato": {
+    "en": {"label": "1 whole sweet potato, fitting flat in the basket", "preparation": null},
+    "zh": {"label": "整根 1 个，能平放进炸篮", "preparation": null}
+  },
+  "cn-cumin-mantou-slices": {
+    "en": {"label": "2 cooked, cooled mantou; one layer per batch", "preparation": "Use cooked mantou, not raw dough."},
+    "zh": {"label": "熟馒头 2 个，放凉后切片", "preparation": "使用已蒸熟的馒头，不适用于生面团"}
+  },
+  "cn-homemade-custard-tarts": {
+    "en": {"label": "15 large ready-made shells; cook in batches", "preparation": "Mix the custard before filling the shells."},
+    "zh": {"label": "成品大号挞皮 15 个，分批气炸", "preparation": "需先调好蛋挞液"}
+  },
+  "cn-garlic-eggplant": {
+    "en": {"label": "1 eggplant, in 2 sections that fit flat", "preparation": "A separate frying pan is needed for the garlic and radish sauce."},
+    "zh": {"label": "茄子 1 根，切两段平放", "preparation": "需另用炒锅炒蒜蓉萝卜干酱"}
+  },
+  "cn-roasted-potato-chunks": {
+    "en": {"label": "2–3 potatoes, cut into similar small chunks", "preparation": null},
+    "zh": {"label": "土豆 2–3 个，切大小接近的小块", "preparation": null}
+  },
+  "cn-cumin-firm-tofu": {
+    "en": {"label": "About 400 g firm tofu; one layer with gaps", "preparation": "Soak in water for 5 minutes first."},
+    "zh": {"label": "老豆腐约 400 克，单层留缝", "preparation": "需先用清水浸泡 5 分钟"}
+  },
+  "cn-spiced-shiitake": {
+    "en": {"label": "12 fresh shiitake, about 285 g; one layer", "preparation": "Season, then let stand briefly before cooking."},
+    "zh": {"label": "鲜香菇 12 朵，约 285 克，单层摆放", "preparation": "拌好调味后，需短暂静置入味"}
+  },
+  "cn-boiled-then-roasted-corn": {
+    "en": {"label": "1–2 ears, fully boiled, then air-fried immediately", "preparation": "Requires a hob. Time shown excludes boiling; not for raw or overnight corn."},
+    "zh": {"label": "玉米 1–2 根，先煮熟再连续气炸", "preparation": "需另用锅煮熟；所示时间不含水煮，不适用生玉米或隔夜玉米"}
+  },
+  "cn-brown-sugar-ciba": {
+    "en": {"label": "Frozen unfilled ciba sticks"},
+    "zh": {"label": "冷冻无馅长条糍粑"}
+  }
+}

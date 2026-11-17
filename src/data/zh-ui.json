@@ -247,5 +247,6 @@
   "Recipes use verified settings in the temperature scale you choose. Cooking times are never reused at a converted temperature.": "只提供当前温标有依据的设定，不自动换算温度并沿用原来的时间。",
   "Kitchen settings need JavaScript. Without it, recipes keep their original-source units.": "厨房配置需要JavaScript才能应用；关闭脚本时，各菜谱保留来源的原始单位。",
   "Search": "搜索",
-  "Saved": "已保存"
+  "Saved": "已保存",
+  "Air-fry time": "气炸时间"
 }

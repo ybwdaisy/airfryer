@@ -1,17 +1,42 @@
 {
-  "scanned":"2026-11-15",
-  "mode":"redesign", "depth":"full", "scope":"app", "theme":"brand",
-  "target":["/","/zh","/zh/china/foods/cn-orleans-wings","/foods/chicken-breast","/settings","/zh/settings"],
-  "findings":{
-    "framework":"package.json:20 Astro static site, native forms/links/details, no UI framework",
-    "system":"src/styles/tokens.css:1, self-hosted DM Sans with PingFang, warm neutral/red brand",
-    "home":"src/components/views/Home.astro:1 and FoodList.astro:1; every item has the same text/rule treatment",
-    "recipe":"src/components/views/FoodPage.astro:1; important preparation and source-native settings exist but blend into the prose",
-    "settings":"src/components/views/Settings.astro:1; keep two native selects and explicit save feedback",
-    "evidence":".hallmark/before/; 3 rendered routes, 93 links and 3 fields recorded before editing"
+  "scanned": "2026-11-17",
+  "mode": "scoped layout update",
+  "scope": "app component",
+  "theme": "brand",
+  "target": [
+    "/",
+    "/zh",
+    "category pages",
+    "related food lists"
+  ],
+  "findings": {
+    "system": "design.md; src/styles/tokens.css: warm neutral/red brand, DM Sans and PingFang",
+    "layout": "src/components/FoodList.astro and src/styles/app.css: equal-height two-column cards push facts down; mobile minimum height adds empty space",
+    "before": "output/compact-list/before and .hallmark/before; actual 390px and 320px views"
   },
-  "preserve":["75 recipes, 81 conditions, all food/source facts and native temperatures","routes, links, anchors, forms, data hooks and structured JSON","saved kitchen/language preferences, state-aware/fuzzy search, consent and analytics","brand mark, red action signal, self-hosted fonts"],
-  "introduce":["licensed local food-category photographs","independent recipe cards with visible temperature/time labels","distinct preparation/cooking/readiness surfaces and numbered instructions","shared category navigation and semantic icons, no new dependencies"],
-  "authorization":"User explicitly replaced the old locked UI: redesign for this product and ordinary household users. Update design.md; review PR, no production deployment.",
-  "files":{"edit":["design.md","src/styles/tokens.css","src/styles/app.css","src/layouts/Layout.astro","src/components/FoodList.astro","src/components/views/Home.astro","src/components/views/CategoryPage.astro","src/components/views/FoodPage.astro","src/components/views/Settings.astro"],"create":["src/components/CategoryNav.astro","src/components/Icon.astro","public/images/categories/*.jpg","docs/family-ui-redesign-2026-11-15.md"],"delete":[]}
+  "preserve": [
+    "115 recipes and 121 sourced conditions; exact native settings and detailed instructions",
+    "135/135 links, 1/1 fields, 5/5 headings in the before/after record",
+    "search hooks, state constraints, saved kitchen/language preferences, consent and analytics",
+    "logo, category photographs, palette, typography and page shell"
+  ],
+  "introduce": [
+    "single compact list with natural row heights",
+    "mobile name/condition left, values right, required preparation below",
+    "explicitly curated bilingual list summaries; full preparation remains in guides",
+    "multi-stage list entries say stage settings; exact phases remain in the linked guide"
+  ],
+  "authorization": "User approved compact list, mobile first; local preview only. Do not push or deploy.",
+  "files": {
+    "edit": [
+      "design.md",
+      "src/components/FoodList.astro",
+      "src/styles/app.css",
+      "src/data/zh-ui.json"
+    ],
+    "create": [
+      "src/data/food-list-summaries.json"
+    ],
+    "delete": []
+  }
 }
