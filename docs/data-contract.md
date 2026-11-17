@@ -1,6 +1,6 @@
 # Food data contract
 
-The assembled catalog combines `src/data/foods-{a,b,cn}.json` with `recipe-overrides.json`. The overrides enrich retained US condition IDs without changing their source temperature/time/state. Chinese interface copy merges `zh-foods.json` with `regional-zh.json`. `src/lib/catalog.ts` is shared by the application, validator and tests.
+The assembled catalog combines every `src/data/foods-*.json` pack (including the expansion pack) with `recipe-overrides.json`. The overrides enrich retained US condition IDs without changing their source temperature/time/state. Chinese interface copy merges `zh-foods.json` with `regional-zh.json`. `src/lib/catalog.ts` is shared by the application, validator and tests.
 
 Each food has `slug`, `name`, `aliases`, `region` (`cn` or `us`), `category`, `description`, `safety`, `reviewedAt`, and `variants`. Food counts are outcomes of research, not a production quota. Aliases and condition variants do not increase the subject count. A China collection entry must be an independently researched native method, not a US recipe whose text was translated.
 
@@ -14,6 +14,6 @@ Each source has `title`, `publisher`, `url`, `role`, `locator` and a concise par
 
 Use actual pages/manuals, exact raw/cooked/frozen conditions, and original model/product restrictions. Ingredient seasoning choices made by the editor must be labelled as such. Missing preheat timing is not filled with an invented universal duration. Package directions and the appliance manual take priority for the particular product; do not blend a package clock with a different recipe's temperature. No fresh/frozen/reheat equivalence, weight multipliers or unsupported adjustment variants.
 
-Unit conversion covers all operational text, including portion, cut dimensions, ingredients, stages, steps and completion checks. Original source units remain only inside clearly labelled source details. Standard measuring spoons/cups remain volume measures; do not invent grams from salt or other dry-ingredient volume. Converted temperatures are labelled as equivalent display values, with an action to restore the original setting.
+The saved kitchen preset controls which native-temperature recipes are actionable; language is independent. Do not publish an operational cooking temperature converted from the other scale. Display conversion covers portion, dimensions and ingredients where needed. Original comparison units remain inside labelled source details. Standard measuring spoons/cups remain volume measures; do not invent grams from dry-ingredient volume. Search may discover unavailable recipes separately, with their actionable instructions hidden.
 
 Run data validation, Astro checks, unit tests, build, focused browser suites and production-output checks. These validate structure/runtime, not physical cooking performance. This site has not kitchen-tested its combinations. If a source cannot substantiate a candidate, record the gap outside the public catalog rather than publishing invented advice.
