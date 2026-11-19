@@ -48,3 +48,7 @@ Use an independent Vercel project, the Astro preset, `npm run build`, and output
 ## Verification limits
 
 Data schema checks do not prove cooking accuracy. Browser checks do not prove physical cooking results, search-engine indexing, DNS propagation, or live GA4 ingestion. The source audit notes and UI review in `docs/` distinguish those boundaries.
+
+## Cooking workflow
+
+The cooking workflow adds saved recipes, explicit air-frying/no-hob filters and source-native stage timers that start with one recipe action. Required preparation stays visible before starting, without a checkbox gate. The timer stops for food checks and next-temperature confirmation. Bookmarks and timer snapshots stay in the current browser; locked/background alarms are not guaranteed. See [the workflow contract](docs/cooking-workflow-2026-11-19.md). Run the existing 14-group kitchen suite plus `TEST_BASE_URL=http://127.0.0.1:<preview-port> npm run test:cooking` (9 groups).

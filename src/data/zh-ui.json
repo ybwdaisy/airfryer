@@ -248,5 +248,16 @@
   "Kitchen settings need JavaScript. Without it, recipes keep their original-source units.": "厨房配置需要JavaScript才能应用；关闭脚本时，各菜谱保留来源的原始单位。",
   "Search": "搜索",
   "Saved": "已保存",
-  "Air-fry time": "气炸时间"
+  "Air-fry time": "气炸时间",
+  "Saved recipes": "收藏",
+  "Save recipe": "收藏菜谱",
+  "View recipe": "查看做法",
+  "Find a recipe": "找一道想做的菜",
+  "Recipe filters": "菜谱筛选",
+  "All recipes": "全部菜谱",
+  "Air fry ≤15 min": "气炸 ≤15 分钟",
+  "No hob needed": "无需炉灶",
+  "Start cooking": "开始烹饪",
+  "Cooking and saved recipes stay in this browser. Clearing site data clears them. No account or upload is needed.": "收藏和烹饪计时也保存在当前浏览器中，清除站点数据会删除这些内容，无需账号或上传。",
+  "With consent, recipe saving, filters and timer actions send only predefined recipe identifiers and action types. Your saved collection and timer snapshot are not uploaded. Timer actions do not prove that food was cooked or safe to eat.": "同意统计后，收藏、筛选和计时操作仅发送预设菜谱标识及操作类型，不上传收藏清单或计时快照。计时操作不代表食物已经做熟或可以安全食用。"
 }

@@ -1,7 +1,7 @@
 ---
-import '../styles/app.css';
 import Consent from '../components/Consent.astro';
 import Icon from '../components/Icon.astro';
+import Cooking from '../components/Cooking.astro';
 import { t } from '../lib/i18n';
 import { localizedPath, type Language } from '../lib/locale';
 import { regionFromPath, regionHome, defaultUnit, switchLanguagePath, type Region } from '../lib/region';
@@ -65,6 +65,7 @@ const schema = breadcrumbs.length ? {
       </a>
 
       <div class="header-controls">
+      <a class="settings-link saved-link js-only" href={`${home}?filter=saved`} aria-label={t(lang,'Saved recipes')} hidden><Icon name="bookmark" size={20}/><span class="header-saved-label">{t(lang,'Saved recipes')}</span> <span data-saved-count>0</span></a>
       <a class="settings-link" href={lp('/settings')} data-kitchen-settings><Icon name="settings" size={20}/>{t(lang,'Settings')}</a>
       </div>
     </header>
@@ -89,8 +90,15 @@ const schema = breadcrumbs.length ? {
       <li><a href="https://commons.wikimedia.org/wiki/File:Homemade_Pizza.jpg">Alanthebox: Homemade Pizza</a>, CC0</li>
     </ul><p>{lang==='zh'?'仅缩略展示及 CSS 裁切；照片各自保留上述许可。':'Thumbnail display and CSS crops only; each photograph retains its stated license.'}</p></details>
     <Consent lang={lang} />
+    <p class="favorite-status container" data-favorite-status role="status" aria-live="polite"></p>
+    <Cooking lang={lang}/>
     <script>
       import '../scripts/shared.ts';
+      import '../scripts/favorites.ts';
+      import '../scripts/cooking.ts';
     </script>
   </body>
 </html>
+<style is:global>
+  @import '../styles/app.css';
+</style>

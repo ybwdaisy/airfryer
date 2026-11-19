@@ -13,15 +13,16 @@ const displayFoods = collection.map(f => localizeFood(f, lang));
 const index = collection.map(f => {
   const localized=localizeFood(f,lang),variant=localized.variants[0];
   return {slug:f.slug,name:localized.name,aliases:searchAliases(f),category:f.category,
-    state:variant.state,label:variant.label,preparation:variant.advancePreparation,
+    state:variant.state,label:variant.label,preparation:variant.advancePreparation,minutesMax:variant.minutes[1],needsHob:variant.needsHob,
     unit:variant.temperatureC===undefined?'f':'c',path:foodPath(f.slug,f.region,lang)};
 });
 ---
 <Layout lang={lang} region={region} title={t(lang, 'Air fryer cooking times & temperatures | Airfryer times')} description={t(lang, 'Find air fryer cooking times and temperatures for meat, vegetables and frozen favorites. Clear starting conditions, source links and food safety checks.')}>
   <div class="workbench">
     <section class="search-workspace" aria-label={t(lang, 'Find a food')}>
+      <div class="discovery-panel">
       <form class="search-form" id="food-search" role="search" method="get" action={regionHome(region, lang)}>
-        <h1 id="page-title"><label for="search-input">{t(lang, 'Search a food')}</label></h1>
+        <h1 id="page-title"><label for="search-input">{t(lang, 'Find a recipe')}</label></h1>
         <div class="search-controls"><div class="input-wrap">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="7.5"/><path d="m16 16 5 5"/></svg>
           <input id="search-input" name="q" type="search" placeholder={t(lang,'Chicken wings, broccoli, frozen fries')} autocomplete="off" maxlength="120" aria-describedby="search-help"/>
@@ -30,6 +31,13 @@ const index = collection.map(f => {
       <div class="search-examples js-only" hidden>{(['Wings', 'Sweet potato', 'Fries']).map(term => <button type="button" data-search-example={t(lang, term)}>{t(lang, term)}</button>)}</div>
       </form>
       <CategoryNav lang={lang} region={region} searchable/>
+      <div class="library-filters js-only" hidden aria-label={t(lang,'Recipe filters')}>
+        <button type="button" data-library-filter="all" aria-pressed="true">{t(lang,'All recipes')}</button>
+        <button type="button" data-library-filter="saved" aria-pressed="false">{t(lang,'Saved recipes')} <span data-saved-count>0</span></button>
+        <button type="button" data-library-filter="quick" aria-pressed="false">{t(lang,'Air fry ≤15 min')}</button>
+        <button type="button" data-library-filter="no-hob" aria-pressed="false">{t(lang,'No hob needed')}</button>
+      </div>
+      </div>
 
       <div class="results-heading"><h2 id="results-title" class="visually-hidden">{t(lang, 'Cooking guides')}</h2><p id="result-count" role="status" aria-live="polite">{resultLabel(displayFoods.length, false, lang)}</p><span class="kitchen-summary" data-kitchen-summary></span></div>
       <p class="search-scope-note" data-category-search-hint hidden>{t(lang, 'Matches exist in another category.')} <button class="text-button" data-reset-category type="button">{t(lang, 'Search all categories')}</button></p>

@@ -1,0 +1,35 @@
+---
+import Icon from './Icon.astro';
+import {cookingCopy} from '../lib/cooking-copy';
+import type {Language} from '../lib/locale';
+const {lang='en'}=Astro.props as {lang?:Language};const c=cookingCopy(lang);
+---
+<aside class="cooking-dock" data-cooking-dock hidden aria-label={c.cooking}>
+  <button type="button" class="dock-open" data-cook-open><Icon name="clock" size={22}/><span><strong data-dock-name></strong><small data-dock-state></small></span><b data-dock-digits></b></button>
+  <button type="button" class="icon-button" data-cook-dock-pause aria-label={c.pause}><Icon name="pause" class="dock-pause-icon" size={20}/><Icon name="play" class="dock-play-icon" size={20}/></button>
+</aside>
+<dialog class="cooking-dialog" id="cooking-dialog" aria-labelledby="cooking-title">
+  <div class="cook-shell">
+    <header class="cook-header"><span data-cook-status>{c.ready}</span><button type="button" class="icon-button" data-cook-close aria-label={c.close}><Icon name="close" size={22}/></button></header>
+    <h2 id="cooking-title"></h2><p class="cook-condition" data-cook-condition></p>
+    <div data-cook-existing hidden>
+      <p class="cook-replace-detail" data-cook-replace-detail></p>
+      <div class="cook-current-summary"><Icon name="clock" size={22}/><span data-cook-current-name></span><output data-cook-current-digits aria-live="off"></output></div>
+      <div class="cook-decision-actions"><button type="button" class="button" data-cook-replace>{lang==='zh'?'切换并开始':'Switch & start'}</button><button type="button" class="button button-quiet" data-cook-current>{c.back}</button></div>
+    </div>
+    <div data-cook-content>
+      <ol class="cook-phases" data-cook-phases aria-label={c.stage}></ol>
+      <div class="cook-display"><p data-cook-stage></p><strong class="cook-setting" data-cook-temperature></strong><output class="cook-digits" data-cook-digits aria-label={c.remaining} aria-live="off"></output><progress data-cook-progress max="1" value="0" aria-label={c.remaining}></progress><p data-cook-range></p></div>
+      <p class="cook-action-note" data-cook-alert role="status" aria-live="polite"></p>
+      <button type="button" class="text-button" data-cook-ack hidden>{lang==='zh'?'收起提醒':'Dismiss reminder'}</button>
+      <div class="cook-controls"><button type="button" class="button" data-cook-primary>{c.start}</button><button type="button" class="button button-quiet" data-cook-add>{c.extend}</button></div>
+      <div data-cook-check hidden><h3 data-cook-check-heading>{c.completion}</h3><p data-cook-completion></p><details data-cook-without><summary>{c.without}</summary><p></p></details><p class="cook-stage-action" data-cook-stage-action></p><p class="cook-next" data-cook-next></p><button type="button" class="button" data-cook-next-button>{c.next}</button><button type="button" class="button" data-cook-finish>{c.complete}</button></div>
+      <div class="cook-reference"><section><h3>{c.turn}</h3><p data-cook-turn></p></section><details><summary>{c.steps}</summary><section><h3>{c.preparation}</h3><p data-cook-preparation></p><p data-cook-portion></p></section><section><h3>{c.preheat}</h3><p data-cook-preheat></p></section><ol data-cook-steps></ol></details></div>
+      <div class="cook-options"><button type="button" class="cook-option" data-cook-sound aria-pressed="false"><span>{c.sound}</span><b data-cook-sound-state>{c.off}</b></button><button type="button" class="cook-option" data-cook-awake aria-pressed="false"><span>{c.screen}</span><b data-cook-awake-state>{c.off}</b></button></div>
+      <p class="cook-support" data-cook-audio-note hidden>{lang==='zh'?'请点一下计时器中的按钮，以启用本页声音。':'Sound needs a browser interaction. Tap a timer control to enable it.'}</p>
+      <p class="cook-support" data-cook-storage></p><p class="cook-support">{c.limits}</p>
+      <div class="cook-footer"><a data-cook-recipe>{c.source}</a><button type="button" class="text-button" data-cook-stop>{c.stop}</button></div>
+      <div class="cook-end-confirm" data-cook-end-confirm hidden><h3>{c.endConfirm}</h3><p>{c.endDetail}</p><div class="cook-decision-actions"><button type="button" class="button" data-cook-end>{c.stop}</button><button type="button" class="button button-quiet" data-cook-keep>{c.cancel}</button></div></div>
+    </div>
+  </div>
+</dialog>

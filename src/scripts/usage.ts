@@ -36,7 +36,7 @@ export function initUsageAnalytics(track: Track, allowed: () => boolean) {
   };
   const tick = () => {
     const now=performance.now(), elapsed=Math.min(now-last,500);last=now;
-    if(!active || !allowed() || document.visibilityState!=='visible') return;
+    if(!active || !allowed() || document.visibilityState!=='visible' || document.querySelector('#cooking-dialog[open]')) return;
     const v=variant(), panel=currentPanel();
     if(!v || !panel || panel.hidden || panel.dataset.kitchenCompatible==='false') return;
     for(const section of panel.querySelectorAll<HTMLElement>('[data-recipe-section]')) {

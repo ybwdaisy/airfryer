@@ -7,6 +7,7 @@ import { type Language } from '../lib/locale';
 import Measure from './Measure.astro';
 import { foodPath, type Region } from '../lib/region';
 import listSummaries from '../data/food-list-summaries.json';
+import Icon from './Icon.astro';
 type ListSummary = {label: string; preparation?: string | null};
 const summaries = listSummaries as Record<string, Record<Language, ListSummary>>;
 interface Props { foods: Food[]; searchable?: boolean; lang?: Language; region?: Region }
@@ -23,11 +24,13 @@ const { foods, searchable = false, lang = 'en' } = Astro.props;
       return <li data-food-row data-slug={food.slug} data-category={food.category} data-recipe-unit={nativeUnit(variant)}>
         <a href={foodPath(food.slug, food.region, lang)} class="food-row" data-food-link={food.slug}>
           <div class="food-name"><span>{food.name}</span><small><Measure text={summary?.label ?? variant.label} unit={unit} lang={lang}/></small></div>
-          <div class:list={['row-temperature', {'has-phases': variant.cookingPhases}]}>{variant.cookingPhases ? <span class="row-phases">{t(lang, 'Stage settings')}</span> : <><small class="metric-label">{t(lang, 'Temperature')}</small><span data-temperature={variant.temperatureF} data-temperature-c={variant.temperatureC}>{temperature(variant.temperatureF, unit, variant.temperatureC)}</span></>}</div>
-          <div class="row-time"><small class:list={['metric-label', {'phase-time-label': variant.cookingPhases}]}>{t(lang, variant.cookingPhases ? 'Air-fry time' : 'Cooking time')}</small><span>{minutes(variant.minutes).replace('-', '–')} <small>{t(lang, 'min')}</small></span></div>
+          <div class="summary-settings"><div class:list={['row-temperature', {'has-phases': variant.cookingPhases}]}>{variant.cookingPhases ? <span class="row-phases">{t(lang, 'Stage settings')}</span> : <><small class="metric-label">{t(lang, 'Temperature')}</small><span data-temperature={variant.temperatureF} data-temperature-c={variant.temperatureC}>{temperature(variant.temperatureF, unit, variant.temperatureC)}</span></>}</div>
+          <div class="row-time"><small class:list={['metric-label', {'phase-time-label': variant.cookingPhases}]}>{t(lang, variant.cookingPhases ? 'Air-fry time' : 'Cooking time')}</small><span>{minutes(variant.minutes).replace('-', '–')} <small>{t(lang, 'min')}</small></span></div></div>
           {(preparation || variant.needsHob) && <small class="preparation-tag"><Measure text={preparation || t(lang, 'Hob + air fryer required')} unit={unit} lang={lang}/></small>}
           <svg class="row-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg>
+          <span class="recipe-open">{t(lang,'View recipe')} <Icon name="back" size={16}/></span>
         </a>
+        <button class="favorite-button icon-button js-only" type="button" data-favorite={food.slug} data-food-name={food.name} aria-pressed="false" aria-label={`${t(lang,'Save recipe')}: ${food.name}`} hidden><Icon name="bookmark" size={20}/></button>
       </li>;
     })}
   </ul>
