@@ -1,5 +1,55 @@
 [
   {
+    "date": "2026-11-19",
+    "mode": "redesign",
+    "depth": "full",
+    "scope": "app",
+    "shape": "cooking workbench",
+    "theme": "brand",
+    "axes": "light/grotesk-sans/warm",
+    "nav": "existing brand/settings, saved recipes and compact photo category rail",
+    "footer": "preserved privacy/source/consent and photograph attribution",
+    "imagery": "six existing licensed category photographs, no recipe-result claims",
+    "signature": "one-tap source-native stage check timer",
+    "fingerprint": "discovery panel / task filters / natural-height summaries / native cooking dialog / cross-page dock",
+    "sections": [
+      "discovery",
+      "summaries",
+      "preparation",
+      "stage timer",
+      "finish checks"
+    ],
+    "waived": [
+      "49b source manual title"
+    ],
+    "review": {
+      "status": "fix",
+      "findings": 2,
+      "resolved": 2
+    },
+    "validation": {
+      "unitTests": 37,
+      "browserGroups": 23,
+      "recipes": 115,
+      "conditions": 121,
+      "buildPages": 264,
+      "kept": "286/286 links, 11/11 fields, 4/4 hooks, 33/33 figures; two headings reworded on record",
+      "sweep": "0 FAIL, 0 REFLEX, 0 WARN; 56px cooking controls waived for hands-busy usage; manufacturer title waiver retained"
+    },
+    "deployment": "local review only",
+    "handsBusyRevision": {
+      "review": "independent reviewer ship after screenshot refresh",
+      "normalStartTaps": 2,
+      "recipeStartTaps": 1,
+      "checkboxesInTimer": 0,
+      "actionHeight": 56,
+      "actionGap": 12,
+      "browserGroups": 9,
+      "sameRecipe": "open running, resume paused, never reset",
+      "differentRecipe": "one explicit switch-and-start action"
+    }
+  },
+  {
     "date": "2026-11-15",
     "mode": "redesign",
     "depth": "full",

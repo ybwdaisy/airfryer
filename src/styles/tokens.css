@@ -1,5 +1,8 @@
 :root {
   color-scheme: light;
+  --color-app-ground: oklch(97% 0.014 80); --color-panel: oklch(99.3% 0.006 80);
+  --color-backdrop: oklch(18% 0.025 50 / .65); --color-timer-ground: oklch(26% 0.025 50);
+  --text-timer: 4.5rem; --text-timer-long: 3.25rem;
   --text-metric: 1.625rem; --text-metric-large: 3rem;
   --space-3xs: 2px; --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px; --space-md: 16px; --space-lg: 24px; --space-xl: 40px; --space-2xl: 64px; --space-3xl: 96px; --space-4xl: 144px;
   --text-xs: 0.75rem; --text-sm: 0.875rem; --text-md: 1rem; --text-lg: 1.2rem; --text-xl: 1.44rem; --text-2xl: 1.728rem; --text-3xl: 2.074rem;
@@ -17,6 +20,7 @@
   --color-gold: oklch(74% 0.14 75); --color-gold-2: oklch(84% 0.11 80); --color-slot: var(--color-gold);
   --font-display: "DM Sans", ui-sans-serif, system-ui, sans-serif; --font-body: "DM Sans", ui-sans-serif, system-ui, sans-serif;
   --font-chinese: "DM Sans", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-timer: ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
   --font-outlier: var(--font-body);
   --radius-card: 16px; --radius-input: 12px; --radius-row: 10px; --radius-pill: 999px; --rule-hair: 1px; --rule-bar: 2px;
   --shadow-card: none;

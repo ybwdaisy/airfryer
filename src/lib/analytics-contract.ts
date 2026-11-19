@@ -1,5 +1,6 @@
 /** Low-cardinality telemetry only. Never send input values, query strings or source URLs. */
 export const analyticsEvents = [
+  'recipe_save','recipe_filter','cooking_start','cooking_resume','cooking_pause','cooking_extend','cooking_stage_check','cooking_finish','cooking_cancel',
   'page_view', 'food_search', 'search_no_results', 'search_clear', 'food_select',
   'category_select', 'condition_change', 'unit_change', 'language_change', 'region_change',
   'airfryer_list_view', 'airfryer_guide_view', 'airfryer_section_view',
@@ -9,6 +10,7 @@ export type AnalyticsEvent = typeof analyticsEvents[number];
 export type AnalyticsParams = Record<string, string | number>;
 const categories = ['all','meat','seafood','vegetables','frozen','bakery','reheat'];
 const options: Record<string, readonly string[]> = {
+  filter: ['all','quick','saved','no-hob'], save_action: ['save','unsave'],
   category: categories, section: ['preparation','timing','ingredients','instructions','completion','without_thermometer'],
   unit: ['c','f'], previous_unit: ['c','f'], target_language: ['en','zh'], target_collection: ['cn','us'],
   entry_point: ['search','browse','category','related','featured'], search_trigger: ['input','submit','selection'],

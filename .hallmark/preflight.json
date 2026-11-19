@@ -1,42 +1,85 @@
 {
-  "scanned": "2026-11-17",
-  "mode": "scoped layout update",
-  "scope": "app component",
+  "scanned": "2026-11-19",
+  "mode": "redesign",
+  "depth": "full",
+  "scope": "app",
   "theme": "brand",
   "target": [
     "/",
     "/zh",
-    "category pages",
-    "related food lists"
+    "/foods/:slug",
+    "/zh/china/foods/:slug"
   ],
   "findings": {
-    "system": "design.md; src/styles/tokens.css: warm neutral/red brand, DM Sans and PingFang",
-    "layout": "src/components/FoodList.astro and src/styles/app.css: equal-height two-column cards push facts down; mobile minimum height adds empty space",
-    "before": "output/compact-list/before and .hallmark/before; actual 390px and 320px views"
+    "system": "design.md and src/styles/tokens.css: red/warm brand, DM Sans and PingFang",
+    "home": "Home.astro/FoodList.astro: accurate but weak hierarchy, no task filters or saved recipes",
+    "recipe": "FoodPage.astro: full sourced guidance, no cooking workflow",
+    "reference": "User-approved CrispTime experience: grouped settings, practical filters, clear cooking actions"
   },
   "preserve": [
-    "115 recipes and 121 sourced conditions; exact native settings and detailed instructions",
-    "135/135 links, 1/1 fields, 5/5 headings in the before/after record",
-    "search hooks, state constraints, saved kitchen/language preferences, consent and analytics",
-    "logo, category photographs, palette, typography and page shell"
+    "115 recipes/121 conditions, all source packs and exact native settings",
+    "routes, anchors, forms, selectors, search states, preference migrations, consent and analytics",
+    "solid appliance logo, licensed category photography and full bilingual copy"
   ],
   "introduce": [
-    "single compact list with natural row heights",
-    "mobile name/condition left, values right, required preparation below",
-    "explicitly curated bilingual list summaries; full preparation remains in guides",
-    "multi-stage list entries say stage settings; exact phases remain in the linked guide"
+    "warm app surfaces, natural-height recipe summaries, prominent cooking settings",
+    "saved recipes and honest air-fry-time/no-hob filters",
+    "one-tap recipe start, source-native phase check timers, sourced turn reminders, pause/add-time/reload recovery",
+    "persistent cooking dock, optional on-page sound and screen wake lock, explicit background limits"
   ],
-  "authorization": "User approved compact list, mobile first; local preview only. Do not push or deploy.",
   "files": {
     "edit": [
       "design.md",
-      "src/components/FoodList.astro",
+      "src/styles/tokens.css",
       "src/styles/app.css",
-      "src/data/zh-ui.json"
+      "src/layouts/Layout.astro",
+      "src/components/Icon.astro",
+      "src/components/FoodList.astro",
+      "src/components/views/Home.astro",
+      "src/components/views/FoodPage.astro",
+      "src/components/views/Privacy.astro",
+      "src/data/zh-ui.json",
+      "src/scripts/search.ts",
+      "src/lib/analytics-contract.ts",
+      "src/scripts/usage.ts",
+      "README.md",
+      "package.json"
     ],
     "create": [
-      "src/data/food-list-summaries.json"
+      "src/lib/favorites.ts",
+      "src/lib/cooking.ts",
+      "src/components/Cooking.astro",
+      "src/scripts/favorites.ts",
+      "src/scripts/cooking.ts",
+      "tests/cooking.test.ts",
+      "tests/favorites.test.ts",
+      "tests/cooking-browser.mjs",
+      "src/lib/cooking-copy.ts",
+      "docs/cooking-workflow-2026-11-19.md"
     ],
     "delete": []
+  },
+  "authorization": "Absorb the reviewed app's hierarchy and cooking workflow, mobile first. Local preview and review; no deployment requested.",
+  "outcome": {
+    "review": "2 independent findings resolved",
+    "tests": "37 unit, 22 browser groups, check/build and production-output gate",
+    "sourceData": "unchanged; only zh-ui.json interface copy edited",
+    "status": "local preview; no push/deploy"
+  },
+  "handsBusyRevision": {
+    "request": "Remove checkbox and repeated starts; improve mobile action spacing",
+    "retired": [
+      "prepared checkbox gate",
+      "separate preparation modal",
+      "sound and awake checkbox presentation"
+    ],
+    "preserved": [
+      "mandatory preparation and preheat before start",
+      "native parameters and source facts",
+      "existing timer progress and explicit replacement",
+      "pause, extensions, reminders, stages, recovery and safe analytics"
+    ],
+    "path": "library -> recipe -> running timer: two taps; replacement -> running: one explicit choice",
+    "evidence": "output/cooking-app/*-direct-start.png, *-running-simple.png, *-switch-simple.png, *-end-choice.png"
   }
 }

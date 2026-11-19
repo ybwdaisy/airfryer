@@ -8,6 +8,8 @@ import Measure from '../Measure.astro';
 import Icon from '../Icon.astro';
 import { libraryFoods } from '../../lib/foods';
 import { temperature, minutes, preheatLabel, safetyGuides, safetySource } from '../../lib/format';
+import {variantPhases,sourceReminders,type CookingPlan} from '../../lib/cooking';
+import {measureText} from '../../lib/measure';
 const lang: Language = Astro.props.lang ?? 'en';
 const food = localizeFood(Astro.props.food, lang);
 const region = food.region;
@@ -15,10 +17,22 @@ const unit = defaultUnit(region);
 const categoryName = localizedCategories(lang, region).find(c => c.slug === food.category)!.name;
 const related = libraryFoods.filter(f => f.category === food.category && f.slug !== food.slug).map(f => localizeFood(f, lang));
 const breadcrumb = [{name: categoryName, path: categoryPath(food.category, region, lang)}, {name: food.name, path: foodPath(food.slug, region, lang)}];
+const plans:CookingPlan[] = food.variants.map(variant=>{
+  const copyFor=(language:Language)=>{
+    const f=localizeFood(Astro.props.food,language),v=f.variants.find(v=>v.id===variant.id)!;
+    const measure=(s:string)=>measureText(s,unit,language,true);
+    return {name:f.name,label:measure(v.label),portion:measure(v.portion),preparation:measure([
+      v.needsHob?t(language,'This recipe needs a hob and pan; an air fryer alone is not enough.'):null,
+      v.advancePreparation,v.requiresThermometer?t(language,'Have a food thermometer ready; this guide uses it to confirm the finish.'):null,
+    ].filter(Boolean).join('\n')),preheat:measure(v.preheatDetail??t(language,preheatLabel(v.preheat))),turn:measure(v.turn),completion:measure(v.completion??''),withoutThermometer:measure(v.withoutThermometer??''),steps:v.steps.map(measure)};
+  };
+  const original=Astro.props.food.variants.find((v:{id:string})=>v.id===variant.id);
+  return {slug:food.slug,condition:variant.id,path:foodPath(food.slug,region,'en'),unit,copy:{en:copyFor('en'),zh:copyFor('zh')},phases:variantPhases(variant),reminderSeconds:sourceReminders(original.turn,variantPhases(variant)[0].minutes[0]*60,Boolean(variant.cookingPhases))};
+});
 ---
 <Layout lang={lang} region={region} title={lang === 'zh' ? `${food.name}空气炸锅时间与温度 | Airfryer times` : `${food.name} air fryer time & temperature | Airfryer times`} description={food.description} breadcrumbs={breadcrumb}>
   <nav class="breadcrumbs" aria-label={t(lang, 'Breadcrumb')}><a href={regionHome(region, lang)}>{t(lang, 'All foods')}</a><span aria-hidden="true">/</span><a href={categoryPath(food.category, region, lang)}>{categoryName}</a></nav>
-  <section class="page-intro detail-intro"><h1>{food.name}</h1></section>
+  <section class="page-intro detail-intro"><h1>{food.name}</h1><button class="favorite-button detail-favorite icon-button js-only" type="button" data-favorite={food.slug} data-food-name={food.name} aria-pressed="false" aria-label={`${t(lang,'Save recipe')}: ${food.name}`} hidden><Icon name="bookmark" size={22}/></button></section>
   {food.variants.length > 1 && <div class="condition-control js-only" hidden><label for="variant-select">{t(lang, 'Choose your starting condition')}</label><select id="variant-select" data-food-slug={food.slug}>{food.variants.map(v => <option value={v.id} data-measure={v.label}>{v.label}</option>)}</select></div>}
   {food.variants.map(variant => {
     const safetyText = variant.safetyOverride?.text ?? (variant.state === 'reheat' ? t(lang, safetyGuides.leftovers) : food.safety ? t(lang, safetyGuides[food.safety]) : null);
@@ -41,6 +55,8 @@ const breadcrumb = [{name: categoryName, path: categoryPath(food.category, regio
 
           {variant.deviceNote && <p class="device-note"><Measure text={variant.deviceNote} unit={unit} lang={lang}/></p>}
           <dl class="cooking-facts"><div><dt>{t(lang, 'Preheat')}</dt><dd><Measure text={variant.preheatDetail ?? t(lang, preheatLabel(variant.preheat))} unit={unit} lang={lang}/></dd></div><div><dt>{t(lang, 'Turn or shake')}</dt><dd><Measure text={variant.turn} unit={unit} lang={lang}/></dd></div></dl>
+          <button class="button cook-start js-only" type="button" data-cook-start={variant.id} hidden><Icon name="play" size={20}/><span data-cook-start-label>{lang==='zh'?'开始计时':'Start timer'}</span></button>
+          <p class="cook-start-hint">{lang==='zh'?'按上方要求准备并入锅后，点击开始。':'Prepare and preheat as above. Start when the food is in the basket.'}</p>
         </section>
         {variant.timeline && <details class="recipe-timeline" data-recipe-section="timing"><summary><h3>{t(lang, 'Timing by stage')}</h3></summary><dl>{variant.timeline.map(stage => <div><dt>{stage.label}</dt><dd><Measure text={stage.detail} unit={unit} lang={lang}/></dd></div>)}</dl></details>}
         {variant.ingredients && <section class="ingredients" data-recipe-section="ingredients"><h3><Icon name="utensils"/>{t(lang, 'Ingredients')}</h3><ul>{variant.ingredients.map(item => <li><Measure text={item} unit={unit} lang={lang}/></li>)}</ul></section>}
@@ -59,5 +75,6 @@ const breadcrumb = [{name: categoryName, path: categoryPath(food.category, regio
   })}
   {related.length > 0 && <section class="related"><div class="results-heading"><h2>{t(lang, 'More from this shelf')}</h2><a href={categoryPath(food.category, region, lang)}>{t(lang, 'View category')}</a></div><FoodList lang={lang} region={region} foods={related}/></section>}
   <script id="variant-data" data-food-slug={food.slug} data-food-category={food.category} type="application/json" set:html={JSON.stringify(food.variants).replaceAll('<', '\\u003c')}/>
+  <script id="cooking-plans" type="application/json" set:html={JSON.stringify(plans).replaceAll('<', '\\u003c')}/>
   <script>import '../../scripts/detail.ts';</script>
 </Layout>
