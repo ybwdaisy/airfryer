@@ -1,3 +1,4 @@
+import { isQaTraffic, QA_STORAGE_KEY } from '../lib/analytics-traffic';
 type ConsentState = 'granted' | 'denied';
 import { languageFromPath, localizedPath } from '../lib/locale';
 import { analyticsEvents, pageType, sanitizeAnalyticsParams, canonicalAnalyticsPath, parsePendingNavigation, analyticsContentGroup, type NavigationSource, type AnalyticsParams, type AnalyticsEvent } from '../lib/analytics-contract';
@@ -18,11 +19,12 @@ const pendingKey = 'airfryer:pending-navigation:v2';
 export function initAnalytics() {
   const id = document.querySelector<HTMLMetaElement>('meta[name="ga-measurement-id"]')?.content ?? '';
   const enabled = /^G-[A-Z0-9]+$/.test(id) && location.origin === 'https://airfryer.ybwdaisy.com';
-  let qa = false;
-  try {
-    if (new URL(location.href).searchParams.get('qa') === '1') sessionStorage.setItem('airfryer:analytics:qa','yes');
-    qa = sessionStorage.getItem('airfryer:analytics:qa') === 'yes';
-  } catch { qa = new URL(location.href).searchParams.get('qa') === '1'; }
+  const blocked = () => {
+    const qa = isQaTraffic();
+    if (qa && enabled) window[`ga-disable-${id}`] = true;
+    return qa;
+  };
+  const qa = blocked();
   const banner = document.querySelector<HTMLElement>('#consent-banner');
   const close = document.querySelector<HTMLButtonElement>('#consent-close');
   let state: ConsentState | null = null;
@@ -41,15 +43,15 @@ export function initAnalytics() {
   };
   let stagedSearch: {name:'food_search'|'search_no_results';params:AnalyticsParams} | null = null;
   const track = (name: string, params: AnalyticsParams = {}, completed?: () => void, previousSource?: NavigationSource): boolean => {
-    if (!enabled || state !== 'granted' || !analyticsEvents.includes(name as AnalyticsEvent)) return false;
+    if (blocked() || !enabled || state !== 'granted' || !analyticsEvents.includes(name as AnalyticsEvent)) return false;
     const source=previousSource ?? sourceContext();
+    if (source.qa === 'yes') return false;
     if(name==='food_select' && stagedSearch) {const search=stagedSearch;stagedSearch=null;track(search.name,search.params);}
     if(!previousSource) window.gtag?.('set',{content_group:analyticsContentGroup(source)});
     window.gtag?.('event', name, {
       ...sanitizeAnalyticsParams({category:source.category}), ...sanitizeAnalyticsParams(params), send_to:id,
       content_group:analyticsContentGroup(source), tool_id:'airfryer', analytics_version:'2', food_collection:source.collection, ui_language:source.language,
       measurement_units:source.units, page_type:pageType(source.path), qa_traffic:source.qa,
-      ...(source.qa==='yes' ? {debug_mode:true,traffic_type:'developer'} : {}),
       page_location:`https://airfryer.ybwdaisy.com${source.path}`,
       ...(name==='page_view' ? {page_title:document.title} : {}),
       ...(completed ? {event_callback:completed,event_timeout:300} : {}),
@@ -57,9 +59,9 @@ export function initAnalytics() {
     return true;
   };
   const clearPending = () => {try {sessionStorage.removeItem(pendingKey);} catch { /* Storage is optional. */ }};
-  if(state!=='granted') clearPending();
+  if(qa || state!=='granted') clearPending();
   const queueNavigation = (name:string, params:AnalyticsParams, target:string, before?:{name:'unit_change';params:AnalyticsParams}): boolean => {
-    if(!enabled || state!=='granted' || !['food_select','language_change','region_change','unit_change'].includes(name)) return false;
+    if(blocked() || !enabled || state!=='granted' || !['food_select','language_change','region_change','unit_change'].includes(name)) return false;
     const pending={...(before ? {before:{name:before.name,params:sanitizeAnalyticsParams(before.params)}} : {}),...(name==='food_select' && stagedSearch ? {before:stagedSearch} : {}),name,params:sanitizeAnalyticsParams(params),target,source:sourceContext(),createdAt:Date.now()};
     if(!parsePendingNavigation(JSON.stringify(pending),Date.now(),target)) return false;
     try {sessionStorage.setItem(pendingKey,JSON.stringify(pending));stagedSearch=null;return true;} catch {return false;}
@@ -73,9 +75,9 @@ export function initAnalytics() {
       track(pending.name,pending.params,undefined,pending.source);
     }
   };
-  const usage = initUsageAnalytics(track, () => enabled && state === 'granted');
+  const usage = initUsageAnalytics(track, () => !blocked() && enabled && state === 'granted');
   const load = () => {
-    if (!enabled || state !== 'granted') return;
+    if (blocked() || !enabled || state !== 'granted') return;
     window[`ga-disable-${id}`] = false;
     if (!loaded) {
       loaded = true;
@@ -135,6 +137,7 @@ export function initAnalytics() {
     document.dispatchEvent(new CustomEvent('airfryer:consent', {detail: {granted: state === 'granted'}}));
   };
   window.addEventListener('storage', event => {
+    if (event.key === QA_STORAGE_KEY && blocked()) { usage.stop(); clearPending(); stagedSearch = null; return; }
     if(event.key !== key && event.key !== null) return;
     try {if(event.storageArea !== localStorage) return;} catch {if(event.key !== key) return;}
     const next = event.newValue === 'granted' || event.newValue === 'denied' ? event.newValue : null;
@@ -143,7 +146,7 @@ export function initAnalytics() {
   window.airfryerTrack = track;
   window.airfryerQueueNavigation = queueNavigation;
   window.airfryerStageSearch = (name,params) => {
-    if(!enabled || state!=='granted' || !['food_search','search_no_results'].includes(name)) return false;
+    if(blocked() || !enabled || state!=='granted' || !['food_search','search_no_results'].includes(name)) return false;
     stagedSearch={name:name as 'food_search'|'search_no_results',params:sanitizeAnalyticsParams(params)};return true;
   };
   document.querySelectorAll<HTMLButtonElement>('[data-consent]').forEach(button => button.addEventListener('click', () => choose(button.dataset.consent as ConsentState)));

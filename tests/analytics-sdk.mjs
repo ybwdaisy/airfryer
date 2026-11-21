@@ -17,9 +17,10 @@ try {
   await route.fulfill({status:204,body:''});
  });
  c.on('request',r=>{if(r.url().includes('googletagmanager.com'))sdk.push({url:r.url(),referer:r.headers().referer ?? ''});});
+ await c.addInitScript(()=>Object.defineProperty(navigator,'webdriver',{get:()=>false}));
  const p=await c.newPage();p.on('pageerror',e=>errors.push(e.message));
  const privateMarker='private-sdk-check@example.com';
- await p.goto(analyticsOrigin+'/zh/china/foods/cn-orleans-wings?qa=1&q='+encodeURIComponent(privateMarker));await expect(p.locator('#consent-banner')).toBeVisible();expect(sdk).toHaveLength(0);expect(packets).toHaveLength(0);
+ await p.goto(analyticsOrigin+'/zh/china/foods/cn-orleans-wings?q='+encodeURIComponent(privateMarker));await expect(p.locator('#consent-banner')).toBeVisible();expect(sdk).toHaveLength(0);expect(packets).toHaveLength(0);
  await p.locator('[data-consent=denied]').click();await p.reload();await expect(p.locator('#consent-banner')).toBeHidden();expect(sdk).toHaveLength(0);expect(packets).toHaveLength(0);
  await p.locator('[data-privacy-settings]').click();await p.locator('[data-consent=granted]').click();await expect.poll(()=>count('page_view'),{timeout:20000}).toBe(1);await expect.poll(()=>count('airfryer_guide_view'),{timeout:15000}).toBe(1);
  await p.locator('.instructions').scrollIntoViewIfNeeded();await expect.poll(()=>count('airfryer_guide_engaged'),{timeout:18000}).toBe(1);
@@ -30,7 +31,7 @@ try {
  const previousLists=count('airfryer_list_view');await p.goto(analyticsOrigin+'/china');await expect.poll(()=>count('airfryer_list_view'),{timeout:15000}).toBe(previousLists+1);await p.locator('#search-input').fill('wings');await p.locator('.food-rows [data-food-link=chicken-wings]').click();await expect.poll(()=>count('food_select'),{timeout:15000}).toBe(1);await expect.poll(()=>count('food_search'),{timeout:15000}).toBe(1);
  const core=events().filter(e=>['page_view','airfryer_guide_view','airfryer_guide_engaged','unit_change','language_change','airfryer_source_open','food_select','food_search'].includes(e.en));
  expect(core.length).toBeGreaterThanOrEqual(8);
- for(const e of core){expect(e.tid).toBe('G-B34CBGW0EF');expect(e.cg1 ?? e['ep.content_group']).toBe('airfryer_qa');expect(e['ep.tool_id']).toBe('airfryer');expect(e['ep.analytics_version']).toBe('2');expect(e['ep.qa_traffic']).toBe('yes');expect(e.dl).not.toContain('?');expect(e['ep.ui_language']).toMatch(/^(zh|en)$/);expect(e['ep.food_collection']).toMatch(/^(cn|us)$/);}
+ for(const e of core){expect(e.tid).toBe('G-B34CBGW0EF');expect(e.cg1 ?? e['ep.content_group']).toMatch(/^airfryer_(cn|us)_(zh|en)_(c|f)$/);expect(e['ep.tool_id']).toBe('airfryer');expect(e['ep.analytics_version']).toBe('2');expect(e['ep.qa_traffic']).toBe('no');expect(e.dl).not.toContain('?');expect(e['ep.ui_language']).toMatch(/^(zh|en)$/);expect(e['ep.food_collection']).toMatch(/^(cn|us)$/);}
  expect(JSON.stringify({packets,sdk})).not.toMatch(/private-sdk-check|%40example|q=private/);
  await p.locator('[data-privacy-settings]').click();await p.locator('[data-consent=denied]').click();const before=packets.length;
  await p.locator('[data-kitchen-settings]').click();await p.locator('[name=preset]').selectOption('metric');await p.locator('#kitchen-settings').evaluate(f=>f.requestSubmit());await expect(p).toHaveURL(analyticsOrigin+'/');await p.goto(analyticsOrigin+'/china/foods/cn-orleans-wings');await p.locator('.instructions').scrollIntoViewIfNeeded();await expect(p.locator('#google-analytics-tag')).toHaveCount(0);
