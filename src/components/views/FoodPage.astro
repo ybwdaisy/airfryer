@@ -6,6 +6,8 @@ import Layout from '../../layouts/Layout.astro';
 import FoodList from '../FoodList.astro';
 import Measure from '../Measure.astro';
 import Icon from '../Icon.astro';
+import EntryGuide from '../EntryGuide.astro';
+import entryGuides from '../../data/entry-guides.json';
 import { libraryFoods } from '../../lib/foods';
 import { temperature, minutes, preheatLabel, safetyGuides, safetySource } from '../../lib/format';
 import {variantPhases,sourceReminders,type CookingPlan} from '../../lib/cooking';
@@ -13,6 +15,13 @@ import {measureText} from '../../lib/measure';
 const lang: Language = Astro.props.lang ?? 'en';
 const food = localizeFood(Astro.props.food, lang);
 const region = food.region;
+const entry = entryGuides[food.slug as keyof typeof entryGuides];
+const first = food.variants[0];
+const setting = temperature(first.temperatureF, first.temperatureC === undefined ? 'f' : 'c', first.temperatureC);
+const range = minutes(first.minutes).replace('-', '–');
+const pageTitle = entry ? (lang==='zh' ? `${food.name}空气炸锅：${setting}，${range}分钟 | Airfryer times` : `${food.name} air fryer: ${setting}, ${range} min | Airfryer times`) : (lang==='zh' ? `${food.name}空气炸锅时间与温度 | Airfryer times` : `${food.name} air fryer time & temperature | Airfryer times`);
+const pageDescription = entry ? `${entry[lang].condition} ${setting}, ${range}${lang==='zh'?'分钟/批。':' min per batch.'} ${entry[lang].description}` : food.description;
+const relatedNames = Object.fromEntries(libraryFoods.map(f=>[f.slug,localizeFood(f,lang).name]));
 const unit = defaultUnit(region);
 const categoryName = localizedCategories(lang, region).find(c => c.slug === food.category)!.name;
 const related = libraryFoods.filter(f => f.category === food.category && f.slug !== food.slug).map(f => localizeFood(f, lang));
@@ -30,7 +39,7 @@ const plans:CookingPlan[] = food.variants.map(variant=>{
   return {slug:food.slug,condition:variant.id,path:foodPath(food.slug,region,'en'),unit,copy:{en:copyFor('en'),zh:copyFor('zh')},phases:variantPhases(variant),reminderSeconds:sourceReminders(original.turn,variantPhases(variant)[0].minutes[0]*60,Boolean(variant.cookingPhases))};
 });
 ---
-<Layout lang={lang} region={region} title={lang === 'zh' ? `${food.name}空气炸锅时间与温度 | Airfryer times` : `${food.name} air fryer time & temperature | Airfryer times`} description={food.description} breadcrumbs={breadcrumb}>
+<Layout lang={lang} region={region} title={pageTitle} description={pageDescription} breadcrumbs={breadcrumb} modifiedAt={entry?.updatedAt}>
   <nav class="breadcrumbs" aria-label={t(lang, 'Breadcrumb')}><a href={regionHome(region, lang)}>{t(lang, 'All foods')}</a><span aria-hidden="true">/</span><a href={categoryPath(food.category, region, lang)}>{categoryName}</a></nav>
   <section class="page-intro detail-intro"><h1>{food.name}</h1><button class="favorite-button detail-favorite icon-button js-only" type="button" data-favorite={food.slug} data-food-name={food.name} aria-pressed="false" aria-label={`${t(lang,'Save recipe')}: ${food.name}`} hidden><Icon name="bookmark" size={22}/></button></section>
   {food.variants.length > 1 && <div class="condition-control js-only" hidden><label for="variant-select">{t(lang, 'Choose your starting condition')}</label><select id="variant-select" data-food-slug={food.slug}>{food.variants.map(v => <option value={v.id} data-measure={v.label}>{v.label}</option>)}</select></div>}
@@ -64,6 +73,7 @@ const plans:CookingPlan[] = food.variants.map(variant=>{
         {variant.completion && <section class="completion-check" data-recipe-section="completion"><h3><Icon name="check"/>{t(lang, 'How to check it is ready')}</h3><p><Measure text={variant.completion} unit={unit} lang={lang}/></p></section>}
         {variant.withoutThermometer && <section class="without-thermometer" data-recipe-section="without_thermometer"><h3>{t(lang, 'Without a food thermometer')}</h3><p><Measure text={variant.withoutThermometer} unit={unit} lang={lang}/></p><a href="https://www.gov.uk/government/publications/cooking-your-food/cooking-your-food">{t(lang, 'Household checks: UK Food Standards Agency')}</a></section>}
         <section class="reference-notes"><h3>{t(lang, 'Recipe notes')}</h3><p><Measure text={food.description} unit={unit} lang={lang}/></p>{variant.notes.length > 0 && <ul>{variant.notes.map(note => <li><Measure text={note} unit={unit} lang={lang}/></li>)}</ul>}</section>
+        {entry && variant.id===first.id && <EntryGuide slug={food.slug as keyof typeof entryGuides} lang={lang} names={relatedNames}/>}
       </div><aside class="detail-sidebar">
         <section class="safety-note"><h2>{t(lang, safetyText ? 'Check before serving' : 'Leave room for air')}</h2><p><Measure text={safetyText ?? t(lang, 'Use the preparation and quantity shown. Spread food evenly and avoid packing the basket tightly.')} unit={unit} lang={lang}/></p>{safetyText && <a href={safetyUrl}>{t(lang, 'Read the temperature guidance')}</a>}</section>
         <section class="source-summary"><a href={`#${sourcesAnchor}`}>{t(lang, 'Read the source notes')}</a></section>

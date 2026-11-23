@@ -374,3 +374,10 @@ body.has-cooking-timer { padding-bottom: 128px; }
 @media (max-width: 22rem) {
   .cook-options { grid-template-columns: minmax(0, 1fr); }
 }
+
+/* Source-bound entry notes use the existing recipe disclosure pattern. */
+.entry-guide details { border-bottom: 1px solid var(--color-rule); }
+.entry-guide summary { min-height: 48px; padding-block: var(--space-sm); cursor: pointer; font-size: var(--text-md); line-height: 1.5; }
+.entry-guide details p { padding-bottom: var(--space-sm); line-height: 1.6; }
+.entry-related, .entry-references { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-xs) var(--space-sm); margin-top: var(--space-md); font-size: var(--text-sm); }
+.entry-related a, .entry-references a { display: inline-flex; align-items: center; min-height: 44px; }

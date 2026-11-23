@@ -38,3 +38,4 @@ jobs:
             sleep 1
           done
           TEST_BASE_URL=http://127.0.0.1:4343 npm run test:analytics
+          TEST_BASE_URL=http://127.0.0.1:4343 npm run test:seo
