@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "ASTRO_TELEMETRY_DISABLED=1 astro dev --host 127.0.0.1 --port 4327",
-    "build": "node scripts/validate-data.mjs && ASTRO_TELEMETRY_DISABLED=1 astro build",
+    "build": "npm run funnels:generate && node scripts/validate-data.mjs && ASTRO_TELEMETRY_DISABLED=1 astro build && npm run funnels:check -- --dist",
     "preview": "ASTRO_TELEMETRY_DISABLED=1 astro preview --host 127.0.0.1 --port 4327",
     "check": "ASTRO_TELEMETRY_DISABLED=1 astro check",
     "test": "node --test tests/*.test.ts",
@@ -19,7 +19,10 @@
     "test:analytics-sdk": "node tests/analytics-sdk.mjs",
     "test:clarity": "node tests/clarity-search-browser.mjs",
     "test:cn-expansion": "node tests/cn-expansion-browser.mjs",
-    "test:cooking": "node tests/cooking-browser.mjs"
+    "test:cooking": "node tests/cooking-browser.mjs",
+    "funnels:generate": "node scripts/funnel-manifest.mjs --write",
+    "funnels:check": "node scripts/funnel-manifest.mjs --check",
+    "funnels:contract": "node scripts/funnel-manifest.mjs --contract"
   },
   "engines": {
     "node": ">=22.12.0"
@@ -34,6 +37,7 @@
     "@astrojs/check": "^0.9.12",
     "@playwright/test": "^1.65.0",
     "@types/node": "^26.6.6",
+    "ajv": "8.20.0",
     "puppeteer-core": "^25.17.0",
     "sharp": "0.35.5",
     "typescript": "^6.0.3"

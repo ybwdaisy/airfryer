@@ -18,3 +18,7 @@
 - Validate QA zero-SDK/zero-send behavior, navigation before consent, cross-page/same-origin-tab persistence and explicit human reset. Normal-event contracts may simulate a human only in an intercepted offline fixture. Never relax production isolation to satisfy older tests.
 - Before releasing any feature branch, include/preserve main's PR #20 isolation implementation (merged as `601798ef3aadb91079c2a00bd19a831372b80234`), `src/lib/analytics-traffic.ts`, collection guards in `src/scripts/analytics.ts`, `tests/analytics-isolation.mjs` and the intercepted analytics fixture/contract scripts. An old feature branch must not roll them back. Synchronizing these instructions does not authorize merging main or deploying.
 - QA flags are independent per product origin. Exit manual QA explicitly with `?analytics_test=0`; never assume another product's flag covers this hostname. Do not activate permanent GA4 data filters or guess historical QA from country, device, low traffic or entire dates.
+
+## Shared funnel contract
+
+- Before changing analytics events or funnels, and before every release, read the [public v1 contract](https://site-pulse-nine-tau.vercel.app/contracts/funnels-v1.md) and [JSON Schema](https://site-pulse-nine-tau.vercel.app/contracts/funnels-v1.schema.json), then update the sole editable definition `analytics/funnels.json` and its revision as needed. Run the manifest build/CI checks; keep generated delivery derived from this source. Preserve all independent rules above.
