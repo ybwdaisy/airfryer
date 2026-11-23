@@ -1,7 +1,7 @@
 import {chromium, expect} from '@playwright/test';
 import {analyticsOrigin, serveAnalyticsOrigin} from './analytics-fixture.mjs';
 const base = process.env.TEST_BASE_URL || 'http://127.0.0.1:4338';
-const browser = await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true});
+const browser = await chromium.launch({executablePath:process.env.CHROME_EXECUTABLE_PATH || (process.platform==='darwin'?'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome':undefined),headless:true});
 try {
   for (const human of [true, false]) {
     const context = await browser.newContext({serviceWorkers:'block'});

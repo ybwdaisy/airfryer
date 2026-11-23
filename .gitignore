@@ -11,3 +11,6 @@ playwright-report/
 .DS_Store
 
 /node_modules
+
+# Generated from the sole editable analytics/funnels.json during build.
+/public/.well-known/site-pulse.json

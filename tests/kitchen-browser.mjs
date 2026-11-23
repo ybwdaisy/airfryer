@@ -4,7 +4,7 @@ import {assembleCatalog} from '../src/lib/catalog.ts';
 import {analyticsOrigin,serveAnalyticsOrigin} from './analytics-fixture.mjs';
 const base=process.env.TEST_BASE_URL||'http://127.0.0.1:4343';
 const only=process.argv.find(a=>a.startsWith('--suite='))?.split('=')[1];
-const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true});
+const browser=await chromium.launch({executablePath:process.env.CHROME_EXECUTABLE_PATH || (process.platform==='darwin'?'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome':undefined),headless:true});
 const checks=[],errors=[];
 await mkdir('output/kitchen-settings',{recursive:true});
 const check=async(suite,name,run)=>{if(only&&only!==suite)return;await run();checks.push(name);console.log('PASS '+name);};

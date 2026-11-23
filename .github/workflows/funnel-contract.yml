@@ -1,0 +1,40 @@
+name: Funnel contract and analytics isolation
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Verify public JSON and Markdown contract against the validated cache
+        run: npm run funnels:contract
+      - run: npm run check
+      - run: npm test
+      - name: Validate, generate and compare source, public and built manifests
+        run: npm run build
+      - name: Install isolated browser
+        run: npx playwright install --with-deps chromium
+      - name: Preserve the complete offline analytics isolation and event-contract checks
+        shell: bash
+        run: |
+          set -euo pipefail
+          node node_modules/astro/bin/astro.mjs preview --host 127.0.0.1 --port 4343 > /tmp/airfryer-preview.log 2>&1 &
+          preview_pid=$!
+          trap 'kill "$preview_pid" || true' EXIT
+          for attempt in {1..30}; do
+            if curl --fail --silent http://127.0.0.1:4343/ > /dev/null; then break; fi
+            sleep 1
+          done
+          TEST_BASE_URL=http://127.0.0.1:4343 npm run test:analytics

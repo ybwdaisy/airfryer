@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "hostname": "airfryer.ybwdaisy.com",
+  "revision": "2026-11-23.1",
+  "qaPolicy": "no-collection-for-tests-v1",
+  "events": [
+    "airfryer_list_view",
+    "airfryer_guide_view",
+    "airfryer_guide_engaged",
+    "food_search",
+    "food_select"
+  ],
+  "funnels": [
+    {
+      "id": "airfryer-directory",
+      "definition": {
+        "name": "目录到阅读",
+        "filters": [
+          {
+            "field": "contentGroup",
+            "match": "FULL_REGEXP",
+            "value": "^airfryer_(cn|us)_(en|zh)_(c|f)$"
+          }
+        ],
+        "steps": [
+          {
+            "label": "查看目录",
+            "event": "airfryer_list_view",
+            "pageContains": ""
+          },
+          {
+            "label": "查看菜谱",
+            "event": "airfryer_guide_view",
+            "pageContains": "",
+            "withinSeconds": 1800
+          },
+          {
+            "label": "有效阅读",
+            "event": "airfryer_guide_engaged",
+            "pageContains": "",
+            "withinSeconds": 1800
+          }
+        ]
+      },
+      "source": {
+        "url": "https://analytics.google.com/analytics/web/#/analysis/a359267445p494048879/edit/oBMNfb-gRXWjzAO1oPrmXA",
+        "note": "产品发布的漏斗配置；后续随本产品发布更新。GA4 网页独立修改不自动同步。"
+      }
+    },
+    {
+      "id": "airfryer-search",
+      "definition": {
+        "name": "搜索到阅读",
+        "filters": [
+          {
+            "field": "contentGroup",
+            "match": "FULL_REGEXP",
+            "value": "^airfryer_(cn|us)_(en|zh)_(c|f)$"
+          }
+        ],
+        "steps": [
+          {
+            "label": "搜索食物",
+            "event": "food_search",
+            "pageContains": ""
+          },
+          {
+            "label": "选择食物",
+            "event": "food_select",
+            "pageContains": "",
+            "withinSeconds": 1800
+          },
+          {
+            "label": "查看菜谱",
+            "event": "airfryer_guide_view",
+            "pageContains": "",
+            "withinSeconds": 1800
+          },
+          {
+            "label": "有效阅读",
+            "event": "airfryer_guide_engaged",
+            "pageContains": "",
+            "withinSeconds": 1800
+          }
+        ]
+      },
+      "source": {
+        "url": "https://analytics.google.com/analytics/web/#/analysis/a359267445p494048879/edit/oBMNfb-gRXWjzAO1oPrmXA",
+        "note": "产品发布的漏斗配置；后续随本产品发布更新。GA4 网页独立修改不自动同步。"
+      }
+    },
+    {
+      "id": "airfryer-reading",
+      "definition": {
+        "name": "菜谱阅读（含直达）",
+        "filters": [
+          {
+            "field": "contentGroup",
+            "match": "FULL_REGEXP",
+            "value": "^airfryer_(cn|us)_(en|zh)_(c|f)$"
+          }
+        ],
+        "steps": [
+          {
+            "label": "查看菜谱",
+            "event": "airfryer_guide_view",
+            "pageContains": ""
+          },
+          {
+            "label": "有效阅读",
+            "event": "airfryer_guide_engaged",
+            "pageContains": "",
+            "withinSeconds": 1800
+          }
+        ]
+      },
+      "source": {
+        "url": "https://analytics.google.com/analytics/web/#/analysis/a359267445p494048879/edit/oBMNfb-gRXWjzAO1oPrmXA",
+        "note": "产品发布的漏斗配置；后续随本产品发布更新。GA4 网页独立修改不自动同步。"
+      }
+    }
+  ]
+}
