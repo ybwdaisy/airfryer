@@ -25,7 +25,7 @@ export async function submitIndexNow({root=process.cwd(),submit=false,fetcher=fe
  const allowed=new Set(Object.entries(entries).filter(([,e])=>e.updatedAt===changes.updatedAt).flatMap(([slug,e])=>['','/zh'].map(lang=>origin+lang+(e.region==='cn'?'/china':'')+'/foods/'+slug)));
  for(const url of changes.urls)assert.ok(allowed.has(url),'URL is not a materially updated entry in this release: '+url);
  if(!submit)return {dryRun:true,count:payload.urlList.length,urls:payload.urlList};
- const batch=createHash('sha256').update(JSON.stringify(payload)).digest('hex');
+ const batch=createHash('sha256').update(JSON.stringify({updatedAt:changes.updatedAt,payload})).digest('hex');
  const receiptPath=join(root,'output/indexnow',batch+'.json');
  try {await readFile(receiptPath);throw new Error('This batch already has a receipt or an ambiguous attempt; review it instead of resubmitting unchanged URLs');}catch(e){if(e.code!=='ENOENT')throw e;}
  const keyResponse=await fetcher(config.keyLocation,{redirect:'error',signal:AbortSignal.timeout(20000)});
