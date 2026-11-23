@@ -1,0 +1,346 @@
+{
+  "chicken-breast": {
+    "updatedAt": "2026-11-23",
+    "region": "us",
+    "en": {
+      "condition": "Thawed, seasoned boneless breasts, 6 oz each.",
+      "description": "Includes refrigerated preparation, preheat, thickness guidance and a thermometer finish.",
+      "questions": [
+        {
+          "question": "Can I use this timing for a frozen or larger breast?",
+          "answer": "The first method is for thawed 6 oz breasts. The brined size choices are separate preparations, not a frozen-chicken conversion. Do not extend this clock using a weight or frozen-food formula."
+        },
+        {
+          "question": "How thick should the chicken be?",
+          "answer": "The reference asks you to level the thick end but supplies no fixed thickness in inches. Keep the stated portion and an uncrowded layer; unusually thick pieces are outside this timing."
+        },
+        {
+          "question": "Are marinating and preheating included in the timer?",
+          "answer": "No. Refrigerate the seasoned chicken for at least 30 minutes, then complete the displayed preheat procedure before starting the air-frying timer. The clock is per batch; rest the cooked breasts for 5 minutes."
+        },
+        {
+          "question": "Does a finished timer mean the chicken is ready?",
+          "answer": "No. Measure each breast at its thickest center: poultry must reach 165°F. Continue cooking and recheck pieces that have not reached that temperature; color or time alone cannot confirm the finish."
+        }
+      ]
+    },
+    "zh": {
+      "condition": "已解冻、调味后的无骨鸡胸肉，每块6盎司。",
+      "description": "包括冷藏前处理、预热、厚度处理和中心熟度检查。",
+      "questions": [
+        {
+          "question": "冷冻鸡胸肉或更大的鸡胸肉能照用这份时间吗？",
+          "answer": "第一套做法适用于已解冻、每块6盎司的鸡胸肉。盐水浸泡的不同大小选项是另外的准备条件，不是冷冻做法。不要按重量比例或“冷冻多加几分钟”推算。"
+        },
+        {
+          "question": "鸡胸肉需要多厚？",
+          "answer": "参考做法只要求把较厚的一端轻拍平整，没有给出固定英寸厚度。保持注明的份量、单层摆放；明显过厚的肉块不在这份时间的适用范围。"
+        },
+        {
+          "question": "腌制和预热算进倒计时了吗？",
+          "answer": "没有。调味后至少冷藏30分钟，完成页面注明的预热再开始空气炸计时。计时按每批计算；达到安全中心温度后再静置5分钟。"
+        },
+        {
+          "question": "计时结束就能吃了吗？",
+          "answer": "不能只看时间。逐块检查最厚处中心达到165°F；未达到的继续加热并复查。外表颜色不能代替中心温度检查。"
+        }
+      ]
+    },
+    "references": [
+      {
+        "name": "Feel Good Foodie: original seasoned preparation",
+        "url": "https://feelgoodfoodie.net/recipe/air-fryer-chicken-breast/"
+      },
+      {
+        "name": "FoodSafety.gov: poultry center temperature",
+        "url": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+      }
+    ],
+    "related": [
+      "chicken-wings",
+      "french-fries"
+    ]
+  },
+  "chicken-wings": {
+    "updatedAt": "2026-11-23",
+    "region": "us",
+    "en": {
+      "condition": "Fresh or thawed raw wingettes and drumettes, in a single layer.",
+      "description": "Preparation, model-dependent preheat and a 165°F center check; not a frozen-wing timer.",
+      "questions": [
+        {
+          "question": "Does this include whole wings or frozen wings?",
+          "answer": "This method uses split wingettes and drumettes. Whole wings and frozen clusters are different starting conditions; the displayed clock is not a validated timer for those conditions."
+        },
+        {
+          "question": "Can all 20 pieces go into one basket?",
+          "answer": "The ingredient list covers 20 pieces, not a required basket load. Keep an uncrowded single layer and cook in batches when needed. Dry the skin before coating; do not stack a second layer to keep the same clock."
+        },
+        {
+          "question": "Do I need to preheat?",
+          "answer": "The original recipe makes preheating dependent on the appliance and gives no universal duration. Use your machine’s ready signal or manual. Do not invent a fixed preheat time from the cooking range."
+        },
+        {
+          "question": "How do I check the wings are done?",
+          "answer": "Check the thickest meat with a food thermometer and reach 165°F. Avoid touching bone with the probe. Brown skin is not a center-temperature measurement."
+        }
+      ]
+    },
+    "zh": {
+      "condition": "新鲜或已解冻的生鸡翅，分成翅中和翅根、单层摆放。",
+      "description": "说明前处理、按机型预热和165°F中心温度检查，不把它当冷冻鸡翅时间。",
+      "questions": [
+        {
+          "question": "整翅或冷冻鸡翅也能用这份时间吗？",
+          "answer": "这份做法使用分开的翅中和翅根。整翅、结成团的冷冻鸡翅属于不同起始条件，页面时长不是这些情况的已验证计时。"
+        },
+        {
+          "question": "20块鸡翅要一次全部放进去吗？",
+          "answer": "20块是配料总量，不是每锅都要装下的数量。保持不拥挤的单层，放不下就分批。裹料前擦干表面，不要叠两层后仍沿用同一时长。"
+        },
+        {
+          "question": "需要预热多久？",
+          "answer": "原作者按设备情况决定是否预热，没有给出通用分钟数。按自己机器的就绪提示或说明书操作，不从烹饪时间反推出预热时长。"
+        },
+        {
+          "question": "怎样确认鸡翅已经熟透？",
+          "answer": "用食品温度计检查最厚的肉，探针避开骨头，中心达到165°F。表皮变色不等于中心已经达到安全温度。"
+        }
+      ]
+    },
+    "references": [
+      {
+        "name": "Skinnytaste: original split-wing method",
+        "url": "https://www.skinnytaste.com/air-fryer-chicken-wings/"
+      },
+      {
+        "name": "FoodSafety.gov: poultry center temperature",
+        "url": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+      },
+      {
+        "name": "USDA FSIS: thermometer placement",
+        "url": "https://ask.fsis.usda.gov/article/How-to-use-a-food-thermometer"
+      }
+    ],
+    "related": [
+      "chicken-breast",
+      "french-fries"
+    ]
+  },
+  "french-fries": {
+    "updatedAt": "2026-11-23",
+    "region": "us",
+    "en": {
+      "condition": "Frozen regular-cut fries; the first method uses 1 lb in single-layer batches.",
+      "description": "Separate shoestring option, preheat, shaking and center checks; follow product directions first.",
+      "questions": [
+        {
+          "question": "Can I use the regular-cut clock for shoestring fries?",
+          "answer": "No. The shoestring choice is a separate reference. Keep the fries frozen and select the matching cut. Raw potato strips, wedges and leftovers are not covered by this frozen-fries method."
+        },
+        {
+          "question": "Should I preheat for this timing?",
+          "answer": "This page follows the original recipe card’s preheated method. Its FAQ also discusses skipping preheat but provides no separate cold-start clock. Do not combine that change with the displayed preheated timing."
+        },
+        {
+          "question": "Can I fill the basket with the whole bag?",
+          "answer": "The recipe quantity is not a command to fill the basket. Spread a single layer, batch when crowded and shake as instructed. A different bag, cut or appliance may need its own complete method."
+        },
+        {
+          "question": "What should I check at the earlier time?",
+          "answer": "Check a fry is hot and soft through the center and crisp enough for you. Continue heating and recheck if the center is still cold or hard. Use any air-fryer instructions on the package as one complete method, rather than mixing its setting with this clock."
+        }
+      ]
+    },
+    "zh": {
+      "condition": "袋装冷冻普通切型薯条；第一套以1磅总量、分批单层烹饪为参考。",
+      "description": "细鞋带型另有选项；说明预热、摇篮和内部热透检查，优先遵循产品的完整做法。",
+      "questions": [
+        {
+          "question": "普通切型和鞋带细薯条能共用时间吗？",
+          "answer": "不能。鞋带细薯条有单独的参考选项。保持冷冻状态，并选择符合切型的做法；生土豆条、薯角和剩薯条复热不属于这份冷冻薯条条件。"
+        },
+        {
+          "question": "这份时间是否需要预热？",
+          "answer": "本页跟随原作者菜谱卡的预热做法。原文问答也讨论了不预热，但未另列冷启动时长，不应把这种改动与页面的预热计时混用。"
+        },
+        {
+          "question": "整袋能一次倒进炸篮吗？",
+          "answer": "配料总量不等于每锅装量。单层铺开，拥挤就分批，并按步骤摇篮。不同品牌、粗细和机器可能需要另一套完整做法。"
+        },
+        {
+          "question": "到较早的检查时间，要看什么？",
+          "answer": "取一根确认内部已热透、柔软，外部达到所需脆度；中心仍冷硬就继续加热并复查。包装若有空气炸锅说明，应整套采用，不把包装温度与本站时长拼接。"
+        }
+      ]
+    },
+    "references": [
+      {
+        "name": "Air Frying Foodie: recipe card and preheat FAQ",
+        "url": "https://airfryingfoodie.com/air-fryer-frozen-french-fries/"
+      },
+      {
+        "name": "Philips HD9200 manual, food table and airfrying",
+        "url": "https://dam.versuni.com/m/9ba057f49c7b7a3/original/User-manual-HD9200.pdf"
+      }
+    ],
+    "related": [
+      "chicken-breast",
+      "chicken-wings"
+    ]
+  },
+  "cn-chicken-breast": {
+    "updatedAt": "2026-11-23",
+    "region": "cn",
+    "en": {
+      "condition": "Fresh boneless breasts, about 180 g each, with the thick end evened out.",
+      "description": "Cold-start method with a halfway turn, size limits and a 75°C for 30 seconds center check.",
+      "questions": [
+        {
+          "question": "Is a thickness in centimetres required?",
+          "answer": "The reference gives an approximate weight and asks for even thickness; it does not specify a fixed centimetre value. Lightly even the thick end rather than making a thin cutlet. Larger or uneven breasts are outside this clock."
+        },
+        {
+          "question": "Can I start with frozen chicken or preheat first?",
+          "answer": "The published method is for fresh chicken and starts without preheating. Frozen meat and a preheated basket are different starting conditions; this page does not supply a replacement clock for them."
+        },
+        {
+          "question": "How do I decide the chicken is ready?",
+          "answer": "Check the thickest center reaches 75°C and stays there for 30 seconds. The visible no-thermometer observations below are fallback checks, not a way to measure center temperature; use a thermometer when available."
+        }
+      ]
+    },
+    "zh": {
+      "condition": "新鲜无骨鸡胸肉，每块约180克，较厚的一端先轻拍平整。",
+      "description": "冷启动、中途翻面；注明大小限制，并检查中心75°C保持30秒。",
+      "questions": [
+        {
+          "question": "鸡胸肉要几厘米厚？",
+          "answer": "参考做法给出约180克的重量和“厚薄接近”的处理要求，没有固定厘米数。只轻拍较厚的一端，不拍成薄鸡排；更大或厚薄明显不均的肉块不沿用这份时间。"
+        },
+        {
+          "question": "冷冻鸡胸肉能直接用吗？能先预热吗？",
+          "answer": "这套已发布做法使用新鲜鸡胸肉、不预热启动。冷冻肉和已预热的炸篮都是另一种起始条件，本页没有为它们提供替代计时。"
+        },
+        {
+          "question": "怎样判断鸡胸肉可以出锅？",
+          "answer": "最厚处中心达到75°C，并保持30秒。页面的无温度计观察只能作为补充检查，不能测出中心温度；具备条件时使用食品温度计。"
+        }
+      ]
+    },
+    "references": [
+      {
+        "name": "Kitchen Sanctuary: original portion and preparation",
+        "url": "https://www.kitchensanctuary.com/air-fryer-chicken-breast/"
+      },
+      {
+        "name": "Hong Kong CFS: cooking and reheating",
+        "url": "https://www.cfs.gov.hk/english/trade_zone/safe_kitchen/Cooking_and_reheating.html"
+      }
+    ],
+    "related": [
+      "cn-orleans-wings",
+      "cn-frozen-thin-fries"
+    ]
+  },
+  "cn-orleans-wings": {
+    "updatedAt": "2026-11-23",
+    "region": "cn",
+    "en": {
+      "condition": "Thawed raw mid-joint wings; 500 g total, in uncrowded batches.",
+      "description": "Refrigerated marinating, preheat, turning and a bone-avoiding center-temperature check.",
+      "questions": [
+        {
+          "question": "Can the timer start straight from frozen?",
+          "answer": "No. This published preparation starts with thawed mid-joint wings and requires at least 6 hours of refrigerated marinating. The air-frying clock excludes thawing, marinating and preheating."
+        },
+        {
+          "question": "Does 500 g mean one basket load?",
+          "answer": "It is the total preparation quantity. This guide calls for 8–10 wings per uncrowded batch, starting skin-side down. Keep the same preparation and avoid stacking; the reference is not a weight-to-time formula."
+        },
+        {
+          "question": "Where should I check the temperature?",
+          "answer": "Measure the thickest meat without touching bone. Reach 75°C and hold for 30 seconds. This is a food-center check, separate from the air fryer’s cooking setting."
+        }
+      ]
+    },
+    "zh": {
+      "condition": "彻底解冻的生鸡中翅，总量500克，按不拥挤的单层分批。",
+      "description": "包括提前冷藏腌制、预热、翻面和避开骨头的中心熟度检查。",
+      "questions": [
+        {
+          "question": "从冷冻室拿出后能直接开始计时吗？",
+          "answer": "不能。这套已发布做法先彻底解冻鸡中翅，并至少冷藏腌制6小时。空气炸计时不包含解冻、腌制和预热时间。"
+        },
+        {
+          "question": "500克要一次全部放进炸篮吗？",
+          "answer": "500克是准备总量。页面按每批约8–10个、不拥挤的单层摆放，开始时皮朝下。不要堆叠，也不要按重量比例换算时间。"
+        },
+        {
+          "question": "中心温度该测哪里？",
+          "answer": "探针进入最厚的肉并避开骨头，达到75°C后保持30秒。这里测的是食物中心，不是把炸锅设置成75°C。"
+        }
+      ]
+    },
+    "references": [
+      {
+        "name": "Hong Kong CFS: cooking and reheating",
+        "url": "https://www.cfs.gov.hk/english/trade_zone/safe_kitchen/Cooking_and_reheating.html"
+      }
+    ],
+    "related": [
+      "cn-chicken-breast",
+      "cn-frozen-thin-fries"
+    ]
+  },
+  "cn-frozen-thin-fries": {
+    "updatedAt": "2026-11-23",
+    "region": "cn",
+    "en": {
+      "condition": "Frozen pre-fried fries, about 7 × 7 mm; 200 g, without thawing.",
+      "description": "Philips HD9200 cold-start reference with no preheat, shaking and a hot, soft center check.",
+      "questions": [
+        {
+          "question": "Is this for raw potatoes or any thickness of frozen fries?",
+          "answer": "No. It is the published thin, pre-fried frozen-fries condition. The Philips manual lists 7 × 7 mm frozen fries separately from 10 × 10 mm homemade fries. Do not swap these conditions or copy a clock for thick wedges."
+        },
+        {
+          "question": "Do I thaw, preheat or add oil?",
+          "answer": "This HD9200 reference starts cold, with frozen pre-fried fries and no extra oil. The manual says preheating is unnecessary. If the bag provides a different air-fryer method, follow the complete product instructions instead."
+        },
+        {
+          "question": "Should every batch run to the longest time?",
+          "answer": "No. The manual’s range is a starting guide, not a guarantee for every brand or load. Check from the earlier time, shake as instructed, and look for a hot, soft center and golden exterior. Do not aim for a burnt or dark-brown finish."
+        }
+      ]
+    },
+    "zh": {
+      "condition": "袋装预炸冷冻细薯条，约7×7毫米；200克，不解冻。",
+      "description": "Philips HD9200冷启动参考：不预热，中途摇篮，检查内部热透柔软。",
+      "questions": [
+        {
+          "question": "生土豆条和不同粗细的薯条都能照用吗？",
+          "answer": "不能。这是预炸冷冻细薯条条件。Philips说明书把约7×7毫米的冷冻薯条与10×10毫米自制薯条分别列出，不能互换，也不拿它替代粗薯角的时间。"
+        },
+        {
+          "question": "要先解冻、预热或加油吗？",
+          "answer": "这套HD9200参考使用冷冻预炸薯条、冷启动，不另加油；说明书注明不必预热。包装若提供不同空气炸锅方法，应整套按产品说明操作。"
+        },
+        {
+          "question": "每锅都要烤到时间范围的上限吗？",
+          "answer": "不需要。说明书范围是起点，不保证每个品牌或装量都相同。从较早时间开始检查，按步骤摇篮，确认内部热透柔软、外部金黄，不追求焦黑或深褐色。"
+        }
+      ]
+    },
+    "references": [
+      {
+        "name": "Philips HD9200 manual, food table and airfrying",
+        "url": "https://dam.versuni.com/m/9ba057f49c7b7a3/original/User-manual-HD9200.pdf"
+      }
+    ],
+    "related": [
+      "cn-chicken-breast",
+      "cn-orleans-wings"
+    ]
+  }
+}

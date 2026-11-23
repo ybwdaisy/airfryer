@@ -1,0 +1,16 @@
+---
+import entries from '../data/entry-guides.json';
+import {foodPath} from '../lib/region';
+import type {Language} from '../lib/locale';
+import type {Region} from '../lib/region';
+interface Props {slug:keyof typeof entries; lang:Language; names:Record<string,string>}
+const {slug,lang,names}=Astro.props;
+const entry=entries[slug],copy=entry[lang];
+---
+<section class="reference-notes entry-guide" data-entry-guide>
+  <h3>{lang==='zh'?'这份时间适用吗？':'Choosing the right timing'}</h3>
+  {copy.questions.map(item=><details><summary>{item.question}</summary><p>{item.answer}</p></details>)}
+  <p class="entry-related">{lang==='zh'?'也可以看看：':'Related guides: '}{entry.related.map(related=><a href={foodPath(related,entry.region as Region,lang)}>{names[related]}</a>)}</p>
+  <p class="entry-references">{lang==='zh'?'说明依据：':'Notes sources: '}{entry.references.map(source=><a href={source.url}>{source.name}</a>)}</p>
+  <p class="section-description">{lang==='zh'?'适用说明更新于 ':'Applicability notes updated '}<time datetime={entry.updatedAt}>{entry.updatedAt}</time></p>
+</section>
