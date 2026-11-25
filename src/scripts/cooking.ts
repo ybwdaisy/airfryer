@@ -38,7 +38,7 @@ const syncOptions=()=>{for(const [name,on]of [['sound',Boolean(session?.sound)],
 const syncStartLabels=()=>{document.querySelectorAll<HTMLElement>('[data-cook-start]').forEach(button=>{const same=session&&session.plan.condition===button.dataset.cookStart&&session.plan.slug===document.querySelector<HTMLElement>('#variant-data')?.dataset.foodSlug;const label=button.querySelector('[data-cook-start-label]');if(label)label.textContent=same?(session!.status==='paused'?c.resume:c.open):c.start;});};
 const stageLabel=()=>session?`${c.stage} ${session.phase+1}/${session.plan.phases.length}`:'';
 const render=()=>{
-  dock.hidden=!session;syncStartLabels();
+  dock.hidden=!session||dialog.open;syncStartLabels();
   document.body.classList.toggle('has-cooking-timer',Boolean(session));
   if(!session){releaseWake();if(dialog.open)dialog.close();return;}
   const p=session.plan,copy=p.copy[lang],phase=p.phases[session.phase],seconds=remaining(session);
@@ -149,7 +149,7 @@ dock.querySelector('[data-cook-dock-pause]')!.addEventListener('click',()=>saveA
 document.addEventListener('visibilitychange',()=>{update();void syncWake();if(document.visibilityState==='visible')unlockAudio();});
 document.addEventListener('pointerdown',unlockAudio,{capture:true});
 document.addEventListener('keydown',unlockAudio,{capture:true});
-dialog.addEventListener('close',()=>{showingConflict=false;pendingPlan=null;});
+dialog.addEventListener('close',()=>{showingConflict=false;pendingPlan=null;render();});
 window.addEventListener('storage',event=>{if(event.key===cookingKey||event.key===null){try{session=parseCooking(localStorage.getItem(cookingKey));}catch{session=null;}update();render();void syncWake();}});
 window.addEventListener('pagehide',()=>{releaseWake();});
 setInterval(update,500);
