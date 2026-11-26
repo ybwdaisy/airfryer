@@ -119,7 +119,7 @@ document.addEventListener('click',event=>{
     pendingPlan=plan;
     showingConflict=true;el('existing').hidden=false;el('content').hidden=true;
     dialog.querySelector('#cooking-title')!.textContent=plan.copy[lang].name;text('condition',plan.copy[lang].label);text('status',c.replace);text('replace-detail',c.replaceDetail);text('current-name',session.plan.copy[lang].name);text('current-digits',clock(remaining(session)));
-    if(!dialog.open)dialog.showModal();dialog.scrollTop=0;el<HTMLButtonElement>('current').focus({preventScroll:true});return;
+    if(!dialog.open)dialog.showModal();render();dialog.scrollTop=0;el<HTMLButtonElement>('current').focus({preventScroll:true});return;
   }
   if(!session){session=createCooking(plan);saveAction('start');}else if(['ready','paused'].includes(session.status)){saveAction('start');}
   open();

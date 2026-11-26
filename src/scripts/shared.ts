@@ -46,10 +46,13 @@ else {
     if(switchBtn){
       const nextPreset=switchBtn.dataset.switchKitchen;
       if(nextPreset==='metric'||nextPreset==='us'){
+        const previous=readKitchen();
         const saved=saveKitchen(nextPreset);
         if(!saved||new URL(location.href).searchParams.get('kitchen')){
           const u=new URL(location.href);u.searchParams.set('kitchen',nextPreset);history.replaceState(null,'',u);
         }
+        // Track before apply() replaces the previous page's unit context.
+        if(nextPreset!==previous)window.airfryerTrack?.('unit_change',{unit:presetUnit(nextPreset),previous_unit:presetUnit(previous)});
         apply();
       }
       return;
