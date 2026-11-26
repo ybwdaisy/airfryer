@@ -2,7 +2,7 @@ import {temperature} from '../lib/format';
 import {measureText} from '../lib/measure';
 import {initAnalytics} from './analytics';
 import {localizedPath} from '../lib/locale';
-import {kitchenKey,presetUnit,readKitchen,unifiedHome} from '../lib/kitchen';
+import {kitchenKey,presetUnit,readKitchen,saveKitchen,unifiedHome} from '../lib/kitchen';
 
 const lang=document.documentElement.lang==='zh-CN'?'zh':'en';
 const read=(key:string)=>{try{return localStorage.getItem(key);}catch{return null;}};
@@ -41,7 +41,23 @@ else {
   document.querySelectorAll<HTMLAnchorElement>('[data-region-home]').forEach(a=>a.href=unifiedHome(lang));
   // Temporary URL state is only used when browser storage rejected a save.
   document.addEventListener('click',event=>{
-    if(!(event.target instanceof Element)||!new URL(location.href).searchParams.get('kitchen'))return;
+    if(!(event.target instanceof Element))return;
+    const switchBtn=event.target.closest<HTMLButtonElement>('[data-switch-kitchen]');
+    if(switchBtn){
+      const nextPreset=switchBtn.dataset.switchKitchen;
+      if(nextPreset==='metric'||nextPreset==='us'){
+        const previous=readKitchen();
+        const saved=saveKitchen(nextPreset);
+        if(!saved||new URL(location.href).searchParams.get('kitchen')){
+          const u=new URL(location.href);u.searchParams.set('kitchen',nextPreset);history.replaceState(null,'',u);
+        }
+        // Track before apply() replaces the previous page's unit context.
+        if(nextPreset!==previous)window.airfryerTrack?.('unit_change',{unit:presetUnit(nextPreset),previous_unit:presetUnit(previous)});
+        apply();
+      }
+      return;
+    }
+    if(!new URL(location.href).searchParams.get('kitchen'))return;
     const a=event.target.closest<HTMLAnchorElement>('a[href]');if(!a||a.origin!==location.origin||a.hash)return;
     const next=new URL(a.href);next.searchParams.set('kitchen',readKitchen());a.href=next.href;
   });
