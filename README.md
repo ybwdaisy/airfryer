@@ -2,6 +2,8 @@
 
 An independent air fryer reference tool for `https://airfryer.ybwdaisy.com`. English is the default; Chinese pages live under `/zh`. The existing `ybwdaisy.com` homepage and its repository are not used or changed.
 
+[Website](https://airfryer.ybwdaisy.com) · [Source code](https://github.com/ybwdaisy/airfryer) · [MIT license](LICENSE)
+
 ## Run locally
 
 Node.js 24 LTS is recommended. Run `npm ci`, `npm run check`, `npm test`, `npm run build`, then `npm run dev`. The local app runs at `http://127.0.0.1:4327`. Astro telemetry is disabled by project scripts. Astro 7 starts a managed background dev server; stop it with `ASTRO_TELEMETRY_DISABLED=1 npx astro dev stop` when no longer needed.
@@ -48,6 +50,10 @@ Use an independent Vercel project, the Astro preset, `npm run build`, and output
 ## Verification limits
 
 Data schema checks do not prove cooking accuracy. Browser checks do not prove physical cooking results, search-engine indexing, DNS propagation, or live GA4 ingestion. The source audit notes and UI review in `docs/` distinguish those boundaries.
+
+## License and attribution
+
+Original project code and project-authored content are available under the [MIT license](LICENSE). Third-party photographs, fonts and dependencies retain their own licenses; see [third-party notices](THIRD_PARTY_NOTICES.md). Recipe references remain attributed to their publishers; this license does not grant rights to the linked source articles or their original text and media.
 
 ## Cooking workflow
 
