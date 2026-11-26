@@ -1,60 +1,67 @@
 # Airfryer times
 
-An independent air fryer reference tool for `https://airfryer.ybwdaisy.com`. English is the default; Chinese pages live under `/zh`. The existing `ybwdaisy.com` homepage and its repository are not used or changed.
+Find an air fryer recipe, check the preparation and settings, then start a timer—on your phone, without an account.
 
-[Website](https://airfryer.ybwdaisy.com) · [Source code](https://github.com/ybwdaisy/airfryer) · [MIT license](LICENSE)
+**空气炸锅时间查询：找菜谱、看清准备要求与时间温度，入锅后直接开始计时。支持中文和英文，无需注册。**
+
+[Open the app](https://airfryer.ybwdaisy.com) · [打开中文版](https://airfryer.ybwdaisy.com/zh) · [简体中文说明](README.zh-CN.md) · [MIT license](LICENSE)
+
+## A look inside
+
+**Find a recipe → Read the method → Start the timer**
+
+<p>
+  <img src="docs/images/home-en.png" width="240" alt="English recipe library on a phone, with search, food categories and recipe filters">
+  <img src="docs/images/recipe-en.png" width="240" alt="Chicken wings recipe showing preparation, temperature and cooking time">
+  <img src="docs/images/timer-en.png" width="240" alt="Recipe timer with remaining time, temperature, reminders and large controls">
+</p>
+
+Actual website screenshots, captured on November 26, 2026. The timer is paused in the screenshot. [See the Chinese interface](README.zh-CN.md#界面预览).
+
+## What it does
+
+- **Search 115 recipes across six categories.** Meat, seafood, vegetables, frozen food, baking and reheating. Search supports English spelling variations, Chinese aliases, traditional characters and pinyin.
+- **See what to do before cooking.** Each method specifies its starting condition, portion, preparation, preheating, time and temperature, turning instructions and checks before serving. Extra equipment or advance preparation is shown up front.
+- **Keep your kitchen preferences.** Save a metric or US unit preset and choose English or Chinese independently. The default list only shows methods available in your chosen temperature scale; search can also find other matching foods. Appliance settings keep their original sourced units.
+- **Cook with a built-in timer.** Start from the recipe, pause, add a minute or minimize the timer while reading. Multi-stage methods stop for a food check and explicit confirmation before the next stage. Reminders follow the source instructions.
+- **Save recipes for next time.** Bookmarks, preferences and the current timer stay in the same browser. No account or application backend is required.
+
+## How to use it
+
+1. **Open [the app](https://airfryer.ybwdaisy.com)** and choose your unit preset and interface language in **Settings**. Your choice is saved for later visits when browser storage is available.
+2. **Find your food.** Search by name or browse a category. Filters include saved recipes, air-frying time of 15 minutes or less, and methods that need no hob.
+3. **Match the preparation.** Check whether the food should be frozen, thawed, ready to bake or already cooked. Follow the portion, marinating, equipment and preheating requirements on the recipe.
+4. **Put the food in the basket and tap “Start timer.”** Follow turning reminders and check the food when prompted. Keep the page open; sound alerts can be delayed while the screen is locked or the browser is in the background.
+
+Cooking times are references. A timer finishing is a prompt to check the food. Recipes include source notes and safety guidance; this project has not performed physical cooking tests. Read [Sources & safety](https://airfryer.ybwdaisy.com/methodology) for the approach.
 
 ## Run locally
 
-Node.js 24 LTS is recommended. Run `npm ci`, `npm run check`, `npm test`, `npm run build`, then `npm run dev`. The local app runs at `http://127.0.0.1:4327`. Astro telemetry is disabled by project scripts. Astro 7 starts a managed background dev server; stop it with `ASTRO_TELEMETRY_DISABLED=1 npx astro dev stop` when no longer needed.
+Use **Node.js 24 LTS** and npm.
 
-## Content and behavior
+```bash
+git clone https://github.com/ybwdaisy/airfryer.git
+cd airfryer
+npm ci
+npm run dev
+```
 
-The logo master is `public/logo.svg`: a solid air-fryer silhouette with a timer dial, in the existing warm red. Run `npm run icons:generate` after editing it and commit all generated SVG/PNG/ICO exports. This also produces `logo-mark.svg` for monochrome use. The header, browser favicons, opaque 180px Apple Touch icon and 192/512px manifest icons share the same geometry; do not edit generated icons independently. Icon references carry a cache version. The manifest keeps browser navigation; no offline or standalone app behavior is introduced.
+Open [localhost:4327](http://localhost:4327). Local and preview builds keep analytics disabled.
 
-- One searchable library: 115 recipes and 121 separately sourced conditions. The default list shows methods available in the saved kitchen temperature scale: currently 55 Celsius recipes or 60 Fahrenheit recipes. Search separately discovers foods without a verified method in that scale.
-- Native links, forms, lists and disclosures keep the interface and markup simple. Detail and category pages remain readable without JavaScript, in the source-native units. Live fuzzy search, saved kitchen/language settings and condition selection enhance them in the browser.
-- The selected condition, search and filter live in the URL. Unsupported conditions fall back to the food's first sourced condition; no weight multiplier or generated cooking advice is used.
-- Reference temperature/time comes from one source. Independent cross-checks and mismatches are disclosed, not averaged. China methods use native Celsius settings at or below 200°C; US methods use Fahrenheit at or below 400°F. Ingredient weight, volume and size can follow the saved kitchen preset; appliance temperatures are never converted into executable settings or paired with reused times. Official internal-temperature guidance is separate.
+```bash
+npm run check   # Astro and TypeScript checks
+npm test        # Unit tests
+npm run build   # Validate recipe data and funnel configuration, then build the static site
+```
 
-Food data lives in `src/data/foods-{a,b,cn}.json`; `recipe-overrides.json` enriches retained US conditions without changing their original clocks; schema and research requirements are documented in [the data contract](docs/data-contract.md). Each public condition has at least two independently authored source records, including source locations and concise evidence. This site has not performed physical cooking tests. References using a lower culinary doneness target do not override the official safety checks shown here.
+Built with **Astro, TypeScript, CSS, Fuse.js and Zod**. See the [development guide](docs/development.md) for browser tests, project structure and deployment.
 
-`npm run build` validates data before generating pages. Both collections and complete bilingual instructions are validated; food count is not a production gate. `npm run test:browser` exercises the running local site with system Chrome (or `CHROME_PATH`), including no-JavaScript content and consent gating. Google requests in those tests are intercepted. `npm run test:production` checks production-only metadata, the supplied public GA4 identifier, clean canonical paths and crawl settings, then restores an untracked preview build without opening the production artifact.
+## Contributing
 
-## Languages
+Bug reports and improvements are welcome through [Issues](https://github.com/ybwdaisy/airfryer/issues) and pull requests. Include the page, language, unit preset and steps to reproduce a problem.
 
-The unified homes are `/` (English) and `/zh` (Chinese). Old collection and category URLs remain reachable and canonicalize to the unified lists. Original US recipe paths `/foods/*` and `/zh/foods/*`, China paths `/china/foods/*` and `/zh/china/foods/*`, condition IDs and source anchors remain stable. The sitemap contains 248 canonical URLs; settings pages are noindex.
+For recipe changes, follow the [data contract](docs/data-contract.md): preserve the exact preparation conditions and provide independently authored sources. Keep appliance settings, ingredient units and food-center safety temperatures distinct.
 
-Settings at `/settings` or `/zh/settings` save one kitchen preset and an independent interface language in origin-local browser storage. Successful saves return directly to the homepage in the selected language. If either preference cannot persist, the settings page keeps the explicit temporary-only notice and a manual return link. Old explicit unit preferences migrate once; shared `unit` query parameters cannot override saved preferences. Storage failure produces an explicit temporary-only notice. Fresh homepage visits default to English; saved language applies to later visits and reference links. With JavaScript disabled, direct Chinese routes remain readable, while saved settings are unavailable.
+## License
 
-`src/data/zh-foods.json` preserves historical Chinese copy; `regional-zh.json` supplies the enriched and new recipe copy. Both languages preserve the same cooking facts. Publisher names, article titles and evidence retain original wording and units in folded source details; `zh-ui.json` contains interface copy.
-
-Starting-state search recognizes frozen, fresh/thawed, ready-to-bake and reheat terms before filtering methods. A different-state recovery link shows the required preparation and never counts as a directly matching frozen method. See [the coverage record](docs/food-coverage-2026-11-15.md).
-
-The current household-cooking app system is recorded in [design.md](design.md): recognizable category photographs, independently linked recipes, clear preparation/cooking/readiness groups, native controls and one consolidated stylesheet. The previous ruled-index visual constraint was replaced at the user’s request; see [the redesign record](docs/family-ui-redesign-2026-11-15.md). Keep the structured `food-index` and `variant-data` nodes, canonical links and heading/field semantics usable by assistive technology and agents. Do not create a separate agent interface for visual changes.
-
-`npm run test:browser` runs the complete 14-group workflow, including 230 recipe/preset visits plus 80 new-recipe language/phone visits, responsive layouts, natural-language and pinyin search, fuzzy spelling, saved settings, old links, no-JavaScript reading and consent. The language, regional, clarity, expansion and analytics commands select their corresponding groups from the same suite. Tests intercept Google requests; do not treat test output as real cooking or GA4 ingestion evidence.
-
-## Analytics and privacy
-
-The supplied dedicated stream is `16326517771`, with public measurement ID `G-B34CBGW0EF`. Configure `PUBLIC_GA_MEASUREMENT_ID` in the production environment; the local `.env.local` is ignored. The identifier is public, not an authentication secret.
-
-The build enables analytics only for `VERCEL_ENV=production`. Optional Google tags load only after a user grants consent, and can be rejected or withdrawn. Events include collection, language and measurement preferences. Page-location values omit queries, and raw search text is not sent. Cookies are explicitly scoped to the tool hostname; preference storage is origin-local. Analytics is off in local and preview builds. See [deployment steps](docs/deployment.md) for the required GA4 property configuration before release.
-
-埋点、有效阅读、QA隔离、漏斗与后台配置记录见 [GA4 v2 口径](docs/analytics-v2.md)。运行 `npm run test:analytics` 验证业务触发，`npm run test:analytics-sdk` 以实际 Google SDK 检查事件包；收集请求均在派发前拦截。
-
-## Deployment
-
-Use an independent Vercel project, the Astro preset, `npm run build`, and output `dist`. Connect only `airfryer.ybwdaisy.com`, using the DNS records Vercel actually returns. Production release follows preview acceptance. No wildcard DNS or parent-domain redirect is needed.
-
-## Verification limits
-
-Data schema checks do not prove cooking accuracy. Browser checks do not prove physical cooking results, search-engine indexing, DNS propagation, or live GA4 ingestion. The source audit notes and UI review in `docs/` distinguish those boundaries.
-
-## License and attribution
-
-Original project code and project-authored content are available under the [MIT license](LICENSE). Third-party photographs, fonts and dependencies retain their own licenses; see [third-party notices](THIRD_PARTY_NOTICES.md). Recipe references remain attributed to their publishers; this license does not grant rights to the linked source articles or their original text and media.
-
-## Cooking workflow
-
-The cooking workflow adds saved recipes, explicit air-frying/no-hob filters and source-native stage timers that start with one recipe action. Required preparation stays visible before starting, without a checkbox gate. The timer stops for food checks and next-temperature confirmation. Bookmarks and timer snapshots stay in the current browser; locked/background alarms are not guaranteed. See [the workflow contract](docs/cooking-workflow-2026-11-19.md). Run the existing 14-group kitchen suite plus `TEST_BASE_URL=http://127.0.0.1:<preview-port> npm run test:cooking` (9 groups).
+Original project code and project-authored content use the [MIT license](LICENSE). Photographs, fonts, dependencies and external recipe references retain their own rights and licenses; see [third-party notices](THIRD_PARTY_NOTICES.md).
